@@ -1,0 +1,1 @@
+## Minifier les fichiers JavaScript

@@ -1,0 +1,1 @@
+## Privilégier les variables locales

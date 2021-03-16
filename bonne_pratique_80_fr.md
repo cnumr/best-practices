@@ -1,0 +1,1 @@
+## Optimiser les images bitmap

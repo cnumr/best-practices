@@ -1,0 +1,1 @@
+## Priviliégier les fonctions inline

@@ -1,0 +1,1 @@
+## Compresser la sortie HTML

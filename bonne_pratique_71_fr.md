@@ -1,0 +1,1 @@
+## Utiliser des variables statiques

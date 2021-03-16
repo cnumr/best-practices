@@ -1,0 +1,1 @@
+## Favoriser les pages statiques
