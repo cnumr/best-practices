@@ -1,6 +1,22 @@
 ## Limiter le nombre de requêtes HTTP
 
-### Differential Loading
+### Indications
+| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
+|-------------------|:-------------------------:|:---------------------:|
+| Prioritaire       | Standard                  | Fort                  | 
+
+
+|Ressources Economisées                                      |
+|:----------------------------------------------------------:|
+| Réseau / Requêtes    |
+
+### Règle
+
+### Exemple
+
+
+### Solution alternatives
+#### Differential Loading
 
 Afin de limiter la taille de votre code JavaScript, vous pouvez mettre en place une pratique nommée 
 **Differential Loading**. Cette pratique consiste, via des outils reconnu de l'écosystème JavaScript comme Webpack ou encore rollup, de générer deux livrables :
@@ -17,3 +33,5 @@ Ensuite, pour indiquer quelle version soit être téléchargée par le navigateu
 <script type="module" src="app.js"></script>
 <script nomodule src="app-legacy.js"></script>
 ```
+
+### Principe de validation

@@ -1,6 +1,21 @@
 ## Préférer la saisie assistée à l'autocomplétions
 
-### Alternatives
+### Indications
+| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
+|-------------------|:-------------------------:|:---------------------:|
+| Prioritaire       | Facile                    | Fort                  | 
+
+
+|Ressources Economisées                                      |
+|:----------------------------------------------------------:|
+| Requêtes    |
+
+### Règle
+
+### Exemple
+
+### Solution alternatives
+#### l'élement `<datalist></datalist>`
 
 * Utilisation de l'élément HTML [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist)
 
@@ -18,3 +33,5 @@ Si la données qui est proposée à l'utilisateur est assez petite en quantité,
     <option value="Vanilla">
 </datalist>
 ```
+
+### Principe de validation
