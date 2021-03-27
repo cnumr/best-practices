@@ -1,18 +1,26 @@
 {
   "identifier": "009",
   "metadata": {
-    "locales": ["fr_FR"],
-    "architecture": ["Web Application", "Rich Client"],
-    "languages": ["ALL"],
-    "optimized_resources": ["Requests", "Bandwidth"],
+    "architecture": [
+      "Web Application",
+      "Rich Client"
+    ],
+    "languages": [
+      "ALL"
+    ],
+    "optimized_resources": [
+      "Requests",
+      "Bandwidth"
+    ],
     "priority": "high",
     "complexity": "medium",
     "environmental_impact": "high"
   },
-  "content": {
-    "fr_FR": {
+  "contents": [
+    {
+      "locale": "fr_FR",
       "title": "Limiter le nombre de requêtes HTTP",
       "document": "bonne_pratique_009_fr.md"
     }
-  }
+  ]
 }

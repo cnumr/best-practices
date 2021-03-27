@@ -1,18 +1,25 @@
 {
   "identifier": "054",
   "metadata": {
-    "locales": ["fr_FR"],
-    "architecture": ["Web Application"],
-    "languages": ["Javascript"],
-    "optimized_resources": ["CPU","RAM"],
+    "architecture": [
+      "Web Application"
+    ],
+    "languages": [
+      "Javascript"
+    ],
+    "optimized_resources": [
+      "CPU",
+      "RAM"
+    ],
     "priority": "high",
     "complexity": "medium",
     "environmental_impact": "high"
   },
-  "content": {
-    "fr_FR": {
+  "contents": [
+    {
+      "locale": "fr_FR",
       "title": "Réduire les accès au DOM via JavaScript",
       "document": "bonne_pratique_054_fr.md"
     }
-  }
+  ]
 }
