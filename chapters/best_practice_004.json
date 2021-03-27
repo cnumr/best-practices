@@ -1,0 +1,18 @@
+{
+  "identifier": "004",
+  "metadata": {
+    "locales": ["fr_FR"],
+    "architecture": ["Web Application", "Rich Client"],
+    "languages": ["ALL"],
+    "optimized_resources": ["Requests"],
+    "priority": "high",
+    "complexity": "low",
+    "environmental_impact": "high"
+  },
+  "content": {
+    "fr_FR": {
+      "title": "Préférer la saisie assistée à l'autocomplétions",
+      "document": "bonne_pratique_004_fr.md"
+    }
+  }
+}

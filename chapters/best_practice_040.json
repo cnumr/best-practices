@@ -1,0 +1,18 @@
+{
+  "identifier": "040",
+  "metadata": {
+    "locales": ["fr_FR"],
+    "architecture": ["Web Application"],
+    "languages": ["Javascript","CSS"],
+    "optimized_resources": ["CPU","RAM","Bandwidth"],
+    "priority": "high",
+    "complexity": "high",
+    "environmental_impact": "medium"
+  },
+  "content": {
+    "fr_FR": {
+      "title": "N’utiliser que les portions indispensables des bibliothèques JavaScript et CSS",
+      "document": "bonne_pratique_040_fr.md"
+    }
+  }
+}

@@ -1,15 +1,5 @@
 ## Préférer la saisie assistée à l'autocomplétions
 
-### Indications
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
-|-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       | Facile                    | Fort                  | 
-
-
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Requêtes    |
-
 ### Règle
 
 ### Exemple

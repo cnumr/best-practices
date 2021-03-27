@@ -1,15 +1,5 @@
 ## Limiter le nombre de requêtes HTTP
 
-### Indications
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
-|-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       | Standard                  | Fort                  | 
-
-
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Réseau / Requêtes    |
-
 ### Règle
 
 ### Exemple
