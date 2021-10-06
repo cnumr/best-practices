@@ -11,14 +11,16 @@ Nous remercions chaleureusement l'ensemble des contributrices et contributeurs q
 
 Nous vous invitons à saisir ces bonnes pratiques et à proposer des améliorations en vue d'une prochaine V4.
 
-## Les membres
+## Les membres présents sur ce dépôt
 Nom / Prénom                                        | Entreprise
 ------------                                        | -------------         
 [Emmanuel Demey](https://github.com/EmmanuelDemey)  | -
 [Romuald Priol](https://github.com/DocRoms)         | -
 
 ## Les besoins
-
+Ce référentiel date d'il y a quelques années, bien qu'il ai été mis à jour en 2015 et en 2019, il y a des règles qui 
+meritent d'être débattues, d'être ajoutées, et certaines d'être supprimées (:speak_no_evil:) .
+Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référentiel.
 
 ## La liste des 115 Bonnes pratiques
 
@@ -72,7 +74,7 @@ Nom / Prénom                                        | Entreprise
 * [Utiliser les opérations primitives](/chapters/bonne_pratique_048_fr.md)
 * [Mettre en cache les objets souvent accédés en JavaScript](/chapters/bonne_pratique_049_fr.md)
 * [Privilégier les variables locales](/chapters/bonne_pratique_050_fr.md)
-* [Priviliégier les fonctions inline](/chapters/bonne_pratique_051_fr.md)
+* [Priviliégier les fonctions anonymes](/chapters/bonne_pratique_051_fr.md)
 * [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/bonne_pratique_052_fr.md)
 * [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/bonne_pratique_053_fr.md)
 * [Réduire les accès au DOM via JavaScript](/chapters/bonne_pratique_054_fr.md)
