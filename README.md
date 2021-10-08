@@ -9,7 +9,8 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer depuis presque de 10 ans.
 
-Nous vous invitons à saisir ces bonnes pratiques et à proposer des améliorations en vue d'une prochaine V4.
+Nous vous invitons à participer à la prochaine version en suivant [le guide des contributeurs](CONTRIBUTING.md).
+
 
 ## Les membres
 Nom / Prénom                                        | Entreprise
@@ -140,4 +141,4 @@ Nom / Prénom                                        | Entreprise
 
 ## Licence
 
-Les sources et contenus de ce projet sont sous [licence Creative Commons BY-NC-ND](licence.md)
+Les sources et contenus de ce projet sont sous [licence Creative Commons BY-NC-ND](LICENCE.md)
