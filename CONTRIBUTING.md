@@ -11,12 +11,12 @@ Une équipe projet s'assure de la bonne tenue de ces règles.
 Les contributions ont pour but :
 
 - De supprimer les bonnes pratiques obsolètes, non applicables ou sans effet
-- De challenger les bonnes pratiques très orientées programmation et langage (étudier le remplacement par des bonnes pratiques agnostiques au langage)
+- De challenger les bonnes pratiques très orientées programmation et langage en étudiant par exemple leur remplacement par des bonnes pratiques agnostiques au langage
 - D’ajouter des bonnes pratiques qui semblent pertinentes, sont issues du terrain
 - D’associer aux nouvelles bonnes pratiques une règle de conformité
 - De vérifier, améliorer le cas échéant les bonnes pratiques existantes ainsi que leur règle de conformité
 - De passer les niveaux d'impact écologique de 3 à 5 niveaux
-- De proposer et le cas échéant mettre en place toute idée qui pourrait améliorer le référentiel d'une manière générale
+- De proposer toute idée qui pourrait améliorer le référentiel d'une manière générale et le cas échéant la mettre en place
 
 ## Règles générales
 
@@ -35,7 +35,7 @@ L'équipe projet est constituée de:
 
 Cette équipe s'assure que les règles instaurées pour la contribution soient respectées.
 
-En cas de désaccord entre contributeurs, son rôle est aussi de trancher dans la décision.
+En cas de désaccord entre contributeurs, son rôle est aussi de trancher une décision.
 
 L'équipe projet fait preuve de transparence et fait en sorte que les décisions soient les plus collégiales possibles.
 
@@ -63,7 +63,7 @@ Tout contributeur peut donner son avis sur la proposition:
 - En cas d'accord, un contributeur ajoute un "pouce haut"
 - En cas de désaccord, un contributeur ajoute un "pouce bas" et devra obligatoirement expliquer via un commentaire les raisons de son désaccord
 - En cas d'incompréhension, il peut entamer une discussion pour demander des précisions
-- En cas d'idée d'amélioration, il peut proposer son idée
+- En cas d'idée d'amélioration, il peut la proposer
 
 Lorsqu'une proposition reçoit plusieurs votes positifs, l'équipe projet est sollicitée et évalue la pertinence de la bonne pratique.
 
@@ -77,7 +77,7 @@ L'`Issue` créée devra contenir le tag `création`, `modification` ou `suppress
 
 Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet.
 
-Une fois la `Pull Request` validée, son état est mis à jour sur la page d'accueil du repository.
+Une fois la `Pull Request` validée, son état est mis à jour sur la page d'accueil du repository par un membre de l'équipe projet.
 
 ## Amélioration
 
@@ -112,13 +112,15 @@ Les éléments suivants sont facultatifs:
 
 La règle de validation ou conformité permet d'établir ou pas le respect de la bonne pratique.
 
+L'ensemble des règles de conformité du référentiel permettent d'établir un niveau de maturité lors de l'évaluation de moyens mis en oeuvre d'un service.
+
 ### Définition du niveau d'impact écologique
 
 L'impact écologique est établi sur une note de 1 à 5. 
 
-Le niveau d'impact écologique correspond l'apport en termes de performance environnementale de la mise en place règle.
+Le niveau d'impact écologique correspond à l'apport en termes de performance environnementale de la mise en place de la règle.
 
-Cette apport peut être évaluée de la manière suivante:
+Cet apport peut être évalué de la manière suivante:
 
 - 5: Elle limite les risques d'obsolescence des terminaux utilisateurs
 - 4: Elle limite le risque de saturation des réseaux mobiles ou fixes
