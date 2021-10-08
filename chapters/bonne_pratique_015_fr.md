@@ -27,4 +27,4 @@ Un système de tchat sera bien plus performant et économique s’il est dévelo
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de technologies inopportunes  | 1  |

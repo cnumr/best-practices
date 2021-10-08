@@ -25,4 +25,4 @@ Par conséquent, ne pas prévoir d’éléments qui rendent la page inuti- lisab
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de pages / URLs ne respectant pas ce principe  |  10% |

@@ -49,4 +49,4 @@ Ensuite, pour indiquer quelle version soit être téléchargée par le navigateu
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de requêtes HTTP  | 40  |

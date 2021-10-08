@@ -20,4 +20,4 @@ Les logiciels open source sont souvent « forkés » (dérivés) pour des raison
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de forks orientés performance est supérieur ou égal à   | 1  |

@@ -21,4 +21,4 @@ Dans le cas d’un service en ligne de conversion de documents bureau- tiques, i
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de traitements synchrones qui prennent plus d'une minute  | 0  |

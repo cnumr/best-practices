@@ -42,4 +42,4 @@ Si la données qui est proposée à l'utilisateur est assez petite en quantité,
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de champs en autocomplétion  | 20%  |

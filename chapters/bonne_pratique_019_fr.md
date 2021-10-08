@@ -32,4 +32,4 @@ https://www.nuweb.fr/736
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de librairies externes  | 0  |

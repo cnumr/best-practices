@@ -27,4 +27,4 @@ Dans le cas d’un site fonctionnellement riche, cela permettra d’ex- clure to
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de librairies CSS est supérieur ou égal  | 2  |

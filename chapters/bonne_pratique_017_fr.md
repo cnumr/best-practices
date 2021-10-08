@@ -26,4 +26,4 @@ Gain potentiel : jusqu’à 8 fois moins de mémoire et de bande passante consom
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de champs de la base dont le format est inadapté est  | 15%  |

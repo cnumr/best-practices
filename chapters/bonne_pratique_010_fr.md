@@ -24,4 +24,4 @@ Gain potentiel : réduction de la charge serveur, donc du nombre d’équipement
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de données statiques non stockées localement  | 25%  |

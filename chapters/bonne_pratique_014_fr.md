@@ -22,4 +22,4 @@ Les logiciels open source les plus efficients, comme nginX, Apache, MySQL ou PHP
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  Le site s'appuie sur une architecture modulaire | 1  |

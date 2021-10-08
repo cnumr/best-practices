@@ -21,4 +21,4 @@ Pour réaliser un back office basé sur du drag and drop, préférer l’utilisa
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  plugins utilisés | 0  |

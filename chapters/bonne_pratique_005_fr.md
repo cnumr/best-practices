@@ -39,4 +39,4 @@ http://css3please.com
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  Le design est adapté au Web |  1 |

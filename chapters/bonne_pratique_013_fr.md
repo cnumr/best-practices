@@ -25,4 +25,4 @@ Les sites à visiter :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de pages dynamiques est   | 25%  |
