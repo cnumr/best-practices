@@ -21,4 +21,4 @@ Dans la mesure où le contenu proposé par les utilisateurs du site web n’a pa
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  d'images redimensionnées dans le code HTML  | 0  |

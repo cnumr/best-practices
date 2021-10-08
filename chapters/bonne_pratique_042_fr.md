@@ -31,4 +31,4 @@ Au final, 2 reﬂow sont nécessaires au lieu de 6 ou 7 potentiellement.
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de manipulations d'un élément du DOM sans qu'il soit rendu invisible pendant sa modification |  1 |

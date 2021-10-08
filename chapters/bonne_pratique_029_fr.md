@@ -60,4 +60,4 @@ Pour plus d'informations sur la media query `prefers-reduced-data`, vous pouvew 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de polices téléchargées  | 2  |

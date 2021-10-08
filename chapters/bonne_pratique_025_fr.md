@@ -45,4 +45,4 @@ Vous trouverez la liste complète de ces propriétés raccourcies sur le site [M
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de déclaration CSS similaires non regroupées | 1  |

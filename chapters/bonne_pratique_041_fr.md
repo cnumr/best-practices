@@ -28,4 +28,4 @@ Modifier le DOM (Document Object Model) lorsqu’on le traverse peut engendrer d
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversé par un code JavaScript  | 0  |

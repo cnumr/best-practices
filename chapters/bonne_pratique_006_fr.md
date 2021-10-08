@@ -23,4 +23,4 @@ La mise en place d’une architecture RESS plutôt qu’une approche responsive 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| La conception s'appuie sur une approche"mobile first"  |  1 |
+| de conception ne s'appuyant pas sur une approche"mobile first"  |  1 |

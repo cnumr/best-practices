@@ -31,4 +31,4 @@ http://www.html5rocks.com/en/tutorials/speed/high-performance- animations/
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'animations JS / CSS par page / URLs  |  3 |

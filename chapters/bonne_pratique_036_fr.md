@@ -28,4 +28,4 @@ Nous avons testé SVGO sur un fichier SVG de 1 Ko. Il a réduit sa taille de 36 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'images non optimisée  |  5% |

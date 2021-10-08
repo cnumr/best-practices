@@ -34,4 +34,4 @@ Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un f
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'images d'interface pour l'URL testée   | 5  |

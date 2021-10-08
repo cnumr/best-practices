@@ -26,4 +26,4 @@ JTYQAAAAASUVORK5CYII=" alt="logo green IT" />
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'images appelées sans lazy loading  |  10% |

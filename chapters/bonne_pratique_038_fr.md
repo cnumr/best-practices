@@ -21,4 +21,4 @@ Les sites d’actualité utilisent très souvent ce procédé, qui permet d’id
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de zones de contenu pouvant être mis à jour via AJAX mais qui ne le sont pas  | 10%  |

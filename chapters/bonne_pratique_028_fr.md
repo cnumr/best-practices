@@ -24,4 +24,4 @@ Dans le cas de la prise en charge du navigateur Internet Explorer 7, on peut par
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de ressources statiques spécifiques à un navigateur et appliquées à un autre navigateur  | 0  |

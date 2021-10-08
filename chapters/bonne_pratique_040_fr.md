@@ -23,4 +23,4 @@ Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de librairies dont seulement les portions indispensables sont utilisée est supérieur ou égal à  | 1  |

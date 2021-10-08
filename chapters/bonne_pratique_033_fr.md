@@ -24,4 +24,4 @@ http://domain.tld/foo/bar.html
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| Le nombre de balises images dont l’attribut SRC est vide   |  0 |
