@@ -75,6 +75,8 @@ Les cas suivants peuvent se produire:
 
 L'`Issue` créée devra contenir le tag `création`, `modification` ou `suppression` suivant le type de proposition.
 
+En cas d'ajout, le fichier sera nommé suivant le pattern suivant: `bonne_pratique_xxx_fr.md` avec `xxx` le numéro de la bonne pratique qui sera défini par l'équipe projet.
+
 Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet.
 
 Une fois la `Pull Request` validée, son état est mis à jour sur la page d'accueil du repository par un membre de l'équipe projet.
