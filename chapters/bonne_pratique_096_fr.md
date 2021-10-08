@@ -18,3 +18,7 @@ De plus, certains CMS exécutent leur routine de recherche de contenu (dans la b
 Éviter les pages 404 dynamiques, qui sont personnalisées en fonction du contenu de l’URL. Préférer une seule page 404 statique.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

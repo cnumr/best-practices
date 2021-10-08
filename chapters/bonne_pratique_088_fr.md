@@ -16,3 +16,7 @@ La qualité de service (QoS pour Quality of Service) et le niveau de disponibili
 Malgré leurs centaines de millions d’utilisateurs, les géants du Web ne proposent pas un très haut niveau de disponibilité de type Tier IV. Les données sont redondées sur au moins un autre serveur dans un autre centre de données. Si un serveur tombe en panne, l’utilisateur est routé automatiquement vers le serveur de backup. Cette action peut prendre quelques secondes, ce qui est tout à fait acceptable et presque imperceptible pour l’utilisateur final.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

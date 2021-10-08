@@ -17,3 +17,7 @@ est inutile pour les contenus statiques, puisqu’il sert à maintenir un état 
 Les leaders du Web utilisent un domaine séparé pour servir les res- sources statiques qui ne nécessitent pas de cookies. Yahoo! emploie par exemple le domaine yimg.com, YouTube le domaine ytimg.com et Amazon le domaine images-amazon.com.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

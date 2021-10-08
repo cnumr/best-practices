@@ -32,3 +32,7 @@ http://dev.opera.com/articles/view/efficient-javascript/?page=2# trycatch
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

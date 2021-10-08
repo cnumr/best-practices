@@ -29,3 +29,7 @@ for( var i = 0; i < oLength; i++ ) {
 }
 ```
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

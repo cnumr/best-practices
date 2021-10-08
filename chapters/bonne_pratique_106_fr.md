@@ -19,3 +19,7 @@ Pour MySQL, mettre en commentaire dans le fichier my.cnf (ou équivalent) :
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

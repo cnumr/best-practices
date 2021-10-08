@@ -26,3 +26,7 @@ menu.property2 = 'bar'
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

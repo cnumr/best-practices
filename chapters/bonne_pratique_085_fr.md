@@ -20,3 +20,7 @@ Le plan de fin de vie consiste à s’assurer que le jour où un site, une appli
 À la livraison du projet, on remet au client un contrat « plan de fin de vie » que le client accepte et signe. Y sont indiqués la date à partir de laquelle le mécanisme de décommissionnement doit être activé, le ou les seuils techniques et les indicateurs techniques associés qui déclencheront le recyclage du service, le type de fin de vie (archivage ou destruction), etc. À tout moment, le client peut modifer ce contrat.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

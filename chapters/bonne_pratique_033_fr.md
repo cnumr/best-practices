@@ -21,3 +21,7 @@ sur une page située à l’URL :
 http://domain.tld/foo/bar.html
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

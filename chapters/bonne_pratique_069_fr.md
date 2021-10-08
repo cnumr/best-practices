@@ -24,3 +24,7 @@ for ($i = 0; $i < $count; $i++) {}
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -25,3 +25,7 @@ Nous avons testé SVGO sur un fichier SVG de 1 Ko. Il a réduit sa taille de 36 
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

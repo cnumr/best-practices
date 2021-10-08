@@ -21,3 +21,7 @@ Dans le fichier de configuration de votre serveur Apache, situé à l’adresse 
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

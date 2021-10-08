@@ -21,3 +21,7 @@ Dans le cas de la prise en charge du navigateur Internet Explorer 7, on peut par
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

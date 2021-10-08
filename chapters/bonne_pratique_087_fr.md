@@ -20,3 +20,7 @@ Pour en savoir plus sur les certificats de garantie d’origine et l’élec- tr
 www.greenit.fr/tag/electricite
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

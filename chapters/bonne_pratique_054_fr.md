@@ -24,3 +24,7 @@ http://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

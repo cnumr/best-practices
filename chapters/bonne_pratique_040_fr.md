@@ -20,3 +20,7 @@ Dans la mesure du possible, il est préférable de se passer de ces biblio- thè
 Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenant que les portions réellement utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

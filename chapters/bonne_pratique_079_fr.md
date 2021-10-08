@@ -26,3 +26,7 @@ Le module Apache mod_pagespeed de Google permet d’automati- ser ce processus. 
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

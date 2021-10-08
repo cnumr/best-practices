@@ -26,3 +26,7 @@ Ajouter dans le fichier .htaccess :
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -24,3 +24,7 @@ Mieux vaut remplacer manuellement les adresses statiques intégrées aux pages w
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

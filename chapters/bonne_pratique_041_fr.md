@@ -25,3 +25,7 @@ Modifier le DOM (Document Object Model) lorsqu’on le traverse peut engendrer d
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

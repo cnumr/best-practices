@@ -33,3 +33,7 @@ $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES'. implode(',', $userD
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -36,3 +36,7 @@ Imaginer des bandeaux, headers, etc., de sorte que le texte, les fonds de couleu
 http://css3please.com
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

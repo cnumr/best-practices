@@ -18,3 +18,7 @@ Préférer les technologies standards comme HTML5, ECMAScript, etc.
 Pour réaliser un back office basé sur du drag and drop, préférer l’utilisation de jQuery à celle de Flash.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

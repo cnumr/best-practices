@@ -22,3 +22,7 @@ Exemples d’intégration d’un cache RAM à Drupal :
  - intégration de Varnish : http://drupal.org/project/varnish
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

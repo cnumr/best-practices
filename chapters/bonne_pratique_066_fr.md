@@ -23,3 +23,7 @@ par :
 echo 'Lorem ipsum dolor sit amet, consectetur adi- pisicing elit, sed do eiusmod tempor incididunt.';
 ```
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

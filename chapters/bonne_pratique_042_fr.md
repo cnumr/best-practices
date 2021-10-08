@@ -28,3 +28,7 @@ elem.style.display ='block'; // Génère 1 reﬂow
 Au final, 2 reﬂow sont nécessaires au lieu de 6 ou 7 potentiellement.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

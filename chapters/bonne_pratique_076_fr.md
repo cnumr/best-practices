@@ -26,3 +26,7 @@ Quand utiliser les procédures stockées ?
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

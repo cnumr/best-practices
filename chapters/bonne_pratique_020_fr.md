@@ -22,3 +22,7 @@ Voici quelques adresses de générateurs de sprites :
  - http://draeton.github.com/stitches
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

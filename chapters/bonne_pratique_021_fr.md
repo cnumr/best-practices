@@ -24,3 +24,7 @@ Dans le cas d’un site fonctionnellement riche, cela permettra d’ex- clure to
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

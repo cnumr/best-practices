@@ -19,3 +19,7 @@ Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
  - 6,9 Mo de stockage sur le disque dur du serveur.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

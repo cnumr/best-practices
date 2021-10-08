@@ -29,3 +29,7 @@ $smarty->display('index.tpl');
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -17,3 +17,7 @@ Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement 
 à en délivrer un grand nombre en même temps. On constate également qu’un cache généraliste comme APC n’est pas adapté (source : Asymptotix).
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -16,3 +16,7 @@ Au lieu d’utiliser un serveur dédié pour chaque projet, et de le charger au 
 Utiliser des outils de virtualisation tels que VMware, Xen, KVM, etc.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

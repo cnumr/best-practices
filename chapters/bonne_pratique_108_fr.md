@@ -24,3 +24,7 @@ our un rapport annuel en PDF :
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

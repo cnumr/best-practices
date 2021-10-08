@@ -28,3 +28,7 @@ Pour en savoir plus :
 http://www.html5rocks.com/en/tutorials/speed/high-performance- animations/
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

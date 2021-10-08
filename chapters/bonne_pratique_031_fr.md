@@ -17,3 +17,7 @@ Utiliser le validateur du W3C (World Wide Web Consortium) pour vérifier que les
 http://validator.w3.org
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -28,3 +28,7 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

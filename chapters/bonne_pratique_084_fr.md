@@ -25,3 +25,7 @@ Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

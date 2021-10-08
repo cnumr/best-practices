@@ -30,3 +30,7 @@ text-indent :0; line-height :25pt; font-size :25pt;
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

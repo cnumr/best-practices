@@ -18,3 +18,7 @@ Les outils dynamiques génèrent souvent des pages 404 pour les res- sources (CS
 Aussi est-il judicieux de mettre en place un système de règles, excluant la recherche dans la base pour les URL contenant des extensions de type *.css, *.js, *.png, etc., afin de ne pas déclencher de connexion à la base de données.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

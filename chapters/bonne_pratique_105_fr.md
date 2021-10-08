@@ -23,3 +23,7 @@ Pour aller plus loin :
 http://httpd.apache.org/docs/2.0/mod/core.html#allowoverride
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

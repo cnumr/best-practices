@@ -23,3 +23,7 @@ JTYQAAAAASUVORK5CYII=" alt="logo green IT" />
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

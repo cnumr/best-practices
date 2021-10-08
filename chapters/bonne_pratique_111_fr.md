@@ -28,3 +28,7 @@ Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

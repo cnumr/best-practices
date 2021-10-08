@@ -29,3 +29,7 @@ var timeoutID = setTimeout(uneFonction, 1000);
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

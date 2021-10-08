@@ -21,3 +21,7 @@ L’intérêt du stockage local est double. D’une part, on évite les allers- 
 Gain potentiel : réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique), des serveurs HTTP jusqu’aux mainframes.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -18,3 +18,7 @@ Découper en plusieurs pages les contenus d’une longueur conséquente.
 Si un sujet nécessite une longue explication, le découper en plusieurs pages et/ou le traiter dans un document à télécharger. Ainsi, les uti- lisateurs n’afficheront que les pages qu’ils souhaitent lire et ne télé- chargeront que les fichiers qui les intéressent.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

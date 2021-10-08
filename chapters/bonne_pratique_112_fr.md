@@ -24,3 +24,7 @@ Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conve
  - un fichier son-64.mp3 de 6 508 octets (64 kb/s), 10 fois plus léger.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

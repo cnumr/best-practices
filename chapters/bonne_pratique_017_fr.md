@@ -23,3 +23,7 @@ Dans le cas d’un établissement de formation, la taille du champ permettant de
 Gain potentiel : jusqu’à 8 fois moins de mémoire et de bande passante consommée. La consommation en cycle processeur est réduite dans les mêmes proportions.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |

@@ -22,3 +22,7 @@ Des outils tels que pngcrush, ImageMagick ou jpegtran vous aideront à réduire 
 Gain potentiel : 25 % de gain au minimum en jouant sur la palette de couleurs et le taux de compression, et jusqu’à plus de 80 % par rapport à une image matricielle non compressée. En moyenne, 30 % de poids en moins (par rapport à `JPEG`) avec `WebP`.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|   |   |
