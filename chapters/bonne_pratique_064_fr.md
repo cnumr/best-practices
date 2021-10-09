@@ -19,4 +19,4 @@ Les systèmes de cache de type key-value store sont prévus pour stocker ces don
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  10% |

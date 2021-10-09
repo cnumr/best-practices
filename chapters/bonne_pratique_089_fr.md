@@ -19,4 +19,4 @@ Utiliser des outils de virtualisation tels que VMware, Xen, KVM, etc.
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de serveurs physiques  |  75% |

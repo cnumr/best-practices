@@ -25,4 +25,4 @@ Un fichier de référence JavaScript de 248 Ko ne pèse que 97 Ko après minific
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de librairies JS non minifiées  |  0 |

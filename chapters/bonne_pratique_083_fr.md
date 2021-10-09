@@ -32,4 +32,4 @@ Exemple de configuration Apache utilisant le mode Deflate :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de page HTML non compressées | 0  |

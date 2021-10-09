@@ -30,4 +30,4 @@ www.greenit.fr/2009/05/18/quels-criteres-pour-identifier-un-hebergeur-vert
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de non signature par l'hébergeur de code de bonne conduite de la Commission Européenne ET affiche une politique environnementale ET de PUE supérieur à 1,5  |  0 |

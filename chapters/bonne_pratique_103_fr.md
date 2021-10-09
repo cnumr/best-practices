@@ -22,4 +22,4 @@ SetEnvIf Request_URI"^/rss/"dontlog CustomLog /var/log/apache/access.log combine
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|de logs HTTP   | 3  |

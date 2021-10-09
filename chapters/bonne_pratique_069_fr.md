@@ -27,4 +27,4 @@ for ($i = 0; $i < $count; $i++) {}
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de fonctions appelées au sein de la déclaration d'une boucle for  | 0  |

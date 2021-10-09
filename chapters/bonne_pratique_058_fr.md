@@ -19,4 +19,4 @@ Dans le cas d’un catalogue, la concaténation « à la volée » de fiches ell
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de PDF généré par le CMS   |  0 |

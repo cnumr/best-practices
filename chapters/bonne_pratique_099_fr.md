@@ -20,4 +20,4 @@ Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  d'entêtes sans cache HTTP identifié | 0  |

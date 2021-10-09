@@ -25,4 +25,4 @@ https://developers.google.com/speed/articles/reflow
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de modifications n'affectant pas le layout et occasionnant un repaint (ex: color, background, visibility) | 2  |

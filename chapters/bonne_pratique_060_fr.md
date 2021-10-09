@@ -22,4 +22,4 @@ Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de fichiers sonores encodés par le CMS  | 0  |

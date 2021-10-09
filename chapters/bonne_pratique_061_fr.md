@@ -20,4 +20,4 @@ La plupart des thèmes clés en main disponibles pour les principaux CMS privil�
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'éléments du DOM du thème  | 700  |

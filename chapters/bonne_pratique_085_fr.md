@@ -23,4 +23,4 @@ Le plan de fin de vie consiste à s’assurer que le jour où un site, une appli
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de site sans plan de fin de vie | 0  |

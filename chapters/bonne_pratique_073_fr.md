@@ -21,4 +21,4 @@ Aussi est-il judicieux de mettre en place un système de règles, excluant la re
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de connexions à une base de données pour requêter, stocker une donnée non nécessaire à l'utilisation du service | 0  |

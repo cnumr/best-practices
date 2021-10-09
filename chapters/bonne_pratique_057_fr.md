@@ -28,4 +28,4 @@ Il faut mettre en cache les requêtes des vues, les résultats des vues, les blo
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de cache non activé |  0 |

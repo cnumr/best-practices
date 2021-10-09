@@ -31,4 +31,4 @@ Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de courriels envoyés par l'URL au format HTML  |  25% |

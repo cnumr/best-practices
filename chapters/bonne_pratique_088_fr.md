@@ -19,4 +19,4 @@ Malgré leurs centaines de millions d’utilisateurs, les géants du Web ne prop
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'augmentation du niveau de disponibilité alors que la mise en place d'un backup aurait pu statisfaire le niveau de qualité de services  | 0  |

@@ -1,3 +1,4 @@
+## Utiliser les opérations primitives
 ### Indications
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
@@ -27,4 +28,4 @@ mais plutôt :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'opérations, méthodes réécrites et déjà fournies par le SDK  | 0  |

@@ -19,4 +19,4 @@ Si une requête Ajax retourne une liste de noms de villes, de noms de contacts o
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de réponses AJAX non mises en cache  | 10%  |

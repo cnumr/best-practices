@@ -22,4 +22,4 @@ Si l’image ajoutée directement dans le CMS pèse 7 Mo, on écono- misera :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'images redimensionnées dans le code HTML   |  0 |

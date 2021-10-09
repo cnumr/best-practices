@@ -21,4 +21,4 @@ Pour la réalisation d’un jeu concours basé sur des témoignages vidéo, il e
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de ressources, données du site web qui ne sont pas stockées sur une solution de cloud computing  |  0 |

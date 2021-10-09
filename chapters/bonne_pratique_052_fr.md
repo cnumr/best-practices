@@ -32,4 +32,4 @@ var timeoutID = setTimeout(uneFonction, 1000);
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de méthodes setTimeout et setInterval avec comme premier paramètre une chaine de caractères  | 0  |

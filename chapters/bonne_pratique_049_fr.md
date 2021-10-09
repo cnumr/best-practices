@@ -29,4 +29,4 @@ menu.property2 = 'bar'
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de données constantes (ou non volatiles) récupérés à plusieurs reprises sans être mises en cache  | 0  |

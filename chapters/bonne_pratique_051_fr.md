@@ -36,4 +36,4 @@ mais plutôt :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de fonctions non anonymes et appelées une seule fois  |  0 |

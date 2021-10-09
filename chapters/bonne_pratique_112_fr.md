@@ -27,4 +27,4 @@ Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conve
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de codec audio propriétaires (non libres) et de pistes audio dont le ratio poids en mega octet/durée en minute est superieur a 1  | 0  |

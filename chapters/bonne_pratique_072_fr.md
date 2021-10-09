@@ -36,4 +36,4 @@ $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES'. implode(',', $userD
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de requêtes SQL à l'intérieure d'une boucle  |  0 |

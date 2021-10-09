@@ -21,4 +21,4 @@ Si un sujet nécessite une longue explication, le découper en plusieurs pages e
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de textes affichées sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 | 0  |

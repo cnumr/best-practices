@@ -30,4 +30,4 @@ return $crm->fetchAllClients();
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'allocations temporaires à une variable pouvant être utilisées directement par l'instruction qui la renvoie  | 10%  |

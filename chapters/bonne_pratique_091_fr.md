@@ -19,4 +19,4 @@ Privilégier une installation « manuelle » du serveur (LAMP + CMS, par exemple
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de services non nécessaires au fonctionnement du site exécutés sur le système d'exploitation  |  0 |

@@ -27,4 +27,4 @@ Mieux vaut remplacer manuellement les adresses statiques intégrées aux pages w
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de redirections  | 1  |

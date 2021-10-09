@@ -25,4 +25,4 @@ Types de fichiers bureautiques pouvant être compressés facilement :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de documents non compressés   | 0  |

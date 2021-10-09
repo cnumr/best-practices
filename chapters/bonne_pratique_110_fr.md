@@ -24,4 +24,4 @@ Dans le cas d’un opérateur téléphonique ou d’une banque, laisser aux clie
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de fichiers de contacts en opt-out | 0  |

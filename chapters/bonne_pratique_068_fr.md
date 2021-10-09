@@ -39,4 +39,4 @@ return $pdfs;
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de variables restant en mémoire inutilement |  10% |

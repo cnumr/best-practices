@@ -21,4 +21,4 @@ De plus, certains CMS exécutent leur routine de recherche de contenu (dans la b
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de pages d'erreur 404 |  0 |

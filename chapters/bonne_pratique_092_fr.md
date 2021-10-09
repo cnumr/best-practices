@@ -25,4 +25,4 @@ Exemples d’intégration d’un cache RAM à Drupal :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de caches non mis en RAM  | 25%  |

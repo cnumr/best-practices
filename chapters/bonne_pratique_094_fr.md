@@ -20,4 +20,4 @@ Les leaders du Web utilisent un domaine séparé pour servir les res- sources st
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de domaines servant des ressources statiques AVEC un cookie  | 2  |

@@ -26,4 +26,4 @@ echo 'Lorem ipsum dolor sit amet, consectetur adi- pisicing elit, sed do eiusmod
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de ligne de code utilisant des guillements  | 10%  |

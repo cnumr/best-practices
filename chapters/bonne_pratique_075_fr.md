@@ -29,4 +29,4 @@ SELECT prenom, nom FROM personnes LIMIT 0, 25
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de requêtes SQL sans clause LMIT  | 0  |

@@ -42,4 +42,4 @@ someVarLength(aGlobal);
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de variables déclarées dans l'espace globale | 0  |

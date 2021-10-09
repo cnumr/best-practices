@@ -25,4 +25,4 @@ On peut aussi citer le compilateur HipHop for PHP, qui permet de traduire le cod
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de codes sources non mis en cache intermédiaire  | 10%  |

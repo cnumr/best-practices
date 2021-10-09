@@ -24,4 +24,4 @@ Nous pouvons par exemple utiliser:
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de lignes de code source non validées par des outils comme ESLint  | 0  |

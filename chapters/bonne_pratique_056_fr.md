@@ -32,4 +32,4 @@ $smarty->display('index.tpl');
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de système de template absents  |  1 |

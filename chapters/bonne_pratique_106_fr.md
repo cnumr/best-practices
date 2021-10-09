@@ -22,4 +22,4 @@ Pour MySQL, mettre en commentaire dans le fichier my.cnf (ou équivalent) :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'options --skip-log-bin et --disable-log-bin non activées dans le cas où les logs binaires ne sont pas utiles  | 0  |

@@ -24,4 +24,4 @@ www.ademe.fr
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de fichiers de contacts comportant des doublons  | 0  |

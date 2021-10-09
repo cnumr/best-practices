@@ -29,4 +29,4 @@ Quand utiliser les procédures stockées ?
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de requêtes pouvant être exécutées sous la forme de procédures stockées mais non implémentées sous cette forme |  20% |

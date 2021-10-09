@@ -28,4 +28,4 @@ Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de non activation de HSTS  | 0  |

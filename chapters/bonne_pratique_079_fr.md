@@ -29,4 +29,4 @@ Le module Apache mod_pagespeed de Google permet d’automati- ser ce processus. 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de fichiers CSS et JS non combinés  | 10%  |

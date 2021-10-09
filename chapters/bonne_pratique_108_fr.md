@@ -27,4 +27,4 @@ our un rapport annuel en PDF :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de PDF non optimisés  |  0 |

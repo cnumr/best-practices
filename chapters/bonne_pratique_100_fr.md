@@ -29,4 +29,4 @@ Ajouter dans le fichier .htaccess :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de favicon non mis en cache  | 0  |

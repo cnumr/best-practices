@@ -26,4 +26,4 @@ http://httpd.apache.org/docs/2.0/mod/core.html#allowoverride
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  de fichiers de configuration contenant le texte "AllowOverride" avec autre chose que "AllowOverride None" | 0  |

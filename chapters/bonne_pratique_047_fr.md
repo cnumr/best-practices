@@ -35,4 +35,4 @@ http://dev.opera.com/articles/view/efficient-javascript/?page=2# trycatch
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de try/catch/finally dans le code qui ne gèrent pas des problématiques exceptionnelles (coupure réseau, ressource indisponible, ...)  | 0  |

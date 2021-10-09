@@ -24,4 +24,4 @@ Dans le fichier de configuration de votre serveur Apache, situé à l’adresse 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de DNS lookup actif  |  0 |

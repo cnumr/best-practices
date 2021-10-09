@@ -19,4 +19,4 @@ Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèqu
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de ressources servies (fichiers)  sans utiliser un CDN  | 25%  |

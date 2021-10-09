@@ -25,4 +25,4 @@ Gain potentiel : 25 % de gain au minimum en jouant sur la palette de couleurs et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| d'images bitmap non compressées de façon idéale  | 0  |

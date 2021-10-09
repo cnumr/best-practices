@@ -26,4 +26,4 @@ Pour aller plus loin :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+| de serveurs applicatifs synchrones  | 0  |

@@ -25,4 +25,4 @@ https://tools.ietf.org/rfc/rfc2019.txt
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|   |   |
+|  La taille de cumulée de tous les cookies utilisés |  0 |
