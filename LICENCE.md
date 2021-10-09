@@ -14,8 +14,8 @@ Cette licence n'est pas applicable pour les versions ultérieures à la V3 qui s
 Les titres et les règles de validation des bonnes pratiques de la version 3 sont publiés sous licence Creative Commons BY-NC-ND. Cela signifie que vous pouvez l'utiliser librement pour des utilisations non commerciales, à la condition de maintenir la paternité du contenu, via un lien vers https://collectif.greenit.fr et https://www.ecoconceptionweb.com.
 Le contenu du référentiel publié chez Eyrolles est protégé par le droit d'auteur (http://www.culture.gouv.fr/culture/infos-pratiques/droits/protection.htm).
 
-Les versions ultérieures à la version 3, même celles en cours de travail, sont également protégées par le droit d'auteur sauf accord de la maison d'édition d'Eyrolles. 
-Toute reproduction ou diffusion publique partielle ou totale est strictement interdite sous peine de poursuite.
+Les versions ultérieures à la version 3, même celles en cours de travail, sont également protégées par le droit d'auteur sauf accord de la maison d'édition Eyrolles. 
+Toute reproduction ou diffusion publique partielle ou totale est strictement interdite sous peine de poursuite judiciaire.
 
 ## Titre
 
