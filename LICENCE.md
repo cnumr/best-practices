@@ -7,7 +7,7 @@ Vous avez l'obligation de transmettre les titres et les règles de validation de
 
 	Cette oeuvre, création, site ou texte est sous licence Creative Commons Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International. Pour accéder à une copie de cette licence, merci de vous rendre à l'adresse suivante http://creativecommons.org/licenses/by-nc-nd/4.0/ ou envoyez un courrier à Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 
-Cette licence n'est pas applicable pour les versions ultérieures à la V3.
+Cette licence n'est pas applicable pour les versions ultérieures à la V3 qui sont protégées par le droit d'auteur.
 
 ## Utilisation
 
@@ -15,7 +15,7 @@ Les titres et les règles de validation des bonnes pratiques de la version 3 son
 Le contenu du référentiel publié chez Eyrolles est protégé par le droit d'auteur (http://www.culture.gouv.fr/culture/infos-pratiques/droits/protection.htm).
 
 Les versions ultérieures à la version 3, même celles en cours de travail, sont également protégées par le droit d'auteur sauf accord de la maison d'édition d'Eyrolles. 
-Toute reproduction ou diffusion publique partielle ou totale est strictement interdite.
+Toute reproduction ou diffusion publique partielle ou totale est strictement interdite sous peine de poursuite.
 
 ## Titre
 
