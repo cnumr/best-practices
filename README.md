@@ -159,4 +159,4 @@ Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référ
 
 ## Licence
 
-Les sources et contenus de ce projet sont sous [licence Creative Commons BY-NC-ND](licence.md)
+Les sources et contenus de ce projet sont sous [protégés par le droit d'auteur](LICENCE.md)
