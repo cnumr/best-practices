@@ -22,3 +22,7 @@ Types de fichiers bureautiques pouvant être compressés facilement :
  - contenus multimédias (images, audio et vidéo).
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de documents non compressés   | 0  |

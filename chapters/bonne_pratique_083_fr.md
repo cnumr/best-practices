@@ -29,3 +29,7 @@ Exemple de configuration Apache utilisant le mode Deflate :
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  de page HTML non compressées | 0  |

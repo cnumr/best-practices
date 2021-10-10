@@ -27,3 +27,7 @@ Ainsi, pour la gestion de ses modules, le CMS Drupal utilise un système de « h
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| Le site repose sur un dév sur mesure  | 1  |

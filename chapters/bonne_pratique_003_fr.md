@@ -19,3 +19,7 @@ Si le processus en ligne commence par un e-mail et qu’il implique la fournitur
 Gain potentiel : jusqu’à deux fois moins de gaz à effet de serre émis, selon le type et la durée du processus.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'étapes par rapport à un site concurrent |   75%   |

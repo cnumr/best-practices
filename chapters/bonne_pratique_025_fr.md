@@ -42,3 +42,7 @@ dans votre projet (`devDependencies`) et utiliser la règle `shorthand-property-
 Vous trouverez la liste complète de ces propriétés raccourcies sur le site [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  de déclaration CSS similaires non regroupées | 1  |

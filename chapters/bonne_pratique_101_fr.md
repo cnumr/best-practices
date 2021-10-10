@@ -30,3 +30,7 @@ Voici un exemple de configuration des en-têtes Expires et Cache- Control pour l
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'entêtes manquantes Expires ou Cache-Control  |  5% |

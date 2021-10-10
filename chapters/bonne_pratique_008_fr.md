@@ -18,3 +18,7 @@ Cette approche permet de réaliser des traitements par lots (batchs), souvent pl
 Dans le cas d’un service en ligne de conversion de documents bureau- tiques, inciter l’utilisateur à déposer ses fichiers en une seule fois, puis l’avertir par e-mail lorsque le traitement est terminé. Pour optimiser le processus, l’ensemble des fichiers peut être regroupé et compressé dans une archive.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de traitements synchrones qui prennent plus d'une minute  | 0  |

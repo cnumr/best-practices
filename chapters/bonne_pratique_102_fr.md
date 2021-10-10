@@ -16,3 +16,7 @@ Les réponses Ajax qui seront inchangées dans un futur proche ne doivent pas ê
 Si une requête Ajax retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client pour ne pas générer à nouveau une requête vers le serveur.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de réponses AJAX non mises en cache  | 10%  |

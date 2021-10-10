@@ -22,3 +22,7 @@ http://en.wikipedia.org/wiki/List_of_PHP_accelerators
 On peut aussi citer le compilateur HipHop for PHP, qui permet de traduire le code source PHP en C++, lequel est ensuite compilé en binaires natifs à l’aide de g++.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de codes sources non mis en cache intermédiaire  | 10%  |

@@ -22,3 +22,7 @@ Voir la RFC 2109 de l’IETF (Internet Engineering Task Force) pour en savoir pl
 https://tools.ietf.org/rfc/rfc2019.txt
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  La taille de cumulée de tous les cookies utilisés |  0 |

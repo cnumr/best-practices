@@ -22,3 +22,7 @@ Utiliser le module Apache mod_pagespeed de Google pour automa- tiser cette opér
 Un fichier de référence JavaScript de 248 Ko ne pèse que 97 Ko après minification.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de librairies JS non minifiées  |  0 |

@@ -27,3 +27,7 @@ En savoir plus sur Deflate :
 http://httpd.apache.org/docs/2.4/mod/mod_deflate.html
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de librairies CSS  | 5  |

@@ -23,3 +23,7 @@ Pour aller plus loin :
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de serveurs applicatifs synchrones  | 0  |

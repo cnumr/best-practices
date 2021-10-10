@@ -32,3 +32,7 @@ mais plutôt :
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de sélecteurs CSS qui n'utilisent ni d'id, ni de class et ni d'attribut  |  0 |

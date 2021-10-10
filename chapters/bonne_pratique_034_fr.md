@@ -18,3 +18,7 @@ La meilleure solution consiste à utiliser des images redimensionnées en dehors
 Dans la mesure où le contenu proposé par les utilisateurs du site web n’a pas de valeur ajoutée particulière, il est préférable de leur interdire la possibilité d’insérer des images à partir d’un éditeur WYSIWYG comme CKEditor.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  d'images redimensionnées dans le code HTML  | 0  |

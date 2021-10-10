@@ -39,3 +39,7 @@ Si la données qui est proposée à l'utilisateur est assez petite en quantité,
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de champs en autocomplétion  | 20%  |

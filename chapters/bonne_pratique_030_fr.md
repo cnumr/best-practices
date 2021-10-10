@@ -19,3 +19,7 @@ Pour aller plus loin :
 http://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'images qui auraient pu être remplacées par un glyphe (symbole de police de caractère)  | 0  |

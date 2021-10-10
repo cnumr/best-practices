@@ -26,3 +26,7 @@ On peut donc estimer un gain d’au moins 50 % du poids (et proba- blement des g
 Avec 3 tailles différentes × 3 encodages différents, soit 9 versions d’une même vidéo, la plupart des cas devraient être couverts. Avec une logique de responsive design, il est possible de servir telle ou telle vidéo en fonction de règles simples telles que la résolution d’écran.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de vidéos avec une définition de 1080p ou + affichées sur le site web quand le terminal détecté est un smartphone  |  0 |

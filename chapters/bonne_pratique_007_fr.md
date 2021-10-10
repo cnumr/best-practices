@@ -22,3 +22,7 @@ Par conséquent, ne pas prévoir d’éléments qui rendent la page inuti- lisab
  - les effets JavaScript qui font disparaître le contenu de la page lorsqu’on la quitte.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de pages / URLs ne respectant pas ce principe  |  10% |

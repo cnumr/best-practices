@@ -33,3 +33,7 @@ void go_shopping(Fridge fridge)
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de surcharges de getters ou setters natifs  | 0  |

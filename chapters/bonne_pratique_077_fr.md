@@ -28,3 +28,7 @@ en un seul ;
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de fichiers CSS non minifiés  | 0  |

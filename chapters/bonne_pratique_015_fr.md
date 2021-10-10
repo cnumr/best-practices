@@ -24,3 +24,7 @@ En effet, plus la solution retenue est « packagée », plus elle empile des cou
 Un système de tchat sera bien plus performant et économique s’il est développé en JavaScript via Node.js qu’avec une solution PHP.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de technologies inopportunes  | 1  |

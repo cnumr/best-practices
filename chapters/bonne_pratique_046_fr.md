@@ -21,3 +21,7 @@ Nous pouvons par exemple utiliser:
 * [Stylelint](https://stylelint.io/) pour vs feuilles de styles
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de lignes de code source non validées par des outils comme ESLint  | 0  |

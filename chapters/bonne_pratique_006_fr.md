@@ -20,3 +20,7 @@ Parmi les solutions clés en main, RESS.io automatise la mise en œuvre de bonne
 La mise en place d’une architecture RESS plutôt qu’une approche responsive design standard (RWD) peut aller jusqu’à diviser par 4 la bande passante consommée, pour de meilleurs temps de réponse. Plus la taille de l’écran est petite, plus l’approche RESS sera intéressante.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de conception ne s'appuyant pas sur une approche"mobile first"  |  1 |

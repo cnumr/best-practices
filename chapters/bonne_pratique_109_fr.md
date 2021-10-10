@@ -21,3 +21,7 @@ Pour en savoir plus sur l’analyse de cycles de vies des technologies :
 www.ademe.fr
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de fichiers de contacts comportant des doublons  | 0  |
