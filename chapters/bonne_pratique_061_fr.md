@@ -17,3 +17,7 @@ La plupart des thèmes clés en main disponibles pour les principaux CMS privil�
 ![img_2.png](img_2.png)
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'éléments du DOM du thème  | 700  |

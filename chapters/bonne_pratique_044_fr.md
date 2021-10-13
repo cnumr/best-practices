@@ -44,3 +44,7 @@ Il intercepte les événements de tous ses fils.
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'écoutes (listeners) d'un même événement sur plusieurs éléments HTML, faisant partie d'un même groupe, sans utiliser la délégation d'événements  | 0  |

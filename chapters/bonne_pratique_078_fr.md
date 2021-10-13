@@ -24,3 +24,7 @@ AddOutputFilterByType DEFLATE application/x- javascript
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de librairies CSS et JS non compressées  |  0 |

@@ -21,3 +21,7 @@ Il est donc recommandé d’utiliser la pratique du double opt-in pour réduire 
 Dans le cas d’un opérateur téléphonique ou d’une banque, laisser aux clients le choix parmi un catalogue de produits ou de services pour lesquels ils acceptent d’être sollicités.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  de fichiers de contacts en opt-out | 0  |

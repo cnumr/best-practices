@@ -22,3 +22,7 @@ Les sites à visiter :
 - https://jamstack.wtf/
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de pages dynamiques est   | 25%  |

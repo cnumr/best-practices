@@ -16,3 +16,7 @@ Désinstaller tous les services qui ne sont pas indispensables au bon fonctionne
 Privilégier une installation « manuelle » du serveur (LAMP + CMS, par exemple) plutôt qu’une distribution avec une surcouche de type cPanel ou Plesk. Et si une surcouche d’administration est nécessaire, préférer des solutions légères comme Webmin.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de services non nécessaires au fonctionnement du site exécutés sur le système d'exploitation  |  0 |

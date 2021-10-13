@@ -18,3 +18,7 @@ Cette approche est donc judicieuse pour les images et autres res- sources statiq
 Pour la réalisation d’un jeu concours basé sur des témoignages vidéo, il est plus efficace de recourir au service de stockage S3 d’Amazon que d’ajouter de nouveaux disques durs aux serveurs existants.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de ressources, données du site web qui ne sont pas stockées sur une solution de cloud computing  |  0 |

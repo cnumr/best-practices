@@ -23,3 +23,7 @@ SELECT raison_social, adresse, code_postal, telephone FROM clients;
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de requêtes SQL de type SELECT * FROM  | 0  |

@@ -17,3 +17,7 @@ Les logiciels open source sont souvent « forkés » (dérivés) pour des raison
  - À MySQL, préférer plutôt la version optimisée Percona Server.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de forks orientés performance est supérieur ou égal à   | 1  |

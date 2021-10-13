@@ -31,3 +31,7 @@ Cette image de 198 × 198 pixels pèse :
 Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un format bitmap tout en pouvant être retaillé à l’infini.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'images d'interface pour l'URL testée   | 5  |

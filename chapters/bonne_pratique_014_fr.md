@@ -19,3 +19,7 @@ Cette approche est valable à tous les niveaux de granularité, pour un dévelop
 Les logiciels open source les plus efficients, comme nginX, Apache, MySQL ou PHP, reposent sur cette architecture modulaire.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  Le site s'appuie sur une architecture modulaire | 1  |

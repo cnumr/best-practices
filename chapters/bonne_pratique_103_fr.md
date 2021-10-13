@@ -19,3 +19,7 @@ SetEnvIf Request_URI".(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$"dontlo
 SetEnvIf Request_URI"^/rss/"dontlog CustomLog /var/log/apache/access.log combined env=!dontlog
 ```
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|de logs HTTP   | 3  |

@@ -29,3 +29,7 @@ https://www.nuweb.fr/736
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de librairies externes  | 0  |

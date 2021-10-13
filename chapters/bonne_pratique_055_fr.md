@@ -34,3 +34,7 @@ $('a').click(function () {
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'effets d'animation (fadeIn, fadeOut, slideUp, slideDown, animate) dans la page  |  1 |

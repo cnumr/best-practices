@@ -20,3 +20,7 @@ Si l’application est déjà développée, il faut mesurer le taux d’utili- s
 Les succès récents du Web – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – fournissent un seul service et misent sur une grande sobriété fonctionnelle
 
 ### Principe de validation
+
+| Le nombre ... |     est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de fonctionnalités rarement utilisées    |  10 % |

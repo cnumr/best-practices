@@ -27,3 +27,7 @@ Pour aller plus loin :
  - www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de notations CSS non abrégé  |  20% |

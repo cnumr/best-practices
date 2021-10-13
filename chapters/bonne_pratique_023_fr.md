@@ -33,3 +33,7 @@ Préférer l’écriture :
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  d'images qui auraient pu être remplacées par des CSS |  0 |

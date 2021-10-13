@@ -24,3 +24,7 @@ qui n’en génère que 3.
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de $i++  | 10%  |

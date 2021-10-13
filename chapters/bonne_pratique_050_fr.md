@@ -39,3 +39,7 @@ someVarLength(aGlobal);
 ```
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+|  de variables déclarées dans l'espace globale | 0  |

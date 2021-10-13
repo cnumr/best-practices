@@ -16,3 +16,7 @@ Certains fichiers comme les bibliothèques JavaScript, les feuilles de style CSS
 Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèques JavaScript couramment utilisées.
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de ressources servies (fichiers)  sans utiliser un CDN  | 25%  |

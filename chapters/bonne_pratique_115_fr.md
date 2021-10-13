@@ -26,3 +26,7 @@ Pour aller plus loin :
 http://jqueryui.com/demos
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| de pages / URLs intégrant un contenu Flash  |  0 |

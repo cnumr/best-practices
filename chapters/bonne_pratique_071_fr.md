@@ -29,3 +29,7 @@ private function dataParserLoad() {
 
 
 ### Principe de validation
+
+| Le nombre ...     | est inférieur ou égal à   |  
+|-------------------|:-------------------------:|
+| d'attributs de classes constants et non partagés par l'ensemble des instances de la classe (ie: non statiques)  | 0  |
