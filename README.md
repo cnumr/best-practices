@@ -46,7 +46,7 @@ Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référ
 * :o: #009 [Limiter le nombre de requêtes HTTP](/chapters/bonne_pratique_009_fr.md)
 * :o: #010 [Stocker les données statiques localement](/chapters/bonne_pratique_010_fr.md)
 * :o: #011 [Utiliser un framework ou développer sur mesure](/chapters/bonne_pratique_011_fr.md)
-* :o: #012 [Limiter le recours aux plugins](/chapters/bonne_pratique_012_fr.md)
+* :beginner: #012 [Limiter le recours aux plugins](/chapters/bonne_pratique_012_fr.md)
 * :o: #013 [Favoriser les pages statiques](/chapters/bonne_pratique_013_fr.md)
 * :o: #014 [Créer une architecture applicative modulaire](/chapters/bonne_pratique_014_fr.md)
 * :o: #015 [Choisir les technologies les plus adaptées](/chapters/bonne_pratique_015_fr.md)
@@ -100,8 +100,8 @@ Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référ
 * :o: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/bonne_pratique_063_fr.md)
 * :o: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/bonne_pratique_064_fr.md)
 * :o: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/bonne_pratique_065_fr.md)
-* :o: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/bonne_pratique_066_fr.md)
-* :o: #067 [Remplacer les $i++ par ++$i](/chapters/bonne_pratique_067_fr.md)
+* :beginner: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/bonne_pratique_066_fr.md)
+* :beginner: #067 [Remplacer les $i++ par ++$i](/chapters/bonne_pratique_067_fr.md)
 * :o: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/bonne_pratique_068_fr.md)
 * :o: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/bonne_pratique_069_fr.md)
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/bonne_pratique_070_fr.md)
@@ -145,11 +145,11 @@ Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référ
 * :o: #108 [Optimiser les PDF](/chapters/bonne_pratique_108_fr.md)
 * :o: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/bonne_pratique_109_fr.md)
 * :o: #110 [N'utiliser que des fichiers double opt-in](/chapters/bonne_pratique_110_fr.md)
-* :o: #111 [Préférer le texte brut au HTML](/chapters/bonne_pratique_111_fr.md)
+* :beginner: #111 [Préférer le texte brut au HTML](/chapters/bonne_pratique_111_fr.md)
 * :o: #112 [Adapter les sons aux contextes d'écoute](/chapters/bonne_pratique_112_fr.md)
 * :o: #113 [Adapter les textes au web](/chapters/bonne_pratique_113_fr.md)
 * :o: #114 [Adapter les vidéos aux contextes de visualisation](/chapters/bonne_pratique_114_fr.md)
-* :o: #115 [Limiter l'utilisation du Flash](/chapters/bonne_pratique_115_fr.md)
+* :beginner: #115 [Limiter l'utilisation du Flash](/chapters/bonne_pratique_115_fr.md)
 
 ### Liste des bonnes pratiques ajoutées en v4.0.0
 * ...
