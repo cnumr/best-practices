@@ -9,23 +9,14 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer depuis presque de 10 ans.
 
-Nous vous invitons à participer à la prochaine version en suivant [le guide des contributeurs](CONTRIBUTING.md).
-
-
-## Les membres présents sur ce dépôt
-Nom / Prénom                                        | Entreprise
-------------                                        | -------------         
-[Emmanuel Demey](https://github.com/EmmanuelDemey)  | -
-[Romuald Priol](https://github.com/DocRoms)         | -
-[Thomas Lemaire](https://github.com/ACTLEM)         | -
-
 ## Les besoins
 Ce référentiel date d'il y a quelques années, bien qu'il ai été mis à jour en 2015 et en 2019, il y a des règles qui 
 meritent d'être débattues, d'être ajoutées, et certaines d'être supprimées (:speak_no_evil:) .
 Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référentiel.
 
 ## Comment contribuer ?
-...
+
+Nous vous invitons à participer à la prochaine version en suivant [le guide des contributeurs](CONTRIBUTING.md).
 
 ## La liste des 115 Bonnes pratiques
 ### Légende
