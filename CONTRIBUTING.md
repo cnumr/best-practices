@@ -62,7 +62,7 @@ Une modification majeure peut être:
 
 Tout contributeur peut donner son avis sur la proposition:
 
-- En cas d'accord, un contributeur ajoute un "pouce haut"
+- En cas d'accord, un contributeur clique sur la "flèche vers le haut"
 - En cas de désaccord, un contributeur ajoute un "pouce bas" et devra obligatoirement expliquer via un commentaire les raisons de son désaccord
 - En cas d'incompréhension, il peut entamer une discussion pour demander des précisions
 - En cas d'idée d'amélioration, il peut la proposer
