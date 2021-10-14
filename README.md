@@ -106,7 +106,7 @@ Nous vous invitons à participer à la prochaine version en suivant [le guide de
 * :o: #077 [Minifier les fichiers CSS](/chapters/BP_077_fr.md)
 * :o: #078 [Compresser les librairies CSS et Javascript](/chapters/BP_078_fr.md)
 * :o: #079 [Combiner les fichiers CSS et JavaScript](/chapters/BP_079_fr.md)
-* :o: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
+* :beginner: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
 * :o: #081 [Minifier les fichiers JavaScript](/chapters/BP_081_fr.md)
 * :o: #082 [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
 * :o: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
