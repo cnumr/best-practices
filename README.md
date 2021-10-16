@@ -10,7 +10,7 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer depuis presque de 10 ans.
 
 ## Les besoins
-Ce référentiel date d'il y a quelques années, bien qu'il ai été mis à jour en 2015 et en 2019, il y a des règles qui 
+Ce référentiel date d'il y a quelques années, bien qu'il ai été mis à jour en 2015 et en 2019, il y a des bonnes pratiques qui 
 meritent d'être débattues, d'être ajoutées, et certaines d'être supprimées (:speak_no_evil:) .
 Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référentiel.
 
@@ -20,11 +20,11 @@ Nous vous invitons à participer à la prochaine version en suivant [le guide de
 
 ## La liste des 115 Bonnes pratiques
 ### Légende
- :heavy_check_mark: Règle mise à jour depuis la `v3.0.0`, validée pour la `v4.0.0`
+ :heavy_check_mark: Bonne pratique mise à jour depuis la `v3.0.0`, validée pour la `v4.0.0`
  
- :beginner: Règle actuellement en discussion [ici](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques)
+ :beginner: Bonne pratique actuellement en discussion [ici](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques)
  
- :o: Règle non mise à jour depuis la `v3.0.0`
+ :o: Bonne pratique non mise à jour depuis la `v3.0.0`
  
 ### Liste des bonnes pratiques
 * :o: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
