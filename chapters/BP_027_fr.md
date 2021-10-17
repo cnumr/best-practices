@@ -1,5 +1,13 @@
 ## Fournir une CSS print
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   16   | 30  | 27  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |   facile                  |  Fort                 | 
@@ -10,9 +18,11 @@
 |    |
 
 ### Règle
+
 Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, et donc indirectement l’empreinte éco- logique du site web. La plus dépouillée possible, elle doit proposer une police de caractères économe en encre (Century Gothic, par exemple). Pensez aussi à masquer le header, le footer, le menu, le sidebar, sup- primer toutes les images sauf celles du contenu, etc.
 
 ### Exemple
+
 Cette CSS print « nettoie » la page affichée à l’écran afin de proposer une impression épurée :
 ```css
 body {

@@ -1,5 +1,13 @@
 ## Utiliser les procédures stockées
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  58    | 75  | 76  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Difficile                |    Fort               | 
@@ -10,6 +18,7 @@
 | Processeur / Mémoire vive / Réseau   |
 
 ### Règle
+
 Les procédures stockées sont plus performantes et économes en res- sources que les requêtes SQL envoyées par le serveur d’applications vers le système de gestion de base de données relationnelles (SGBDR). Deux raisons à cela :
  - une procédure stockée économise au serveur l’interprétation de la
 requête puisqu’elle est précompilée ;
@@ -20,6 +29,7 @@ Il faut donc s’appuyer au maximum sur cette fonctionnalité du SGBDR.
 Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge les procédures stockées.
 
 ### Exemple
+
 Quand utiliser les procédures stockées ?
  - Pour éviter d’envoyer des requêtes complexes au serveur SQL, qui font l’objet d’une analyse syntaxique puis d’une interprétation avant d’être exécutées. Ces étapes consomment beaucoup de res- sources.
  - Pour simplifier le code du site et favoriser ainsi sa maintenabilité. En effet, l’empreinte écologique d’un site est aussi constituée des ressources mises en œuvre pour le maintenir et le faire évoluer.

@@ -1,5 +1,13 @@
 ## Découper les CSS
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   9   | 24  | 21  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |   Standard                | Fort                  | 
@@ -10,9 +18,11 @@
 |    |
 
 ### Règle
+
 Employer un ensemble de CSS plutôt qu’une seule, et appeler uniquement les CSS utiles en fonction du contexte. Cette méthode permet de limiter le poids de la page lors du premier téléchargement, donc d’économiser de la bande passante et de réduire la charge CPU.
 
 ### Exemple
+
 Découper les CSS en fonction de la logique fonctionnelle :
  - layout ;
  - content ;

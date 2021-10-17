@@ -1,5 +1,13 @@
 ## Supprimer tous les warning et toutes les notices
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   51   |  65 | 70  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Standard                 |    Fort               | 
@@ -10,9 +18,11 @@
 | Processeur / Stokage   |
 
 ### Règle
+
 Les warnings et notices ralentissent les serveurs d’applications tels que PHP, car ces derniers doivent retracer l’origine des erreurs et inscrire dans les différents journaux système les messages expliquant les problèmes rencontrés.
 
 ### Exemple
+
 Éviter :
 ```html
 <html>

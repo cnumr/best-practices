@@ -1,6 +1,13 @@
 ## Favoriser un design simple, épuré, adapté au web
 
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  5    | 6  | 5  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       | Standard                  | Fort                  | 
@@ -11,9 +18,11 @@
 | Processeur / Mémoire vive / Réseau   |
 
 ### Règle
+
 Exploiter les fonctionnalités d’HTML5 et de CSS3 pour concevoir le design d’un site. Il ne faut surtout pas imaginer un site sans prendre en compte les contraintes techniques, puis essayer de le réaliser.
 
 ### Exemple
+
 Proposer des dégradés de couleurs, un style de coins arrondis, etc., qui puissent être réalisés en CSS3 au lieu de nécessiter des images.
 ```css
 /* Exemple de bords arrondis */

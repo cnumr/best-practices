@@ -1,5 +1,13 @@
 ## Générer des spritesheets CSS
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  18    | 23  | 20  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |   Conseillé       |   Difficile               |  Fort                 | 
@@ -10,11 +18,13 @@
 |    |
 
 ### Règle
+
 Regrouper les images de petite taille (celles de l’interface du site, par exemple) dans une seule image de plus grande taille appelée sprite- sheet.
 
 Ce procédé réduit significativement le nombre de requêtes HTTP. De nombreux services en ligne gratuits (CSS Sprite Generator du Project Fondue, CSSsprites.com, SpriteMe.org…) permettent de générer ces spritesheets.
 
 ### Exemple
+
 Voici quelques adresses de générateurs de sprites :
  - http://csssprites.com
  - http://spritegen.website-performance.org

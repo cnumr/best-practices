@@ -1,5 +1,13 @@
 ## Optimiser la taille des cookies
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   65   | 82  | 82  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Non Prioritaire  | Standard                  |    Moyen              | 
@@ -10,9 +18,11 @@
 |  Réseau  |
 
 ### Règle
+
 Un cookie permet de maintenir un état entre le navigateur de l’inter- naute et le serveur web distant grâce à des identifiants. Ce fichier texte est transféré dans chaque requête HTTP. Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
 
 ### Exemple
+
 On peut supprimer automatiquement un cookie lorsqu’il n’est plus utile, en précisant une date d’expiration, de la manière suivante :
 ```
 Set-Cookie: user_mavariable=mavaleur; expires=Wed,

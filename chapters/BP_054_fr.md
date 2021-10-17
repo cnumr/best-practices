@@ -1,5 +1,13 @@
 ## Réduire les accès au DOM via JavaScript
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   32   | 42  | 54  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Standard                 | Fort                  | 
@@ -10,6 +18,7 @@
 |  Processeur / Mémoire vive  |
 
 ### Règle
+
 L’accès au DOM (Document Object Model) via JavaScript est une pro- cédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
 
 Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retra- verser l’arbre à chaque manipulation du document.
@@ -17,6 +26,7 @@ Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliser
 Il est également possible d’utiliser des bibliothèques de type « Sha- dow DOM », qui optimisent les modifications de l’arbre par un sys- tème de batch.
 
 ### Exemple
+
 Pour en savoir plus, vous pouvez consulter le projet de Shadow DOM du W3C :
 https://w3c.github.io/webcomponents/spec/shadow/
 et les préconisations du W3C pour réduire les accès au DOM via JavaScript :

@@ -1,5 +1,13 @@
 ## Utiliser la délégation d'évènements
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  41    | 46  | 44  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Facile                   | Fort                  | 
@@ -10,9 +18,11 @@
 | Processeur / Mémoire vive   |
 
 ### Règle
+
 La délégation d’événements permet de ne pas surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs élé- ments du DOM (Document Object Model).
 
 ### Exemple
+
 L’élément du DOM dont l’ID est t est déclaré comme le délégué. 
 Il intercepte les événements de tous ses fils.
 ```html

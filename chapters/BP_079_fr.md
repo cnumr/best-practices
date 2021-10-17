@@ -1,5 +1,13 @@
 ## Combiner les fichiers CSS et JavaScript
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  89    | 81  | 79  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Facile                   |    Fort               | 
@@ -10,9 +18,11 @@
 | Requêtes |
 
 ### Règle
+
 La combinaison de feuilles de style CSS ou de bibliothèques Javascript permet de réduire le nombre de requêtes HTTP.
 
 ### Exemple
+
 Le module Apache mod_pagespeed de Google permet d’automati- ser ce processus. Il fournit un ensemble de filtres spécialisés, parmi lesquels :
  - combine_css. Combine les CSS en une seule ;
  - combine_javascript. Combine plusieurs fichiers JavaScript en un seul ;

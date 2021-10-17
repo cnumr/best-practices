@@ -1,5 +1,13 @@
 ## Utiliser les notations CSS abrégées
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   15   | 29  | 26  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |   facile                  |  Fort                 | 
@@ -10,9 +18,11 @@
 |    |
 
 ### Règle
+
 Utiliser les notations CSS abrégées pour réduire le poids de la feuille de styles.
 
 ### Exemple
+
 Ne pas écrire :
 ```css
 margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;

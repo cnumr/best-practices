@@ -1,5 +1,13 @@
 ## Grouper les déclarations CSS similaires
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   14   | 28  | 25  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |   facile                  |  Fort                 | 
@@ -10,9 +18,11 @@
 |    |
 
 ### Règle
+
 Lorsque plusieurs éléments du DOM (Document Object Model) ont des propriétés CSS communes, les déclarer ensemble dans la même feuille de styles. Cette méthode permet de réduire le poids de la CSS.
 
 ### Exemple
+
 
 Ne pas écrire :
 ```css

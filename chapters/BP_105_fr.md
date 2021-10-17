@@ -1,5 +1,13 @@
 ## Apache Vhost : désactiver le AllowOverride
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  81    | 101  | 105  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Facile                   |    Moyen              | 
@@ -10,10 +18,12 @@
 |  Processeur  |
 
 ### Règle
+
 Lorsque la directive `AllowOverride` est activée, le serveur HTTP Apache doit remonter toute la hiérarchie des répertoires pour, peut- être, y trouver un fichier .htaccess contenant des règles de sur- charge. 
 C’est pourquoi il est conseillé de désactiver si possible cette directive dans la configuration d’Apache.
 
 ### Exemple
+
 Dans le fichier de configuration de votre hôte Apache, ajouter :
 ```apacheconf
 AllowOverride none

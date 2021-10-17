@@ -1,5 +1,13 @@
 ## Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string
+
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   26   | 40  | 52  |      |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Standard                 | Fort                  | 
@@ -10,12 +18,14 @@
 | Processeur |
 
 ### Règle
+
 `setTimeout()` et `setInterval()` peuvent prendre en argument des fonctions ou des chaînes de caractères (`strings`).
 D’après la bonne pratique précédente, il est déconseillé d’utiliser `eval()` et donc de passer des chaînes de caractères. 
 Par ailleurs, si l’argument passé est une chaîne, le moteur d’interprétation va devoir l’évaluer pour la transformer en code. 
 En revanche, si cet argument est une fonction ou une référence à une fonction, l’évaluation ne sera pas nécessaire, ce qui permettra d’économiser des cycles CPU.
 
 ### Exemple
+
 Ne pas écrire :
 ```javascript
 var timeoutID = setTimeout('console.log("Hello Dolly");', 1000);
