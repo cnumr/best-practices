@@ -1,6 +1,13 @@
 ## Limiter le nombre de requêtes HTTP
 
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       | Standard                  | Fort                  | 
@@ -11,6 +18,7 @@
 | Réseau / Requêtes    |
 
 ### Règle
+
 Le temps de chargement d’une page côté navigateur est directement corrélé au nombre de fichiers que le navigateur doit télécharger, et au poids unitaire de chaque fichier.
 
 Pour chaque fichier, le navigateur émet un GET HTTP vers le serveur est directement corrélé au nombre de fichiers que le navigateur doit télécharger, et au poids unitaire de chaque fichier.
@@ -24,6 +32,7 @@ De nombreuses approches permettent de réduire le nombre de requêtes par page :
  - mettre en cache navigateur tout ce qui peut l’être.
 
 ### Exemple
+
 Gain potentiel : réduction de la charge serveur, donc du nombre d’équipements nécessaires – de leur empreinte environnementale et économique –, des serveurs HTTP jusqu’aux serveurs d’applications et aux SGBD/R.
 
 ### Solution alternative

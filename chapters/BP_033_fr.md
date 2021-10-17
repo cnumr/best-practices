@@ -1,5 +1,12 @@
 ## Supprimer les balises images dont l’attribut SRC est vide
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |   facile                  |  Fort                 | 
@@ -10,9 +17,11 @@
 |    |
 
 ### Règle
+
 Si une balise image est présente et que son attribut SRC est vide, le navigateur va appeler la page d’index du niveau d’arborescence où il se situe, générant des requêtes HTTP supplémentaires et inutiles.
 
 ### Exemple
+
 La balise image suivante demandera au serveur le fichier index du répertoire foo :
 ```html
 <img src='' alt='' />

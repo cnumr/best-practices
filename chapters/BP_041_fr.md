@@ -1,5 +1,12 @@
 ## Ne pas faire de modification du DOM lorsqu’on le traverse
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Standard                 |  Fort                 | 
@@ -10,9 +17,11 @@
 |  Processeur  |
 
 ### Règle
+
 Modifier le DOM (Document Object Model) lorsqu’on le traverse peut engendrer des situations où la boucle devient très gourmande en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments en le traversant, il est possible de générer une boucle infinie qui consommera une grande quantité de ressources. Ce genre de modification est donc fortement déconseillée.
 
 ### Exemple
+
 Éviter :
 ```html
 <script>

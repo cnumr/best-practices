@@ -1,5 +1,12 @@
 ## Limiter le nombre de CSS
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |   Facile                  | Fort                  | 
@@ -10,12 +17,14 @@
 |    |
 
 ### Règle
+
 Limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP. Si plusieurs feuilles de style sont utilisées sur toutes les pages du site, concaténez-les dans un seul fichier.
 
 Certains CMS et frameworks fournissent des solutions automatiques pour effectuer ce type d’optimisation. Il est également possible de paramétrer le serveur HTTP pour qu’il réduise la taille des feuilles de style en les compressant 
 (voir la [bonne pratique n° 83](/chapters/bonne_pratique_083_fr.md)).
 
 ### Exemple
+
 Avec le serveur web Apache, il suffit d’ajouter dans le fichier de configuration .htaccess la ligne suivante :
 ```apacheconf
 # compress css :

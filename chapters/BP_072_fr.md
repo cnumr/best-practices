@@ -1,5 +1,12 @@
 ## Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Standard                 |    Fort               | 
@@ -10,11 +17,13 @@
 |   Processeur / Mémoire vive / Réseau  |
 
 ### Règle
+
 Les requêtes SQL à l’intérieur d’une boucle posent de gros problèmes de performance, et ce d’autant plus si le(s) serveur(s) SQL n’est (ne sont) pas sur la machine locale. En effet, ces serveurs sont optimisés pour traiter plusieurs sélections, insertions ou modifications dans une seule requête ou une seule transaction.
 
 Mal utilisées, ces requêtes consomment inutilement des cycles CPU, de la mémoire vive et de la bande passante.
 
 ### Exemple
+
 Ne pas écrire :
 ```php
 foreach ($userList as $user) {

@@ -1,5 +1,12 @@
 ## Choisir un hébergeur "vert"
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Difficile                |    Fort               | 
@@ -10,6 +17,7 @@
 |  Déchets électroniques, consommation électrique, émissions de gaz à effet de serre |
 
 ### Règle
+
 Préférer un hébergeur qui combine des serveurs économes à des sources d’énergies renouvelables et qui compense ses émissions de gaz à effet de serre. Les six critères à prendre en compte sont :
 1.	gestion des DEEE (déchets d’équipements électriques et électro- niques) ;
 2.	efficience énergétique du data center ;
@@ -19,6 +27,7 @@ Préférer un hébergeur qui combine des serveurs économes à des sources d’�
 6.	compensation carbone.
 
 ### Exemple
+
 Les hébergeurs suivants utilisent exclusivement des énergies renouvelables ou compensées :
  - www.aiso.net
  - www.infomaniak.com

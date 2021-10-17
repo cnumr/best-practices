@@ -1,5 +1,12 @@
 ## Favoriser les polices standards
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |   facile                  |  Fort                 | 
@@ -10,9 +17,11 @@
 |    |
 
 ### Règle
+
 Péférer les polices standards, car elles sont déjà présentes sur l’ordina- teur de l’internaute, qui n’a donc pas besoin de les télécharger. On éco- nomise ainsi de la bande passante, tout en accélérant l’affichage du site.
 
 ### Exemple
+
 Dans la mesure du possible, privilégier des polices de caractères comme :
  - Courier New ;
  - Georgia ;

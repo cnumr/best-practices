@@ -1,5 +1,12 @@
 ## Remplacer les boutons officiels de partage des réseaux sociaux
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Conseillé        |      Standard             |  Fort                 | 
@@ -10,9 +17,11 @@
 |    |
 
 ### Règle
+
 Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. fournissent des plug-ins à installer sur une page web pour y afficher un bouton Partager et un compteur de J’aime. Ces plug- ins JavaScript sont très gourmands en ressources : pour fonctionner, ils nécessitent un grand nombre de requêtes et de télécharger des fichiers lourds. Mieux vaut leur préférer des liens directs, en HTML, vers les pages de partage. On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que http://www.sharelinkgenerator.com/.
 
 ### Exemple
+
 es réseaux sociaux possèdent tous une URL qui permet à leurs membres de partager une page web :
  - Facebook Share : https://www.facebook.com/sharer/sharer.php?u=XXXXX
  - Facebook Like : https://www.facebook.com/plugins/like.php?href=XXXXX

@@ -1,5 +1,12 @@
 ## Favoriser HSTS Preload list aux redirections 301
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Standard                 |    Fort               | 
@@ -10,6 +17,7 @@
 |  Réseau / Requêtes  |
 
 ### Règle
+
 Le HSTS permet d’indiquer à n’importe quel navigateur, via un hea- der de réponse HTTP gardé en cache que le domaine doit exclusive- ment être contacté en HTTPS.
 
 Cela permet aux requêtes suivantes, émises sur le même domaine, d’être exclusivement contactées avec le protocole HTTPS, ce qui évite une multitude de redirections 301.
@@ -19,6 +27,7 @@ Pour pallier ce problème, et obliger les navigateurs à contacter l’inté- gr
 Il est important de noter que l’enregistrement de son domaine sur htstpreload.org est rapide et concerne l’intégralité du domaine, (sous- domaines inclus). Avant d’effectuer cet enregistrement, qui est relati- vement lent à supprimer, veillez qu’aucun de vos sous-domaines ne soient perturbés par la mise en place du HTTPS
 
 ### Exemple
+
 Exemple de configuration
 ```apacheconf
 Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload

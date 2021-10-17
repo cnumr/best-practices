@@ -1,5 +1,12 @@
 ## Utiliser tous les niveaux de cache du CMS
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Facile                   | Fort                  | 
@@ -10,9 +17,11 @@
 |  Processeur / Mémoire vive  |
 
 ### Règle
+
 Si le CMS (comme Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur gra- nularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’utilisateur.
 
 ### Exemple
+
 Dans sa configuration de base, Drupal possède 6 niveaux de cache.
 1.	La table (ou le bin depuis Drupal 7) cache enregistre une copie de la configuration des modules, de la structure de toutes les autres tables et de toutes les informations concernant le thème utilisé sur le site.
 2.	La table cache page enregistre une copie des pages, mais seulement pour les utilisateurs non identifiés.

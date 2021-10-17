@@ -1,5 +1,12 @@
 ## Utiliser une électricité issue d'EnR (renouvelable)
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Facile                   |    Fort               | 
@@ -10,9 +17,11 @@
 | Émissions de gaz à effet de serre  |
 
 ### Règle
+
 Pour alimenter vos serveurs, utilisez autant que possible une élec- tricité fabriquée à partir d’une énergie primaire renouvelable peu impactante (hydraulique courant, etc.). Pour cela, il est conseillé de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable. À défaut, vous pouvez acheter des certificats de garantie d’origine
 
 ### Exemple
+
 Le service WattImpact neutralise ainsi la consommation électrique de l’infrastructure technique d’un site (serveurs) et des ordinateurs des internautes. Pour plus de détails :
 www.wattimpact.com
 

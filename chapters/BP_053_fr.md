@@ -1,5 +1,12 @@
 ## Éviter les boucles for...in
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Conseillé         |  Standard                 | Moyen                 | 
@@ -10,9 +17,11 @@
 |  Processeur |
 
 ### Règle
+
 La boucle `for…in` est plus sophistiquée que la boucle `for` basique, car elle dédoublonne les éléments d’une liste avant de commencer l’énumération. Aussi est-il généralement plus économe d’utiliser une boucle for simple lorsqu’on maîtrise bien la collection
 
 ### Exemple
+
 Dans la boucle suivante, le for…in est mal utilisé :
 ```javascript
 var oSum = 0;

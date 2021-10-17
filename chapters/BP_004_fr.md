@@ -1,6 +1,13 @@
 ## Préférer la saisie assistée à l'autocomplétions
 
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       | Facile                    | Fort                  | 
@@ -11,11 +18,13 @@
 | Requêtes    |
 
 ### Règle
+
 Le complètement automatique (autocomplétion) guide les utilisateurs en complétant automatiquement la fin du texte saisi dans un champ. Cette fonctionnalité est parfois très pratique pour éviter des erreurs ou suggérer un axe de recherche, mais elle nécessite des allers-retours incessants entre le navigateur et le serveur (malgré la possibilité de
 « caper » les échanges). Le navigateur envoie en effet chaque nou- veau caractère ou mot saisi au serveur, qui lui renvoie un texte pour compléter la saisie de l’utilisateur. Le volume de données échangées est très faible, mais il sollicite beaucoup les serveurs et le réseau en termes de requêtes.
 Dans la mesure du possible, cette fonctionnalité est à éviter et à rem- placer si possible par la saisie assistée. Cela consiste à guider l’utili- sateur par un ensemble d’informations et d’indices (présentation du format attendu en grisé dans le champ de saisie, réaction de l’interface avec un message d’erreur, une aide lorsque la saisie est incorrecte…). Les interactions liées à la saisie assistée sont gérées localement, ce qui réduit les échanges avec le serveur.
 
 ### Exemple
+
 Gain potentiel : à chaque fois que l’on utilise la saisie assistée pour une fonctionnalité, plutôt que l’autocomplétion, on réduit le nombre de requêtes associées par un facteur 10.
 
 ### Solution alternative

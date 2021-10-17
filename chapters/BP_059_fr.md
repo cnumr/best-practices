@@ -1,5 +1,12 @@
 ## Redimensionner les images en dehors du CMS
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Facile                   | Fort                  | 
@@ -10,9 +17,11 @@
 | Processeur / Mémoire vive / Réseau / Stockage |
 
 ### Règle
+
 Redimensionner et optimiser les images en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulage le(s) processeur(s) et la mémoire vive, car un serveur web n’est pas optimisé pour le retraitement des images.
 
 ### Exemple
+
 Si l’image ajoutée directement dans le CMS pèse 7 Mo, on écono- misera :
  - 7 Mo de bande passante lors de l’envoi ;
  - 100 Ko lors de la visualisation du résultat ;

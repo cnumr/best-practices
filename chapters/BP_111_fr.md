@@ -1,5 +1,12 @@
 ## Préférer le texte brut au HTML
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Facile                   |    Fort               | 
@@ -10,9 +17,11 @@
 |  Réseau / Requêtes  |
 
 ### Règle
+
 Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, préférer, quand c’est pos- sible, du texte brut au code HTML.
 
 ### Exemple
+
 L’envoi d’un e-mail de confirmation de prise en compte d’une demande de contact ne justifie pas l’ajout de code HTML et d’images.
 Un message HTML basique utilise en moyenne :
  - au moins 2 images (le logo et une signature en bas de page), soit 10 Ko environ ;

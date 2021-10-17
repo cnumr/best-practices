@@ -1,5 +1,12 @@
 ## Minifier les fichiers JavaScript
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Facile                   |    Fort               | 
@@ -10,6 +17,7 @@
 |  Réseau  |
 
 ### Règle
+
 Utiliser un outil tel que YUI Compressor pour :
  - supprimer les espaces inutiles ;
  - supprimer les sauts de lignes inutiles ;
@@ -17,6 +25,7 @@ Utiliser un outil tel que YUI Compressor pour :
  - compresser les noms de variables locales.
 
 ### Exemple
+
 Utiliser le module Apache mod_pagespeed de Google pour automa- tiser cette opération.
 
 Un fichier de référence JavaScript de 248 Ko ne pèse que 97 Ko après minification.

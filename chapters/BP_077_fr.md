@@ -1,5 +1,12 @@
 ## Minifier les fichiers CSS
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Facile                   |    Fort               | 
@@ -10,9 +17,11 @@
 | Réseau   |
 
 ### Règle
+
 Utiliser un outil tel que YUI Compressor pour supprimer les espaces et sauts de ligne inutiles. Le module Apache mod_pagespeed de Google permet aussi d’automatiser cette opération.
 
 ### Exemple
+
 YUI Compressor de Yahoo! fournit un ensemble de filtres spécialisés, qui permettent notamment d’effectuer les opérations suivantes :
  - suppression des commentaires et des espaces ;
  - suppression du dernier point-virgule ;

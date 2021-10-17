@@ -1,5 +1,12 @@
 ## Libérer de la mémoire les variables qui ne sont plus nécessaires
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 |  Prioritaire      |  Facile                   |    Fort               | 
@@ -10,9 +17,11 @@
 | Mémoire   |
 
 ### Règle
+
 Libérer la mémoire vive dès que possible. Supprimer notamment les tableaux qui peuvent rapidement contenir des quantités importantes d’informations.
 
 ### Exemple
+
 Optimiser le code suivant :
 ```php 
 $crm = new CrmConnection();

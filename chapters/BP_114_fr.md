@@ -1,5 +1,12 @@
 ## Adapter les vidéos aux contextes de visualisation
+### Identifiants
+
+| GreenIT |  V2  |  V3  |  V4  |
+|---------|:----:|:----:|:----:|
+|      |   |   |  x   |
+
 ### Indications
+
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
 | Prioritaire       |  Standard                 |    Fort               | 
@@ -10,11 +17,13 @@
 |  Processeur / Réseau  |
 
 ### Règle
+
 Prévoir plusieurs formats (taille, frame rate, compression audio, etc.) selon le contexte de lecture des vidéos (ordinateur de bureau, tablette Wi-Fi, smartphone EDGE. ).
 
 L’optimisation des vidéos doit être réalisée en dehors du site web, idéalement lors de la postproduction. Si ce n’est pas possible, utiliser des services comme Youtube ou Vimeo qui proposent, par défaut, plusieurs formats optimisés (SD, HD, etc.).
 
 ### Exemple
+
 Une aide utilisateur tournée en 1 680 × 1 050, d’une durée de 15 secondes, pèse :
  - 49 Mo non optimisée ;
  - 3 Mo optimisée pour une résolution égale ou supérieure à 1 024 × 720 en MPEG 4 / H.264 / AAC ;
