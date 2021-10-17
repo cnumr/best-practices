@@ -1,9 +1,10 @@
 ## Minifier les fichiers JavaScript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  88    |  79 |  81 |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Générer les PDF en dehors du CMS
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   99   | 58  | 58  |      |
 
 ### Indications
 

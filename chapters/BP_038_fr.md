@@ -1,9 +1,10 @@
 ## Utiliser Ajax pour certaines zones de contenu
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  40    |  49 | 38  |      |
 
 ### Indications
 

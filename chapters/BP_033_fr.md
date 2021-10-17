@@ -1,9 +1,10 @@
 ## Supprimer les balises images dont l’attribut SRC est vide
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  23    | 19  | 33  |      |
 
 ### Indications
 

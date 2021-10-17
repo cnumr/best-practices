@@ -1,9 +1,10 @@
 ## Remplacer les boutons officiels de partage des réseaux sociaux
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   910   |   | 19  |      |
 
 ### Indications
 

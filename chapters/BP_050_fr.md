@@ -1,9 +1,10 @@
 ## Privilégier les variables locales
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  37    | 37  | 50  |      |
 
 ### Indications
 

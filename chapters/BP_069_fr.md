@@ -1,9 +1,10 @@
 ## Ne pas appeler de fonction dans la déclaration d’une boucle de type for
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   50   | 64  | 69  |      |
 
 ### Indications
 

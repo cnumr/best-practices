@@ -1,9 +1,10 @@
 ## Mettre en cache les objets souvent accédés en JavaScript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  33    | 36  | 49  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Grouper les déclarations CSS similaires
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   14   | 28  | 25  |      |
 
 ### Indications
 

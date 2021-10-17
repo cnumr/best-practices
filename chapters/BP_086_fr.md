@@ -1,9 +1,10 @@
 ## Choisir un hébergeur "vert"
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   66   |  84 | 86  |      |
 
 ### Indications
 

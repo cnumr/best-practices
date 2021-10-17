@@ -1,9 +1,10 @@
 ## Utiliser des serveurs virtualisés
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   70   | 87  | 89  |      |
 
 ### Indications
 

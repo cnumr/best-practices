@@ -1,9 +1,10 @@
 ## Compresser la sortie HTML
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   79   | 83  | 83  |      |
 
 ### Indications
 

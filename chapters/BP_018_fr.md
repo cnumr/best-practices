@@ -1,9 +1,10 @@
 ## Limiter le nombre de domaine servant les ressources
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   170   | 55  | 18  |      |
 
 ### Indications
 

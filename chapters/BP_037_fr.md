@@ -1,9 +1,10 @@
 ## Utiliser le chargement paresseux des images
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   1010   |   |  37 |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Générer des spritesheets CSS
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  18    | 23  | 20  |      |
 
 ### Indications
 

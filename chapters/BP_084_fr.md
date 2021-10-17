@@ -1,9 +1,10 @@
 ## Favoriser HSTS Preload list aux redirections 301
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  1060    |   | 84  |      |
 
 ### Indications
 

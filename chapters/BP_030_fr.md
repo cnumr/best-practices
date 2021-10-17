@@ -1,9 +1,10 @@
 ## Préférer les glyphs aux images
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  20    |  18 | 30  |      |
 
 ### Indications
 

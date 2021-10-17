@@ -1,9 +1,10 @@
 ## Éviter les boucles for...in
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   29   | 41  | 53  |      |
 
 ### Indications
 

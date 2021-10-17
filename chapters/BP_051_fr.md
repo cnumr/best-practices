@@ -1,9 +1,10 @@
 ## Priviliégier les fonctions anonymes
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   38   | 38  | 51  |      |
 
 ### Indications
 

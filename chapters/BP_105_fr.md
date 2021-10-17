@@ -1,9 +1,10 @@
 ## Apache Vhost : désactiver le AllowOverride
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  81    | 101  | 105  |      |
 
 ### Indications
 

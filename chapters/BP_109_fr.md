@@ -1,9 +1,10 @@
 ## Dédoublonner systématiquement les fichiers avant envoi
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   102   | 110  | 109  |      |
 
 ### Indications
 

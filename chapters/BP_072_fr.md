@@ -1,9 +1,10 @@
 ## Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   55   |  71 | 72  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Utiliser tous les niveaux de cache du CMS
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   60   | 57  | 57  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Encoder les sons en dehors du CMS
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  96    | 60  | 60  |      |
 
 ### Indications
 

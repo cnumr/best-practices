@@ -1,9 +1,10 @@
 ## Optimiser les images vectorielles
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   1050   | 22  | 36  |      |
 
 ### Indications
 

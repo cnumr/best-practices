@@ -1,9 +1,10 @@
 ## Compresser les librairies CSS et Javascript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   86   |  80 | 78  |      |
 
 ### Indications
 

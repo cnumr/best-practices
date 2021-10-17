@@ -1,9 +1,10 @@
 ## Optimiser la taille des cookies
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   65   | 82  | 82  |      |
 
 ### Indications
 

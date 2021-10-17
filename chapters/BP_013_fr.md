@@ -1,9 +1,10 @@
 ## Favoriser les pages statiques
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   3   | 51  | 13  |      |
 
 ### Indications
 

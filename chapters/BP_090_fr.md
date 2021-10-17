@@ -1,9 +1,10 @@
 ## Optimiser l'efficacité énergétique des serveurs
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   68   | 88  | 90  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Mettre en cache les données calculées souvent utilisées
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  47    | 62  | 64  |      |
 
 ### Indications
 

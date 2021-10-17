@@ -1,9 +1,10 @@
 ## Utiliser les commentaires conditionnel
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   17   | 31  | 29  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Choisir les technologies les plus adaptées
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   1   |  11 | 15  |      |
 
 ### Indications
 

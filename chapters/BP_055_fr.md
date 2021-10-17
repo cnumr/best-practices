@@ -1,9 +1,10 @@
 ## Privilégier les changements visuels instantanés
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   36   | 47  | 55  |      |
 
 ### Indications
 

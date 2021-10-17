@@ -1,9 +1,10 @@
 ## Installer le minimum requis sur le serveur
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   74   | 89  | 91  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Externaliser les CSS et JavaScript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  7    | 16  | 32  |      |
 
 ### Indications
 

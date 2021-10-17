@@ -1,9 +1,10 @@
 ## Utiliser les notations CSS abrégées
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   15   | 29  | 26  |      |
 
 ### Indications
 

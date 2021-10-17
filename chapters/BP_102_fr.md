@@ -1,9 +1,10 @@
 ## Mettre en cache les réponses Ajax
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   91   | 107  | 102  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Désactiver certains logs d’accès du serveur web
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   82   | 99  | 103  |      |
 
 ### Indications
 

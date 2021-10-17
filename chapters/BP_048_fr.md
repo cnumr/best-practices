@@ -1,9 +1,10 @@
 ## Utiliser les opérations primitives
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  31    | 35  | 48  |      |
 
 ### Indications
 

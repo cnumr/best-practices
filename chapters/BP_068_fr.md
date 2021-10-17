@@ -1,9 +1,10 @@
 ## Libérer de la mémoire les variables qui ne sont plus nécessaires
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  49    | 63  | 68  |      |
 
 ### Indications
 

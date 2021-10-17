@@ -1,9 +1,10 @@
 ## Héberger les ressources (CSS/JS) sur un domaine sans cookie
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   73   | 96  | 94  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Redimensionner les images en dehors du HTML
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  93    | 20  | 34  |      |
 
 ### Indications
 

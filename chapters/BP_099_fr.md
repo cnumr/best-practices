@@ -1,9 +1,10 @@
 ## Utiliser un cache HTTP
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  72    | 103  | 99  |      |
 
 ### Indications
 

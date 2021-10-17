@@ -1,9 +1,10 @@
 ## Ne pas assigner inutilement de valeur aux variables
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   54   | 68  | 63  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   26   | 40  | 52  |      |
 
 ### Indications
 

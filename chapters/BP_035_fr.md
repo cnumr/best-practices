@@ -1,9 +1,10 @@
 ## Eviter d'utiliser des images bitmap pour l'interface
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  161    | 21  | 35  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Préférer les CSS aux images
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  11    | 26  | 23  |      |
 
 ### Indications
 

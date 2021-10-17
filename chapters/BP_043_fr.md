@@ -1,9 +1,10 @@
 ## Réduire au maximum le repaint (appearence) et le reflow (layout)
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  42    | 45  | 43  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Utiliser une électricité issue d'EnR (renouvelable)
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  67    | 85  | 87  |      |
 
 ### Indications
 

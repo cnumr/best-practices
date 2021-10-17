@@ -1,9 +1,10 @@
 ## Redimensionner les images en dehors du CMS
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   94   | 59  | 59  |      |
 
 ### Indications
 

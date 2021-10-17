@@ -1,9 +1,10 @@
 ## Préférer le texte brut au HTML
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   104   | 112  | 111  |      |
 
 ### Indications
 

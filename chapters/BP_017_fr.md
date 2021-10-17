@@ -1,9 +1,10 @@
 ## Choisir un format de données adapté
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  113    | 54  | 17  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Mettre en cache le Bytecode code intermédiaire
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  64    | 61  | 65  |      |
 
 ### Indications
 

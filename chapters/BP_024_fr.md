@@ -1,9 +1,10 @@
 ## Ecrire des sélecteurs CSS efficaces
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  13    | 27  | 24  |      |
 
 ### Indications
 

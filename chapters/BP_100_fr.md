@@ -1,9 +1,10 @@
 ## Mettre en cache le favicon.ico
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   22   | 104  | 100  |      |
 
 ### Indications
 

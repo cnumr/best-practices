@@ -1,9 +1,10 @@
 ## Optimiser les images bitmap
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  21    | 76  | 80  |      |
 
 ### Indications
 

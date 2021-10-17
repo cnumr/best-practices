@@ -1,9 +1,10 @@
 ## Utiliser la simple côte (') au lieu du guillemet (")
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  62    | 69  | 66  |      |
 
 ### Indications
 

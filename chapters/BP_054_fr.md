@@ -1,9 +1,10 @@
 ## Réduire les accès au DOM via JavaScript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   32   | 42  | 54  |      |
 
 ### Indications
 

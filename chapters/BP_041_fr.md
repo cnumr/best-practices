@@ -1,9 +1,10 @@
 ## Ne pas faire de modification du DOM lorsqu’on le traverse
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  43    | 43  | 41  |      |
 
 ### Indications
 

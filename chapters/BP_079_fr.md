@@ -1,9 +1,10 @@
 ## Combiner les fichiers CSS et JavaScript
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  89    | 81  | 79  |      |
 
 ### Indications
 

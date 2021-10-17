@@ -1,9 +1,10 @@
 ## Ajouter des entêtes Expires ou Cache-Control
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   78   |  105 | 101  |      |
 
 ### Indications
 

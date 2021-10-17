@@ -1,9 +1,10 @@
 ## Utiliser un système de templating (Smarty, Twig)
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  45    | 97  | 56  |      |
 
 ### Indications
 

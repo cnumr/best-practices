@@ -1,9 +1,10 @@
 ## Eviter d'utiliser try-catch-finally
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   30   | 34  | 47  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Limiter le recours aux plugins
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   24   | 13  | 12  |      |
 
 ### Indications
 

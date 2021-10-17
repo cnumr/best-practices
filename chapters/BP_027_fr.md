@@ -1,9 +1,10 @@
 ## Fournir une CSS print
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   16   | 30  | 27  |      |
 
 ### Indications
 

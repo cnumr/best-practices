@@ -1,9 +1,10 @@
 ## Stocker les données dans le cloud
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  71    |  92 |  93 |      |
 
 ### Indications
 

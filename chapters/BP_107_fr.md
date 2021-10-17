@@ -1,9 +1,10 @@
 ## Compresser les documents
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  97    | 108  | 107  |      |
 
 ### Indications
 

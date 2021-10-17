@@ -1,9 +1,10 @@
 ## Valider les pages auprès du W3C
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  8    | 15  | 31  |      |
 
 ### Indications
 

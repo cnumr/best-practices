@@ -1,9 +1,10 @@
 ## Adapter la qualité de service et le niveau de disponibilité
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  501    |  86 | 88  |      |
 
 ### Indications
 

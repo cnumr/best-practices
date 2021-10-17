@@ -1,9 +1,10 @@
 ## Favoriser les polices standards
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   19   | 17  | 29  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Modifier plusieurs propriétés CSS en 1 seule fois
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  34    | 32  | 45  |      |
 
 ### Indications
 

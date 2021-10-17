@@ -1,9 +1,10 @@
 ## Mettre les caches entièrement en RAM (opcode et kvs)
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  85    | 90  | 92  |      |
 
 ### Indications
 

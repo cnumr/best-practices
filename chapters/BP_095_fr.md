@@ -1,9 +1,10 @@
 ## Eviter les redirections
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   45   | 97  | 95  |      |
 
 ### Indications
 

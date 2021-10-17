@@ -1,9 +1,10 @@
 ## Utiliser des variables statiques
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   48   | 66  | 71  |      |
 
 ### Indications
 

@@ -1,9 +1,10 @@
 ## Désactiver le DNS lookup d’Apache
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|  84    | 100  | 104  |      |
 
 ### Indications
 

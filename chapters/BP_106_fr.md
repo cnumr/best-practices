@@ -1,9 +1,10 @@
 ## Désactiver les logs binaires de MySQL / MariaDb
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+| 83     | 93  | 106  |      |
 
 ### Indications
 

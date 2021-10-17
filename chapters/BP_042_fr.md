@@ -1,9 +1,10 @@
 ## Rendre les éléments du DOM invisibles lors de leur modification
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   44   | 44  | 42  |      |
 
 ### Indications
 

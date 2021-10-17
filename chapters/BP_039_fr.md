@@ -1,9 +1,10 @@
 ## Eviter les animations Javascript / CSS coûteuses
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   810   | 48  | 39  |      |
 
 ### Indications
 

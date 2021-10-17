@@ -1,9 +1,10 @@
 ## Limiter l'utilisation du Flash
+
 ### Identifiants
 
 | GreenIT |  V2  |  V3  |  V4  |
-|---------|:----:|:----:|:----:|
-|      |   |   |  x   |
+|:-------:|:----:|:----:|:----:|
+|   101   |  14 | 115  |      |
 
 ### Indications
 
