@@ -19,9 +19,12 @@
 
 ### Règle
 
-Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. Cela permettra d’éco- nomiser des cycles CPU, de la bande passante, et réduira la consom- mation électrique.
+Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. 
+Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
 
-L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données), éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
+L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles 
+pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données),
+éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
 
 ### Exemple
 

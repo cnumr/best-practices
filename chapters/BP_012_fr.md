@@ -19,7 +19,10 @@
 
 ### Règle
 
-viter d’utiliser des plug-ins (Flash Player, machines virtuelles Java et Silverlight, etc.), car certains consomment beaucoup de ressources (cycles CPU et mémoire vive). C’est notamment le cas du Flash Player d’Adobe, à tel point qu’Apple a décidé de ne pas installer cette technolo- gie sur ses terminaux mobiles afin de garantir une meilleure autonomie.
+Eviter d’utiliser des plug-ins (Flash Player, machines virtuelles Java et Silverlight, etc.), car certains consomment beaucoup de ressources
+(cycles CPU et mémoire vive). C’est notamment le cas du Flash Player d’Adobe, à tel point qu’Apple a décidé de ne pas installer cette technologie
+sur ses terminaux mobiles afin de garantir une meilleure autonomie.
+
 Préférer les technologies standards comme HTML5, ECMAScript, etc.
 
 

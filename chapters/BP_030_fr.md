@@ -19,7 +19,8 @@
 
 ### Règle
 
-Les glyphes sont inclus dans les polices de caractères du système d’exploitation. Les préférer par conséquent aux images, notamment pour réaliser des effets sur les listes HTML, car ils sont plus économes en bande passante.
+Les glyphes sont inclus dans les polices de caractères du système d’exploitation. Les préférer par conséquent aux images,
+notamment pour réaliser des effets sur les listes HTML, car ils sont plus économes en bande passante.
 
 ### Exemple
 

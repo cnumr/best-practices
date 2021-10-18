@@ -21,7 +21,8 @@
 
 Limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP. Si plusieurs feuilles de style sont utilisées sur toutes les pages du site, concaténez-les dans un seul fichier.
 
-Certains CMS et frameworks fournissent des solutions automatiques pour effectuer ce type d’optimisation. Il est également possible de paramétrer le serveur HTTP pour qu’il réduise la taille des feuilles de style en les compressant 
+Certains CMS et frameworks fournissent des solutions automatiques pour effectuer ce type d’optimisation. 
+Il est également possible de paramétrer le serveur HTTP pour qu’il réduise la taille des feuilles de style en les compressant 
 (voir la [bonne pratique n° 83](/chapters/bonne_pratique_083_fr.md)).
 
 ### Exemple

@@ -19,7 +19,8 @@
 
 ### Règle
 
-e choix des technologies étant primordial pour optimiser les res- sources, sélectionner l’outil le plus économe en fonction de ses besoins et de ses contraintes métier.
+Le choix des technologies étant primordial pour optimiser les ressources, sélectionner l’outil le plus économe en fonction de ses besoins
+et de ses contraintes métier.
 Voici les cinq grandes familles de solutions disponibles, classées de la plus à la moins performante en termes de green IT :
  - site statique (réalisé avec un logiciel spécialisé tel que Dreamweaver, ou avec un éditeur de code) ;
  - site généré (par exemple avec Jekyll, outil basé sur Ruby qui apporte des systèmes d’inclusion de templates, des mécanismes de génération d’URL, etc.) ;

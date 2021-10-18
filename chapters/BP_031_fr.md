@@ -19,7 +19,8 @@
 
 ### Règle
 
-Vérifier que le code HTML des pages est bien formé. Dans le cas contraire, le navigateur corrigera dynamiquement un certain nombre d’éléments pour afficher au mieux les pages posant problème. Ces corrections dynamiques consomment inutilement des ressources à chaque chargement des pages concernées.
+Vérifier que le code HTML des pages est bien formé. Dans le cas contraire, le navigateur corrigera dynamiquement un certain nombre d’éléments pour afficher au mieux les pages posant problème.
+Ces corrections dynamiques consomment inutilement des ressources à chaque chargement des pages concernées.
 
 ### Exemple
 
