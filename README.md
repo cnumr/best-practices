@@ -63,7 +63,7 @@ Nous vous invitons à participer à la prochaine version en suivant [le guide de
 * :o: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :o: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
-* :o: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
+* :beginner: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
 * :o: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
 * :o: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
 * :o: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
