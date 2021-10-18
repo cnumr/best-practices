@@ -27,7 +27,7 @@ On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d�
 
 ### Exemple
 
-Dans le cas d’un service en ligne de conversion de documents bureau- tiques, inciter l’utilisateur à déposer ses fichiers en une seule fois, puis l’avertir par e-mail lorsque le traitement est terminé. Pour optimiser le processus, l’ensemble des fichiers peut être regroupé et compressé dans une archive.
+Dans le cas d’un service en ligne de conversion de documents bureautiques, inciter l’utilisateur à déposer ses fichiers en une seule fois, puis l’avertir par e-mail lorsque le traitement est terminé. Pour optimiser le processus, l’ensemble des fichiers peut être regroupé et compressé dans une archive.
 
 ### Principe de validation
 

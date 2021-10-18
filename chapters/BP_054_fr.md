@@ -19,11 +19,11 @@
 
 ### Règle
 
-L’accès au DOM (Document Object Model) via JavaScript est une pro- cédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
+L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
 
-Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retra- verser l’arbre à chaque manipulation du document.
+Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
 
-Il est également possible d’utiliser des bibliothèques de type « Sha- dow DOM », qui optimisent les modifications de l’arbre par un sys- tème de batch.
+Il est également possible d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
 
 ### Exemple
 

@@ -21,7 +21,7 @@
 
 Les serveurs (web, d’applications, etc.) tels que Nginx, node.js ou Gwan sont conçus pour utiliser le minimum de ressources possible. Grâce à leur fonctionnement en mode asynchrone, ils ne sont pas tenus de créer un processus ou un thread pour chaque requête. Ils évitent ainsi de gaspiller leurs ressources.
 
-Alors que la plupart des serveurs web augmentent leur consomma- tion de mémoire vive au fur et à mesure des sollicitations, les serveurs asynchrones demeurent eux très stables.
+Alors que la plupart des serveurs web augmentent leur consommation de mémoire vive au fur et à mesure des sollicitations, les serveurs asynchrones demeurent eux très stables.
 
 ### Exemple
 

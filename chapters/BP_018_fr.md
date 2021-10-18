@@ -34,7 +34,7 @@ Pour un site web institutionnel à fort trafic, on privilégiera deux domaines :
  - le serveur applicatif sur www.domain.tld ;
  - le serveur media « cookie-less » sur media.domain.tld.
 
-On limite ainsi le nombre de domaines tout en évitant de transpor- ter inutilement un cookie à chaque GET HTTP sur une ressource statique
+On limite ainsi le nombre de domaines tout en évitant de transporter inutilement un cookie à chaque GET HTTP sur une ressource statique
 
 ### Principe de validation
 

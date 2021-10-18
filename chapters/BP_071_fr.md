@@ -21,7 +21,7 @@
 
 Lorsque le contexte le permet, utiliser des variables statiques pour éviter d’exécuter plusieurs fois le même code. Vous limiterez ainsi les cycles CPU inutiles.
 
-Ce procédé est particulièrement efficace pour les procédures gour- mandes en ressources.
+Ce procédé est particulièrement efficace pour les procédures gourmandes en ressources.
 
 ### Exemple
 

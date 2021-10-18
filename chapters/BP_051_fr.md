@@ -19,7 +19,7 @@
 
 ### Règle
 
-Puisque JavaScript autorise l’écriture de fonctions anonymes, les uti- liser lorsque c’est possible et que la maintenabilité du projet n’est pas remise en cause. De cette façon, l’interpréteur n’a plus besoin de résoudre le nom de la fonction.
+Puisque JavaScript autorise l’écriture de fonctions anonymes, les utiliser lorsque c’est possible et que la maintenabilité du projet n’est pas remise en cause. De cette façon, l’interpréteur n’a plus besoin de résoudre le nom de la fonction.
 
 Attention, cette bonne pratique ne s’applique que si la fonction est utilisée une seule fois. Dans le cas contraire, vous devez nommer cette fonction
 

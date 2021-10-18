@@ -19,11 +19,12 @@
 
 ### Règle
 
-Les images bitmap représentent souvent la majorité des octets télé- chargés, juste avant les bibliothèques CSS et JavaScript. Leur optimi- sation est donc cruciale pour réduire la bande passante consommée. La première étape consiste à choisir le bon format entre bitmap (JPEG, PNG, GIF, etc.) et vectorielle (SVG).
+Les images bitmap représentent souvent la majorité des octets téléchargés, juste avant les bibliothèques CSS et JavaScript.
+Leur optimisation est donc cruciale pour réduire la bande passante consommée. La première étape consiste à choisir le bon format entre bitmap (JPEG, PNG, GIF, etc.) et vectorielle (SVG).
 
 Les images matricielles doivent être réservées essentiellement aux photos et aux éléments de l’interface qui ne peuvent pas être pris en charge par des icônes ou des styles CSS.
 
-Le choix du format bitmap dépend des caractéristiques de l’image : noir et blanc ou couleur, palette de couleurs, besoin de transparence… Parmi ces caractéristiques, le fait de pouvoir dégrader l’image définiti- vement (lossy) oriente plutôt vers les formats JPEG et WebP (Google), tandis qu’un besoin de transparence et/ou l’impossibilité de dégrader l’image (lossless) orientera plutôt vers GIF ou PNG.
+Le choix du format bitmap dépend des caractéristiques de l’image : noir et blanc ou couleur, palette de couleurs, besoin de transparence… Parmi ces caractéristiques, le fait de pouvoir dégrader l’image définitivement (lossy) oriente plutôt vers les formats JPEG et WebP (Google), tandis qu’un besoin de transparence et/ou l’impossibilité de dégrader l’image (lossless) orientera plutôt vers GIF ou PNG.
 
 Des outils tels que pngcrush, ImageMagick ou jpegtran vous aideront à réduire au minimum le poids des images matricielles.
 

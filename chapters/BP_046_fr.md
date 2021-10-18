@@ -19,7 +19,8 @@
 
 ### Règle
 
-L’analyseur de qualité du code JSLint vérifie que la syntaxe JavaScript utilisée sera comprise par tous les navigateurs. Le code obtenu res- pecte ainsi des contraintes syntaxiques qui permettent aux interpré- teurs d’exécuter le code plus facilement et donc plus rapidement. Le processeur est donc sollicité moins longtemps.
+L’analyseur de qualité du code JSLint vérifie que la syntaxe JavaScript utilisée sera comprise par tous les navigateurs. 
+Le code obtenu respecte ainsi des contraintes syntaxiques qui permettent aux interpréteurs d’exécuter le code plus facilement et donc plus rapidement. Le processeur est donc sollicité moins longtemps.
 
 Dans des développements modernes, nous recommandons d'ajouter à vore process de livraison différents outils permettant 
 d'assurer la qualité de votre code. 
