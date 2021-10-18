@@ -19,7 +19,8 @@
 
 ### Règle
 
-Lorsque plusieurs éléments du DOM (Document Object Model) ont des propriétés CSS communes, les déclarer ensemble dans la même feuille de styles. Cette méthode permet de réduire le poids de la CSS.
+Lorsque plusieurs éléments du DOM (Document Object Model) ont des propriétés CSS communes,
+les déclarer ensemble dans la même feuille de styles. Cette méthode permet de réduire le poids de la CSS.
 
 ### Exemple
 

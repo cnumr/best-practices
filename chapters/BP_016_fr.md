@@ -19,7 +19,9 @@
 
 ### Règle
 
-Les logiciels open source sont souvent « forkés » (dérivés) pour des raisons de performance. Or un gain de performance implique géné- ralement une réduction en termes de consommation de ressources. Par conséquent, si un fork optimisé existe et offre un périmètre fonc- tionnel et technique suffisant pour votre projet, vous devez l’utiliser
+Les logiciels open source sont souvent « forkés » (dérivés) pour des raisons de performance. Or un gain de performance implique
+généralement une réduction en termes de consommation de ressources. Par conséquent, si un fork optimisé existe et offre 
+un périmètre fonctionnel et technique suffisant pour votre projet, vous devez l’utiliser.
 
 ### Exemple
 

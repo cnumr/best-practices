@@ -23,7 +23,7 @@ Les systèmes de cache doivent être, autant que possible, montés entièrement 
 
 L’objectif est double : servir rapidement une réponse au client, et limiter le nombre de composants matériels (et logiciels) impliqués dans la réponse retournée par le serveur.
 
-La mémoire vive étant très rapide en termes d’accès en lecture/écri- ture, la durée de consommation des ressources est particulièrement courte. En outre, la durée de vie des composants est allongée avec cette bonne pratique, puisqu’il n’y pas de mouvement mécanique comme lors d’un recours au disque dur.
+La mémoire vive étant très rapide en termes d’accès en lecture/écriture, la durée de consommation des ressources est particulièrement courte. En outre, la durée de vie des composants est allongée avec cette bonne pratique, puisqu’il n’y pas de mouvement mécanique comme lors d’un recours au disque dur.
 
 ### Exemple
 

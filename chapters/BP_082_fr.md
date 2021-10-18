@@ -19,7 +19,7 @@
 
 ### Règle
 
-Un cookie permet de maintenir un état entre le navigateur de l’inter- naute et le serveur web distant grâce à des identifiants. Ce fichier texte est transféré dans chaque requête HTTP. Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
+Un cookie permet de maintenir un état entre le navigateur de l’internaute et le serveur web distant grâce à des identifiants. Ce fichier texte est transféré dans chaque requête HTTP. Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
 
 ### Exemple
 

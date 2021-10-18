@@ -19,7 +19,10 @@
 
 ### Règle
 
-Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, et donc indirectement l’empreinte éco- logique du site web. La plus dépouillée possible, elle doit proposer une police de caractères économe en encre (Century Gothic, par exemple). Pensez aussi à masquer le header, le footer, le menu, le sidebar, sup- primer toutes les images sauf celles du contenu, etc.
+Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, 
+et donc indirectement l’empreinte écologique du site web. La plus dépouillée possible, elle doit proposer une police
+de caractères économe en encre (Century Gothic, par exemple). Pensez aussi à masquer le header, le footer, le menu, le sidebar,
+supprimer toutes les images sauf celles du contenu, etc.
 
 ### Exemple
 

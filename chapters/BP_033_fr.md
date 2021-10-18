@@ -19,7 +19,8 @@
 
 ### Règle
 
-Si une balise image est présente et que son attribut SRC est vide, le navigateur va appeler la page d’index du niveau d’arborescence où il se situe, générant des requêtes HTTP supplémentaires et inutiles.
+Si une balise image est présente et que son attribut SRC est vide, le navigateur va appeler la page d’index du niveau d’arborescence où il se situe,
+générant des requêtes HTTP supplémentaires et inutiles.
 
 ### Exemple
 

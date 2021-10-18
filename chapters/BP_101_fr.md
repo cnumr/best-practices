@@ -25,7 +25,7 @@ Idéalement, la durée de vie de ces éléments doit être la plus longue possib
 
 ### Exemple
 
-Voici un exemple de configuration des en-têtes Expires et Cache- Control pour le serveur web Apache :
+Voici un exemple de configuration des en-têtes Expires et Cache-Control pour le serveur web Apache :
 ```apacheconf
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>

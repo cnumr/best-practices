@@ -19,9 +19,10 @@
 
 ### Règle
 
-Regrouper les images de petite taille (celles de l’interface du site, par exemple) dans une seule image de plus grande taille appelée sprite- sheet.
+Regrouper les images de petite taille (celles de l’interface du site, par exemple) dans une seule image de plus grande taille appelée spritesheet.
 
-Ce procédé réduit significativement le nombre de requêtes HTTP. De nombreux services en ligne gratuits (CSS Sprite Generator du Project Fondue, CSSsprites.com, SpriteMe.org…) permettent de générer ces spritesheets.
+Ce procédé réduit significativement le nombre de requêtes HTTP. De nombreux services en ligne gratuits (CSS Sprite Generator du Project Fondue, CSSsprites.com, SpriteMe.org…)
+permettent de générer ces spritesheets.
 
 ### Exemple
 
