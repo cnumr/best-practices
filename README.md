@@ -18,6 +18,16 @@ Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référ
 
 Nous vous invitons à participer à la prochaine version en suivant [le guide des contributeurs](CONTRIBUTING.md).
 
+
+## Raccourci vers les discussions :
+
+Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles sur la page de discussions.
+
+  - :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
+  - :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
+  - :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
+  - :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
+
 ## La liste des 115 Bonnes pratiques
 ### Légende
  :heavy_check_mark: Bonne pratique mise à jour depuis la `v3.0.0`, validée pour la `v4.0.0`
