@@ -1,4 +1,5 @@
 # Les 115 bonnes pratiques
+
 ## Le projet
 
 Le contenu du référentiel d'écoconception a été publié par Frédéric Bordage / GreenIT.fr chez Eyrolles sous le titre:
@@ -10,16 +11,20 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer depuis presque de 10 ans.
 
 ## Les besoins
+
 Ce référentiel date d'il y a quelques années, bien qu'il ai été mis à jour en 2015 et en 2019, il y a des bonnes pratiques qui 
 meritent d'être débattues, d'être ajoutées, et certaines d'être supprimées (:speak_no_evil:) .
 Nous avons donc besoin de faire le ménage :tada: et de réactualiser ce référentiel.
 
 ## Comment contribuer ?
 
+La présentation de la réunion de lancement la V4 est disponible [ici](resources/Lancement_Referentiel_EcoconceptionWeb_V4.pdf)
 Nous vous invitons à participer à la prochaine version en suivant [le guide des contributeurs](CONTRIBUTING.md).
 
 ## La liste des 115 Bonnes pratiques
+
 ### Légende
+
  :heavy_check_mark: Bonne pratique mise à jour depuis la `v3.0.0`, validée pour la `v4.0.0`
  
  :beginner: Bonne pratique actuellement en discussion [ici](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques)
@@ -27,12 +32,13 @@ Nous vous invitons à participer à la prochaine version en suivant [le guide de
  :o: Bonne pratique non mise à jour depuis la `v3.0.0`
  
 ### Liste des bonnes pratiques
+
 * :o: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * :o: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * :o: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
 * :o: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :o: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
-* :o: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
+* :beginner: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
 * :o: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :o: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :o: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
@@ -63,7 +69,7 @@ Nous vous invitons à participer à la prochaine version en suivant [le guide de
 * :o: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :o: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
-* :o: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
+* :beginner: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
 * :o: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
 * :o: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
 * :o: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
