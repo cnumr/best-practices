@@ -93,7 +93,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #048 [Utiliser les opérations primitives](/chapters/BP_048_fr.md)
 * :o: #049 [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
 * :o: #050 [Privilégier les variables locales](/chapters/BP_050_fr.md)
-* :o: #051 [Priviliégier les fonctions anonymes](/chapters/BP_051_fr.md)
+* :beginner: #051 [Priviliégier les fonctions anonymes](/chapters/BP_051_fr.md)
 * :o: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
 * :o: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
