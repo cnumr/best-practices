@@ -31,11 +31,11 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
   - :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
   - :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
-## La liste des 115 Bonnes pratiques V3
+## La liste des 115 Bonnes Pratiques V3
 
 ### Légende
 
- :heavy_check_mark: Bonne pratique mise à jour depuis la `v3.0.0`, validée pour la `v4.0.0`
+ :heavy_check_mark: Bonne pratique validée pour suppression ou modification dans la `v4.0.0`
  
  :beginner: Bonne pratique actuellement en discussion [ici](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques)
  
@@ -125,7 +125,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
 * :o: #081 [Minifier les fichiers JavaScript](/chapters/BP_081_fr.md)
 * :o: #082 [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
-* :o: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
+* :beginner: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
 * :o: #084 [Favoriser HSTS Preload list aux redirections 301](/chapters/BP_084_fr.md)
 * :o: #085 [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
 * :beginner: #086 [Choisir un hébergeur "vert"](/chapters/BP_086_fr.md)
