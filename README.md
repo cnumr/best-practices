@@ -31,7 +31,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
   - :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
   - :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
-## La liste des 115 Bonnes pratiques
+## La liste des 115 Bonnes pratiques V3
 
 ### Légende
 
@@ -82,7 +82,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
 * :o: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
 * :o: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
-* :o: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
+* :beginner: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
 * :o: #041 [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
 * :o: #042 [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
 * :o: #043 [Réduire au maximum le repaint (appearence) et le reflow (layout)](/chapters/BP_043_fr.md)
@@ -113,7 +113,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
 * :o: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
-* :o: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
+* :beginner: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
 * :o: #073 [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
 * :o: #074 [Ne jamais faire de SELECT * FROM](/chapters/BP_074_fr.md)
@@ -159,7 +159,14 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #114 [Adapter les vidéos aux contextes de visualisation](/chapters/BP_114_fr.md)
 * :beginner: #115 [Limiter l'utilisation du Flash](/chapters/BP_115_fr.md)
 
+## Les modifications lors de la V4
+
+Entre parenthèses, les `Issues` associées aux modifications. 
+
 ### Liste des bonnes pratiques ajoutées en v4.0.0
+* ...
+
+### Liste des bonnes pratiques modifiées en v4.0.0
 * ...
 
 ### Liste des bonnes pratiques supprimées en v4.0.0
