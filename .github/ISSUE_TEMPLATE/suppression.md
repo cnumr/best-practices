@@ -1,7 +1,7 @@
 ---
 name: Suppression
 about: Suppression d'une bonne pratique
-title: ''
+title: 'Suppression BP #'
 labels: suppression
 assignees: ''
 

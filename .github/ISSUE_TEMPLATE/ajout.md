@@ -1,7 +1,7 @@
 ---
 name: Ajout
 about: Ajout d'une bonne pratique
-title: ''
+title: "[NEW] "
 labels: ajout
 assignees: ''
 

@@ -1,7 +1,7 @@
 ---
 name: Modification
 about: Modification d'une bonne pratique
-title: ''
+title: 'Modification BP #'
 labels: modification
 assignees: ''
 
