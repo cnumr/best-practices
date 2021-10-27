@@ -75,7 +75,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
 * :o: #032 [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
-* :o: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
+* :beginner: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
 * :o: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :o: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
