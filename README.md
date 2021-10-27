@@ -43,9 +43,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
  
 ### Liste des bonnes pratiques
 
-* :o: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
+* :beginner: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * :o: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
-* :o: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
+* :beginner: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
 * :o: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :beginner: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
 * :beginner: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
@@ -59,7 +59,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
 * :o: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
 * :o: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
-* :o: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
+* :beginner: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
 * :o: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
@@ -70,7 +70,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #025 [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
 * :o: #026 [Utiliser les notations CSS abrégées](/chapters/BP_026_fr.md)
 * :o: #027 [Fournir une CSS print](/chapters/BP_027_fr.md)
-* :o: #028 [Utiliser les commentaires conditionnels](/chapters/BP_028_fr.md)
+* :beginner: #028 [Utiliser les commentaires conditionnels](/chapters/BP_028_fr.md)
 * :o: #029 [Favoriser les polices standards](/chapters/BP_029_fr.md)
 * :o: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
@@ -115,7 +115,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
 * :beginner: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
-* :o: #073 [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
+* :beginner: #073 [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
 * :beginner: #074 [Ne jamais faire de SELECT * FROM](/chapters/BP_074_fr.md)
 * :o: #075 [Limiter le nombre de résultats (clause LIMIT)](/chapters/BP_075_fr.md)
 * :beginner: #076 [Utiliser les procédures stockées](/chapters/BP_076_fr.md)
