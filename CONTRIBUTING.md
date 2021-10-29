@@ -132,20 +132,22 @@ Chacun de ces niveaux est défini par une note de 1 à 5.
 #### Mise en oeuvre (higher is better)
    
 La facilité ou difficulté de mise en oeuvre peut être évaluée de la manière suivante :
-1. La mise en oeuvre ne nécessite pas compétence particulière ET n'a pas d'effet de bord sur le reste du projet
-2. La mise en oeuvre ne nécessite pas compétence particulière OU n'a pas d'effet de bord sur le reste du projet
+
+1. La mise en oeuvre nécessite un haut niveau d'expertise ET une refonte en profondeur du projet
+2. La mise en oeuvre nécessite un haut niveau d'expertise OU une refonte en profondeur du projet
 3. Le mise en oeuvre demande une compétence particulière sans être rare (ex: SEO, DBA, ...) ET n'a pas besoin de refonte en profondeur du projet
-4. La mise en oeuvre nécessite un haut niveau d'expertise OU une refonte en profondeur du projet
-5. La mise en oeuvre nécessite un haut niveau d'expertise ET une refonte en profondeur du projet
+4. La mise en oeuvre ne nécessite pas compétence particulière OU n'a pas d'effet de bord sur le reste du projet
+5. La mise en oeuvre ne nécessite pas compétence particulière ET n'a pas d'effet de bord sur le reste du projet
 
 #### Impact environnemental (higher is better)
 
 Cet apport peut être évalué de la manière suivante :
-1. Elle limite les risques d'obsolescence des terminaux utilisateurs
-2. Elle limite le risque de saturation des réseaux mobiles ou fixes
+
+1. Elle réduit la consommation électrique des réseaux ou serveurs à équipements constants
+2. Elle réduit la consommation électrique sur la majorité des terminaux utilisateurs
 3. Elle limite le besoin en ressources informatiques côté serveur
-4. Elle réduit la consommation électrique sur la majorité des terminaux utilisateurs
-5. Elle réduit la consommation électrique des réseaux ou serveurs à équipements constants
+4. Elle limite le risque de saturation des réseaux mobiles ou fixes
+5. Elle limite les risques d'obsolescence des terminaux utilisateurs
 
 ####Priorité (higher is better)
 
