@@ -77,7 +77,9 @@ Les cas suivants peuvent se produire:
 
 L'`Issue` créée devra contenir le tag `création`, `modification` ou `suppression` suivant le type de proposition et être rattachée au projet [`Bonnes Pratiques V4`](https://github.com/cnumr/best-practices/projects/1).
 
-En cas d'ajout, le fichier sera nommé suivant le pattern suivant: `BP-xxxx-fr.md` avec `xxxx` le numéro de la bonne pratique qui sera défini par l'équipe projet.
+En cas d'ajout, le fichier sera nommé suivant le pattern suivant: `BP-4xxx-fr.md` avec `4xxx` le numéro de la bonne pratique qui sera défini par l'équipe projet.
+
+Le fichier sera à copier à partir du [template](./resources/BP_xxxx_fr.md)
 
 Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet.
 
