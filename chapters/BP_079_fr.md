@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Requêtes |
 
-### Règle
+### Description
 
 La combinaison de feuilles de style CSS ou de bibliothèques Javascript permet de réduire le nombre de requêtes HTTP.
 

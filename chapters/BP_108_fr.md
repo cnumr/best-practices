@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau / Stockage  |
 
-### Règle
+### Description
 
 S’assurer, avant leur mise en ligne, que les PDF sont réellement optimisés pour le Web : taux d’échantillonnage et de compression des images, polices incorporées, résolution…
 

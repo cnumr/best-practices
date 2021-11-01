@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive  |
 
-### Règle
+### Description
 
 Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. 
 Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.

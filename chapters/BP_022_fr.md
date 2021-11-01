@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP. Si plusieurs feuilles de style sont utilisées sur toutes les pages du site, concaténez-les dans un seul fichier.
 

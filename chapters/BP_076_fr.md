@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau   |
 
-### Règle
+### Description
 
 Les procédures stockées sont plus performantes et économes en res- sources que les requêtes SQL envoyées par le serveur d’applications vers le système de gestion de base de données relationnelles (SGBDR). Deux raisons à cela :
  - une procédure stockée économise au serveur l’interprétation de la

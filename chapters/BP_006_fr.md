@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Réseau  |
 
-### Règle
+### Description
 
 Lorsque le contexte le permet, privilégier l’approche « mobile first » qui consiste à concevoir un site/service en ligne
 pour les terminaux mobiles.

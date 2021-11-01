@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Employer un ensemble de CSS plutôt qu’une seule, et appeler uniquement les CSS utiles en fonction du contexte. 
 Cette méthode permet de limiter le poids de la page lors du premier téléchargement, donc d’économiser de la bande passante 

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau  |
 
-### Règle
+### Description
 
 Utiliser un outil tel que YUI Compressor pour :
  - supprimer les espaces inutiles ;

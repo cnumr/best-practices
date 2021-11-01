@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau / Stockage  |
 
-### Règle
+### Description
 
 Compresser tous les documents pouvant être téléchargés depuis une page web, sauf si la compression n’apporte pas un gain évident (par exemple, cas d’un PDF parfaitement optimisé pour le Web).
 

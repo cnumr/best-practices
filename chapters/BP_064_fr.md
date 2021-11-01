@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive |
 
-### Règle
+### Description
 
 Lorsque des calculs de valeurs ou de données sont coûteux en res- sources, les mettre en cache si les valeurs demeurent inchangées, afin de ne pas réitérer ces opérations.
 

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur |
 
-### Règle
+### Description
 
 Puisque JavaScript autorise l’écriture de fonctions anonymes, les utiliser lorsque c’est possible et que la maintenabilité du projet n’est pas remise en cause. De cette façon, l’interpréteur n’a plus besoin de résoudre le nom de la fonction.
 

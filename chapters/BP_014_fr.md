@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 L’architecture modulaire popularisée par les logiciels open source apporte souvent une plus grande capacité à monter en charge,
 des coûts réduits de maintenance corrective et évolutive, ainsi qu’un code plus efficient.

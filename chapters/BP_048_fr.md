@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur   |
 
-### Règle
+### Description
 
 L’emploi de méthodes pour les opérations de base engendre une consommation supplémentaire de ressources système. L’interpréteur doit en effet résoudre les objets puis les méthodes, rien que pour effectuer ces opérations simples du langage.
 

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Si des ressources spécifiques doivent être transmises à certains navigateurs, utiliser les commentaires conditionnels afin
 que les autres navigateurs ne téléchargent pas inutilement ces ressources.

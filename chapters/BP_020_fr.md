@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Regrouper les images de petite taille (celles de l’interface du site, par exemple) dans une seule image de plus grande taille appelée spritesheet.
 

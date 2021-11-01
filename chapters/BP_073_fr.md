@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau   |
 
-### Règle
+### Description
 
 Déclencher une connexion à un serveur de base de données est coûteux en ressources pour le serveur d’applications, pour le serveur de base de données et, éventuellement, pour le réseau. Chaque fois que l’application peut se passer de la base de données, faites-le !
 

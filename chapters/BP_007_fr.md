@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Réseau    |
 
-### Règle
+### Description
 
 Les navigateurs possèdent une fonction de navigation rapide dans l’historique (boutons Page précédente et Page suivante). 
 Grâce à cette fonction, il n’est pas nécessaire de redemander la page au serveur, puis de la recharger. 

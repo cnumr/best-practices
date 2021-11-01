@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive  |
 
-### Règle
+### Description
 
 Si le CMS (comme Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’utilisateur.
 

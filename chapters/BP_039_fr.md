@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive  |
 
-### Règle
+### Description
 
 Les animations Javascript/CSS peuvent être très coûteuses en termes de cycles CPU et de consommation mémoire. 
 Elles déclenchent toutes une action de type (re)paint/(re)ﬂow très coûteuse en ressources. Il faut donc éviter au maximum les animations,

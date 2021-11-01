@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau / Requêtes  |
 
-### Règle
+### Description
 
 Les réponses Ajax qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, les mettre en cache pour économiser de la bande passante.
 

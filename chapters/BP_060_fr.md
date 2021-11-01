@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau / Stockage |
 
-### Règle
+### Description
 
 Adapter et optimiser les sons en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulagera la CPU et la mémoire vive, car un serveur web n’est pas optimisé pour le (ré)encodage des fichiers audio.
 

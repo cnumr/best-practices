@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau   |
 
-### Règle
+### Description
 
 Utiliser un outil tel que YUI Compressor pour supprimer les espaces et sauts de ligne inutiles. Le module Apache mod_pagespeed de Google permet aussi d’automatiser cette opération.
 

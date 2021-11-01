@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
 
-### Règle
+### Description
 
 Les « mensurations » de chaque fonctionnalité doivent être définies précisément et dans leur ensemble. Il peut s’agir 
 d’un taux de compression pour les images de l’interface graphique, du temps de réponse maximum pour une requête HTTP, 

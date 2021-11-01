@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Utiliser les notations CSS abrégées pour réduire le poids de la feuille de styles.
 

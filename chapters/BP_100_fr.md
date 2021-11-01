@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau  |
 
-### Règle
+### Description
 
 Le favicon.ico est la petite image qui s’affiche très souvent dans la barre d’adresse, à côté de l’URL du site. Non seulement son poids doit être optimisé, mais il faut absolument qu’il soit présent en cache. En effet, ce petit fichier est appelé par le navigateur sur toutes les pages, quoi qu’il arrive.
 

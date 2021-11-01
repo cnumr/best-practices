@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau / Requêtes    |
 
-### Règle
+### Description
 
 Le temps de chargement d’une page côté navigateur est directement corrélé au nombre de fichiers que le navigateur doit télécharger,
 et au poids unitaire de chaque fichier.

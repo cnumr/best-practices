@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau  |
 
-### Règle
+### Description
 
 Compresser les feuilles de style CSS et les bibliothèques JavaScript pour limiter l’utilisation de la bande passante et améliorer les temps de chargement.
 

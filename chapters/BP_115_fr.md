@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Réseau / Stockage |
 
-### Règle
+### Description
 
 Pour animer des éléments d’une page, préférer HTML + JavaScript à Flash, qui requiert l’installation du plug-in Flash Player. Même si la performance pure du couple HTML + JavaScript – en termes de FPS (Frame Per Second), par exemple – est moins bonne, elle demeure en effet suffisante dans la majorité des cas.
 

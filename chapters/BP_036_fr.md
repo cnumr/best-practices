@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Les navigateurs modernes sont tous compatibles avec le format d’image vectorielle SVG (Scalable Vector Graphics), 
 basé sur un ensemble de vecteurs décrits en XML. Les images SVG ont deux avantages indéniables : d’une part, 
