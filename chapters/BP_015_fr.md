@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Le choix des technologies étant primordial pour optimiser les ressources, sélectionner l’outil le plus économe en fonction de ses besoins
 et de ses contraintes métier.

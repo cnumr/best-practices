@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur |
 
-### Règle
+### Description
 
 Les animations, qu’elles soient réalisées en CSS ou pilotées par Javascript, génèrent beaucoup de repaint/reﬂow. Pour moins consommer de cycles CPU, il est donc préférable d’utiliser des changements instantanés plutôt qu’animés.
 

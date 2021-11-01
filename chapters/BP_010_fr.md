@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau / Requêtes    |
 
-### Règle
+### Description
 
 L’une des grandes nouveautés de HTML 5 est la possibilité de stocker localement des données structurées sous différentes formes : 
 paires valeurs-clés (Web Storage), base de données relationnelle SQL (IndexedDB), et la mise en cache applicatif (Service Workers).

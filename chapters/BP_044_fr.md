@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive   |
 
-### Règle
+### Description
 
 La délégation d’événements permet de ne pas surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs élé- ments du DOM (Document Object Model).
 

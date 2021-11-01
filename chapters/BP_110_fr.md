@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Réseau / Requêtes |
 
-### Règle
+### Description
 
 Le double opt-in est une pratique marketing consistant à demander le consentement du prospect, généralement par accord électronique en cochant une case, puis à faire valider ce consentement par l’envoi d’un e-mail de confirmation à l’adresse indiquée. L’état de l’adresse devient double opt-in lorsque le destinataire a cliqué sur un lien contenu dans le message reçu. Ce procédé permet de valider l’adresse et de vérifier que la personne qui l’a fournie en est bien propriétaire. Cette double vérification confirme ainsi l’engagement du prospect pour recevoir une newsletter, souscrire à un abonnement, etc.
 

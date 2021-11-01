@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Lorsqu’un site web ou un service en ligne héberge les composants d’une page web sur plusieurs domaines, 
 le navigateur doit établir une connexion HTTP avec chacun de ces domaines. Une fois la page HTML récupérée, 

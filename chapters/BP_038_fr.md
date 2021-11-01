@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau   |
 
-### Règle
+### Description
 
 En général, les gabarits des pages sont mis en cache au niveau des reverse proxies. Il est alors conseillé de générer par
 des appels Ajax les zones de contenu qui nécessitent un taux de rafraîchissement plus élevé.

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive  |
 
-### Règle
+### Description
 
 Les serveurs (web, d’applications, etc.) tels que Nginx, node.js ou Gwan sont conçus pour utiliser le minimum de ressources possible. Grâce à leur fonctionnement en mode asynchrone, ils ne sont pas tenus de créer un processus ou un thread pour chaque requête. Ils évitent ainsi de gaspiller leurs ressources.
 

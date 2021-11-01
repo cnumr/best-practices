@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau  |
 
-### Règle
+### Description
 
 Eviter d’utiliser des plug-ins (Flash Player, machines virtuelles Java et Silverlight, etc.), car certains consomment beaucoup de ressources
 (cycles CPU et mémoire vive). C’est notamment le cas du Flash Player d’Adobe, à tel point qu’Apple a décidé de ne pas installer cette technologie

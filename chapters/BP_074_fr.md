@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur  |
 
-### Règle
+### Description
 
 Le serveur de base de données doit résoudre les champs en fonction du schéma. Si vous connaissez le schéma, il est vivement recommandé de nommer les champs.
 

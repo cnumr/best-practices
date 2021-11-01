@@ -17,9 +17,9 @@
 |:----------------------------------------------------------:|
 | Émissions de gaz à effet de serre  |
 
-### Règle
+### Description
 
-Pour alimenter vos serveurs, utilisez autant que possible une élec- tricité fabriquée à partir d’une énergie primaire renouvelable peu impactante (hydraulique courant, etc.). Pour cela, il est conseillé de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable. À défaut, vous pouvez acheter des certificats de garantie d’origine
+Pour alimenter vos serveurs, utilisez autant que possible une électricité fabriquée à partir d’une énergie primaire renouvelable peu impactante (hydraulique courant, etc.). Pour cela, il est conseillé de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable. À défaut, vous pouvez acheter des certificats de garantie d’origine
 
 ### Exemple
 

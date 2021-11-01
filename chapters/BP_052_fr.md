@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur |
 
-### Règle
+### Description
 
 `setTimeout()` et `setInterval()` peuvent prendre en argument des fonctions ou des chaînes de caractères (`strings`).
 D’après la bonne pratique précédente, il est déconseillé d’utiliser `eval()` et donc de passer des chaînes de caractères. 

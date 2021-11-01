@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Stokage   |
 
-### Règle
+### Description
 
 Les warnings et notices ralentissent les serveurs d’applications tels que PHP, car ces derniers doivent retracer l’origine des erreurs et inscrire dans les différents journaux système les messages expliquant les problèmes rencontrés.
 

@@ -16,7 +16,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
 
-### Règle
+### Description
 
 ...
 

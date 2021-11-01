@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Stockage   |
 
-### Règle
+### Description
 
 Les systèmes de cache doivent être, autant que possible, montés entièrement en mémoire vive (RAM). Cette mesure permet d’éviter des entrées/sorties sur les disques durs, ainsi que des cycles CPU pour les gérer.
 

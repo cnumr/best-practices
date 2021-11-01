@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau   |
 
-### Règle
+### Description
 
 Lorsque c’est possible, limiter avec la clause `LIMIT` le nombre de résultats attendus pour une requête donnée. Cette approche permet de limiter le nombre de cycles CPU et la quantité de mémoire vive utilisés pour retrouver les enregistrements concernés.
 

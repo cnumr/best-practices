@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Requêtes    |
 
-### Règle
+### Description
 
 Le complètement automatique (autocomplétion) guide les utilisateurs en complétant automatiquement la fin du texte saisi dans un champ.
 Cette fonctionnalité est parfois très pratique pour éviter des erreurs ou suggérer un axe de recherche, 

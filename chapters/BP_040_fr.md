@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive / Réseau |
 
-### Règle
+### Description
 
 Les bibliothèques JavaScript telles que jQuery, mootools, YUI et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
 sont d’excellents outils pour réaliser rapidement des sites, car ils répondent à presque tous les besoins les plus courants. 

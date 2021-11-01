@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Réseau / Mémoire vive / Requêtes  |
 
-### Règle
+### Description
 
 Les en-têtes Expires et Cache-Control définissent la durée pendant laquelle un navigateur doit conserver une ressource dans son cache. Il faut donc en prévoir et les configurer correctement pour les feuilles de style CSS, les scripts JavaScript et les images.
 

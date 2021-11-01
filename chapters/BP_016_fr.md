@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Les logiciels open source sont souvent « forkés » (dérivés) pour des raisons de performance. Or un gain de performance implique
 généralement une réduction en termes de consommation de ressources. Par conséquent, si un fork optimisé existe et offre 

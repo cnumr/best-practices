@@ -35,7 +35,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ### Légende
 
- :heavy_check_mark: Bonne pratique validée pour suppression ou modification dans la `v4.0.0`
+ :x: Bonne pratique validée pour suppression dans la `v4.0.0`
+
+ :heavy_check_mark: Bonne pratique validée pour modification dans la `v4.0.0`
  
  :beginner: Bonne pratique actuellement en discussion [ici](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques)
  
@@ -70,12 +72,12 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #025 [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
 * :o: #026 [Utiliser les notations CSS abrégées](/chapters/BP_026_fr.md)
 * :o: #027 [Fournir une CSS print](/chapters/BP_027_fr.md)
-* :heavy_check_mark: #028 [Utiliser les commentaires conditionnels](/chapters/BP_028_fr.md)
+* :x: #028 [Utiliser les commentaires conditionnels](/chapters/BP_028_fr.md)
 * :o: #029 [Favoriser les polices standards](/chapters/BP_029_fr.md)
 * :o: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
 * :o: #032 [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
-* :heavy_check_mark: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
+* :x: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
 * :o: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :o: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
@@ -90,10 +92,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #045 [Modifier plusieurs propriétés CSS en 1 seule fois](/chapters/BP_045_fr.md)
 * :o: #046 [Valider votre code avec un Linter](/chapters/BP_046_fr.md)
 * :beginner: #047 [Eviter d'utiliser try-catch-finally](/chapters/BP_047_fr.md)
-* :heavy_check_mark: #048 [Utiliser les opérations primitives](/chapters/BP_048_fr.md)
+* :x: #048 [Utiliser les opérations primitives](/chapters/BP_048_fr.md)
 * :o: #049 [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
 * :beginner: #050 [Privilégier les variables locales](/chapters/BP_050_fr.md)
-* :heavy_check_mark: #051 Priviliégier les fonctions anonymes
+* :x: #051 Priviliégier les fonctions anonymes
 * :beginner: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
 * :heavy_check_mark: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
@@ -104,12 +106,12 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :o: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
-* :heavy_check_mark: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
-* :heavy_check_mark: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
+* :x: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
+* :x: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
 * :beginner: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
 * :o: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
-* :heavy_check_mark: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/BP_066_fr.md)
-* :heavy_check_mark: #067 [Remplacer les $i++ par ++$i](/chapters/BP_067_fr.md)
+* :x: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/BP_066_fr.md)
+* :x: #067 [Remplacer les $i++ par ++$i](/chapters/BP_067_fr.md)
 * :beginner: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
 * :o: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
@@ -123,13 +125,13 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #078 [Compresser les librairies CSS et Javascript](/chapters/BP_078_fr.md)
 * :o: #079 [Combiner les fichiers CSS et JavaScript](/chapters/BP_079_fr.md)
 * :beginner: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
-* :heavy_check_mark: #081 [Minifier les fichiers JavaScript](/chapters/BP_081_fr.md)
+* :x: #081 [Minifier les fichiers JavaScript](/chapters/BP_081_fr.md)
 * :o: #082 [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
-* :heavy_check_mark: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
+* :x: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
 * :o: #084 [Favoriser HSTS Preload list aux redirections 301](/chapters/BP_084_fr.md)
 * :o: #085 [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
 * :heavy_check_mark: #086 [Choisir un hébergeur "vert"](/chapters/BP_086_fr.md)
-* :o: #087 [Utiliser une électricité issue d'EnR (renouvelable)](/chapters/BP_087_fr.md)
+* :beginner: #087 [Utiliser une électricité issue d'EnR (renouvelable)](/chapters/BP_087_fr.md)
 * :o: #088 [Adapter la qualité de service et le niveau de disponibilité](/chapters/BP_088_fr.md)
 * :beginner: #089 [Utiliser des serveurs virtualisés](/chapters/BP_089_fr.md)
 * :o: #090 [Optimiser l'efficacité énergétique des serveurs](/chapters/BP_090_fr.md)
@@ -142,7 +144,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #097 [Utiliser un serveur asynchrone](/chapters/BP_097_fr.md)
 * :o: #098 [Utiliser un CDN](/chapters/BP_098_fr.md)
 * :o: #099 [Utiliser un cache HTTP](/chapters/BP_099_fr.md)
-* :heavy_check_mark: #100 [Mettre en cache le favicon.ico](/chapters/BP_100_fr.md)
+* :x: #100 [Mettre en cache le favicon.ico](/chapters/BP_100_fr.md)
 * :o: #101 [Ajouter des entêtes Expires ou Cache-Control](/chapters/BP_101_fr.md)
 * :o: #102 [Mettre en cache les réponses Ajax](/chapters/BP_102_fr.md)
 * :o: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
@@ -157,7 +159,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #112 [Adapter les sons aux contextes d'écoute](/chapters/BP_112_fr.md)
 * :o: #113 [Adapter les textes au web](/chapters/BP_113_fr.md)
 * :o: #114 [Adapter les vidéos aux contextes de visualisation](/chapters/BP_114_fr.md)
-* :heavy_check_mark: #115 [Limiter l'utilisation du Flash](/chapters/BP_115_fr.md)
+* :x: #115 [Limiter l'utilisation du Flash](/chapters/BP_115_fr.md)
 
 ## Les modifications lors de la V4
 

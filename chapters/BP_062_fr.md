@@ -16,7 +16,7 @@
 |:----------------------------------------------------------:|
 | Processeur |
 
-### Règle
+### Description
 
 La plupart des langages objet proposent des getter et des setter stan- dards que le développeur n’a pas besoin d’écrire.
 

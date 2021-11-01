@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. fournissent des plugins à installer sur une page web
 pour y afficher un bouton Partager et un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources : 

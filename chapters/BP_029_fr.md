@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’internaute, qui n’a donc pas besoin de les télécharger. 
 On économise ainsi de la bande passante, tout en accélérant l’affichage du site.

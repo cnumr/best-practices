@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur  |
 
-### Règle
+### Description
 
 Lorsque la directive `AllowOverride` est activée, le serveur HTTP Apache doit remonter toute la hiérarchie des répertoires pour,
 peut-être, y trouver un fichier .htaccess contenant des règles de surcharge. 

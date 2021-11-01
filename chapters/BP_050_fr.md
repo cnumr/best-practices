@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur |
 
-### Règle
+### Description
 
 En JavaScript, lorsqu’on fait appel à une variable globale, le moteur d’interprétation doit vérifier :
  - qu’elle existe dans le scope actuel, dans celui du dessus, etc. ;

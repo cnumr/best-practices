@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Mémoire   |
 
-### Règle
+### Description
 
 Libérer la mémoire vive dès que possible. Supprimer notamment les tableaux qui peuvent rapidement contenir des quantités importantes d’informations.
 

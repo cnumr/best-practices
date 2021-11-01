@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur  |
 
-### Règle
+### Description
 
 Ne pas appeler de fonction dans la déclaration d’une boucle de type `for`, afin d’éviter que la fonction ne soit appelée à chaque itération de la boucle.
 

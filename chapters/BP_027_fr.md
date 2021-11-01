@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, 
 et donc indirectement l’empreinte écologique du site web. La plus dépouillée possible, elle doit proposer une police

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Le type de données utilisé pour manipuler et stocker une donnée a un impact significatif sur la consommation mémoire et
 les cycles processeurs nécessaires lors des manipulations en base de données, au niveau du serveur d’applications et même

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau / Stockage |
 
-### Règle
+### Description
 
 Redimensionner et optimiser les images en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulage le(s) processeur(s) et la mémoire vive, car un serveur web n’est pas optimisé pour le retraitement des images.
 

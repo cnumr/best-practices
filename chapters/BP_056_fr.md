@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur |
 
-### Règle
+### Description
 
 À l’instar de Smarty ou Twig, les moteurs de templating fournissent presque toujours un système de mise en cache des templates com- pilés, dans un fichier binaire contenant du code intermédiaire appelé bytecode.
 

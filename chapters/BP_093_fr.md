@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Stockage   |
 
-### Règle
+### Description
 
 Pour optimiser l’espace de stockage nécessaire aux ressources d’un site web ou d’un service en ligne, il peut être intéressant d’utiliser des solutions de cloud computing. Ainsi, tout en disposant d’une solution évolutive (elastic en anglais), on ne monopolise pas de ressources inutilement. L’autre intérêt est d’héberger les ressources statiques sur un domaine sans cookies. On évite alors de transporter le cookie avec chaque ressource transférée vers le navigateur (voir la bonne pratique n° 96).
 

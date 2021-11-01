@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau / Requêtes  |
 
-### Règle
+### Description
 
 Le HSTS permet d’indiquer à n’importe quel navigateur, via un hea- der de réponse HTTP gardé en cache que le domaine doit exclusive- ment être contacté en HTTPS.
 

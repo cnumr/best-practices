@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau  |
 
-### Règle
+### Description
 
 Afin de limiter la bande passante consommée entre le client et le serveur, le contenu des pages HTML peut être compressé.
 Tous les navigateurs modernes (pour smartphones, tablettes, ordinateurs portables et de bureau) acceptent un contenu HTML compressé via gzip ou Deflate.

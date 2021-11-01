@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Choisir le bon format d’image est crucial pour éviter de transporter des octets inutilement et économiser ainsi de la bande passante. 
 Par ailleurs, avec la multiplication des terminaux, des tailles d’écran et l’augmentation de leur résolution, une approche vectorielle

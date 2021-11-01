@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |   Processeur / Mémoire vive / Réseau  |
 
-### Règle
+### Description
 
 Les requêtes SQL à l’intérieur d’une boucle posent de gros problèmes de performance, et ce d’autant plus si le(s) serveur(s) SQL n’est (ne sont) pas sur la machine locale. En effet, ces serveurs sont optimisés pour traiter plusieurs sélections, insertions ou modifications dans une seule requête ou une seule transaction.
 
