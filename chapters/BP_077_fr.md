@@ -1,4 +1,4 @@
-## Minifier les fichiers CSS
+## Minifier les fichiers CSS, JS et HTML
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |  Facile                   |    Fort               | 
+| Prioritaire (5/5)|  Facile (1/5)              |    Fort               | 
 
 
 |Ressources Economisées                                      |
@@ -41,4 +41,4 @@ en un seul ;
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS non minifiés  | 0  |
+| de fichiers textes non minifiés  | 0  |
