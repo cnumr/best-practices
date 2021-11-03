@@ -127,7 +127,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
 * :wastebasket: #081 Minifier les fichiers JavaScript
 * :heavy_check_mark: #082 [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
-* :wastebasket: #083 [Compresser la sortie HTML](/chapters/BP_083_fr.md)
+* :wastebasket: #083 Compresser la sortie HTML
 * :o: #084 [Favoriser HSTS Preload list aux redirections 301](/chapters/BP_084_fr.md)
 * :beginner: #085 [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
 * :heavy_check_mark: #086 [Choisir un hébergeur "vert"](/chapters/BP_086_fr.md)
