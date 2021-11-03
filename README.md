@@ -165,7 +165,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ### Liste des bonnes pratiques ajoutées en v4.0.0
 
-* [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
+* [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001.md)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
 * [Désactiver la lecture automatique des vidéos et sons](https://github.com/cnumr/best-practices/issues/135)
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
