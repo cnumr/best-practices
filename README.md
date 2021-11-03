@@ -122,7 +122,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #075 [Limiter le nombre de résultats (clause LIMIT)](/chapters/BP_075_fr.md)
 * :heavy_check_mark: #076 [Utiliser les procédures stockées](/chapters/BP_076_fr.md)
 * :heavy_check_mark: #077 [Minifier les fichiers CSS, JS et HTML](/chapters/BP_077_fr.md)
-* :heavy_check_mark: #078 [Compresser les librairies CSS et Javascript](/chapters/BP_078_fr.md)
+* :heavy_check_mark: #078 [Compresser les fichiers CSS, Javascript et HTML](/chapters/BP_078_fr.md)
 * :heavy_check_mark: #079 [Combiner les fichiers CSS et JavaScript](/chapters/BP_079_fr.md)
 * :heavy_check_mark: #080 [Optimiser les images bitmap](/chapters/BP_080_fr.md)
 * :wastebasket: #081 Minifier les fichiers JavaScript
