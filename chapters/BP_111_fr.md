@@ -1,4 +1,4 @@
-## Préférer le texte brut au HTML
+## PLimiter la taille des emails envoyés
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       |  Facile                   |    Fort               | 
+| 4/5               |  4/5                      |    3/5                | 
 
 
 |Ressources Economisées                                      |
@@ -19,7 +19,8 @@
 
 ### Description
 
-Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, préférer, quand c’est possible, du texte brut au code HTML.
+Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé. 
+Eviter les pièces jointes et les images intégrées. Préférer un contenu court. Eventuellement, utiliser du texte brut au code HTML.
 
 ### Exemple
 
@@ -41,4 +42,4 @@ Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de courriels envoyés par l'URL au format HTML  |  25% |
+| de courriels envoyés par l'URL de plus de 1mo  |  10% |
