@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive / Stockage  |
 
-### Règle
+### Description
 
 Les logs d’accès du serveur web pouvant devenir très volumineux en fonction du trafic, il est recommandé de désactiver tous ceux qui ne sont pas indispensables. En limitant le nombre d’événements consignés dans le log de l’application, on évite des écritures sur le disque, ce qui limite la consommation de cycles CPU et réduit l’espace de stockage nécessaire.
 

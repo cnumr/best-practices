@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Mémoire vive / Réseau / Requêtes    |
 
-### Règle
+### Description
 
 Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
 L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé ; 

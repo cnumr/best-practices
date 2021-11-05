@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Mémoire vive / Réseau  |
 
-### Règle
+### Description
 
 Ecrire des textes courts à l’aide d’un style direct. Favoriser la concision des idées exprimées, quitte à développer le propos sur plusieurs pages si le contenu est très long et/ou intègre beaucoup de notions différentes.
 

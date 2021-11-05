@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur   |
 
-### Règle
+### Description
 
 Dans les parties du code gourmandes en ressources (certaines boucles, constructions de données complexes, etc.), éviter les appels à try…catch…ﬁnally.
 

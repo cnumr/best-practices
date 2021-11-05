@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur  |
 
-### Règle
+### Description
 
 Lorsque le contexte le permet, utiliser des variables statiques pour éviter d’exécuter plusieurs fois le même code. Vous limiterez ainsi les cycles CPU inutiles.
 

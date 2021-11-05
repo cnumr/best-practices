@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau / Requêtes / Stockage   |
 
-### Règle
+### Description
 
 Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que ces serveurs comatent depuis des semaines, des mois, voir des années en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
 

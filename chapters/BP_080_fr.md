@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau / Requêtes /  Stockage |
 
-### Règle
+### Description
 
 Les images bitmap représentent souvent la majorité des octets téléchargés, juste avant les bibliothèques CSS et JavaScript.
 Leur optimisation est donc cruciale pour réduire la bande passante consommée. La première étape consiste à choisir le bon format entre bitmap (JPEG, PNG, GIF, etc.) et vectorielle (SVG).

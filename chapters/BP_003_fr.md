@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
 
-### Règle
+### Description
 
 Le temps passé par l’utilisateur sur un site web ou un service en ligne est le facteur le plus déterminant pour réduire 
 ou augmenter l’empreinte environnementale de ce site. Autrement dit, moins l’utilisateur passe de temps sur le site ou 

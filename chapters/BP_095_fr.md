@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Réseau / Stockage |
 
-### Règle
+### Description
 
 Les redirections dégradent le temps de réponse, tout en consommant des ressources inutilement. Il faut donc les éviter autant que possible. Ces redirections peuvent avoir lieu à différents niveaux : code HTML, code JavaScript, serveur HTTP et serveur d’applications (PHP, etc.).
 

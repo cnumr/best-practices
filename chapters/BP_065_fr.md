@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive |
 
-### Règle
+### Description
 
 Le bytecode (appelé opcode dans le cas de PHP) est le code binaire généré à partir du code source. Certains accélérateurs permettent de mettre en cache ce bytecode, ce qui évite de le recompiler à chaque fois à partir du code source. Cette réduction du temps de compilation économise des cycles CPU et de la mémoire vive.
 

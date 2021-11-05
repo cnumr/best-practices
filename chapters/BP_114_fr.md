@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Réseau  |
 
-### Règle
+### Description
 
 Prévoir plusieurs formats (taille, frame rate, compression audio, etc.) selon le contexte de lecture des vidéos (ordinateur de bureau, tablette Wi-Fi, smartphone EDGE. ).
 

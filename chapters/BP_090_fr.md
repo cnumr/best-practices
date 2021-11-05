@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Consommation électrique   |
 
-### Règle
+### Description
 
 À service rendu identique, il est possible de réduire la consommation électrique des serveurs en choisissant des équipements peu énergivores.
 

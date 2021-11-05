@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Mémoire vive  |
 
-### Règle
+### Description
 
 Eviter de déclarer et d’utiliser des variables lorsque ce n’est pas indispensable. En effet, à chaque allocation correspond de la mémoire vive occupée.
 

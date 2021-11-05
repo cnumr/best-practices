@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur   |
 
-### Règle
+### Description
 
 Pour déclarer une chaîne de caractères en PHP, on peut l’encadrer par des quotes (') ou des guillemets ("). La forme utilisant les guillemets permet au développeur d’insérer des variables qui seront substituées lors de l’exécution.
 Mais si la chaîne de caractères ne possède pas de variable, utiliser plutôt les quotes. Ainsi, PHP ne recherchera pas les variables à substituer, ce qui réduira la consommation de cycles CPU.

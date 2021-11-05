@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur  |
 
-### Règle
+### Description
 
 Lorsqu’un élément du DOM (Document Object Model) doit être modifié par plusieurs propriétés, chaque changement de style ou de contenu va générer un repaint ou un reﬂow. Aussi est-il générale- ment plus économe de :
  - rendre l’élément invisible (passer la propriété display à none) (1 reﬂow) ;

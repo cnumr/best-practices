@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |    |
 
-### Règle
+### Description
 
 Lorsqu’un internaute ne consulte pas la totalité d’une page web, toutes les images situées en dehors de la zone visitée ont été chargées inutilement. 
 La technique du chargement paresseux (lazy loading) consiste à ne charger une image que lorsque son emplacement devient visible à l’écran.

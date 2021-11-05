@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur / Mémoire vive / Réseau   |
 
-### Règle
+### Description
 
 Exploiter les fonctionnalités d’HTML5 et de CSS3 pour concevoir le design d’un site. Il ne faut surtout pas imaginer un site sans prendre en compte les contraintes techniques, puis essayer de le réaliser.
 

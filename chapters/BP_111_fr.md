@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Réseau / Requêtes  |
 
-### Règle
+### Description
 
 Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, préférer, quand c’est pos- sible, du texte brut au code HTML.
 

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Réseau |
 
-### Règle
+### Description
 
 Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier 3 formats couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
  - MP3 (MPEG-1 Audio Layer 3) ;

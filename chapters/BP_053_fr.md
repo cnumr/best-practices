@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur |
 
-### Règle
+### Description
 
 La boucle `for…in` est plus sophistiquée que la boucle `for` basique, car elle dédoublonne les éléments d’une liste avant de commencer l’énumération. Aussi est-il généralement plus économe d’utiliser une boucle for simple lorsqu’on maîtrise bien la collection
 

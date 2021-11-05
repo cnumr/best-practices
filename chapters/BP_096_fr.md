@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive / Réseau / Stockage  |
 
-### Règle
+### Description
 
 La page 404 doit être la plus légère possible, et même idéalement inexistante. En effet, lorsque le navigateur demande une ressource qui n’existe pas (image, feuille de styles CSS, fichier JavaScript, etc.), le serveur répond par la page 404, qui peut être plus lourde que la ressource demandée.
 

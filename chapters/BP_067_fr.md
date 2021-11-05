@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 | Processeur   |
 
-### Règle
+### Description
 
 La forme `$i++` présente l’inconvénient de générer une variable temporaire lors de l’incrémentation, ce qui n’est pas le cas avec la forme
 `++$i`.

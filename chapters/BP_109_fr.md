@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Réseau / Requêtes  |
 
-### Règle
+### Description
 
 Selon l’ADEME (Agence de l’environnement et de la maîtrise de l’énergie), un e-mail contenant une pièce jointe de 1 Mo a un bilan carbone de 19 grammes d’équivalent CO2. Si l’on replace ce résultat dans le contexte d’une entreprise de 100 personnes envoyant en moyenne 332 e-mails par jour, 220 jours par an, cela représente 13,6 tonnes d’équivalent CO2, soit 13 allers-retours Paris-New York en avion.
 

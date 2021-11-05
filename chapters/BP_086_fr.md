@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Déchets électroniques, consommation électrique, émissions de gaz à effet de serre |
 
-### Règle
+### Description
 
 Préférer un hébergeur qui combine des serveurs économes à des sources d’énergies renouvelables et qui compense ses émissions de gaz à effet de serre. Les six critères à prendre en compte sont :
 1.	gestion des DEEE (déchets d’équipements électriques et électroniques) ;

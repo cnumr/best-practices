@@ -16,7 +16,7 @@
 |:----------------------------------------------------------:|
 |Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
 
-### Règle
+### Description
 
 Plusieurs études (Cast Software et Standish Group, notamment) démontrent que 70 % des fonctionnalités demandées par les utilisateurs
 ne sont pas essentielles et que 45 % ne sont jamais utilisées. En réduisant la couverture et la profondeur fonctionnelle de 

@@ -17,7 +17,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive / Réseau  |
 
-### Règle
+### Description
 
 Utiliser un framework ou un développement sur mesure, afin de bénéficier d’une plus grande liberté dans l’optimisation de certains processus.
 Les CMS sont en effet plus contraignants et imposent des fonctionnements parfois gourmands en ressources pour atteindre leur principal objectif, la souplesse.
