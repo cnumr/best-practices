@@ -26,7 +26,7 @@ Pour alimenter vos serveurs, utilisez autant que possible une électricité fabr
 Le service WattImpact neutralise ainsi la consommation électrique de l’infrastructure technique d’un site (serveurs) et des ordinateurs des internautes. Pour plus de détails :
 www.wattimpact.com
 
-Pour en savoir plus sur les certificats de garantie d’origine et l’élec- tricité :
+Pour en savoir plus sur les certificats de garantie d’origine et l’électricité :
 www.greenit.fr/tag/electricite
 
 ### Principe de validation
