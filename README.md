@@ -153,7 +153,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
 * :o: #107 [Compresser les documents](/chapters/BP_107_fr.md)
 * :o: #108 [Optimiser les PDF](/chapters/BP_108_fr.md)
-* :o: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/BP_109_fr.md)
+* :beginner: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/BP_109_fr.md)
 * :o: #110 [N'utiliser que des fichiers double opt-in](/chapters/BP_110_fr.md)
 * :heavy_check_mark: #111 [Préférer le texte brut au HTML](/chapters/BP_111_fr.md)
 * :o: #112 [Adapter les sons aux contextes d'écoute](/chapters/BP_112_fr.md)
