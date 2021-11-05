@@ -72,7 +72,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #025 [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
 * :o: #026 [Utiliser les notations CSS abrégées](/chapters/BP_026_fr.md)
 * :o: #027 [Fournir une CSS print](/chapters/BP_027_fr.md)
-* :wastebasket: #028 [Utiliser les commentaires conditionnels](/chapters/BP_028_fr.md)
+* :wastebasket: #028 Utiliser les commentaires conditionnels
 * :o: #029 [Favoriser les polices standards](/chapters/BP_029_fr.md)
 * :o: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
