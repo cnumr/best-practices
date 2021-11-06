@@ -1,4 +1,4 @@
-## Minifier les fichiers CSS, JS et HTML
+## Minifier les fichiers CSS, JavaScript, HTML et SVG
 
 ### Identifiants
 
@@ -41,4 +41,4 @@ en un seul ;
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers textes non minifiés  | 0  |
+| de fichiers CSS, JavaScript, HTML et SVG non minifiés  | 0  |

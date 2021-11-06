@@ -1,4 +1,4 @@
-## Compresser les fichiers CSS, Javascript et HTML
+## Compresser lles fichiers CSS, JavaScript, HTML et SVG
 
 ### Identifiants
 
@@ -37,4 +37,4 @@ AddOutputFilterByType DEFLATE application/x-javascript
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS, JS et HTML non compressées  |  0 |
+| de fichiers CSS, JavaScript,  HTML et SVG non compressées  |  0 |
