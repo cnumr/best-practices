@@ -97,7 +97,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #050 [Privilégier les variables locales](/chapters/BP_050_fr.md)
 * :wastebasket: #051 Priviliégier les fonctions anonymes
 * :wastebasket: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
-* :heavy_check_mark: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
+* :heavy_check_mark: #053 [Eviter les boucles for...in en JavaScript](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
 * :o: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
 * :o: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)

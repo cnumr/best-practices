@@ -1,4 +1,4 @@
-## Éviter les boucles for...in
+## Éviter les boucles for...in en JavaScript
 
 ### Identifiants
 
@@ -10,36 +10,46 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Conseillé         |  Standard                 | Moyen                 | 
+| 2/5         |  5/5                 | 2/5                 | 
 
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|  Processeur |
+|  Processeur/Mémoire vive |
 
 ### Description
 
-La boucle `for…in` est plus sophistiquée que la boucle `for` basique, car elle dédoublonne les éléments d’une liste avant de commencer l’énumération. Aussi est-il généralement plus économe d’utiliser une boucle for simple lorsqu’on maîtrise bien la collection
+En javascript, la boucle `for…in` dédoublonne les éléments d’une liste avant de commencer l’énumération. Aussi est-il généralement plus économe d’utiliser une boucle  for..of ou foreach
 
 ### Exemple
 
-Dans la boucle suivante, le for…in est mal utilisé :
+Eviter :
 ```javascript
-var oSum = 0;
-for( var i in oArray ) {
-    oSum += oArray[i];
+
+for( const i in oArray ) {
+    // do some processing
 }
 ```
 Préférer plutôt :
 ```javascript
-var oSum = 0;
-var oLength = oArray.length;
-for( var i = 0; i < oLength; i++ ) {
-    oSum += oArray[i];
+
+for( const i of oArray ) {
+     // do some processing
 }
 ```
+
+Ou encore :
+
+```javascript
+
+oArray.forEach(i => 
+// do some processing 
+);
+```
+
+
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'utilisations de boucles foreach, for ...in lorsque l'utilisation d'une boucle for simple est possible  | 0  |
+| d'utilisations de boucles  for ...in lorsque l'utilisation d'autres types de boucles est possible   | 0  |
