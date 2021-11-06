@@ -144,7 +144,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #097 [Utiliser un serveur asynchrone](/chapters/BP_097_fr.md)
 * :o: #098 [Utiliser un CDN](/chapters/BP_098_fr.md)
 * :o: #099 [Utiliser un cache HTTP](/chapters/BP_099_fr.md)
-* :wastebasket: #100 [Mettre en cache le favicon.ico](/chapters/BP_100_fr.md)
+* :wastebasket: #100 Mettre en cache le favicon.ico
 * :o: #101 [Ajouter des entêtes Expires ou Cache-Control](/chapters/BP_101_fr.md)
 * :o: #102 [Mettre en cache les réponses Ajax](/chapters/BP_102_fr.md)
 * :o: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
