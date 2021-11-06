@@ -1,4 +1,4 @@
-## PLimiter la taille des emails envoyés
+## Limiter la taille des emails envoyés
 
 ### Identifiants
 
@@ -19,8 +19,8 @@
 
 ### Description
 
-Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé. 
-Eviter les pièces jointes et les images intégrées. Préférer un contenu court. Eventuellement, utiliser du texte brut au code HTML.
+Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé.
+Éviter les pièces jointes et les images intégrées. Préférer un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
 
 ### Exemple
 
@@ -42,4 +42,4 @@ Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de courriels envoyés par l'URL de plus de 1mo  |  10% |
+| de courriels envoyés de plus de 1mo  |  10% |
