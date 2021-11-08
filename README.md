@@ -60,7 +60,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
 * :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
-* :o: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
+* :beginner: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
 * :beginner: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
