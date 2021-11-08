@@ -113,7 +113,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/BP_066_fr.md)
 * :wastebasket: #067 [Remplacer les $i++ par ++$i](/chapters/BP_067_fr.md)
 * :wastebasket: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
-* :o: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
+* :beginner: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
 * :wastebasket: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
