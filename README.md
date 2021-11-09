@@ -51,7 +51,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :beginner: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
 * :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
-* :o: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
+* :beginner: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :beginner: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :beginner: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
