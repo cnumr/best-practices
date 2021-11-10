@@ -23,7 +23,7 @@ Redimensionner et optimiser les images en dehors du site web. Cette mesure perme
 
 ### Exemple
 
-Si l’image ajoutée directement dans le CMS pèse 7 Mo, on écono- misera :
+Si l’image ajoutée directement dans le CMS pèse 7 Mo, on économisera :
  - 7 Mo de bande passante lors de l’envoi ;
  - 100 Ko lors de la visualisation du résultat ;
  - 6,9 Mo de stockage sur le disque dur du serveur. Sans parler des cycles CPU et de la mémoire vive…
