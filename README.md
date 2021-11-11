@@ -167,7 +167,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
-* [Désactiver la lecture automatique des vidéos et sons](https://github.com/cnumr/best-practices/issues/135)
+* [Éviter la lecture automatique des vidéos et sons](/chapters/BP_4003_fr.md)
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
 * [Fournir une alternative texte aux contenus multimédias](https://github.com/cnumr/best-practices/issues/133)
 * [Privilégier HTTP/2 à HTTP/1.1](https://github.com/cnumr/best-practices/issues/170)
