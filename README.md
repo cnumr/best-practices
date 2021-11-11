@@ -147,7 +147,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #100 Mettre en cache le favicon.ico
 * :o: #101 [Ajouter des entêtes Expires ou Cache-Control](/chapters/BP_101_fr.md)
 * :o: #102 [Mettre en cache les réponses Ajax](/chapters/BP_102_fr.md)
-* :o: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
+* :beginner: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
 * :o: #104 [Désactiver le DNS lookup d’Apache](/chapters/BP_104_fr.md)
 * :o: #105 [Apache Vhost : désactiver le AllowOverride](/chapters/BP_105_fr.md)
 * :beginner: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
