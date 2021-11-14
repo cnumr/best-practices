@@ -94,7 +94,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #047 [Eviter d'utiliser try-catch-finally](/chapters/BP_047_fr.md)
 * :wastebasket: #048 [Utiliser les opérations primitives](/chapters/BP_048_fr.md)
 * :o: #049 [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
-* :wastebasket: #050 [Privilégier les variables locales]
+* :wastebasket: #050 Privilégier les variables locales
 * :wastebasket: #051 Priviliégier les fonctions anonymes
 * :wastebasket: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
 * :heavy_check_mark: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
