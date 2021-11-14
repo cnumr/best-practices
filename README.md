@@ -49,19 +49,19 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * :heavy_check_mark: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
 * :beginner: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
-* :beginner: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
+* :heavy_check_mark: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
 * :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
 * :beginner: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :beginner: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
-* :beginner: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
+* :heavy_check_mark: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
 * :beginner: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
 * :wastebasket: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
 * :beginner: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
 * :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
-* :beginner: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
-* :beginner: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
+* :heavy_check_mark: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
+* :heavy_check_mark: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
 * :beginner: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
@@ -74,11 +74,11 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #027 [Fournir une CSS print](/chapters/BP_027_fr.md)
 * :wastebasket: #028 Utiliser les commentaires conditionnels
 * :beginner: #029 [Favoriser les polices standards](/chapters/BP_029_fr.md)
-* :beginner: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
+* :heavy_check_mark: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
 * :o: #032 [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
 * :wastebasket: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
-* :beginner: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
+* :heavy_check_mark: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :beginner: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
 * :heavy_check_mark: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
@@ -147,7 +147,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #100 Mettre en cache le favicon.ico
 * :o: #101 [Ajouter des entêtes Expires ou Cache-Control](/chapters/BP_101_fr.md)
 * :o: #102 [Mettre en cache les réponses Ajax](/chapters/BP_102_fr.md)
-* :beginner: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
+* :heavy_check_mark: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
 * :o: #104 [Désactiver le DNS lookup d’Apache](/chapters/BP_104_fr.md)
 * :o: #105 [Apache Vhost : désactiver le AllowOverride](/chapters/BP_105_fr.md)
 * :beginner: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 14 bonnes pratiques ajoutées en v4.0.0
+### 16 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -179,13 +179,21 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
+* [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
+* [Mettre une politique de rétention et de rotation de logs](https://github.com/cnumr/best-practices/issues/254)
 
-### 16 bonnes pratiques modifiées en v4.0.0
+### 23 bonnes pratiques modifiées en v4.0.0
 
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
 * #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
+* #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
+* #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
+* #017 [Choisir un format de données adapté](https://github.com/cnumr/best-practices/issues/257)
+* #030 [Préférer les glyphs aux images](https://github.com/cnumr/best-practices/issues/258)
+* #034 [Redimensionner les images en dehors du HTML](https://github.com/cnumr/best-practices/issues/259)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
@@ -197,6 +205,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #080 [Optimiser les images bitmap](https://github.com/cnumr/best-practices/issues/183)
 * #086 [Choisir un hébergeur "vert"](https://github.com/cnumr/best-practices/issues/144)
 * #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
+* #103 [Désactiver certains logs d’accès du serveur web](https://github.com/cnumr/best-practices/issues/255)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
