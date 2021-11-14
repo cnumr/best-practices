@@ -56,7 +56,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :beginner: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
 * :beginner: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
-* :beginner: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
+* 🗑️: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
 * :beginner: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
 * :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
@@ -199,6 +199,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ### 16 bonnes pratiques supprimées en v4.0.0
 
+* #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
 * #033 [Supprimer les balises images dont l’attribut SRC est vide](https://github.com/cnumr/best-practices/issues/131)
 * #048 [Utiliser les opérations primitives](https://github.com/cnumr/best-practices/issues/125)
