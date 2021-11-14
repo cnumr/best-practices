@@ -197,7 +197,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 16 bonnes pratiques supprimées en v4.0.0
+### 17 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
