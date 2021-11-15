@@ -51,7 +51,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :heavy_check_mark: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
 * :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
-* :beginner: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
+* :heavy_check_mark: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :beginner: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :heavy_check_mark: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
@@ -100,10 +100,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
 * :beginner: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
-* :beginner: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)
-* :beginner: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
+* :wastebasket: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)
+* :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
 * :beginner: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
-* :beginner: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
+* :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :beginner: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
 * :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
@@ -182,12 +182,13 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
 * [Mettre une politique de rétention et de rotation de logs](https://github.com/cnumr/best-practices/issues/254)
 
-### 23 bonnes pratiques modifiées en v4.0.0
+### 25 bonnes pratiques modifiées en v4.0.0
 
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
 * #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
+* #007 [Respecter le principe de navigation rapide dans l’historique](https://github.com/cnumr/best-practices/issues/266)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
@@ -197,6 +198,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
+* #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
 * #076 [Utiliser les procédures stockées](https://github.com/cnumr/best-practices/issues/146)
@@ -209,7 +211,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 19 bonnes pratiques supprimées en v4.0.0
+### 21 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
@@ -219,6 +221,8 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #050 [Privilégier les variables locales](https://github.com/cnumr/best-practices/issues/168)
 * #051 [Priviliégier les fonctions anonymes](https://github.com/cnumr/best-practices/issues/126)
 * #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](https://github.com/cnumr/best-practices/issues/169)
+* #056 [Utiliser un système de templating (Smarty, Twig)](https://github.com/cnumr/best-practices/issues/263)
+* #059 [Redimensionner les images en dehors du CMS](https://github.com/cnumr/best-practices/issues/265)
 * #062 [Eviter la ré-écriture des getter / setter natifs](https://github.com/cnumr/best-practices/issues/132)
 * #063 [Ne pas assigner inutilement de valeur aux variables](https://github.com/cnumr/best-practices/issues/127)
 * #066 [Utiliser la simple côte (') au lieu du guillemet (")](https://github.com/cnumr/best-practices/issues/129)
