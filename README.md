@@ -179,7 +179,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
-* [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
+* [Bénéficier d'un contenu optimisé pour le référencement naturel](/chapters/BP_4015_fr.md)
 * [Mettre une politique de rétention et de rotation de logs](https://github.com/cnumr/best-practices/issues/254)
 
 ### 23 bonnes pratiques modifiées en v4.0.0
