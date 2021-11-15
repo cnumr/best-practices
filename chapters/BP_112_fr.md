@@ -27,7 +27,7 @@ Ces formats appliquent des algorithmes de compression très évolués permettant
 
 ### Exemple
 
-Des encodeurs comme LAME permettent de convertir au format MP3 des fichiers audio non compressés, mais également de jouer sur le taux d’échantillonnage, afin de gagner encore du poids, au détri- ment de la qualité audio. À tester sur chaque fichier sonore.
+Des encodeurs comme LAME permettent de convertir au format MP3 des fichiers audio non compressés, mais également de jouer sur le taux d’échantillonnage, afin de gagner encore du poids, au détriment de la qualité audio. À tester sur chaque fichier sonore.
 
 Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conversion en MP3 donne :
  - un fichier son-128.mp3 de 10 823 octets (128 kb/s), 6 fois plus léger ;

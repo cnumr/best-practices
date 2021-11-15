@@ -27,7 +27,7 @@ Utiliser un outil tel que YUI Compressor pour :
 
 ### Exemple
 
-Utiliser le module Apache mod_pagespeed de Google pour automa- tiser cette opération.
+Utiliser le module Apache mod_pagespeed de Google pour automatiser cette opération.
 
 Un fichier de référence JavaScript de 248 Ko ne pèse que 97 Ko après minification.
 

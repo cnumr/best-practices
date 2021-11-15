@@ -23,7 +23,7 @@ La combinaison de feuilles de style CSS ou de bibliothèques Javascript permet d
 
 ### Exemple
 
-Le module Apache mod_pagespeed de Google permet d’automati- ser ce processus. Il fournit un ensemble de filtres spécialisés, parmi lesquels :
+Le module Apache mod_pagespeed de Google permet d’automatiser ce processus. Il fournit un ensemble de filtres spécialisés, parmi lesquels :
  - combine_css. Combine les CSS en une seule ;
  - combine_javascript. Combine plusieurs fichiers JavaScript en un seul ;
  - defer_javascript. Diffère l’exécution de JavaScript dans le code HTML ;
