@@ -180,7 +180,6 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un titre de page, un TITLE et une Metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
-* [Mettre une politique de rétention et de rotation de logs](https://github.com/cnumr/best-practices/issues/254)
 
 ### 31 bonnes pratiques modifiées en v4.0.0
 
