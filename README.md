@@ -105,7 +105,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
 * :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
-* :beginner: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
+* :wastebasket: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
 * :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
 * :wastebasket: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
 * :heavy_check_mark: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
@@ -216,7 +216,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 21 bonnes pratiques supprimées en v4.0.0
+### 22 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
@@ -228,6 +228,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](https://github.com/cnumr/best-practices/issues/169)
 * #056 [Utiliser un système de templating (Smarty, Twig)](https://github.com/cnumr/best-practices/issues/263)
 * #059 [Redimensionner les images en dehors du CMS](https://github.com/cnumr/best-practices/issues/265)
+* #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
 * #062 [Eviter la ré-écriture des getter / setter natifs](https://github.com/cnumr/best-practices/issues/132)
 * #063 [Ne pas assigner inutilement de valeur aux variables](https://github.com/cnumr/best-practices/issues/127)
 * #066 [Utiliser la simple côte (') au lieu du guillemet (")](https://github.com/cnumr/best-practices/issues/129)
