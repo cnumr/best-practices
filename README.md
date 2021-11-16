@@ -153,7 +153,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
 * :o: #107 [Compresser les documents](/chapters/BP_107_fr.md)
 * :o: #108 [Optimiser les PDF](/chapters/BP_108_fr.md)
-* :beginner: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/BP_109_fr.md)
+* :heavy_check_mark: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/BP_109_fr.md)
 * :o: #110 [N'utiliser que des fichiers double opt-in](/chapters/BP_110_fr.md)
 * :heavy_check_mark: #111 [Préférer le texte brut au HTML](/chapters/BP_111_fr.md)
 * :o: #112 [Adapter les sons aux contextes d'écoute](/chapters/BP_112_fr.md)
@@ -182,7 +182,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
 * [Mettre une politique de rétention et de rotation de logs](https://github.com/cnumr/best-practices/issues/254)
 
-### 30 bonnes pratiques modifiées en v4.0.0
+### 31 bonnes pratiques modifiées en v4.0.0
 
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
 * #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
@@ -213,6 +213,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
 * #103 [Désactiver certains logs d’accès du serveur web](https://github.com/cnumr/best-practices/issues/255)
+* #109 [Dédoublonner systématiquement les fichiers avant envoi](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
