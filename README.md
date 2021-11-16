@@ -171,7 +171,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
 * [Fournir une alternative texte aux contenus multimédias](https://github.com/cnumr/best-practices/issues/133)
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
-* [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
+* [Économiser de la bande passante grace à un ServiceWorker](/chapters/BP_4007_fr.md)
 * [Mettre en place un sitemap efficient](https://github.com/cnumr/best-practices/issues/172)
 * [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](https://github.com/cnumr/best-practices/issues/173)
 * [Limiter au strict nécessaire le nombre de redondance des données](https://github.com/cnumr/best-practices/issues/174)
