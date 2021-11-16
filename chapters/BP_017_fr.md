@@ -29,6 +29,14 @@ recherche sur un nombre que sur une chaîne de caractères).
    
 Idéalement, les choix du type de données et de son dimensionnement doivent êtres fondés sur l’analyse d’un échantillon représentatif de données.
 
+Il est également important de prendre en compte le format de type de données en fonction de sa taille de stockage : 
+- integer (nombre entier)  : 4 octets
+- smalling : 2 octets
+- Bigint : 8 octets 
+- float  : 4 octets 
+- chaine de caractère : 20 octets 
+- etc.
+
 ### Exemple
 
 Dans le cas d’un établissement de formation, la taille du champ permettant de stocker le nombre d’élèves doit être basé sur une étude statistique.
