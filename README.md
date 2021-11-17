@@ -48,9 +48,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * :heavy_check_mark: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * :heavy_check_mark: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
-* :beginner: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
+* :heavy_check_mark: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :heavy_check_mark: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
-* :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
+* :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut un chargement adaptatif](/chapters/BP_006_fr.md)
 * :heavy_check_mark: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :heavy_check_mark: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
@@ -109,7 +109,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
 * :wastebasket: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
 * :heavy_check_mark: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
-* :beginner: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
+* :wastebasket: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
 * :wastebasket: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/BP_066_fr.md)
 * :wastebasket: #067 [Remplacer les $i++ par ++$i](/chapters/BP_067_fr.md)
 * :wastebasket: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 15 bonnes pratiques ajoutées en v4.0.0
+### 17 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -180,11 +180,14 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un titre de page, un TITLE et une Metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
+* [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
+* [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 
-### 31 bonnes pratiques modifiées en v4.0.0
+### 32 bonnes pratiques modifiées en v4.0.0
 
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
 * #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #004 [Préférer la saisie assistée à l'autocomplétions](https://github.com/cnumr/best-practices/issues/281)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
 * #007 [Respecter le principe de navigation rapide dans l’historique](https://github.com/cnumr/best-practices/issues/266)
@@ -216,7 +219,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 22 bonnes pratiques supprimées en v4.0.0
+### 23 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
@@ -231,6 +234,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
 * #062 [Eviter la ré-écriture des getter / setter natifs](https://github.com/cnumr/best-practices/issues/132)
 * #063 [Ne pas assigner inutilement de valeur aux variables](https://github.com/cnumr/best-practices/issues/127)
+* #065 [Mettre en cache le Bytecode code intermédiaire](https://github.com/cnumr/best-practices/issues/280)
 * #066 [Utiliser la simple côte (') au lieu du guillemet (")](https://github.com/cnumr/best-practices/issues/129)
 * #067 [Remplacer les $i++ par ++$i](https://github.com/cnumr/best-practices/issues/123)
 * #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](https://github.com/cnumr/best-practices/issues/177)
