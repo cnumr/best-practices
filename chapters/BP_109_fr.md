@@ -29,8 +29,8 @@ Newsletters:
 - Définir la fréquence d'envoi au strict nécessaire
 - Nettoyer les contacts d'envoi : désinscription notamment
 - Envoyer aux seuls personnes essentielles à la newsletter et ceux le souhaitant (liste d'inscription, ciblage client)
-- Eviter les pièces jointes et préférer les liens directs
-- Eviter les images et à défaut limiter leur taille
+- Éviter les pièces jointes et préférer les liens directs
+- Éviter les images et à défaut limiter leur taille
 
 Gestion client:
 
