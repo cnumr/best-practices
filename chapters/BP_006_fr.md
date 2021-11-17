@@ -1,4 +1,4 @@
-## Privilégier une approche "mobile first", à défaut RESS
+## Privilégier une approche "mobile first", à défaut un chargement adaptatif
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Conseillé         | Difficile                 | Fort                  | 
+| 3         | 1                 | 5                  | 
 
 
 |Ressources Economisées                                      |
@@ -20,25 +20,28 @@
 ### Description
 
 Lorsque le contexte le permet, privilégier l’approche « mobile first » qui consiste à concevoir un site/service en ligne
-pour les terminaux mobiles.
-Et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l’apport fonctionnel/ergonomique est justifié.
-Dans ce cas, opter alors pour l’architecture Responsive Design + Server Side Components (RESS). Cette architecture reprend
-les principes RWD (adaptation automatique de l’interface au contexte d’utilisation) mais sélectionne côté serveur les ressources
-qui seront envoyées au terminal. On s’assure ainsi de ne pas consommer inutilement de la bande passante, 
-ni de trop solliciter le processeur et la mémoire du terminal pour des traitements inutiles. 
-Il s’agit de pousser à l’extrême la bonne pratique qui consiste à fournir du code spécifique à un navigateur en particulier.
-
-Parmi les solutions clés en main, RESS.io automatise la mise en œuvre de bonnes pratiques responsive orientées efficience, 
-comme servir des images redimensionnées pour les petits écrans, compresser automatiquement (en gzip) les pages et les 
-ressources CSS et JavaScript en sortie de serveur HTTP, fusionner les feuilles de styles, etc.
+pour les terminaux mobiles,
+et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l’apport fonctionnel/ergonomique est justifié.
+Dans ce cas, opter alors pour le chargement adaptatif.
+Cette approche consiste à sélectionner les ressources, y compris JS et CSS, les plus adaptées au contexte d'utilisation (taille de l'écran / de la fenêtre, densité de pixels, qualité du réseau, quantité de mémoire vive, etc.), si possible côté serveur.
+On s’assure ainsi de ne pas consommer inutilement de la bande passante, 
+ni de trop solliciter le processeur et la mémoire du terminal pour des traitements inutiles.
 
 ### Exemple
 
-La mise en place d’une architecture RESS plutôt qu’une approche responsive design standard (RWD) peut aller jusqu’à diviser par 4
-la bande passante consommée, pour de meilleurs temps de réponse. Plus la taille de l’écran est petite, plus l’approche RESS sera intéressante.
+Côté serveur, on pourra utiliser les _client hints_, ou à défaut l'identifiant du navigateur couplé à un tableau de capacités des navigateurs (aussi appelé _user agent sniffing_, avec ses limitations).
+
+Côté client, les _media queries_ (notamment dans les attributs `media` des `<link>` pour la sélection de feuilles de styles CSS), les attributs `srcset` et `sizes` des `<img>`, les sous-éléments `<source>` des `<picture>`, `<video>` et `<audio>` pourront être utiles, et les mêmes informations disponibles dans les _client hints_ peuvent également être récupérées par des APIs JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement.
+
+Dans tous les cas, on s'assurera que le comportement par défaut, si une des fonctionnalités devait ne pas être supportée par le navigateur, sera parmi les plus économes (sans trop détériorer l'expérience utilisateur).
+
+## Sources
+
+* https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
+* https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de conception ne s'appuyant pas sur une approche"mobile first"  |  1 |
+| de conception ne s'appuyant pas sur une approche "mobile first"  |  1 |
