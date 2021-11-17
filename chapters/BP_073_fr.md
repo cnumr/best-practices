@@ -18,7 +18,7 @@
 | Processeur / Mémoire vive / Réseau   |
 
 ### Description
-Quelque soit le système de base de données, l’ouverture d’une connexion est un processus couteux en ressources pour le client et le serveur :
+Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
 *	Allocation de mémoire et I/O disque pour les buffers,
 *	Aller-retours réseaux pour le protocole de connexion,
 *	Coût CPU induit.
