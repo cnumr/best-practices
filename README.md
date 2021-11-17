@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 17 bonnes pratiques ajoutées en v4.0.0
+### 16 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -174,7 +174,6 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
 * [Mettre en place un sitemap efficient](https://github.com/cnumr/best-practices/issues/172)
 * [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](https://github.com/cnumr/best-practices/issues/173)
-* [Limiter au strict nécessaire le nombre de redondance des données](https://github.com/cnumr/best-practices/issues/174)
 * [Réduire le volume de données stockées au nécessaire](https://github.com/cnumr/best-practices/issues/175)
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
