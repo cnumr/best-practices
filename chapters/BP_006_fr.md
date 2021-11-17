@@ -33,7 +33,7 @@ Côté serveur, on pourra utiliser les _client hints_, ou à défaut l'identifia
 
 Côté client, les _media queries_ (notamment dans les attributs `media` des `<link>` pour la sélection de feuilles de styles CSS), les attributs `srcset` et `sizes` des `<img>`, les sous-éléments `<source>` des `<picture>`, `<video>` et `<audio>` pourront être utiles, et les mêmes informations disponibles dans les _client hints_ peuvent également être récupérées par des APIs JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement.
 
-Dans tous les cas, on s'assurera que le comportement par défaut, si une des fonctionnalités devait ne pas être supportée par le navigateur, sera parmis les plus économes (sans trop détériorer l'expérience utilisateur).
+Dans tous les cas, on s'assurera que le comportement par défaut, si une des fonctionnalités devait ne pas être supportée par le navigateur, sera parmi les plus économes (sans trop détériorer l'expérience utilisateur).
 
 ## Sources
 
