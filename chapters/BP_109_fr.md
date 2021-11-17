@@ -27,7 +27,7 @@ Il convient de raisonner l'envoi d'e-mail automatiques (ex: newsletters, gestion
 Newsletters:
 
 - Définir la fréquence d'envoi au strict nécessaire
-- Nettoyer les contact d'envoi : Dé-inscription notamment
+- Nettoyer les contacts d'envoi : désinscription notamment
 - Envoyer aux seuls personnes essentielles à la newsletter et ceux le souhaitant (liste d'inscription, ciblage client)
 - Eviter les pièces jointes et préférer les liens directs
 - Eviter les images et à défaut limiter leur taille
