@@ -22,7 +22,7 @@
 Les navigateurs possèdent une fonction de navigation rapide dans l’historique (boutons Page précédente et Page suivante),
 souvent nommée _back-forward cache_ ou encore _bfcache_. 
 Grâce à cette fonction, il n’est pas nécessaire de redemander la page au serveur, puis de la recharger. 
-On évite ainsi de consommer inutilement de la bande passante et de générer des requêtes HTTP supplémentaires,
+On évite alors de consommer inutilement de la bande passante et de générer des requêtes HTTP supplémentaires,
 ainsi que de ré-exécuter les scripts et refaire le rendu de la page.
 
 Par conséquent, il faut éviter tout élément qui rendrait la page inéligible au _bfcache_,
