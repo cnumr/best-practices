@@ -27,7 +27,7 @@ Il convient de raisonner l'envoi d'e-mail automatiques (ex: newsletters, gestion
 Newsletters:
 
 - Définir la fréquence d'envoi au strict nécessaire
-- Envoyer aux seuls personnes essentielles à la newsletter et ceux le souhaitant (liste d'inscription, ciblage client)
+- Envoyer aux seules personnes essentielles à la newsletter et celles le souhaitant (liste d'inscription, ciblage client)
 - Éviter les pièces jointes et préférer les liens directs
 - Éviter les images et à défaut limiter leur taille
 
