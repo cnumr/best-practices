@@ -30,8 +30,9 @@ Pour éviter de saturer des disques, il est également recommandé de mettre en 
 Les logs d’accès d’un serveur Apache peuvent être configurés comme suit pour exclure les ressources statiques et flux RSS :
 
 ```apacheconf
-SetEnvIf Request_URI".(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$"dontlog
-SetEnvIf Request_URI"^/rss/"dontlog CustomLog /var/log/apache/access.log combined env=!dontlog
+SetEnvIf Request_URI "\.(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$" dontlog
+SetEnvIf Request_URI "^/rss/" dontlog
+CustomLog /var/log/apache/access.log combined env=!dontlog
 ```
 
 ### Principe de validation
