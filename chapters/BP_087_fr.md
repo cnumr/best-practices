@@ -1,4 +1,4 @@
-## Utiliser une électricité issue d'EnR (renouvelable)
+## Privilégier un fournisseur d'électricité écoresponsable
 
 ### Identifiants
 
@@ -19,12 +19,11 @@
 
 ### Description
 
-Pour alimenter vos serveurs, utilisez autant que possible une électricité fabriquée à partir d’une énergie primaire renouvelable peu impactante (hydraulique courant, etc.). Pour cela, il est conseillé de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable. À défaut, vous pouvez acheter des certificats de garantie d’origine
+Pour alimenter vos équipements numériques, utilisez autant que possible une électricité ayant le minimum d'impacts environnementaux lors de sa production (ex: hydraulique).
+A ce jour, il n'existe néanmoins pas de mécanisme solide garantissant que l'électricité que vous consommez a été produite avec des impacts plus faibles. 
+Faute de mieux, une possibilité est soit de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable, soit d'acheter des certificats de garantie d’origine.
 
-### Exemple
-
-Le service WattImpact neutralise ainsi la consommation électrique de l’infrastructure technique d’un site (serveurs) et des ordinateurs des internautes. Pour plus de détails :
-www.wattimpact.com
+Bien que cela ne concerne que les émissions de gaz à effet de serre, https://app.electricitymap.org/map permet d'être informé sur l'intensité carbone en fonction du pays du fournisseur.
 
 Pour en savoir plus sur les certificats de garantie d’origine et l’électricité :
 www.greenit.fr/tag/electricite
