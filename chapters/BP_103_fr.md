@@ -27,7 +27,7 @@ Pour éviter de saturer des disques, il est également recommandé de mettre en 
 
 ### Exemple
 
-Les logs d’accès d’un serveur Apache peuvent être configurés comme suit :
+Les logs d’accès d’un serveur Apache peuvent être configurés comme suit pour exclure les ressources statiques et flux RSS :
 
 ```apacheconf
 SetEnvIf Request_URI".(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$"dontlog
