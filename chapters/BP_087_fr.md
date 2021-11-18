@@ -23,6 +23,8 @@ Pour alimenter vos équipements numériques, utilisez autant que possible une é
 A ce jour, il n'existe néanmoins pas de mécanisme solide garantissant que l'électricité que vous consommez a été produite avec des impacts plus faibles. 
 Faute de mieux, une possibilité est soit de choisir un fournisseur tel que Enercoop qui achète exclusivement de l’électricité produite à partir d’énergie renouvelable, soit d'acheter des certificats de garantie d’origine.
 
+### Exemple
+
 Bien que cela ne concerne que les émissions de gaz à effet de serre, https://app.electricitymap.org/map permet d'être informé sur l'intensité carbone en fonction du pays du fournisseur.
 
 Pour en savoir plus sur les certificats de garantie d’origine et l’électricité :
