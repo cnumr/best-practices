@@ -45,12 +45,12 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
  
 ### Liste des bonnes pratiques
 
-* :beginner: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
+* :heavy_check_mark: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * :heavy_check_mark: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * :heavy_check_mark: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
-* :beginner: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
+* :heavy_check_mark: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
 * :heavy_check_mark: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
-* :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut RESS](/chapters/BP_006_fr.md)
+* :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut un chargement adaptatif](/chapters/BP_006_fr.md)
 * :heavy_check_mark: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :heavy_check_mark: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
@@ -66,7 +66,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
 * :beginner: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
 * :o: #021 [Découper les CSS](/chapters/BP_021_fr.md)
-* :beginner: #022 [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
+* :heavy_check_mark: #022 [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
 * :o: #023 [Préférer les CSS aux images](/chapters/BP_023_fr.md)
 * :o: #024 [Ecrire des sélecteurs CSS efficaces](/chapters/BP_024_fr.md)
 * :o: #025 [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
@@ -79,10 +79,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #032 [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
 * :wastebasket: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
 * :heavy_check_mark: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
-* :beginner: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
+* :heavy_check_mark: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
 * :heavy_check_mark: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
-* :beginner: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
+* :heavy_check_mark: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
 * :o: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
 * :heavy_check_mark: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
 * :o: #041 [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
@@ -109,7 +109,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
 * :wastebasket: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
 * :heavy_check_mark: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
-* :beginner: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
+* :wastebasket: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
 * :wastebasket: #066 [Utiliser la simple côte (') au lieu du guillemet (")](/chapters/BP_066_fr.md)
 * :wastebasket: #067 [Remplacer les $i++ par ++$i](/chapters/BP_067_fr.md)
 * :wastebasket: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
@@ -150,7 +150,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #103 [Désactiver certains logs d’accès du serveur web](/chapters/BP_103_fr.md)
 * :o: #104 [Désactiver le DNS lookup d’Apache](/chapters/BP_104_fr.md)
 * :o: #105 [Apache Vhost : désactiver le AllowOverride](/chapters/BP_105_fr.md)
-* :beginner: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
+* :heavy_check_mark: #106 [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
 * :o: #107 [Compresser les documents](/chapters/BP_107_fr.md)
 * :o: #108 [Optimiser les PDF](/chapters/BP_108_fr.md)
 * :heavy_check_mark: #109 [Dédoublonner systématiquement les fichiers avant envoi](/chapters/BP_109_fr.md)
@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 15 bonnes pratiques ajoutées en v4.0.0
+### 17 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -174,17 +174,21 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
 * [Mettre en place un sitemap efficient](https://github.com/cnumr/best-practices/issues/172)
 * [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](https://github.com/cnumr/best-practices/issues/173)
-* [Limiter au strict nécessaire le nombre de redondance des données](https://github.com/cnumr/best-practices/issues/174)
 * [Réduire le volume de données stockées au nécessaire](https://github.com/cnumr/best-practices/issues/175)
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
+* [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
+* [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
+* [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 
-### 31 bonnes pratiques modifiées en v4.0.0
+### 37 bonnes pratiques modifiées en v4.0.0
 
+* #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
 * #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #004 [Préférer la saisie assistée à l'autocomplétions](https://github.com/cnumr/best-practices/issues/281)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
 * #007 [Respecter le principe de navigation rapide dans l’historique](https://github.com/cnumr/best-practices/issues/266)
@@ -193,10 +197,13 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
 * #017 [Choisir un format de données adapté](https://github.com/cnumr/best-practices/issues/257)
+* #022 [Limiter le nombre de CSS](https://github.com/cnumr/best-practices/issues/293)
 * #029 [Favoriser les polices standards](https://github.com/cnumr/best-practices/discussions/227)
 * #030 [Préférer les glyphs aux images](https://github.com/cnumr/best-practices/issues/258)
 * #034 [Redimensionner les images en dehors du HTML](https://github.com/cnumr/best-practices/issues/259)
+* #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
+* #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
@@ -212,11 +219,12 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
 * #103 [Désactiver certains logs d’accès du serveur web](https://github.com/cnumr/best-practices/issues/255)
+* #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
 * #109 [Limiter les emails lourds et redondants](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 22 bonnes pratiques supprimées en v4.0.0
+### 23 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
@@ -231,6 +239,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
 * #062 [Eviter la ré-écriture des getter / setter natifs](https://github.com/cnumr/best-practices/issues/132)
 * #063 [Ne pas assigner inutilement de valeur aux variables](https://github.com/cnumr/best-practices/issues/127)
+* #065 [Mettre en cache le Bytecode code intermédiaire](https://github.com/cnumr/best-practices/issues/280)
 * #066 [Utiliser la simple côte (') au lieu du guillemet (")](https://github.com/cnumr/best-practices/issues/129)
 * #067 [Remplacer les $i++ par ++$i](https://github.com/cnumr/best-practices/issues/123)
 * #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](https://github.com/cnumr/best-practices/issues/177)
