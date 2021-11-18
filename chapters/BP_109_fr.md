@@ -28,6 +28,7 @@ Newsletters:
 
 - Définir la fréquence d'envoi au strict nécessaire
 - Envoyer aux seules personnes essentielles à la newsletter et celles le souhaitant (liste d'inscription, ciblage client)
+- Envoyer des mails de désinscription aux clients n'ayant pas ouvert les x newsletters précédentes
 - Éviter les pièces jointes et préférer les liens directs
 - Éviter les images et à défaut limiter leur taille
 
