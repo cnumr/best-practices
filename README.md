@@ -179,7 +179,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
-* [Avoir un titre de page, un TITLE et une Metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
+* [Avoir un titre de page et une metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
 * [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 
