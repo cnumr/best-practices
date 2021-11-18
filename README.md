@@ -218,7 +218,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #086 [Choisir un hébergeur "vert"](https://github.com/cnumr/best-practices/issues/144)
 * #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
-* #103 [Désactiver certains logs d’accès du serveur web](https://github.com/cnumr/best-practices/issues/255)
+* #103 [Réduire au nécessaire les logs des serveurs](https://github.com/cnumr/best-practices/issues/255)
 * #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
 * #109 [Dédoublonner systématiquement les fichiers avant envoi](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
