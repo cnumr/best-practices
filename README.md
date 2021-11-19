@@ -64,7 +64,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
-* :wastebasket: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
+* :wastebasket: #020 Générer des spritesheets CSS
 * :o: #021 [Découper les CSS](/chapters/BP_021_fr.md)
 * :heavy_check_mark: #022 [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
 * :o: #023 [Préférer les CSS aux images](/chapters/BP_023_fr.md)
