@@ -97,7 +97,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #050 [Privilégier les variables locales](/chapters/BP_050_fr.md)
 * :wastebasket: #051 Priviliégier les fonctions anonymes
 * :wastebasket: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
-* :heavy_check_mark: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
+* :wastebasket: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
 * :beginner: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
 * :wastebasket: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)
@@ -183,7 +183,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 
-### 38 bonnes pratiques modifiées en v4.0.0
+### 37 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -206,7 +206,6 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
-* #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
@@ -225,7 +224,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 24 bonnes pratiques supprimées en v4.0.0
+### 25 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #020 [Générer des spritesheets CSS](https://github.com/cnumr/best-practices/issues/299)
@@ -236,6 +235,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #050 [Privilégier les variables locales](https://github.com/cnumr/best-practices/issues/168)
 * #051 [Priviliégier les fonctions anonymes](https://github.com/cnumr/best-practices/issues/126)
 * #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](https://github.com/cnumr/best-practices/issues/169)
+* #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
 * #056 [Utiliser un système de templating (Smarty, Twig)](https://github.com/cnumr/best-practices/issues/263)
 * #059 [Redimensionner les images en dehors du CMS](https://github.com/cnumr/best-practices/issues/265)
 * #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
