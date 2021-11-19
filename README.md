@@ -53,7 +53,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut un chargement adaptatif](/chapters/BP_006_fr.md)
 * :heavy_check_mark: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
 * :heavy_check_mark: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
-* :beginner: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
+* :heavy_check_mark: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :heavy_check_mark: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
 * :beginner: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
 * :wastebasket: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
@@ -64,7 +64,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
 * :o: #019 [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
-* :beginner: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
+* :wastebasket: #020 [Générer des spritesheets CSS](/chapters/BP_020_fr.md)
 * :o: #021 [Découper les CSS](/chapters/BP_021_fr.md)
 * :heavy_check_mark: #022 [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
 * :o: #023 [Préférer les CSS aux images](/chapters/BP_023_fr.md)
@@ -183,7 +183,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 
-### 37 bonnes pratiques modifiées en v4.0.0
+### 38 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -193,6 +193,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
 * #007 [Respecter le principe de navigation rapide dans l’historique](https://github.com/cnumr/best-practices/issues/266)
 * #008 [Proposer un traitement asynchrone lorsque c'est possible](https://github.com/cnumr/best-practices/issues/268)
+* #009 [Limiter le nombre de requêtes HTTP](https://github.com/cnumr/best-practices/issues/298)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
@@ -224,9 +225,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 23 bonnes pratiques supprimées en v4.0.0
+### 24 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
+* #020 [Générer des spritesheets CSS](https://github.com/cnumr/best-practices/issues/299)
 * #028 [Utiliser les commentaires conditionnels](https://github.com/cnumr/best-practices/issues/130)
 * #033 [Supprimer les balises images dont l’attribut SRC est vide](https://github.com/cnumr/best-practices/issues/131)
 * #047 [Eviter d'utiliser try-catch-finally](https://github.com/cnumr/best-practices/issues/246)
