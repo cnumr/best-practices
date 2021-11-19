@@ -159,7 +159,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #112 [Adapter les sons aux contextes d'écoute](/chapters/BP_112_fr.md)
 * :o: #113 [Adapter les textes au web](/chapters/BP_113_fr.md)
 * :o: #114 [Adapter les vidéos aux contextes de visualisation](/chapters/BP_114_fr.md)
-* :wastebasket: #115 [Limiter l'utilisation du Flash](/chapters/BP_115_fr.md)
+* :wastebasket: #115 Limiter l'utilisation du Flash
 
 ## Les modifications lors de la V4
 
