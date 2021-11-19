@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| 5/5               | 4/5                       | 5/5                   | 
+| 5/5               | 2/5                       | 5/5                   | 
 
 
 |Ressources Economisées                                      |
