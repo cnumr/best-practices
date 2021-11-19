@@ -169,7 +169,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
 * [Éviter la lecture automatique des vidéos et sons](/chapters/BP_4003_fr.md)
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
-* [Fournir une alternative texte aux contenus multimédias](https://github.com/cnumr/best-practices/issues/133)
+* [Fournir une alternative textuelle aux contenus multimédias](/chapters/BP_4005.md)
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
 * [Mettre en place un sitemap efficient](https://github.com/cnumr/best-practices/issues/172)
