@@ -83,7 +83,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
 * :heavy_check_mark: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
 * :heavy_check_mark: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
-* :beginner: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
+* :heavy_check_mark: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
 * :heavy_check_mark: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
 * :o: #041 [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
 * :o: #042 [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
@@ -102,7 +102,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :beginner: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
 * :wastebasket: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
-* :beginner: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
+* :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
 * :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :wastebasket: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
@@ -113,7 +113,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #066 Utiliser la simple côte (') au lieu du guillemet (")
 * :wastebasket: #067 Remplacer les $i++ par ++$i
 * :wastebasket: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
-* :beginner: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
+* :wastebasket: #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](/chapters/BP_069_fr.md)
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
 * :wastebasket: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
@@ -183,7 +183,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 
-### 37 bonnes pratiques modifiées en v4.0.0
+### 39 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -205,8 +205,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
+* #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
+* #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
 * #076 [Utiliser les procédures stockées](https://github.com/cnumr/best-practices/issues/146)
@@ -224,7 +226,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 25 bonnes pratiques supprimées en v4.0.0
+### 26 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #020 [Générer des spritesheets CSS](https://github.com/cnumr/best-practices/issues/299)
@@ -245,6 +247,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #066 [Utiliser la simple côte (') au lieu du guillemet (")](https://github.com/cnumr/best-practices/issues/129)
 * #067 [Remplacer les $i++ par ++$i](https://github.com/cnumr/best-practices/issues/123)
 * #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](https://github.com/cnumr/best-practices/issues/177)
+* #069 [Ne pas appeler de fonction dans la déclaration d’une boucle de type for](https://github.com/cnumr/best-practices/issues/306)
 * #071 [Utiliser des variables statiques](https://github.com/cnumr/best-practices/issues/167)
 * #074 [Ne jamais faire de SELECT * FROM](https://github.com/cnumr/best-practices/issues/250)
 * #081 [Minifier les fichiers JavaScript](https://github.com/cnumr/best-practices/issues/140)
