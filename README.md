@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 17 bonnes pratiques ajoutées en v4.0.0
+### 19 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001.md)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -182,6 +182,8 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
+* [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
+* [Eviter les temps de blocages par des traitements javascript trop longs](https://github.com/cnumr/best-practices/issues/309)
 
 ### 39 bonnes pratiques modifiées en v4.0.0
 
