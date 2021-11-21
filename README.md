@@ -137,7 +137,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #090 [Optimiser l'efficacité énergétique des serveurs](/chapters/BP_090_fr.md)
 * :o: #091 [Installer le minimum requis sur le serveur](/chapters/BP_091_fr.md)
 * :o: #092 [Mettre les caches entièrement en RAM (opcode et kvs)](/chapters/BP_092_fr.md)
-* :beginner: #093 [Stocker les données dans le cloud](/chapters/BP_093_fr.md)
+* :o: #093 [Stocker les données dans le cloud](/chapters/BP_093_fr.md)
 * :o: #094 [Héberger les ressources (CSS/JS) sur un domaine sans cookie](/chapters/BP_094_fr.md)
 * :o: #095 [Eviter les redirections](/chapters/BP_095_fr.md)
 * :heavy_check_mark: #096 [Ne pas générer de page 404](/chapters/BP_096_fr.md)
