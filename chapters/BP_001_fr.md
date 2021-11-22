@@ -36,4 +36,4 @@ Respecter le principe YAGNI (You Ain't Gonna Need It) de l’extreme programming
 
 | Le nombre ... |     est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fonctionnalités testées avant développement |  70 % |
+| de fonctionnalités non testées avant développement |  30 % |
