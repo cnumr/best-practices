@@ -183,7 +183,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 * [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
-* [Eviter les temps de blocages par des traitements javascript trop longs](https://github.com/cnumr/best-practices/issues/309)
+* [Eviter les temps de blocages par des traitements javascript trop longs](/chapters/BP_4020_fr.md)
 
 ### 39 bonnes pratiques modifiées en v4.0.0
 
