@@ -34,6 +34,6 @@ Respecter le principe YAGNI (You Ain't Gonna Need It) de l’extreme programming
 ### Principe de validation
 
 
-| Le nombre ... |     est supérieure ou égal à   |  
+| Le nombre ... |     est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
 | de fonctionnalités testées avant développement |  70 % |
