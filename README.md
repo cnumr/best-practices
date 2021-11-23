@@ -105,7 +105,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
 * :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
-* :wastebasket: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
+* :wastebasket: #061 Utiliser un thème léger
 * :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
 * :wastebasket: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
 * :heavy_check_mark: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
