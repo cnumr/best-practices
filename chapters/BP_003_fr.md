@@ -28,7 +28,7 @@ Le temps passé par l'utilisateur sur son terminal est le deuxième post en term
 ### Exemple
 
 * Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
-* Acheter sans inscription dans site d'e-commerce.
+* Acheter sans inscription sur un site d'e-commerce.
 * Partager son RIB directement plutôt que le télécharger puis le transférer.
 * Mettre en avant les champs ou les filtres les plus utilisés.
 * Utiliser des widgets d'accès direct dans une application mobile.
