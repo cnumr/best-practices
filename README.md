@@ -185,7 +185,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 ### 23 bonnes pratiques modifiées en v4.0.0
 
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
-* #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #003 [Optimiser le parcours utilisateur](https://github.com/cnumr/best-practices/issues/248)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
