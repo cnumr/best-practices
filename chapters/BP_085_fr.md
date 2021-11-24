@@ -18,21 +18,23 @@
 | Processeur / Mémoire vive / Réseau / Requêtes / Stockage   |
 
 ### Description
+La plupart des environnements (POC - proof of concept, tests, recette, …) finissent par tomber en désuétude et ne sont plus nécessaires. Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que des serveurs consomment en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
 
-La plupart des environnements (POC - proof of concept, tests, recette, chanel Teams, …) finissent par tomber en désuétude et ne sont plus nécessaires. Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que des serveurs consomment en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
-Parfois, il peut y avoir une date de fin claire. Le plus souvent, un site décline petit à petit sans que l’activité ne s’arrête complétement.
-Un plan de fin de vie simple consiste à nommer la personne qui décide de l’arrêt du service. Son rôle sera alors de monitorer et d’arrêter le service. Une autre approche fixe les conditions de fin de vie (date de péremption…) dès la conception. 
+Réaliser une analyse de fin vie évite cette situation.
+
+Un plan de fin de vie simple consiste à nommer la personne qui décide de l’arrêt du service. Son rôle sera alors de monitorer son activité puis de l’arrêter. Une autre approche fixe le scénario de fin de vie (date de péremption…) dès la conception. Au lieu d’arrêter un service, une troisième piste consiste à allonger sa durée de vie.
+
 Arrêter un service implique de 
--	Décommissionner le service et ses dépendances
--	Supprimer, archiver… les données
+-	Décommissionner le service, ses dépendances, les outils utilisés par l’équipe de développement (ex : chanel Teams), …
+-	Supprimer, archiver… les données (y compris les spécifications, la base de bugs…)
 -	Recycler un maximum code
+- Valoriser les compétences acquises pendant la vie du projet
 
 ### Exemple
 
-Lors d'une migration de données ou d'applications vers un environnement cloud, plusieurs plans de fin de vie sont possibles :
-* copier/coller de l'existant vers le cloud avec décommissionnement de l'existant.
-* refactoring avec une modification de l'architecture ou code et donc une remise en cause de l'existant : par exemple, un questionnement sur les fonctionnalités non utilisées et que l'on reprend au cas où…
-
+Lors d'une migration de données ou d'applications vers un environnement cloud, plusieurs scénarii de fin de vie sont possibles :
+* copier/coller l'existant vers le cloud avec décommissionnement de l'existant.
+* refactoring avec une modification de l'architecture et du code et donc une remise en cause de l'existant : par exemple, un questionnement sur les fonctionnalités non utilisées et que l'on reprend au cas où…
 
 ### Principe de validation
 
