@@ -55,9 +55,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :heavy_check_mark: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :heavy_check_mark: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
-* :beginner: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
+* :heavy_check_mark: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
 * :wastebasket: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
-* :beginner: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
+* :o: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
 * :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
 * :heavy_check_mark: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 20 bonnes pratiques ajoutées en v4.0.0
+### 21 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001.md)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -185,8 +185,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
 * [Eviter les temps de blocages par des traitements javascript trop longs](https://github.com/cnumr/best-practices/issues/309)
 * [Mettre en place une infrastructure élastique](https://github.com/cnumr/best-practices/issues/313)
+* [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
 
-### 44 bonnes pratiques modifiées en v4.0.0
+### 45 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -198,6 +199,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #008 [Proposer un traitement asynchrone lorsque c'est possible](https://github.com/cnumr/best-practices/issues/268)
 * #009 [Limiter le nombre de requêtes HTTP](https://github.com/cnumr/best-practices/issues/298)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
+* #011 [Utiliser un framework ou développer sur mesure](https://github.com/cnumr/best-practices/issues/327)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
 * #017 [Choisir un format de données adapté](https://github.com/cnumr/best-practices/issues/257)
