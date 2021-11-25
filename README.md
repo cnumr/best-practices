@@ -59,7 +59,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
 * :o: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
-* :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
+* :heavy_check_mark: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
 * :heavy_check_mark: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
 * :heavy_check_mark: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
@@ -187,7 +187,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une infrastructure élastique](https://github.com/cnumr/best-practices/issues/313)
 * [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
 
-### 45 bonnes pratiques modifiées en v4.0.0
+### 46 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -201,6 +201,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
 * #011 [Utiliser un framework ou développer sur mesure](https://github.com/cnumr/best-practices/issues/327)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
+* #015 [Choisir les technologies les plus adaptées](https://github.com/cnumr/best-practices/issues/329)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
 * #017 [Choisir un format de données adapté](https://github.com/cnumr/best-practices/issues/257)
 * #022 [Limiter le nombre de CSS](https://github.com/cnumr/best-practices/issues/293)
