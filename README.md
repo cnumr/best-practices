@@ -166,7 +166,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 ### 14 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](https://github.com/cnumr/best-practices/issues/137)
-* [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
+* [Limiter l'utilisation des GIFs](/chapters/BP_4002_fr.md)
 * [Désactiver la lecture automatique des vidéos et sons](https://github.com/cnumr/best-practices/issues/135)
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
 * [Fournir une alternative texte aux contenus multimédias](https://github.com/cnumr/best-practices/issues/133)
