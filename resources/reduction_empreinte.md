@@ -88,7 +88,7 @@ Pour adresser ce risque inhérent au mode de développement en continu des servi
 
 Le principe est le suivant :
 -	Identifier des scénarios d’usage typique du service
--	Estimer, pour chacun de ces services, un « budget » maximum pour son empreinte environnementale (consommation d’énergie, CO2)
+-	Estimer, pour chacun de ces services, un « budget » maximum pour son empreinte environnementale (Consommation d'énergie primaire, émissions de GES, consommation d'eau)
 -	A chaque modification du code, exécuter dans l’Intégration Continue une mesure de l’empreinte de chaque scénario
 -	Interdire la modification de code si le budget est dépassé
 
