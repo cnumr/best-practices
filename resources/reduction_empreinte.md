@@ -13,7 +13,7 @@ Il faut commencer par mesurer l’impact de votre site. Et malheureusement, c’
 -	Impact lié à la consommation d’énergie côté client, réseau et serveur
 -	Impact lié à la fin de vie 
 
-L’approche la plus globale consiste à effectuer une Analyse du Cycle de Vie (ACV), audit normalisé de l’impact environnemental d’un produit (ISO 14 044). Ce genre d’audit, effectué habituellement par un cabinet spécialisé, prend plusieurs semaines et coûte cher – d’autant plus cher que votre site a de nombreuses ramifications et une architecture complexe. Il est néanmoins le seul apte à donner un résultat « officiel », que l’on peut inclure par exemple dans un rapport RSE. Mais son caractère ponctuel rend un tel audit peu pratique dans une démarche de réduction de son impact. En effet, comment valider ou invalider une bonne pratique si l’impact n’est mesuré qu’une fois par an ? 
+L’approche la plus globale consiste à effectuer une Analyse du Cycle de Vie (ACV), audit normalisé de l’impact environnemental d’un produit (ISO 14 044). Ce genre d’audit, effectué habituellement par un cabinet spécialisé, prend plusieurs semaines et coûte cher – d’autant plus cher que votre site a de nombreuses ramifications et une architecture complexe. Il est néanmoins le seul apte à permettre un affichage environnemental reconnu, que l’on peut inclure par exemple dans un rapport RSE. Mais son caractère ponctuel rend un tel audit peu pratique dans une démarche de réduction de son impact. En effet, comment valider ou invalider une bonne pratique si l’impact n’est mesuré qu’une fois par an ? 
 
 Voici une liste d’outils qui permettent de mesurer plus rapidement une partie de l’impact environnemental, et qui peuvent êtres utiles dans une démarche d’amélioration continue. 
  
