@@ -31,7 +31,7 @@ Deux services supplémentaires proposent des services similaires mais sont déco
 
 D’autres services ne mesurent pas directement l’empreinte environnementale, mais la performance perçue par le client. Cet indicateur reflète indirectement l’influence d’un service sur le renouvellement des terminaux, puisqu’un utilisateur aura d’autant plus envie de changer de terminal que le service qu’il utilise est peu performant. Ces outils sont légion, et ce guide ne peut en citer qu’une poignée :
 -	*Google LightHouse* est un outil d’audit de performance des pages web, mais aussi de l’accessibilité et du référencement naturel. Il est gratuit et open-source. Il est intégré par défaut dans  les developer tools du navigateur Chrome. (https://developers.google.com/web/tools/lighthouse/) 
--	*PageSpeed Insight* est un service d’audit de performance des pages web en ligne. Il permet de mesurer des métriques clés de la web performance (« First Contentful Paint », « First Input Delay », etc) et liste des suggestions d’améliorations. (https://pagespeed.web.dev/). C’st un service gratuit qui dispose d’une API.
+-	*PageSpeed Insight* est un service d’audit de performance des pages web en ligne. Il permet de mesurer des métriques clés de la web performance (« First Contentful Paint », « First Input Delay », etc) et liste des suggestions d’améliorations. (https://pagespeed.web.dev/). C’est un service gratuit qui dispose d’une API.
 
 Tous ces outils ne mesurent que l’impact de l’*utilisation* des services, et pas de leur *fabrication* ni l’impact de la *fabrication* des terminaux qui sont nécessaires pour les utiliser. Or une part prépondérante de l’impact environnemental d’un service est lié à la fabrication des équipements nécessaires à leur utilisation.
 
