@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       | Standard                  | Fort                  | 
+| 5       | 5                  | 5                  | 
 
 
 |Ressources Economisées                                      |
@@ -19,7 +19,13 @@
 
 ### Description
 
-Exploiter les fonctionnalités d’HTML5 et de CSS3 pour concevoir le design d’un site. Il ne faut surtout pas imaginer un site sans prendre en compte les contraintes techniques, puis essayer de le réaliser.
+Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
+- les besoins de l'utilisateur (cf BP Optimiser le parcours utilisateur)
+- les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
+- les contraintes techniques
+- les bonnes pratiques d'écoconception
+
+Privilégiez un design réalisable en HTML5 et CSS3.
 
 ### Exemple
 
