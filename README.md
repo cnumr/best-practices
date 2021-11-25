@@ -179,6 +179,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](https://github.com/cnumr/best-practices/issues/185)
+* [Réduire les données stockées au nécessaire](https://github.com/cnumr/best-practices/issues/175)
 
 ### 13 bonnes pratiques modifiées en v4.0.0
 
