@@ -55,7 +55,7 @@ En général, l’impact environnemental est décroissant dans l’ordre suivant
 
 L’ordre de cette liste varie selon chaque site, son profil d’utilisation (B2B/B2C, pour mobile / pour desktop, trafic important / trafic épisodique), et son niveau de maturité. 
 
-Un premier bilan permet de détecter quelles composantes de votre site contribuent le plus à l’impact carbone. 
+Un premier bilan permet de détecter quelles composantes de votre site contribuent le plus à l’impact environnemental. 
 
 Selon l’ordre que vous aurez déterminé pour votre site, vous pourrez prioriser les bonnes pratiques à mettre en œuvre.
 
