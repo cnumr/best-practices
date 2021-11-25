@@ -1,4 +1,4 @@
-## Compresser les librairies CSS et Javascript
+## Compresser lles fichiers CSS, JavaScript, HTML et SVG
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |  Facile                   |    Fort               | 
+| Prioritaire (5/5) |  Facile  (1/5)            |    Fort               | 
 
 
 |Ressources Economisées                                      |
@@ -19,7 +19,7 @@
 
 ### Description
 
-Compresser les feuilles de style CSS et les bibliothèques JavaScript pour limiter l’utilisation de la bande passante et améliorer les temps de chargement.
+Compresser les feuilles de style CSS, les bibliothèques JavaScript ainsi que les fichiers HTML pour limiter l’utilisation de la bande passante et améliorer les temps de chargement.
 
 ### Exemple
 
@@ -37,4 +37,4 @@ AddOutputFilterByType DEFLATE application/x-javascript
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de librairies CSS et JS non compressées  |  0 |
+| de fichiers CSS, JavaScript,  HTML et SVG non compressées  |  0 |

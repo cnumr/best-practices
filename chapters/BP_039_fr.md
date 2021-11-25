@@ -39,7 +39,7 @@ L’instruction will-change permet de prévenir le navigateur qu’une animation
 ```
 
 Pour en savoir plus :
-http://www.html5rocks.com/en/tutorials/speed/high-performance- animations/
+http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
 
 ### Principe de validation
 

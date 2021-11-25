@@ -11,7 +11,7 @@ Discussion: [lien de discussion]
 
 Tâches:
 
-- [ ] Créer le fichier BP_4xxx.md 
+- [ ] Créer le fichier BP_4xxx_fr.md 
 - [ ] Ecrire le titre
 - [ ] Ecrire la description
 - [ ] Définir la règle de validation avec son seuil de conformité
