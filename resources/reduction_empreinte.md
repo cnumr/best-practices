@@ -32,6 +32,7 @@ Deux services supplémentaires proposent des services similaires mais sont déco
 D’autres services ne mesurent pas directement l’empreinte environnementale, mais la performance perçue par le client. Cet indicateur reflète indirectement l’influence d’un service sur le renouvellement des terminaux, puisqu’un utilisateur aura d’autant plus envie de changer de terminal que le service qu’il utilise est peu performant. Ces outils sont légion, et ce guide ne peut en citer qu’une poignée :
 -	*Google LightHouse* est un outil d’audit de performance des pages web, mais aussi de l’accessibilité et du référencement naturel. Il est gratuit et open-source. Il est intégré par défaut dans  les developer tools du navigateur Chrome. (https://developers.google.com/web/tools/lighthouse/) 
 -	*PageSpeed Insight* est un service d’audit de performance des pages web en ligne. Il permet de mesurer des métriques clés de la web performance (« First Contentful Paint », « First Input Delay », etc) et liste des suggestions d’améliorations. (https://pagespeed.web.dev/). C’est un service gratuit qui dispose d’une API.
+-   Les *Developer Tools* des navigateurs disposent d'un simulateur de connexion mobile (4G/3G/Edge) et de processeur peu performant. Tester un service avec ces contraintes permet de se passer d'un banc de test coûteux, et de se rendre compte de l'expérience utilisateur sur un vieux terminal - exactement le type de terminal qu'il ne faut pas inciter à renouveler.  
 
 Tous ces outils ne mesurent que l’impact de l’*utilisation* des services, et pas de leur *fabrication* ni l’impact de la *fabrication* des terminaux qui sont nécessaires pour les utiliser. Or une part prépondérante de l’impact environnemental d’un service est lié à la fabrication des équipements nécessaires à leur utilisation.
 
@@ -74,7 +75,7 @@ Les outils et services énumérés précédemment sont donc indispensables pour 
 
 ## Itérer
 
-L’optimisation de la performance environnementale d’un service numérique est un processus long et progressif. Certaines Bonnes Pratiques amèneront des résultats spectaculaires, d’autres n’auront pas d’effet perceptible. Certaines Bonnes Pratiques fonctionneront sur une page mais pas d’autres. Certaines bonnes pratiques pourront même avoir un effet négatif.
+L’optimisation de la performance environnementale d’un service numérique est un processus long et progressif. Certaines Bonnes Pratiques amèneront des résultats spectaculaires, d’autres n’auront pas d’effet perceptible. Certaines Bonnes Pratiques fonctionneront sur une page mais pas d’autres.
 
 Un chantier de réduction de l’empreinte environnementale se déroule donc en général sur une durée longue, de plusieurs semaines à plusieurs mois. Ce chantier est divisé en petite tâches visant à tester une Bonne Pratique, ou à la généraliser.
 
