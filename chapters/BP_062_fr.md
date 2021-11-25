@@ -18,7 +18,7 @@
 
 ### Description
 
-La plupart des langages objet proposent des getter et des setter stan- dards que le développeur n’a pas besoin d’écrire.
+La plupart des langages objet proposent des getter et des setter standards que le développeur n’a pas besoin d’écrire.
 
 Les surcharger allonge les temps de compilation et d’exécution de ces méthodes, qui sont généralement bien mieux optimisées par le langage que par le développeur.
 

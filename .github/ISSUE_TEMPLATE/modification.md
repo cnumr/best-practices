@@ -11,7 +11,7 @@ Discussion: [lien de discussion]
 
 Tâches:
 
-- [ ] Modifier le fichier BP_xxx.md 
+- [ ] Modifier le fichier BP_xxx_fr.md 
 - [ ] Modifier le titre
 - [ ] Modifier la description
 - [ ] Modifier la règle de validation avec son seuil de conformité

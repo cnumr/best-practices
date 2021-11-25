@@ -27,7 +27,7 @@ la plupart du temps, moins lourdes que des images bitmap.
 Cependant, la plupart des images SVG contiennent de nombreuses métadonnées qui ont été nécessaires à leur création. 
 C’est par exemple le cas des informations de couche (layer), des commentaires, etc., qui sont indispensables pour éditer l’image,
 mais inutiles pour l’afficher. D’où l’idée de les supprimer pour réduire le poids des fichiers.
-De nombreux outils de minification et d’optimisation, tels que Com- pressor.io, SVG Cleaner, ou SVGO sont disponibles.
+De nombreux outils de minification et d’optimisation, tels que Compressor.io, SVG Cleaner, ou SVGO sont disponibles.
 
 Le taux de compression via gzip varie selon la complexité de l’image. Mais il est toujours élevé, car il s’agit de compresser du texte :
 en général, on atteint des ratios de l’ordre de 75 % à 80 %.
