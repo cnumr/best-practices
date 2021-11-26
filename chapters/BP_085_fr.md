@@ -25,10 +25,10 @@ Réaliser une analyse de fin vie évite cette situation.
 Un plan de fin de vie simple consiste à nommer la personne qui décide de l’arrêt du service. Son rôle sera alors de monitorer son activité puis de l’arrêter. Une autre approche fixe le scénario de fin de vie (date de péremption…) et commissionne le budget adéquate dès la conception. Au lieu d’arrêter un service, une troisième piste consiste à allonger sa durée de vie.
 
 Arrêter un service implique de 
--	Décommissionner le service, ses dépendances, les outils utilisés par l’équipe de développement (ex : chanel Teams), …
--	Supprimer, archiver… les données (y compris la GED et le système de suivi des bugs)
--	Recycler un maximum code
-- Valoriser les compétences acquises pendant la vie du projet
+- Libérer les ressources : décommissionner le service, ses dépendances, les outils utilisés par l’équipe de développement (ex : chanel Teams).
+- Supprimer, archiver… les données (y compris la GED et le système de suivi des bugs).
+- Réaffecter les installations, équipements et autres ressources du projet (y compris le code source).
+- Valoriser les compétences acquises pendant la vie du projet.
 
 ### Exemple
 
