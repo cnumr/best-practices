@@ -20,7 +20,7 @@
 ### Description
 
 Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
-- les besoins de l'utilisateur (cf BP Optimiser le parcours utilisateur)
+- les besoins de l'utilisateur (voir la bonne pratique "Optimiser le parcours utilisateur")
 - les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
 - les contraintes techniques
 - les bonnes pratiques d'écoconception
