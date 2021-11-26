@@ -24,31 +24,21 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 - les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
 - les contraintes techniques
 - les bonnes pratiques d'écoconception
+- et de préférence les bonnes pratiques d'accessibilité
 
-Privilégiez un design réalisable uniquement en HTML5 et CSS3.
+**Privilégiez un design simple et épuré réalisable uniquement en HTML5 et CSS3.**
 
 ### Exemple
 
-Proposer des dégradés de couleurs, un style de coins arrondis, etc., qui puissent être réalisés en CSS3 au lieu de nécessiter des images.
-```css
-/* Exemple de bords arrondis */
-.box_round {
--webkit-border-radius: 12px; /* Saf3-4, iOS
-1-3.2, Android ≤1.6 */
-border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
-/* useful if you don’t want a bg color from leaking outside the border: */
--moz-background-clip: padding; -webkit-background- clip: padding-box; background-clip: padding-box;
-}
+![Capture d'écran du 26/11/2021 d'une section la landing page de https://www.gouvernement.fr/](https://github.com/florinesueur/images/blob/main/heuritique-gouv-72.png)
+![Capture d'écran du 26/11/2021 d'une section la landing page de https://www.gouvernement.fr/](https://github.com/florinesueur/images/blob/main/heuritique-gouv-72-color.png)
 
-/* Exemple d’ombre sous la boite */
-.box_shadow {
--webkit-box-shadow: 0px 0px 4px 0px #ﬀﬀﬀ; /*
-Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-box-shadow: 0px 0px 4px 0px #ﬀﬀﬀ; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
-}
-```
-Imaginer des bandeaux, headers, etc., de sorte que le texte, les fonds de couleur, etc. soient réalisables en HTML/CSS. Pour plus d’exemples, voir :
-http://css3please.com
+**Description :** Les images encadrées, non contrastées et non lisibles (RGAA) créent une surcarche mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (éccoconception). On peut soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien). Le logotype "France Relance" regroupe les items 1 et 2 alors que la colorimétrie regroupe les items 2 et 3.
+
+**Recommandation :** Supprimer les images de fond et ajouter un glyphe (Préférer les glyphes aux images, bonne pratique d'écoconception) avec une colorimétrie cohérente si un regroupement doit avoir lieu.
+
+*Capture d'écran du 26/11/2021 d'une section de la landing page de https://www.gouvernement.fr/*
+
 
 ### Principe de validation
 
