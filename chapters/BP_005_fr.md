@@ -25,7 +25,7 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 - les contraintes techniques
 - les bonnes pratiques d'écoconception
 
-Privilégiez un design réalisable en HTML5 et CSS3.
+Privilégiez un design réalisable uniquement en HTML5 et CSS3.
 
 ### Exemple
 
@@ -54,4 +54,4 @@ http://css3please.com
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de design non adapté au Web |  1 |
+|  de pages non réalisables uniquement en HTML5 et CSS3 |  10% |
