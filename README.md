@@ -191,7 +191,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
-* #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #003 [Optimiser le parcours utilisateur](https://github.com/cnumr/best-practices/issues/248)
 * #004 [Préférer la saisie assistée à l'autocomplétions](https://github.com/cnumr/best-practices/issues/281)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
