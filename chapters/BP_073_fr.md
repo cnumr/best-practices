@@ -22,6 +22,7 @@ Quelque soit le système de base de données, l’ouverture d’une connexion es
 *	Allocation de mémoire et I/O disque pour les buffers,
 *	Aller-retours réseaux pour le protocole de connexion,
 *	Coût CPU induit.
+
 Exemple :  pour Oracle, plusieurs aller-retours sont nécessaires (validation des credentials, information sur le driver, négociation de la taille des paquets optimale, ...).
 Le fait d’ouvrir et de fermer une connexion nécessite l’allocation et la désallocation de ces ressources ainsi que de nombreux échanges réseaux, à chaque fois.
 
@@ -32,6 +33,8 @@ Ceci dit, chaque fois que l’application peut éviter un accès à la base de d
 ### Exemple
 
 HikariCP est un pool de connexions JDBC solide et performant. Il est intégré dans SpringBoot.
+
+Dans les cas où il n'y a pas de pool de connexion, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.
 
 
 ### Principe de validation
