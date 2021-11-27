@@ -26,9 +26,16 @@ Cependant si vous avez besoin d'une police particulière pour votre service num�
 - Héberger vous-même la font
 - Utiliser un faux-gras via la propriété css ```-webkit-text-stroke``` si possible
 - Préférer une variable font si vous avez besoin de plus d'une font d'une police (ex: regular, bold, etc.)
-- Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latins, l'alphabet cyrillique peut être supprimé)
+- Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latins, l'alphabet cyrillique peut donc être supprimé)
 
 Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratique : Préférez les glyphes aux images) et si les droits d'utilisations de la font le permettent, incorporer les nouveaux glyphes directement dans la font.
+
+#### Exemple
+
+Voici un tableau comparatif de poids des fonts de la police Oswald :
+| | Regular  | Regular + bold         | Variable | Latin Regular |  Latin Regular + Latin Bold |  Latin Variable |
+|---:| :---------------: |:---------------:|:------------:| :-----:| :-----:| :-----:|
+|Poids|37.6kb|76.9kb|66kb|16kb|32.5kb| ?
 
 #### Alternatives
 
