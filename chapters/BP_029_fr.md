@@ -10,35 +10,30 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |   facile                  |  Fort                 | 
+|  5      |   5                  |  5                 | 
 
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|    |
+|  Stockage / Réseau / Requêtes  |
 
 ### Description
 
-Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’internaute, qui n’a donc pas besoin de les télécharger. 
-On économise ainsi de la bande passante, tout en accélérant l’affichage du site.
+Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger. 
+On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standarts sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par exemple.
+
+Cependant si vous avez besoin d'une police particulière pour votre service numérique, même si c'est une google font ou adobe font :
+- Héberger vous-même la font
+- Utiliser un faux-gras via la propriété css ```-webkit-text-stroke``` si possible
+- Préférer une variable font si vous avez besoin de plus d'une font d'une police (ex: regular, bold, etc.)
+- Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latin, l'alphabet cyrillique peut être supprimé)
+
+Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratique : Préférez les glyphes aux images) et si les droits d'utilisations de la font le permettent, incorporer les nouveaux glyphes directement dans la font.
 
 ### Exemple
 
-Dans la mesure du possible, privilégier des polices de caractères comme :
- - Courier New ;
- - Georgia ;
- - Arial ;
- - Comic ;
- - Impact ;
- - Tahoma ;
- - Trebuchet MS ;
- - Times New Roman ;
- - Verdana ;
- - Segoe UI.
 
-Pour aller plus loin :
-http://en.wikipedia.org/wiki/List_of_typefaces_included_with_ Mac_OS_X
-www.awayback.com/revised-font-stack
+
 
 #### Alternatives
 
