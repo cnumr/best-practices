@@ -20,7 +20,7 @@
 ### Description
 
 Pour alimenter vos équipements numériques, utilisez autant que possible une électricité ayant le minimum d'impacts environnementaux lors de sa production (ex: hydraulique).
-A ce jour, il n'existe pas de mécanisme solide garantissant que l'électricité que vous consommez a été produite avec des impacts plus faibles. 
+À ce jour, il n'existe pas de mécanisme solide garantissant que l'électricité que vous consommez a été produite avec des impacts plus faibles. 
 Faute de mieux, une possibilité est soit de choisir un fournisseur qui n'achète aucune électricité produite à partir de ressources fossiles, soit d'acheter des certificats de garantie d’origine.
 
 ### Exemple
