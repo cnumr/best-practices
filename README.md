@@ -103,7 +103,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #056 Utiliser un système de templating (Smarty, Twig)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
 * :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
-* :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
+* :wastebasket: #059 Redimensionner les images en dehors du CMS
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :wastebasket: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
 * :wastebasket: #062 Eviter la ré-écriture des getter / setter natifs
