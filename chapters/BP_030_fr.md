@@ -9,25 +9,29 @@
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
-|-------------------|:-------------------------:|:---------------------:|
-|  Conseillé        |   facile                  |  Fort                 | 
+|:-------------------:|:-------------------------:|:---------------------:|
+|  4        |   5                  |  4                 | 
 
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|    |
+| Stockage / Réseau / Requêtes  |
 
 ### Description
 
-Les glyphes sont inclus dans les polices de caractères du système d’exploitation. Les préférer par conséquent aux images,
-notamment pour réaliser des effets sur les listes HTML, car ils sont plus économes en bande passante.
+Les glyphes sont des caractères typographiques spécifiques, inclus dans les polices de caractères comme celles d'un système d'exploitation, utilisable en remplacement d'image monochrome tel que des symboles ou pictogrammes (chevron, triangle, point, carré, signes astrologiques, etc.) jusqu'à l'illustration permettant :
+- de reduire la bande passante en éconimisant sur le poids
+- de réduire le nombre de requêtes
+- de réduire la complexité du DOM, notamment avec de nombreux pictogrammes SVG
 
 ### Exemple
 
-Si vous remplacez une image par un glyphe présent dans une police système, la bande passante économisée est égale au poids de l’image non utilisée.
+Pour optimiser une landing page comprenant visuellement :
 
-Pour aller plus loin :
-http://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements
+![Capture d'écran](https://github.com/florinesueur/images/blob/main/illu-font.png)
+![Capture d'écran](https://github.com/florinesueur/images/blob/main/illu-font-2.png)
+
+Un gain de 91% du poids a été réalisé en incluant pictogrammes et illustrations vectorielles dans une icon font via [Font Forge](https://fontforge.org/en-US/).
 
 ### Principe de validation
 
