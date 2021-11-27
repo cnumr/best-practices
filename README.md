@@ -55,11 +55,11 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #008 [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
 * :heavy_check_mark: #009 [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
 * :heavy_check_mark: #010 [Stocker les données statiques localement](/chapters/BP_010_fr.md)
-* :beginner: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
-* :wastebasket: #012 [Limiter le recours aux plugins](/chapters/BP_012_fr.md)
-* :beginner: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
+* :heavy_check_mark: #011 [Utiliser un framework ou développer sur mesure](/chapters/BP_011_fr.md)
+* :wastebasket: #012 Limiter le recours aux plugins
+* :heavy_check_mark: #013 [Favoriser les pages statiques](/chapters/BP_013_fr.md)
 * :heavy_check_mark: #014 [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
-* :beginner: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
+* :heavy_check_mark: #015 [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
 * :heavy_check_mark: #016 [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
 * :heavy_check_mark: #017 [Choisir un format de données adapté](/chapters/BP_017_fr.md)
 * :o: #018 [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
@@ -77,7 +77,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #030 [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
 * :o: #031 [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
 * :o: #032 [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
-* :wastebasket: #033 [Supprimer les balises images dont l’attribut SRC est vide](/chapters/BP_033_fr.md)
+* :wastebasket: #033 Supprimer les balises images dont l’attribut SRC est vide
 * :heavy_check_mark: #034 [Redimensionner les images en dehors du HTML](/chapters/BP_034_fr.md)
 * :heavy_check_mark: #035 [Eviter d'utiliser des images bitmap pour l'interface](/chapters/BP_035_fr.md)
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
@@ -91,35 +91,35 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #044 [Utiliser la délégation d'évènements](/chapters/BP_044_fr.md)
 * :o: #045 [Modifier plusieurs propriétés CSS en 1 seule fois](/chapters/BP_045_fr.md)
 * :o: #046 [Valider votre code avec un Linter](/chapters/BP_046_fr.md)
-* :wastebasket: #047 [Eviter d'utiliser try-catch-finally](/chapters/BP_047_fr.md)
-* :wastebasket: #048 [Utiliser les opérations primitives](/chapters/BP_048_fr.md)
+* :wastebasket: #047 Eviter d'utiliser try-catch-finally
+* :wastebasket: #048 Utiliser les opérations primitives
 * :o: #049 [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
 * :wastebasket: #050 Privilégier les variables locales
 * :wastebasket: #051 Priviliégier les fonctions anonymes
-* :wastebasket: #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](/chapters/BP_052_fr.md)
+* :wastebasket: #052 Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string
 * :wastebasket: #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](/chapters/BP_053_fr.md)
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
-* :beginner: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
-* :wastebasket: #056 [Utiliser un système de templating (Smarty, Twig)](/chapters/BP_056_fr.md)
+* :heavy_check_mark: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
+* :wastebasket: #056 Utiliser un système de templating (Smarty, Twig)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
 * :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
-* :wastebasket: #059 [Redimensionner les images en dehors du CMS](/chapters/BP_059_fr.md)
+* :wastebasket: #059 Redimensionner les images en dehors du CMS
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :wastebasket: #061 [Utiliser un thème léger](/chapters/BP_061_fr.md)
-* :wastebasket: #062 [Eviter la ré-écriture des getter / setter natifs](/chapters/BP_062_fr.md)
-* :wastebasket: #063 [Ne pas assigner inutilement de valeur aux variables](/chapters/BP_063_fr.md)
+* :wastebasket: #062 Eviter la ré-écriture des getter / setter natifs
+* :wastebasket: #063 Ne pas assigner inutilement de valeur aux variables
 * :heavy_check_mark: #064 [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
-* :wastebasket: #065 [Mettre en cache le Bytecode code intermédiaire](/chapters/BP_065_fr.md)
+* :wastebasket: #065 Mettre en cache le Bytecode code intermédiaire
 * :wastebasket: #066 Utiliser la simple côte (') au lieu du guillemet (")
 * :wastebasket: #067 Remplacer les $i++ par ++$i
-* :wastebasket: #068 [Libérer de la mémoire les variables qui ne sont plus nécessaires](/chapters/BP_068_fr.md)
+* :wastebasket: #068 Libérer de la mémoire les variables qui ne sont plus nécessaires
 * :wastebasket: #069 Ne pas appeler de fonction dans la déclaration d’une boucle de type for
 * :o: #070 [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
-* :wastebasket: #071 [Utiliser des variables statiques](/chapters/BP_071_fr.md)
+* :wastebasket: #071 Utiliser des variables statiques
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
 * :heavy_check_mark: #073 [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
-* :wastebasket: #074 [Ne jamais faire de SELECT * FROM](/chapters/BP_074_fr.md)
-* :beginner: #075 [Limiter le nombre de résultats (clause LIMIT)](/chapters/BP_075_fr.md)
+* :wastebasket: #074 Ne jamais faire de SELECT * FROM
+* :heavy_check_mark: #075 [Limiter le nombre de résultats (clause LIMIT)](/chapters/BP_075_fr.md)
 * :heavy_check_mark: #076 [Utiliser les procédures stockées](/chapters/BP_076_fr.md)
 * :heavy_check_mark: #077 [Minifier les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_077_fr.md)
 * :heavy_check_mark: #078 [Compresser les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_078_fr.md)
@@ -129,15 +129,15 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #082 [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
 * :wastebasket: #083 Compresser la sortie HTML
 * :o: #084 [Favoriser HSTS Preload list aux redirections 301](/chapters/BP_084_fr.md)
-* :beginner: #085 [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
+* :heavy_check_mark: #085 [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
 * :heavy_check_mark: #086 [Choisir un hébergeur "vert"](/chapters/BP_086_fr.md)
 * :heavy_check_mark: #087 [Utiliser une électricité issue d'EnR (renouvelable)](/chapters/BP_087_fr.md)
-* :o: #088 [Adapter la qualité de service et le niveau de disponibilité](/chapters/BP_088_fr.md)
-* :beginner: #089 [Utiliser des serveurs virtualisés](/chapters/BP_089_fr.md)
+* :heavy_check_mark: #088 [Adapter la qualité de service et le niveau de disponibilité](/chapters/BP_088_fr.md)
+* :heavy_check_mark: #089 [Utiliser des serveurs virtualisés](/chapters/BP_089_fr.md)
 * :o: #090 [Optimiser l'efficacité énergétique des serveurs](/chapters/BP_090_fr.md)
 * :o: #091 [Installer le minimum requis sur le serveur](/chapters/BP_091_fr.md)
 * :o: #092 [Mettre les caches entièrement en RAM (opcode et kvs)](/chapters/BP_092_fr.md)
-* :beginner: #093 [Stocker les données dans le cloud](/chapters/BP_093_fr.md)
+* :o: #093 [Stocker les données dans le cloud](/chapters/BP_093_fr.md)
 * :o: #094 [Héberger les ressources (CSS/JS) sur un domaine sans cookie](/chapters/BP_094_fr.md)
 * :o: #095 [Eviter les redirections](/chapters/BP_095_fr.md)
 * :heavy_check_mark: #096 [Ne pas générer de page 404](/chapters/BP_096_fr.md)
@@ -163,7 +163,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## Les modifications lors de la V4
 
-### 17 bonnes pratiques ajoutées en v4.0.0
+### 21 bonnes pratiques ajoutées en v4.0.0
 
 * [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001.md)
 * [Limiter l'utilisation des GIFs](https://github.com/cnumr/best-practices/issues/136)
@@ -182,12 +182,16 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
+* [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
+* [Eviter les temps de blocages par des traitements javascript trop longs](https://github.com/cnumr/best-practices/issues/309)
+* [Mettre en place une infrastructure élastique](https://github.com/cnumr/best-practices/issues/313)
+* [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
 
-### 39 bonnes pratiques modifiées en v4.0.0
+### 47 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
-* #003 [Fluidifier le processus](https://github.com/cnumr/best-practices/issues/248)
+* #003 [Optimiser le parcours utilisateur](https://github.com/cnumr/best-practices/issues/248)
 * #004 [Préférer la saisie assistée à l'autocomplétions](https://github.com/cnumr/best-practices/issues/281)
 * #005 [Favoriser un design simple, épuré, adapté au web](https://github.com/cnumr/best-practices/issues/251)
 * #006 [Privilégier une approche "mobile first", à défaut RESS](https://github.com/cnumr/best-practices/issues/142)
@@ -195,7 +199,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #008 [Proposer un traitement asynchrone lorsque c'est possible](https://github.com/cnumr/best-practices/issues/268)
 * #009 [Limiter le nombre de requêtes HTTP](https://github.com/cnumr/best-practices/issues/298)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
+* #011 [Utiliser un framework ou développer sur mesure](https://github.com/cnumr/best-practices/issues/327)
+* #013 [Favoriser les pages statiques](https://github.com/cnumr/best-practices/issues/333)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
+* #015 [Choisir les technologies les plus adaptées](https://github.com/cnumr/best-practices/issues/329)
 * #016 [Utiliser certains forks applicatifs orientés "performance"](https://github.com/cnumr/best-practices/issues/256)
 * #017 [Choisir un format de données adapté](https://github.com/cnumr/best-practices/issues/257)
 * #022 [Limiter le nombre de CSS](https://github.com/cnumr/best-practices/issues/293)
@@ -207,18 +214,23 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
+* #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
+* #075 [Limiter le nombre de résultats (clause LIMIT)](https://github.com/cnumr/best-practices/issues/315)
 * #076 [Utiliser les procédures stockées](https://github.com/cnumr/best-practices/issues/146)
 * #077 [Minifier les fichiers CSS](https://github.com/cnumr/best-practices/issues/140)
 * #078 [Compresser les librairies CSS et Javascript](https://github.com/cnumr/best-practices/issues/141)
 * #079 [Combiner les fichiers CSS et JavaScript](https://github.com/cnumr/best-practices/issues/267)
 * #080 [Optimiser les images bitmap](https://github.com/cnumr/best-practices/issues/183)
 * #082 [Optimiser la taille des cookies](https://github.com/cnumr/best-practices/issues/269)
+* #085 [Mettre en place un plan de fin de vie du site](https://github.com/cnumr/best-practices/issues/316)
 * #086 [Choisir un hébergeur "vert"](https://github.com/cnumr/best-practices/issues/144)
 * #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
+* #088 [Adapter la qualité de service et le niveau de disponibilité](https://github.com/cnumr/best-practices/issues/311)
+* #089 [Utiliser des serveurs virtualisés](https://github.com/cnumr/best-practices/issues/312)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
 * #103 [Réduire au nécessaire les logs des serveurs](https://github.com/cnumr/best-practices/issues/255)
 * #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
