@@ -33,6 +33,8 @@ Pour optimiser une landing page comprenant visuellement :
 
 Un gain de 91% du poids a été réalisé en incluant pictogrammes et illustrations vectorielles dans une icon font via [Font Forge](https://fontforge.org/en-US/).
 
+Pour aller plus loin : [http://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements](http://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements)
+
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
