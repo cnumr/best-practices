@@ -1,4 +1,4 @@
-## Utiliser Ajax pour certaines zones de contenu
+## Utiliser le rechargement partiel d'une zone de contenu
 
 ### Identifiants
 
@@ -19,10 +19,10 @@
 
 ### Description
 
-En général, les gabarits des pages sont mis en cache au niveau des reverse proxies. Il est alors conseillé de générer par
-des appels Ajax les zones de contenu qui nécessitent un taux de rafraîchissement plus élevé.
+Si votre page web comporte une ou plusieurs zones de contenus qui nécessitent un taux de rafraîchissement élevé, alors nous vous conseillons de procéder à un rechargement uniquement de celles-ci et non pas de toute la page.
+Pour cela vous pouvez utiliser plusieurs techniques généralement Javascript couramment appelées AJAX mais qui peuvent aussi utilisées un Service Worker, un Web Component ou un développement sur mesure.
 
-Ainsi, le serveur applicatif ne génère que les parties dynamiques des pages, et non les pages entières.
+Il est même envisageable de ne pas inclure ces parties dans l'appel HTTP de la page pour l'hydrater avec ces zones dynamiques en Javascript, ce que certains appellent "component islands" ou "islands architecture". L'intérêt étant de pouvoir conserver une solution de cache pour la page "container" et de ne recharger que les "ilots" de contenu qui le nécessitent.
 
 ### Exemple
 
@@ -33,4 +33,4 @@ d’être mises à jour rapidement (flash d’informations, données météo, co
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de zones de contenu pouvant être mis à jour via AJAX mais qui ne le sont pas  | 10%  |
+| de zones de contenu pouvant être mis à jour partiellement mais qui ne le sont pas  | 10%  |
