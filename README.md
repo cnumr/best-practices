@@ -208,7 +208,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #022 [Limiter le nombre de CSS](https://github.com/cnumr/best-practices/issues/293)
 * #029 [Favoriser les polices standards](https://github.com/cnumr/best-practices/discussions/227)
 * #030 [Préférer les glyphs aux images](https://github.com/cnumr/best-practices/issues/258)
-* #034 [Redimensionner les images en dehors du HTML](https://github.com/cnumr/best-practices/issues/259)
+* #034 [Ne pas redimensionner les images coté navigateur](https://github.com/cnumr/best-practices/issues/259)
 * #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
