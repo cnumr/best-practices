@@ -211,7 +211,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #034 [Redimensionner les images en dehors du HTML](https://github.com/cnumr/best-practices/issues/259)
 * #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
-* #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
+* #038 [Utiliser le rechargement partiel d'une zone de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
