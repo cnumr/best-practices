@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |  Facile                   |    Fort               | 
+|  5/5      |  5/5                   |    5/5               | 
 
 
 |Ressources Economisées                                      |
@@ -18,16 +18,23 @@
 | Processeur / Mémoire vive / Réseau / Requêtes / Stockage   |
 
 ### Description
+La plupart des environnements (POC - proof of concept, tests, recette, …) finissent par tomber en désuétude et ne sont plus nécessaires. Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que des serveurs consomment en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
 
-Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que ces serveurs comatent depuis des semaines, des mois, voir des années en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
+Réaliser une analyse de fin vie évite cette situation.
 
-Pour éviter de laisser traîner ces déchets numériques, il faut fixer une date de péremption dès leur conception. En l’absence d’action de la part du client ou de l’utilisateur au bout d’un certain temps, le service numérique est archivé sur support inerte ou purement et simplement supprimé. Cette opération permet de recycler la capacité matérielle sous-jacente (espace de stockage, mémoire vive, cycles CPU, etc.), c’est-à-dire d’affecter les 25 % actuellement inutilisés à un service numérique actif.
+Un plan de fin de vie simple consiste à nommer la personne qui décide de l’arrêt du service. Son rôle sera alors de monitorer son activité puis de l’arrêter. Une autre approche fixe le scénario de fin de vie (date de péremption…) et commissionne le budget adéquate dès la conception. Au lieu d’arrêter un service, une troisième piste consiste à allonger sa durée de vie.
 
-Le plan de fin de vie consiste à s’assurer que le jour où un site, une application métier interne, ou un service en ligne n’a plus lieu d’être ou n’est plus utilisé, il sera aussitôt décommissionné. C’est un contrat passé avec l’éditeur du site ou du service qui définit, notamment, la période d’inactivité et/ou la date à partir de laquelle le site ou le service est décommissionné.
+Arrêter un service implique de 
+- Libérer les ressources : décommissionner le service, ses dépendances, les outils utilisés par l’équipe de développement (ex : chanel Teams).
+- Supprimer, archiver… les données (y compris la GED et le système de suivi des bugs).
+- Réaffecter les installations, équipements et autres ressources du projet (y compris le code source).
+- Valoriser les compétences acquises pendant la vie du projet.
 
 ### Exemple
 
-À la livraison du projet, on remet au client un contrat « plan de fin de vie » que le client accepte et signe. Y sont indiqués la date à partir de laquelle le mécanisme de décommissionnement doit être activé, le ou les seuils techniques et les indicateurs techniques associés qui déclencheront le recyclage du service, le type de fin de vie (archivage ou destruction), etc. À tout moment, le client peut modifer ce contrat.
+Lors d'une migration de données ou d'applications vers un environnement cloud, plusieurs scénarii de fin de vie sont possibles :
+* copier/coller l'existant vers le cloud avec décommissionnement de l'existant.
+* refactoring avec une modification de l'architecture et du code et donc une remise en cause de l'existant : par exemple, un questionnement sur les fonctionnalités non utilisées et que l'on reprend au cas où…
 
 ### Principe de validation
 
