@@ -1,4 +1,4 @@
-## Redimensionner les images en dehors du HTML
+## Ne pas redimensionner les images coté navigateur
 
 ### Identifiants
 
@@ -19,19 +19,16 @@
 
 ### Description
 
-Ne pas redimensionner les images en utilisant les attributs HEIGHT et WIDTH du code HTML. Cette approche impose en effet de transférer
-ces images dans leur taille originale, gaspillant ainsi de la bande passante et des cycles CPU.
+Ne pas redimensionner les images en utilisant les attributs HEIGHT et WIDTH du code HTML. Cette approche impose en effet de transférer ces images dans leur taille originale, gaspillant ainsi de la bande passante et des cycles CPU.
 
 ### Exemple
 
-Une image de 350 × 300 pixels encodée en PNG 24 pèse 41 Ko. Redimensionnée dans le code HTML, la même image affichée en vignette à 70 × 60 pixels pèse toujours 41 Ko,
-alors qu’elle ne devrait pas dépasser 3 Ko ! Soit 38 Ko téléchargés à chaque fois pour rien…
-La meilleure solution consiste à utiliser des images redimensionnées en dehors du code HTML à l’aide d’un logiciel de type Photoshop.
-Dans la mesure où le contenu proposé par les utilisateurs du site web n’a pas de valeur ajoutée particulière, 
-il est préférable de leur interdire la possibilité d’insérer des images à partir d’un éditeur WYSIWYG comme CKEditor.
+Une image de 350 × 300 pixels encodée en PNG 24 pèse 41 Ko. Redimensionnée dans le code HTML, la même image affichée en vignette à 70 × 60 pixels pèse toujours 41 Ko, alors qu’elle ne devrait pas dépasser 3 Ko ! Soit 38 Ko téléchargés à chaque fois pour rien… NB : le redimensionnement étant fait par le navigateur peut aussi avoir un effet pixel sur le rendu final.
+
+La meilleure solution consiste à générer les images à la taille à laquelle elles sont affichées. Soit vous le faites manuellement en utilisant un éditeur d'image, soit le CMS dispose d'une routine automatique qui va générer les images à la taille où elles sont appelées dans le template.
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  d'images redimensionnées dans le code HTML  | 0  |
+|  d'images redimensionnées dans le navigateur  | 0  |
