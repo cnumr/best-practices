@@ -83,7 +83,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #036 [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
 * :heavy_check_mark: #037 [Utiliser le chargement paresseux des images](/chapters/BP_037_fr.md)
 * :heavy_check_mark: #038 [Utiliser Ajax pour certaines zones de contenu](/chapters/BP_038_fr.md)
-* :heavy_check_mark: #039 [Eviter les animations Javascript / CSS coûteuses](/chapters/BP_039_fr.md)
+* :heavy_check_mark: #039 [Eviter les animations Javascript / CSS](/chapters/BP_039_fr.md)
 * :heavy_check_mark: #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
 * :o: #041 [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
 * :o: #042 [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
