@@ -59,9 +59,9 @@ Suite à cette commande, le système de gestion de base de données pourra retro
 
 ### Principe de validation
 
-| Le nombre ...     | est supérieur ou égal à   |  
+| Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de requêtes analysées pour évaluer leur coût en ressources | 80%  |
+| de requêtes non analysées pour évaluer leur coût en ressources | 20%  |
 
 
 | Le nombre ...     | est inférieur ou égal à   |  
