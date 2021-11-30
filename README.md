@@ -119,7 +119,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #072 [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
 * :heavy_check_mark: #073 [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
 * :wastebasket: #074 Ne jamais faire de SELECT * FROM
-* :heavy_check_mark: #075 [Limiter le nombre de résultats (clause LIMIT)](/chapters/BP_075_fr.md)
+* :heavy_check_mark: #075 [Optimiser les requêtes aux bases de données](/chapters/BP_075_fr.md)
 * :heavy_check_mark: #076 [Utiliser les procédures stockées](/chapters/BP_076_fr.md)
 * :heavy_check_mark: #077 [Minifier les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_077_fr.md)
 * :heavy_check_mark: #078 [Compresser les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_078_fr.md)
