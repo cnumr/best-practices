@@ -28,7 +28,7 @@ En conséquence, la vitualisation permet :
 
 Cette démarche réduit la quantité de déchets électroniques (DEEE) et la consommation électrique comparé à l'utilisation de plusieurs serveurs physiques.
 
-La conteneurisation est le compagnon à la virtualisation : une machine virtuelle peut accueillir un service de conteneurisation. Il va permettre d'executer de manière isolé plusieurs applications sur le même OS.
+La conteneurisation est le compagnon à la virtualisation : une machine virtuelle peut accueillir un service de conteneurisation. Il va permettre d'executer de manière isolé plusieurs applications sur le même système d'exploitation.
 
 ### Exemple
 
