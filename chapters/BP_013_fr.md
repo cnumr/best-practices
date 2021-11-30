@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Conseillé        |  Difficile                |  Fort                 | 
+|  2        |  2                |  5                 | 
 
 
 |Ressources Economisées                                      |
