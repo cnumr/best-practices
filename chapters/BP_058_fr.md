@@ -1,4 +1,4 @@
-## Générer les PDF en dehors du CMS
+## Optimiser les médias avant importation sur un CMS
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       |  Standard                 | Fort                  | 
+| 4       |  5                 | 4                  | 
 
 
 |Ressources Economisées                                      |
@@ -19,14 +19,20 @@
 
 ### Description
 
-La génération de PDF « à la volée » est extrêmement consommatrice de cycles CPU et de mémoire vive. Par conséquent, ne pas générer les PDF à la demande, page par page, mais proposer plutôt quelques fichiers générés et optimisés en dehors du CMS
+Les CMS les plus connus proposent de nombreuses fonctionnalités pour optimiser (compresser, redimensionner, générer, etc.) vos médias (images, pdf, documents, audios et vidéos) souvent via l'installation de plugins ou extensions. Parfois payant, mais surtout énergivores en terme de CPU, de mémoire vive, de réseau et de stockage, ces plugins n'évitent pas l'importation du média disproportionné par rapport à son utilisation finale.
 
 ### Exemple
 
-Dans le cas d’un catalogue, la concaténation « à la volée » de fiches elles-mêmes créées à la volée doit être évitée à tout prix.
+Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur :
+- [FFmpeg](https://www.ffmpeg.org/)
+- [Gimp](https://www.gimp.org/)
+- [Xnview](https://www.xnview.com/fr/)
+- [Inskape](https://inkscape.org/fr/)
+- [Any Video Converter](https://www.any-video-converter.com/products/video-converter-free/)
+- etc.
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de PDF généré par le CMS   |  0 |
+| de contenu optimisé par le CMS   |  0 |
