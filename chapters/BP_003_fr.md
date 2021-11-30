@@ -21,7 +21,7 @@
 
 Optimiser le parcours utilisateur consiste à diminuer le temps passé par l'utilisateur sur ses usages les plus fréquents. Dans un premier temps, cibler les parcours les plus fréquents puis optimiser leur usage : diminuer le nombre d'étapes, diminuer le nombre d'actions, supprimer l'inutile, identifier les cas d'échecs, optimiser les temps de réponse... Un parcours est bien conçu lorsque le programme se comporte exactement comme l'utilisateur l'avait imaginé.
 
-Sonder en demandant à son entourage d’utiliser le service en un bon moyen d’identifier le niveau de frustration des utilisateurs.
+A minima, sonder en observant son entourage utilisant le service est un bon moyen d’identifier les points de friction - situations ou interactions qui contribuent à dégrader l’expérience utilisateur et à ralentir le parcours - des utilisateurs. Les tests utilisateurs permettent d'aller plus en profondeur dans la recherche de ces points de friction.
 
 Le temps passé par l'utilisateur sur son terminal est le deuxième post en termes d'impacts environnementaux.
 
@@ -29,12 +29,12 @@ Le temps passé par l'utilisateur sur son terminal est le deuxième post en term
 
 * Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
 * Acheter sans inscription sur un site d'e-commerce.
-* Partager son RIB directement plutôt que le télécharger puis le transférer.
+* Copier/Coller son RIB directement plutôt que le télécharger puis le transférer.
 * Mettre en avant les champs ou les filtres les plus utilisés.
 
 
 ### Principe de validation
 
-|  Le nombre de | est inférieur à   |  
+|  Le nombre de | est inférieur à ou égal à  |  
 |-------------------|:-------------------------:|
-| utilisateurs frustrés |10%|
+| points de friction | 0 |
