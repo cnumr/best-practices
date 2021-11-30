@@ -23,7 +23,7 @@ Si le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache 
 
 ### Exemple
 
-Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il existe plusieurs plugin qui comble cette lacune , les plus connus étant :
+Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il existe plusieurs plugins qui comblent cette lacune, les plus connus étant :
 
 - W3 total Cache
 - Wp Super Cache
