@@ -20,7 +20,7 @@
 ### Description
 
 
-La virtualisation est une technologie permettant de créer et d’exécuter des représentations virtuelles d’un ordinateur sur une ou plusieurs machines physiques. Le logiciel en charge de la virtualisaiton se charge d'allouer les ressources entre les différents environnements virtuels en fonction de leurs besoins.
+La virtualisation est une technologie permettant de créer et d’exécuter des représentations virtuelles d’un ordinateur sur une ou plusieurs machines physiques. Le logiciel en charge de la virtualisation se charge d'allouer les ressources entre les différents environnements virtuels en fonction de leurs besoins.
 
 En conséquence, la vitualisation permet :
 * une économie sur le matériel par mutualisation
