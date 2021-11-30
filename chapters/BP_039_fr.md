@@ -1,4 +1,4 @@
-## Eviter les animations Javascript / CSS coûteuses
+## Eviter les animations Javascript / CSS
 
 ### Identifiants
 
