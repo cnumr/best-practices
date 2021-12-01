@@ -33,7 +33,7 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 ![Capture d'écran du 26/11/2021 d'une section la landing page de https://www.gouvernement.fr/](https://github.com/florinesueur/images/blob/main/heuritique-gouv-72.png)
 ![Capture d'écran du 26/11/2021 d'une section la landing page de https://www.gouvernement.fr/](https://github.com/florinesueur/images/blob/main/heuritique-gouv-72-color.png)
 
-**Description :** Les images encadrées, non contrastées et non lisibles (RGAA) créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (écococonception). On peut soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien). Le logotype "France Relance" regroupe les items 1 et 2 alors que la colorimétrie regroupe les items 2 et 3.
+**Description :** Les images encadrées, non contrastées et non lisibles (RGAA) créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (écoconception). On peut soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien). Le logotype "France Relance" regroupe les items 1 et 2 alors que la colorimétrie regroupe les items 2 et 3.
 
 **Recommandation :** Supprimer les images de fond et ajouter un glyphe (Préférer les glyphes aux images, bonne pratique d'écoconception) avec une colorimétrie cohérente si un groupement doit avoir lieu.
 
