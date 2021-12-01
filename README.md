@@ -99,7 +99,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #052 Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string
 * :wastebasket: #053 Utiliser une boucle au lieu de .forEach() (ou reduce())
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
-* :heavy_check_mark: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
+* :wastebasket: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
 * :wastebasket: #056 Utiliser un système de templating (Smarty, Twig)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
 * :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
@@ -187,7 +187,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une infrastructure élastique](https://github.com/cnumr/best-practices/issues/313)
 * [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
 
-### 47 bonnes pratiques modifiées en v4.0.0
+### 46 bonnes pratiques modifiées en v4.0.0
 
 * #001 [Eliminer les fonctionnalités non essentielles](https://github.com/cnumr/best-practices/issues/288)
 * #002 [Quantifier précisément le besoin](https://github.com/cnumr/best-practices/issues/184)
@@ -214,7 +214,6 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
-* #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
@@ -238,7 +237,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 26 bonnes pratiques supprimées en v4.0.0
+### 27 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #020 [Générer des spritesheets CSS](https://github.com/cnumr/best-practices/issues/299)
@@ -250,6 +249,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #051 [Priviliégier les fonctions anonymes](https://github.com/cnumr/best-practices/issues/126)
 * #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](https://github.com/cnumr/best-practices/issues/169)
 * #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
+* #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #056 [Utiliser un système de templating (Smarty, Twig)](https://github.com/cnumr/best-practices/issues/263)
 * #059 [Redimensionner les images en dehors du CMS](https://github.com/cnumr/best-practices/issues/265)
 * #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
