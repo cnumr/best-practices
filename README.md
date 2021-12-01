@@ -99,7 +99,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :wastebasket: #052 Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string
 * :wastebasket: #053 Utiliser une boucle au lieu de .forEach() (ou reduce())
 * :o: #054 [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
-* :heavy_check_mark: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
+* :wastebasket: #055 Privilégier les changements visuels instantanés
 * :wastebasket: #056 Utiliser un système de templating (Smarty, Twig)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
 * :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
