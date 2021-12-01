@@ -20,7 +20,7 @@
 ### Description
 
  Les glyphes sont des caractères typographiques spécifiques, inclus dans les polices de caractères comme celles d'un système d'exploitation, utilisables en remplacement d'image monochrome tel que des symboles ou pictogrammes (chevron, triangle, point, carré, signes astrologiques, etc.) jusqu'à l'illustration permettant :
-- de reduire la bande passante en éconimisant sur le poids
+- de réduire la bande passante en économisant sur le poids
 - de réduire le nombre de requêtes
 - de réduire la complexité du DOM, notamment avec de nombreux pictogrammes SVG
 
