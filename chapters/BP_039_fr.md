@@ -43,7 +43,7 @@ Vous pouvez aussi laissez le choix à vos utilisateurs, via les préférences de
 ```css
 @media (prefers-reduced-motion : no-preference ) {
   .animation {
-    animation: pulse 1s linear infinite;
+    animation: fadeIn 4s ease;
   }
 }
 ```
