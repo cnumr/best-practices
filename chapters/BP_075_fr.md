@@ -28,7 +28,7 @@ plus, qu'elles sont bien optimisées.
 
 Les pistes classiques d'optimisation sont : 
 
- - Ramener moins de données et se limiter au nécessaire. Par exemple, pour les bases relationnelles, la clause `LIMIT` limite le nombre de lignes du résultat. Quand c'est possible, l'utiliser permet de réduire la quatité de données transférées. Le gain en performance sera d’autant plus important si les enregistrements contiennent un grand nombre de champs volumineux.
+ - Ramener moins de données et se limiter au nécessaire. Par exemple, pour les bases relationnelles, la clause `LIMIT` limite le nombre de lignes du résultat. Quand c'est possible, l'utiliser permet de réduire la quantité de données transférées. Le gain en performance sera d’autant plus important si les enregistrements contiennent un grand nombre de champs volumineux.
  - N'utiliser que les champs qui sont nécessaires dans les tables ou documents utilisées. Afin de ne pas transférer inutilement des données qui ne seront pas utilisées, et de ne pas utliser des ressources du serveur de base de données et du serveur d'application pour les manipuler.
  - Ajouter des index sur les champs utilisés comme clefs. Ceux-ci dépendent de votre modèle. Leur ajout peut complétement changer les performances d'une requête. Attention ajouter un index rend l'écriture plus longue, car il faut le mettre à jour pour les documents ajoutés, modifiés ou supprimés. Il faut le faire si on a plus de lectures que d'écritures ou si la lecture est particulièrement couteuse.
  - Utiliser les outils du système de gestion de base de données permettant d'analyser les requêtes pour identifier les points d'amélioration, `EXPLAIN` par exemple pour un SGBDR.
