@@ -33,7 +33,7 @@ Les pistes classiques d'optimisation sont :
  - Ajouter des index sur les champs utilisés comme clefs. Ceux-ci dépendent de votre modèle. Leur ajout peut complètement changer les performances d'une requête. Attention, ajouter un index rend l'écriture plus longue, car il faut le mettre à jour pour les documents ajoutés, modifiés ou supprimés. Il faut le faire si on a plus de lectures que d'écritures ou si la lecture est particulièrement couteuse.
  - Utiliser les outils du système de gestion de base de données permettant d'analyser les requêtes pour identifier les points d'amélioration, `EXPLAIN` par exemple pour un SGBDR.
  - Conserver en cache le résultat des requêtes les plus couteuses, ainsi que les données qui changent peu ou jamais (données de référence).
- - Eventuellement modifier le modèle de données pour pouvoir accèder plus facilement aux informations sans jointures (dénormalisation)
+ - Éventuellement, modifier le modèle de données pour pouvoir accéder plus facilement aux informations sans jointures (dénormalisation)
 
 ### Exemple
 
