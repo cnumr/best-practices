@@ -42,4 +42,4 @@ d'applications non hébergée de façon mutualisée
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'applications non hébergée de façon mutualisée |  0% |
+| d'applications non hébergées de façon mutualisée |  0% |
