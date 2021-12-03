@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Conseillé        |  Difficile                |  Fort                 | 
+|  2        |  2                |  5                 | 
 
 
 |Ressources Economisées                                      |
@@ -28,11 +28,10 @@ pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur
 
 ### Exemple
 
-La JAMstack (Javascript, APIs, Markup) est une architecture de plus en plus populaire qui permet de générer facilement et d’héberger des sites statiques professionnels à partir d’outils tels que Netlify, Gatsby, Contentful, Nuxt, etc.
-Les sites à visiter :
-- https://www.staticgen.com/
-- https://jamstatic.fr/
-- https://jamstack.wtf/
+En fonction du service numérique à concevoir, il est envisageable :
+- pour une landing page ou simple site vitrine de créer un site statique en HTML, CSS et JS.
+- pour un blog avec peu d'activité, ou de petite taille, de créer un site statique généré via un JAMstack (Jekyll, Hugo, Gasby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contenful, Flextype, etc.).
+- pour un site ou une application web plus complexe de rendre les pages à faible taux de modifications (FAQ, About, mentions légales, etc.) statiques en utilisant des frameworks (Next, Nuxt, Svelte, etc.).
 
 ### Principe de validation
 
