@@ -215,7 +215,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #039 [Eviter les animations Javascript / CSS](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
-* #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
+* #058 [Optimiser et générer les médias avant importation sur un CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
 * #075 [Limiter le nombre de résultats (clause LIMIT)](https://github.com/cnumr/best-practices/issues/315)
