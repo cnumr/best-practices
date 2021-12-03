@@ -185,7 +185,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
 * [Eviter les temps de blocages par des traitements javascript trop longs](https://github.com/cnumr/best-practices/issues/309)
 * [Mettre en place une infrastructure élastique](https://github.com/cnumr/best-practices/issues/313)
-* [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
+* [Limiter le nombre d'appels aux API HTTP](/chapters/BP_4022_fr.md)
 
 ### 46 bonnes pratiques modifiées en v4.0.0
 
