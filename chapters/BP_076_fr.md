@@ -25,7 +25,7 @@ Dans le cas de traitements avec une logique plus ou moins complexe, il est déco
 Ces traitements doivent plutôt être réalisés au plus près de la donnée afin de:
 
 - limiter la bande passante à cause du transfert de données non traitées
-- profiter des optimisation de la base données sur la manipulation des données
+- profiter des optimisations de la base données sur la manipulation des données
 - d'alléger le cycle CPU côté serveur backend voire frontend 
 
 ### Exemple
