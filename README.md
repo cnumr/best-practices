@@ -102,7 +102,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #055 [Privilégier les changements visuels instantanés](/chapters/BP_055_fr.md)
 * :wastebasket: #056 Utiliser un système de templating (Smarty, Twig)
 * :heavy_check_mark: #057 [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
-* :heavy_check_mark: #058 [Optimiser et générer les médias avant importation sur un CMS](/chapters/BP_058_fr.md)
+* :heavy_check_mark: #058 [Générer les PDF en dehors du CMS](/chapters/BP_058_fr.md)
 * :wastebasket: #059 Redimensionner les images en dehors du CMS
 * :o: #060 [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * :wastebasket: #061 Utiliser un thème léger
@@ -216,7 +216,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
-* #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
+* #058 [Optimiser et générer les médias avant importation sur un CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
 * #075 [Limiter le nombre de résultats (clause LIMIT)](https://github.com/cnumr/best-practices/issues/315)
