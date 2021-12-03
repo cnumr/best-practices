@@ -19,14 +19,15 @@
 
 ### Description
 
-Les bibliothèques JavaScript telles que jQuery, mootools, YUI et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
+Les bibliothèques JavaScript telles que jQuery et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
 sont d’excellents outils pour réaliser rapidement des sites, car ils répondent à presque tous les besoins les plus courants. 
 Revers de la médaille, on n’en utilise généralement qu’une petite portion ; or ces frameworks et bibliothèques ne s’appuient pas tous sur une architecture modulaire, 
 ce qui contraint l’internaute à télécharger toute la librairie pour n’utiliser qu’un faible pourcentage de ses fonctionnalités.
 
 Dans la mesure du possible, il est préférable de se passer de ces bibliothèques (voir http://youmightnotneedjquery.com) 
-ou de n’en conserver que les portions réellement utilisées (voir http://getbootstrap.com/customize). Si cette approche n’est pas envisageable,
-télécharger les sources et créer un build custom qui ne comprend que les composants nécessaires.
+ou de n’en conserver que les portions réellement utilisées (voir http://getbootstrap.com/customize).
+
+Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, soit d'éliminer du code "mort" donc non utilisé.
 
 ### Exemple
 
