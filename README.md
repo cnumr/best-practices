@@ -142,7 +142,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :o: #095 [Eviter les redirections](/chapters/BP_095_fr.md)
 * :heavy_check_mark: #096 [Ne pas générer de page 404](/chapters/BP_096_fr.md)
 * :o: #097 [Utiliser un serveur asynchrone](/chapters/BP_097_fr.md)
-* :o: #098 [Utiliser un CDN](/chapters/BP_098_fr.md)
+* :heavy_check_mark: #098 [Utiliser un CDN](/chapters/BP_098_fr.md)
 * :o: #099 [Utiliser un cache HTTP](/chapters/BP_099_fr.md)
 * :wastebasket: #100 Mettre en cache le favicon.ico
 * :o: #101 [Ajouter des entêtes Expires ou Cache-Control](/chapters/BP_101_fr.md)
@@ -214,7 +214,6 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
-* #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
@@ -232,13 +231,14 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #088 [Adapter la qualité de service et le niveau de disponibilité](https://github.com/cnumr/best-practices/issues/311)
 * #089 [Utiliser des serveurs virtualisés](https://github.com/cnumr/best-practices/issues/312)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
+* #098 [Utiliser un CDN](https://github.com/cnumr/best-practices/issues/358)
 * #103 [Réduire au nécessaire les logs des serveurs](https://github.com/cnumr/best-practices/issues/255)
 * #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
 * #109 [Dédoublonner systématiquement les fichiers avant envoi](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
-### 26 bonnes pratiques supprimées en v4.0.0
+### 27 bonnes pratiques supprimées en v4.0.0
 
 * #012 [Limiter le recours aux plugins](https://github.com/cnumr/best-practices/issues/245)
 * #020 [Générer des spritesheets CSS](https://github.com/cnumr/best-practices/issues/299)
@@ -250,6 +250,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #051 [Priviliégier les fonctions anonymes](https://github.com/cnumr/best-practices/issues/126)
 * #052 [Donner des fonctions en paramètre à setTimeout() et setInterval() plutôt que des string](https://github.com/cnumr/best-practices/issues/169)
 * #053 [Utiliser une boucle au lieu de .forEach() (ou reduce())](https://github.com/cnumr/best-practices/issues/143)
+* #055 [Privilégier les changements visuels instantanés](https://github.com/cnumr/best-practices/issues/314)
 * #056 [Utiliser un système de templating (Smarty, Twig)](https://github.com/cnumr/best-practices/issues/263)
 * #059 [Redimensionner les images en dehors du CMS](https://github.com/cnumr/best-practices/issues/265)
 * #061 [Utiliser un thème léger](https://github.com/cnumr/best-practices/issues/277)
