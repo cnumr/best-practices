@@ -179,7 +179,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
-* [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
+* [Utiliser la version la plus récente du langage](/chapters/BP_4016_fr.md)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
 * [Favoriser une PWA à une application mobile native associée à un site](https://github.com/cnumr/best-practices/issues/308)
