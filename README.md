@@ -219,7 +219,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #064 [Mettre en cache les données calculées souvent utilisées](https://github.com/cnumr/best-practices/issues/179)
 * #073 [Ne se connecter à une base de données que si nécessaire](https://github.com/cnumr/best-practices/issues/247)
 * #075 [Limiter le nombre de résultats (clause LIMIT)](https://github.com/cnumr/best-practices/issues/315)
-* #076 [Utiliser les procédures stockées](https://github.com/cnumr/best-practices/issues/146)
+* #076 [Éviter le transfert d'une grande quantité de données pour réaliser un traitement](https://github.com/cnumr/best-practices/issues/146)
 * #077 [Minifier les fichiers CSS](https://github.com/cnumr/best-practices/issues/140)
 * #078 [Compresser les librairies CSS et Javascript](https://github.com/cnumr/best-practices/issues/141)
 * #079 [Combiner les fichiers CSS et JavaScript](https://github.com/cnumr/best-practices/issues/267)
