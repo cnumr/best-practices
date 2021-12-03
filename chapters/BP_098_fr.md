@@ -21,6 +21,8 @@
 
 Certains fichiers comme les bibliothèques JavaScript, les feuilles de style CSS, les images, etc., sont gourmands en ressources réseau, car ils sont généralement nombreux et de petite taille. C’est pourquoi il est conseillé d’utiliser les CDN (Content Delivery Network), qui rapprochent physiquement ces fichiers des internautes, générant de ce fait un gain important de bande passante et un meilleur temps de réponse.
 
+Il convient néanmoins de prendre conscience qu'il peut exister des cas où l'utilisation d'un CDN n'est pas réellement pertinente. Par exemple, dans le cas de services dont la cible est très localisée (par exemple: régional), il est plus opportun de privilégier un hébergement local et de qualité. D'autre part, un site web avec très peu de traffic pourrait rendre contre productive l'utilisation d'un CDN basé sur le modèle "pull" car les extractions de fichiers du serveur d'origine pourraient être trop fréquentes.
+
 ### Exemple
 
 Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèques JavaScript couramment utilisées.
@@ -29,4 +31,4 @@ Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèqu
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de ressources servies (fichiers)  sans utiliser un CDN  | 25%  |
+| de ressources servies (fichiers) sans utiliser un CDN | 25%  |
