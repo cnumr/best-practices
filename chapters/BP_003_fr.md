@@ -1,4 +1,4 @@
-## Fluidifier le processus
+## Optimiser le parcours utilisateur
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Conseillé         | Standard                  | Moyen                 | 
+| 5/5               | 5/5                       | 5/5                   | 
 
 
 |Ressources Economisées                                      |
@@ -19,22 +19,22 @@
 
 ### Description
 
-Le temps passé par l’utilisateur sur un site web ou un service en ligne est le facteur le plus déterminant pour réduire 
-ou augmenter l’empreinte environnementale de ce site. Autrement dit, moins l’utilisateur passe de temps sur le site ou 
-service en ligne, plus on réduit les impacts environnementaux associés.
+Optimiser le parcours utilisateur consiste à diminuer le temps passé par l'utilisateur sur ses usages les plus fréquents. Dans un premier temps, cibler les parcours les plus fréquents puis optimiser leur usage : diminuer le nombre d'étapes, diminuer le nombre d'actions, supprimer l'inutile, identifier les cas d'échecs, optimiser les temps de réponse... Un parcours est bien conçu lorsque le programme se comporte exactement comme l'utilisateur l'avait imaginé.
 
-Il faut donc veiller à réduire au minimum le nombre d’écrans, d’étapes et d’interactions inutiles, 
-sans pour autant créer des écrans trop riches et complexes, qui seraient alors contre-productifs.
+Sonder en demandant à son entourage d’utiliser le service en un bon moyen d’identifier le niveau de frustration des utilisateurs.
+
+Le temps passé par l'utilisateur sur son terminal est le deuxième post en termes d'impacts environnementaux.
 
 ### Exemple
 
-Si le processus en ligne commence par un e-mail et qu’il implique la fourniture de pièces justificatives par l’internaute,
-on demandera ces pièces dans l’e-mail avant que l’internaute ne se connecte. Il peut ainsi les préparer avant de démarrer la session web,
-et compléter ainsi le processus en ligne en une seule session au lieu de deux.
-Gain potentiel : jusqu’à deux fois moins de gaz à effet de serre émis, selon le type et la durée du processus.
+* Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
+* Acheter sans inscription sur un site d'e-commerce.
+* Partager son RIB directement plutôt que le télécharger puis le transférer.
+* Mettre en avant les champs ou les filtres les plus utilisés.
+
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
+|  Le nombre de | est inférieur à   |  
 |-------------------|:-------------------------:|
-| d'étapes par rapport à un site concurrent |   75%   |
+| utilisateurs frustrés |10%|

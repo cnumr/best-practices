@@ -26,7 +26,7 @@ un périmètre fonctionnel et technique suffisant pour votre projet, vous devez 
 ### Exemple
 
  - À Drupal, préférer plutôt la version optimisée Pressflow.
- - À MySQL, préférer plutôt la version optimisée Percona Server.
+ - À Redis, préférer plutôt la version optimisée KeyDB.
 
 ### Principe de validation
 
