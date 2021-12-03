@@ -178,7 +178,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](https://github.com/cnumr/best-practices/issues/185)
-* [Réduire les données stockées au nécessaire](https://github.com/cnumr/best-practices/issues/175)
+* [Réduire les données stockées au nécessaire](/chapters/BP_4011_fr.md)
 * [Avoir un contenu pertinent (SEO)](https://github.com/cnumr/best-practices/issues/253)
 * [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
