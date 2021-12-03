@@ -234,7 +234,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #098 [Utiliser un CDN](https://github.com/cnumr/best-practices/issues/358)
 * #103 [Réduire au nécessaire les logs des serveurs](https://github.com/cnumr/best-practices/issues/255)
 * #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
-* #109 [Dédoublonner systématiquement les fichiers avant envoi](https://github.com/cnumr/best-practices/issues/272)
+* #109 [Limiter les emails lourds et redondants](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
 
