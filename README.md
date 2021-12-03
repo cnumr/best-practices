@@ -212,7 +212,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #038 [Utiliser Ajax pour certaines zones de contenu](https://github.com/cnumr/best-practices/issues/291)
-* #039 [Eviter les animations Javascript / CSS coûteuses](https://github.com/cnumr/best-practices/issues/305)
+* #039 [Eviter les animations Javascript / CSS](https://github.com/cnumr/best-practices/issues/305)
 * #040 [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](https://github.com/cnumr/best-practices/issues/180)
 * #057 [Utiliser tous les niveaux de cache du CMS](https://github.com/cnumr/best-practices/issues/264)
 * #058 [Générer les PDF en dehors du CMS](https://github.com/cnumr/best-practices/discussions/213)
