@@ -227,7 +227,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #082 [Optimiser la taille des cookies](https://github.com/cnumr/best-practices/issues/269)
 * #085 [Mettre en place un plan de fin de vie du site](https://github.com/cnumr/best-practices/issues/316)
 * #086 [Choisir un hébergeur "vert"](https://github.com/cnumr/best-practices/issues/144)
-* #087 [Utiliser une électricité issue d'EnR (renouvelable)](https://github.com/cnumr/best-practices/issues/249)
+* #087 [Privilégier un fournisseur d'électricité écoresponsable](https://github.com/cnumr/best-practices/issues/249)
 * #088 [Adapter la qualité de service et le niveau de disponibilité](https://github.com/cnumr/best-practices/issues/311)
 * #089 [Utiliser des serveurs virtualisés](https://github.com/cnumr/best-practices/issues/312)
 * #096 [Ne pas générer de page 404](https://github.com/cnumr/best-practices/issues/270)
