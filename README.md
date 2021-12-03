@@ -173,7 +173,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
 * [Mettre en place un sitemap efficient](/chapters/BP_4008_fr.md)
-* [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](https://github.com/cnumr/best-practices/issues/173)
+* [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](/chapters/BP_4009.md)
 * [Réduire les données stockées au nécessaire](/chapters/BP_4011_fr.md)
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
 * [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
