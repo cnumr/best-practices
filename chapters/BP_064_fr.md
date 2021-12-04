@@ -26,7 +26,7 @@ Les systèmes de cache de type key-value store sont prévus pour stocker ces don
 
 Le nombre de contenus (ex: des produits) appartenant à une catégorie est calculé alors qu'il n'est pas mis à jour de manière très fréquente. Mettre en cache pour chaque catégorie leur nombre de contenus permet de gagner du cycle CPU.
 
-Les tokens d'authorisation en OAuth2 sont associés à une date d'expiration. Mettre en cache le token et son délai d'expiration évite des appels inutiles au serveur d'authorisation et de revalider le token .
+Les jetons d'accès en OAuth2 sont associés à une date d'expiration. Mettre en cache le jeton et son délai d'expiration évite des appels inutiles au serveur d'autorisation et de revalider le jeton.
 
 ### Principe de validation
 
