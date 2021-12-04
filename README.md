@@ -165,27 +165,28 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ### 21 bonnes pratiques ajoutées en v4.0.0
 
-* [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001.md)
+* [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001_fr.md)
 * [Limiter l'utilisation des GIFs](/chapters/BP_4002_fr.md)
 * [Éviter la lecture automatique des vidéos et sons](/chapters/BP_4003_fr.md)
 * [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
-* [Fournir une alternative textuelle aux contenus multimédias](/chapters/BP_4005.md)
+* [Fournir une alternative textuelle aux contenus multimédias](/chapters/BP_4005_fr.md)
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
 * [Mettre en place un sitemap efficient](/chapters/BP_4008_fr.md)
-* [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](/chapters/BP_4009.md)
+* [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](/chapters/BP_4009_fr.md)
 * [Réduire les données stockées au nécessaire](/chapters/BP_4011_fr.md)
 * [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
-* [Limiter le recours aux canvas](https://github.com/cnumr/best-practices/issues/182)
+* [Limiter le recours aux canvas](/chapters/BP_4013_fr.md)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un titre de page et une metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
 * [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
-* [Eliminer les fonctionnalités non utilisées](https://github.com/cnumr/best-practices/issues/289)
+* [Eliminer les fonctionnalités non utilisées](/chapters/BP_4018_fr.md)
 * [Préférer une PWA à une application mobile native similaire au site web](/chapters/BP_4019_fr.md)
 * [Eviter les temps de blocages par des traitements javascript trop longs](/chapters/BP_4020_fr.md)
 * [Mettre en place une infrastructure élastique](/chapters/BP_4021_fr.md)
 * [Limiter le nombre d'appels aux API HTTP](https://github.com/cnumr/best-practices/issues/326)
+* [Limiter le recours aux carrousels](/chapters/BP_4030_fr.md)
 
 ### 47 bonnes pratiques modifiées en v4.0.0
 
