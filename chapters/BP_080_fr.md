@@ -47,7 +47,7 @@ De nombreux outils vous aideront à réduire au minimum le poids des images :
 
 ### Exemple
 Dans cet exemple, l'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
-`.jpg`, celle par défaut. Le navigateur décidera quelle image télécharger, s'il support le format `.webp` il téléchargera l'image 
+`.jpg`, celle par défaut. Le navigateur décidera quelle image télécharger, s'il supporte le format `.webp` il téléchargera l'image 
 `image.webp` sinon, il téléchargera l'image `image.jpg`
 
 ```html
