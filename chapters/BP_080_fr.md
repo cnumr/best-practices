@@ -65,4 +65,4 @@ Pour aller plus loin :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'images non optimisée  | 0  |
+| d'images non optimisées  | 0  |
