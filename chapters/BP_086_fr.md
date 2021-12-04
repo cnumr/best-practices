@@ -32,7 +32,7 @@ Les six critères à prendre en compte sont :
 
 ### Exemple
 De nombreux hébergements partagent leur politique environnementale, et diffusent la valeur de 
-leur indicateurs (PUE / CUE / WUE...) C'est le cas de: 
+leurs indicateurs (PUE / CUE / WUE...). C'est le cas de : 
    - [OVH](https://corporate.ovhcloud.com/fr/sustainability/environment/)
    - [SCALEWAY](https://www.scaleway.com/fr/leadership-environnemental/)
    - [INFOMANIAK](https://www.infomaniak.com/fr/ecologie)
