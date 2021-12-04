@@ -31,7 +31,7 @@ Les six critères à prendre en compte sont :
 6. compensation carbone.
 
 ### Exemple
-De nombreux hébergements partagent leur politique environementale, et diffusent la valeur de 
+De nombreux hébergements partagent leur politique environnementale, et diffusent la valeur de 
 leur indicateurs (PUE / CUE / WUE...) C'est le cas de: 
    - [OVH](https://corporate.ovhcloud.com/fr/sustainability/environment/)
    - [SCALEWAY](https://www.scaleway.com/fr/leadership-environnemental/)
