@@ -1,4 +1,4 @@
-## Choisir un hébergeur "vert"
+## Choisir un hébergeur "éco-responsable"
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |  Difficile                |    Fort               | 
+|    1              |  1                        |    5                  | 
 
 
 |Ressources Economisées                                      |
@@ -19,22 +19,24 @@
 
 ### Description
 
-Préférer un hébergeur qui combine des serveurs économes à des sources d’énergies renouvelables et qui compense ses émissions de gaz à effet de serre. Les six critères à prendre en compte sont :
-1.	gestion des DEEE (déchets d’équipements électriques et électroniques) ;
-2.	efficience énergétique du data center ;
-3.	politique d’achat responsable ;
-4.	respect de la dimension sociale ;
-5.	alimentation aux énergies renouvelables ;
-6.	compensation carbone.
+Préférer un hébergeur qui combine des serveurs économes à une alimentation sans énergie fossile (pétrole, gaz, charbon) 
+basé principalement sur des sources d’énergies renouvelables.
+Les six critères à prendre en compte sont :
+1. gestion des DEEE (déchets d’équipements électriques et électroniques) ;
+2. efficience énergétique du data center [Power Usage Effectiveness (PUE) / Carbon Usage Effectiveness (CUE) /
+   Water Usage Effectiveness (WUE)] ;
+3. politique d’achat responsable ;
+4. respect de la dimension sociale ;
+5. alimentation aux énergies bas carbone ;
+6. compensation carbone.
 
 ### Exemple
 
-Les hébergeurs suivants utilisent exclusivement des énergies renouvelables ou compensées :
- - https://www.aiso.net
- - https://www.infomaniak.com
-
-Pour aller plus loin :
-https://www.greenit.fr/2009/05/18/quels-criteres-pour-identifier-un-hebergeur-vert
+De nombreux hébergeurs partagent leur politique environnementale, et diffusent la valeur de 
+leurs indicateurs (PUE / CUE / WUE...). C'est le cas de : 
+   - [OVH](https://corporate.ovhcloud.com/fr/sustainability/environment/)
+   - [SCALEWAY](https://www.scaleway.com/fr/leadership-environnemental/)
+   - [INFOMANIAK](https://www.infomaniak.com/fr/ecologie)
 
 ### Principe de validation
 
