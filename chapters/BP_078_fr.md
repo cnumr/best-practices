@@ -1,4 +1,4 @@
-## Compresser lles fichiers CSS, JavaScript, HTML et SVG
+## Compresser les fichiers CSS, JavaScript, HTML et SVG
 
 ### Identifiants
 
@@ -23,14 +23,16 @@ Compresser les feuilles de style CSS, les bibliothèques JavaScript ainsi que le
 
 ### Exemple
 
-Pour Apache, il suffit d’ajouter dans le fichier .htaccess (pour utiliser `DEFLATE`) :
-```apacheconf
-# compress text, html, javascript, css, xml: AddOutputFilterByType DEFLATE text/plain AddOutputFilterByType DEFLATE text/html AddOutputFilterByType DEFLATE text/xml AddOutputFilterByType DEFLATE text/css AddOutputFilterByType DEFLATE application/xml AddOutputFilterByType DEFLATE application/xhtml+xml AddOutputFilterByType DEFLATE application/rss+xml AddOutputFilterByType DEFLATE application/ javascript
-AddOutputFilterByType DEFLATE application/x-javascript
-# Or, compress certain ﬁle types by extension:
-<files *.html>
-    SetOutputFilter DEFLATE
-</files>
+Pour utiliser `BROTLI` dans Apache, il suffit d’ajouter la configuration suivante :
+
+```
+# compress html, text, xml, css, javascript
+AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript
+
+# Or, compress certain ﬁle types in a specific directory:
+<Directory "/your-directory">
+    AddOutputFilterByType BROTLI_COMPRESS text/html
+</Directory>
 ```
 
 ### Principe de validation
