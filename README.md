@@ -168,7 +168,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter les outils d'analytics et les données collectées](/chapters/BP_4001_fr.md)
 * [Limiter l'utilisation des GIFs](/chapters/BP_4002_fr.md)
 * [Éviter la lecture automatique des vidéos et sons](/chapters/BP_4003_fr.md)
-* [Utiliser le chargement paresseux des compartiments](https://github.com/cnumr/best-practices/issues/134)
+* [Utiliser les compartiments CSS](/chapters/BP_4004_fr.md)
 * [Fournir une alternative textuelle aux contenus multimédias](/chapters/BP_4005_fr.md)
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
 * [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
