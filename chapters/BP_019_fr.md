@@ -23,7 +23,7 @@ Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. four
 pour y afficher un bouton Partager et un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources : 
 pour fonctionner, ils nécessitent un grand nombre de requêtes et de télécharger des fichiers lourds. 
 Mieux vaut leur préférer des liens directs, en HTML, vers les pages de partage. 
-On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que http://www.sharelinkgenerator.com/.
+On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que https://www.sharelinkgenerator.com/.
 
 ### Exemple
 

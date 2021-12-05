@@ -30,7 +30,7 @@ Il est également possible d’utiliser des bibliothèques de type « Shadow DOM
 Pour en savoir plus, vous pouvez consulter le projet de Shadow DOM du W3C :
 https://w3c.github.io/webcomponents/spec/shadow/
 et les préconisations du W3C pour réduire les accès au DOM via JavaScript :
-http://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
+https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
 
 
 ### Principe de validation

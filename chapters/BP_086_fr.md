@@ -31,6 +31,7 @@ Les six critères à prendre en compte sont :
 6. compensation carbone.
 
 ### Exemple
+
 De nombreux hébergeurs partagent leur politique environnementale, et diffusent la valeur de 
 leurs indicateurs (PUE / CUE / WUE...). C'est le cas de : 
    - [OVH](https://corporate.ovhcloud.com/fr/sustainability/environment/)

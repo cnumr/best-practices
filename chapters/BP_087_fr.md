@@ -28,7 +28,7 @@ Faute de mieux, une possibilité est soit de choisir un fournisseur qui n'achèt
 Bien que cela ne concerne que les émissions de gaz à effet de serre, https://app.electricitymap.org/map permet d'être informé sur l'intensité carbone en fonction du pays du fournisseur.
 
 Pour en savoir plus sur les certificats de garantie d’origine et l’électricité :
-www.greenit.fr/tag/electricite
+https://www.greenit.fr/tag/electricite
 
 ### Principe de validation
 
