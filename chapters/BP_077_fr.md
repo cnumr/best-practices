@@ -28,7 +28,7 @@ Il existe différents outils pour minifier comme par exemple:
 - CSS: cssnano, csso ou clean-css 
 - Javascript: Terser, UglifyJS ou Babel-minify 
 - HTML: htmlnano, HTMLMinifier
-- SVG: SVGO,minify-xml ou équivalent .
+- SVG: SVGO, minify-xml ou équivalent
 
 
 ### Principe de validation
