@@ -171,7 +171,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Utiliser les compartiments CSS](/chapters/BP_4004_fr.md)
 * [Fournir une alternative textuelle aux contenus multimédias](/chapters/BP_4005_fr.md)
 * [Privilégier HTTP/2 à HTTP/1.1](/chapters/BP_4006_fr.md)
-* [Économiser de la bande passante grace à un ServiceWorker](https://github.com/cnumr/best-practices/issues/171)
+* [Économiser de la bande passante grace à un ServiceWorker](/chapters/BP_4007_fr.md)
 * [Mettre en place un sitemap efficient](/chapters/BP_4008_fr.md)
 * [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](/chapters/BP_4009_fr.md)
 * [Réduire les données stockées au nécessaire](/chapters/BP_4011_fr.md)
