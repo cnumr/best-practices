@@ -210,7 +210,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #029 [Favoriser les polices standards](https://github.com/cnumr/best-practices/discussions/227)
 * #030 [Préférer les glyphs aux images](https://github.com/cnumr/best-practices/issues/258)
 * #034 [Ne pas redimensionner les images coté navigateur](https://github.com/cnumr/best-practices/issues/259)
-* #035 [Eviter d'utiliser des images bitmap pour l'interface](https://github.com/cnumr/best-practices/issues/292)
+* #035 [Eviter d'utiliser des images matricielles pour l'interface](https://github.com/cnumr/best-practices/issues/292)
 * #037 [Utiliser le chargement paresseux des images](https://github.com/cnumr/best-practices/issues/181)
 * #038 [Utiliser le rechargement partiel d'une zone de contenu](https://github.com/cnumr/best-practices/issues/291)
 * #039 [Eviter les animations Javascript / CSS](https://github.com/cnumr/best-practices/issues/305)
