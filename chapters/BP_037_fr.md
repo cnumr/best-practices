@@ -1,4 +1,4 @@
-## Utiliser le chargement paresseux des images
+## Utiliser le chargement paresseux
 
 ### Identifiants
 
@@ -10,32 +10,42 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Conseillé        |   Standard                |  Fort                 | 
+|  5                |   5                       |  5                    | 
 
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|    |
+|  Bande passante, CPU  |
 
 ### Description
+Lorsqu’un internaute ne consulte pas la totalité d’une page web, par défaut toutes les ressources (images, vidéos, iframes...)
+situées en dehors de la zone visitée, en dessous de la ligne de flottaison, sont chargées inutilement. Pour éviter cela, 
+il est possible d'utiliser la technique du chargement paresseux (lazy loading) qui consiste à ne charger un élement que
+lorsque son emplacement devient visible à l’écran. 
 
-Lorsqu’un internaute ne consulte pas la totalité d’une page web, toutes les images situées en dehors de la zone visitée ont été chargées inutilement. 
-La technique du chargement paresseux (lazy loading) consiste à ne charger une image que lorsque son emplacement devient visible à l’écran.
-Elle nécessite de programmer le mécanisme en JavaScript ou d’utiliser une bibliothèque comme jQuery « appear » pour détecter l’apparition à l’écran de la zone de l’image.
-À terme, le navigateur Chrome de Google devrait faire du lazy loading automatiquement. Mais on pourra le « forcer » ou le désactiver sur chaque image ou iframe.
+Il est possible, en HTML5, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe
+de ne télécharger que les images qui apparaissent à l'écran. Cependant, cet attribut est très récent : il ne sera
+pas pris en compte sur d'anciennes versions de navigateurs. Dans un souci de compatibilité accrue, on pourra néanmoins
+utiliser des mini-librairies Javascript, très légères, qui s'occuperont de lazy-loader vos images comme : 
+    - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
+    - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
 
 ### Exemple
-
-L’image originale n’est pas chargée par le DOM car elle est remplacée par un pixel transparent dont le poids est très faible. Son URL est néanmoins stockée dans l’attribut data-src pour permettre à JavaScript de la charger le moment opportun, c’est-à-dire dès que l’emplacement de l’image apparaîtra à l’écran. Détecter l’apparition de l’emplacement de l’image peut être réalisé grâce à la librairie jQuery « Appear ».
+Dans cet exemple, l'image et l'iframe seront lazy-loadés automatiquement par le navigateur, si l'image doit apparaitre à
+l'écran, elle sera téléchargée et affichée, si elle est en dessous de la ligne de flottaison, elle ne sera pas téléchargée.
 
 ```html
-<img data-src="image.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUg AAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASs
-JTYQAAAAASUVORK5CYII=" alt="logo green IT" />
-<noscript><img src="image.jpg" alt="logo green IT"/></noscript>
+<img src="image.jpg" alt="..." loading="lazy">
+<iframe src="video-player.html" title="..." loading="lazy"></iframe>
 ```
+
+Pour aller plus loin :
+ - https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading
+ - https://web.dev/browser-level-image-lazy-loading/
+ - https://web.dev/lazy-loading-video/
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'images appelées sans lazy loading  |  10% |
+| d'images, d'iframes et de vidéos appelés **sans** lazy loading, en dessous de la ligne de flottaison  |  0% |
