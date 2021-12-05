@@ -24,8 +24,8 @@ sont d’excellents outils pour réaliser rapidement des sites, car ils réponde
 Revers de la médaille, on n’en utilise généralement qu’une petite portion ; or ces frameworks et bibliothèques ne s’appuient pas tous sur une architecture modulaire, 
 ce qui contraint l’internaute à télécharger toute la librairie pour n’utiliser qu’un faible pourcentage de ses fonctionnalités.
 
-Dans la mesure du possible, il est préférable de se passer de ces bibliothèques (voir http://youmightnotneedjquery.com) 
-ou de n’en conserver que les portions réellement utilisées (voir http://getbootstrap.com/customize).
+Dans la mesure du possible, il est préférable de se passer de ces bibliothèques (voir https://youmightnotneedjquery.com)
+ou de n’en conserver que les portions réellement utilisées (voir https://getbootstrap.com/customize).
 
 Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, soit d'éliminer du code "mort" donc non utilisé.
 

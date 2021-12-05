@@ -28,8 +28,8 @@ Alors que la plupart des serveurs web augmentent leur consommation de mémoire v
 Nginx a la réputation d’être plus performant qu’Apache. Il peut ainsi servir 2,1 fois plus de requêtes par seconde que ce serveur.
 
 Pour aller plus loin :
- - http://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
- - http://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use
+ - https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
+ - https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use
 
 
 ### Principe de validation

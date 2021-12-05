@@ -33,8 +33,8 @@ margin:1em 0 2em 0.5em;
 ```
 
 Pour aller plus loin :
- - www.w3.org/TR/CSS
- - www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties
+ - https://www.w3.org/TR/CSS
+ - https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/
 
 ### Principe de validation
 

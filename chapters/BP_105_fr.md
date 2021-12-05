@@ -31,7 +31,7 @@ AllowOverride none
 ```
 
 Pour aller plus loin :
-http://httpd.apache.org/docs/2.0/mod/core.html#allowoverride
+https://httpd.apache.org/docs/2.0/mod/core.html#allowoverride
 
 ### Principe de validation
 
