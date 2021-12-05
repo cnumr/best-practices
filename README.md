@@ -48,7 +48,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * :heavy_check_mark: #001 [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * :heavy_check_mark: #002 [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * :heavy_check_mark: #003 [Fluidifier le processus](/chapters/BP_003_fr.md)
-* :heavy_check_mark: #004 [Préférer la saisie assistée à l'autocomplétions](/chapters/BP_004_fr.md)
+* :heavy_check_mark: #004 [Préférer la saisie assistée à l'autocomplétion](/chapters/BP_004_fr.md)
 * :heavy_check_mark: #005 [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
 * :heavy_check_mark: #006 [Privilégier une approche "mobile first", à défaut un chargement adaptatif](/chapters/BP_006_fr.md)
 * :heavy_check_mark: #007 [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
