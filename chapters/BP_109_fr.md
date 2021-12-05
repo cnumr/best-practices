@@ -1,4 +1,4 @@
-## Dédoublonner systématiquement les fichiers avant envoi
+## Limiter les emails lourds et redondants
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       |  Standard                 |    Moyen              | 
+| 3       |  4                 |    3              | 
 
 
 |Ressources Economisées                                      |
@@ -19,19 +19,26 @@
 
 ### Description
 
-Selon l’ADEME (Agence de l’environnement et de la maîtrise de l’énergie), un e-mail contenant une pièce jointe de 1 Mo a un bilan carbone de 19 grammes d’équivalent CO2. Si l’on replace ce résultat dans le contexte d’une entreprise de 100 personnes envoyant en moyenne 332 e-mails par jour, 220 jours par an, cela représente 13,6 tonnes d’équivalent CO2, soit 13 allers-retours Paris-New York en avion.
-
-Autres chiffres : selon Google, dans une entreprise française de 500 personnes hébergeant ses serveurs de messagerie, chaque utilisateur consomme environ 16 kWh et 1,67 kg d’équivalent CO2 par an pour envoyer et recevoir ses e-mails.
-
-Au regard de ces données, il est donc essentiel, avant chaque envoi d’un e-mailing ou d’une newsletter, de s’assurer qu’un même utilisateur n’est pas inscrit quatre fois…
+Les e-mails sont sauvegardés et dupliqués sur les disques du fournisseur d'e-mail. 
+Il convient de raisonner l'envoi d'e-mail automatiques (ex: newsletters, gestion client, suivi de commande) en limitant leur nombre, les pièces jointes et le nombre de destinataires.
 
 ### Exemple
 
-Pour en savoir plus sur l’analyse de cycles de vies des technologies :
-www.ademe.fr
+Newsletters:
+
+- Définir la fréquence d'envoi au strict nécessaire
+- Envoyer aux seules personnes essentielles à la newsletter et celles le souhaitant (liste d'inscription, ciblage client)
+- Envoyer des mails de désinscription aux clients n'ayant pas ouvert les x newsletters précédentes
+- Éviter les pièces jointes et préférer les liens directs
+- Éviter les images et à défaut limiter leur taille
+
+Gestion client:
+
+- Réduire à un seul envoi pour les commandes internet (commande, confirmation de paiement, expédition, satisfaction, relance, satisfaction livraison, facture, ...)
+- Ne pas envoyer de pièce jointe si cela n'est pas nécessaire : lien vers le document sur le compte client par exemple.
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers de contacts comportant des doublons  | 0  |
+| d'emails avec pièce jointe  | 0  |

@@ -19,7 +19,7 @@
 
 ### Description
 
-Les procédures stockées sont plus performantes et économes en res- sources que les requêtes SQL envoyées par le serveur d’applications vers le système de gestion de base de données relationnelles (SGBDR). Deux raisons à cela :
+Les procédures stockées sont plus performantes et économes en ressources que les requêtes SQL envoyées par le serveur d’applications vers le système de gestion de base de données relationnelles (SGBDR). Deux raisons à cela :
  - une procédure stockée économise au serveur l’interprétation de la
 requête puisqu’elle est précompilée ;
  - une procédure stockée est moins gourmande en bande passante puisqu’il y a moins d’informations échangées entre le serveur et le client.
@@ -31,7 +31,7 @@ Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge
 ### Exemple
 
 Quand utiliser les procédures stockées ?
- - Pour éviter d’envoyer des requêtes complexes au serveur SQL, qui font l’objet d’une analyse syntaxique puis d’une interprétation avant d’être exécutées. Ces étapes consomment beaucoup de res- sources.
+ - Pour éviter d’envoyer des requêtes complexes au serveur SQL, qui font l’objet d’une analyse syntaxique puis d’une interprétation avant d’être exécutées. Ces étapes consomment beaucoup de ressources.
  - Pour simplifier le code du site et favoriser ainsi sa maintenabilité. En effet, l’empreinte écologique d’un site est aussi constituée des ressources mises en œuvre pour le maintenir et le faire évoluer.
 
 

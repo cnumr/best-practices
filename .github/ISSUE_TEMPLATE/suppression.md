@@ -11,4 +11,4 @@ Discussion: [lien de discussion]
 
 Tâches:
 
-- [ ] Supprimer la BP_xxx.md
+- [ ] Supprimer la BP_xxx_fr.md

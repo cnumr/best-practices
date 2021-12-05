@@ -29,12 +29,14 @@ recherche sur un nombre que sur une chaîne de caractères).
    
 Idéalement, les choix du type de données et de son dimensionnement doivent êtres fondés sur l’analyse d’un échantillon représentatif de données.
 
-### Exemple
+### Exemples
 
 Dans le cas d’un établissement de formation, la taille du champ permettant de stocker le nombre d’élèves doit être basé sur une étude statistique.
 On peut ainsi déterminer s’il est possible d’utiliser un TINYINT (1 octet, jusqu’à 127) plutôt qu’un SMALLINT (2 octets, jusqu’à 32 767). 
-Dans tous les cas, le choix par défaut d’un INT (4 octets, jusqu’à 2 147 483 647) est une aberration (que nous rencontrons malheureusement tous les jours lors de nos audits…).
-Gain potentiel : jusqu’à 8 fois moins de mémoire et de bande passante consommée. La consommation en cycle processeur est réduite dans les mêmes proportions.
+Dans tous les cas, le choix par défaut d’un INT (4 octets, jusqu’à 2 147 483 647) voire un BIGINT (8 octets) est une aberration (que nous rencontrons malheureusement tous les jours lors de nos audits…).
+Gain potentiel : jusqu’à 8 fois moins de stockage. La consommation en cycle processeur est réduite dans les mêmes proportions.
+
+Dans le cas d'un stockage d'un identifiant UUID, un stockage textuel sera non adapté. Un UUID est stocké sur 16 octets alors que sous sa forme textuelle cela demanderait au minimum 36 octets. Les indexes de base de données ne seraient également pas aussi efficaces qu'avec le type UUID/GUID/uniqueidentifier.
 
 ### Principe de validation
 
