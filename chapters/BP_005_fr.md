@@ -44,4 +44,4 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de pages non réalisables uniquement en HTML5 et CSS3 |  10% |
+|   de pages dont le design est plus chargé que nécessaire  |  0 |
