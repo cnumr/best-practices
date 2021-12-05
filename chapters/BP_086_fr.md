@@ -37,9 +37,6 @@ leurs indicateurs (PUE / CUE / WUE...). C'est le cas de :
    - [SCALEWAY](https://www.scaleway.com/fr/leadership-environnemental/)
    - [INFOMANIAK](https://www.infomaniak.com/fr/ecologie)
 
-Pour aller plus loin :
-www.greenit.fr/2009/05/18/quels-criteres-pour-identifier-un-hebergeur-vert
-
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
