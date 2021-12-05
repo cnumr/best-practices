@@ -20,7 +20,8 @@
 ### Description
 
 Compresser les feuilles de style CSS, les bibliothèques JavaScript ainsi que les fichiers HTML pour limiter l’utilisation de la bande passante et améliorer les temps de chargement.
-
+L’algorithme GZIP est un standard de la compression coté serveur, il permet de compresser à la volée les ressources avant de les envoyer aux clients.
+Plus récemment, BROTLI à été popularisé avec des performances accrues, il est supporté par tous les navigateurs les plus répandus.
 ### Exemple
 
 Pour utiliser `BROTLI` dans Apache, il suffit d’ajouter la configuration suivante :
