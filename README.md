@@ -200,7 +200,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #008 [Proposer un traitement asynchrone lorsque c'est possible](https://github.com/cnumr/best-practices/issues/268)
 * #009 [Limiter le nombre de requêtes HTTP](https://github.com/cnumr/best-practices/issues/298)
 * #010 [Stocker les données statiques localement](https://github.com/cnumr/best-practices/issues/252)
-* #011 [Utiliser un framework ou développer sur mesure](https://github.com/cnumr/best-practices/issues/327)
+* #011 [Favoriser un développement sur-mesure à l'usage d'un CMS](https://github.com/cnumr/best-practices/issues/327)
 * #013 [Favoriser les pages statiques](https://github.com/cnumr/best-practices/issues/333)
 * #014 [Créer une architecture applicative modulaire](https://github.com/cnumr/best-practices/issues/178)
 * #015 [Choisir les technologies les plus adaptées](https://github.com/cnumr/best-practices/issues/329)
