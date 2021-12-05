@@ -36,6 +36,10 @@ AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css tex
 </Directory>
 ```
 
+Le serveur web NGINX gère par défaut la compression GZIP mais uniquement pour les fichiers HTML. 
+Pour l'activer sur les images et autres ressources se référer à cette page: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04
+
+Pour installer et configurer brotli sur NGINX, voir https://github.com/google/ngx_brotli.
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
