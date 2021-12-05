@@ -18,18 +18,17 @@
 |  Bande passante, CPU  |
 
 ### Description
+Lorsqu’un internaute ne consulte pas la totalité d’une page web, par défaut toutes les ressources (images, vidéos, iframes...)
+situées en dehors de la zone visitée, en dessous de la ligne de flottaison, sont chargées inutilement. Pour éviter cela, 
+il est possible d'utiliser la technique du chargement paresseux (lazy loading) qui consiste à ne charger un élement que
+lorsque son emplacement devient visible à l’écran. 
 
-Lorsqu’un internaute ne consulte pas la totalité d’une page web, toutes les ressources (images, vidéos, iframes...) situées en dehors de la zone visitée,
-en dessous de la ligne de flottaison, ont été chargées inutilement. 
-La technique du chargement paresseux (lazy loading) consiste à ne charger une image que lorsque son emplacement devient visible
-à l’écran. 
-Il possible, en HTML5, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe de ne télécharger
-automatiquement que les images qui apparaissent à l'écran. Cependant, cet attribut est très récent : il ne sera
+Il est possible, en HTML5, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe
+de ne télécharger que les images qui apparaissent à l'écran. Cependant, cet attribut est très récent : il ne sera
 pas pris en compte sur d'anciennes versions de navigateurs. Dans un souci de compatibilité accrue, on pourra néanmoins
 utiliser des mini-librairies Javascript, très légères, qui s'occuperont de lazy-loader vos images comme : 
     - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
     - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
-
 
 ### Exemple
 Dans cet exemple, l'image et l'iframe seront lazy-loadés automatiquement par le navigateur, si l'image doit apparaitre à
