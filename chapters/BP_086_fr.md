@@ -30,11 +30,11 @@ Préférer un hébergeur qui combine des serveurs économes à des sources d’�
 ### Exemple
 
 Les hébergeurs suivants utilisent exclusivement des énergies renouvelables ou compensées :
- - www.aiso.net
- - www.infomaniak.com
+ - https://www.aiso.net
+ - https://www.infomaniak.com
 
 Pour aller plus loin :
-www.greenit.fr/2009/05/18/quels-criteres-pour-identifier-un-hebergeur-vert
+https://www.greenit.fr/2009/05/18/quels-criteres-pour-identifier-un-hebergeur-vert
 
 ### Principe de validation
 
