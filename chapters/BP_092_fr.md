@@ -28,8 +28,8 @@ La mémoire vive étant très rapide en termes d’accès en lecture/écriture, 
 ### Exemple
 
 Exemples d’intégration d’un cache RAM à Drupal :
- - intégration de Memcache : http://drupal.org/project/memcache
- - intégration de Varnish : http://drupal.org/project/varnish
+ - intégration de Memcache : https://drupal.org/project/memcache
+ - intégration de Varnish : https://drupal.org/project/varnish
 
 ### Principe de validation
 

@@ -19,19 +19,13 @@
 
 ### Description
 
-L’une des grandes nouveautés de HTML 5 est la possibilité de stocker localement des données structurées sous différentes formes : 
-paires valeurs-clés (Web Storage), base de données relationnelle SQL (IndexedDB), et la mise en cache applicatif (Service Workers).
+Avec le support désormais généralisé sur tous les navigateurs des bases de données clé-valeur (IndexDB, Web Storage), et de la mise en cache dans le Cache Storage API, il est possible de stocker localement des données structurées statiques.
 
 L’intérêt du stockage local est double. D’une part, on évite les allers-retours inutiles avec le serveur, ce qui économise des ressources et du temps de réponse.
 D’autre part, comme les données sont locales, il est plus facile et plus rapide de les manipuler au sein de l’interface.
 
-À l’heure où nous écrivons ces lignes (juillet 2015), le support par les dernières versions des navigateurs de Web Storage est total et celui de IndexedDB est bon.
-On peut consulter le site www.caniuse.com, très utile pour tester l’avancée du support de chacune de ces approches par les navigateurs.
-
-### Exemple
-
-Gain potentiel : réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique),
-des serveurs HTTP jusqu’aux mainframes.
+Le gain potentiel est la réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique),
+des serveurs HTTP jusqu’aux serveurs de base données.
 
 ### Principe de validation
 
