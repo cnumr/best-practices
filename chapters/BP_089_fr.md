@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Non Prioritaire  |  Difficile                |    Fort               | 
+|  1/5  |  1/5                |    5/5               | 
 
 
 |Ressources Economisées                                      |
@@ -19,14 +19,27 @@
 
 ### Description
 
-Au lieu d’utiliser un serveur dédié pour chaque projet, et de le charger au maximum à 20 % de sa capacité, mutualiser les ressources machine en mettant en place un hyperviseur. En effet, une seule machine physique pourra offrir les mêmes services que 4 serveurs dédiés et chargés à 20 %. Le processeur et la mémoire vive seront utilisés de façon optimale, tout en consommant moins d’électricité que plusieurs serveurs physiques. Cette démarche permet également de réduire la quantité de déchets électroniques (DEEE) générés par le site.
+
+La virtualisation est une technologie permettant de créer et d’exécuter des représentations virtuelles d’un ordinateur sur une ou plusieurs machines physiques. Le logiciel en charge de la virtualisation se charge d'allouer les ressources entre les différents environnements virtuels en fonction de leurs besoins.
+
+En conséquence, la virtualisation permet :
+* une économie sur le matériel par mutualisation
+* une utilisation optimale des ressources (RAM, CPU, disque)
+
+Cette démarche réduit la quantité de déchets électroniques (DEEE) et la consommation électrique comparé à l'utilisation de plusieurs serveurs physiques.
+
+La conteneurisation est le compagnon à la virtualisation : une machine virtuelle peut accueillir un service de conteneurisation. Il va permettre d'executer de manière isolé plusieurs applications sur le même système d'exploitation.
 
 ### Exemple
 
 Utiliser des outils de virtualisation tels que VMware, Xen, KVM, etc.
 
+Utiliser des outils de conteneurisation tels que Docker, Kubernetes, etc.
+
+Au lieu d’utiliser quatre serveurs dédiés pour quatre projets, et de les charger au maximum à 20 % de leur capacité, mutualiser les ressources en mettant en place un hyperviseur. En effet, une seule machine physique pourra offrir les mêmes services que les quatre serveurs dédiés. 
+d'applications non hébergée de façon mutualisée
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de serveurs physiques  |  75% |
+| d'applications non hébergées de façon mutualisée |  0% |

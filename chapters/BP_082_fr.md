@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-|  Non Prioritaire  | Standard                  |    Moyen              | 
+|  2  | 3                  |    3              | 
 
 
 |Ressources Economisées                                      |
@@ -19,17 +19,18 @@
 
 ### Description
 
-Un cookie permet de maintenir un état entre le navigateur de l’internaute et le serveur web distant grâce à des identifiants. Ce fichier texte est transféré dans chaque requête HTTP. Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
+Un cookie permet de maintenir un état entre le navigateur de l’internaute et le serveur web distant grâce à une donnée partagée.
+Cette donnée est transféré dans chaque requête HTTP.
+Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
 
 ### Exemple
 
-On peut supprimer automatiquement un cookie lorsqu’il n’est plus utile, en précisant une date d’expiration, de la manière suivante :
+On peut supprimer un cookie lorsqu’il n’est plus utile en précisant une durée d’expiration nulle ou négative, de la manière suivante :
 ```
-Set-Cookie: user_mavariable=mavaleur; expires=Wed,
-12 Dec 2012 07:42:30 UTC
+Set-Cookie: user_mavariable=; Max-Age=0
 ```
-Voir la RFC 2109 de l’IETF (Internet Engineering Task Force) pour en savoir plus sur les cookies :
-https://tools.ietf.org/rfc/rfc2019.txt
+Voir la RFC 6265 de l’IETF (Internet Engineering Task Force) pour en savoir plus sur les cookies :
+https://datatracker.ietf.org/doc/html/rfc6265
 
 ### Principe de validation
 
