@@ -25,7 +25,7 @@ Ces corrections dynamiques consomment inutilement des ressources à chaque charg
 ### Exemple
 
 Utiliser le validateur du W3C (World Wide Web Consortium) pour vérifier que les pages sont bien valides et que le code HTML est correctement formé :
-http://validator.w3.org
+https://validator.w3.org
 
 ### Principe de validation
 
