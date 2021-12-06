@@ -1,4 +1,4 @@
-## Préférer la saisie assistée à l'autocomplétions
+## Préférer la saisie assistée à l'autocomplétion
 
 ### Identifiants
 
@@ -10,7 +10,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
 |-------------------|:-------------------------:|:---------------------:|
-| Prioritaire       | Facile                    | Fort                  | 
+|      4 /5         |          4 / 5            |        4 / 5          | 
 
 
 |Ressources Economisées                                      |
@@ -19,17 +19,34 @@
 
 ### Description
 
-Le complètement automatique (autocomplétion) guide les utilisateurs en complétant automatiquement la fin du texte saisi dans un champ.
-Cette fonctionnalité est parfois très pratique pour éviter des erreurs ou suggérer un axe de recherche, 
-mais elle nécessite des allers-retours incessants entre le navigateur et le serveur (malgré la possibilité de
-« caper » les échanges). Le navigateur envoie en effet chaque nouveau caractère ou mot saisi au serveur, 
-qui lui renvoie un texte pour compléter la saisie de l’utilisateur. Le volume de données échangées est très faible, 
-mais il sollicite beaucoup les serveurs et le réseau en termes de requêtes.
+L'autocomplétion, ou complément automatique est une fonctionnalité très répandue consistant à suggérer à l'utilisateur
+des résultats correspondant à sa recherche pendant sa saisie. Par exemple, un site permettant de rechercher un itinéraire
+va proposer « Paris », « Lyon Part-Dieu » et « Paray le Monial » quand l'utilisateur tape « Par ».
 
-Dans la mesure du possible, cette fonctionnalité est à éviter et à remplacer si possible par la saisie assistée. 
-Cela consiste à guider l’utilisateur par un ensemble d’informations et d’indices
-(présentation du format attendu en grisé dans le champ de saisie, réaction de l’interface avec un message d’erreur, 
-une aide lorsque la saisie est incorrecte…). Les interactions liées à la saisie assistée sont gérées localement, ce qui réduit les échanges avec le serveur.
+L'implémentation de l'autocomplétion consiste à envoyer une requête au serveur à chaque caractère saisi pour récupérer les
+résultats correspondants. On peut donc avoir beaucoup de requêtes effectuées et beaucoup de ressources dépensées.
+
+Dans la mesure du possible, cette fonctionnalité est à remplacer par la saisie assistée.
+Cela consiste à guider l’utilisateur par un ensemble d’informations et d’indices : 
+ - Présentation du format attendu en grisé dans le champ de saisie (`placeholder`)
+ - Texte expliquant le format attendu
+ - Réaction de l’interface avec un message d’erreur ou un changement de couleur et aide textuelle lorsque la saisie est incorrecte
+ - etc.
+
+Les interactions liées à la saisie assistée sont gérées localement, ce qui réduit les échanges avec le serveur.
+
+Pour l'exemple de la recherche d'itinéraire et de la complétion des villes, il est possible, en cas d'ambiguïté, de proposer
+les différents résultats après la soumission du formulaire. L'utilisateur entre une chaine de caractère, par exemple « Lens »,
+soumet le formulaire, et se voit à ce moment proposées différentes options : « Lens (France) », « Lens (Belgique) », 
+« Loison sous Lens ».
+
+Si le recours à l'autocomplétion ne peut pas être évité il est possible de minimiser le nombre de requêtes avec des optimisations simples : 
+ - Ajouter un délai de quelque dixièmes de secondes entre l'ajout d'un caractère et la requête : cela permet de ne pas déclencher de requête si l'utilisateur n'a pas terminé sa saisie.
+ - Limiter le nombre de résultats affichés par l'autocomplétion, priorisés par une note de pertinence
+ - Fixer un nombre de caractères minimal avant de chercher à compléter.
+ - Si la taille de la base de données le permet, l'inclure dans le code html ou dans le `local storage` et effectuer l'autocomplétion côté client.
+ - Mettre en cache les résultats des recherches avec pour clef la chaîne saisie pour moins solliciter la base de données.
+ - Contextualiser les résultats pour en limiter le nombre.
 
 ### Exemple
 
@@ -40,7 +57,7 @@ Gain potentiel : à chaque fois que l’on utilise la saisie assistée pour une 
 
 * Utilisation de l'élément HTML [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist)
 
-Si la données qui est proposée à l'utilisateur est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif `datalist`. Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
+Si la donnée qui est proposée à l'utilisateur est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif `datalist`. Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
