@@ -179,7 +179,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter le recours aux canvas](/chapters/BP_4013_fr.md)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un titre de page et une metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
-* [Utiliser la version la plus récente du langage](https://github.com/cnumr/best-practices/issues/279)
+* [Utiliser la version la plus récente du langage](/chapters/BP_4016_fr.md)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
 * [Eliminer les fonctionnalités non utilisées](/chapters/BP_4018_fr.md)
 * [Préférer une PWA à une application mobile native similaire au site web](/chapters/BP_4019_fr.md)
