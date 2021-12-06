@@ -21,18 +21,16 @@
 
 Le choix des technologies étant primordial pour optimiser les ressources, sélectionner l’outil le plus économe en fonction de ses besoins
 et de ses contraintes métier.
-Voici les cinq grandes familles de solutions disponibles, classées de la plus à la moins performante en termes de green IT :
- - site statique (réalisé avec un logiciel spécialisé tel que Dreamweaver, ou avec un éditeur de code) ;
- - site généré (par exemple avec Jekyll, outil basé sur Ruby qui apporte des systèmes d’inclusion de templates, des mécanismes de génération d’URL, etc.) ;
- - site dynamique développé sur mesure (avec PHP, J2EE, .NET, etc.) ;
- - site dynamique développé sur mesure avec un framework (de type Symfony) ;
- - site dynamique développé avec un CMS (comme Drupal, Joomla!, Jahia, etc.).
 
-En effet, plus la solution retenue est « packagée », plus elle empile des couches d’abstraction qui dégradent la performance.
+Dans la mesure du possible, il faut privilégier un site statique dont le contenu change très peu, pourra être mis en cache et ne sollicitera pas de serveur d'application ou de base de données.
+
+Dans le cas d'un site plus dynamique, le sur-mesure permet plus de souplesse dans l'optimisation technique et d'embarquer le strict nécessaire pour répondre au besoin métier.
+
+Si vous avez une partie d'un site web qui repose sur un nombre de pages très limité et qui délivre un service métier encadré (tunnel de commande, demande de devis) l'utilisation d'une SPA peut être recommandée. Cela permet de limiter les aller retours avec le serveur et rendre l'expérience plus fluide et performante.
 
 ### Exemple
 
-Un système de tchat sera bien plus performant et économique s’il est développé en JavaScript via Node.js qu’avec une solution PHP.
+Un site institutionnel avec uniquement une présentation de l'entreprise et un formulaire de contact devra privilégier un site statique étant donné la faible fréquence de mise à jour. 
 
 ### Principe de validation
 
