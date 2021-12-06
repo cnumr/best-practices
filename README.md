@@ -175,7 +175,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place un sitemap efficient](/chapters/BP_4008_fr.md)
 * [Assurer la compatibilité avec les plus anciens appareils et logiciels du parc](/chapters/BP_4009_fr.md)
 * [Réduire les données stockées au nécessaire](/chapters/BP_4011_fr.md)
-* [Mettre en place une politique d'expiration et suppression des données](https://github.com/cnumr/best-practices/issues/176)
+* [Mettre en place une politique d'expiration et suppression des données](/chapters/BP_4012_fr.md)
 * [Limiter le recours aux canvas](/chapters/BP_4013_fr.md)
 * [S'assurer que les parcours utilisateurs permettent de réaliser l'action prévue](/chapters/BP_4014_fr.md)
 * [Avoir un titre de page et une metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
