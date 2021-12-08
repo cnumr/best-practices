@@ -112,7 +112,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Réduire au nécessaire les logs des serveurs](/chapters/BP_103_fr.md)
 * [Désactiver le DNS lookup d’Apache](/chapters/BP_104_fr.md)
 * [Apache Vhost : désactiver le AllowOverride](/chapters/BP_105_fr.md)
-* [Désactiver les logs binaires de MySQL / MariaDb](/chapters/BP_106_fr.md)
+* [Désactiver les logs binaires](/chapters/BP_106_fr.md)
 * [Compresser les documents](/chapters/BP_107_fr.md)
 * [Optimiser les PDF](/chapters/BP_108_fr.md)
 * [Limiter les emails lourds et redondants](/chapters/BP_109_fr.md)
@@ -347,7 +347,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * #096 [Afficher des pages d'erreur statiques](https://github.com/cnumr/best-practices/issues/270)
 * #098 [Utiliser un CDN](https://github.com/cnumr/best-practices/issues/358)
 * #103 [Réduire au nécessaire les logs des serveurs](https://github.com/cnumr/best-practices/issues/255)
-* #106 [Désactiver les logs binaires de MySQL / MariaDb](https://github.com/cnumr/best-practices/issues/290)
+* #106 [Désactiver les logs binaires](https://github.com/cnumr/best-practices/issues/290)
 * #109 [Limiter les emails lourds et redondants](https://github.com/cnumr/best-practices/issues/272)
 * #111 [Préférer le texte brut au HTML](https://github.com/cnumr/best-practices/issues/145)
 
