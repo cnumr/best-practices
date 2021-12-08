@@ -1,4 +1,4 @@
-## Désactiver les logs binaires de MySQL / MariaDb
+## Désactiver les logs binaires
 
 ### Identifiants
 
