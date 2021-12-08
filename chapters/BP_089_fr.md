@@ -37,7 +37,7 @@ Utiliser des outils de virtualisation tels que VMware, Xen, KVM, etc.
 Utiliser des outils de conteneurisation tels que Docker, Kubernetes, etc.
 
 Au lieu d’utiliser quatre serveurs dédiés pour quatre projets, et de les charger au maximum à 20 % de leur capacité, mutualiser les ressources en mettant en place un hyperviseur. En effet, une seule machine physique pourra offrir les mêmes services que les quatre serveurs dédiés. 
-d'applications non hébergée de façon mutualisée
+
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
