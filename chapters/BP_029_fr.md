@@ -30,14 +30,14 @@ Cependant si vous avez besoin d'une police particulière pour votre service num�
 
 Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratique : Préférez les glyphes aux images) et si les droits d'utilisations de la font le permettent, incorporer les nouveaux glyphes directement dans la font.
 
-#### Exemple
+### Exemple
 
 Voici un tableau comparatif de poids des fonts de la police Oswald :
 | | Regular  | Regular + bold         | Variable | Latin Regular |  Latin Regular + Latin Bold |  Latin Variable |
 |---:| :---------------: |:---------------:|:------------:| :-----:| :-----:| :-----:|
 |Poids|37.6kb|76.9kb|66kb|16kb|32.5kb| ?
 
-#### Alternatives
+### Solution Alternative
 
 Vos utilisateurs peuvent faire le choix, via les préférences de leurs navigateurs, de demander aux sites web, utilisant le media query `prefers-reduced-data` qu'ils visitent d'optimiser les requêtes réseau réalisées.
 

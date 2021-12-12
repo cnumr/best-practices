@@ -53,11 +53,10 @@ Si le recours à l'autocomplétion ne peut pas être évité il est possible de 
 Gain potentiel : à chaque fois que l’on utilise la saisie assistée pour une fonctionnalité, plutôt que l’autocomplétion, on réduit le nombre de requêtes associées par un facteur 10.
 
 ### Solution alternative
-#### l'élement `<datalist></datalist>`
 
-* Utilisation de l'élément HTML [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist)
+Si la donnée qui est proposée à l'utilisateur est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist).
 
-Si la donnée qui est proposée à l'utilisateur est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif `datalist`. Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
+Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
