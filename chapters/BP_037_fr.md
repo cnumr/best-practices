@@ -15,7 +15,7 @@
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|  Bande passante, CPU  |
+|  Processeur / Réseau  |
 
 ### Description
 Lorsqu’un internaute ne consulte pas la totalité d’une page web, par défaut toutes les ressources (images, vidéos, iframes...)

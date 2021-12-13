@@ -15,7 +15,7 @@
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-| Processeur / Mémoire |
+| Processeur / Mémoire vive |
 
 ### Description
 

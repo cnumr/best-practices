@@ -15,7 +15,7 @@
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|    |
+|  Processeur / Réseau  |
 
 ### Description
 

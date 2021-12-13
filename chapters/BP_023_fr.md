@@ -15,7 +15,7 @@
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|    |
+|  Réseau / Requêtes  |
 
 ### Description
 

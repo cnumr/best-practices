@@ -15,7 +15,7 @@
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
-|  Déchets électroniques, consommation électrique, émissions de gaz à effet de serre |
+|  Déchets électroniques / Consommation électrique / Émissions de gaz à effet de serre |
 
 ### Description
 
