@@ -8,10 +8,9 @@
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
+| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
 |-------------------|:-------------------------:|:---------------------:|
-|  Prioritaire      |  Difficile                |    Fort               | 
-
+| 3 | 2 | 4 |
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
