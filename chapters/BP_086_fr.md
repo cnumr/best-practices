@@ -41,4 +41,4 @@ leurs indicateurs (PUE / CUE / WUE...). C'est le cas de :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de non signature par l'hébergeur de code de bonne conduite de la Commission Européenne ET affiche une politique environnementale ET de PUE supérieur à 1,5  |  0 |
+| d'hébergeurs dont le PUE supérieur à 1,5  |  0 |

@@ -35,4 +35,4 @@ https://datatracker.ietf.org/doc/html/rfc6265
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  La taille de cumulée de tous les cookies utilisés |  0 |
+|  de cookies non utiles ou non optimisés |  0 |

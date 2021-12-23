@@ -39,4 +39,4 @@ Pour aller plus loin :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de notations CSS non abrégé  |  20% |
+| de notations CSS non abrégés  |  0% |

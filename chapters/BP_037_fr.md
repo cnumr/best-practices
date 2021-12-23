@@ -47,4 +47,4 @@ Pour aller plus loin :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'images, d'iframes et de vidéos appelés **sans** lazy loading, en dessous de la ligne de flottaison  |  0% |
+| d'images, d'iframes et de vidéos appelés sans lazy loading, en dessous de la ligne de flottaison  |  0% |

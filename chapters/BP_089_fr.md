@@ -41,4 +41,4 @@ Au lieu d’utiliser quatre serveurs dédiés pour quatre projets, et de les cha
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'applications non hébergées de façon mutualisée |  0% |
+| d'applications non hébergées de façon mutualisée |  0 |

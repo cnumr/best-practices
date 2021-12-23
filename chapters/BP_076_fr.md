@@ -40,4 +40,4 @@ Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de traitements avec une grande quantité de données exécutés en dehors du serveur de base de données |  10% |
+|  de traitements avec une grande quantité de données exécutés en dehors du serveur de base de données |  1 |

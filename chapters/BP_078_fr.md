@@ -43,4 +43,4 @@ Pour installer et configurer brotli sur NGINX, voir https://github.com/google/ng
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS, JavaScript,  HTML et SVG non compressées  |  0 |
+| de fichiers CSS, JavaScript,  HTML et SVG non compressés  |  0 |

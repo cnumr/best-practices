@@ -40,5 +40,4 @@ Dans les cas où il n'y a pas de pool de connexion, réutiliser une connexion et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de connexions à une base de données n’utilisant pas un pool| 0  |
 |  de connexions à une base de données pour requêter, stocker une donnée non nécessaire à l'utilisation du service | 0  |

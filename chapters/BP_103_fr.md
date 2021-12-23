@@ -38,5 +38,4 @@ CustomLog /var/log/apache/access.log combined env=!dontlog
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|de niveaux de logs debug/trace/performance   | 0  |
 |de logs sans durée maximale de rétention   | 0  |

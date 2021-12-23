@@ -1,4 +1,4 @@
-## Eviter les animations Javascript / CSS
+## Éviter les animations Javascript / CSS
 
 ### Identifiants
 
@@ -51,4 +51,4 @@ Vous pouvez aussi laissez le choix à vos utilisateurs, via les préférences de
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'animations JS / CSS par page / URLs  |  3 |
+| d'animations JS / CSS par page  |  2 |

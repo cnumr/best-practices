@@ -45,4 +45,4 @@ text-indent :0; line-height :25pt; font-size :25pt;
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| minimum de CSS print est égal à   |  1 |
+| de CSS print manquante  |  1 |

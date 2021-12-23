@@ -29,4 +29,4 @@ Les leaders du Web utilisent un domaine séparé pour servir les ressources stat
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de domaines servant des ressources statiques AVEC un cookie  | 2  |
+| de domaines servant des ressources statiques AVEC un cookie  | 1  |

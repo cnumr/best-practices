@@ -41,4 +41,4 @@ Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de courriels envoyés de plus de 1mo  |  10% |
+| de courriels envoyés de plus de 1mo  |  0 |

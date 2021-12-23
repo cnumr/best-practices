@@ -30,4 +30,4 @@ Avec Webpack, le plugin `webpack-merge-and-include-globally` facilite la fusion 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS et JS non combinés  | 10%  |
+| de fichiers CSS et JS non combinés  | 2  |

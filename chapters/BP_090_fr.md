@@ -30,4 +30,4 @@ Il est aussi possible de choisir une architecture matérielle adaptée au type d
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou plus OU non écolabellisés ou Energy Star for server. | 25%  |
+|  de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou plus OU non écolabellisés ou Energy Star for server. | 0  |

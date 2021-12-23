@@ -39,4 +39,4 @@ utilisées par le site, ce qui réduit le poids des bibliothèques et les ressou
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de librairies dont seulement les portions indispensables sont utilisée est supérieur ou égal à  | 1  |
+| de librairies dont des portions non indispensables sont utilisées  | 1  |

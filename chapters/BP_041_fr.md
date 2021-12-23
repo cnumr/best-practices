@@ -38,4 +38,4 @@ en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversé par un code JavaScript  | 0  |
+| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversée par un code JavaScript  | 0  |

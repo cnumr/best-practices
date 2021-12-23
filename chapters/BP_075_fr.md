@@ -60,9 +60,4 @@ Suite à cette commande, le système de gestion de base de données pourra retro
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de requêtes non analysées pour évaluer leur coût en ressources | 20%  |
-
-
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de requêtes peu performantes identifiées non optimisées | 20%  |
+| de requêtes peu performantes identifiées non optimisées | 0  |

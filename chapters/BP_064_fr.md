@@ -31,4 +31,4 @@ Les jetons d'accès en OAuth2 sont associés à une date d'expiration. Mettre en
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  10% |
+| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  0 |

@@ -18,7 +18,7 @@
 
 ### Description
 
-Les CMS les plus connus proposent de nombreuses fonctionnalités pour optimiser (compresser, redimensionner, etc.) et générer vos médias (images, pdf, documents, audios et vidéos) souvent via l'installation de plugins ou extensions. Parfois payants, mais surtout énergivores en terme de CPU, de mémoire vive, de réseau et de stockage, ces plugins n'évitent pas l'importation du média disproportionné (taille, dimension et qualité) ou inadapté par son format par rapport à son utilisation finale.
+Les CMS les plus connus proposent de nombreuses fonctionnalités pour optimiser (compresser, redimensionner, etc.) et générer vos médias (images, pdf, documents, audios et vidéos) souvent via l'installation de plugins ou extensions. Parfois payants, mais surtout consommateurs en terme de CPU, de mémoire vive, de réseau et de stockage, ces plugins n'évitent pas l'importation du média disproportionné (taille, dimension et qualité) ou inadapté par son format par rapport à son utilisation finale.
 
 ### Exemple
 
@@ -35,4 +35,4 @@ Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de contenu optimisé par le CMS   |  0 |
+| de contenus optimisés directement par le CMS   |  0 |

@@ -42,4 +42,4 @@ Voici un exemple de configuration des en-têtes Expires et Cache-Control pour le
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'entêtes manquantes Expires ou Cache-Control  |  5% |
+| d'entêtes manquantes Expires ou Cache-Control  |  0 |

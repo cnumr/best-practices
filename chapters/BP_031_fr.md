@@ -30,4 +30,4 @@ https://validator.w3.org
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'erreurs critiques  | 5  |
+| d'erreurs critiques  | 0  |
