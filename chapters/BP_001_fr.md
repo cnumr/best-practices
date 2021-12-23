@@ -1,4 +1,4 @@
-## Eliminer les fonctionnalités non essentielles
+## Éliminer les fonctionnalités non essentielles
 
 ### Identifiants
 
@@ -36,4 +36,4 @@ Respecter le principe YAGNI (You Ain't Gonna Need It) de l’extreme programming
 
 | Le nombre ... |     est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de fonctionnalités non testées avant développement |  30 % |
+| de fonctionnalités dont l'utilité n'a pas été vérifiée avec un panel d'utilisateurs avant développement |  0 % |

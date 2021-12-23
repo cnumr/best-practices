@@ -18,11 +18,11 @@
 
 ### Description
 
-Les « mensurations » de chaque fonctionnalité doivent être définies précisément et dans leur ensemble. Il peut s’agir 
+Les « dimensions » de chaque fonctionnalité doivent être définies précisément et dans leur ensemble. Il peut s’agir 
 d’un taux de compression pour les images de l’interface graphique, du temps de réponse maximum pour une requête HTTP, 
 du nombre d’items affichés dans une liste, etc.
 
-Plus les « mensurations » et exigences associées à chaque fonctionnalité collent au métier, plus on évite la surqualité.
+Plus les « dimensions » et exigences associées à chaque fonctionnalité collent au métier, plus on évite la surqualité.
 La logique doit donc être inversée par rapport aux habitudes actuelles. Si une information n’est pas précisée, 
 c’est le niveau de qualité ou la quantité minimale qui est proposé. Par exemple, en l’absence de précision, 
 le nombre d’items d’une liste est limité à 5 éléments ou au nombre maximal affichable sur le plus petit écran cible de l’application.
