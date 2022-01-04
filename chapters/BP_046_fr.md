@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   35   | 33  | 46  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

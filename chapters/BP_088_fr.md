@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |  501    |  86 | 88  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 4. Production | Datacenter | Administrateur systèmes |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

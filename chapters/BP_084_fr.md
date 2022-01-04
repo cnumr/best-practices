@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |  1060    |   | 84  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 4. Production | Réseau | Administrateur systèmes |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

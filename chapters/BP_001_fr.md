@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   109   | 1  | 1  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 1. Spécification | Utilisateur/Terminal | PO/AMOA |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

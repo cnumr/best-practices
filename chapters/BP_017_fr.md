@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |  113    | 54  | 17  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

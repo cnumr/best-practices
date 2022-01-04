@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   3   | 51  | 13  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 2. Conception | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

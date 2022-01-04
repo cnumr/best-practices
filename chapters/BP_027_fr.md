@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   16   | 30  | 27  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | UX/UI Designer |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

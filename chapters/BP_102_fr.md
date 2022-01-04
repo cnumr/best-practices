@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   91   | 107  | 102  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 4. Production | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

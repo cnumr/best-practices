@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |  100    |  114 | 113  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

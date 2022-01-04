@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   6   | 7  | 6  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 2. Conception | Utilisateur/Terminal | PO/AMOA |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

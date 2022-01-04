@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   1030   |   | 85  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 7. Fin de vie | Datacenter | PO/AMOA |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

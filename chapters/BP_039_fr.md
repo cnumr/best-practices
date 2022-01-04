@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   810   | 48  | 39  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 2. Conception | Utilisateur/Terminal | UX/UI Designer |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |  46    | 98  | 96  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 2. Conception | Réseau | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

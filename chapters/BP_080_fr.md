@@ -5,6 +5,12 @@
 |:-------:|:----:|:----:|:----:|
 |  21     | 76   |  80  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Utilisateur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   45   | 97  | 95  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 6. Support / maintenance | Réseau | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |

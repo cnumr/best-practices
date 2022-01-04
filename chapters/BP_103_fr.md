@@ -6,6 +6,12 @@
 |:-------:|:----:|:----:|:----:|
 |   82   | 99  | 103  |      |
 
+### Catégories
+
+| Cycle de vie |  Tiers  |  Responsable  |
+|:---------:|:----:|:----:|
+| 4. Production | Datacenter | Architecte Logiciel/Développeur |
+
 ### Indications
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
