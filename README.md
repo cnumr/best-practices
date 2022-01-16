@@ -143,6 +143,11 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une architecture élastique](/chapters/BP_4021_fr.md)
 * [Limiter le nombre d'appels aux API HTTP](/chapters/BP_4022_fr.md)
 * [Limiter le recours aux carrousels](/chapters/BP_4030_fr.md)
+* [Préférer la pagination au défilement infini](/chapters/BP_4035_fr.md)
+* [Entretenir son site régulièrement](/chapters/BP_4036_fr.md)
+* [Limiter le nombre d'extensions dans un CMS](/chapters/BP_4037_fr.md)
+* [Sécuriser l'accès à l'administration](/chapters/BP_4038_fr.md)
+* [Ne pas afficher les documents à l'intérieur des pages](/chapters/BP_4039_fr.md)
 
 ## La liste des 115 Bonnes Pratiques V3
 
