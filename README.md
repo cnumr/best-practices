@@ -143,6 +143,10 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une architecture élastique](/chapters/BP_4021_fr.md)
 * [Limiter le nombre d'appels aux API HTTP](/chapters/BP_4022_fr.md)
 * [Limiter le recours aux carrousels](/chapters/BP_4030_fr.md)
+* [Avoir une stratégie de fin de vie des contenus](/chapters/BP_4031_fr.md)
+* [Mettre en place un "Circuit breaker"](/chapters/BP_4032_fr.md)
+* [Favoriser le "Request collapsing"](/chapters/BP_4033_fr.md)
+* [S’appuyer sur les services managés](/chapters/BP_4034_fr.md)
 
 ## La liste des 115 Bonnes Pratiques V3
 
