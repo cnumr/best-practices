@@ -152,6 +152,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Limiter le nombre d'extensions dans un CMS](/chapters/BP_4037_fr.md)
 * [Sécuriser l'accès à l'administration](/chapters/BP_4038_fr.md)
 * [Ne pas afficher les documents à l'intérieur des pages](/chapters/BP_4039_fr.md)
+* [Utiliser le « Cold Storage »](/chapters/BP_4040_fr.md)
 
 ## La liste des 115 Bonnes Pratiques V3
 
@@ -309,6 +310,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre en place une infrastructure élastique](/chapters/BP_4021_fr.md)
 * [Limiter le nombre d'appels aux API HTTP](/chapters/BP_4022_fr.md)
 * [Limiter le recours aux carrousels](/chapters/BP_4030_fr.md)
+* [Utiliser le « Cold Storage »](/chapters/BP_4040_fr.md)
 
 ### 47 bonnes pratiques modifiées en v4.0.0
 
