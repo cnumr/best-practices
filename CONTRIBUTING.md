@@ -142,6 +142,6 @@ Cet apport peut être évalué de la manière suivante :
 4. Elle limite le risque de saturation des réseaux mobiles ou fixes
 5. Elle limite les risques d'obsolescence des terminaux utilisateurs
 
-####Priorité (higher is better)
+#### Priorité (higher is better)
 
 Le niveau de priorité est proposé librement par le contributeur et s'appuie sur la Mise en oeuvre et l'Impact environnemental.
