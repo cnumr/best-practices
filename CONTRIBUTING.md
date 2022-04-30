@@ -4,18 +4,16 @@ Tout personne qui le souhaite peut se proposer pour contribuer au référentiel.
 
 Les règles du présent document devront être respectées.
 
-Une équipe projet s'assure de la bonne tenue de ces règles.
+L'équipe projet en charge de ce repository s'assure de la bonne tenue de ces règles.
 
 ## But des contributions
 
 Les contributions ont pour but :
 
 - De supprimer les bonnes pratiques obsolètes, non applicables ou sans effet
-- De challenger les bonnes pratiques très orientées programmation et langage en étudiant notamment leur remplacement par des bonnes pratiques agnostiques au langage
 - D’ajouter des bonnes pratiques qui semblent pertinentes, sont issues du terrain
 - D’associer aux nouvelles bonnes pratiques une règle de conformité
 - De vérifier, améliorer le cas échéant les bonnes pratiques existantes ainsi que leur règle de conformité
-- De passer les niveaux - mise en oeuvre, impact, priorité - de 3 à 5 niveaux
 - De proposer toute idée qui pourrait améliorer le référentiel d'une manière générale et le cas échéant la mettre en place
 
 ## Règles générales
@@ -29,27 +27,24 @@ Les contributions ont pour but :
 
 L'équipe projet est constituée de:
 
-- lemaire.raphael@gmail.com
-- romuald.priol@protonmail.com
-- thomas.lemaire.actlem@gmail.com
-
-Pilote : fbordage@greenit.fr
+- [Thomas Broyer](https://github.com/tbroyer)
+- [Raphaël Lemaire](https://github.com/rlemaire)
+- [Romuald Priol](https://github.com/DocRoms)
+- [Thomas Lemaire](https://github.com/ACTLEM)
 
 Cette équipe s'assure que les règles instaurées pour la contribution soient respectées.
 
-En cas de désaccord entre contributeurs, son rôle est aussi de trancher une décision. En cas de désaccord au sein de l'équipe projet, c'est le pilote qui tranche.
+En cas de désaccord entre contributeurs, son rôle est aussi de trancher une décision.
 
 L'équipe projet fait preuve de transparence et fait en sorte que les décisions soient les plus collégiales possibles.
 
 L'équipe projet est responsable de la validation définitive des `Pull Request` et donc de l'intégration de la proposition d'ajout, de modification ou de suppression dans le référentiel.
 
-Un membre de l'équipe projet peut soumettre une proposition aux contributeurs mais ne peut pas être responsable seul de la validation ou non de celle-ci : il faut un consensus de l'équipe projet. En cas d'absence de consensus, c'est le pilote qui décide.
+Un membre de l'équipe projet peut soumettre une proposition aux contributeurs mais ne peut pas être responsable seul de la validation ou non de celle-ci : il faut un consensus de l'équipe projet.
 
 ## Proposition
 
 Chaque proposition d'ajout, de modification majeure ou de suppression de bonnes pratiques doit passer par [une discussion](https://github.com/cnumr/best-practices/discussions/categories/bonnes-pratiques).
-
-L'état des différentes bonnes pratiques est résumé sur la [page d'accueil du repository](README.md)
 
 Le titre de la discussion doit être explicite et doit spécifier s'il s'agit d'un ajout, d'une modification majeure ou d'une suppression.
 
@@ -71,19 +66,17 @@ Lorsqu'une proposition reçoit plusieurs votes positifs, l'équipe projet est so
 
 Les cas suivants peuvent se produire:
 
-- La proposition est validée et une `Issue` est créée avec la discussion en référence
+- La proposition est validée et le contributeur peut créer une `Issue` avec la discussion en référence
 - La proposition est définitivement rejetée avec justification
 - La proposition doit être retravaillée avant une décision finale
 
-L'`Issue` créée devra contenir le tag `création`, `modification` ou `suppression` suivant le type de proposition et être rattachée au projet [`Bonnes Pratiques V4`](https://github.com/cnumr/best-practices/projects/1).
+L'`Issue` créée devra contenir le tag `création`, `modification` ou `suppression` suivant le type de proposition et être rattachée au projet [`Bonnes Pratiques V5`](https://github.com/cnumr/best-practices/projects/2).
 
-En cas d'ajout, le fichier sera nommé suivant le pattern suivant: `BP-4xxx-fr.md` avec `4xxx` le numéro de la bonne pratique qui sera défini par l'équipe projet.
+En cas d'ajout, le fichier sera nommé suivant le pattern suivant: `BP-5xxx-fr.md` avec `5xxx` le numéro de la bonne pratique qui sera défini par l'équipe projet.
 
 Le fichier sera à copier à partir du [template](./resources/BP_xxxx_fr.md)
 
-Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet.
-
-Une fois la `Pull Request` validée, son état est mis à jour sur la page d'accueil du repository par un membre de l'équipe projet.
+Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet qui est en charge de la revue.
 
 ## Amélioration
 
@@ -151,6 +144,4 @@ Cet apport peut être évalué de la manière suivante :
 
 ####Priorité (higher is better)
 
-Le niveau de priorité de mise en oeuvre est le produit des niveaux Mise en oeuvre et Impact environnemental.
-La formule est la suivante : Mise en oeuvre * Impact = Priorité.
-Afin de facilité la lisibilité, nous appliquerons la formule suivante : =ARRONDI.SUP(((MEO*IMPACT)/25)*5;0).
+Le niveau de priorité est proposé librement par le contributeur et s'appuie sur la Mise en oeuvre et l'Impact environnemental.
