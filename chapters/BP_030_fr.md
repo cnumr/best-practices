@@ -34,7 +34,7 @@
 Pour optimiser une landing page comprenant visuellement :
 
 ![Exemple de police créée via Font Forge pour illustrer une landing page](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
-*Extrait d'une font crée via Font Forge*
+*Extrait d'une police créée via Font Forge*
 
 Un gain de 91% du poids a été réalisé en incluant pictogrammes et illustrations vectorielles dans une icon font via [Font Forge](https://fontforge.org/en-US/).
 
