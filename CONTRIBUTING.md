@@ -78,6 +78,13 @@ Le fichier sera à copier à partir du [template](./resources/BP_xxxx_fr.md)
 
 Une `Pull Request` associée à l'`Issue` sera créée et soumise à l'équipe projet qui est en charge de la revue.
 
+La création de `Pull Request` suite le processus classique au sein de Github, à savoir:
+
+- Création d'un `fork` personnelle de la personne en charge de la `Pull Request`
+- Ajout du repository d'origine comme remote (`upstream`)
+- Création d'une branche sur le fork personnel
+- Créer une `Pull Request` à partir du fork en mettant comme cible la branche `main` du repository cible
+
 ## Amélioration
 
 Pour les améliorations comme:
