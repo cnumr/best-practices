@@ -1,6 +1,6 @@
 # Les 115 bonnes pratiques
 
-## Le projet
+## Le projet test PR
 
 Le contenu du référentiel d'écoconception a été publié par Frédéric Bordage / GreenIT.fr chez Eyrolles sous le titre:
 
