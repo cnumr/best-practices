@@ -4,10 +4,10 @@
 
 Le contenu du référentiel d'écoconception a été publié par Frédéric Bordage / GreenIT.fr chez Eyrolles sous le titre:
 
-1. ""écoconception web : les 100 bonnes pratiques"" en octobre 2012
-2. ""écoconception web : les 115 bonnes pratiques, 2ème édition"" en septembre 2015
-3. ""écoconception web : les 115 bonnes pratiques, 3ème édition"" en avril 2019.
-4. ""écoconception web : les 115 bonnes pratiques, 4ème édition"" en mai 2022
+1. “écoconception web : les 100 bonnes pratiques” en octobre 2012
+2. “écoconception web : les 115 bonnes pratiques, 2ème édition” en septembre 2015
+3. “écoconception web : les 115 bonnes pratiques, 3ème édition” en avril 2019.
+4. “écoconception web : les 115 bonnes pratiques, 4ème édition” en mai 2022
 
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer.
 
