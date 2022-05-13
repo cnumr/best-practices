@@ -1,4 +1,4 @@
-## Limiter le nombre de domaine servant les ressources
+## Limiter le nombre de domaines servant les ressources
 
 ### Identifiants
 
@@ -35,7 +35,7 @@ pour éviter d’avoir à transporter un ou plusieurs cookies à chaque GET HTTP
 
 ### Exemple
 
-Pour un site web institutionnel à fort trafic, on privilégiera deux domaines :
+Pour un site web institutionnel à fort trafic, on privilégiera deux sous-domaines :
  - le serveur applicatif sur www.domain.tld ;
  - le serveur media « cookie-less » sur media.domain.tld.
 
