@@ -1,4 +1,4 @@
-## Limiter les emails lourds et redondants
+## Limiter les e-mails lourds et redondants
 
 ### Identifiants
 

@@ -1,4 +1,4 @@
-## N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS
+## N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS
 
 ### Identifiants
 

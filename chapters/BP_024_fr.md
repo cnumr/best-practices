@@ -1,4 +1,4 @@
-## Ecrire des sélecteurs CSS efficaces
+## Écrire des sélecteurs CSS efficaces
 
 ### Identifiants
 
