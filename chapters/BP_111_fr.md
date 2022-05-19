@@ -1,4 +1,4 @@
-## Limiter la taille des emails envoyés
+## Limiter la taille des e-mails envoyés
 
 ### Identifiants
 

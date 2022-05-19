@@ -13,7 +13,7 @@ Nous remercions chaleureusement l'ensemble des contributrices et contributeurs q
 
 ## Les besoins
 
-Etant données les évolutions continues du web, ce référentiel a besoin de régulièrement être mis à jour.
+Étant donné les évolutions continues du web, ce référentiel a besoin de régulièrement être mis à jour.
 Toute proposition ou idée d'amélioration, de modification ou de suppression est bienvenue.
 
 ## Comment contribuer ?
@@ -22,7 +22,7 @@ N'hésitez pas à lire [le guide des contributeurs](CONTRIBUTING.md).
 
 ## Raccourci vers les discussions :
 
-Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles sur la page de discussions.
+Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibles sur la page de discussions.
 
   - :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
   - :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
@@ -31,7 +31,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 
 ## La liste des Bonnes Pratiques
 
-* [Eliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
+* [Éliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
 * [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
 * [Optimiser le parcours utilisateur](/chapters/BP_003_fr.md)
 * [Préférer la saisie assistée à l'autocomplétion](/chapters/BP_004_fr.md)
@@ -52,7 +52,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Découper les CSS](/chapters/BP_021_fr.md)
 * [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
 * [Préférer les CSS aux images](/chapters/BP_023_fr.md)
-* [Ecrire des sélecteurs CSS efficaces](/chapters/BP_024_fr.md)
+* [Écrire des sélecteurs CSS efficaces](/chapters/BP_024_fr.md)
 * [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
 * [Utiliser les notations CSS abrégées](/chapters/BP_026_fr.md)
 * [Fournir une CSS print](/chapters/BP_027_fr.md)
@@ -61,12 +61,12 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
 * [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
 * [Ne pas redimensionner les images coté navigateur](/chapters/BP_034_fr.md)
-* [Eviter d'utiliser des images matricielles pour l'interface](/chapters/BP_035_fr.md)
+* [Éviter d'utiliser des images matricielles pour l'interface](/chapters/BP_035_fr.md)
 * [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
 * [Utiliser le chargement paresseux](/chapters/BP_037_fr.md)
 * [Utiliser le rechargement partiel d'une zone de contenu](/chapters/BP_038_fr.md)
-* [Eviter les animations Javascript / CSS](/chapters/BP_039_fr.md)
-* [N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS](/chapters/BP_040_fr.md)
+* [Éviter les animations JavaScript / CSS](/chapters/BP_039_fr.md)
+* [N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS](/chapters/BP_040_fr.md)
 * [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
 * [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
 * [Réduire au maximum le repaint (appearence) et le reflow (layout)](/chapters/BP_043_fr.md)
@@ -80,7 +80,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
 * [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
-* [Eviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
+* [Éviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
 * [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
 * [Optimiser les requêtes aux bases de données](/chapters/BP_075_fr.md)
 * [Éviter le transfert d'une grande quantité de données pour réaliser un traitement](/chapters/BP_076_fr.md)
@@ -100,7 +100,7 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Mettre les caches entièrement en RAM (opcode et kvs)](/chapters/BP_092_fr.md)
 * [Stocker les données dans le cloud](/chapters/BP_093_fr.md)
 * [Héberger les ressources (CSS/JS) sur un domaine sans cookie](/chapters/BP_094_fr.md)
-* [Eviter les redirections](/chapters/BP_095_fr.md)
+* [Éviter les redirections](/chapters/BP_095_fr.md)
 * [Afficher des pages d'erreur statiques](/chapters/BP_096_fr.md)
 * [Utiliser un serveur asynchrone](/chapters/BP_097_fr.md)
 * [Utiliser un CDN](/chapters/BP_098_fr.md)
@@ -113,9 +113,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Désactiver les logs binaires](/chapters/BP_106_fr.md)
 * [Compresser les documents](/chapters/BP_107_fr.md)
 * [Optimiser les PDF](/chapters/BP_108_fr.md)
-* [Limiter les emails lourds et redondants](/chapters/BP_109_fr.md)
+* [Limiter les e-mails lourds et redondants](/chapters/BP_109_fr.md)
 * [N'utiliser que des fichiers double opt-in](/chapters/BP_110_fr.md)
-* [Limiter la taille des emails envoyés](/chapters/BP_111_fr.md)
+* [Limiter la taille des e-mails envoyés](/chapters/BP_111_fr.md)
 * [Adapter les sons aux contextes d'écoute](/chapters/BP_112_fr.md)
 * [Adapter les textes au web](/chapters/BP_113_fr.md)
 * [Adapter les vidéos aux contextes de visualisation](/chapters/BP_114_fr.md)
@@ -135,9 +135,9 @@ Pour simplifier vos recherches, n'oubliez pas d'utilisez les filtres disponibles
 * [Avoir un titre de page et une metadescription pertinents avec le contenu de la page](/chapters/BP_4015_fr.md)
 * [Utiliser la version la plus récente du langage](/chapters/BP_4016_fr.md)
 * [Ne charger des données/du code que lorsqu'elles sont/il est nécessaire](/chapters/BP_4017_fr.md)
-* [Eliminer les fonctionnalités non utilisées](/chapters/BP_4018_fr.md)
+* [Éliminer les fonctionnalités non utilisées](/chapters/BP_4018_fr.md)
 * [Préférer une PWA à une application mobile native similaire au site web](/chapters/BP_4019_fr.md)
-* [Eviter les temps de blocages par des traitements javascript trop longs](/chapters/BP_4020_fr.md)
+* [Éviter les temps de blocages par des traitements JavaScript trop longs](/chapters/BP_4020_fr.md)
 * [Mettre en place une architecture élastique](/chapters/BP_4021_fr.md)
 * [Limiter le nombre d'appels aux API HTTP](/chapters/BP_4022_fr.md)
 * [Limiter le recours aux carrousels](/chapters/BP_4030_fr.md)
