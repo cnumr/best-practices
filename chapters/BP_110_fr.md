@@ -1,4 +1,4 @@
-## N'utiliser que des fichiers double opt-in
+## N'utiliser que de l'embasement d'emails en double opt-in
 
 ### Identifiants
 
@@ -39,4 +39,4 @@ Dans le cas d’un opérateur téléphonique ou d’une banque, laisser aux clie
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de fichiers de contacts en opt-out | 0  |
+|  de fichiers d'email de contact en opt-out | 0  |
