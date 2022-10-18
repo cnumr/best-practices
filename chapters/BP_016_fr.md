@@ -30,7 +30,6 @@ un périmètre fonctionnel et technique suffisant pour votre projet, vous devez 
 
 ### Exemple
 
- - À Drupal, préférer plutôt la version optimisée Pressflow.
  - À Redis, préférer plutôt la version optimisée KeyDB.
 
 ### Principe de validation
