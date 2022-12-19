@@ -32,7 +32,7 @@ On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que
 
 ### Exemple
 
-es réseaux sociaux possèdent tous une URL qui permet à leurs membres de partager une page web :
+Les réseaux sociaux possèdent tous une URL qui permet à leurs membres de partager une page web :
  - Facebook Share : https://www.facebook.com/sharer/sharer.php?u=XXXXX
  - Facebook Like : https://www.facebook.com/plugins/like.php?href=XXXXX
  - Twitter : https://twitter.com/intent/tweet?url=XXXXX
