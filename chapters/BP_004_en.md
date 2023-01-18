@@ -39,8 +39,8 @@ This consists of guiding the user through a set of information and advice:
 
 Interactions related to assisted input are managed locally, which reduces exchanges with the server.
 
-For the example of the route search and the completion of cities, it is possible, in case of ambiguity, to suggest
-the different results after the submission of the form. The user enters a string, for example "Lens",
+For the example of searching for a route and entering a city, it is possible, in case of ambiguity, to propose
+the different results after submitting the form. The user enters a string, for example "Lens",
 submits the form, and is then offered different options: "Lens (France)", "Lens (Belgium)",
 "Loison under Lens".
 
