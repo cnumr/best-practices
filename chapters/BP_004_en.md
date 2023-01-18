@@ -80,6 +80,6 @@ This system will offer native and client side autocompletion mechanism.
 
 ### Validation rule
 
-| The number of ...        | is equalt to or below |  
+| The number of ...        | is equal to or less than |  
 |--------------------------|:---------------------:|
 | fields with autocomplete |          20%          |
