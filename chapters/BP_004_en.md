@@ -24,9 +24,8 @@
 
 ### Description
 
-Autocompletion, or automatic completion, is a very widespread feature consisting in suggesting to the user
-results related to his research during his typing. For example, a site to find a route
-will suggest "Paris", "Lyon Part-Dieu", and "Paray le Monial" when the user types "Par".
+Autocomplete is a popular feature that suggests search-related results when the user is typing.
+For example, a site that allows you to find a route will suggest "Paris", "Lyon Part-Dieu" and "Paray le Monial" when the user types "Par".
 
 The implementation of autocompletion usually consists in sending a request to the server for each character entered to retrieve the
 corresponding results. We can therefore have a lot of requests made and a lot of resources spent.
