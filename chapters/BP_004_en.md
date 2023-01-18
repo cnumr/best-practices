@@ -1,4 +1,4 @@
-## Avoid autocomplete in favor of other techniques of assistance to the user input validation
+## Avoid autocomplete in favor of other techniques to facilitate user input
 
 ### Identifiers
 
