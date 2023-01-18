@@ -30,11 +30,11 @@ For example, a site that allows you to find a route will suggest "Paris", "Lyon 
 The implementation of autocompletion usually consists in sending a request to the server for each character entered in order to retrieve the corresponding results.
 This can result in many requests being sent and consume a lot of resources.
 
-As far as possible, this functionality should be replaced by assisted input.
-This consists of guiding the user through a set of information and clues:
-- Presentation of the expected format in gray in the input field (`placeholder`)
+If possible, this functionality should be replaced by assisted input.
+This consists of guiding the user through a set of information and advice:
+- Presentation of the expected format in grey in the input field (`placeholder`)
 - Text explaining the expected format
-- Reaction of the interface with an error message or a change of color and textual help when the entry is incorrect
+- Reaction of the interface with an error message or a change of color and textual help when the input is incorrect
 - etc.
 
 Interactions related to assisted input are managed locally, which reduces exchanges with the server.
