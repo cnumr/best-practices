@@ -27,8 +27,8 @@
 Autocomplete is a popular feature that suggests search-related results when the user is typing.
 For example, a site that allows you to find a route will suggest "Paris", "Lyon Part-Dieu" and "Paray le Monial" when the user types "Par".
 
-The implementation of autocompletion usually consists in sending a request to the server for each character entered to retrieve the
-corresponding results. We can therefore have a lot of requests made and a lot of resources spent.
+The implementation of autocompletion usually consists in sending a request to the server for each character entered in order to retrieve the corresponding results.
+This can result in many requests being sent and consume a lot of resources.
 
 As far as possible, this functionality should be replaced by assisted input.
 This consists of guiding the user through a set of information and clues:
