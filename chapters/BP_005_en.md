@@ -24,13 +24,6 @@
 
 ### Description
 
-Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
-- les besoins de l'utilisateur (voir la bonne pratique "Optimiser le parcours utilisateur")
-- les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
-- les contraintes techniques
-- les bonnes pratiques d'écoconception
-- et de préférence les bonnes pratiques d'accessibilité
-
 Any interface design or web design must be thought out upstream, taking into account:
 - the needs of the user (see the good practice "Optimize the user journey")
 - ergonomic heuristics (Bastien and Scapin, Nielsen, etc.)
