@@ -48,6 +48,6 @@ On e-commerce services :
 
 ### Validation rules
 
-| The number of   | is below or equal to |  
+| The number of   | is equal to or less than |  
 |-----------------|:--------------------:|
 | friction points |          0           |
