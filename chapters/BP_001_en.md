@@ -28,7 +28,7 @@ Several studies (Cast Software and Standish Group, in particular) show that 70% 
 the users are not essential and that 45% are never used. By reducing the coverage and functional depth of the 
 application, we lower its initial development cost, its technical debt and the associated environmental impacts.
 
-This reduces the infrastructure necessary for its execution. Moreover, at a constant ergonomic level, the poorer the 
+This reduces the infrastructure needed to run it. Moreover, at a constant ergonomic level, the poorer the 
 application is functionally, the easier it will be to use. So it is interesting to reduce the functional coverage 
 of the application as much as possible, by centering it on the essential need of the user.
 
