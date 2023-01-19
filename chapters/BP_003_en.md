@@ -10,7 +10,7 @@
 
 |  Life cycle   |     Tiers     |  Responsible   |
 |:-------------:|:-------------:|:--------------:|
-| 2. Conception | User / device | UX/UI Designer |
+| 2. Design | User / device | UX/UI Designer |
 
 ### Indications
 
