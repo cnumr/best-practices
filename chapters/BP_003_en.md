@@ -35,7 +35,7 @@ The observation of the people using the service is a straightforward way to iden
 realised with real random users from the field are much more interesting. People working on and around the product
 tend to be power users.
 
-The time spent by the user on his terminal is the second post in terms of environmental impacts.
+The time spent by the user on the terminal is the second largest environmental impact.
 
 ### Exemple
 
