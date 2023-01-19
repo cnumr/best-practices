@@ -1,4 +1,4 @@
-## Quantify precisely the dimensions of the features and components
+## Accurately quantify the dimensions of features and components
 
 ### Identifiers
 
