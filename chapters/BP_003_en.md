@@ -29,7 +29,7 @@ Optimizing the user journey consists in reducing the time spent by the user on h
 Start by identifying the most frequent uses cases, then optimize them, by reducing the number of steps and 
 actions, eliminating unnecessary ones, identifying the failure cases, optimizing response times, etc.
 
-A path is well designed when the program behaves exactly as the user imagined it.
+A path is well designed when the program behaves exactly as the user expects it.
 
 The observation of the people using the service is a straightforward way to identify the points of friction, but user tests,
 realised with real random users from the field are much more interesting. People working on and around the product
