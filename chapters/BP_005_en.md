@@ -1,4 +1,4 @@
-## Prefer a simple, clean design, fitted to the web
+## Prefer a simple, clean design, adapted to the web
 
 ### Identifiers
 
