@@ -52,6 +52,6 @@ consistent colorimetry if grouping needed.
 
 ### Validation rule
 
-| The number of ...                                | is equal to or below |  
+| The number of ...                                | is equal to or less than |  
 |--------------------------------------------------|:--------------------:|
 | pages whose design is more busy than necessary   |          0           |
