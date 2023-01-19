@@ -49,6 +49,6 @@ not when you imagine you need it.
 ### Validation rule
 
 
-| The number of ...                                                                            | is equal to or below |  
+| The number of ...                                                                            | is equal to or less than |  
 |----------------------------------------------------------------------------------------------|:--------------------:|
 | features whose usefulness has not been verified with a panel of users before development     |         0 %          |
