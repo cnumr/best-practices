@@ -24,7 +24,7 @@
 
 ### Description
 
-Any interface design or web design must be thought out upstream, taking into account:
+Any interface design or web design must be thought out beforehand, taking into account:
 - the needs of the user (see the good practice "Optimize the user journey")
 - ergonomic heuristics (Bastien and Scapin, Nielsen, etc.)
 - technical constraints
