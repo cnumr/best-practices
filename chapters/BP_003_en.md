@@ -27,7 +27,7 @@
 Optimizing the user journey consists in reducing the time spent by the user on his most frequent use cases. 
 
 Start by identifying the most frequent uses cases, then optimize them, by reducing the number of steps and 
-actions, eliminating the unnecessary, identifying the cases of failure, optimizing response times, etc.
+actions, eliminating unnecessary ones, identifying the failure cases, optimizing response times, etc.
 
 A path is well designed when the program behaves exactly as the user imagined it.
 
