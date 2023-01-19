@@ -40,7 +40,7 @@ wireframes or prototypes with user tests make it possible to verify the usefulne
 Several succesful products of the digital world – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – provide a 
 single service and rely on great functional sobriety.
 
-When analyzing the expression of need, ask yourself the question: "What happens if we don't have it?" ".
+When analyzing the expression of the need, ask yourself the question: "What happens if we don't have it?" ".
 
 Respect the YAGNI (You Ain't Gonna Need It) principle of extreme programming: develop when you actually need a feature,
 not when you imagine you need it.
