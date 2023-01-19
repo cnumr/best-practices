@@ -45,7 +45,7 @@ submits the form, and is then offered different options: "Lens (France)", "Lens 
 "Loison under Lens".
 
 If the use of autocompletion cannot be avoided, it is possible to minimize the number of requests with simple optimizations:
-- Add a delay of a few tenths of a second between the addition of a character and the request: this makes it possible not to trigger a request if the user has not finished typing.
+- Add a delay of a few tenths of a second between the addition of a character and the request: this allows not to trigger a query if the user has not finished typing.
 - Limit the number of results displayed, prioritized by a score of relevance
 - Set a minimum number of characters before trying to complete.
 - If the size of the database allows it, include it in the html code or in the `local storage` and perform client-side autocompletion.
