@@ -45,7 +45,7 @@ Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'acc�
 * https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
 * https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 
-### Principe de validation
+### Validation rule
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
