@@ -24,7 +24,7 @@
 
 ### Description
 
-The modular architecture popularized by open source software often brings a greater scalability, reduced maintenance costs 
+The modular architecture popularized by open source software often brings a greater scalability, reduce maintenance costs 
 and a more efficient code.
 
 If the functional coverage of the website or web service can evolve, it is interesting to implement the basic
