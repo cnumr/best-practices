@@ -36,7 +36,7 @@ target screen of the application.
 
 Default values, rarely changed by the user, should be chosen to meet the need with minimal impact.
 
-### Exemple
+### Example
 
 Potential gain: by adjusting the number of items displayed on the results page of its Bing search engine,
 Microsoft Research has demonstrated that it is possible to reduce the underlying physical infrastructure
