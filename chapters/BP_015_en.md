@@ -37,7 +37,7 @@ If you have a part of a web application that relies on a small number of pages a
 (purchase, estimate request, ...), using a SPA (Single Page Application) may be interesting. It avoids requests and makes
 the user experience more fluid.
 
-### Exemple
+### Example
 
 A seldomly updated display site about an enterprise with a contact form should rely on static web pages.
 
