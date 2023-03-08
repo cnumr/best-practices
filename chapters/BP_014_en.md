@@ -33,7 +33,7 @@ shared between applications.
 
 This approach can be use at all levels, for a custom solution, or for the choice of an HTTP server or a CMS.
 
-### Exemple
+### Example
 
 Popular open source software, largely used on the web like nginX, Apache, MySQL or PHP, use a modular architecture.
 
