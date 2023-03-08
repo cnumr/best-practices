@@ -37,7 +37,7 @@ tend to be power users.
 
 The time spent by the user on the terminal is the second largest environmental impact.
 
-### Exemple
+### Example
 
 On e-commerce services : 
 * Propose a new order based on the content of the previous order.
