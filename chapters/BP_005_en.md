@@ -33,7 +33,7 @@ Any interface design or web design must be thought out beforehand, taking into a
 
 **Prefer a simple, clean design, achievable with HTML5 and CSS3 only.**
 
-### Exemple
+### Example
 
 **Description :** Some sites contain framed, non-contrasted and non-readable images (RGAA) and create an unnecessary
 mental overload (2.2. Informational Density of Scapin and Bastien). Downloaded, they are however not visible on mobile
