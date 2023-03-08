@@ -32,7 +32,7 @@ and the database, with optional cache systems. A static page is directly served 
 file system. There's no need for an application server or database.
 
 
-### Exemple
+### Example
 
 Depending on the digital service, the following solutions can be applied :
 - for a landing page or a simple display site, a static page, written directly in HTML, CSS (and optionally JS) can be created
