@@ -35,7 +35,7 @@ Although the issue is much less potent with the use of HTTP 2, having a lot of r
 performance of the application of the client side. In any case, having too many requests is a good sign that some improvements
 can be performed on the application.
 
-### Exemple
+### Example
 
 To display the small flags in a language picker, using a CSS spritesheet (ie grouping all the small images in one bigger 
 picture, then selecting the displayed one on the client side with CSS), allow to reduce the number of requests associated to
