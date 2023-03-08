@@ -37,7 +37,7 @@ This approach makes the user experience more agreeable and allow several backend
 * it makes it easier to smooth the load of the servers responsible for the processing, which allows better pooling of servers
   and consequently fewer of them.
 
-### Exemple
+### Example
 
 In the case of an online office document conversion service, the user can upload his files all at once and then 
 be notified by e-mail when the processing is complete. To optimize the process, all the files can be grouped and 
