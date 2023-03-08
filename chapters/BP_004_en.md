@@ -52,7 +52,7 @@ If the use of autocompletion cannot be avoided, it is possible to minimize the n
 - Cache search results with the string entered as the key to reduce the load on the database.
 - Contextualize the results to limit their number.
 
-### Exemple
+### Example
 
 Potential gain: the number of requests might be reduced by a factor of 10.
 
