@@ -35,7 +35,7 @@ of the application as much as possible, by centering it on the essential user's 
 Detecting a non-essential functionality is possible when analyzing the expression of the need. The MoSCoW method, workshops,
 wireframes or prototypes with user tests make it possible to verify the usefulness of a feature prior to its development.
 
-### Exemples
+### Examples
 
 Several succesful products of the digital world – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – provide a 
 single service and rely on great functional sobriety.
