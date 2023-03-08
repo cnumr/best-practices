@@ -40,7 +40,7 @@ that time, the browser will not cache individual pages.
 Any element that would make the page ineligible for _bfcache_ and/or which would render the page unusable after leaving 
 it should be avoided.
 
-### Exemple
+### Example
 
 Avoid :
  - actions triggered when leaving the page (`unload` or `beforeunload` events, prefer `pagehide` if it is really necessary)
