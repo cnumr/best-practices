@@ -34,7 +34,7 @@ for the context of use (screen/window size, pixel density, network quality, amou
 
 This constraints push the design towards a lighter and more efficient web application.
 
-### Exemple
+### Example
 
 On the server side, the _client hints_ can be used, or the browser's user agent can be recognized to serve adapted content.
 Be careful : the user agent is not always reliable, and it's use is discouraged by the actors of the web. Prefer the
