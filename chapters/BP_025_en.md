@@ -24,7 +24,7 @@
 
 ### Description
 
-When multiple DOM (Document Object Model) elements have common CSS properties, declare these DOM together in the same stylesheet. This method helps reduce CSS size.
+Declare multiple DOM (Document Object Model) together in the same stylesheet when these DOM elements have common CSS properties. This method helps reduce CSS size.
 
 ### Example
 
@@ -51,10 +51,10 @@ background-color: gray; color: navy;
 }
 ```
 
-If you want to make sure that this rule is followed, you can set up the [stylelint](https://stylelint.io/) module
-in your project (`devDependencies`) and use the following rule `shorthand-property-no-redundant-values`
+You can set up the [stylelint](https://stylelint.io/) module
+in your project (`devDependencies`) and use the following rule `shorthand-property-no-redundant-values` if you want to make sure that this rule is followed.
 
-You can find the complete list of these shortened properties on this website [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
+You can find the complete list of these shortened properties on this website [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
 ### Validation rule
 
