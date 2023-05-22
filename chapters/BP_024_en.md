@@ -24,7 +24,7 @@
 
 ### Description
 
-Use selectors based on IDs or classes. They will be filtered more quickly, thus saving CPU cycles on the associated device.
+Use selectors based on IDs or classes as they will be filtered more quickly, thus saving CPU cycles on the associated device.
 
 ### Example
 
@@ -32,7 +32,7 @@ Do not write :
 ```css
 treeitem[mailfolder="true"] > treerow > treecell {…}
 ```
-but rather :
+write instead :
 ```css
 .treecell-mailfolder {…}
 ```
@@ -41,7 +41,7 @@ Do not write :
 ```css
 treehead > treerow > treecell {…}
 ```
-rather write :
+write instead :
 ```css
 .treecell-header {…}
 ```
