@@ -34,7 +34,7 @@ All social networks share URLs that allow their members to share web pages:
   - Facebook Share: https://www.facebook.com/sharer/sharer.php?u=XXXXX
   - Facebook Like: https://www.facebook.com/plugins/like.php?href=XXXXX
   - Twitter: https://twitter.com/intent/tweet?url=XXXXX
-Sharing pop-up buttons have the same function as official controls but can be written with simpler code. An example of the code is as follows: 
+Sharing pop-up buttons have the same functions as official controls but can be written with simpler code. An example of the code is as follows: 
  
 ```html
 <button type = "button" onclick = "window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar=no, toolbar=no, resizable= yes, scrollbars=yes, height=500, width=700')">
