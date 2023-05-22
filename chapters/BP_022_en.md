@@ -24,7 +24,7 @@
 
 ### Description
 
-Limit the CSS number to avoid multiple HTTP requests and simplify browser rendering. Use a common stylesheet for all common elements, regardless of display, and one file per target resolution or media query.
+Limit the CSS number in order to avoid multiple HTTP requests and simplify browser rendering. Use a common stylesheet for all common elements, regardless of display, and one file per target resolution or media query.
 
 Be cautious: Integrate these files into the HTML code and NOT with @import directives in the CSS files themselves. By splitting this way, users terminals will choose what is most appropriate and will deprioritize loading files that they don't need.
 
