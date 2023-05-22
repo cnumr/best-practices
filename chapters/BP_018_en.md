@@ -24,8 +24,7 @@
 
 ### Description
 
-When a website or online service host web pages components on multiple domains,
-an HTTP connection must be established with each of these domains by the browser. Once the HTML page is received,
+When a website or online service host web pages components on multiple domains, HTTP connection must be established with each of these domains by the browser. Once the HTML page is received,
 browser will ask for resources as it goes through DOM (Document Object Model).
 Some resources are essential to keep the web page working. Page loading can become slower if they are hosted on unresponsive domains. When possible, all resources should be grouped together in a single domain.
 
@@ -34,7 +33,7 @@ to avoid transporting one or more cookies to each HTTP GET of the browser. Respo
 
 ### Example
 
-For an institutional website with high traffic, two subdomains are preferred:
+For an institutional website with high traffic, two subdomains should be preferred:
   - application server on www.domain.tld 
   - “cookie-less” media server on media.domain.tld
 
