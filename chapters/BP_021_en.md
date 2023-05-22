@@ -24,11 +24,11 @@
 
 ### Description
 
-Use a set of CSS instead of a single one, and only call the necessary CSS according to context. This method helps limit page size during its initial download, therefore saving bandwidth and reducing CPU load.
+Use a set of CSS instead of a single one, and only call necessary CSS according to context. This method helps limit page size during its initial download, therefore saving bandwidth and reducing CPU load.
 
-### Examples
+### Example
 
-Divide CSS according to rheir functions :
+Divide CSS according to their functions :
   - layout;
   - content ;
   - module x;
