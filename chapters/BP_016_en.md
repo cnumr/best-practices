@@ -28,8 +28,8 @@ Open source softwares are often forked to improve performance. Performance gains
 
 ### Example
 
- - Prefer the optimized Pressflow version over Drupal.
- - Prefer the optimized KeyDB version over Redis.
+ - The optimized Pressflow version should be preferred over Drupal.
+ - The optimized KeyDB version should be rather preferred over Redis.
 
 
 ### Validation rule
