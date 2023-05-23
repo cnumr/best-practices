@@ -1,4 +1,4 @@
-## Replace official social networks sharing buttons 
+## Replace official social networks share buttons 
 
 ### Identifiers
 
@@ -25,17 +25,18 @@
 ### Description
 
 Important social networks such as Facebook, Twitter, Pinterest, etc. provide ready to install plugins for web pages
-to display "Share" buttons and "Like" counters. These JavaScript plugins are very resource-intensive since they require numerous requests and heavy files downloads to work. Rather, direct links, such as HTML, are preferred.
+to display "Share" buttons and "Like" counters. These JavaScript plugins are very resource-intensive since they require numerous requests and heavy files to work. Rather, direct links, such as HTML, should be preferred.
 These links can be generated manually or via tools such as https://www.sharelinkgenerator.com/.
 
 ### Example
 
-All social networks share URLs that allow their members to share web pages:
+All social networks provide URLs that allow their members to share web pages:
   - Facebook Share: https://www.facebook.com/sharer/sharer.php?u=XXXXX
   - Facebook Like: https://www.facebook.com/plugins/like.php?href=XXXXX
   - Twitter: https://twitter.com/intent/tweet?url=XXXXX
-Sharing pop-up buttons have the same functions as official controls but can be written with simpler code. An example of the code is as follows: 
- 
+
+It is possible to create a button that opens a popup like the official tools, for instance with the following code :
+
 ```html
 <button type = "button" onclick = "window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar=no, toolbar=no, resizable= yes, scrollbars=yes, height=500, width=700')">
      I share this page on Facebook
