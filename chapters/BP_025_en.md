@@ -24,7 +24,7 @@
 
 ### Description
 
-Declare multiple DOM (Document Object Model) together in the same stylesheet when these DOM elements have common CSS properties. This method helps reduce CSS size.
+When several DOM (Document Object Model) elements share some CSS properties, write the declarations together in the same sheet to reduce de CSS size.
 
 ### Example
 
@@ -58,6 +58,6 @@ You can find the complete list of these shortened properties on this website [MD
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-|  similar ungrouped CSS declarations | 1  |
+| The number of ...                  | is equal to or less than   | 
+|------------------------------------|:-------------------------:|
+| ungrouped similar CSS declarations | 1  |
