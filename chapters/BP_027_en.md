@@ -1,4 +1,4 @@
-## Provide print CSS 
+## Provide a print CSS 
 
 ### Identifiers
 
@@ -24,11 +24,11 @@
 
 ### Description
 
-In addition to the service provided for the Internet user, print CSS style sheets reduce the number of printed pages, indirectly reducing websites' ecological footprints. Designed as lean as possible, websites pages should display ink-saving font typefaces (Century Gothic, for example). Also remember to hide headers, footers, menus, sidebars, and remove all images except those in content. Etc.
+In addition to the service provided to the Internet user, print CSS stylesheets reduce the number of printed pages, indirectly reducing the website's ecological footprint. The design should be as lean as possible, with ink-saving font typefaces (Century Gothic, for example). Also remember to hide headers, footers, menus, sidebars, images that are no actual content. Etc.
 
 ### Example
 
-This CSS print contributes in "cleaning" the displayed pages in order to provide a refined impression:
+This print CSS "cleans" the displayed pages in order to provide a refined print design:
 ```css
 bodysuit {
 background-color:#ﬀf; font-family :Serif; font-size:15pt;
