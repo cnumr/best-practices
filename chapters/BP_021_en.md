@@ -1,4 +1,4 @@
-## Dividing CSS
+## Divide CSS
 
 ### Identifiers
 
@@ -24,13 +24,13 @@
 
 ### Description
 
-Use a set of CSS instead of a single one, and only call necessary CSS according to context. This method helps limit page size during its initial download, therefore saving bandwidth and reducing CPU load.
+Use a set of CSS instead of a single one, and only import the necessary ones according to the context. This method helps to limit the page size, therefore saving bandwidth and reducing CPU load.
 
 ### Example
 
-Divide CSS according to their functions :
+Use a functional logic to divide the CSS :
   - layout;
-  - content ;
+  - content;
   - module x;
   - module y;
   - etc...
@@ -38,7 +38,8 @@ Divide CSS according to their functions :
 This will exclude all CSS from unused modules in the case of a feature-rich website.
 The number of CSS files must remain reasonable, more for maintainability purposes than performance issues,
 as general CSS (“layout” and “content” in our example) will be concatenated into a single file.
-Complementary CSS files (here "module x" and "module y") will be downloaded depending on the context (page, functionalities...).
+
+Optional CSS files (here "module x" and "module y") will be downloaded depending on the context (page, functionalities...).
 
 
 ### Validation rule
