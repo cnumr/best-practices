@@ -29,8 +29,8 @@ display needs.
 Raster images should first be restrained for photos and interface elements that cannot be supported by icons or CSS styles.
 
 Choosing the appropriate format depends on the image properties : choosing between black & white or color, color palette, need for transparency...
-Among these properties, the ability to definitively degrade images (lossy) tends to favor formats such as JPEG, JPEG XL,
-AVIF, or WebP, while needing transparency and/or the impossibility of degrading the image (lossless) will tend to favor
+Among these properties, the ability to definitively alter images (lossy) tends to favor formats such as JPEG, JPEG XL,
+AVIF, or WebP, while needing transparency and/or the impossibility of altering the image (lossless) will tend to favor
 PNG or WebP lossless format (which supports transparency).
 
 Format importantly impacts images size: on average, .webp images will be 30% lighter than .jpeg
@@ -49,7 +49,7 @@ Numerous tools will help you minimize images size:
 - JpegTran
 
 ### Example
-In this example, the DOM <picture> element informs the associated browser that there are two images: a .webp image and a
+In this example, the DOM <picture> element informs the browser that there are two images: a .webp image and a
 .jpg image, which is set by default. The browser will decide which image will be downloaded. If the .webp format is supported, the image.webp image will be downloaded; otherwise, image.jpg image will be downloaded.
 
 ```html
