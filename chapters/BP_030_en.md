@@ -2,14 +2,14 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  20    |  18 | 30  |      |
+| GreenIT |  V2  | V3  |  V4  |
+|:-------:|:----:|:---:|:----:|
+|   20    | 18   | 30  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |  Tiers  |  Responsible   |
+|:-----------------:|:-------:|:--------------:|
 | 3. Implementation | Network | UX/UI Designer |
 
 ### Indications
@@ -18,24 +18,20 @@
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
+|       Saved resources        |
+|:----------------------------:|
 | Storage / Network / Queries  |
 
 ### Description
 
-Glyphs are specific typographic characters included in fonts, like those included in operating systems. They can be used to replace monochrome images such as symbols or pictograms (chevron, triangle, point, square, astrological signs, etc.) up to illustrations allowing:
-- Reducing bandwidth by reducing website total size
-- Reducing the number of queries
-- Reducing DOM complexity, notably through various SVG pictograms
+Glyphs are specific typographic characters included in fonts, like those included in operating systems. They can be used to replace monochrome images such as symbols or pictograms (chevron, triangle, point, square, astrological signs, etc.) up to illustrations allowing to:
+- Reduce bandwidth by reducing the website total size
+- Reduce the number of requests
+- Reduce the DOM complexity, especially with many SVG pictograms
 
 ### Example
 
-To optimize a landing page that visually includes:
-
-*Excerpt from a font created via Font Forge*
-![ to illustrate a landing page](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
-
+[Excerpt from a font created via Font Forge to illustrate a landing page](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
 
 A 91% size saving was achieved by including pictograms and vector illustrations in an icon font via [Font Forge](https://fontforge.org/en-US/).
 
