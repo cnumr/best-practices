@@ -25,7 +25,7 @@
 ### Description
 
 Database management systems are designed and optimized to efficiently run large amounts of data processes.
-In the case of processing with a more or less complex logic, it is not recommended to retrieve "raw" data and run all computing operations, transformation or aggregation operations on the backend or even frontend server side.
+In the case of processing with a more or less complex logic, retrieving "raw" data and running all computing operations, transformation or aggregation operations on the backend or even frontend server side isn't recommended.
 
 These processes must rather be carried out as close as possible to  data in order to:
 
@@ -35,9 +35,9 @@ These processes must rather be carried out as close as possible to  data in orde
 
 ### Example
 
-In the case of complex queries with large amounts of data and  relational database management system (RDBMS) use, stored procedures should be stored because:
+In the case of complex queries with large amounts of data and  relational database management system (RDBMS) use, stored procedures should be used because:
 
-- stored procedures save queries interpretation on server side since it is pre-compiled;
+- stored procedures save queries interpretation on server side since they are pre-compiled;
 - stored procedure are less bandwidth-intensive as there is less information sent between servers and clients.
 
 All recent RDBMS (SQL Server, MySQL, PostgreSQL, etc.) support stored procedures.
