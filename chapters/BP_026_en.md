@@ -1,4 +1,4 @@
-## Use abreviated CSS notations
+## Use shortened CSS notations
 
 ### Identifiers
 
@@ -24,14 +24,15 @@
 
 ### Description
 
-Use abbreviated CSS notations to reduce stylesheets size.
+Use shortened CSS notations to reduce stylesheets size.
+
 ### Examples
 
 Do not write :
 ```css
 margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;
 ```
-write instead :
+instead write :
 ```css
 margin:1em 0 2em 0.5em;
 ```
@@ -42,6 +43,6 @@ To go further :
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-| non-abreviated CSS notations  |  0% |
+| The number of ...              | is equal to or less than   | 
+|--------------------------------|:-------------------------:|
+| non-shortened CSS declarations |  0% |
