@@ -1,4 +1,4 @@
-## Reducing the number of domains serving resources
+## Reduce the number of domains serving resources
 
 ### Identifiers
 
@@ -25,11 +25,11 @@
 ### Description
 
 When a website or online service host web pages components on multiple domains, HTTP connection must be established with each of these domains by the browser. Once the HTML page is received,
-browser will ask for resources as it goes through DOM (Document Object Model).
-Some resources are essential to keep the web page working. Page loading can become slower if they are hosted on unresponsive domains. When possible, all resources should be grouped together in a single domain.
+the browser fetch resources while going through the DOM (Document Object Model).
+Some resources are essential for the web page to work. If they are hosted on unresponsive domains, the page can become slower. When possible, all resources should be grouped together on a single domain.
 
-The only exception to this rule would be when hosting static resources (stylesheets, images, etc.) on a separate domain
-to avoid transporting one or more cookies to each HTTP GET of the browser. Response time will decrease as well as unnecessarily consumed bandwidth.
+The only exception to this rule would be the hosting of static resources (stylesheets, images, etc.) on a dedicated domain
+to avoid the upload od one or more cookies for each HTTP GET by the browser. Response time will decrease as well as unnecessarily consumed bandwidth.
 
 ### Example
 
