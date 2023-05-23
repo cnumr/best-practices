@@ -24,11 +24,11 @@
 
 ### Description
 
-Use CSS3 properties instead of images. Style sheets are much smaller, especially when compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates numerous HTTP requests (one HTTP request for each image).
+Use CSS properties instead of images. Style sheets are much smaller, especially when compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates many HTTP requests (one HTTP request for each image).
 
 ### Example
 
-Boxes rounded corners should be handled through CSS3 rather than with images.
+Rounded corners of elements should be implemented with CSS rather than images.
 
 Prefer writing:
 ```css
