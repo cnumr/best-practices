@@ -1,4 +1,4 @@
-## Avoir transferring a large amount of data for processing tasks
+## Avoid transferring large amounts of data for processing tasks
 
 ### Identifiers
 
