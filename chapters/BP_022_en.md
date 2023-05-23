@@ -24,11 +24,11 @@
 
 ### Description
 
-Limit the CSS number in order to avoid multiple HTTP requests and simplify browser rendering. Use a common stylesheet for all common elements, regardless of display, and one file per target resolution or media query.
+Limit the number of CSS in order to avoid HTTP requests and simplify the rendering in the browser. Use a common stylesheet for all common elements, regardless of display, and one file for each target screen size or media query.
 
-Be cautious: Integrate these files into the HTML code and NOT with @import directives in the CSS files themselves. By splitting this way, users terminals will choose what is most appropriate and will deprioritize loading files that they don't need.
+Be cautious: import these files into the HTML code and NOT with @import directives in the CSS files themselves. By splitting this way, users devices will choose what is most appropriate and will defer the loading of the files that they don't need.
 
-CSS files required for certain components can be loaded depending on the context if necessary.
+CSS files required for some components can be loaded depending on the context if necessary.
 
 ### Example
 
