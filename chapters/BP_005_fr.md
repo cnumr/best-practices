@@ -31,7 +31,7 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 - les bonnes pratiques d'écoconception
 - et de préférence les bonnes pratiques d'accessibilité
 
-**Privilégiez un design simple et épuré réalisable uniquement en HTML5 et CSS3.**
+**Privilégiez un design simple et épuré réalisable uniquement en HTML et CSS.**
 
 ### Exemple
 
