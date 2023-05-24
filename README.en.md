@@ -6,7 +6,7 @@ This web ecodesign repository content has been published by Frédéric Bordage /
 
 1. “écoconception web : les 100 bonnes pratiques” in 10/2012
 2. “écoconception web : les 115 bonnes pratiques, 2ème édition” in 09/2015
-3. “écoconception web : les 115 bonnes pratiques, 3ème édition” in 04/2019.
+3. “écoconception web : les 115 bonnes pratiques, 3ème édition” in 04/2019
 4. “écoconception web : les 115 bonnes pratiques, 4ème édition” in 05/2022
 
 We would like to express our sincere thanks to all the contributors who have participated in the development and evolution of this repository.
