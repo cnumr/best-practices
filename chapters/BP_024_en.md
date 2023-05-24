@@ -31,8 +31,10 @@ Use selectors based on IDs or classes as they will be filtered more quickly, thu
 Do not write :
 ```css
 treeitem[mailfolder="true"] > treerow > treecell {…}
-```
-write instead :
+``` 
+
+instead write :
+
 ```css
 .treecell-mailfolder {…}
 ```
@@ -41,7 +43,7 @@ Do not write :
 ```css
 treehead > treerow > treecell {…}
 ```
-write instead :
+instead write :
 ```css
 .treecell-header {…}
 ```
