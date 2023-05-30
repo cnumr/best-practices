@@ -2,36 +2,38 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
 |   810   | 48  | 39  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 2. Design | User/Device | UX/UI Designer |
+| Life cycle |    Tiers    |  Responsible   |
+|:----------:|:-----------:|:--------------:|
+| 2. Design  | User/Device | UX/UI Designer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 5 |
+| Priority | Implementation difficulty | Ecological impact |
+|:--------:|:-------------------------:|:-----------------:|
+|    4     |             3             |         5         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Processor / RAM |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                      Processor / RAM                      |
 
 ### Description
 
-JavaScript/CSS animations can request a lot of CPU cycles and memory consumption.
+JavaScript/CSS animations can request a lot of CPU cycles and memory.
+
 They all trigger resource-intensive (re)paint/(re)ﬂow type actions. Animations must be avoided as much as possible, and only used when required.
 
-If some animations are essential, stick to the CSS3 `opacity` and `transform` properties, and to the `translate`, `rotate`, `scale` related functions of `transform`. These two properties are automatically browser optimized, and the animations can be supported by the graphics processing unit (GPU). The following website [www.csstriggers.com](https://csstriggers.com/) features a list of animation triggered DOMs actions.
+If some animations are essential, stick to the CSS `opacity` and `transform` properties, and to the `translate`, `rotate`, `scale` related functions of `transform`. These two properties are automatically browser optimized, and the animations can be managed by the graphics processing unit (GPU). The following website [www.csstriggers.com](https://csstriggers.com/) features a list of DOM actions than con be triggered by an animation.
 
-Browsers can be informed that an animation is going to take place with a `will-change` statement in order for the browser to reduce animation-related resource consumption.
+Browsers can be informed that an animation is going to take place with a `will-change` statement in order to reduce animation-related resource consumption.
 
 To know more :
+
 https://web.dev/animations-guide/
 
 ### Example
@@ -43,7 +45,7 @@ https://web.dev/animations-guide/
 ```
 ### Alternative solution
 
-You can also let users choose whether or not to play animations via browser preferences and through `prefers-reduced-motion` media queries. Animations will only be played if no preferences have been set by the user.
+You can also let the users choose whether or not to play animations via the browser preferences and the through `prefers-reduced-motion` media queries. Animations will only be played if no preferences have been set by the user.
 
 ```css
 @media (prefers-reduced-motion: no-preference ) {
@@ -55,6 +57,6 @@ You can also let users choose whether or not to play animations via browser pref
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| JS / CSS animations per page  |  2 |
+| The number of ...            | is equal to or less than |  
+|------------------------------|:------------------------:|
+| JS / CSS animations per page |            2             |
