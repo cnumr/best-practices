@@ -24,13 +24,13 @@
 
 ### Description
 
-Ensure that CSS and JavaScript codes are not embedded into an HTML web page code, with the exception of possible
+Ensure that CSS and JavaScript code is not inlined in the HTML code of the page, with the possible exception of 
 configuration variables for JavaScript objects.
 
-If CSS or JavaScript code is included in HTML files' body while the latter is used by several pages
-(or even by the entire site), then this code must be transferred for each page requested by users, thus increasing transmitted data volume.
-However, if CSS and JavaScript codes are included in their own files,
-browsers can store them in their local cache system so as not to request them again.
+If CSS or JavaScript code is included in HTML file's body in several pages (or even in the entire site), 
+then this code must be downloaded for each page requested by the users, increasing downloaded data volume.
+However, if CSS and JavaScript codes is written in external files,
+browsers can store them in their local cache system and not download them again.
 
 ### Examples
 In HTML code, do not write:
@@ -50,6 +50,6 @@ but rather :
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-| URLs integrating a significant quantity and/or number of CSS/Javascript code (inline)   | 2  |
+| The number of ...                                               | is equal to or less than | 
+|-----------------------------------------------------------------|:------------------------:|
+| URL with a significant quantity of inline CSS/Javascript code   |            2             |
