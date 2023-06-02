@@ -1,41 +1,42 @@
-## Choose eco-friendly electricity providers
+## Choose an eco-friendly electricity provider
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  67    | 85  | 87  |      |
+| GreenIT |  V2  | V3  |  V4  |
+|:-------:|:----:|:---:|:----:|
+| 67      | 85   | 87  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|  Life cycle   |   Tiers    |     Responsible      |
+|:-------------:|:----------:|:--------------------:|
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 2 |
+|      Priority      | Implementation difficulty | Ecological impact |
+|:------------------:|:-------------------------:|:-----------------:|
+|         3          |             3             |         2         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Greenhouse gas emissions  |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                 Greenhouse gas emissions                  |
 
 ### Description
 
- Use the electricity source having the lowest environmental impact during its production as possible (e.g. hydraulic) to power digital equipment. Note that there is no solid way to ensure that the consumed electricity source has been produced with the lowest impact to this day.
+Use the electricity source having the lowest environmental impact as possible during its productio  (e.g. hydraulic) to your power digital equipment. 
+Note that to this day there is no reliable way to ensure that the electricity has been produced with the lowest impact.
 As an alternative, you can either choose a provider that does not purchase any electricity produced from fossil fuels or buy EACs (Energy Attribute Certificate).
 
 ### Example
 
-Although it only concerns greenhouse gas emissions, https://app.electricitymap.org/map allows you to be informed about carbon intensity depending on the supplier's country.
+Although restricted  greenhouse gas emissions, https://app.electricitymap.org/map allows you to be informed about the carbon intensity of the supplier's country's electricity.
 
 To learn more about energy attribute certificates and electricity:
 https://www.greenit.fr/tag/electricite
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| instances of failure to provide proof of purchase of hosts' energy attribute certificates    | 0  |
+| The number of ...                                                                              | is equal to or less than |  
+|------------------------------------------------------------------------------------------------|:------------------------:|
+| instances of failure of the host to provide proof of purchase of energy attribute certificates |             0            |
