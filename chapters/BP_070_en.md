@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   51   |  65 | 70  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|   51    |  65 | 70  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|  Life cycle   |   Tiers    |     Responsible      |
+|:-------------:|:----------:|:--------------------:|
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 3 | 2 |
+|      Priority      | Implementation difficulty | Ecological impact |
+|:------------------:|:-------------------------:|:-----------------:|
+|         2          |             3             |         2         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Processor / Storage   |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                    Processor / Storage                    |
 
 ### Description
 
-Warnings and notices slow down application servers such as PHP as they have to trace the errors origins and record messages explaining the associated problems in various system logs.
+Warnings and notices slow down application servers such as PHP as they have to trace the errors origins and record messages explaining the associated problems in various logs systems.
 
 ### Example
 
@@ -44,6 +44,6 @@ Avoid :
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| warnings and notices | 0  |
+| The number of ...    | is equal to or less than |  
+|----------------------|:------------------------:|
+| warnings and notices |            0             |
