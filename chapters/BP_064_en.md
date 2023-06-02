@@ -1,30 +1,31 @@
-## Cache often-used calculated Data
+## Cache often-used computed Data
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  47    | 62  | 64  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|   47    | 62  | 64  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 2. Design | Network | Software Architect/Developer |
+| Life cycle |  Tiers  |         Responsible          |
+|:----------:|:-------:|:----------------------------:|
+| 2. Design  | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+|      Priority      | Implementation difficulty | Ecological impact |
+|:------------------:|:-------------------------:|:-----------------:|
+|         4          |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor / RAM |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                      Processor / RAM                      |
 
 ### Description
 
-When values or data calculations are resources intensive, you should cache results when values remain unchanged, so as not to repeat these operations. Key-value type cache systems are designed to store this data. Being generally entirely mounted in RAM, they generate significant CPU cycles savings when calculated data is frequently accessed.
+When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to voir repeating these operations. 
+Key-value type cache systems are designed to store this data. Being generally entirely in RAM, they generate significant CPU cycles savings when computed data is frequently used.
 
 ### Examples
 
