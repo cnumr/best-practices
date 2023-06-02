@@ -2,29 +2,31 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   35   | 33  | 46  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|    35   |  33 | 46  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |    Tiers    |         Responsible          |
+|:-----------------:|:-----------:|:----------------------------:|
 | 3. Implementation | User/Device | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 2 |
+|       Priority       | Implementation difficulty  | Ecological impact |
+|:--------------------:|:--------------------------:|:-----------------:|
+|          3           |             3              |         2         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                         Processor                         |
 
 ### Description
 
-JSLint code quality analyzer checks that the JavaScript syntax used will be understood by all browsers. The resulting code respects syntax constraints that make it easier and faster for interpreters to execute the code. Processor will therefore be solicited for a shorter time.
+JSLint code quality analyzer checks that the JavaScript syntax will be understood by all browsers. 
+The resulting code respects syntax constraints that make it easier and faster for interpreters to execute the code. 
+Processor will therefore be solicited for a shorter time.
 
 In modern development, adding different tools to your delivery process to ensure the quality of your code is recommended. 
 
@@ -36,6 +38,6 @@ We can use, for example:
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| source code lines that are not validated by tools such as ESLint  | 0  |
+| The number of ...                                                | is equal to or less than |  
+|------------------------------------------------------------------|:------------------------:|
+| source code lines that are not validated by tools such as ESLint |            0             |
