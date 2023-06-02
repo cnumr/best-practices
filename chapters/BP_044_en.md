@@ -2,33 +2,36 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  41    | 46  | 44  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|   41    | 46  | 44  |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |    Tiers    |         Responsible          |
+|:-----------------:|:-----------:|:----------------------------:|
 | 3. Implementation | User/Device | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+|      Priority      | Implementation difficulty  | Ecological impact |
+|:------------------:|:--------------------------:|:-----------------:|
+|         3          |             3              |        4          |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Processor / RAM   |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                      Processor / RAM                      |
 
 ### Description
 
-Events delegation avoids overloading browser memory by instantiating a single listener for several DOM elements (Document Object Model).
+Events delegation avoids overloading browser memory by instantiating a single listener for several DOM (Document Object Model) elements.
 
 ### Examples
+
 The DOM element whose ID is "t" is declared as the delegate.
+
 It intercepts the events of all of its children.
+
 ```html
 <head>
      // ...
@@ -59,6 +62,6 @@ It intercepts the events of all of its children.
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| listeners of the same event on multiple HTML elements, belonging to the same group, without using event delegation  | 0  |
+| The number of ...                                                                                                  | is equal to or less than |  
+|--------------------------------------------------------------------------------------------------------------------|:------------------------:|
+| listeners of the same event on multiple HTML elements, belonging to the same group, without using event delegation |            0             |
