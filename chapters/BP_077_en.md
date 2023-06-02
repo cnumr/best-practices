@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  12    | 78  | 77  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|   12    | 78  |  77 |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|  Life cycle   |  Tiers  |         Responsible          |
+|:-------------:|:-------:|:----------------------------:|
 | 4. Production | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+|:--------:|:-------------------------:|:-----------------:|
+|    4     |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Network   |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                          Network                          |
 
 ### Description
 
-Using CSS, Javascript, HTML, and SVG minification tools helps remove unnecessary spaces, developer comments, line breaks, block delimiters, reducing their size.
+CSS, Javascript, HTML, and SVG minification tools remove unnecessary spaces, developer comments, line breaks, block delimiters, reducing their size.
 
 ### Examples
 
@@ -37,6 +37,6 @@ There are different tools available for minification such as:
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| Unminified CSS, JavaScript, HTML, and SVG files  | 0  |
+| The number of ...                               | is equal to or less than |  
+|-------------------------------------------------|:------------------------:|
+| Unminified CSS, JavaScript, HTML, and SVG files |            0             |
