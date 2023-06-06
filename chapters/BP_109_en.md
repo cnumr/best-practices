@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   102   | 110  | 109  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|   102   | 110 | 109 |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 5. Use | User/Device | User |
+| Life cycle |    Tiers    | Responsible |
+|:----------:|:-----------:|:-----------:|
+|   5. Use   | User/Device |    User     |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+|      Priority      | Implementation difficulty | Ecological impact |
+|:------------------:|:-------------------------:|:-----------------:|
+|         3          |             3             |         3         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor / Network / Queries  |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|               Processor / Network / Queries               |
 
 ### Description
 
@@ -31,7 +31,7 @@ Emails are saved and duplicated on their service provider's disks. It is therefo
 Newsletters:
 
 - Set the sending frequency to the bare minimum
-- Only send newsletters to required people and suscribers (using an opt-in list, customer targeting, etc.)
+- Only send newsletters to required people and subscribers (using an opt-in list, customer targeting, etc.)
 - Send unsubscribe emails to customers who have not opened a certain number of previous newsletters
 - Avoid attachments and use direct links instead
 - Avoid images, reduce their size when they are required
@@ -43,6 +43,6 @@ Customer management:
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| emails with attachments  | 0  |
+| The number of ...       | is equal to or less than |  
+|-------------------------|:------------------------:|
+| emails with attachments |             0            |
