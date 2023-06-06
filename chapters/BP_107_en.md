@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  97    | 108  | 107  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|    97   | 108 | 107 |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 5. Use | User/Device | User |
+| Life cycle |    Tiers    | Responsible |
+|:----------:|:-----------:|:-----------:|
+|   5. Use   | User/Device |    User     |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 2 | 4 |
+|      Priority      | Implementation difficulty  | Ecological impact |
+|:------------------:|:--------------------------:|:-----------------:|
+|         3          |             2              |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network / Storage  |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                     Network / Storage                     |
 
 ### Description
 
-Compress all documents that can be downloaded from a web page, unless compression isn't worth it (for example: web optimized PDF files).
+Compress all documents that can be downloaded from a web page, unless compression doesn't bring much benefit (for example: web optimized PDF files).
 
 ### Example
 
@@ -38,6 +38,6 @@ A DOC file weighing 7.8 MB will decrease to 5.5 MB after compression, which repr
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| uncompressed documents   | 0  |
+| The number of ...      | is equal to or less than |  
+|------------------------|:------------------------:|
+| uncompressed documents |            0             |
