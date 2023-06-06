@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   78   |  105 | 101  |      |
+| GreenIT |  V2  | V3  |  V4  |
+|:-------:|:----:|:---:|:----:|
+|   78    |  105 | 101 |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|  Life cycle   |  Tiers  |     Responsible      |
+|:-------------:|:-------:|:--------------------:|
 | 4. Production | Network | System Administrator |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+|      Priority      | Implementation difficulty | Ecological impact |
+|:------------------:|:-------------------------:|:-----------------:|
+|         4          |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor / Network / RAM / Queries  |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|            Processor / Network / RAM / Queries            |
 
 ### Description
 
-The Expires and Cache-Control headers define the time in which browsers should keep resources in their cache. Therefore, it is necessary to plan for them and configure them correctly for CSS style sheets, JavaScript scripts, and images.
+The Expires and Cache-Control headers define the time during which browsers should keep resources in their cache. Therefore, it is necessary to add and configure them correctly for CSS stylesheets, JavaScript files, and images.
 
 Ideally, these elements lifespan should be as long as possible so that browsers do not have to request them from the server again. This saves HTTP requests, bandwidth, and CPU cycles from server side.
 
@@ -46,6 +46,6 @@ Here is an example of how to configure Expires and Cache-Control headers for the
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| missing Expires or Cache-Control headers  |  0 |
+| The number of ...                        | is equal to or less than |  
+|------------------------------------------|:------------------------:|
+| missing Expires or Cache-Control headers |            0             |
