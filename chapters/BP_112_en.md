@@ -1,37 +1,37 @@
-## Adapting audio formats to listening contexts
+## Adapt audio formats to listening contexts
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   95   | 113  | 112  |      |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:---:|:---:|:----:|
+|    95   | 113 | 112 |      |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 5. Use | User/Device | User |
+| Life cycle |    Tiers    | Responsible |
+|:----------:|:-----------:|:-----------:|
+|   5. Use   | User/Device |    User     |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+|      Priority      | Implementation difficulty  | Ecological impact |
+|:------------------:|:--------------------------:|:-----------------:|
+|         2          |             2              |         3         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-| Network |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                          Network                          |
 
 ### Description
 
-Audio files can be voluminous and consume a lot of bandwidth. Optimizing their size is essential. When possible use these 3 formats available in the 3 major OS (Windows, Mac OS X, and Linux):
+Audio files can be large and use a lot of bandwidth. Optimizing their size is essential. When possible use these 3 formats available in the 3 major OS (Windows, Mac OS X, and Linux):
 - MP3 (MPEG-1 Audio Layer 3);
 - AAC (Advanced Audio Coding);
-- Vorbis. These audio formats use very advanced compression algorithms considerably reducing audio files size.
+- Vorbis. These audio formats use very advanced compression algorithms, considerably reducing audio files size.
 
 ### Example
 
-Encoders such as LAME allow converting uncompressed audio files to  MP3 but also alter sampling rate to optimize audio files' size at the expense of audio quality. Test on each audio sound file.
+Encoders such as LAME allow the conversion of uncompressed audio files to MP3 but also the alteration of sampling rate to optimize audio files' size at the expense of audio quality. Test on each audio sound file.
 
 In the case of a 63,128 bytes sound.wav WAV file template, MP3 conversion would result in:
 
@@ -40,6 +40,6 @@ In the case of a 63,128 bytes sound.wav WAV file template, MP3 conversion would 
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| proprietary (non-free) audio codecs and audio tracks whose megabyte weight/minute duration ratio is greater than 1  | 0  |
+| The number of ...                                                                                                  | is equal to or less than |  
+|--------------------------------------------------------------------------------------------------------------------|:------------------------:|
+| proprietary (non-free) audio codecs and audio tracks whose megabyte weight/minute duration ratio is greater than 1 |            0             |
