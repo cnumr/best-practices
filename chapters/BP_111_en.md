@@ -8,19 +8,19 @@
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
-| 5. Use | User/Device | User |
+| Life cycle |    Tiers    | Responsible |
+|:----------:|:-----------:|:-----------:|
+|   5. Use   | User/Device |    User     |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+|      Priority      |      Implementation difficulty      |  Ecological impact    |
+|:------------------:|:-----------------------------------:|:---------------------:|
+|         3          |                  3                  | 3 |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network / Queries  |
+|                      Saved resources                      |
+|:---------------------------------------------------------:|
+|                     Network / Queries                     |
 
 ### Description
 
@@ -44,6 +44,6 @@ This results in 22 KB of freed space for each email sent. In the case of a trans
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| over 1mb sent emails |  0 |
+| The number of ...                     | is equal to or less than |  
+|---------------------------------------|:------------------------:|
+| emails sent that weight more than 1mb |            0             |
