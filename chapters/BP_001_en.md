@@ -30,7 +30,7 @@ application, we lower its initial development cost, its technical debt and the a
 
 This reduces the infrastructure needed to run it. Moreover, at a constant ergonomic level, the poorer the 
 application is in terms of functionality, the easier it will be to use. So it is interesting to reduce the functional coverage 
-of the application as much as possible, by centering it on the essential user's needs.
+of the application as much as possible, by focusing it on the essential user's needs.
 
 Detecting a non-essential functionality is possible when analyzing the expression of the need. The MoSCoW method, workshops,
 wireframes or prototypes with user tests make it possible to verify the usefulness of a feature prior to its development.
