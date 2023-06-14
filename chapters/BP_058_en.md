@@ -26,7 +26,7 @@
 
 The most well-known CMS offer many features to optimize (compress, resize, etc.) and generate your media (images, pdf, 
 documents, audios and videos) often via plugins or extensions. Sometimes not free, but always resource intensive in terms
-of CPU, RAM, network and storage, these plugins do not avoid the importation of disproportionate (size, dimension and quality) 
+of CPU, RAM, network and storage, these plugins do not avoid the import of disproportionate (size, dimension and quality) 
 or unsuitable media compared to their use.
 
 ### Examples
