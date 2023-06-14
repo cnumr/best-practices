@@ -35,7 +35,7 @@ A CMS like WordPress does not natively have a cache system, but there are severa
 - WP Super Cache
 - WP-rocket
 
-With one of these plugins, pages are cached on the server and are no longer generated for each user. Additionally, this kind of tool also provides other WebPerf-oriented optimizations following web eco-design principles.
+With one of these plugins, pages are cached on the server and are no longer generated for each user. Additionally, this kind of tools also provides other WebPerf-oriented optimizations following web ecodesign principles.
 
 
 ### Validation rule
