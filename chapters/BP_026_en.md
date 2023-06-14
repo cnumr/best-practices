@@ -1,4 +1,4 @@
-## Use shortened CSS notations
+## Use abbreviated CSS notations
 
 ### Identifiers
 
@@ -24,7 +24,7 @@
 
 ### Description
 
-Use shortened CSS notations to reduce stylesheets size.
+Use abbreviated CSS notations to reduce stylesheets size.
 
 ### Examples
 
@@ -45,4 +45,4 @@ To go further :
 
 | The number of ...              | is equal to or less than   | 
 |--------------------------------|:-------------------------:|
-| non-shortened CSS declarations |  0% |
+| non-abbreviated CSS declarations |  0% |

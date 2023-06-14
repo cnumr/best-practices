@@ -24,7 +24,7 @@
 
 ### Description
 
-Use CSS properties instead of images. Style sheets are much smaller, especially when compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates many HTTP requests (one HTTP request for each image).
+Use CSS properties instead of images. Style sheets are much smaller, especially when they are compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates many HTTP requests (one HTTP request for each image).
 
 ### Example
 

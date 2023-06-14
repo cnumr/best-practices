@@ -60,4 +60,4 @@ You can find the complete list of these shortened properties on this website [MD
 
 | The number of ...                  | is equal to or less than   | 
 |------------------------------------|:-------------------------:|
-| ungrouped similar CSS declarations | 1  |
+| similar CSS declarations not grouped together | 1  |
