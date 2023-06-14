@@ -1,4 +1,4 @@
-## Encode audio files outsides of the CMS
+## Encode audio files outside the CMS
 
 ### Identifiers
 
