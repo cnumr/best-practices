@@ -1,4 +1,4 @@
-## Reduce accesses to the DOM via JavaScript
+## Reduce DOM access via JavaScript
 
 ### Identifiers
 
@@ -24,10 +24,10 @@
 
 ### Description
 
-Accessing the DOM (Document Object Model) via JavaScript is a heavy tack that uses a lot of CPU cycles. Avoid these accesses as much as possible.
+Accessing the DOM (Document Object Model) via JavaScript is a heavy task that uses a lot of CPU cycles. Avoid these accesses as much as possible.
 
-To do this, you can assign the node to variables that you will reuse during the application's life cycle, 
-which avoids re-traversing the tree again each time you manipulate the document.
+To do this, you can assign the node to variables that you will reuse during the application's life cycle. 
+It avoids re-traversing the tree again each time you manipulate the document.
 
 It is also possible to use “Shadow DOM” type libraries, which optimize tree modifications with a batch system.
 

@@ -1,4 +1,4 @@
-## Use all levels of CMS cache
+## Use all levels of the CMS cache
 
 ### Identifiers
 
@@ -24,12 +24,12 @@
 
 ### Description
 
-If the CMS (like Wordpress, Drupal, eZ Publish, etc.) offers a multi-level cace system, using these different levels as 
+If the CMS (like Wordpress, Drupal, eZ Publish, etc.) offers a multi-level cache system, using these different levels as 
 their granularity reduces used resources (CPU cycles, memory) and offers better performances to users.
 
 ### Example
 
-A CMS like WordPress does not natively have a cache system, but there are several plugins that can answer to this requirement, the most popular being:
+A CMS like WordPress does not natively have a cache system, but there are several plugins that can answer to this requirement. The most popular are:
 
 - W3 Total Cache
 - WP Super Cache

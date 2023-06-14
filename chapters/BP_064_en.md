@@ -1,4 +1,4 @@
-## Cache often-used computed Data
+## Cache frequently used calculated data
 
 ### Identifiers
 
@@ -24,12 +24,12 @@
 
 ### Description
 
-When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to voir repeating these operations. 
-Key-value type cache systems are designed to store this data. Being generally entirely in RAM, they generate significant CPU cycles savings when computed data is frequently used.
+When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to avoid repeating these operations. 
+Key-value type cache systems are designed to store this data. As they are generally stored entirely in RAM, they generate significant CPU cycles savings when the calculated data is used frequently..
 
 ### Examples
 
-The number of contents (e.g., products) belonging to a category is  calculated while it is not updated very frequently. Caching each category's number of contents saves CPU cycles.
+The number of contents (e.g., products) belonging to a category is calculated while it is not updated very frequently. Caching each category's number of contents saves CPU cycles.
 
 OAuth2 access tokens have expiration time. Caching tokens and their expiration time avoids unnecessary calls to the authorization server to revalidate them.
 
@@ -37,4 +37,4 @@ OAuth2 access tokens have expiration time. Caching tokens and their expiration t
 
 | The number of ...     | is equal to or less than   |  
 |-------------------|:-------------------------:|
-| non-volatile data that requires computation and is accessed multiple times, but not stored in a cache system  |  0 |
+| non-volatile data that requires computation and accessed multiple times, but not stored in a cache system  |  0 |
