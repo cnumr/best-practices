@@ -24,7 +24,7 @@
 
 ### Description
 
-JSLint code quality analyzer checks that the JavaScript syntax will be understood by all browsers. 
+ESLint code quality analyzer checks that the JavaScript syntax will be understood by all browsers. 
 The resulting code respects syntax constraints that make it easier and faster for interpreters to execute the code. 
 Processor will therefore be solicited for a shorter time.
 
