@@ -32,7 +32,7 @@ do not rely on a modular architecture, making users download entire libraries on
 Avoid using these libraries when possible (see https://youmightnotneedjquery.com)
 or only keep their most used parts (see https://getbootstrap.com/customize).
 
-Bundlers like Webpack allow the automatix removal of unused code. This is called tree shaking.
+Bundlers like Webpack allow the automatic removal of unused code. This is called tree shaking.
 
 ### Example
 
