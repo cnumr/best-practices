@@ -24,7 +24,7 @@
 
 ### Description
 
-With the support of key-value databases (IndexDB, Web Storage) and of the Cache Storage API in all browsers, it is 
+With the support of key-value databases (IndexedDB, Web Storage) and of the Cache Storage API in all browsers, it is 
 possible to store static data locally on the client side.
 
 Using this approach allow to reduce the number of HTTP requests, which saves resources. This can lead to a reduction of 
