@@ -24,14 +24,14 @@
 
 ### Description
 
-Utiliser les propriétés CSS3 à la place d’images. En effet, le poids d’une feuille de styles est bien plus faible, 
+Utiliser les propriétés CSS à la place d’images. En effet, le poids d’une feuille de styles est bien plus faible, 
 surtout si elle est compressée. En outre, l’appel d’une feuille de styles ne génère qu’une seule requête HTTP, 
 contre un grand nombre si l’on emploie beaucoup d’images
 (une requête HTTP pour chaque image).
 
 ### Exemple
 
-Les coins arrondis des cases doivent être gérés en CSS3 plutôt qu’avec des images.
+Les coins arrondis des cases doivent être gérés en CSS plutôt qu’avec des images.
 
 Préférer l’écriture :
 ```css
