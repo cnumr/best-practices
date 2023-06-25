@@ -24,7 +24,7 @@
 
 ### Description
 
-Reverse proxies such as Varnish, Squid, or Nginx are optimized to quickly serve content (HTML pages, images, etc.) while consuming as few CPU cycles as possible. By avoiding unnecessary application server requests, reverse proxies enable the use of smaller infrastructures.
+Reverse proxies such as Varnish, Squid, or NGINX are optimized to quickly serve content (HTML pages, images, etc.) while consuming as few CPU cycles as possible. By avoiding unnecessary application server requests, reverse proxies enable the use of smaller infrastructures.
 
 ### Example
 
