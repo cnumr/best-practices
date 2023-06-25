@@ -35,7 +35,7 @@ This approach can be use at all levels, for a custom solution, or for the choice
 
 ### Example
 
-Popular open source software, largely used on the web like nginX, Apache, MySQL or PHP, use a modular architecture.
+Popular open source software, largely used on the web like NGINX, Apache, MySQL or PHP, use a modular architecture.
 
 The microservice architecture allow some level of modularity, but be careful on how the concerns are spread among the 
 components and how they interact : added complexity, network calls, and other unintended negative consequences can 
