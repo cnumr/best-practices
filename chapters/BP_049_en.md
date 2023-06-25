@@ -36,7 +36,7 @@ document.getElementById('menu').property1 = 'foo'; document.getElementById('menu
 
 write instead :
 ```javascript
-var mmenu = document.getElementById('menu');
+const menu = document.getElementById('menu');
 menu.property1 = 'foo';
 menu.property2 = 'bar'
 ```
