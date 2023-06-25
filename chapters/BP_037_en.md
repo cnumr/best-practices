@@ -24,7 +24,7 @@
 
 ### Description
 
-By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, event if the user do not display then,
+By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, event if the user do not display them,
 for instance if they are outside the viewport. To avoid this, the lazy loading technique can be used : elements with this 
 attribute will be loaded only when they become visible on the screen.
 
