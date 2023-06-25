@@ -28,7 +28,7 @@ The browsers have a feature of fast navigation in the history (previous page and
 _back-forward cache_ or _bfcache_.
 
 Contrary to the HTTP cache which makes it possible to keep in memory the responses to the requests previously sent
-and to speed up the re-loading these pages, the _bfcache_ cache allows the browser to store an entire page in memory.
+and to speed up the re-loading of these pages, the _bfcache_ cache allows the browser to store an entire page in memory.
 However, as the use of this feature requires additional machine resources on the user side, it's interesting to reduce 
 the functionalities of the pages stored with the _bfcache_ as much as possible. Moreover, the use of _bfcache_ implies 
 some caution, especially when the waiting time is exceeded (_setTimeout_).
