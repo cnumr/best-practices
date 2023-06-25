@@ -41,7 +41,7 @@ Be careful : the user agent is not always reliable, and it's use is discouraged 
 client hints or the client side options.
 
 On the client side, the _media queries_ can be used, as well as, the `media` attributes of the `<link>` tag for the CSS inclusion,
-the `srcset` et `sizes` of `<img>` and the whole `<picture>` tag the  to make responsive images, and the appropriate
+the `srcset` et `sizes` of `<img>` and the whole `<picture>` tag the to make responsive images, and the appropriate
 properties of `<video>` et `<audio>`. 
 
 The informations provided by the _client hints_ can also be retrieved via JavaScript to choose content dynamically.
