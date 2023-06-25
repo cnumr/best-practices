@@ -25,7 +25,7 @@
 ### Description
 
 The browsers have a feature of fast navigation in the history (previous page and next page buttons), called 
-_back-forward cache_ or encore _bfcache_.
+_back-forward cache_ or _bfcache_.
 
 Contrary to the HTTP cache which makes it possible to keep in memory the responses to the requests previously sent
 and to speed up the re-loading these pages, the _bfcache_ cache allows the browser to store an entire page in memory.
