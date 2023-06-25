@@ -24,7 +24,7 @@
 
 ### Description
 
-Servers (web, application, etc.) such as Nginx, node.js, or Gwan are designed to use as few resources as possible. They do not have to create a process or a thread for each request thanks to their asynchronous mode of operation, avoiding resources use.
+Servers (web, application, etc.) such as NGINX, node.js, or Gwan are designed to use as few resources as possible. They do not have to create a process or a thread for each request thanks to their asynchronous mode of operation, avoiding resources use.
 
 While most web servers RAM consumption increases RAM as requests are made, asynchronous servers remain very stable.
 
