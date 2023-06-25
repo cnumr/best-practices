@@ -30,7 +30,7 @@ While most web servers RAM consumption increases RAM as requests are made, async
 
 ### Example
 
-Nginx is known to be more performant than Apache. It can serve 2.1 times more requests per second than the latter.
+NGINX is known to be more performant than Apache. It can serve 2.1 times more requests per second than the latter.
 
 To go further:
 
