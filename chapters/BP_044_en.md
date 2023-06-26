@@ -53,7 +53,7 @@ It intercepts the events of all of its children.
 </head>
 <body onload="load();">
      <table id="t">
-         <tr><td id="t1">one</td></tr>
+         <tr><td id="t1"><button type="button">one</button></td></tr>
          <tr><td id="t2">two</td></tr>
      </table>
      <!-- ... -->
