@@ -27,7 +27,7 @@
 HSTS allow to notify any browser, using a cached HTTP response header, that the domain must only be accessed via HTTPS.
 
 This allows subsequent requests on the same domain to exclusively use the HTTPS protocol, avoiding numerous 301 redirects. 
-However, the first call requires an HTTP response (potentially not safe) with an STS header. In addition to enabling HSTS, 
+However, the first call requires an HTTP response (potentially not safe) with an STS (Strict-Transport-Security) header. In addition to enabling HSTS, 
 it is possible to register in a static list updated on all recent browsers (https://hstspreload.org) to fix this issue 
 and force browsers to contact the whole domain with HTTPS.
 
