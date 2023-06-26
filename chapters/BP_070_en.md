@@ -37,7 +37,10 @@ Avoid :
                  First Name
                  <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
             </label>     
-             <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
+             <label>
+                  Last Name
+                  <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
+             </label>     
          </form>
      </body>
 </html>
