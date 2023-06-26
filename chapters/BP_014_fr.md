@@ -32,7 +32,7 @@ Cette approche est valable à tous les niveaux de granularité, pour un dévelop
 
 ### Exemple
 
-Les logiciels open source les plus efficients, comme nginX, Apache, MySQL ou PHP, reposent sur cette architecture modulaire.
+Les logiciels open source les plus efficients, comme NGINX, Apache, MySQL ou PHP, reposent sur cette architecture modulaire.
 
 Côté backend, le découpage en microservices permet d'apporter un niveau de modularité pour des services HTTP. Il faudra néanmoins porter une attention particulière sur la granularité du découpage pour éviter un effet contre-productif (ajout d'une complexité d'interfaçage entre les services, augmentation globale des ressources informatiques).
 

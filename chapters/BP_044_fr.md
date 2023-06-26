@@ -51,8 +51,8 @@ Il intercepte les événements de tous ses fils.
 </head>
 <body onload="load();">
     <table id="t">
-        <tr><td id="t1">one</td></tr>
-        <tr><td id="t2">two</td></tr>
+        <tr><td id="t1"><button type="button">one</button></td></tr>
+        <tr><td id="t2"><button type="button">two</button></td></tr>
     </table>
     <!-- ... -->
 </body>

@@ -31,12 +31,18 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 Éviter :
 ```html
 <html>
-    <body>
-        <form method="post" accept-charset="utf-8">
-            <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
-            <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
-        </form>
-    </body>
+     <body>
+         <form method="post" accept-charset="utf-8">
+             <label>
+                 First Name
+                 <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
+            </label>     
+             <label>
+                  Last Name
+                  <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
+             </label>     
+         </form>
+     </body>
 </html>
 ```
 `$_POST['ﬁrst_name']` et `$_POST['last_name']` font générer des notices car ils ne sont pas nécessairement définis.
