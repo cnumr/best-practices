@@ -33,7 +33,10 @@ Avoid :
 <html>
      <body>
          <form method="post" accept-charset="utf-8">
-             <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
+             <label>
+                 First Name
+                 <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
+            </label>     
              <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
          </form>
      </body>
