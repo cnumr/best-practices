@@ -28,7 +28,6 @@ Open source software projects are often forked to improve performance. Performan
 
 ### Example
 
- - Pressflow should be preferred over Drupal.
  - KeyDB should be rather preferred over Redis.
 
 
