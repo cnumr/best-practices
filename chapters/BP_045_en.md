@@ -1,4 +1,4 @@
-## Modif several CSS properties at once
+## Modify several CSS properties at once
 
 ### Identifiers
 
