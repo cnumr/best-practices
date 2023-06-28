@@ -1,4 +1,4 @@
-## Externalise CSS and Javascript
+## Externalize CSS and Javascript
 
 ### Identifiers
 
