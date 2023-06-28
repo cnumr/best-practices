@@ -37,7 +37,7 @@ wireframes or prototypes with user tests make it possible to verify the usefulne
 
 ### Examples
 
-Several succesful products of the digital world – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – provide a 
+Several successful products of the digital world – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – provide a 
 single service and rely on great functional sobriety.
 
 When analyzing the expression of the need, ask yourself the question: "What happens if we don't have it?" ".
