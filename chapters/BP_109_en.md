@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   102   | 110 | 109 |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   102   | 110 | 109 |     |
 
 ### Categories
 
 | Life cycle |    Tiers    | Responsible |
-|:----------:|:-----------:|:-----------:|
+| :--------: | :---------: | :---------: |
 |   5. Use   | User/Device |    User     |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         3          |             3             |         3         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|               Processor / Network / Queries               |
+|        Saved resources        |
+| :---------------------------: |
+| Processor / Network / Queries |
 
 ### Description
 
@@ -43,6 +43,6 @@ Customer management:
 
 ### Validation rule
 
-| The number of ...       | is equal to or less than |  
-|-------------------------|:------------------------:|
-| emails with attachments |             0            |
+| The number of ...       | is equal to or less than |
+| ----------------------- | :----------------------: |
+| emails with attachments |            0             |

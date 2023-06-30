@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   104   | 112  | 111  |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   104   | 112 | 111 |     |
 
 ### Categories
 
 | Life cycle |    Tiers    | Responsible |
-|:----------:|:-----------:|:-----------:|
+| :--------: | :---------: | :---------: |
 |   5. Use   | User/Device |    User     |
 
 ### Indications
 
-|      Priority      |      Implementation difficulty      |  Ecological impact    |
-|:------------------:|:-----------------------------------:|:---------------------:|
-|         3          |                  3                  | 3 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                     Network / Queries                     |
+|  Saved resources  |
+| :---------------: |
+| Network / Queries |
 
 ### Description
 
-Reduce the emails size when they are sent to users for notifications, alerts, or confirmation messages. Avoid attachments and embedded images. Shortened content is preferred. Optionally, use plain text instead of HTML.
+Reduce email size when they are sent to users for notifications, alerts, or confirmation messages. Avoid attachments and embedded images. Shortened content is preferred. Optionally, use plain text instead of HTML.
 
 ### Example
 
@@ -41,9 +41,8 @@ In the end:
 
 This results in 22 KB of freed space for each email sent. In the case of a transactional website (including, for example, customer and internal alerts), potential gains become significant.
 
-
 ### Validation rule
 
-| The number of ...                     | is equal to or less than |  
-|---------------------------------------|:------------------------:|
-| emails sent that weight more than 1mb |            0             |
+| The number of ...                     | is equal to or less than |
+| ------------------------------------- | :----------------------: |
+| emails sent that weight more than 1MB |            0             |

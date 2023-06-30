@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  | V3  |  V4  |
-|:-------:|:----:|:---:|:----:|
-|   78    |  105 | 101 |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   78    | 105 | 101 |     |
 
 ### Categories
 
 |  Life cycle   |  Tiers  |     Responsible      |
-|:-------------:|:-------:|:--------------------:|
+| :-----------: | :-----: | :------------------: |
 | 4. Production | Network | System Administrator |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         4          |             3             |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|            Processor / Network / RAM / Queries            |
+|           Saved resources           |
+| :---------------------------------: |
+| Processor / Network / RAM / Queries |
 
 ### Description
 
@@ -31,6 +31,7 @@ Ideally, these elements lifespan should be as long as possible so that browsers 
 ### Example
 
 Here is an example of how to configure Expires and Cache-Control headers for the Apache web server:
+
 ```apacheconf
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
@@ -46,6 +47,6 @@ Here is an example of how to configure Expires and Cache-Control headers for the
 
 ### Validation rule
 
-| The number of ...                        | is equal to or less than |  
-|------------------------------------------|:------------------------:|
+| The number of ...                        | is equal to or less than |
+| ---------------------------------------- | :----------------------: |
 | missing Expires or Cache-Control headers |            0             |

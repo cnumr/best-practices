@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    97   | 108 | 107 |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   97    | 108 | 107 |     |
 
 ### Categories
 
 | Life cycle |    Tiers    | Responsible |
-|:----------:|:-----------:|:-----------:|
+| :--------: | :---------: | :---------: |
 |   5. Use   | User/Device |    User     |
 
 ### Indications
 
-|      Priority      | Implementation difficulty  | Ecological impact |
-|:------------------:|:--------------------------:|:-----------------:|
-|         3          |             2              |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             2             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                     Network / Storage                     |
+|  Saved resources  |
+| :---------------: |
+| Network / Storage |
 
 ### Description
 
@@ -38,6 +38,6 @@ A DOC file weighing 7.8 MB will decrease to 5.5 MB after compression, which repr
 
 ### Validation rule
 
-| The number of ...      | is equal to or less than |  
-|------------------------|:------------------------:|
+| The number of ...      | is equal to or less than |
+| ---------------------- | :----------------------: |
 | uncompressed documents |            0             |
