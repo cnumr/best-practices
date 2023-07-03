@@ -1,4 +1,4 @@
-## Using asynchronous servers
+## Use asynchronous servers
 
 ### Identifiers
 
