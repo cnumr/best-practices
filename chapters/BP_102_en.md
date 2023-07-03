@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  |  V3  |  V4  |
-|:-------:|:---:|:----:|:----:|
-|    91   | 107 | 102  |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   91    | 107 | 102 |     |
 
 ### Categories
 
 |  Life cycle   |     Tiers     |         Responsible          |
-|:-------------:|:-------------:|:----------------------------:|
+| :-----------: | :-----------: | :--------------------------: |
 | 4. Production | User/Terminal | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         3          |             2             |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             2             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                     Network / Queries                     |
+|  Saved resources  |
+| :---------------: |
+| Network / Queries |
 
 ### Description
 
@@ -32,6 +32,6 @@ If an Ajax request returns a list of city names, contact names, or any non-compu
 
 ### Validation rule
 
-| The number of ...         | is equal to or less than |  
-|---------------------------|:------------------------:|
+| The number of ...         | is equal to or less than |
+| ------------------------- | :----------------------: |
 | non-cached Ajax responses |           10%            |

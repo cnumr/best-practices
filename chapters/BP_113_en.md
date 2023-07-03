@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  100    |  114 | 113  |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   100   | 114 | 113 |     |
 
 ### Categories
 
 | Life cycle |    Tiers    | Responsible |
-|:----------:|:-----------:|:-----------:|
+| :--------: | :---------: | :---------: |
 |   5. Use   | User/Device |    User     |
 
 ### Indications
 
-|      Priority      |      Implementation difficulty      | Ecological impact |
-|:------------------:|:-----------------------------------:|:-----------------:|
-|         3          |                  3                  |         3         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                       RAM / Network                       |
+| Saved resources |
+| :-------------: |
+|  RAM / Network  |
 
 ### Description
 
@@ -34,6 +34,6 @@ If a topic requires a lengthy explanation, divide the content into multiple page
 
 ### Validation rule
 
-| The number of ...                                                                                         | is equal to or less than |  
-|-----------------------------------------------------------------------------------------------------------|:------------------------:|
+| The number of ...                                                                                         | is equal to or less than |
+| --------------------------------------------------------------------------------------------------------- | :----------------------: |
 | texts displayed on the website with a readability score based on the Flesch-Kincaid index of less than 60 |            0             |
