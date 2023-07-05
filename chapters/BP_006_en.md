@@ -37,10 +37,10 @@ This constraints push the design towards a lighter and more efficient web applic
 ### Example
 
 On the server side, the _client hints_ can be used, or the browser's user agent can be recognized to serve adapted content.
-Be careful : the user agent is not always reliable, and it's use is discouraged by the actors of the web. Prefer the
+Be careful : the user agent is not always reliable, and its use is discouraged by the actors of the web. Prefer the
 client hints or the client side options.
 
-On the client side, the _media queries_ can be used, as well as, the `media` attributes of the `<link>` tag for the CSS inclusion,
+On the client-side, the _media queries_ can be used, as well as, the `media` attributes of the `<link>` tag for the CSS inclusion,
 the `srcset` et `sizes` of `<img>` and the whole `<picture>` tag the to make responsive images, and the appropriate
 properties of `<video>` et `<audio>`. 
 
