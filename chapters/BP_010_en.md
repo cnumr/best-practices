@@ -24,15 +24,11 @@
 
 ### Description
 
-With the support of key-value databases (IndexedDB, Web Storage) and of the Cache Storage API in all browsers, it is 
-possible to store static data locally on the client side.
+It is possible to store static data locally on the client side with the support of key-value databases (IndexedDB, Web Storage) and of the Cache Storage API in all browsers.
 
-Using this approach allow to reduce the number of HTTP requests, which saves resources. This can lead to a reduction of 
-the number of server side equipments necessary, and the reduction of the associated environnemental costs.
+Using this approach allows to reduce the number of HTTP requests, which saves resources. This can lead to reducing the number of necessary equipment on server side, thus reducing the associated environmental costs.
 
-It is also good for the performance and responsiveness of the application : since the data is local, it is much faster 
-to use it. So it also reduces the pressure to the obsolescence of the device on the client side, encouraging 
-a longer life span of the device.
+It is also better for the application performance and responsiveness: it is much faster to use it since the data is locally stored. It reduces devices’ obsolescence on the client side, expanding hardware’s life span.
 
 ### Validation rule
 
