@@ -38,7 +38,7 @@ Stopping a service involves:
 
 - Releasing resources: decommissioning the service, its dependencies, tools used by the development team (e.g., Teams channel).
 - Deleting, archiving, or otherwise managing data (including document management and bug tracking systems).
-- Reallocating installations, equipments, and other project resources (including source code).
+- Reallocating installations, equipment, and other project resources (including source code).
 - Valuing skills acquired during the project's lifetime.
 
 ### Example
