@@ -27,9 +27,7 @@
 The loading time of a page in the browser is correlated to the number of files that must be downloaded and to the size 
 of these files.
 
-Depending on the server type, the number of requests can limit the number of pages that be served to the users.
-Reducing the number of requests by page allow the reduction of the number of HTTP servers, and maybe of other components
-of the architecture like databases and application servers.
+Depending on the server type, the number of requests can limit the number of pages that be served to the users. Decreasing the number of requests by page allows the reduction of the number of HTTP servers, and maybe of other components of the architecture, like databases and application servers.
 
 Although the issue is much less potent with the use of HTTP 2, having a lot of requests can significantly impact the
 performance of the application of the client side. In any case, having too many requests is a good sign that some improvements
