@@ -24,21 +24,19 @@
 
 ### Description
 
-The modular architecture popularized by open source software often brings a greater scalability, reduce maintenance costs 
-and a more efficient code.
+The modular architecture (popularized by open-source software) often brings a greater scalability, reduces maintenance costs and a more efficient code.
 
-If the functional coverage of the website or web service can evolve, it is interesting to implement the basic
-features in a core application than can be extended with plugins. Those plugins can be developed independently and
-shared between applications.
+If the functional coverage of the website or web service can evolve, it is interesting to implement the basic features in a core application than can be extended with plugins. Those plugins can be developed independently and shared between applications.
 
-This approach can be use at all levels, for a custom solution, or for the choice of an HTTP server or a CMS.
+This approach can be used at all levels, for a custom solution, or for the choice of an HTTP server or a CMS..
+
 
 ### Example
 
-Popular open source software, largely used on the web like NGINX, Apache, MySQL or PHP, use a modular architecture.
+Popular open-source software, largely used on the web like NGINX, Apache, MySQL or PHP, use a modular architecture.
 
 The microservice architecture allow some level of modularity, but be careful on how the concerns are spread among the 
-components and how they interact : added complexity, network calls, and other unintended negative consequences can 
+components and how they interact: added complexity, network calls, and other unintended negative consequences can 
 increase resources consumption.
 
 ### Validation rule
