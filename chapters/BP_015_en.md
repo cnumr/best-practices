@@ -27,8 +27,7 @@
 The choice of the right technologies is very important to save resources : select the most efficient ones, depending on
 the need and context.
 
-For instance, using static pages for a site which content doesn't change much allow it to be cached, and will avoid
-the deployment of application servers and databases.
+For instance, using static pages for a site which content doesn't change much and can be cached, and will not solicit application servers and databases.
 
 In the case of a dynamic website, the custom developments allow more relevant technical optimisations, and allow to use
 the strict minimum to answer the user's needs.
