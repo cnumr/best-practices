@@ -37,9 +37,7 @@ can be performed on the application.
 
 ### Example
 
-To display the small flags in a language picker, using a CSS spritesheet (ie grouping all the small images in one bigger 
-picture, then selecting the displayed one on the client side with CSS), allow to reduce the number of requests associated to
-this feature
+Using a CSS sprite sheet (i.e., grouping all the small images in one bigger picture, then selecting the displayed one on the client side with CSS) to display the small flags in a language picker reduces the number of requests associated with  this feature.
 
 ### Validation rule
 
