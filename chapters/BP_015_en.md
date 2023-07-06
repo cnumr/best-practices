@@ -39,7 +39,7 @@ the user experience more fluid.
 
 ### Example
 
-A seldomly updated display site about an enterprise with a contact form should rely on static web pages.
+An institutional seldomly updated display site about an enterprise with a contact form should rely on static web pages.
 
 ### Validation rule
 
