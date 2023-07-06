@@ -31,7 +31,7 @@ This user can be notified by an email with a link, or a dashboard of ongoing and
 
 This approach makes the user experience more agreeable and allow several backend optimizations : 
 
-* it the architecture is divided this way, it makes it possible to free the presentation servers, allowing then serve more
+* if the architecture is divided this way, it makes it possible to free the presentation servers, allowing then serve more
   requests and improve perceived performance
 * it becomes possible to group the processes in batches, often more efficient in resources than synchronous processing on the fly.
 * it makes it easier to smooth the load of the servers responsible for the processing, which allows better pooling of servers
