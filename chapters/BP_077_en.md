@@ -39,4 +39,4 @@ There are different tools available for minification such as:
 
 | The number of ...                               | is equal to or less than |  
 |-------------------------------------------------|:------------------------:|
-| Unminified CSS, JavaScript, HTML, and SVG files |            0             |
+| Un-minified CSS, JavaScript, HTML, and SVG files |            0             |
