@@ -24,7 +24,7 @@
 
 ### Description
 
-When several properties of a DOM (Document Object Model) element needs to be modified, each content or style change will trigger repaints and / or reflows. 
+When several properties of a DOM (Document Object Model) element need to be modified, each content or style change will trigger repaints and / or reflows. 
 
 It is usually preferable to:
   - Hide these elements (set display property to none) (1 reﬂow);
