@@ -24,7 +24,7 @@
 
 ### Description
 
-Choose a web host who combines energy-efficient servers with a ano fossil fuel energy supply (oil, gas, and coal). 
+Choose a web host who combines energy-efficient servers with no fossil fuel energy supply (oil, gas, and coal). 
 
 There are six criterias to take into consideration:
 1. WEEE (Waste Electrical and Electronic Equipment) management;
