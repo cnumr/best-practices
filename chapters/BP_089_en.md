@@ -49,4 +49,4 @@ It is more efficient to mutualise resources by using a hypervisor than using fou
 
 | The number of ...                                            | is equal to or less than |  
 |--------------------------------------------------------------|:------------------------:|
-| applications not using virtualisation to mutualise resources |            0             |
+| applications not using virtualization to mutualize resources |            0             |
