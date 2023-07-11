@@ -35,4 +35,4 @@ Open source software projects are often forked to improve performance. Performan
 
 | The number of ...                                      | is inferior or equals  |  
 |--------------------------------------------------------|:----------------------:|
-| performance-oriented forks is greater than or equal to |           1            |
+| performance-oriented forks are greater than or equal to |           1            |
