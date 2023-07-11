@@ -23,7 +23,7 @@
 
 ### Description
 
-Images often represent the most of the downloaded bytes, right after videos and just before CSS and JavaScript libraries.
+Images often represent most of the downloaded bytes, right after videos and just before CSS and JavaScript libraries.
 Optimizing images is important to reduce used bandwidth. The first step is to choose the ideal format for your
 display needs.
 
