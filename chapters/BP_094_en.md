@@ -26,7 +26,7 @@
 
 Images, CSS stylesheets, and JavaScript files should be hosted on cookie-free domains. 
 This prevents browsers from sending cookies for each resource when it's not needed. 
-Although transferred woth each HTTP request, cookies are useless for static content, as they are used as a link between 
+Although transferred with each HTTP request, cookies are useless for static content, as they are used as a link between 
 user browsers and distant application server through the identifiers contained in the text file. 
 It is therefore preferable to store this type of content on a specific domain name such as static.mydomain.com. 
 
