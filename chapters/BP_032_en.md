@@ -24,13 +24,10 @@
 
 ### Description
 
-Ensure that CSS and JavaScript code is not inlined in the HTML code of the page, with the possible exception of 
-configuration variables for JavaScript objects.
+Ensure that CSS and JavaScript code is not embedded in the HTML code of the page, except for configuration variables for JavaScript objects.
 
-If CSS or JavaScript code is included in HTML file's body in several pages (or even in the entire site), 
-then this code must be downloaded for each page requested by the users, increasing downloaded data volume.
-However, if CSS and JavaScript codes is written in external files,
-browsers can store them in their local cache system and not download them again.
+If CSS or JavaScript code is included in HTML file's body in several pages (or even in the entire site), then this code must be downloaded for each page requested by the users, increasing downloaded data volume. However, if CSS and JavaScript codes is written in external files, browsers can store them in their local cache system and not download them again.
+
 
 ### Examples
 In HTML code, do not write:
