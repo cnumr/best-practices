@@ -32,7 +32,7 @@ this case, use adaptive loading.
 The adaptive loading approach consists in selecting the resources, including JS and CSS files, that are the most suitable
 for the context of use (screen/window size, pixel density, network quality, amount of RAM, etc.).
 
-This constraints push the design towards a lighter and more efficient web application.
+These constraints push the design towards a lighter and more efficient web application.
 
 ### Example
 
