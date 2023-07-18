@@ -44,4 +44,4 @@ Most cases should be covered with 3 different sizes x 3 different encodings, i.e
 
 | The number of ...                                                                                      | is equal to or less than |
 | ------------------------------------------------------------------------------------------------------ | :----------------------: |
-| videos with a definition of 1080p or higher displayed on the website when the terminal is a smartphone |            0             |
+| videos with a definition of 1080p or higher displayed on the website when the device is a smartphone |            0             |

@@ -24,7 +24,8 @@
 
 ### Description
 
-Use the electricity source having the lowest environmental impact as possible during its productio  (e.g. hydraulic) to power your digital equipment. 
+Use the electricity source having the lowest environmental impact as possible during its production (e.g. hydraulic) to power your digital equipment. 
+
 Note that to this day there is no reliable way to ensure that the electricity has been produced with the lowest impact.
 As an alternative, you can either choose a provider that does not purchase any electricity produced from fossil fuels or buy EACs (Energy Attribute Certificate).
 

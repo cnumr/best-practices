@@ -40,7 +40,7 @@ In the case of complex queries with large amounts of data, whan a relational dat
 stored procedures should be used because:
 
 - stored procedures save queries interpretation on server side since they are pre-compiled;
-- stored procedure are less bandwidth-intensive as there is less information transfered between servers and clients.
+- stored procedures are less bandwidth intensive as there is less information transfered between servers and clients.
 
 All recent RDBMS (SQL Server, MySQL, PostgreSQL, etc.) support stored procedures.
 
