@@ -41,6 +41,6 @@ In the case of UUID identifiers storage, textual storage will not be appropriate
 
 ### Validation rule
 
-| The number of ...     | is inferior to or equals   |  
-|-------------------|:-------------------------:|
-| database fields whose format is innapropriate  | 15%  |
+| The number of ...                            | is inferior to or equals   |  
+|----------------------------------------------|:-------------------------:|
+| database fields with an innapropriate format | 15%  |

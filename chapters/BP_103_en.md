@@ -26,7 +26,7 @@
 
 Server logs (web, application, database) can become very large. It is recommended to configure them. By adjusting the application's log level at the highest possible level (e.g. only information/warning/error) and by logging only relevant information, disk writes are avoided, the number of CPU cycles is reduced as well as storage space use.
 
-To avoid disk saturation, it is also recommended to set up retention periods and log rotation based on the service operational needs.
+To avoid disk saturation, it is also recommended to set up a retention time and log rotation based on the service operational needs.
 
 ### Example
 
@@ -41,5 +41,5 @@ CustomLog /var/log/apache/access.log combined env=!dontlog
 ### Validation rule
 
 | The number of ...                             | is equal to or less than |
-| --------------------------------------------- | :----------------------: |
-| logs files without a maximum retention period |            0             |
+|-----------------------------------------------| :----------------------: |
+| logs files without a maximum a retention time |            0             |
