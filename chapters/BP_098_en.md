@@ -27,7 +27,7 @@
 Some files, such as JavaScript libraries, CSS stylesheets, images, etc., are network intensive because they are usually numerous and small. 
 This is why Content Delivery Networks (CDN) should be used, physically bringing these files closer to end-users, generating significant bandwidth savings and shorter response times.
 
-Note that there may be cases where using CDN is not really relevant. For example, for very localized (regional) audiences
+Note that there may be cases when using CDN is not really relevant. For example, for very localized (regional) audiences
 it is more appropriate to prioritize local and quality hosting solutions. On the other hand, websites with very little 
 traffic could make pull-based CDNs counterproductive as files extraction from the original server could be too recurrent.
 
