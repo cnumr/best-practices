@@ -50,6 +50,6 @@ Write:
 
 #### Validation rule
 
-| The number of ...                                                                                          | is equal to or less than |  
-|------------------------------------------------------------------------------------------------------------|:------------------------:|
-| CSS modifications that can be grouped into a single one (margin, padding, ...) |            0             |
+| The number of ...                                                             | is equal to or less than |  
+|-------------------------------------------------------------------------------|:------------------------:|
+| CSS declarations that can be grouped into a single one (margin, padding, ...) |            0             |

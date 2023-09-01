@@ -57,6 +57,6 @@ by all browsers (without deteriorating the user experience too much of course!).
 
 ### Principe de validation
 
-| The number of ...                                   | is equal to or less than |  
-|-----------------------------------------------------|:------------------------:|
-| conceptions not using the « mobile first » strategy |            1             |
+| The number of ...                               | is equal to or less than |  
+|-------------------------------------------------|:------------------------:|
+| designs not using the « mobile first » strategy |            1             |
