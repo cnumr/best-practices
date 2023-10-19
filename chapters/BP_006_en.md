@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|  6      |  7  |  6  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|    6    |   7   |   6   |       |
 
 ### Categories
 
 | Life cycle |     Tiers     |  Responsible   |
-|:----------:|:-------------:|:--------------:|
+| :--------: | :-----------: | :------------: |
 | 2. Design  | User / Device | PO / Front dev |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
-|     4    |             4             |         5         |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             4             |         5         |
 
 |  Ressources saved   |
-|:-------------------:|
+| :-----------------: |
 | Processor / Network |
 
 ### Description
@@ -55,8 +55,8 @@ by all browsers (without deteriorating the user experience too much of course!).
 * https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
 
-### Principe de validation
+### Validation rule
 
-| The number of ...                               | is equal to or less than |  
-|-------------------------------------------------|:------------------------:|
+| The number of ...                               | is equal to or less than |
+| ----------------------------------------------- | :----------------------: |
 | designs not using the « mobile first » strategy |            1             |

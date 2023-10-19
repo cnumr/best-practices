@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   109   | 1  | 1  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|   109   |   1   |   1   |       |
 
 ### Categories
 
 |    Life cycle    |    Tiers    | Responsible |
-|:----------------:|:-----------:|:-----------:|
+| :--------------: | :---------: | :---------: |
 | 1. Specification | User/Device |     PO      |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    5     |             4             |         5         |
 
-|                Resources saved                 |
-|:----------------------------------------------:|
-| Processor / RAM / Storage / Network / Queries  |
+|                Resources saved                |
+| :-------------------------------------------: |
+| Processor / RAM / Storage / Network / Queries |
 
 ### Description
 
@@ -47,6 +47,6 @@ not when you imagine you need it.
 ### Validation rule
 
 
-| The number of ...                                                                            | is equal to or less than |  
-|----------------------------------------------------------------------------------------------|:--------------------:|
-| features whose usefulness has not been verified with a panel of users before development     |         0 %          |
+| The number of ...                                                                        | is equal to or less than |
+| ---------------------------------------------------------------------------------------- | :----------------------: |
+| features whose usefulness has not been verified with a panel of users before development |           0 %            |

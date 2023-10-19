@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   34    | 32  | 45  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|   34    |  32   |  45   |       |
 
 ### Categories
 
 |    Life cycle     |    Tiers    |         Responsible          |
-|:-----------------:|:-----------:|:----------------------------:|
+| :---------------: | :---------: | :--------------------------: |
 | 3. Implementation | User/Device | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty  |  Ecological impact   |
-|:------------------:|:--------------------------:|:--------------------:|
-|         3          |             4              |          2           |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             4             |         2         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                         Processor                         |
+| Saved resources |
+| :-------------: |
+|    Processor    |
 
 ### Description
 
@@ -48,8 +48,8 @@ Write:
 ```
 
 
-#### Validation rule
+### Validation rule
 
-| The number of ...                                                             | is equal to or less than |  
-|-------------------------------------------------------------------------------|:------------------------:|
+| The number of ...                                                             | is equal to or less than |
+| ----------------------------------------------------------------------------- | :----------------------: |
 | CSS declarations that can be grouped into a single one (margin, padding, ...) |            0             |

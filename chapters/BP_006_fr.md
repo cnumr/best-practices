@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   6   | 7  | 6  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|    6    |   7   |   6   |       |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | PO/AMOA |
+| Cycle de vie  |        Tiers         | Responsable |
+| :-----------: | :------------------: | :---------: |
+| 2. Conception | Utilisateur/Terminal |   PO/AMOA   |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 5 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         5         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|Processeur / Réseau  |
+| Ressources Economisées |
+| :--------------------: |
+|  Processeur / Réseau   |
 
 ### Description
 
@@ -45,8 +45,8 @@ Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'acc�
 * https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
 * https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 
-### Validation rule
+### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de conception ne s'appuyant pas sur une approche "mobile first"  |  1 |
+| Le nombre ...                                                   | est inférieur ou égal à |
+| --------------------------------------------------------------- | :---------------------: |
+| de conception ne s'appuyant pas sur une approche "mobile first" |            1            |

@@ -1,0 +1,23 @@
+name: Generate Json files PR
+on:
+    push:
+        branches:
+        - main
+
+jobs:
+    json-export-pull-request:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the code
+              uses: actions/checkout@v4
+            - name: Install Python dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r .github/scripts/requirements.txt
+            - name: Generate json files
+              run: |
+                python .github/scripts/generate_json_files.py
+            - name: Create a pull request wwith changes
+              uses: peter-evans/create-pull-request@v3
+              with:
+                add-paths: json/*.json

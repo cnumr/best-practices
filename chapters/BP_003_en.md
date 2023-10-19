@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   111   | 3  | 3  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|   111   |   3   |   3   |       |
 
 ### Categories
 
-|  Life cycle   |     Tiers     |  Responsible   |
-|:-------------:|:-------------:|:--------------:|
-| 2. Design | User / device | UX/UI Designer |
+| Life cycle |     Tiers     |  Responsible   |
+| :--------: | :-----------: | :------------: |
+| 2. Design  | User / device | UX/UI Designer |
 
 ### Indications
 
-| Priority | Implementation difficulty |  Ecological impact   |
-|:--------:|:-------------------------:|:--------------------:|
-|     5    |            4              |          5           |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    5     |             4             |         5         |
 
 |                Resources saved                |
-|:---------------------------------------------:|
+| :-------------------------------------------: |
 | Processor / RAM / Storage / Network / Queries |
 
 ### Description
@@ -46,8 +46,8 @@ On e-commerce services :
 * Highlight the most used fields or filters.
 
 
-### Validation rules
+### Validation rule
 
-| The number of   | is equal to or less than |  
-|-----------------|:--------------------:|
-| friction points |          0           |
+| The number of   | is equal to or less than |
+| --------------- | :----------------------: |
+| friction points |            0             |

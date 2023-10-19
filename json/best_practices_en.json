@@ -1,0 +1,3245 @@
+[
+  {
+    "title": "Create a modular application architecture",
+    "Identifiers": {
+      "GreenIT": "114",
+      "V2": "52",
+      "V3": "14",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Ressources saved": "Processor / RAM / Disk space"
+    },
+    "Description": "The modular architecture (popularized by open-source software) often brings a greater scalability, reduces maintenance costs and a more efficient code.\n\nIf the functional coverage of the website or web service can evolve, it is interesting to implement the basic features in a core application than can be extended with plugins. Those plugins can be developed independently and shared between applications.\n\nThis approach can be used at all levels, for a custom solution, or for the choice of an HTTP server or a CMS..",
+    "Example": "Popular open-source software, largely used on the web like NGINX, Apache, MySQL or PHP, use a modular architecture.\n\nThe microservice architecture allow some level of modularity, but be careful on how the concerns are spread among the \ncomponents and how they interact: added complexity, network calls, and other unintended negative consequences can \nincrease resources consumption.",
+    "Validation rule": {
+      "The number of ...": "Non modular architectures",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Choose an eco-friendly web-host",
+    "Identifiers": {
+      "GreenIT": "66",
+      "V2": "84",
+      "V3": "86",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Electronic waste / Power consumption / Greenhouse gas emissions"
+    },
+    "Description": "Choose a web host who combines energy-efficient servers with a ano fossil fuel energy supply (oil, gas, and coal). \n\nThere are six criterias to take into consideration:\n\n['WEEE (Waste Electrical and Electronic Equipment) management;', 'Energy efficiency of the data center [Power Usage Effectiveness (PUE) / Carbon Usage Effectiveness (CUE) / Water Usage Effectiveness (WUE)];', 'Responsible purchase policy;', 'Engagements in the social aspects of their crafts;', 'Low-carbon energy supply;', 'Carbon offsetting.']",
+    "Example": "Many web hosts share their environmental policies and disclose through KPIs (PUE/CUE/WUE, etc.) performance assessment. \n\nExamples include:\n\n['[OVH](https://corporate.ovhcloud.com/fr/sustainability/environment/)', '[SCALEWAY](https://www.scaleway.com/fr/leadership-environnemental/)', '[INFOMANIAK](https://www.infomaniak.com/fr/ecologie)']",
+    "Validation rule": {
+      "The number of ...": "web hosts with a PUE greater than 1.5",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Set up a content end-of-life plan",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "7. End-of-life",
+      "Tiers": "Datacenter",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Saved resources": "Storage"
+    },
+    "Description": "Multimedia contents (images, sounds, videos) can improve user experience and services effectiveness. These contents are widely used in live information websites (e.g., e-commerce, news, events) and should be used wisely and optimized when transferred to user devices, as they are massively heavier than textual contents. When they are unpublished, i.e., inaccessible to end users, keeping them in storage often has no business interests. It is therefore necessary to set a deleting policy for these contents to avoid unnecessary storage use and freeing up space for new contents.",
+    "Example": "",
+    "Alternative solution": "",
+    "Validation rule": {
+      "The number of ...": "stored contents that are not accessible on web pages",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Adapt texts to the web",
+    "Identifiers": {
+      "GreenIT": "100",
+      "V2": "114",
+      "V3": "113",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "RAM / Network"
+    },
+    "Description": "Write short texts using a \"direct\" style. Use concise ideas formulations, even if it means developing on several pages of content if it is very long and/or includes many different notions.\n\nDivide long contents into several pages.",
+    "Example": "If a topic requires a lengthy explanation, divide the content into multiple pages and/or provide it as downloadable document. This way, users will only display pages they want to read and only download files that are interesting to them.",
+    "Validation rule": {
+      "The number of ...": "texts displayed on the website with a readability score based on the Flesch-Kincaid index of less than 60",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use less analytics tools and limit data collection",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network / Storage"
+    },
+    "Description": "Tools used to track users' actions often use a lot of client-side resources: large number of requests, additional JavaScript files, multiple additional domains, cookies, etc.\n\nIf tracking information is not essential, do not use it. Otherwise, try to use a single tool and choose a solution that requires fewer resources.",
+    "Validation rule": {
+      "The number of ...": "analytics tools",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Reduce stored data volume to the bare minimum.",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Storage"
+    },
+    "Description": "Reducing the volume of stored data to the bare minimum implies:\n\n['optimizing the management of large data volumes', 'cleaning up old data, either by archiving it offline or deleting it', 'ensuring that backups can be restored', 'monitoring storage space size']\n\nLegal constraints may require to store data that is never used over time, depending on the type of data, and its owners.\nThe way the data is used and its importance degree also impacts how it will be stored.\n\nThis practice is part of the management of the information lifecycle.",
+    "Example": [
+      "Define the archiving processes: upon release, an annual report is stored on an SSD (hot zone). One month later, it will be archived on a classic storage system (cold zone). Finally, ten years later, it will be deleted.",
+      "Avoiding duplicates between tables is a way to optimize stored data volume.",
+      "Data use can lead to tables denormalization and therefore increasing storage space"
+    ],
+    "Validation rule": {
+      "The quantity of ...": "stored data that is useless for the digital service",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Limit the number of HTTP requests",
+    "Identifiers": {
+      "GreenIT": "180",
+      "V2": "9",
+      "V3": "9",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Ressources saved": "Réseau / Requêtes"
+    },
+    "Description": "The loading time of a page in the browser is correlated to the number of files that must be downloaded and to the size \nof these files.\n\nDepending on the server type, the number of requests can limit the number of pages that be served to the users. Decreasing the number of requests by page allows the reduction of the number of HTTP servers, and maybe of other components of the architecture, like databases and application servers.\n\nAlthough the issue is much less potent with the use of HTTP 2, having a lot of requests can significantly impact the\nperformance of the application of the client side. In any case, having too many requests is a good sign that some improvements\ncan be performed on the application.",
+    "Example": "Using a CSS sprite sheet (i.e., grouping all the small images in one bigger picture, then selecting the displayed one on the client side with CSS) to display the small flags in a language picker reduces the number of requests associated with  this feature.",
+    "Validation rule": {
+      "the number ...": "HTTP requests",
+      "is equal to or less than": "40"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Limit canvas use",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "HTML canvas element is initially designed for drawing graphics, creating games, or generating images on-the-fly via JavaScript APIs. Like any script, the use of canvas has a significant impact on device resource requirements (CPU and/or GPU), worsening user experience on weaker devices and leading to energy overconsumption. This impact is greater when the rendering is done repetitively (dynamic effect, animation). It is recommended to use other native HTML elements when possible, or otherwise, to optimize the implementation to limit the device resource requirements.",
+    "Example": [
+      "Only render when necessary.",
+      "Use `window.requestAnimationFrame()` instead of `window.setInterval()` for animations.",
+      "Avoid the use of heavy libraries.",
+      "Test rendering performance."
+    ],
+    "Sources": [
+      "[Canvas element](https://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html)",
+      "[Optimizing Canvas](https://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)"
+    ],
+    "Validation rule": {
+      "The number of ...": "canvas that can be replaced by an HTML element",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Set up a data expiration and deletion policy.",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Storage / Queries"
+    },
+    "Description": "Following the General Data Protection Regulation (GDPR), it is mandatory to delete users personal data after a defined period.\nLifespans can also be defined for data other than users personal data.\nFortunately, setting up data lifespan can be done automatically without having to manually purge obsolete data.\n\nMany database management systems, such as MongoDB, AWS DynamoDB, Redis, or Oracle, allow you to define a \"TTL\" (Time To Live) on a table or a, item. After defining a lifespan, expired data will be purged and permanently erased from database.",
+    "Example": "In this Java example on an Oracle database, the data expires after 5 days.\n\n```\nString aKey = \"myFirstKey\";\nString aData = \"myFirstData\";\n\ntry {\n    DatabaseEntry theKey = new DatabaseEntry(aKey.getBytes(\"UTF-8\"));\n    DatabaseEntry theData = new DatabaseEntry(aData.getBytes(\"UTF-8\"));\n\n    WriteOptions wo = new WriteOptions();\n    wo.setTTL(5); // TTL from 5 days\n    myDatabase.put(null,             // Transaction\n                   theKey,           // Key.\n                   theData,          // value.\n                   Put.NO_OVERWRITE,\n                   wo);              // Options (including TTL duration).\n\n} catch (Exception e) {\n    // ...\n}\n```",
+    "Validation rule": {
+      "The quantity of ...": "unused and unrestricted stored data",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Eliminate non-essential features",
+    "Identifiers": {
+      "GreenIT": "109",
+      "V2": "1",
+      "V3": "1",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "1. Specification",
+      "Tiers": "User/Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "5",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Resources saved": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "Several studies (Cast Software and Standish Group, in particular) show that 70% of the functionalities requested by \nthe users are not essential and that 45% are never used. By reducing the coverage and functional depth of the \napplication, we lower its initial development cost, its technical debt and the associated environmental impacts.\n\nThis reduces the infrastructure needed to run it. Moreover, at a constant ergonomic level, the poorer the application is in terms of functionality, the easier it will be to use. Therefore, it is interesting to reduce the functional coverage of the application as much as possible, by focusing it on essential users’ needs.\n\nDetecting a non-essential functionality is possible when analyzing the expression of the need. The MoSCoW method, workshops,\nwireframes or prototypes with user tests make it possible to verify the usefulness of a feature prior to its development.",
+    "Examples": "Several successful products of the digital world – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – provide a \nsingle service and rely on great functional sobriety.\n\nWhen analyzing the expression of the need, ask yourself the question: \"What happens if we don't have it?\" \".\n\nRespect the YAGNI (You Ain't Gonna Need It) principle of extreme programming: develop when you actually need a feature,\nnot when you imagine you need it.",
+    "Validation rule": {
+      "The number of ...": "features whose usefulness has not been verified with a panel of users before development",
+      "is equal to or less than": "0 %"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid using carousels",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User/Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "Carousels, that are often used to highlight multiple contents, quickly show limits in terms of conversion, which negatively impact user experience. Their presence implies several critical issues:\n\n['Increased page size due to the presence of dedicated CSS and JavaScript, as well as each carousel screen content.', 'Complexity in terms of web quality insurance and accessibility.', 'Greater use of processor resources in the case of automatic carousels.']",
+    "Example": "`<img />` tags have an HTML loading attribute that natively allows progressive images loading.\n`<img src=\"mon_image.webp\" alt=\"\" loading=\"lazy\" />`\n\nSome CSS animations attributes involve browser repaint/reflow, requiring device resources use. Prefer carousel animations using CSS transform property to limit this.",
+    "Alternative solution": "Limit the use of carousels as much as possible by prioritizing static content that is regularly updated. Otherwise:\n\n['Implement simple and complete components control (stop, next/previous screen)', 'Prefer progressive loading of images displayed on different screens.', 'Prefer animations involving processor resources.', 'Limit the number of screens in the carousel.']",
+    "Validation rule": {
+      "The number of ...": "screens in the carousel",
+      "is equal to or less than": "3"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Minify CSS, JavaScript, HTML, and SVG files",
+    "Identifiers": {
+      "GreenIT": "12",
+      "V2": "78",
+      "V3": "77",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "CSS, Javascript, HTML, and SVG minification tools remove unnecessary spaces, developer comments, line breaks, block delimiters, reducing their size.",
+    "Examples": "There are different tools available for minification such as:\n\n['CSS: cssnano, csso or clean-css ', 'Javascript: Terser, UglifyJS or Babel-minify ', 'HTML: htmlnano, HTMLMinifier', 'SVG: SVGO, minify-xml or equivalent.']",
+    "Validation rule": {
+      "The number of ...": "Unminified CSS, JavaScript, HTML, and SVG files",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer PWA over native mobile applications that are similar to the website",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Storage / Network"
+    },
+    "Description": "It is essential to define what are the necessary features according to users when designing digital services. Responsive websites may entirely be sufficient and satisfying.\n\nHowever, PWA (Progressive Web App) can spare double to triple developments and maintenance costs that would result from a native or hybrid mobile application (React native, Flutter) when a mobile applications is required and fully or partially reproduce the associated website.\n\nPWA reduce mobile devices obsolescence risk and lower bandwidth use since they are not tied to operating systems (OS) and are often lighter than native mobile applications. This is why several social networks have developed PWA to conquer markets with low bandwidth networks.",
+    "Example": [
+      "E-commerce sites (Lancôme, Starbucks, etc.)",
+      "Media (L'équipe, Courrier International, Forbes, etc.)",
+      "Software as a Service (Microsoft 365, Gmail, etc.)",
+      "Social networks (Twitter Lite, Telegram, etc.)",
+      "Business applications (SNCF, etc.)"
+    ],
+    "Validation rule": {
+      "The number of ...": "apps that could have been PWA",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Limit HTTP API calls",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": "4022"
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Processor / Network / Queries"
+    },
+    "Description": "When users visit web pages, websites may retrieve content through an HTTP API (webservices). In those cases, each web page display will result in as many HTTP requests to different APIs even though content will probably be the same for some time.\n\nAs an API provider (server), you can set quotas to encourage users to define response caching strategies thus avoiding systematic calls. As an API user (client), you should cache retrieved results in order to be able to serve them again without systematically calling the HTTP API.",
+    "Example": [
+      "You can probably limit the number of requests to one per day if you retrieve customer reviews through an API.",
+      "You can probably limit the number of requests to one per hour if you retrieve a Twitter feed to display on your site.",
+      "You can set up a 2-second cache to prevent thousands of simultaneous visitors to your site from generating thousands of API calls during the same second if you display \"real-time\" data on your site homepage.",
+      "As a provider, if you offer an API, you can set quotas per user and for a limited period of time."
+    ],
+    "Validation rule": {
+      "The number of ...": "endpoints that do not benefit from a relevant caching strategy",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid resizing images in the browser",
+    "Identifiers": {
+      "GreenIT": "93",
+      "V2": "20",
+      "V3": "34",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "Do not resize images using HTML code's HEIGHT and WIDTH attributes as this requires transferring those images in their original size, wasting bandwidth and CPU cycles.",
+    "Example": "A 350 × 300 pixels PNG 24 image weighs 41 KB. The same image still weighs 41 KB, even though it should not exceed 3 KB, when resized in HTML code to be displayed as a thumbnail with dimensions of 70 × 60 pixels. This means that 38 KB are unnecessarily downloaded each time this image is viewed. Also note that browser resizing can lead to a more pixelated rendering.\n\nThe best solution is to generate images at the target size. This can be done manually using image editors or automatically using CMS routines that generate images at the right size for the template.",
+    "Validation rule": {
+      "The number of ...": "resized browser images",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Put the whole caches in RAM (opcode and kvs)",
+    "Identifiers": {
+      "GreenIT": "85",
+      "V2": "90",
+      "V3": "92",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / Storage"
+    },
+    "Description": "Caching systems should entirely be set in random access memory (RAM) whenever possible. This method avoids input/output operations on hard disks and CPU cycles for managing them.\n\nThere are two reasons to do so: quickly serve responses to the client and limit the number of hardware and software components involved in the response returned by the server.\n\nResource use duration is particularly short, as random access memory being very fast in terms of read/write accesses. In addition, components lifespan will be expanded with this method, since there is no mechanical movement as when using a hard disk.",
+    "Example": "Examples of RAM cache integration in Drupal:\n\n['integration of Memcache: https://drupal.org/project/memcache', 'integration of Varnish: https://drupal.org/project/varnish']",
+    "Validation rule": {
+      "The number of ...": "caches that are not fully set in RAM",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer glyphs over images",
+    "Identifiers": {
+      "GreenIT": "20",
+      "V2": "18",
+      "V3": "30",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Storage / Network / Queries"
+    },
+    "Description": "Glyphs are specific typographic characters included in fonts, like those included in operating systems. They can be used to replace monochrome images such as symbols or pictograms (chevron, triangle, point, square, astrological signs, etc.) up to illustrations allowing to:\n\n['Reduce bandwidth by reducing the website total size', 'Reduce the number of requests', 'Reduce the DOM complexity, especially with many SVG pictograms']",
+    "Example": "[Excerpt from a font created via Font Forge to illustrate a landing page](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)\n\nA 91% size saving was achieved by including pictograms and vector illustrations in an icon font via [Font Forge](https://fontforge.org/en-US/).\n\nTo go further: [https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements](https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements)",
+    "Validation rule": {
+      "The number of ...": "images that should have been replaced by glyphs (font symbol)",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer pagination over infinite scrolling",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Saved resources": "Network / Storage"
+    },
+    "Description": "You should avoid allowing visitors to see everything by simply scrolling web pages and loading content little by little when displaying lists of products or articles on websites.\nThis fancy effect will generate content as users scroll through their screens. This will ask the associated server for the x next articles/products for each \"scroll\". This can lead to performance issues, SEO issues and accessibility issues.\nClassic pagination systems with an efficient filtering should be implemented. Visitors will find content they are interested in more easily and so will indexing robots. This method facilitates compliance with Web Content Accessibility Guidelines (WCAG) (cf. https://www.w3.org/TR/WCAG22/\").",
+    "Validation rule": {
+      "The number of ...": "lists without a classic pagination system",
+      "is equal to or less than": "10%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use partial content reloading",
+    "Identifiers": {
+      "GreenIT": "40",
+      "V2": "49",
+      "V3": "38",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "If your web page has one or more content zones with a high refresh rate, you should only reload these zones instead of the entire page.\nTo achieve this you can use several techniques, generally with Javascript : AJAX, Service Workers, Web Components, or custom developments.\n\nIt is even possible to not include these parts in the HTTP response and to add them later with the Javascript described above.\nThis architecture can be referred to as \"component islands\" or \"islands architecture\". \nOn advantage is the ability to keep cache solutions for the \"container\" pages and to only reload the content parts that require it.",
+    "Example": "News sites very commonly use this technique, for clearly identifiable areas that require\nquick updates (news flash, weather data, stock market prices, sports results, etc.).",
+    "Validation rule": {
+      "The number of ...": "Content zones that can be partially updated but are not",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use lazy loading",
+    "Identifiers": {
+      "GreenIT": "1010",
+      "V2": "",
+      "V3": "37",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, even when users do not display them, for instance if they are outside the viewport. To avoid this, the lazy loading technique can be used: elements with this attribute will be loaded only when they become visible on the screen.\n\nIt is possible to add a `loading` attribute to images and iframes in HTML so that the browser will only download images \nthat are displayed on the screen. However, this attribute is very recent: it will not work on older browser versions. \nFor the sake of improved compatibility, it is still possible to use very light Javascript mini-libraries which can handle \nimages lazy-loading, such as:\n- [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1.9 KB (gzip)\n- [vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3.5 KB (gzip)",
+    "Example": "In this example, the image and iframe will be automatically lazy-loaded by the browser. If an image must be displayed on\nthe screen, it will be downloaded and displayed. Otherwise, it will not be downloaded.\n\n```\n<img src=\"image.jpg\" alt=\"...\" loading=\"lazy\">\n<iframe src=\"video-player.html\" title=\"...\" loading=\"lazy\"></iframe>\n```\n\nSee also :\n\n['https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading', 'https://web.dev/browser-level-image-lazy-loading/', 'https://web.dev/lazy-loading-video/']",
+    "Validation rule": {
+      "The number of ...": "images, iframes, and videos called without a lazy loading attribute and below the initial viewport is",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Remove all warnings and notices",
+    "Identifiers": {
+      "GreenIT": "51",
+      "V2": "65",
+      "V3": "70",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Processor / Storage"
+    },
+    "Description": "Warnings and notices slow down application servers such as PHP as they have to trace the errors origins and record messages explaining the associated problems in various logs systems.",
+    "Example": "Avoid :\n\n```\n<html>\n     <body>\n         <form method=\"post\" accept-charset=\"utf-8\">\n             <label>\n                 First Name\n                 <input type=\"text\" name=\"ﬁrst_name\" value=\"<?php print $_POST['ﬁrst_name'] ?>\" placeholder=\"\">\n            </label>     \n             <label>\n                  Last Name\n                  <input type=\"text\" name=\"last_name\" value=\"<?php print $_POST['last_name'] ?>\" placeholder=\"\">\n             </label>     \n         </form>\n     </body>\n</html>\n```\n\n`$_POST['ﬁrst_name']` and `$_POST['last_name']` generate notices because they are not necessarily defined.",
+    "Validation rule": {
+      "The number of ...": "warnings and notices",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize and generate media before importing them in a CMS",
+    "Identifiers": {
+      "GreenIT": "99",
+      "V2": "58",
+      "V3": "58",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network / Storage"
+    },
+    "Description": "The most well-known CMS offer many features to optimize (compress, resize, etc.) and generate your media (images, pdf, \ndocuments, audios and videos) often via plugins or extensions. Sometimes not free, but always resource intensive in terms\nof CPU, RAM, network and storage, these plugins do not avoid the import of disproportionate (size, dimension and quality) \nor unsuitable media compared to their use.",
+    "Examples": "Here are some tools that can help you optimize your media on your computer:\n\n['[FFmpeg](https://www.ffmpeg.org/)', '[Any Video Converter](https://www.any-video-converter.com/products/video-converter-free/)', '[Xnview](https://www.xnview.com/)', '[Gimp](https://www.gimp.org/)', '[Inskape](https://inkscape.org/en/)', '[PDFedit](https://sourceforge.net/projects/pdfedit/)', 'etc.']",
+    "Validation rule": {
+      "The number of ...": "contents directly optimized by the CMS",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Divide CSS",
+    "Identifiers": {
+      "GreenIT": "9",
+      "V2": "24",
+      "V3": "21",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "Use a set of CSS instead of a single one, and only import the necessary ones according to the context. This method helps to limit the page size, therefore saving bandwidth and reducing CPU load.",
+    "Example": "Use a functional logic to divide the CSS :\n\n['layout;', 'content;', 'module x;', 'module y;', 'etc...']\n\nThis will exclude all CSS from unused modules in the case of a feature-rich website.\nThe number of CSS files must remain reasonable, more for maintainability purposes than performance issues,\nas general CSS (“layout” and “content” in our example) will be concatenated into a single file.\n\nOptional CSS files (here \"module x\" and \"module y\") will be downloaded depending on the context (page, functionalities...).",
+    "Validation rule": {
+      "The number of ...": "CSS libraries is superior or equal to",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid autoplay for videos and audio content",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network / Queries"
+    },
+    "Description": "Automatic videos and audio files activation (autoplay) during web pages loading uses resources on each tier (device, network, data center). In many cases, automatic playback is not necessary. Moreover, it can draw users' attention and distract them from the initially requested service. Therefore, whenever possible, these playbacks should be initiated by the users and by not using the autoplay attributes in the <video> or <audio> tags.\n\nNevertheless, some parts of the video or audio files may be downloaded even if autoplay is not activated. Moreover, data will be unnecessarily downloaded even if users do not start the video playback. It is therefore necessary to force browsers not to preload anything by setting the <video> or <audio> preload attribute value tags to none.",
+    "Example": "Video:\n\n```\n<video src=\"audiofile.webm\" preload=\"none\"></video>\n```\n\nAudio:\n\n```\n<audio controls src=\"audiofile.mp3\" preload=\"none\"></audio>\n```",
+    "Validation rule": {
+      "The number of ...": "<video> or <audio> elements without a preload=\"none\" or autoplay attribute",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer HTTP/2 over HTTP/1",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "HTTP/2 protocol has replaced requests and responses textual representations with binary one using HTTP header compression (HPACK). It also enables multiplexing, allowing the use of only one TCP connection (and thus a single TLS handshake) to the server, making the most of HPACK.\n\nTo go even further, if another domain name resolves to the same IP address and is compatible with the TLS certificate, the TCP connection can also be reused, enabling using distinct domain names with no cookies for static resources (see [ “Host resources (CSS/JS) on a cookie-free domain” rule](/chapters/BP_094_fr.md)) without any additional cost other than DNS resolution. An HTTP/2 extension even allows this resolution to be saved for browsers that support it, provided that the server uses it.",
+    "Example": "In late 2016, Cloudflare was able to assess its bandwidth gains in comparison to HTTP/1 for over 50% of requests and 1% to 15% of responses depending on the type of exchange (few large files vs. many small requests).",
+    "Sources": [
+      "[Cloudflare HTTP/2 gains analysis](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/)",
+      "[Cloudflare on reusing connections between multiple domains experimentation](https://blog.cloudflare.com/connection-coalescing-experiments/)",
+      "[The ORIGIN HTTP/2 Frame](https://httpwg.org/specs/rfc8336.html)"
+    ],
+    "Validation rule": {
+      "The number of ...": "requests using HTTP/1",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid performing SQL queries inside a loop",
+    "Identifiers": {
+      "GreenIT": "55",
+      "V2": "71",
+      "V3": "72",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "Performing SQL queries inside a loop causes significative performance issues, especially if the SQL server is not on the local machine. \nThese servers are optimized to handle multiple selections, insertions or modifications in a single query or a single transaction.\n\nImproper use of these queries unnecessarily consumes CPU cycles, memory, and bandwidth.",
+    "Examples": "Do not write :\n\n```\nforeach ($userList as $user) {\n     $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES(\"'. $user['ﬁrst_name'] .'\", \"'. $user['last_name'] .'\")';\n     mysql_query($query);\n}\n```\n\nrather write :\n\n```\n$userData = array();\nforeach ($userList as $user) {\n     $userData[] = '(\"'. $user['ﬁrst_name'] .'\", \"'.\n     $user['last_name'] .'\")';\n}\n$query = 'INSERT INTO users (first_name,last_name) VALUES'. implode(',', $userData); mysql_query($query);\n```",
+    "Validation rule": {
+      "The number of ...": "SQL queries inside a loop",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Compress documents",
+    "Identifiers": {
+      "GreenIT": "97",
+      "V2": "108",
+      "V3": "107",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Storage"
+    },
+    "Description": "Compress all documents that can be downloaded from a web page, unless compression doesn't bring much benefit (for example: web optimized PDF files).",
+    "Example": "A DOC file weighing 7.8 MB will decrease to 5.5 MB after compression, which represents a 30% gain (default WinZip compression). Office files formats that can be easily compressed include:\n\n['Text documents (.doc, .docx, .rtf, .txt, etc.);', 'Spreadsheets (.xls, .xslx, etc.);', 'Presentations (.ppt, .pptx, etc.);', 'PDF documents;', 'Multimedia content (images, audio, and video).']",
+    "Validation rule": {
+      "The number of ...": "uncompressed documents",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Provide textual alternatives to multimedia content",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Network"
+    },
+    "Description": "Text uses much less bandwidth than multimedia formats such as audio or video, even when it is formatted in HTML/CSS. Providing users with alternative textual content allows them to read instead of listening or watching, therefore saving much data. If the textual alternative is itself large, you might want to load it only after a user action.\n\nThis practice is also beneficial for accessibility: the hearing impaired can read content and therefore have access to it, as can the visually impaired, if the text includes video descriptions of elements that are only available visually.\n\nThis practice is also beneficial for SEO (Search Engine Optimization), as search engines can more easily analyze text than audio and video formats.\n\nSee also \"Avoid automatic playback of videos and sounds\" on the same topic.",
+    "Example": "A 30-minute video typically takes up 500MB, a podcast of the same duration takes up 30MB, and an equivalent text is less than 1MB.",
+    "Validation rule": {
+      "The number of ...": "multimedia files without textual alternatives",
+      "is equal to or less than": "10%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Provide a print CSS ",
+    "Identifiers": {
+      "GreenIT": "16",
+      "V2": "30",
+      "V3": "27",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Saved resources": "Network"
+    },
+    "Description": "In addition to the service provided to the Internet user, print CSS stylesheets reduce the number of printed pages, indirectly reducing the website's ecological footprint. The design should be as lean as possible, with ink-saving font typefaces (Century Gothic, for example). Also remember to hide headers, footers, menus, sidebars, images that are no actual content. Etc.",
+    "Example": "This print CSS \"cleans\" the displayed pages in order to provide a refined print design:\n\n```\nbodysuit {\nbackground-color:#ﬀf; font-family :Serif; font-size:15pt;\n}\n#page { margin:0;\nborder:none;\n}\n#banner, #menuright, #footer { display: none;\n}\nh1#top { margin:0;\npadding:0;\ntext-indent:0; line height: 25pt; font-size:25pt;\n} (...)\n```",
+    "Validation rule": {
+      "The number of ...": "missing print CSS",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Group similar CSS declarations",
+    "Identifiers": {
+      "GreenIT": "14",
+      "V2": "28",
+      "V3": "25",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Network"
+    },
+    "Description": "When several DOM (Document Object Model) elements share some CSS properties, write the declarations together in the same sheet to reduce de CSS size.",
+    "Example": "Do not write :\n\n```\nh1 {\nbackground-color: gray; color: navy;\n}\n\nh2 {\nbackground-color: gray; color: navy;\n}\n\nh3 {\nbackground-color: gray; color: navy;\n}\n```\n\nrather write :\n\n```\nh1, h2, h3 {\nbackground-color: gray; color: navy;\n}\n```\n\nYou can set up the [stylelint](https://stylelint.io/) module\nin your project (`devDependencies`) and use the following rule `shorthand-property-no-redundant-values` if you want to make sure that this rule is followed.\n\nYou can find the complete list of these shortened properties on this website [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)",
+    "Validation rule": {
+      "The number of ...": "similar CSS declarations not grouped together",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize PDF files",
+    "Identifiers": {
+      "GreenIT": "98",
+      "V2": "109",
+      "V3": "108",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Network / Storage"
+    },
+    "Description": "Make sure that PDF files are truly optimized for the web before uploading them: image sampling rate and compression, embedded fonts, resolution, etc.\nIf necessary, allow users to download PDF as individual chapters.\n\nIf you want to offer the users the ability to download a PDF reader, prefer lightweight software such as Sumatra (4.3 MB) over Adobe reader (48 MB), it will reduce bandwidth usage by a factor of 10 for each download and, most importantly, it will result in lower memory usage (which helps fight digital divide and planned obsolescence).",
+    "Example": "In the case of an annual report in PDF format:\n\n['check that images are heavily compressed and have a maximum resolution of 72 dpi;', 'only include main fonts;', 'divide the report into chapters to limit unnecessary downloads.']",
+    "Validation rule": {
+      "The number of ...": "non-optimized PDFs",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Choose the right theme and limit CMS extensions",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Developer"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Network / Storage"
+    },
+    "Description": "Choosing the appropriate theme is crucial when using a CMS. Themes add extensions and sometimes include page builders upon installation. Provided features are often far beyond users actual needs. Each extension adds its data, CSS and JS files, not to mention the number of files stored on the servers to make it all work. Depending on the development quality of the addons, additional assets can be heavy and/or redundant.\n\nThis causes:\n\n['An increase in the number of requests', 'An increase in page size', 'An increase in processing time for internal requests', 'An increase in content administration complexity']",
+    "Example": "An all-in-one theme or one that includes a page builder can add features to put sliders in your articles, heavily personalize your action buttons, or let you integrate testimonials or create portfolios when you didn't plan to incorporate them into your content at all. Also, beware of incompatibilities caused by some of these extensions.\n\nChoose simple themes providing essentials features. Then add features when they are really necessary.",
+    "Validation rule": {
+      "The number of ...": "extensions",
+      "is equal to or less than": "12"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use a CDN",
+    "Identifiers": {
+      "GreenIT": "75",
+      "V2": "102",
+      "V3": "98",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Some files, such as JavaScript libraries, CSS stylesheets, images, etc., are network intensive because they are usually numerous and small. \nThis is why Content Delivery Networks (CDN) should be used, physically bringing these files closer to end-users, generating significant bandwidth savings and shorter response times.\n\nNote that there may be cases when using CDN is not really relevant. For example, for very localized (regional) audiences\nit is more appropriate to prioritize local and quality hosting solutions. On the other hand, websites with very little \ntraffic could make pull-based CDNs counterproductive as files extraction from the original server could be too recurrent.",
+    "Example": "Using CDNs provided by Google that host commonly used JavaScript libraries.",
+    "Validation rule": {
+      "The number of ...": "non-CDN-served resources (files)",
+      "is equal to or less than": "25%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid opening database connections when not necessary",
+    "Identifiers": {
+      "GreenIT": "56",
+      "V2": "72",
+      "V3": "73",
+      "V4": ""
+    },
+    "Categories": {
+      "Life -cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "Opening a connection is a resource-intensive process for both client and server, regardless of the database system:\n\n['Memory and disk I/O allocation for buffers,', 'Network round trips for the connection protocol,', 'Induced CPU cost.']\n\nExample: for Oracle, several round trips are necessary (validation of credentials, driver information, optimal packet size negotiation, etc.).\nOpening and closing connection requires allocating and deallocating these resources, as well as many network exchanges, each time.\n\nThe usual best practice is to set up a connection pool.\nIt optimizes connection management as well as performance. However, its configuration is not necessarily a trivial operation (supervision is required to find the right settings).\n\nTry to avoid application database accesses as much as possible.",
+    "Example": "HikariCP is a robust and performant JDBC connection pool. It is integrated into SpringBoot.\n\nWhen there is no connection pool, reuse a connection and do not open/close a new connection for each request.",
+    "Validation rule": {
+      "The number of ...": "unnecessary database connections for querying or storing necessary service data",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Reduce emails size",
+    "Identifiers": {
+      "GreenIT": "104",
+      "V2": "112",
+      "V3": "111",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Reduce email size when they are sent to users for notifications, alerts, or confirmation messages. Avoid attachments and embedded images. Shortened content is preferred. Optionally, use plain text instead of HTML.",
+    "Example": "Sending confirmation mails for a contact request does not justify adding HTML code and images. Basic HTML messages generally require:\n\n['at least 2 images (logo and signature at the bottom of the page) = about 10 KB;', '12 KB of HTML code for formatting (inline styles, tables, etc.);', '4 KB of text (the message + 2 action links).']\n\nIn the end:\n\n['HTML email = 26 KB;', 'plain text email = 4 KB.']\n\nThis results in 22 KB of freed space for each email sent. In the case of a transactional website (including, for example, customer and internal alerts), potential gains become significant.",
+    "Validation rule": {
+      "The number of ...": "emails sent that weight more than 1MB",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Limit the number of CSS",
+    "Identifiers": {
+      "GreenIT": "10",
+      "V2": "25",
+      "V3": "22",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Limit the number of CSS in order to avoid HTTP requests and simplify the rendering in the browser. Use a common stylesheet for all common elements, regardless of display, and one file for each target screen size or media query.\n\nBe cautious: import these files into the HTML code and NOT with @import directives in the CSS files themselves. By splitting this way, users devices will choose what is most appropriate and will defer the loading of the files that they do not need.\n\nCSS files required for some components can be loaded depending on the context if necessary.",
+    "Example": "```\n<link rel='stylesheet' id='css-css' href='commons.css' type='text/css' media='all' />\n<link rel='stylesheet' id='css-xs-css' href='small-screens.css' type='text/css' media='(max-width: 959px)' />\n<link rel='stylesheet' id='css-sm-css' href='tablets.css' type='text/css' media='(min-width: 768px)' />\n<link rel='stylesheet' id='css-mdlg-css' href='large-screens.css' media='(min-width: 960px)' />\n<link rel='stylesheet' id='css-print-css' href='print.css' type='text/css' media='print' />\n```",
+    "Validation rule": {
+      "The number of ...": "CSS files",
+      "is equal to or less than": "10"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize cookies size",
+    "Identifiers": {
+      "GreenIT": "65",
+      "V2": "82",
+      "V3": "82",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Saved resources": "Network"
+    },
+    "Description": "Cookies allow to have a shared state between the user's browser and the remote web server thanks to shared data. \nThis data is sent with each HTTP request. It is therefore necessary to optimize the cookie's size as much as possible \nand to delete it as soon as it is no longer necessary.",
+    "Example": "Deleting cookies no longer needed is possible by specifying a null or negative expiration duration, as follows:\n\n```\nSet-Cookie: user_mavariable=; Max-Age=0\n```\n\nSee RFC 6265 from the IETF (Internet Engineering Task Force) for more cookies-related information:\nhttps://datatracker.ietf.org/doc/html/rfc6265",
+    "Validation rule": {
+      "The number of ...": "useless or unoptimized cookies",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize the user journey",
+    "Identifiers": {
+      "GreenIT": "111",
+      "V2": "3",
+      "V3": "3",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User / device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "5",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Resources saved": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "Optimizing the user journey consists in reducing the time spent by the user on his most frequent use cases. \n\nStart by identifying the most frequent uses cases, then optimize them, by reducing the number of steps and \nactions, eliminating unnecessary ones, identifying the failure cases, optimizing response times, etc.\n\nA user journey is well designed when the program behaves exactly as the user expects it.\n\nThe observation of the people using the service is a straightforward way to identify the points of friction, but user tests,\nrealised with real random users from the field are much more interesting. People working on and around the product\ntend to be power users.\n\nThe time spent by the user on the terminal is the second largest environmental impact.",
+    "Example": "On e-commerce services : \n\n['Propose a new order based on the content of the previous order.', 'Allow the users to buy things without registration', 'Allow the user to Copy/Paste his or her IBAN directly rather than uploading it.', 'Highlight the most used fields or filters.']",
+    "Validation rule": {
+      "The number of": "friction points",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Limit the use of animated GIFs",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Storage / Network"
+    },
+    "Description": "Animated GIF is an animated image format dating back to 1995, which is heavier and slower than other formats such as webm or mp4 video formats. Animated webp offer a smaller size gain but is currently poorly supported by many browsers.",
+    "Example": "|             | .gif (animated) | .webp (animated) |  .webm |   .mp4 |\n| :---------- | --------------: | ---------------: | -----: | -----: |\n| Animation 1 |           90 Ko |            74 Ko |  36 Ko |  38 Ko |\n| Animation 2 |         5,45 Mo |           2,2 Mo | 274 Ko | 266 Ko |\n\n```\n<!--  Autoplay, loop and muted video  -->\n<video autoplay loop muted playsinline>\n  <source src=\"my-animation.webm\" type=\"video/webm\" />\n  <source src=\"my-animation.mp4\" type=\"video/mp4\" />\n</video>\n```\n\nLearn more :\n\n['[https://web.dev/replace-gifs-with-videos/](https://web.dev/replace-gifs-with-videos/)']",
+    "Validation rule": {
+      "The number of ...": "animated GIF files",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Set up a \"Circuit breaker\"",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "2",
+      "Saved resources": "Processor / Network / Queries"
+    },
+    "Description": "A circuit breaker interrupts requests processing to an external API when it's not responding.\nRequests from user devices can use services for which a degraded mode is acceptable. These are called non-critical.\nDepending on a several error criterias (timeout, number of errors, ...), the service that is calling a non-critical\nexternal service can disable this call and immediately return an alternative response.\nThis pattern avoids unnecessarily soliciting service and network.",
+    "Example": "On e-commerce websites, some product sheet information can be provided by dedicated services.\nWhen the main service that provide product page \"learns\" that the detailed information service encounters errors,\nit stops calling it, avoiding unnecessarily failed calls, leaving to the external service to go back up and saving resources on both sides.\nThe service remains operational even though experience is degraded.",
+    "Validation rule": {
+      "The number of ...": "circuit breakers not implemented on non-critical services",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize images",
+    "Identifiers": {
+      "GreenIT": "21",
+      "V2": "76",
+      "V3": "80",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Resources saved": "Network / Requests /  Storage"
+    },
+    "Description": "Images often represent most of the downloaded bytes, right after videos and just before CSS and JavaScript libraries.\nOptimizing images is important to reduce used bandwidth. The first step is to choose the ideal format for your\ndisplay needs.\n\nRaster images should be reserved for photos and interface elements that cannot be displayed with icons or CSS styles.\n\nThe appropriate format depends on the image properties : black & white or color, color palette, need for transparency...\nAmong these properties, the possibility to irremediably alter images quality (lossy compression) tends to favor formats such as JPEG, JPEG XL,\nAVIF, or WebP, while needing transparency and/or the impossibility to alter the image quality (lossless compression) will tend to favor\nPNG or WebP lossless formats (which supports transparency).\n\nFormat importantly impacts images size: on average, .webp images will be 30% lighter than .jpeg\nimages or .png images. .avif images can be up to 20% lighter than .webp image and 50% lighter than .jepg images.\n\nDon't forget to pay attention to browser support. .webp images will not be recognized by\nold browsers and will not be displayed. It is possible to provide several formats for the same image \nto overcome this issue. Some server-side modules (such as Google's modPageSpeed, also available for Apache\nand Nginx) even allow you to provide the appropriate image for the browser that is calling the server.\n\nMany tools will help you minimize images size:\n\n['SQUOOSH', 'CLOUDINARY', 'ImageMagick', 'PngCrush', 'JpegTran']",
+    "Example": "In this example, the DOM <picture> element informs the browser that there are two images: a .webp image and a\n.jpg image, which is used by default. The browser will decide which image will be downloaded. If the .webp format \nis supported, the image.webp image will be downloaded; otherwise, image.jpg image will be downloaded.\n\n```\n<picture>\n    <source srcset=\"image.webp\" type=\"image/webp\">\n    <img src=\"image.jpg\" alt=\"...\" loading=\"lazy\">\n</picture>\n```\n\nTo go further :\n\n['https://web.dev/choose-the-right-image-format/', 'https://www.fasterize.com/fr/blog/webp-avif-compresser-images/']",
+    "Validation rule": {
+      "The number of ...": "non-optimized images",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Hide DOM elements while they are being modified",
+    "Identifiers": {
+      "GreenIT": "44",
+      "V2": "44",
+      "V3": "42",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "When several properties of a DOM (Document Object Model) element need to be modified, each content or style change will trigger repaints and / or reflows. \n\nIt is usually preferable to:\n\n['Hide these elements (set display property to none) (1 reﬂow);', 'Modify all properties and make the elements visible again (1 reﬂow).']\n\nThat is, maximum 2 reﬂows.",
+    "Example": "Proceed as follows:\n\n```\nvar elem = document.getElementById('foo'); elem. style. display = 'none'; // Generate 1 reﬂow elem.style.width ='10em';\nelem. style. height = 'auto';\n// ... other changes ...\nelem. style. display = 'block'; // Generate 1 reﬂow\n```\n\nOnly 2 reflows are required (instead of potentially 6 or 7).",
+    "Validation rule": {
+      "The number of ...": "DOM elements manipulations while the element is still visible",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use event delegations",
+    "Identifiers": {
+      "GreenIT": "41",
+      "V2": "46",
+      "V3": "44",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Events delegation avoids overloading browser memory by instantiating a single listener for several DOM (Document Object Model) elements.",
+    "Examples": "The DOM element whose ID is \"t\" is declared as the delegate.\n\nIt intercepts the events of all of its children.\n\n```\n<head>\n     // ...\n     <styletype=\"text/css\">\n      #t { border: 1px solid red } #t1 { background-color: pink; }\n     </style>\n     <script type=\"text/javascript\">\n         function modifyText(new_text) {\n             let t2 = document.getElementById(\"t2\");\n             t2.ﬁrstChild.nodeValue = new_text;\n         }\n         function load() {\n             var el = document.getElementById(\"t\");\n             el.addEventListener(\"click\", function() {\n               modifyText(\"four\")\n             }, false);\n         }\n     </script>\n</head>\n<body onload=\"load();\">\n     <table id=\"t\">\n         <tr><td id=\"t1\"><button type=\"button\">one</button></td></tr>\n         <tr><td id=\"t2\"><button type=\"button\">two</button></td></tr>\n     </table>\n     <!-- ... -->\n</body>\n```",
+    "Validation rule": {
+      "The number of ...": "listeners of the same event on multiple HTML elements, belonging to the same group, without using event delegation",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Choose the most appropriate technologies",
+    "Identifiers": {
+      "GreenIT": "1",
+      "V2": "11",
+      "V3": "15",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Development",
+      "Tiers": "Datacenter",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Ressources saved": "Processor / RAM / Network"
+    },
+    "Description": "The choice of the right technologies is very important to save resources : select the most efficient ones, depending on\nthe need and context.\n\nFor instance, using static pages for a site which content doesn't change much allow it to be cached, and will avoid\nthe deployment of application servers and databases.\n\nIn the case of a dynamic website, custom developments allow more relevant technical optimizations, and allow the use of the strict minimum to answer the user's needs.\n\nIf you have a part of a web application that relies on a small number of pages and deliver a bounded functional service \n(purchase, estimate request, ...), using a SPA (Single Page Application) may be interesting. It avoids requests and makes\nthe user experience more fluid.",
+    "Example": "A seldomly updated display site about an enterprise with a contact form should rely on static web pages.",
+    "Validation rule": {
+      "The number of ...": "poorly chosen technologies",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Sources",
+    "Identifiers": {
+      "GreenIT": "6",
+      "V2": "7",
+      "V3": "6",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User / Device",
+      "Responsible": "PO / Front dev"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Ressources saved": "Processor / Network"
+    },
+    "Description": "The mobile first strategy consist in designing an online site/service for mobile use, with the associated limited screen \nspace and network, and expand it for larger screen if and only if the functional/ergonomic contribution is justified. In\nthis case, use adaptive loading.\n\nThe adaptive loading approach consists in selecting the resources, including JS and CSS files, that are the most suitable\nfor the context of use (screen/window size, pixel density, network quality, amount of RAM, etc.).\n\nThese constraints push the design towards a lighter and more efficient web application.",
+    "Example": "On the server side, the _client hints_ can be used, or the browser's user agent can be recognized to serve adapted content.\nBe careful : the user agent is not always reliable, and its use is discouraged by the actors of the web. Prefer the\nclient hints or the client side options.\n\nOn the client-side, the _media queries_ can be used, as well as, the `media` attributes of the `<link>` tag for the CSS inclusion,\nthe `srcset` et `sizes` of `<img>` and the whole `<picture>` tag the to make responsive images, and the appropriate\nproperties of `<video>` et `<audio>`. \n\nThe informations provided by the _client hints_ can also be retrieved via JavaScript to choose content dynamically.\n\nIn any case, favor a minimalist default mode allowing access to your site even if all its features are not supported \nby all browsers (without deteriorating the user experience too much of course!).",
+    "Validation rule": {
+      "The number of ...": "designs not using the « mobile first » strategy",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Store static data locally",
+    "Identifiers": {
+      "GreenIT": "205",
+      "V2": "10",
+      "V3": "10",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Datacenter",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Ressources saved": "Network / Requests"
+    },
+    "Description": "It is possible to store static data locally on the client side with the support of key-value databases (IndexedDB, Web Storage) and of the Cache Storage API in all browsers.\n\nUsing this approach allows to reduce the number of HTTP requests, which saves resources. This can lead to reducing the number of necessary equipment on server side, thus reducing the associated environmental costs.\n\nIt is also better for the application performance and responsiveness: it is much faster to use it since the data is locally stored. It reduces devices’ obsolescence on the client side, expanding hardware’s life span.",
+    "Validation rule": {
+      "The number of ...": "static data non saved locally",
+      "is equal to or less than": "25%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Make sure that user journeys allow users to carry out their intended action",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "1. Specification",
+      "Tiers": "User/Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "Web services allow tasks like carrying out administrative procedures, opening contracts, claims declarations, etc. to be carried out without the need to travel to an office. Many of these procedures can be complex to carry out or may not take specific cases into account. For example, installing a mobile application, and therefore, having a smartphone may be required to validate the connection to an online banking service. Therefore, some users may find themselves unable to use these services. Setting up more \"low-tech\" alternative (telephone call, SMS, physical access point) can overcome this situation.",
+    "Example": "Set up a phone number to help users during complex administrative procedures such as taking out an insurance policy in case of difficulties.",
+    "Validation rule": {
+      "The number of ...": "complex user journeys with no low-tech alternative",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid JavaScript / CSS animations",
+    "Identifiers": {
+      "GreenIT": "810",
+      "V2": "48",
+      "V3": "39",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User/Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "JavaScript/CSS animations can request a lot of CPU cycles and memory.\n\nThey all trigger resource-intensive (re)paint/(re)ﬂow type actions. Animations must be avoided as much as possible, and only used when required.\n\nIf some animations are essential, stick to the CSS `opacity` and `transform` properties, and to the `translate`, `rotate`, `scale` related functions of `transform`. These two properties are automatically browser optimized, and the animations can be managed by the graphics processing unit (GPU). The following website [www.csstriggers.com](https://csstriggers.com/) features a list of DOM actions than con be triggered by an animation.\n\nBrowsers can be informed that an animation is going to take place with a `will-change` statement in order to reduce animation-related resource consumption.\n\nTo know more :\n\nhttps://web.dev/animations-guide/",
+    "Example": "```\n.box {\n     will-change: transform, opacity;\n}\n```",
+    "Alternative solution": "You can also let the users choose whether or not to play animations via the browser preferences and the through `prefers-reduced-motion` media queries. Animations will only be played if no preferences have been set by the user.\n\n```\n@media (prefers-reduced-motion: no-preference ) {\n   .animation {\n     animation: fadeIn 4s ease;\n   }\n}\n```",
+    "Validation rule": {
+      "The number of ...": "JS / CSS animations per page",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Choose an eco-friendly electricity provider",
+    "Identifiers": {
+      "GreenIT": "67",
+      "V2": "85",
+      "V3": "87",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Greenhouse gas emissions"
+    },
+    "Description": "Use the electricity source having the lowest environmental impact as possible during its production (e.g. hydraulic) to power your digital equipment. \n\nNote that to this day there is no reliable way to ensure that the electricity has been produced with the lowest impact.\nAs an alternative, you can either choose a provider that does not purchase any electricity produced from fossil fuels or buy EACs (Energy Attribute Certificate).",
+    "Example": "Although restricted  greenhouse gas emissions, https://app.electricitymap.org/map allows you to be informed about the carbon intensity of the supplier's country's electricity.\n\nTo learn more about energy attribute certificates and electricity:\nhttps://www.greenit.fr/tag/electricite",
+    "Validation rule": {
+      "The number of ...": "instances of failure of the host to provide proof of purchase of energy attribute certificates",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize Server Energy Efficiency",
+    "Identifiers": {
+      "GreenIT": "68",
+      "V2": "88",
+      "V3": "90",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Power Consumption"
+    },
+    "Description": "It is possible to reduce servers power consumption by selecting energy-efficient equipments that provides the same service.",
+    "Example": "When purchasing servers, choose ones which power supplies meet the 80Plus eco-label (Platinum and Titanium levels). \nAlso choose servers that are Energy Star labelled.\n\nIt is also possible to choose hardware architecture that suits the web application type. For example, physicalization is more suitable for a high-traffic website: using \"n\" very low-power CPUs instead of \"n\" virtual machines running on a physical server whose processor (Xeon, etc.) is often energy-intensive.",
+    "Validation rule": {
+      "The number of ...": "servers without an 80Plus Platinum or higher certified power supply OR not eco-labeled or labelled Energy Star for server.",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Take care of your website regularly",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network / Storage"
+    },
+    "Description": "Taking care of your website regularly is essential not only to ensure that it is working properly and improve user experience but also to reduce its environmental footprint. Over time, websites accumulate content and features, increasing the risk of displaying and storing unnecessary, obsolete, or counterproductive information. This will result in problems on several levels as it can:\n\n['cause website poor ranking;', 'alter the reputation of your product;', 'slow downloading time and degrade user experience;', 'loose visitors by displaying irrelevant/obsolete information;', 'unnecessarily consume resources needed to store unused data;', 'create incompatibilities with other tools that are installed on the website;', 'cause website to be targeted by cyberattacks.']",
+    "Example": "When using a CMS:\n\n['update the CMS and its extensions to reduce security issues.']",
+    "Validation rule": {
+      "The number of ...": "updates and/or content reviews exceeding 1 year",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Replace official social networks share buttons ",
+    "Identifiers": {
+      "GreenIT": "910",
+      "V2": "",
+      "V3": "19",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Important social networks such as Facebook, Twitter, Pinterest, etc. provide ready to install plugins for web pages\nto display \"Share\" buttons and \"Like\" counters. These JavaScript plugins are very resource-intensive since they require numerous requests and heavy files to work. Rather, direct links, such as HTML, should be preferred.\nThese links can be generated manually or via tools such as https://www.sharelinkgenerator.com/.",
+    "Example": "All social networks provide URLs that allow their members to share web pages:\n\n['Facebook Share: https://www.facebook.com/sharer/sharer.php?u=XXXXX', 'Facebook Like: https://www.facebook.com/plugins/like.php?href=XXXXX', 'Twitter: https://twitter.com/intent/tweet?url=XXXXX']\n\nIt is possible to create a button that opens a popup like the official tools, for instance with the following code :\n\n```\n<button type = \"button\" onclick = \"window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar=no, toolbar=no, resizable= yes, scrollbars=yes, height=500, width=700')\">\n     I share this page on Facebook\n</button>\n```\n\nTo go further :\nhttps://www.nuweb.fr/736",
+    "Validation rule": {
+      "The number of ...": "external librairies",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Do not display documents within pages",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "1",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Some content creators sometimes feel the need to directly integrate documents into pages in order to view them directly. This is an unwelcome feature since it requires specific development. Loading documents within content hasn't been requested by users, and they might not be able to display them. Moreover, the file is downloaded to be displayed each time the page is opened.",
+    "Example": "For example, a word processing file will need to call up suitable software to be displayed. However, this file cannot be read without important specific development if the requested software is not directly installed on users computers. It is rather preferred to insert document download links within the web page so that users can choose to download it when they want to.",
+    "Validation rule": {
+      "The number of ...": "documents displayed in the page content",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Have page titles and meta descriptions relevant to pages content.",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User/Device",
+      "Responsible": "SEO"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network / Queries"
+    },
+    "Description": "The page title `<h1>`, along with its `<title>` equivalent, coupled with a relevant `<meta name=\"description\">` tag, should be perfectly coherent with the associated page content. This kind of optimization matches users searches intents, avoiding unnecessary visits (back and forth to find the information they are looking for) and thereby shortening their travel time within search engines.\n\nIn addition,`<title>` and `<meta name=\"description\">` elements are sometimes automatically used on social networks or when sharing links. Making sure about their quality ensures:\n\n['Correct indexing of pages content by search engines and directories', 'Websites and landing pages content identification', 'Understanding content before accessing it', 'Qualifying the associated page requested content or information being read']",
+    "Validation rule": {
+      "The number of ...": "page titles that are not included in TITLE tags and without website name",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer a simple, clean design, adapted to the web",
+    "Identifiers": {
+      "GreenIT": "5",
+      "V2": "6",
+      "V3": "5",
+      "V4": ""
+    },
+    "Categories": {
+      "Cycle de vie": "2. Design",
+      "Tiers": "User / device",
+      "Responsable": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Ressources saved": "Processor / RAM / Network"
+    },
+    "Description": "Any interface design or web design must be thought out beforehand, taking into account:\n\n['the user\\'s needs (see the good practice \"Optimize the user journey\")', 'ergonomic heuristics (Bastien and Scapin, Nielsen, etc.)', 'technical constraints', 'good ecodesign practices', 'and, preferably, good accessibility practices']\n\n**Prefer a simple, clean design, achievable with HTML5 and CSS3 only.**",
+    "Example": "**Description :** Some sites contain framed, non-contrasted and non-readable images (RGAA) and create an unnecessary\nmental overload (2.2. Informational Density of Scapin and Bastien). Downloaded, they are however not visible on mobile\n(ecodesign). One can sometimes raise the inconsistency between signage and colorimetry (1.2.2. Grouping/Distinction \nby the Format of Scapin and Bastien).\n\n**Recommendation :** Remove background images and add a glyph (Prefer glyphs to images, good eco-design practice) with\nconsistent colorimetry if grouping needed.",
+    "Validation rule": {
+      "The number of ...": "pages whose design is heavier than necessary",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Modify several CSS properties at once",
+    "Identifiers": {
+      "GreenIT": "34",
+      "V2": "32",
+      "V3": "45",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "2",
+      "Saved resources": "Processor"
+    },
+    "Description": "Avoid modifying CSS properties one by one to limit the number of repaints/reﬂows.\n\nRather add/remove CSS classes, which allow several properties to be modified at once while only generating a single repaint/reﬂow (see [rule no. 45](/chapters/best_practices_045_fr.md )).",
+    "Example": "Write:\n\n```\n<styling>\n     .in-error { color: red;\n         font-weight: bold;\n     }\n</style>\n<script>\n     $el.bind('error', function () {\n         $el.addClass('in-error');\n     });\n     $el.bind('running', function () {\n         $el.removeClass('in-error');\n     };\n</script>\n```",
+    "Validation rule": {
+      "The number of ...": "CSS declarations that can be grouped into a single one (margin, padding, ...)",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Adapt videos to watching contexts",
+    "Identifiers": {
+      "GreenIT": "92",
+      "V2": "115",
+      "V3": "114",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "Provide several formats (size, frame rate, audio compression, etc.) depending on the video watching context (desktop, Wi-Fi tablet, EDGE smartphone).\n\nVideo optimization should be done out of the website, ideally during post-production. If not possible, use services like YouTube or Vimeo since they offer several optimized formats (SD, HD, etc.) by default.",
+    "Example": "A 15-second user guide shot in 1,680 x 1,050 resolution weighs:\n\n['49 MB when not optimized;', '3 MB when optimized for a resolution equal to or greater than 1,024 x 720 in MPEG 4/H.264/AAC;', '1.2 MB when optimized for a resolution equal to or greater than 480 x 320 in MPEG 4/H.264/AAC.']\n\nIt can be estimated that there is at least a 50% size gain (and probably savings during decoding, as the encoding format takes targeted hardware into consideration) between \"desktop\" and \"mobile\" video versions.\n\nMost cases should be covered with 3 different sizes x 3 different encodings, i.e., 9 versions of the same video. It is possible to serve the right file with simple rules such as screen resolution with a responsive design logic.",
+    "Validation rule": {
+      "The number of ...": "videos with a definition of 1080p or higher displayed on the website when the device is a smartphone",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Delete unused features",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "1. Specification",
+      "Tiers": "User/Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "5",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "Eliminating unused features involves:\n\n['Measuring feature usage during production.', 'Controlling feature usage and removing those that are not sufficiently used or have lost value.\\nRemoving features reduces the application size, reducing its impact in production, and maintenance costs.']\n\nHow to remove a feature?\n\n['Disable it: using feature flipping, prevent it from being used with a flag.', 'Uninstall it: remove as much of the used code as possible and refactor the remaining code.']\n\nThe choice between these two methods will depend on the environmental and economic removal cost.",
+    "Example": "Let's consider an e-commerce website using two different lists: shopping lists and favorites lists. When redesigning this website, instead of remaining iso-functional, the website team evaluates these features relevance. Measurements show that the favorites list has become outdated. The favorites list is therefore removed along with all its database data.\n\nAn administration page might only be used once a year and still be very important (for example: a cache purge that is only used in case of a reference update). In this case, this content must be conserved.",
+    "Validation rule": {
+      "The number of ...": "poorly used features during production",
+      "is equal to or less than": "10%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Secure administration access",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Network"
+    },
+    "Description": "Websites administration access path is often the same from one website to another when using common CMS. This is true for all sites using administration interfaces with classic access paths. \"brute force\" attacks are therefore very frequent as soon as \"simple\" URL are found. These attacks have a very significant impact on networks and infrastructures.\n\nAttacks are more likely to succeed when users identifiers are predictable or when passwords are not strong enough.",
+    "Example": "WordPress, one of the most widely used CMS on the market, use this URL for administration section : /wp-admin or /wp-login.php. Joomla offers /administrator. For Kirby, it is /panel, etc.\n\nIt is always possible to modify this address to limit attacks and improve website security. Replace administration pages URL with:\n\n['random strings without uppercase letters: /ze62ane96, /o6_jhej639, /dj5zjaih2-ep8e', 'one or more words related to your activity: /build, /play, /prepare-the-menu', 'or combine both: /play_562fg6']\n\nNever use \"admin\", \"domain name of the site\", \"first or last name of the company's manager\" as identifiers. Strong passwords must contain at least 8 characters including: lowercase and uppercase letters, special characters and numbers. It is also possible to use CNIL password generator: [https://www.cnil.fr/fr/generer-un-mot-de-passe-solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide)",
+    "Validation rule": {
+      "The number of ...": "default administration URL and common identifiers and weak passwords",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use virtualized servers",
+    "Identifiers": {
+      "GreenIT": "70",
+      "V2": "87",
+      "V3": "89",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Virtualization allows creating and executing virtual representations of a computer on one or more physical machines. \nThe virtualization software allocates resources between different virtual environments based on their needs.\n\nAs a result, virtualization allows:\n\n['hardware savings through mutualisation', 'optimal resources use (RAM, CPU, disk)']\n\nThis method reduces the amount of electronic waste (WEEE) and energy use compared to multiple physical servers.\n\nContainerization is another level of virtualization: virtual machines can host a container orchestration service, \nenabling execution of multiple applications in an isolated way on the same operating system.",
+    "Example": "Use virtualization tools such as VMware, Xen, KVM, etc.\n\nUse containerization tools such as Docker, Kubernetes, etc.\n\nIt is more efficient to mutualise resources by using a hypervisor than using four dedicated servers for four projects, each running at maximum capacity of 20%. This way, a single physical machine can provide the same services as four dedicated servers.",
+    "Validation rule": {
+      "The number of ...": "applications not using virtualization to mutualize resources",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid using raster images for the interface ",
+    "Identifiers": {
+      "GreenIT": "161",
+      "V2": "21",
+      "V3": "35",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Choosing the most appropriate image format is essential to save bandwidth.\n\nFurthermore, with the growing number of devices and screen sizes, and the increasing screen resolutions, vector-based approaches should be favored over raster images. \nWith this approach the interface will be decoupled from screen resolution, limiting technical debt. \nThe first rule is to replace raster images (GIF, PNG, JPEG, WebP, etc.) with styles (CSS), pictograms, glyphs, or icons provided by web fonts or standard fonts (already installed on the users' devices).\nThis doesn't require any additional resources to download. If it isn't possible to use CSS or standard fonts you can also:\n\n['use webfonts', 'use a vector image in standard SVG format']",
+    "Example": "![img.png](img.png)\n\nThis 198 × 198 pixel image size is:\n\n['118 KB in uncompressed raster format;', '6.5 KB in JPEG (90% compression);', '3.8 KB in PNG;', '0.7 KB in minified SVG.']\n\nIn this particular case, the vector format is 5 to 10 times lighter than the raster format while being infinitely resizable.",
+    "Validation rule": {
+      "The number of ...": "raster images for the tested URL",
+      "is equal to or less than": "5"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use the latest language version",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Server-side languages such as PHP, Ruby, Java, etc. are regularly improved by their respective communities. Each new version brings up performance gains, memory management improvements, stability improvements, and security patches. Using the latest language version to take advantage of these benefits is therefore recommended.",
+    "Example": "Versions 7 and 8 of PHP have brought significant performance improvements. Additionally, with JIT (Just-In-Time Compilation), PHP 8.0 can compile code parts and store them in memory. JIT optimizes memory management in addition to improving performance.",
+    "Validation rule": {
+      "The number of ...": "major versions behind the latest language stable version",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid transferring large amounts of data for processing tasks",
+    "Identifiers": {
+      "GreenIT": "58",
+      "V2": "75",
+      "V3": "76",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "Database management systems are designed and optimized to efficiently run large amounts of data processing.\nIn the case of tasks with a complex logic, retrieving \"raw\" data and running all computing operations like\ntransformation or aggregation on the backend or even frontend server side isn't recommended.\n\nThese processes must rather be carried out as close as possible to the data in order to:\n\n['limit bandwidth use due to unprocessed data transfer', 'take advatnage of the database optimizations regarding data manipulation', 'reduce CPU cycles on the backend server or even the frontend sides']",
+    "Example": "In the case of complex queries with large amounts of data, whan a relational database management system (RDBMS) is used, \nstored procedures should be used because:\n\n['stored procedures save queries interpretation on server side since they are pre-compiled;', 'stored procedures are less bandwidth intensive as there is less information transfered between servers and clients.']\n\nAll recent RDBMS (SQL Server, MySQL, PostgreSQL, etc.) support stored procedures.",
+    "Validation rule": {
+      "The number of ...": "processes with a large amount of data ran outside of the database server",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid sending heavy and redundant emails",
+    "Identifiers": {
+      "GreenIT": "102",
+      "V2": "110",
+      "V3": "109",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / Network / Queries"
+    },
+    "Description": "Emails are saved and duplicated on their service provider's disks. It is therefore important to limit the number of automatic emails (e.g. newsletters, customer management, order tracking) and reduce the number of recipients, attachments, and the overall volume.",
+    "Example": "Newsletters:\n\n['Set the sending frequency to the bare minimum', 'Only send newsletters to required people and subscribers (using an opt-in list, customer targeting, etc.)', 'Send unsubscribe emails to customers who have not opened a certain number of previous newsletters', 'Avoid attachments and use direct links instead', 'Avoid images, reduce their size when they are required']\n\nCustomer management:\n\n['Reduce multiple emails to a single email for online orders (order, payment confirmation, shipment, satisfaction, reminder, delivery satisfaction, invoice, etc.)', \"Only send attachments when necessary: for example, provide documents links on customer's account\"]",
+    "Validation rule": {
+      "The number of ...": "emails with attachments",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Validate your code with a Linter",
+    "Identifiers": {
+      "GreenIT": "35",
+      "V2": "33",
+      "V3": "46",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Processor"
+    },
+    "Description": "ESLint code quality analyzer checks that the JavaScript syntax will be understood by all browsers. \nThe resulting code respects syntax constraints that make it easier and faster for interpreters to execute the code. \nProcessor will therefore be solicited for a shorter time.\n\nIn modern development, adding different tools to your delivery process to ensure the quality of your code is recommended. ",
+    "Example": "We can use, for example:\n\n['[ESLint](https://eslint.org/) for JavaScript code', '[Stylelint](https://stylelint.io/) for your stylesheets']",
+    "Validation rule": {
+      "The number of ...": "source code lines that are not validated by tools such as ESLint",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer static web pages",
+    "Identifiers": {
+      "GreenIT": "3",
+      "V2": "51",
+      "V3": "13",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User / Device",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Ressources saved": "Processor / RAM"
+    },
+    "Description": "If a page is only modified twice a year, there's no use for a CMS: static pages are fine. Sticking to static pages will permit to save CPU, bandwidth, power, etc.\n\nA CMS typically requires several software layers to display content: HTTP server, application server (the CMS itself), and database, with optional cache systems. A static page is directly served to the user by the file system’s HTTP server. There is no need for an application server or database.",
+    "Example": "The following solutions can be applied depending on the digital service:\n\n['For a landing page or a simple display site, a static page that is written directly in HTML, CSS (and optionally JS) can be created.', 'For a blog with low activity, a JAMstack architecture, with a content generator like Jekyll, Hugo, Gasby or Eleventy can be used. If necessary, a headless CMS or a headless flat-file CMS (Strapi, Contenful, Flextype, etc.) can be added.', 'for more complex web applications, some pages with low edit rate (FAQ, About, legal terms, ...) can be made static.']",
+    "Validation rule": {
+      "The number of ...": "dynamic pages is",
+      "is equal to or less than": "25%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Apache Vhost: disable AllowOverride",
+    "Identifiers": {
+      "GreenIT": "81",
+      "V2": "101",
+      "V3": "105",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor"
+    },
+    "Description": "When AllowOverride directive is enabled, Apache HTTP server must go up the entire directory hierarchy to possibly find an .htaccess file containing override rules. Disabling this directive if possible in the Apache configuration is recommended.",
+    "Example": "In your Apache host configuration file, add:\n\n```\nAllowOverride none\n```\n\nTo go further:\nhttps://httpd.apache.org/docs/2.0/mod/core.html#allowoverride",
+    "Validation rule": {
+      "The number of ...": "configuration files containing \"AllowOverride\" text with anything other than \"AllowOverride None\"",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use abbreviated CSS notations",
+    "Identifiers": {
+      "GreenIT": "15",
+      "V2": "29",
+      "V3": "26",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Network"
+    },
+    "Description": "Use abbreviated CSS notations to reduce stylesheets size.",
+    "Examples": "Do not write :\n\n```\nmargin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;\n```\n\ninstead write :\n\n```\nmargin:1em 0 2em 0.5em;\n```\n\nTo go further :\n\n['https://www.w3.org/TR/CSS', 'https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/']",
+    "Validation rule": {
+      "The number of ...": "non-abbreviated CSS declarations",
+      "is equal to or less than": "0%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Only use required parts of Javascript libraries and CSS frameworks",
+    "Identifiers": {
+      "GreenIT": "811",
+      "V2": "77",
+      "V3": "40",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "JavaScript libraries such as jQuery and ready-to-use CSS frameworks (Bootstrap, skeleton, gumby, foundation, etc.)\nare excellent tools used to create websites very quickly, as they almost meet all the most common requirements.\nThe downside is that only a small part of those libraries is generally used; and some of these frameworks and libraries\ndo not rely on a modular architecture, making users download entire libraries only to use a small percentage of their features.\n\nAvoid using these libraries when possible (see https://youmightnotneedjquery.com)\nor only keep their most used parts (see https://getbootstrap.com/customize).\n\nBundlers like Webpack allow the automatic removal of unused code. This is called tree shaking.",
+    "Example": "![img_1.png](img_1.png)\n\nSome frameworks (here Bootstrap) allow you to create custom libraries that only contain the parts actually used by the site, \nthus reducing libraries size and resources used during execution.",
+    "Validation rule": {
+      "The number of ...": "used libraries with unused parts",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Accurately quantify the dimensions of features and components",
+    "Identifiers": {
+      "GreenIT": "110",
+      "V2": "2",
+      "V3": "2",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "1. Specification",
+      "Tiers": "User/Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "5",
+      "Implementation difficulty": "4",
+      "Ecological impact": "5",
+      "Resources saved": "Processor / RAM / Storage / Network / Queries"
+    },
+    "Description": "The \"dimensions\" of each functionality must be defined precisely and as a whole. It could be\na compression rate for the images of the graphical interface, the maximum response time for an HTTP request,\nthe number of items displayed in a list, etc.\n\nThe more the \"dimensions\" and requirements associated with each feature stick to the business, the more we avoid over-quality.\nThe logic must therefore be reversed in relation to current habits. If any information is not specified,\nit is the minimum level of quality or the minimum quantity that is offered. For example, if not specified,\nthe number of items in a list is limited to 5 items or to the maximum number that can be displayed on the smallest\ntarget screen of the application.\n\nDefault values, rarely changed by the user, should be chosen to meet the need with minimal impact.",
+    "Example": "Potential gain: by adjusting the number of items displayed on the results page of its Bing search engine,\nMicrosoft Research has demonstrated that it is possible to reduce the underlying physical infrastructure\n(number of servers) by up to 80%.\n\nAnother example: by defaulting to an acceptable video resolution (480p) rather than maximum, we reduce the bandwidth\nused for most users (who will not change the default value), while leaving the possibility for others to increase the \nresolution if they need to.",
+    "Validation rule": {
+      "The number of ...": "features with larger dimensions than needed",
+      "is equal to": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Set up an elastic architecture",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Queries"
+    },
+    "Description": "Application load is not constant over time in most cases. For example, there may be few or even no users connected at night. In this case, it is not necessary to keep a large technical infrastructure during low load hours.\n\nIt is possible to dynamically and automatically change the infrastructure size to fit the load, thanks to deployment mutualization (see rule #89 \"Using virtualized servers\"), especially in the cloud. This modification can follow a schedule (for example, turning off applications only used during business hours at night) or can be done in response to the number of requests: when there is load increase, new virtual machines, application instances (containers, processes, or serverless functions, ...) are added and decommissioned when the load is decreasing.\n\nTools like Docker can be used to create application images that can be easily deployed or decommissioned by orchestration tools like Kubernetes. Cloud providers generally offer services to take advantage from these tools.\n\nTesting and experimentation environments can notably be easily turned off at night and on non-working days.\n\nImplementing an elastic architecture also creates costs savings as fewer server resources are used and billed for.\n\nAn elastic architecture has significant implementation costs in terms of workload and increased solution complexity. It is not essential to implement it if your application has low load or if the load is stable.",
+    "Validation rule": {
+      "The number of ...": "unnecessarily deployed resources used when the load is low",
+      "is": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Adapt audio formats to listening contexts",
+    "Identifiers": {
+      "GreenIT": "95",
+      "V2": "113",
+      "V3": "112",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Network"
+    },
+    "Description": "Audio files can be large and use a lot of bandwidth. Optimizing their size is essential. When possible use these 3 formats available in the 3 major OS (Windows, MacOS, and Linux):\n\n['MP3 (MPEG-1 Audio Layer 3);', 'AAC (Advanced Audio Coding);', 'Vorbis. These audio formats use very advanced compression algorithms, considerably reducing audio file size.']",
+    "Example": "Encoders such as LAME allow the conversion of uncompressed audio files to MP3 but also the alteration of sampling rate to optimize audio file size at the expense of audio quality. Test on each audio sound file.\n\nIn the case of a 63,128 bytes sound.wav WAV file template, MP3 conversion would result in:\n\n['6 times lighter sound-128.mp3 file of 10,823 bytes (128 kb/s);', '10 times lighter sound-64.mp3 file of 6,508 bytes (64 kb/s).']",
+    "Validation rule": {
+      "The number of ...": "proprietary (non-free) audio codecs and audio tracks whose megabyte weight/minute duration ratio is greater than 1",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Disable Apache DNS lookup",
+    "Identifiers": {
+      "GreenIT": "84",
+      "V2": "100",
+      "V3": "1 04",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / Network"
+    },
+    "Description": "Web servers log information for all HTTP requests, usually translating users' IP addresses into domain names. This conversion (DNS Lookup) is one of Apache HTTP server's bottlenecks.\n\nIt should therefore be disabled.",
+    "Example": "In your Apache server configuration file, located at `/etc/apache/httpd.conf` or at `/etc/apache2/apache2.conf`, write :\n\n```\n HostnameLookups Off\n```",
+    "Validation rule": {
+      "The number of ...": "active DNS lookups",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Display Static Error Pages",
+    "Identifiers": {
+      "GreenIT": "46",
+      "V2": "98",
+      "V3": "96",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network / Storage"
+    },
+    "Description": "Error pages (40x, 50x) should be as light as possible, ideally non-existent. When browsers request non-existing resources (image, CSS style sheet, JavaScript file, etc.) or when servers return errors, the error pages that are sent can be heavier than the requested resource or page.\n\nFurthermore, some CMSs execute their content search routine (in the database) to try to find requested resources. As a result, server code is executed, database server is solicited, and HTML page dynamic generation is executed. All of this process wastes CPU cycles, RAM, and bandwidth.",
+    "Example": "Avoid dynamic 404 pages, which are customized according URLs content. Static 404 pages are preferable.",
+    "Validation rule": {
+      "The number of ...": "dynamic error pages",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Only load data/code when necessary",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Terminal",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Queries"
+    },
+    "Description": "It may be tempting to pre-load resources that could be used when specific actions are performed by users (including navigating to another page) for perceived performance reasons.\n\nThese preloads will only result in wasted resources when these actions aren't taken.",
+    "Example": "Avoid `<link rel=\"prerender\">`,\nas well as all `rel=\"preload\"`, `rel=\"prefetch\"`, `rel=\"preconnect\"`, `rel=\"modulepreload\"` and `rel=\"dns-prefetch\"`\non resources that will not be used on the current page, or used only under certain conditions.\n\nAvoid loading and caching (or storing locally) application data, such as values lists and other references if there is no guarantee that they will be used.\n\nBy extension, divide JS code, and even CSS, into portions (chunks) related to specific user actions, and only load those portions when necessary. This is especially true for SPAs (Single Page Applications), where each screen (or possibly set of screens) can only be loaded on demand.",
+    "Validation rule": {
+      "The number of ...": "loaded resources that are not immediately used",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Save bandwidth with a ServiceWorker",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Most pages share a common structure framing the \"useful content\".\nExcept for the <title> and some header metadata, it would be quite easy to reconstruct them by concatenating three resources: common header and footer for all pages, and content specific to each one of them.\nThis concatenation can be performed into browsers directly via a Service Worker, with the header and footer benefiting from HTTP caching, each page then being only \"useful content\". The server will have to be able to serve both the complete page, for the initial website access and for browsers that do not support Service Workers, and the page fragment without its header and footer, to be able to concatenate it in the Service Worker. Some <meta> and <link> specific to referencing or sharing on social networks (and therefore useless in the browser) can be completely omitted from this fragment to further reduce its size. Others, as well as the <title>, can generally be positioned in the <body> without impacting page's usability. Alternatively, they can be recreated by JavaScript, or injected directly into the <head> by the Service Worker by concatenating not 3 parts, but 4 or 5 (these elements could be synthesized from the HTTP response headers of the page content, to maintain the same number of requests).\n\nHere, we accept a bit of device processing time, an additional initial request for the Service Worker, and then two additional requests for headers and footers, in exchange for significant amounts of saved data on each page. These costs will be canceled by the savings while browsing the site (as for a SPA), but also during future visits, as long as the browser has not evicted the Service Worker.",
+    "Example": "In early 2020, Philip Walton was able to measure a network exchange reduction of nearly 48% and performance improvements (First Contentful Paint) of more than 52% on his blog with this technique.\n\nSource: https://philipwalton.com/articles/smaller-html-payloads-with-service-workers/",
+    "Validation rule": {
+      "The number of ...": "pages loaded in their complete version",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Disable binary logs",
+    "Identifiers": {
+      "GreenIT": "83",
+      "V2": "93",
+      "V3": "106",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "6. Support / maintenance",
+      "Tiers": "Datacenter",
+      "Responsible": "System administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "2",
+      "Saved resources": "Processor / RAM / Storage"
+    },
+    "Description": "MySQL or MariaDB servers binary logs can become very large, consuming CPU cycles while generating input-output (I/O) HDD operations since each modification/deletion request is recorded into the log file. Disabling these logs will save a lot of resources. Before disabling, make sure that there is no need for a database replication and that the last backup data loss is acceptable.",
+    "Example": "For MySQL, add the following configuration:\n\n```\nskip-log-bin\n```",
+    "Validation rule": {
+      "The number of ...": "options --skip-log-bin and --disable-log-bin not activated in cases where binary logs are not useful",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Respect the Back/Forward cache",
+    "Identifiers": {
+      "GreenIT": "28",
+      "V2": "5",
+      "V3": "7",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User / Device",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Ressources saves": "Processor / Network"
+    },
+    "Description": "The browsers have a feature of fast navigation in the history (previous page and next page buttons), called \n_back-forward cache_ or _bfcache_.\n\nContrary to the HTTP cache which makes it possible to keep in memory the responses to the requests previously sent\nand to speed up the re-loading of these pages, the _bfcache_ cache allows the browser to store an entire page in memory.\nHowever, as the use of this feature requires additional machine resources on the user side, it's interesting to reduce \nthe functionalities of the pages stored with the _bfcache_ as much as possible. Moreover, the use of _bfcache_ implies \nsome caution, especially when the waiting time is exceeded (_setTimeout_).\nIndeed, as browsers suspend the execution of pending timers and tasks in JavaScript queues, and resume it when the page \nis restored from the _bfcache_, there may be problematic situations. For example, if the browser suspends a task \nrequired as part of an IndexedDB transaction or API usage and other tabs (using the same IndexedDB database) are open at\nthat time, the browser will not cache individual pages.\n\nAny element that would make the page ineligible for _bfcache_ and/or which would render the page unusable after leaving \nit should be avoided.",
+    "Example": "Avoid :\n\n['actions triggered when leaving the page (`unload` or `beforeunload` events, prefer `pagehide` if it is really necessary)', 'links that open new tabs / windows without `rel=\"noopener\"` or `rel=\"noreferrer\"`', 'leave connections (IndexedDB, `fetch()` ou XMLHttpRequest, Web Sockets, etc.) open when the user leaves the page']\n\nUse the `pageshow` and/or `pagehide` events to reset the elements that require it : e.g. re-enable form buttons that\ndeactivate upon submission, delete sensitive information (such as passwords), or to close/reopen persistent connections.\n\nSource:\n\n['https://web.dev/bfcache/ (content under CC BY 4.0 licence - _Back/forward cache_ from Philip Walton)']",
+    "Validation rule": {
+      "The number of ...": "pages ineligible to _bfcache_",
+      "is equal to or less than": "0%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use all levels of the CMS cache",
+    "Identifiers": {
+      "GreenIT": "60",
+      "V2": "57",
+      "V3": "57",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "If the CMS (like Wordpress, Drupal, eZ Publish, etc.) offers a multi-level cache system, using these different levels as \ntheir granularity reduces used resources (CPU cycles, memory) and offers better performances to users.",
+    "Example": "A CMS like WordPress does not natively have a cache system, but there are several plugins that can answer to this requirement. The most popular are:\n\n['W3 Total Cache', 'WP Super Cache', 'WP-rocket']\n\nWith one of these plugins, pages are cached on the server and are no longer generated for each user. Additionally, this kind of tools also provides other WebPerf-oriented optimizations following web ecodesign principles.",
+    "Validation rule": {
+      "The number of ...": "non-activated caches",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Externalize CSS and Javascript",
+    "Identifiers": {
+      "GreenIT": "7",
+      "V2": "16",
+      "V3": "32",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Ensure that CSS and JavaScript code is not inlined in the HTML code of the page, with the possible exception of \nconfiguration variables for JavaScript objects.\n\nIf CSS or JavaScript code is included in HTML file's body in several pages (or even in the entire site), \nthen this code must be downloaded for each page requested by the users, increasing downloaded data volume.\nHowever, if CSS and JavaScript codes is written in external files,\nbrowsers can store them in their local cache system and not download them again.",
+    "Examples": "In HTML code, do not write:\n\n```\n<style type=\"text/css\" media=\"screen\">\n     p { color: #333; margin: 2px 0 }\n     /* All CSS declarations of the site */\n</style>\n```\n\nbut rather :\n\n```\n<link href=\"css/styles.css\" rel=\"stylesheet\">\n```",
+    "Validation rule": {
+      "The number of ...": "URL with a significant quantity of inline CSS/Javascript code",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Choose appropriate data formats",
+    "Identifiers": {
+      "GreenIT": "113",
+      "V2": "54",
+      "V3": "17",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Storage / Network"
+    },
+    "Description": "Data formats used to manipulate and store data have a significant impact on memory consumption and processor cycles required for database manipulations on application servers level and even in browsers (manipulation via JavaScript) as well as on required storage space. Choosing inappropriate data formats can result in:\n\n['memory waste (if you store very small data in columns designed to store large amounts of data for example) ;', 'performance issues (it is faster to search for a number than a string of characters).']\n\nData format choice and appropriate sizing should ideally be based on a representative sample of data analysis.",
+    "Examples": "In the case of a training institution, the size of the field used to store the students number should be based on statistical studies.\nIt will be easier to determine if it is possible to use a TINYINT (1 byte, up to 127) instead of a SMALLINT (2 bytes, up to 32,767).\nIn any case, the default choice of an INT (4 bytes, up to 2,147,483,647) or even a BIGINT (8 bytes) isn't appropriate (which is eventually commonly encountered during audits).\nYou can potentially use up to 8 times less storage. Processor cycles consumption will be reduced correspondingly.\n\nIn the case of UUID identifiers storage, textual storage will not be appropriate. UUIDs require 16 bytes whereas textual equivalents would require a minimum of 36 bytes. Database indexes would also not be as efficient than UUID/GUID/uniqueidentifier format type.",
+    "Validation rule": {
+      "The number of ...": "database fields with an innapropriate format",
+      "is inferior to or equals": "15%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Compress CSS, Javascript, HTML and SVG files",
+    "Identifiers": {
+      "GreenIT": "86",
+      "V2": "80",
+      "V3": "78",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Compress CSS stylesheets, JavaScript libraries, and HTML files to limit bandwidth use and improve loading time.\nGZIP algorithm is a server-side compression standard, compressing resources on-the-fly before sending them to the clients.\nMore recently, BROTLI has gained popularity thanks to enhanced performance, and is currently being supported by all major web browsers.",
+    "Example": "To use BROTLI in Apache, simply add the following configuration:\n\n```\n# compress html, text, xml, css, javascript\nAddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript\n\n# Or, compress certain ﬁle types in a specific directory:\n<Directory \"/your-directory\">\n    AddOutputFilterByType BROTLI_COMPRESS text/html\n</Directory>\n```\n\nThe NGINX web server handles GZIP compression by default, but only for HTML files.\nTo enable it for images and other resources, you can refer to this page: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04\n\nTo install and configure BROTLI on NGINX, see https://github.com/google/ngx_brotli.",
+    "Validation rule": {
+      "The number of ...": "uncompressed CSS, JavaScript, HTML, and SVG files",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Cache frequently accessed objects in Javascript",
+    "Identifiers": {
+      "GreenIT": "33",
+      "V2": "36",
+      "V3": "49",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "Accessing the DOM (Document Object Model) uses a lot of processor resources (CPU cycles). \nTherefore, when using the same DOM element several times in JavaScript, you should store its reference in a variable so that you don't need to go through the DOM again for that same element.",
+    "Examples": "Do not write :\n\n```\ndocument.getElementById('menu').property1 = 'foo'; document.getElementById('menu').property2 = 'bar';\n```\n\nwrite instead :\n\n```\nconst menu = document.getElementById('menu');\nmenu.property1 = 'foo';\nmenu.property2 = 'bar'\n```",
+    "Validation rule": {
+      "The number of ...": "constant (or non-volatile) data retrieved repeatedly without being cached",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer standard fonts",
+    "Identifiers": {
+      "GreenIT": "19",
+      "V2": "17",
+      "V3": "29",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "UX/UI Designer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Storage / Network / Queries"
+    },
+    "Description": "Use standard fonts that are already installed on the user's computer and do not need any additional downloads to save bandwidth and accelerate web pages loading. You can find a list of standard fonts at [https://systemfontstack.com/](https://systemfontstack.com/).\n\nIf however you need a specific font for your digital service, even if it is an API font (Google font, Adobe font, etc.), you must:\n\n['Host the font by yourself', 'Use faux-bold via the ```-webkit-text-stroke``` CSS property when possible', 'Prefer the use of variable fonts if you need more than one variant (ex: regular, bold, etc.)', 'Optimize the font by removing unnecessary characters (example: French sites only require latin characters, cyrillic alphabet can therefore be deleted)']\n\nYou should incorporate new glyphs directly into fonts if you have monochrome pictograms or illustrations (see rule 30: Prefer glyphs to images) and font usage rights allow it.",
+    "Example": "Here is a comparison chart of Oswald typeface font sizes:\n\n|        | Regular | Regular + Bold | Variable | Regular Latin | Latin Regular + Latin Bold | Variable Latin |\n|:------:|:-------:|:--------------:|:--------:|:-------------:|:--------------------------:|:--------------:|\n| Weight | 37.6kb  |     76.9kb     |   66kb   |     16kb      |           32.5kb           |       ?        ",
+    "Alternative solution": "Users can choose, through browser settings, to ask websites they visit to optimize the network requests. You can detect it with the `prefers-reduced-data` media query.\n\nIn the example below, `Montserrat` font will only be downloaded if users didn't set any personal settings. Otherwise, the `Arial` font will be used and `Montserrat` will not be downloaded.\n\n```\n@media (prefers-reduced-data: no-preference) {\n     @font-face {\n         font-family: Montserrat;\n         font-style: normal;\n         font-weight: 400;\n         src: url('fonts/montserrat-latin-regular.woff2');\n     }\n}\n\nbodysuit {\n   font-family: Montserrat, Arial;\n}\n```\n\nFor more information on the `prefers-reduced-data` media query: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)",
+    "Validation rule": {
+      "The number of ...": "downloaded fonts",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Encode audio files outside the CMS",
+    "Identifiers": {
+      "GreenIT": "96",
+      "V2": "60",
+      "V3": "60",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM / Network / Storage"
+    },
+    "Description": "Adapt and optimize audio files outside the websites. This method saves a lot of bandwidth and relieves CPU and RAM as web servers are not optimized for (re)encoding audio files.",
+    "Examples": "If an audio file added directly to the CMS weighs 7 MB, it is possible to save:\n\n['7 MB of bandwidth at the upload;', '100 KB when listening to the result file;', '6.9 MB of server hard disk storage.']",
+    "Validation rule": {
+      "The number of ...": "audio files encoded directly by the CMS",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Minimize repaints (appearance) and reflows (layout)",
+    "Identifiers": {
+      "GreenIT": "42",
+      "V2": "45",
+      "V3": "43",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "Repaint refers to DOM elements change of appearance, while reflow refers to change / recalculation of their position.\nBoth of these operations are resource-intensive, especially in terms of CPU cycles, it is therefore \nnecessary to avoid triggering them when possible.",
+    "Example": "Do not modify elements style properties (background color, border style, text color, size, etc.) to avoid repaints.\n\nLimit changes of properties like position, dimension, type of positioning, content, ( etc.) to avoid reflows. \nThis is particularly relevant for some HTML elements like tables, whose reflows might require up to three times more \ntime than other elements.\n\nFor more information :\nhttps://developers.google.com/speed/articles/reflow",
+    "Validation rule": {
+      "The number of ...": "modifications not affecting the layout and causing a repaint (ex: color, background, visibility)",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid redirects",
+    "Identifiers": {
+      "GreenIT": "45",
+      "V2": "97",
+      "V3": "95",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "6. Support / Maintenance",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network / Storage"
+    },
+    "Description": "Redirects slow response time while using unnecessary resources. Therefore, they should be avoided as much as possible. Redirects can occur at different places: HTML code, JavaScript code, HTTP server, and application server (PHP, etc.).",
+    "Example": "On the HTTP server level (Apache, in this case), redirects involve activating systematic URL rewriting via the .htaccess file:\n\n```\n<IfModule mod_alias.c>\n    Redirect permanent http://old_address.com http://new.address.com/\n</IfModule>\n```\n\nIt is preferable to manually replace static addresses embedded in web pages.",
+    "Validation rule": {
+      "The number of ...": "redirects",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Combine CSS and JavaScript files",
+    "Identifiers": {
+      "GreenIT": "89",
+      "V2": "81",
+      "V3": "79",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Queries"
+    },
+    "Description": "Combining CSS stylesheets and JavaScript libraries reduces the number of HTTP queries.",
+    "Examples": "\"Autoptimize\" plugin makes CSS files combining in WordPress easy and is available for free.\n\n\"webpack-merge-and-include-globally\" plugin simplifies the process of merging CSS and JavaScript files in Webpack.",
+    "Validation rule": {
+      "The number of ...": "non-combined CSS and JS files",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use CSS instead of images",
+    "Identifiers": {
+      "GreenIT": "11",
+      "V2": "26",
+      "V3": "23",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Use CSS properties instead of images. Style sheets are much smaller, especially when they are compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates many HTTP requests (one HTTP request for each image).",
+    "Example": "Rounded corners of elements should be implemented with CSS rather than images.\n\nPrefer writing:\n\n```\n#frame {\n     border-radius: 10px;\n}\n```\n\n```\n<div id=\"frame\">\n     <p>\n     Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n     </p>\n</div>\n```",
+    "Validation rule": {
+      "The number of ...": "images that could have been replaced by CSS",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Host resources (CSS/JS) on a cookie-free domain",
+    "Identifiers": {
+      "GreenIT": "73",
+      "V2": "96",
+      "V3": "94",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Images, CSS stylesheets, and JavaScript files should be hosted on cookie-free domains. \nThis prevents browsers from sending cookies for each resource when it's not needed. \nAlthough transferred with each HTTP request, cookies are useless for static content, as they are used as a link between \nuser browsers and distant application server through the identifiers contained in the text file. \nIt is therefore preferable to store this type of content on a specific domain name such as static.mydomain.com. ",
+    "Example": "Web leaders use a separate domain to serve static resources that do not require cookies. Yahoo!, for example, uses the yimg.com domain, YouTube uses ytimg.com, and Amazon uses images-amazon.com.",
+    "Validation rule": {
+      "The number of ...": "domains serving static resources WITH a cookie",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid blocking times caused by long running JavaScript processes",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "Web browsers have processes that turn code into web pages. They must perform several tasks before being able to display the page:\n\n['parsing the HTML script', 'building web pages structure and content (DOM)', 'executing pages CSS and JavaScript code.']\n\nHowever, executing JavaScript code can use terminals' processors up to more than 90%, blocking other processes or user interactions. This heavily uses the device, leading to two issues:\n\n['excessive resource use, directly impacting batteries recharging cycles', 'main thread blocking, which degrades users experience and can be correlated with processors power (especially on mobile devices)']\n\nThese two problems can lead users to renew their devices because of perceived obsolescence.\n\nTo avoid this, break up your JavaScript into small tasks executed at the required time and not beforehand.",
+    "Example": "Total Blocking Time (TBT) measures main Javascript thread activity long tasks total time. A Long Task is a process that lasts more than 50ms and monopolizes web browsers. It is necessary to ensure that the TBT is below 200 ms. Lighthouse or Web Page Test can be used as measurement tools.",
+    "Validation rule": {
+      "The number of ...": "tasks lasting more than 200 ms",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Only use double opt-in files",
+    "Identifiers": {
+      "GreenIT": "103",
+      "V2": "111",
+      "V3": "110",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "User/Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Processor / Network / Queries"
+    },
+    "Description": "Double opt-in is a marketing practice of ensuring prospects consent, usually via electronic agreement, by ticking a box; and then validating by sending confirmation mails to the indicated addresses. The address status becomes double opt-in when recipients have clicked on the provided link in the received message. This process validates adresses and verifies that the person who provided it is the owner. This double verification confirms prospects' commitment to receive the newsletters, suscribption, etc.\n\nIt is therefore recommended to use the double opt-in practice to significantly reduce:\n\n['the number of emails without real impact (and therefore bandwidth use);', 'SMTP server load when sending the email campaign;', 'server load when processing unsubscriptions.']",
+    "Example": "In the case of a telephone operator or a bank: give customers a choice among a catalog of products or services for which they agree to be solicited for.",
+    "Validation rule": {
+      "The number of ...": "opt-out contact files",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Reduce server logs as much as possible",
+    "Identifiers": {
+      "GreenIT": "82",
+      "V2": "99",
+      "V3": "103",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Storage"
+    },
+    "Description": "Server logs (web, application, database) can become very large. It is recommended to configure them. By adjusting the application's log level at the highest possible level (e.g. only information/warning/error) and by logging only relevant information, disk writes are avoided, the number of CPU cycles is reduced as well as storage space use.\n\nTo avoid disk saturation, it is also recommended to set up a retention time and log rotation based on the service operational needs.",
+    "Example": "The access logs of an Apache server can be configured as follows to exclude static resources and RSS feeds:\n\n```\nSetEnvIf Request_URI \"\\.(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$\" dontlog\nSetEnvIf Request_URI \"^/rss/\" dontlog\nCustomLog /var/log/apache/access.log combined env=!dontlog\n```",
+    "Validation rule": {
+      "The number of ...": "logs files without a maximum a retention time",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Set up an efficient sitemap",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "User/Device",
+      "Responsible": "SEO"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Sitemaps help facilitating websites pages and content indexation by search engines. Outdated sitemaps may contain irrelevant URL, referring to rarely visited and not very useful pages or content. Such situations may result in wrong redirections sending users to uninteresting web pages or even orphan pages via search engines meaning that users might waste computing resources.",
+    "Validation rule": {
+      "The number of ...": "sitemap orphan pages",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use performance-oriented application forks",
+    "Identifiers": {
+      "GreenIT": "4",
+      "V2": "5 3",
+      "V3": "1 6",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Datacenter",
+      "Responsible": "System administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "Open source software projects are often forked to improve performance. Performance gains generally imply less resource use. Therefore if an optimized fork already exists and offers sufficient functional and technical features for your projects, you should use it.",
+    "Example": [
+      "KeyDB should be rather preferred over Redis."
+    ],
+    "Validation rule": {
+      "The number of ...": "performance-oriented forks is greater than or equal to",
+      "is inferior or equals": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Validate pages with the W3C tools",
+    "Identifiers": {
+      "GreenIT": "8",
+      "V2": "15",
+      "V3": "31",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "5",
+      "Ecological impact": "2",
+      "Saved resources": "Processor"
+    },
+    "Description": "Ensure that the HTML code is valid, otherwise browsers will dynamically correct various elements to better display the problematic pages.\nThese dynamic corrections would lead to more resources consumption.",
+    "Example": "Use the W3C (World Wide Web Consortium) validator to verify that pages are valid and that HTML code has no flaw :\n\nhttps://validator.w3.org",
+    "Validation rule": {
+      "The number of ...": "critical errors",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Reduce DOM access via JavaScript",
+    "Identifiers": {
+      "GreenIT": "32",
+      "V2": "42",
+      "V3": "54",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Accessing the DOM (Document Object Model) via JavaScript is a heavy task that uses a lot of CPU cycles. Avoid these accesses as much as possible.\n\nTo do this, you can assign the node to variables that you will reuse during the application's life cycle. \nIt avoids re-traversing the tree again each time you manipulate the document.\n\nIt is also possible to use “Shadow DOM” type libraries, which optimize tree modifications with a batch system.",
+    "Examples": "To learn more, you can consult the W3C Shadow DOM project:\nhttps://w3c.github.io/webcomponents/spec/shadow/\nand the W3C recommendations to reduce access to the DOM via JavaScript:\nhttps://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum",
+    "Validation rule": {
+      "The number of ...": "accesses to HTML elements without going through a local variable",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use asynchronous servers",
+    "Identifiers": {
+      "GreenIT": "77",
+      "V2": "94",
+      "V3": "97",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Servers (web, application, etc.) such as NGINX, node.js, or Gwan are designed to use as few resources as possible. They do not have to create a process or a thread for each request thanks to their asynchronous mode of operation, avoiding resources use.\n\nWhile most web servers RAM consumption increases RAM as requests are made, asynchronous servers remain very stable.",
+    "Example": "NGINX is known to be more performant than Apache. It can serve 2.1 times more requests per second than the latter.\n\nTo go further:\n\nhttps://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan\nhttps://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use",
+    "Validation rule": {
+      "The number of ...": "synchronous application servers",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid modifications during DOM traversal",
+    "Identifiers": {
+      "GreenIT": "43",
+      "V2": "43",
+      "V3": "41",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "Modifying DOM (Document Object Model) elements while navigating through it can result in situations leading to greedy\nresource consumption, especially CPU cycles. Adding elements during DOM traversal might end up creating an \ninfinite loop which will consume a large amount of resources. This kind of modification should be avoided when possible.",
+    "Example": "Avoid :\n\n```\n<script>\n     // jQuery notation\n     $('a.extlink').each(function(el) {\n         $(el).attr('rel','external nofollow');\n     });\n</script>\n```",
+    "Validation rule": {
+      "The number of ...": "DOM element modifications performed when the same part of the DOM is traversed by JavaScript code",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Rely on managed services",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Processor / RAM / Storage"
+    },
+    "Description": "Cloud platforms are specialized in setting up resilient, scalable, efficient, secure, and shared infrastructures. They offer managed services based on these infrastructures such as:\n\n['Multimedia content storage', 'Data persistence via reference databases (e.g., Postgresql)', 'Storage and messaging services (e.g., Kafka)', 'Containers management (e.g., Kubernetes)']\n\nIt is preferable to use these managed services unless there is a strong expertise in the team.\nIt will generally be very difficult to achieve better efficiency than the provider's implementation with a custom setup.",
+    "Validation rule": {
+      "The number of ...": "\"backend\" applications not relying on a managed service",
+      "is equal to or less than": "1"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use an asynchronous process when possible",
+    "Identifiers": {
+      "GreenIT": "112",
+      "V2": "8",
+      "V3": "8",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "Architect / Developper"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Ressources saved": "RAM / Network / Requests"
+    },
+    "Description": "If the user's actions imply a long running process, make it asynchronous if possible.\n\nThis way, the user can launch it and check back later if it's finished and ok, without waiting for the completion on his device. \nThis user can be notified by an email with a link, or a dashboard of ongoing and finished processes can be provided.\n\nThis approach makes the user experience more agreeable and allow several backend optimizations: \n\n['if the architecture is divided this way, it makes it possible to free the presentation servers, allowing then serve more\\nrequests and improve perceived performance.', 'it becomes possible to group the processes in batches, often more efficient in resources than synchronous processing on the fly.', 'it makes it easier to smooth the load of the servers responsible for the processing, which allows better pooling of servers\\nand consequently fewer of them.']",
+    "Example": "In the case of an online office document conversion service, the user can upload his files all at once and then \nbe notified by e-mail when the processing is complete. To optimize the process, all the files can be grouped and \ncompressed in an archive.",
+    "Validation rule": {
+      "The number of ...": "synchronous processes longer than one minute",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer a custom solution over a CMS ",
+    "Identifiers": {
+      "GreenIT": "2",
+      "V2": "12",
+      "V3": "11",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Architect / Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Ressources saved": "Processor / RAM / Network"
+    },
+    "Description": "Use a framework or a custom solution to have a more liberty to optimize the digital service.\n\nTo achieve their flexibility, CMS are indeed more resource intensive than simple, custom solutions.\n\nFor instance, to manage their plugins, CMS use hook system, which is generally based on a function naming convention. \nTesting for the existence of new functions uses resources, whereas custom developments don't have to check for new features.\n\nUsing too many extensions can slow down the site.",
+    "Validation rule": {
+      "The number of ...": "extensions of a site using a CMS",
+      "is equal to or less than": "3"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Add Expires or Cache-Control headers",
+    "Identifiers": {
+      "GreenIT": "78",
+      "V2": "105",
+      "V3": "101",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / Network / RAM / Queries"
+    },
+    "Description": "The Expires and Cache-Control headers define the time during which browsers should keep resources in their cache. Therefore, it is necessary to add and configure them correctly for CSS stylesheets, JavaScript files, and images.\n\nIdeally, these elements lifespan should be as long as possible so that browsers do not have to request them from the server again. This saves HTTP requests, bandwidth, and CPU cycles from server side.",
+    "Example": "Here is an example of how to configure Expires and Cache-Control headers for the Apache web server:\n\n```\n# BEGIN Cache-Control Headers\n<IfModule mod_headers.c>\n    <FilesMatch \"\\\\.(ico|jpe?g|png|gif|swf|css|gz)$\">\n        Header set Cache-Control\"max-age=2592000, public\"\n    </FilesMatch>\n    <FilesMatch \"\\\\.(html|htm)$\">\n        Header set Cache-Control\"max-age=7200, public\"\n    </FilesMatch>\n</IfModule>\n# END Cache-Control Headers\n```",
+    "Validation rule": {
+      "The number of ...": "missing Expires or Cache-Control headers",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Ensure compatibility with older devices and software configurations",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Electronic waste"
+    },
+    "Description": "It is necessary to ensure the website's compatibility with the oldest hardware and software that the users may still use. Web pages must remain available on the most restrictive configurations: no broken layouts, inactive buttons, errors displayed, or any other problem that prevents reading or navigation.\n\nThe most restrictive configurations include:\n\n['Oldest browsers versions, or those who trigger most compatibility problems.', 'Oldest OS versions.', 'Least powerful devices that the users have: smartphones, computers, or others.']\n\nConfiguration choices will depend on the state of the web at the solution implementation time, as well as the project's context: different audiences will bring different constraints.\n\nThis configuration choice can be in part determined with available web traffic statistics. However, take the survivor bias in consideration: users who cannot use the site at all will not appear in these statistics. The best way is to conduct a field study of users and their equipment.",
+    "Example": "For various reasons (devices that are too old to be updated, lack of administrator access to the system, or ignorance of the existing alternatives), users are stuck on Internet Explorer. Sites developed for modern browsers, using, for example, a lot of flexbox or css grid properties, will not correctly display content on this browser.",
+    "Validation rule": {
+      "The number of ...": "untested pages on the most restrictive configurations in the project context",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Write efficient CSS selectors",
+    "Identifiers": {
+      "GreenIT": "13",
+      "V2": "27",
+      "V3": "24",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Processor"
+    },
+    "Description": "Use selectors based on IDs or classes as they will be filtered more quickly, thus saving CPU cycles on the associated device.",
+    "Example": "Do not write :\n\n```\ntreeitem[mailfolder=\"true\"] > treerow > treecell {…}\n```\n\ninstead write :\n\n```\n.treecell-mailfolder {…}\n```\n\nDo not write :\n\n```\ntreehead > treerow > treecell {…}\n```\n\ninstead write :\n\n```\n.treecell-header {…}\n```",
+    "Validation rule": {
+      "The number of ...": "CSS selectors that do not use IDs, classes, or attributes",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use a HTTP cache",
+    "Identifiers": {
+      "GreenIT": "72",
+      "V2": "103",
+      "V3": "99",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "5",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "Reverse proxies such as Varnish, Squid, or NGINX are optimized to quickly serve content (HTML pages, images, etc.) while consuming as few CPU cycles as possible. By avoiding unnecessary application server requests, reverse proxies enable the use of smaller infrastructures.",
+    "Example": "The use of a specialized reverse proxy like Varnish drastically reduces required time to serve dynamic pages while increasing the capacity of the CMS (Drupal, in this case) to deliver a large number of them at the same time. It is also observed that a general-purpose cache like APC is not appropriate (source: Asymptotix).",
+    "Validation rule": {
+      "The number of ...": "HTTP headers without identified cache",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Store data in the cloud",
+    "Identifiers": {
+      "GreenIT": "71",
+      "V2": "92",
+      "V3": "93",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "3",
+      "Ecological impact": "2",
+      "Saved resources": "Storage"
+    },
+    "Description": "Cloud computing solutions might be useful in order to optimize the required storage space for websites' or online services' resources. This way, while having an elastic solution, resources aren't unnecessarily monopolized. The other advantage is to host static resources on cookie-free domains. This way each resource transferred to the browser won't require cookie transportation (see rule #96).\n\nThis method is useful for images and other static resources. As we should not multiply domains (see best practice #55), the simplest way is to group all static resources on a single online storage service.",
+    "Example": "For a video contest based on testimonials, it is more efficient to use Amazon's S3 storage service than to add new hard drives to existing servers.",
+    "Validation rule": {
+      "The number of ...": "resources, website data, that are not stored on a cloud computing solution",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Avoid autocomplete in favor of other techniques to facilitate user input",
+    "Identifiers": {
+      "GreenIT": "204",
+      "V2": "4",
+      "V3": "4",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "1. Specification",
+      "Tiers": "User / Device",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Ressources saved": "Requests"
+    },
+    "Description": "Autocomplete is a popular feature that suggests search-related results when the user is typing.\nFor example, a site that allows you to find a route will suggest \"Paris\", \"Lyon Part-Dieu\" and \"Paray le Monial\" when the user types \"Par\".\n\nThe implementation of autocompletion usually consists in sending a request to the server for each character entered in order to retrieve the corresponding results.\nThis can result in many requests being sent and consume a lot of resources.\n\nIf possible, this functionality should be replaced by assisted input.\nThis consists of guiding the user through a set of information and advice:\n\n['Presentation of the expected format in grey in the input field (`placeholder`)', 'Text explaining the expected format', 'Reaction of the interface with an error message or a change of color and textual help when the input is incorrect', 'etc.']\n\nInteractions related to assisted input are managed locally, which reduces exchanges with the server.\n\nFor the example of searching for a route and entering a city, it is possible, in case of ambiguity, to propose\nthe different results after submitting the form. The user enters a string, for example \"Lens\",\nsubmits the form, and is then offered different options: \"Lens (France)\", \"Lens (Belgium)\",\n\"Loison under Lens\".\n\nIf the use of autocompletion cannot be avoided, it is possible to minimize the number of requests with simple optimizations:\n\n['Add a delay of a few tenths of a second between the addition of a character and the request: this allows not to trigger a query if the user has not finished typing.', 'Limit the number of results displayed, prioritized by a score of relevance', 'Set a minimum number of characters before trying to complete.', 'If the size of the database allows it, include it in the html code or in the `local storage` and perform client-side autocompletion.', 'Cache search results with the string entered as the key to reduce the load on the database.', 'Contextualize the results to limit their number.']",
+    "Example": "Potential gain: the number of requests might be reduced by a factor of 10.",
+    "Alternative solution": "If the data that is offered to the user is quite small, you can include it directly in your HTML code and use \nthe native [datalist](https://developer.mozilla.org/fr/docs/ Web/HTML/Element/datalist).\n\nThis system will offer native and client side autocompletion mechanism.\n\n```\n<label for=\"ice-cream-choice\">Choose a flavor:</label>\n<input list=\"ice-cream-flavors\" id=\"ice-cream-choice\" name=\"ice-cream-choice\" />\n\n<datalist id=\"ice-cream-flavors\">\n    <option value=\"Chocolate\">\n    <option value=\"Coconut\">\n    <option value=\"Mint\">\n    <option value=\"Strawberry\">\n    <option value=\"Vanilla\">\n</datalist>\n```",
+    "Validation rule": {
+      "The number of ...": "fields with autocomplete",
+      "is equal to or less than": "20%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize vector images",
+    "Identifiers": {
+      "GreenIT": "1050",
+      "V2": "22",
+      "V3": "36",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "5. Use",
+      "Tiers": "User/Device",
+      "Responsible": "User"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "4",
+      "Ecological impact": "4",
+      "Saved resources": "Network"
+    },
+    "Description": "Modern browsers are all compatible with the SVG (Scalable Vector Graphics) image format,\nwhich is based on a set of vectors described in XML. SVG images have two undeniable advantages: on the one hand,\nthey can be reduced and enlarged infinitely without quality loss; on the other hand, they are\nusually lighter than bitmap images.\n\nHowever, most SVG images contain a lot of metadata that was needed to create them such as layer information, comments, etc., which are essential in the image editing process,\nbut useless for displaying it. Deleting them will result in reducing the total size of your files.\nThere are many minification and optimization tools available, such as Compressor.io, SVG Cleaner, or SVGO.\n\nGzip compression rate depends on image complexity, but remains important as it is about compressing text:\nin general, 75% to 80% ratios can be reached.",
+    "Examples": "Potential gain: up to 75% less KB.\n\nWe tested SVGO on a 1KB SVG file. Its size has been reduced by 36%, dropping from 1101 to 700 bytes. File size further decreased to 498 bytes by compressing this file via gzip before its transfer, less than half (45%) of its initial size, without any display quality loss.",
+    "Validation rule": {
+      "The number of ...": "non-optimized images",
+      "is equal to or less than": "0%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Prefer HSTS Preload list over 301 redirects",
+    "Identifiers": {
+      "GreenIT": "1060",
+      "V2": "",
+      "V3": "84",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "HSTS allow to notify any browser, using a cached HTTP response header, that the domain must only be accessed via HTTPS.\n\nThis allows subsequent requests on the same domain to exclusively use the HTTPS protocol, avoiding numerous 301 redirects. \nHowever, the first call requires an HTTP response (potentially not safe) with an STS (Strict-Transport-Security) header. In addition to enabling HSTS, \nit is possible to register in a static list updated on all recent browsers (https://hstspreload.org) to fix this issue \nand force browsers to contact the whole domain with HTTPS.\n\nNote that it is quick to register domains on htstpreload.org and affects the whole domain (including subdomains). \nEnsure that none of your subdomains would be negatively affected by HTTPS usage before making this registration, \nwhich can be relatively slow to cancel.",
+    "Example": "Configuration example \n\n```\nStrict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload\n```",
+    "Validation rule": {
+      "The number of ...": "non activation of HSTS",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Have an end of life strategy for the website",
+    "Identifiers": {
+      "GreenIT": "1030",
+      "V2": "",
+      "V3": "85",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "7. End-of-life",
+      "Tiers": "Datacenter",
+      "Responsible": "PO"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network / Queries / Storage"
+    },
+    "Description": "Most environments (POC - proof of concept, testing, acceptance, etc.) eventually end up being obsolete and no longer needed. \nAbout 25% of physical servers and 20% of virtual servers (VMs) become zombies, meaning they use resources while waiting to be used. \nThis represents avoidable environmental and economic impacts.\n\nImplementing an end-of-life plan can prevent this kind of situation.\n\nA simple end-of-life plan is making someone responsible to decide when to stop the service. Their role would be to monitor this service's activity until they decide to stop it. \nAnother method is to write an end-of-life scenario (expiration date, etc.) and allocate the appropriate budget from the start.\nA third option would be to extend the service's lifespan.\n\nStopping a service involves:\n\n['Releasing resources: decommissioning the service, its dependencies, tools used by the development team (e.g., Teams channel).', 'Deleting, archiving, or otherwise managing data (including document management and bug tracking systems).', 'Reallocating installations, equipments, and other project resources (including source code).', \"Valuing skills acquired during the project's lifetime.\"]",
+    "Example": "Several end-of-life scenarios are possible when migrating data or applications to a cloud environment:\n\n['Copying and pasting the existing data or application to the cloud through decommissioning the old environment.', 'Refactoring with architecture and code changes, which may question the existing environment. For example, challenge the unused functionalities kept for ulterior hypothetical use...']",
+    "Validation rule": {
+      "The number of ...": "websites with no end-of-life plan",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Cache Ajax responses",
+    "Identifiers": {
+      "GreenIT": "91",
+      "V2": "107",
+      "V3": "102",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "User/Terminal",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "4",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "Ajax responses that will remain unchanged in the near future should not be requested from the server again. Caching them can save bandwidth.",
+    "Example": "If an Ajax request returns a list of city names, contact names, or any non-computed element, these responses should be cached on the client side to avoid generating other requests to the server.",
+    "Validation rule": {
+      "The number of ...": "non-cached Ajax responses",
+      "is equal to or less than": "10%"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Optimize database queries",
+    "Identifiers": {
+      "GreenIT": "59",
+      "V2": "74",
+      "V3": "75",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Network"
+    },
+    "Description": "Databases are typically essential application components. As many queries are used to retrieve and store data, \nthey end up having a significant impact on the solution's resource use when executed frequently.\n\nWith this in mind, it is important to pay attention for these queries and ensure, at least for the most expensive ones that they are well optimized.\n\nThe most common optimization tips are:\n\n[\"Use less data and limit it to the bare minimum. For example, the `LIMIT` clause limits the number of result rows in relational databases. When possible, using the 'LIMIT' clause reduces the amount of transferred data. Performance gains will be even more significant if records contain a large number of voluminous fields.\", 'Only use necessary fields in the tables or documents in order to avoid needlessly transferring data that will not be used and to avoid using database server and application server resources to manipulate them.', 'Add indexes on fields used as keys in your model. Adding them can completely change queries performance. Be careful: adding indexes makes writing longer as it must be updated for each added, modified or deleted document. This must be done if there are more reads than writes or if reads are particularly expensive.', 'Use database management system tools to analyze queries in order to identify improvement areas, such as EXPLAIN for RDBMS.', 'Cache the most expensive queries results as well as data that changes little or never (reference data).', 'Optionally, modifying data models to be able to access information more easily without joins (denormalization)']",
+    "Example": "Here is an example, with the `LIMIT` clause:\n\nIf you only want to display the first 25 records from a table containing people's last and first names, you should replace when selecting:\n\n```\nSELECT firstname, lastname FROM people\n```\n\nby :\n\n```\nSELECT firstname, lastname FROM people LIMIT 0, 25\n```\n\nIndex creation example:\n\n```\nCREATE INDEX idx_people_lastname_firstname ON people(lastname, firstname)\n```\n\nFollowing this command, the database management system will be able to find the `persons` rows more quickly from the information (name, first name).",
+    "Validation rule": {
+      "The number of ...": "identified poorly performing queries that are not optimized",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Install the bare minimum on the servers",
+    "Identifiers": {
+      "GreenIT": "74",
+      "V2": "89",
+      "V3": "91",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "4",
+      "Ecological impact": "3",
+      "Saved resources": "Processor / RAM / Storage"
+    },
+    "Description": "Uninstall all non-essential services that are not required to run your website. This measure will necessarily remove daemons (agents and services running permanently in memory) which use resources, especially CPU cycles and RAM.",
+    "Example": "Prefer \"manual\" servers installation (LAMP + CMS, for example) rather than cPanel or Plesk overlay distributions. If administration overlay is necessary, lightweight solutions like Webmin are preferred.",
+    "Validation rule": {
+      "The number of ...": "non-essential services running on the operating system",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Reduce the number of domains serving resources",
+    "Identifiers": {
+      "GreenIT": "170",
+      "V2": "55",
+      "V3": "18",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Queries"
+    },
+    "Description": "When a website or online service hosts web pages components on multiple domains, HTTP connection must be established with each of these domains by the browser. Once the HTML page is received,\nthe browser fetch resources while going through the DOM (Document Object Model).\nSome resources are essential for the web page to work. If they are hosted on unresponsive domains, the page can become slower. When possible, all resources should be grouped together on a single domain.\n\nThe only exception to this rule would be the hosting of static resources (stylesheets, images, etc.) on a dedicated domain\nto avoid the upload of one or more cookies for each HTTP GET by the browser. Response time will decrease as well as unnecessarily consumed bandwidth.",
+    "Example": "For an institutional website with high traffic, two subdomains should be preferred:\n\n['application server on www.domain.tld ', '“cookie-less” media server on media.domain.tld']\n\nThis reduces the number of domains and avoids needlessly transporting cookies with each HTTP GET request on static resources.",
+    "Validation rule": {
+      "The number of ...": "domains serving resources",
+      "is equal to or less than": "5"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use \"Request collapsing\" as much as possible",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Datacenter",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "2",
+      "Implementation difficulty": "2",
+      "Ecological impact": "2",
+      "Saved resources": "Network / Queries"
+    },
+    "Description": "\"Request collapsing\" is an application pattern that limits the number of remote calls by grouping multiple requests into a single one. It is appropriate to retrieve data belonging to the same business domain through a third-party service.\n\nIt helps reduce:\n\n['network load,', 'high network latency impact,', 'per-request licensing costs']",
+    "Example": "Retrieving customers' orders from their client accounts requires information about the ordered product, the billing address and the payment status. It is better for the order management service to allow retrieving these three sets of data in a single call instead of sending three separate requests to the order management service.",
+    "Validation rule": {
+      "The number of ...": "requests sent to retrieve data belonging to the same business domain through a third-party service",
+      "is equal to or less than": "2"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Cache frequently used calculated data",
+    "Identifiers": {
+      "GreenIT": "47",
+      "V2": "62",
+      "V3": "64",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "2. Design",
+      "Tiers": "Network",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "4",
+      "Implementation difficulty": "3",
+      "Ecological impact": "4",
+      "Saved resources": "Processor / RAM"
+    },
+    "Description": "When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to avoid repeating these operations. \nKey-value type cache systems are designed to store this data. As they are generally stored entirely in RAM, they generate significant CPU cycles savings when the calculated data is used frequently..",
+    "Examples": "The number of contents (e.g., products) belonging to a category is calculated while it is not updated very frequently. Caching each category's number of contents saves CPU cycles.\n\nOAuth2 access tokens have expiration time. Caching tokens and their expiration time avoids unnecessary calls to the authorization server to revalidate them.",
+    "Validation rule": {
+      "The number of ...": "non-volatile data that requires computation and accessed multiple times, but not stored in a cache system",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Adapt quality of service and availability level",
+    "Identifiers": {
+      "GreenIT": "501",
+      "V2": "86",
+      "V3": "88",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "4. Production",
+      "Tiers": "Datacenter",
+      "Responsible": "System Administrator"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "4",
+      "Saved resources": "Power Consumption"
+    },
+    "Description": "Quality of service (QoS) and service level agreement (SLA) must be determined with the users of the digital service.\nFor example, it is unnecessary to host services in a very high availability data center (Tier IV) if users accept an \navailability rate lower or equal to 99% for a non-critical service. With equivalent energy efficiency, the higher the \navailability of the data center hosting the website or online service, the higher its overall environmental footprint. \nNotably because everything is redundant and active: two power supply chains, two cold production and distribution chains, etc.\nIt is essential to avoid overqualification.\nIt is recommended to apply a quality of service based on the sufficient availability level instead.",
+    "Example": "Despite having hundreds of millions of users, Web giants do not offer very high availability level of Tier IV type. \nData is redundant on at least one other server in another data center. If a server fails, users will be automatically routed to the backup server. \nThis action may take a few seconds, which is acceptable and almost imperceptible for end-users.",
+    "Validation rule": {
+      "The number of ...": "increases in the availability level while the current level is sufficient",
+      "is equal to or less than": "0"
+    },
+    "source": "cnumr"
+  },
+  {
+    "title": "Use CSS Containment",
+    "Identifiers": {
+      "GreenIT": "",
+      "V2": "",
+      "V3": "",
+      "V4": ""
+    },
+    "Categories": {
+      "Life cycle": "3. Implementation",
+      "Tiers": "User/Device",
+      "Responsible": "Software Architect/Developer"
+    },
+    "Indications": {
+      "Priority": "3",
+      "Implementation difficulty": "2",
+      "Ecological impact": "4",
+      "Saved resources": "Processor"
+    },
+    "Description": "CSS containment indicates that a node and its contents are, as much as possible, independent of the rest of the page tree.\n\nDepending on the independence type (`strict`, `content`, `size`, `layout`, `style` and/or `paint`) set by the `contain` property, browsers:\n\n['recalculate renderings (positions, formatting, layouts, and/or display) for the independent node only, saving the need to recompute for the entire page', 'do not render independent nodes content outside the visible area']",
+    "Examples": [
+      "A complex DOM architecture whose NODE content is modified at some point"
+    ],
+    "Validation rule": {
+      "The number of ...": "non-isolated elements",
+      "is equal to or less than": "20%"
+    },
+    "source": "cnumr"
+  }
+]

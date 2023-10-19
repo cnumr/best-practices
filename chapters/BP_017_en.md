@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  113    | 54  | 17  |      |
+| GreenIT |  V2   |  V3   |  V4   |
+| :-----: | :---: | :---: | :---: |
+|   113   |  54   |  17   |       |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |   Tiers    |         Responsible          |
+| :---------------: | :--------: | :--------------------------: |
 | 3. Implementation | Datacenter | Software Architect/Developer |
 
-### Indicators
+### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor / RAM / Storage / Network  |
+|           Saved resources           |
+| :---------------------------------: |
+| Processor / RAM / Storage / Network |
 
 ### Description
 
@@ -41,6 +41,6 @@ In the case of UUID identifiers storage, textual storage will not be appropriate
 
 ### Validation rule
 
-| The number of ...                            | is inferior to or equals   |  
-|----------------------------------------------|:-------------------------:|
-| database fields with an innapropriate format | 15%  |
+| The number of ...                            | is inferior to or equals |
+| -------------------------------------------- | :----------------------: |
+| database fields with an innapropriate format |           15%            |
