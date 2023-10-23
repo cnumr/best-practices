@@ -1,4 +1,4 @@
-## Supprimer tous les warning et toutes les notices
+## Supprimer tous les warnings et toutes les notices
 
 ### Identifiants
 
