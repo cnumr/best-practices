@@ -45,4 +45,4 @@ Lors d'une migration de données ou d'applications vers un environnement cloud, 
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de site sans plan de fin de vie | 0  |
+|  de sites sans plan de fin de vie | 0  |
