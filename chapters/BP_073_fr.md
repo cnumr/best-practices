@@ -39,7 +39,7 @@ Ceci dit, chaque fois que l’application peut éviter un accès à la base de d
 
 HikariCP est un pool de connexions JDBC solide et performant. Il est intégré dans SpringBoot.
 
-Dans les cas où il n'y a pas de pool de connexion, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.
+Dans les cas où il n'y a pas de pool de connexions, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.
 
 
 ### Principe de validation
