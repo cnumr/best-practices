@@ -24,7 +24,7 @@
 
 ### Description
 
-Les systèmes de gestions de base données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données.
+Les systèmes de gestion de base de données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données.
 Dans le cas de traitements avec une logique plus ou moins complexe, il est déconseillé de récupérer les données "brutes" et de réaliser toutes les opérations de calcul, de transformation ou encore d'agrégation côté serveur backend voire frontend.
 
 Ces traitements doivent plutôt être réalisés au plus près de la donnée afin de:
