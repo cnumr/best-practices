@@ -26,7 +26,7 @@
 
 Lorsqu’un élément du DOM (Document Object Model) doit être modifié par plusieurs propriétés, chaque changement de style ou de contenu va générer un repaint ou un reﬂow. Aussi est-il généralement plus économe de :
  - rendre l’élément invisible (passer la propriété display à none) (1 reﬂow) ;
- - modifier toutes les propriétés de l’élément et rendre l’élément à nou-veau visible (1 reﬂow).
+ - modifier toutes les propriétés de l’élément et rendre l’élément à nouveau visible (1 reﬂow).
 
 Soit 2 reﬂow au maximum.
 
