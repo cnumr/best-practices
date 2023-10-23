@@ -24,7 +24,7 @@
 
 ### Description
 
-Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger. 
+Préférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger. 
 On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standards sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par exemple.
 
 Cependant si vous avez besoin d'une police particulière pour votre service numérique, même si c'est une Api font (google font, adobe font, etc.), vous devez :
