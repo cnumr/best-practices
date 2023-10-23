@@ -47,4 +47,4 @@ leurs indicateurs (PUE / CUE / WUE...). C'est le cas de :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'hébergeurs dont le PUE supérieur à 1,5  |  0 |
+| d'hébergeurs dont le PUE est supérieur à 1,5  |  0 |
