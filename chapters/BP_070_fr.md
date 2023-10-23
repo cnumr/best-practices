@@ -52,4 +52,4 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de warning et notice en production | 0  |
+| de warnings et notices en production | 0  |
