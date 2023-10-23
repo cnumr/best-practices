@@ -36,7 +36,7 @@ Procéder comme suit :
 ```javascript
 var elem = document.getElementById('foo'); elem.style.display ='none'; // Génère 1 reﬂow
 elem.style.width = '10em';
-elem.style.height ='auto';
+elem.style.height = 'auto';
 // ... autres changements ...
 elem.style.display ='block'; // Génère 1 reﬂow
 ```
