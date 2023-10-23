@@ -39,7 +39,7 @@ qu'une image `.jpeg` ou qu'une image `.png`. Une image `.avif` sera jusqu'à 20%
 qu'une image `.jepg`.
 
 N'oubliez pas de faire attention à la prise en charge de ces formats d'image sur les navigateurs. Une image `.webp`
-ne sera pas reconnue par un navigateur ancien, et ne s'affichera pas. Pour pallier à cette problématique, il est possible de 
+ne sera pas reconnue par un navigateur ancien, et ne s'affichera pas. Pour pallier cette problématique, il est possible de 
 fournir au navigateur plusieurs formats pour la même image. 
 Certains modules coté serveur (comme le [modPageSpeed](https://www.modpagespeed.com/) de google, disponible pour Apache et NGINX) 
 permettent même de fournir l'image idéale en rapport au navigateur appelant le serveur.
