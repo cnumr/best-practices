@@ -38,7 +38,7 @@ Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, so
 
 ![img_1.png](img_1.png)
 
-Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenant que les portions réellement
+Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenient que les portions réellement
 utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
 
 ### Principe de validation
