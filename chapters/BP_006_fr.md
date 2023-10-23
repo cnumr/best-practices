@@ -49,4 +49,4 @@ Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'acc�
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de conception ne s'appuyant pas sur une approche "mobile first"  |  1 |
+| de conceptions ne s'appuyant pas sur une approche "mobile first"  |  1 |
