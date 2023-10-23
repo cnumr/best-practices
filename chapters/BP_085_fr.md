@@ -25,7 +25,7 @@
 ### Description
 La plupart des environnements (POC - proof of concept, tests, recette, …) finissent par tomber en désuétude et ne sont plus nécessaires. Environ 25 % des serveurs physiques et 20 % des serveurs virtuels (VM) sont des zombies. C’est-à-dire que des serveurs consomment en attendant qu’on les utilise. Ils constituent autant d’impacts environnementaux et économiques évitables.
 
-Réaliser une analyse de fin vie évite cette situation.
+Réaliser une analyse de fin de vie évite cette situation.
 
 Un plan de fin de vie simple consiste à nommer la personne qui décide de l’arrêt du service. Son rôle sera alors de monitorer son activité puis de l’arrêter. Une autre approche fixe le scénario de fin de vie (date de péremption…) et commissionne le budget adéquate dès la conception. Au lieu d’arrêter un service, une troisième piste consiste à allonger sa durée de vie.
 
