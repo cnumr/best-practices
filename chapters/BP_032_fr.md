@@ -53,4 +53,4 @@ mais plutôt :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'URL intégrant une quantité et / ou un nombre significatif de code CSS / Javascript (inline)   | 2  |
+| d'URLs intégrant une quantité et / ou un nombre significatif de code CSS / Javascript (inline)   | 2  |
