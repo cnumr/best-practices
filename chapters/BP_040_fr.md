@@ -1,4 +1,4 @@
-## N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS
+## N'utilisez que les portions indispensables des bibliothèques JavaScript et frameworks CSS
 
 ### Identifiants
 
@@ -45,4 +45,4 @@ utilisées par le site, ce qui réduit le poids des bibliothèques et les ressou
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de librairies dont des portions non indispensables sont utilisées  | 1  |
+| de bibliothèques dont des portions non indispensables sont utilisées  | 1  |
