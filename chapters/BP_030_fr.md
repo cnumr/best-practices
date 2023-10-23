@@ -1,4 +1,4 @@
-## Préférer les glyphs aux images
+## Préférer les glyphes aux images
 
 ### Identifiants
 
