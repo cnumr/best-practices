@@ -30,7 +30,7 @@ L’intérêt du stockage local est double. D’une part, on évite les allers-r
 D’autre part, comme les données sont locales, il est plus facile et plus rapide de les manipuler au sein de l’interface.
 
 Le gain potentiel est la réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique),
-des serveurs HTTP jusqu’aux serveurs de base données.
+des serveurs HTTP jusqu’aux serveurs de base de données.
 
 ### Principe de validation
 
