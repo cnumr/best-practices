@@ -41,4 +41,4 @@ Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de cache non activé |  0 |
+|  de caches non activés |  0 |
