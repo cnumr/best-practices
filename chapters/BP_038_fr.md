@@ -31,7 +31,7 @@ Il est même envisageable de ne pas inclure ces parties dans l'appel HTTP de la 
 
 ### Exemple
 
-Les sites d’actualité utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
+Les sites d’actualités utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
 d’être mises à jour rapidement (flash d’informations, données météo, cours de la Bourse, résultats sportifs, etc.).
 
 ### Principe de validation
