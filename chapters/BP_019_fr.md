@@ -39,7 +39,7 @@ Les réseaux sociaux possèdent tous une URL qui permet à leurs membres de part
 On peut donc facilement ajouter un bouton qui ouvre une pop-up de partage comme le font les boutons officiels, par exemple avec le code suivant :
 
 ```html
-<button type = "button" onclick = "window. open('https://www.facebook.com/ sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
+<button type = "button" onclick = "window.open('https://www.facebook.com/ sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
     Je partage cette page sur Facebook
 </button>
 ```
