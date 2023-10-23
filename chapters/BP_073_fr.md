@@ -25,7 +25,7 @@
 ### Description
 Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
 *	Allocation de mémoire et I/O disque pour les buffers,
-*	Aller-retours réseaux pour le protocole de connexion,
+*	Allers-retours réseaux pour le protocole de connexion,
 *	Coût CPU induit.
 
 Exemple :  pour Oracle, plusieurs aller-retours sont nécessaires (validation des credentials, information sur le driver, négociation de la taille des paquets optimale, ...).
