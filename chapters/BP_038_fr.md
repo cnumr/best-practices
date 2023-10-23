@@ -38,4 +38,4 @@ d’être mises à jour rapidement (flash d’informations, données météo, co
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de zones de contenu pouvant être mis à jour partiellement mais qui ne le sont pas  | 0%  |
+| de zones de contenus pouvant être mises à jour partiellement mais qui ne le sont pas  | 0%  |
