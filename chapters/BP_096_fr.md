@@ -24,9 +24,9 @@
 
 ### Description
 
-Les pages d'erreurs (40x, 50x) doivent être les plus légères possibles, et même idéalement inexistantes. En effet, lorsque le navigateur demande une ressource qui n’existe pas (image, feuille de styles CSS, fichier JavaScript, etc.) ou que le serveur renvoie une erreur, la page d'erreurs renvoyée peut être plus lourde que la ressource ou la page demandée.
+Les pages d'erreurs (40x, 50x) doivent être les plus légères possibles, et même idéalement inexistantes. En effet, lorsque le navigateur demande une ressource qui n’existe pas (image, feuille de styles CSS, fichier JavaScript, etc.) ou que le serveur renvoie une erreur, la page d'erreur renvoyée peut être plus lourde que la ressource ou la page demandée.
 
-De plus, certains CMS exécutent leur routine de recherche de contenus (dans la base de données) pour tenter de trouver une ressource demandée. Par conséquent, du code serveur est exécuté, le serveur de base de données est sollicité, et la génération dynamique de la page HTML est exécutée. Tout ce processus aboutit à un gaspillage de cycles CPU, de mémoire vive et de bande passante.
+De plus, certains CMS exécutent leur routine de recherche de contenu (dans la base de données) pour tenter de trouver une ressource demandée. Par conséquent, du code serveur est exécuté, le serveur de base de données est sollicité, et la génération dynamique de la page HTML est exécutée. Tout ce processus aboutit à un gaspillage de cycles CPU, de mémoire vive et de bande passante.
 
 ### Exemple
 
