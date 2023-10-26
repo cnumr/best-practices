@@ -24,9 +24,7 @@
 
 ### Description
 
-By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, event if the user do not display them,
-for instance if they are outside the viewport. To avoid this, the lazy loading technique can be used : elements with this 
-attribute will be loaded only when they become visible on the screen.
+By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, even when users do not display them, for instance if they are outside the viewport. To avoid this, the lazy loading technique can be used: elements with this attribute will be loaded only when they become visible on the screen.
 
 It is possible to add a `loading` attribute to images and iframes in HTML so that the browser will only download images 
 that are displayed on the screen. However, this attribute is very recent: it will not work on older browser versions. 

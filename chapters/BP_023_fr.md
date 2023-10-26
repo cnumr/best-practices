@@ -31,7 +31,7 @@ contre un grand nombre si l’on emploie beaucoup d’images
 
 ### Exemple
 
-Les coins arrondis des cases doivent être gérés en CSS plutôt qu’avec des images.
+Les coins arrondis des éléments doivent être gérés en CSS plutôt qu’avec des images.
 
 Préférer l’écriture :
 ```css

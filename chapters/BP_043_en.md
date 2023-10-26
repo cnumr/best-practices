@@ -42,6 +42,6 @@ https://developers.google.com/speed/articles/reflow
 
 ### Validation rule
 
-| The number of ...                                                                               | is equal to or less than |  
-|-------------------------------------------------------------------------------------------------|:------------------------:|
-| modifications that do not affect layout and cause repaints (e.g. color, background, visibility) |             1            |
+| The number of ...                                                                                | is equal to or less than |  
+|--------------------------------------------------------------------------------------------------|:------------------------:|
+| modifications not affecting the layout and causing a repaint (ex: color, background, visibility) |             1            |

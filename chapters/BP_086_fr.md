@@ -25,7 +25,7 @@
 ### Description
 
 Préférer un hébergeur qui combine des serveurs économes à une alimentation sans énergie fossile (pétrole, gaz, charbon) 
-basé principalement sur des sources d’énergies renouvelables.
+basée principalement sur des sources d’énergies renouvelables.
 Les six critères à prendre en compte sont :
 1. gestion des DEEE (déchets d’équipements électriques et électroniques) ;
 2. efficience énergétique du data center [Power Usage Effectiveness (PUE) / Carbon Usage Effectiveness (CUE) /
@@ -47,4 +47,4 @@ leurs indicateurs (PUE / CUE / WUE...). C'est le cas de :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| d'hébergeurs dont le PUE supérieur à 1,5  |  0 |
+| d'hébergeurs dont le PUE est supérieur à 1,5  |  0 |

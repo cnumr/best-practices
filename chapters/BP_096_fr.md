@@ -1,4 +1,4 @@
-## Afficher des pages d'erreur statiques
+## Afficher des pages d'erreurs statiques
 
 ### Identifiants
 

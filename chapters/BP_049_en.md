@@ -25,7 +25,7 @@
 ### Description
 
 Accessing the DOM (Document Object Model) uses a lot of processor resources (CPU cycles). 
-Therefore, when using the same DOM element several times in JavaScript, you should store it's reference in a variable so that you don't need to go through the DOM again for that same element.
+Therefore, when using the same DOM element several times in JavaScript, you should store its reference in a variable so that you don't need to go through the DOM again for that same element.
 
 ### Examples
 

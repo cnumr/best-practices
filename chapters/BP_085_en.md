@@ -26,7 +26,7 @@
 
 Most environments (POC - proof of concept, testing, acceptance, etc.) eventually end up being obsolete and no longer needed. 
 About 25% of physical servers and 20% of virtual servers (VMs) become zombies, meaning they use resources while waiting to be used. 
-This represents avoidable environmental and economical impacts.
+This represents avoidable environmental and economic impacts.
 
 Implementing an end-of-life plan can prevent this kind of situation.
 

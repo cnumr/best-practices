@@ -31,11 +31,11 @@ Il est même envisageable de ne pas inclure ces parties dans l'appel HTTP de la 
 
 ### Exemple
 
-Les sites d’actualité utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
+Les sites d’actualités utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
 d’être mises à jour rapidement (flash d’informations, données météo, cours de la Bourse, résultats sportifs, etc.).
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de zones de contenu pouvant être mis à jour partiellement mais qui ne le sont pas  | 0%  |
+| de zones de contenus pouvant être mises à jour partiellement mais qui ne le sont pas  | 0%  |

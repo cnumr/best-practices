@@ -30,8 +30,7 @@ the need and context.
 For instance, using static pages for a site which content doesn't change much allow it to be cached, and will avoid
 the deployment of application servers and databases.
 
-In the case of a dynamic website, the custom developments allow more relevant technical optimisations, and allow to use
-the strict minimum to answer the user's needs.
+In the case of a dynamic website, custom developments allow more relevant technical optimizations, and allow the use of the strict minimum to answer the user's needs.
 
 If you have a part of a web application that relies on a small number of pages and deliver a bounded functional service 
 (purchase, estimate request, ...), using a SPA (Single Page Application) may be interesting. It avoids requests and makes
