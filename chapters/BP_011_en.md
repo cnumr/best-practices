@@ -24,7 +24,7 @@
 
 ### Description
 
-Use a framework or a custom solution to get a more liberty to optimize the digital service.
+Use a framework or a custom solution to have more liberty to optimize the digital service.
 
 To achieve their flexibility, CMS are indeed more resource intensive than simple, custom solutions.
 
