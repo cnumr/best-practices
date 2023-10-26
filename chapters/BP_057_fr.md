@@ -34,11 +34,11 @@ Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il e
 - Wp Super Cache
 - Wp-rocket
 
-Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d'outil fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'écoconception web.
+Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d'outils fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'écoconception web.
 
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de cache non activé |  0 |
+|  de caches non activés |  0 |

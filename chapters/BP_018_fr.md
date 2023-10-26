@@ -45,4 +45,4 @@ On limite ainsi le nombre de domaines tout en évitant de transporter inutilemen
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| Le nombre de domaines servant les ressources   |  5 |
+| de domaines servant les ressources   |  5 |

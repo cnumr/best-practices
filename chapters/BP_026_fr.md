@@ -45,4 +45,4 @@ Pour aller plus loin :
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de notations CSS non abrégés  |  0% |
+| de notations CSS non abrégées  |  0% |

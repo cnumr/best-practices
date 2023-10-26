@@ -25,7 +25,7 @@
 ### Description
 
 Un cookie permet de maintenir un état entre le navigateur de l’internaute et le serveur web distant grâce à une donnée partagée.
-Cette donnée est transféré dans chaque requête HTTP.
+Cette donnée est transférée dans chaque requête HTTP.
 Il faut donc optimiser au maximum sa taille et le supprimer dès que sa présence n’est plus obligatoire.
 
 ### Exemple

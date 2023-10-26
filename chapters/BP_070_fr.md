@@ -1,4 +1,4 @@
-## Supprimer tous les warning et toutes les notices
+## Supprimer tous les warnings et toutes les notices
 
 ### Identifiants
 
@@ -52,4 +52,4 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de warning et notice en production | 0  |
+| de warnings et notices en production | 0  |

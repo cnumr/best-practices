@@ -30,7 +30,7 @@ Cela permet aux requêtes suivantes, émises sur le même domaine, d’être exc
 Néanmoins, le premier appel exige une réponse (potentiellement non sécurisé) HTTP avec un header STS (Strict-Transport-Security).
 Pour pallier ce problème, et obliger les navigateurs à contacter l’intégralité du domaine en HTTPS, il est possible, en plus d’activer le HSTS, de s’enregistrer dans une liste statique mise à jour sur tous les navigateurs récents : https://hstspreload.org.
 
-Il est important de noter que l’enregistrement de son domaine sur htstpreload.org est rapide et concerne l’intégralité du domaine, (sous-domaines inclus). Avant d’effectuer cet enregistrement, qui est relativement lent à supprimer, veillez qu’aucun de vos sous-domaines ne soient perturbés par la mise en place du HTTPS
+Il est important de noter que l’enregistrement de son domaine sur htstpreload.org est rapide et concerne l’intégralité du domaine, (sous-domaines inclus). Avant d’effectuer cet enregistrement, qui est relativement lent à supprimer, veillez qu’aucun de vos sous-domaines ne soient perturbés par la mise en place du HTTPS.
 
 ### Exemple
 
@@ -43,4 +43,4 @@ Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de non activation de HSTS  | 0  |
+| de non activations de HSTS  | 0  |

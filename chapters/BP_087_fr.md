@@ -39,4 +39,4 @@ https://www.greenit.fr/tag/electricite
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de non fourniture de preuve de l'achat de certificats de garantie d'origine par l'hébergeur   | 0  |
+| de non fournitures de preuve de l'achat de certificats de garantie d'origine par l'hébergeur   | 0  |

@@ -32,7 +32,7 @@ petites données dans une colonne prévue pour stocker de grosses quantités de 
  - des problèmes de performance (il sera plus rapide de faire une
 recherche sur un nombre que sur une chaîne de caractères).
    
-Idéalement, les choix du type de données et de son dimensionnement doivent êtres fondés sur l’analyse d’un échantillon représentatif de données.
+Idéalement, les choix du type de données et de son dimensionnement doivent être fondés sur l’analyse d’un échantillon représentatif de données.
 
 ### Exemples
 

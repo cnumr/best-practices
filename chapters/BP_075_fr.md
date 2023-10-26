@@ -25,7 +25,7 @@
 ### Description
 
 La base de données est en général un composant essentiel des applications et les requêtes effectuées pour récupérer
-et enregistrer des données sont nombreuses; exécutées fréquemment, elles ont une influence importante sur la consommation de 
+et enregistrer des données sont nombreuses ; exécutées fréquemment, elles ont une influence importante sur la consommation de 
 ressources de la solution.
 
 Dans cette optique il est important de prêter attention à ces requêtes et de valider, au moins pour celles qui coûtent le

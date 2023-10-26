@@ -40,4 +40,4 @@ Côté backend, le découpage en microservices permet d'apporter un niveau de mo
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| Le nombre d'architectures non modulaires | 0  |
+| d'architectures non modulaires | 0  |
