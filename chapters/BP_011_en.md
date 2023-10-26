@@ -1,4 +1,4 @@
-## Prefer a custom solution over a CMS 
+## Prefer custom solutions to CMS
 
 ### Identifiants
 
@@ -24,12 +24,11 @@
 
 ### Description
 
-Use a framework or a custom solution to have a more liberty to optimize the digital service.
+Use a framework or a custom solution to have more liberty to optimize the digital service.
 
 To achieve their flexibility, CMS are indeed more resource intensive than simple, custom solutions.
 
-For instance, to manage their plugins, CMS use hook system, which is generally based on a function naming convention. 
-Testing for the existence of new functions uses resources, whereas custom developments don't have to check for new features.
+For instance, to manage their plugins, CMS use hook system, which is generally based on a function naming convention. Testing for the existence of new functions uses resources, whereas custom developments don't have to check for new features.
 
 Using too many extensions can slow down the site.
 
