@@ -32,6 +32,7 @@ Cependant si vous avez besoin d'une police particulière pour votre service num�
 - Utiliser un faux-gras via la propriété css ```-webkit-text-stroke``` si possible
 - Préférer une variable font si vous avez besoin de plus d'une font d'une police (ex: regular, bold, etc.)
 - Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latins, l'alphabet cyrillique peut donc être supprimé)
+- Enfin, limiter leur nombre (bonne pratique de web design déjà reconnue) à deux maximum, le moins possible étant le mieux.
 
 Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratique : Préférez les glyphes aux images) et si les droits d'utilisations de la font le permettent, incorporer les nouveaux glyphes directement dans la font.
 
