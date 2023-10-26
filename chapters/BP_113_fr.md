@@ -37,4 +37,4 @@ Ainsi, les utilisateurs n’afficheront que les pages qu’ils souhaitent lire e
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-|  de textes affichées sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 | 0  |
+|  de textes affichés sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 | 0  |

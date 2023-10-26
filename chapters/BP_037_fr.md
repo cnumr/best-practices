@@ -28,10 +28,10 @@ situées en dehors de la zone visitée, en dessous de la ligne de flottaison, so
 il est possible d'utiliser la technique du chargement paresseux (lazy loading) qui consiste à ne charger un élement que
 lorsque son emplacement devient visible à l’écran. 
 
-Il est possible, en HTML5, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe
+Il est possible, en HTML, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe
 de ne télécharger que les images qui apparaissent à l'écran. Cependant, cet attribut est très récent : il ne sera
 pas pris en compte sur d'anciennes versions de navigateurs. Dans un souci de compatibilité accrue, on pourra néanmoins
-utiliser des mini-librairies Javascript, très légères, qui s'occuperont de lazy-loader vos images comme : 
+utiliser des mini-bibliothèques Javascript, très légères, qui s'occuperont de lazy-loader vos images comme : 
     - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
     - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
 

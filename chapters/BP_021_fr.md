@@ -47,4 +47,4 @@ Les CSS complémentaires (ici, « module x » et « module y ») seront téléch
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de librairies CSS est supérieur ou égal  | 2  |
+| de bibliothèques CSS est supérieur ou égal  | 2  |

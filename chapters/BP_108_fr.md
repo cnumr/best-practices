@@ -32,7 +32,7 @@ Si vous souhaitez offrir à l’utilisateur de télécharger un lecteur PDF, pr�
 
 ### Exemple
 
-our un rapport annuel en PDF :
+Pour un rapport annuel en PDF :
  - vérifier que les images sont fortement compressées et à une résolution maximale de 72 dpi ;
  - n’inclure que les principales polices ;
  - découper le rapport en chapitres, afin de limiter les téléchargements inutiles.

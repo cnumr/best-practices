@@ -1,4 +1,4 @@
-## Mettre en cache les réponses Ajax
+## Mettre en cache les réponses AJAX
 
 ### Identifiants
 
@@ -24,11 +24,11 @@
 
 ### Description
 
-Les réponses Ajax qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, les mettre en cache pour économiser de la bande passante.
+Les réponses AJAX qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, les mettre en cache pour économiser de la bande passante.
 
 ### Exemple
 
-Si une requête Ajax retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client pour ne pas générer à nouveau une requête vers le serveur.
+Si une requête AJAX retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client pour ne pas générer à nouveau une requête vers le serveur.
 
 ### Principe de validation
 

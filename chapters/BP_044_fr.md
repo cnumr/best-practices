@@ -28,7 +28,7 @@ La délégation d’événements permet de ne pas surcharger la mémoire du navi
 
 ### Exemple
 
-L’élément du DOM dont l’ID est t est déclaré comme le délégué. 
+L’élément du DOM, dont l’ID est "t", est déclaré comme le délégué. 
 Il intercepte les événements de tous ses fils.
 ```html
 <head>
@@ -51,8 +51,8 @@ Il intercepte les événements de tous ses fils.
 </head>
 <body onload="load();">
     <table id="t">
-        <tr><td id="t1">one</td></tr>
-        <tr><td id="t2">two</td></tr>
+        <tr><td id="t1"><button type="button">one</button></td></tr>
+        <tr><td id="t2"><button type="button">two</button></td></tr>
     </table>
     <!-- ... -->
 </body>

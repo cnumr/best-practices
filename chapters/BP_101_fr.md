@@ -24,13 +24,13 @@
 
 ### Description
 
-Les en-têtes Expires et Cache-Control définissent la durée pendant laquelle un navigateur doit conserver une ressource dans son cache. Il faut donc en prévoir et les configurer correctement pour les feuilles de style CSS, les scripts JavaScript et les images.
+Les entêtes Expires et Cache-Control définissent la durée pendant laquelle un navigateur doit conserver une ressource dans son cache. Il faut donc en prévoir et les configurer correctement pour les feuilles de style CSS, les scripts JavaScript et les images.
 
 Idéalement, la durée de vie de ces éléments doit être la plus longue possible, afin que le navigateur ne les redemande pas au serveur. On économise ainsi des requêtes HTTP, de la bande passante et des cycles CPU côté serveur.
 
 ### Exemple
 
-Voici un exemple de configuration des en-têtes Expires et Cache-Control pour le serveur web Apache :
+Voici un exemple de configuration des entêtes Expires et Cache-Control pour le serveur web Apache :
 ```apacheconf
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>

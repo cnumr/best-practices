@@ -1,4 +1,4 @@
-## N'utilisez que les portions indispensables des librairies Javascript et frameworks CSS
+## N'utilisez que les portions indispensables des bibliothèques JavaScript et frameworks CSS
 
 ### Identifiants
 
@@ -38,11 +38,11 @@ Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, so
 
 ![img_1.png](img_1.png)
 
-Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenant que les portions réellement
+Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contiennent que les portions réellement
 utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
 
 ### Principe de validation
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
-| de librairies dont des portions non indispensables sont utilisées  | 1  |
+| de bibliothèques dont des portions non indispensables sont utilisées  | 1  |
