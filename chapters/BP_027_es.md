@@ -1,8 +1,8 @@
-## Proporcionar un CSS impreso
+## Proporcionar un CSS para impresión
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 16 | 30 | 27 | |
 
@@ -14,35 +14,35 @@
 
  ### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 3 | 4 | 3 |
+| Prioridad | Dificultad de implementación | Impacto ecológico |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 3 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
- | Red |
+|Recursos guardados |
+|:----------------------------------------------------------:|
+| Red |
 
  ### Descripción
 
-Además del servicio prestado al usuario de Internet la impresión de hojas de estilo CSS reduce el número de páginas impresas lo que indirectamente reduce la huella ecológica del sitio web. El diseño debe ser lo más sencillo posible con fuentes que ahorren tinta (Century Gothic por ejemplo). Recuerde también ocultar encabezados pies de página menús barras laterales e imágenes que no sean contenido real. Etc.
+Además del servicio prestado al usuario de Internet, la impresión de hojas de estilo CSS reduce el número de páginas impresas lo que indirectamente reduce la huella ecológica del sitio web. El diseño debe ser lo más sencillo posible con fuentes que ahorren tinta (Century Gothic por ejemplo). Recuerde también ocultar encabezados, pies de página, menús, barras laterales, imágenes que no sean contenido real, etc.
 
- ### Ejemplo
+### Ejemplo
 
- Este CSS de impresión "limpia" las páginas mostradas para proporcionar un diseño de impresión refinado:
- ```css
- mono {
- color de fondo: #ff; familia de fuentes: Serif; tamaño de fuente: 15 puntos;
- }
- #página { margen:0;
- borde: ninguno;
- }
- #banner #menuright #footer { display: none;
- }
- h1#arriba { margen:0;
- relleno:0;
- sangría de texto:0; altura de línea: 25 puntos; tamaño de fuente: 25 puntos;
- } (...)
- ```
+ Este CSS para impresión "limpia" las páginas mostradas para proporcionar una impresión refinada:
+```css
+bodysuit {
+background-color:#ﬀf; font-family :Serif; font-size:15pt;
+}
+#page { margin:0;
+border:none;
+}
+#banner, #menuright, #footer { display: none;
+}
+h1#top { margin:0;
+padding:0;
+text-indent:0; line height: 25pt; font-size:25pt;
+} (...)
+```
 
  ### Regla de validación
 
