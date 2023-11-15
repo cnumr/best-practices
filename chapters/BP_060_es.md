@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 96 | 60 | 60 | |
 
@@ -18,7 +18,7 @@
  |:--------:|:-------------------------:|:---------------:|
  | 4 | 4 | 4 |
  
- |        Recursos guardados         |
+ |        Recursos ahorrados         |
  |:---------------------------------:|
  | Procesador/RAM/Red/Almacenamiento |
 

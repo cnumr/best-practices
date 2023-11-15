@@ -1,15 +1,15 @@
-## Usar delegaciones de eventos
+## Utilizar delegaciones de eventos
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 41 | 46 | 44 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:------------- ---------------:|
+ |:-----------------:|:-----------:|:----------------------------:|
  | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -18,19 +18,19 @@
  |:------------------:|:-------------------------- :|:-----------------:|
  | 3 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Recursos ahorrados |
+ |:---------------------------------------------------------:|
  | Procesador/RAM |
 
  ### Descripción
 
- La delegación de eventos evita la sobrecarga de la memoria del navegador al crear una instancia de un único oyente para varios elementos DOM (Document Object Model).
+La delegación de eventos evita sobrecargar la memoria del navegador instanciando un único oyente para varios elementos DOM (Document Object Model).
 
  ### Ejemplos
 
- El elemento DOM cuyo ID es "t" se declara como delegado.
+El elemento DOM cuyo ID es "t" se declara como delegado.
 
- Intercepta los eventos de todos sus hijos.
+Intercepta los eventos de todos sus hijos.
 
  ```html
  <cabeza>
@@ -62,6 +62,6 @@
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |------------------------------------------------ -------------------------------------------------- ------------------|:------------------------:|
+ | El número de... | es igual o inferior a  |
+ |--------------------------------------------------------------------------------------------------------------------|:------------------------:|
  | oyentes del mismo evento en múltiples elementos HTML pertenecientes al mismo grupo sin utilizar delegación de eventos | 0 |
