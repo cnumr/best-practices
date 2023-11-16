@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 14 | 28 | 25 | |
 
@@ -18,13 +18,15 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 3 | 3 | 2 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Red |
 
  ### Descripción
 
- Cuando varios elementos DOM (Document Object Model) comparten algunas propiedades CSS escriba las declaraciones juntas en la misma hoja para reducir el tamaño del CSS.
+ Cuando varios elementos DOM (Document Object Model) comparten algunas propiedades CSS , 
+ escriba las declaraciones juntas en la misma hoja para reducir el tamaño de CSS.
+
 
  ### Ejemplo
 
@@ -44,7 +46,7 @@
  }
  ```
 
- más bien escribe:
+en lugar de escriba :
  ```css
  h1 h2 h3 {
  color de fondo: gris; color: azul marino;
@@ -59,5 +61,5 @@ Puede encontrar la lista completa de estas propiedades abreviadas en este sitio 
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |------------------------------------|:---------- ---------------:|
+ |------------------------------------|:-------------------------:|
  | declaraciones CSS similares no agrupadas | 1 |

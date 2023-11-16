@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 910 | | 19 | |
 
@@ -18,15 +18,17 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 4 | 4 | 4 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Red / Consultas |
 
  ### Descripción
 
- Redes sociales importantes como Facebook Twitter Pinterest etc. proporcionan complementos listos para instalar para páginas web
- para mostrar los botones "Compartir" y los contadores "Me gusta". Estos complementos de JavaScript consumen muchos recursos ya que requieren numerosas solicitudes y archivos pesados ​​para funcionar. Más bien deberían preferirse los enlaces directos como HTML.
-Estos enlaces se pueden generar manualmente o mediante herramientas como https://www.sharelinkgenerator.com/.
+ Redes sociales importantes como Facebook Twitter Pinterest etc. Proporcionan plugins listos para instalar en las páginas 
+ web para mostrar botones de "Compartir" y contadores de "Me gusta". Estos plugins de JavaScript consumen muchos recursos,
+ ya que requieren numerosas peticiones y archivos pesados para funcionar. Es preferible utilizar enlaces directos, como HTML. 
+ Estos enlaces pueden generarse manualmente o mediante herramientas como https://www.sharelinkgenerator.com/.
+
 
  ### Ejemplo
 
@@ -35,14 +37,14 @@ Estos enlaces se pueden generar manualmente o mediante herramientas como https:/
  - Me gusta en Facebook: https://www.facebook.com/plugins/like.php?href=XXXXX
  -Twitter: https://twitter.com/intent/tweet?url=XXXXX
 
- Es posible crear un botón que abra una ventana emergente como las herramientas oficiales por ejemplo con el siguiente código:
+Es posible crear un botón que abra una ventana emergente como las herramientas oficiales, por ejemplo con el siguiente código :
 
  ```html
  <tipo de botón = "botón" onclick = "window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX' '' 'menubar=no toolbar=no redimensionable = sí barras de desplazamiento=sí alto=500 ancho=700')">
  Comparto esta página en Facebook.
  </botón>
  ```
- Para llegar más lejos :
+Para ir más lejos : :
  https://www.nuweb.fr/736
 
 
@@ -51,4 +53,4 @@ Estos enlaces se pueden generar manualmente o mediante herramientas como https:/
 
  | El número de... | es igual o menor que |
  |----------------------|:-------------------------:|
- | bibliotecas externas | 0 |
+ | librairies externas | 0 |

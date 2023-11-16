@@ -1,8 +1,8 @@
-## Usa CSS en lugar de imágenes
+## Utilizar CSS en lugar de imágenes
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 11 | 26 | 23 | |
 
@@ -18,19 +18,19 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 4 | 3 | 4 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Red / Consultas |
 
  ### Descripción
 
- Utilice propiedades CSS en lugar de imágenes. Las hojas de estilo son mucho más pequeñas especialmente cuando están comprimidas. Solicitar una hoja de estilo solo genera una única solicitud HTTP mientras que el uso de muchas imágenes genera muchas solicitudes HTTP (una solicitud HTTP para cada imagen).
+ Utilice propiedades CSS en lugar de imágenes. Las hojas de estilo son mucho más pequeñas, especialmente cuando están comprimidas. Solicitar una hoja de estilo solo genera una única solicitud HTTP mientras que el uso de muchas imágenes genera muchas solicitudes HTTP (una solicitud HTTP para cada imagen).
 
  ### Ejemplo
 
 Las esquinas redondeadas de los elementos deben implementarse con CSS en lugar de imágenes.
 
- Prefiero escribir:
+Prefiera la escritura:
  ```css
  #marco {
  radio de borde: 10px;
