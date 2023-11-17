@@ -8,9 +8,9 @@
 
  ### Categorías
 
-| Ciclo de vida | Niveles             | Responsable |
-|---------------|---------------------|-------------|
-| 5. Uso        | Usuario/Dispositivo | Usuario     |
+| Ciclo de vida |       Niveles       | Responsable |
+|:-------------:|:-------------------:|:-----------:|
+|    5. Uso     | Usuario/Dispositivo |   Usuario   |
 
  ### Indicaciones
 
