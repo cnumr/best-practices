@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT  | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 89 | 81 | 79 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------:|:--------------------- -------:|
+ |:-------------:|:-------:|:----------------------------:|
  | 4. Producción | Red | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -18,22 +18,22 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 4 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
- | Consultas |
+ | Recursos ahorrados |
+ |:------------------:|
+ |     Consultas      |
 
  ### Descripción
 
- La combinación de hojas de estilo CSS y bibliotecas de JavaScript reduce la cantidad de consultas HTTP.
+La combinación de hojas de estilo CSS y bibliotecas JavaScript reduce el número de consultas HTTP.
 
  ### Ejemplos
 
-El complemento "Autoptimize" facilita la combinación de archivos CSS en WordPress y está disponible de forma gratuita.
+El plugin "Autoptimize" facilita la combinación de archivos CSS en WordPress y está disponible de forma gratuita.
 
-El complemento "webpack-merge-and-include-globally" simplifica el proceso de fusionar archivos CSS y JavaScript en Webpack.
+El plugin "webpack-merge-and-include-globally" simplifica el proceso de combinar archivos CSS y JavaScript en Webpack.
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |-------------------------------|:--------------- ---------:|
- | archivos CSS y JS no combinados | 2 |
+ | El número de...                 | es igual o menor que |
+ |---------------------------------|:------------------------:|
+ | Archivos CSS y JS no combinados | 2 |

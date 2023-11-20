@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 86 | 80 | 78 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:----------------- -----------:|
+ |:-----------------:|:-------:|:----------------------------:|
  | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -18,19 +18,19 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 4 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
- | Red |
+ | Recursos ahorrados |
+ |:------------------:|
+ |        Red         |
 
  ### Descripción
 
- Comprima hojas de estilo CSS bibliotecas JavaScript y archivos HTML para limitar el uso del ancho de banda y mejorar el tiempo de carga.
- el algoritmo GZIP es un estándar de compresión del lado del servidor que comprime los recursos sobre la marcha antes de enviarlos a los clientes.
-Más recientemente BROTLI ha ganado popularidad gracias a su rendimiento mejorado y actualmente es compatible con los principales navegadores web.
+Comprime hojas de estilo CSS, bibliotecas JavaScript y archivos HTML para limitar el uso de ancho de banda y mejorar el tiempo de carga. 
+El algoritmo GZIP es un estándar de compresión del lado del servidor que comprime los recursos sobre la marcha antes de enviarlos a los clientes. 
+Más recientemente, BROTLI ha ganado popularidad gracias a su mayor rendimiento, y actualmente es compatible con los principales navegadores web.
+ 
+### Ejemplo
 
- ### Ejemplo
-
- Para usar BROTLI en Apache simplemente agregue la siguiente configuración:
+Para utilizar BROTLI en Apache, basta con añadir la siguiente configuración:
 
  ```
  # comprimir html texto xml css javascript
@@ -42,12 +42,12 @@ Más recientemente BROTLI ha ganado popularidad gracias a su rendimiento mejorad
  </Directorio>
  ```
 
- El servidor web NGINX maneja la compresión GZIP de forma predeterminada pero solo para archivos HTML.
-Para habilitarlo para imágenes y otros recursos puede consultar esta página: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on -ubuntu-20-04
+El servidor web NGINX gestiona la compresión GZIP por defecto, pero sólo para archivos HTML.
+Para habilitarla para imágenes y otros recursos, puede consultar esta página: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04.
 
  Para instalar y configurar BROTLI en NGINX consulte https://github.com/google/ngx_brotli.
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |------------------------------------------------ ---|:------------------------:|
+ |---------------------------------------------------|:------------------------:|
  | archivos CSS JavaScript HTML y SVG sin comprimir | 0 |

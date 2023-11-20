@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 51 | 65 | 70 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:------------ --:|
+ |:-------------:|:----------:|:--------------:|
  | 4. Producción | Centro de datos | Administrador del sistema |
 
  ### Indicaciones
@@ -18,13 +18,14 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 2 | 3 | 2 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Recursos ahorrados |
+ |:---------------------------------------------------------:|
  | Procesador/Almacenamiento |
 
  ### Descripción
 
-Las advertencias y avisos ralentizan los servidores de aplicaciones como PHP ya que tienen que rastrear los orígenes de los errores y registrar mensajes que explican los problemas asociados en varios sistemas de registros.
+Las advertencias y avisos ralentizan los servidores de aplicaciones como PHP, ya que tienen que rastrear 
+los orígenes de los errores y registrar mensajes que explican los problemas asociados en varios sistemas de registros.
 
  ### Ejemplo
 

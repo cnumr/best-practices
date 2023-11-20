@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
- | 47 | 62 | 64 | |
+ |   47    | 62 | 64 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-------:|:------------------------ ----:|
+ |:----------:|:-------:|:----------------------------:|
  | 2. Diseño | Red | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -18,20 +18,24 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 4 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
- | Procesador/RAM |
+ | Recursos ahorrados |
+ |:------------------:|
+ |   Procesador/RAM   |
 
  ### Descripción
 
- Cuando los valores o los cálculos de datos consumen muchos recursos debe almacenar en caché los resultados cuando los valores permanezcan sin cambios para evitar repetir estas operaciones.
-Los sistemas de caché de tipo clave-valor están diseñados para almacenar estos datos. Como generalmente se almacenan íntegramente en la RAM generan importantes ahorros de ciclos de CPU cuando los datos calculados se utilizan con frecuencia.
+Cuando los cálculos de valores o datos consumen muchos recursos, conviene almacenar en caché los resultados cuando los valores no cambian, 
+para evitar repetir estas operaciones. Los sistemas de caché de tipo clave-valor están diseñados para almacenar estos datos. 
+Al almacenarse generalmente en su totalidad en memoria RAM, generan un importante ahorro de ciclos de CPU cuando los datos calculados 
+se utilizan con frecuencia.
 
  ### Ejemplos
 
- La cantidad de contenidos (por ejemplo productos) que pertenecen a una categoría se calcula aunque no se actualiza con mucha frecuencia. El almacenamiento en caché del número de contenidos de cada categoría ahorra ciclos de CPU.
+El número de contenidos (por ejemplno, productos) pertenecientes a una categoría se calcula cuando no se actualiza con mucha frecuencia. 
+El almacenamiento en caché del número de contenidos de cada categoría ahorra ciclos de CPU.
 
- los tokens de acceso de OAuth2 tienen tiempo de vencimiento. El almacenamiento en caché de los tokens y su tiempo de vencimiento evita llamadas innecesarias al servidor de autorización para revalidarlos.
+
+Los tokens de acceso OAuth2 tienen caducidad. El almacenamiento en caché de los tokens y su tiempo de caducidad evita llamadas innecesarias al servidor de autorización para revalidarlos.
 
  ### Regla de validación
 
