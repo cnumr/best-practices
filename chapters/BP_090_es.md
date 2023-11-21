@@ -36,5 +36,5 @@ También es posible elegir una arquitectura de hardware que se adapte al tipo de
  ### Regla de validación
 
  | El número de...                                                                                                                                 | es igual o menor que |
- |-------------------------------------------------------------------------------------------------------------------------------------------------|:-.-:|
- | servidores sin una fuente de alimentación certificada 80Plus Platinum o superior O sin etiqueta ecológica o etiqueta Energy Star para servidor. |  0  |
+ |-------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------:|
+ | servidores sin una fuente de alimentación certificada 80Plus Platinum o superior O sin etiqueta ecológica o etiqueta Energy Star para servidor. |           0          |

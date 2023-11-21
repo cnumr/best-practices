@@ -41,5 +41,5 @@ Los registros de acceso de un servidor Apache se pueden configurar de la siguien
  ### Regla de validación
 
  | El número de...                                     | es igual o menor que |
- |---------------......--------------------------------| :------------------: |
+ |-----------------------------------------------------| :------------------: |
  | registra archivos sin un tiempo máximo de retención |           0          |

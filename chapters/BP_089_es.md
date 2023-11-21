@@ -33,7 +33,7 @@ Como resultado la virtualización permite:
  - ahorro de hardware gracias a la mutualización
  - uso óptimo de recursos (RAM, CPU, disco)
 
-Este método reduce la cantidad de residuos electrónicos (WEEE) y el uso de energía en comparación con varios servidores físicos.
+Este método reduce la cantidad de residuos electrónicos (RAEE) y el uso de energía en comparación con varios servidores físicos.
 
 La contenedorización es otro nivel de virtualización: las máquinas virtuales pueden alojar un servicio de orquestación de contenedores,
 permitiendo la ejecución de múltiples aplicaciones de forma aislada en el mismo sistema operativo.
