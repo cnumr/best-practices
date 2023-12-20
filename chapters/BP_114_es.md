@@ -2,31 +2,31 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
- | :-----: | :-: | :-: | :-: |
- | 92 | 115 | 114 | |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   92    | 115 | 114 |     |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- | :--------: | :---------: | :---------: |
- | 5. Uso | Usuario/Dispositivo | Usuario |
+| Ciclo de vida |       Niveles       | Responsable |
+|:-------------:|:-------------------:|:-----------:|
+|    5. Uso     | Usuario/Dispositivo |   Usuario   |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :------: | :----------------------: | :-----------------------: |
- | 3 | 2 | 3 |
+| Prioridad | Dificultad de implementación | Impacto ecológico |
+|:---------:|:----------------------------:|:-----------------:|
+|     3     |              2               |         3         |
 
- | Recursos guardados |
- | :-----------------: |
- | Procesador/Red |
+| Recursos ahorrados |
+|:------------------:|
+|  Procesador / Red  |
 
  ### Descripción
 
- Proporcione varios formatos (tamaño velocidad de fotogramas compresión de audio etc.) según el contexto de visualización del vídeo (escritorio tableta Wi-Fi teléfono inteligente EDGE).
+ Proporcione varios formatos (tamaño, velocidad de fotogramas, compresión de audio, etc.) según el contexto de visualización del vídeo (computadora de escritorio, tableta Wi-Fi, teléfono inteligente EDGE).
 
-La optimización del vídeo debe realizarse fuera del sitio web idealmente durante la postproducción. Si no es posible utiliza servicios como YouTube o Vimeo ya que ofrecen varios formatos optimizados (SD HD etc.) por defecto.
+La optimización del vídeo debe realizarse fuera del sitio web, idealmente durante la postproducción. Si no es posible, utilice servicios como YouTube o Vimeo, ya que ofrecen varios formatos optimizados (SD, HD, etc.) por defecto.
 
  ### Ejemplo
 
@@ -34,14 +34,14 @@ La optimización del vídeo debe realizarse fuera del sitio web idealmente duran
 
  - 49 MB cuando no está optimizado;
  - 3 MB cuando está optimizado para una resolución igual o superior a 1.024 x 720 en MPEG 4/H.264/AAC;
- - 12 MB cuando está optimizado para una resolución igual o superior a 480 x 320 en MPEG 4/H.264/AAC.
+ - 1.2 MB cuando está optimizado para una resolución igual o superior a 480 x 320 en MPEG 4/H.264/AAC.
 
-Se puede estimar que hay al menos un aumento de tamaño del 50% (y probablemente ahorros durante la decodificación ya que el formato de codificación tiene en cuenta el hardware específico) entre las versiones de video "de escritorio" y "móviles".
+Se puede estimar que hay al menos un aumento de tamaño del 50% (y probablemente ahorros durante la decodificación, ya que el formato de codificación tiene en cuenta el hardware específico) entre las versiones de video de una "computadora de escritorio" y "móviles".
 
-La mayoría de los casos deben cubrirse con 3 tamaños diferentes x 3 codificaciones diferentes es decir 9 versiones del mismo vídeo. Es posible entregar el archivo correcto con reglas simples como la resolución de pantalla con una lógica de diseño responsiva.
+La mayoría de los casos deben cubrirse con 3 tamaños diferentes x 3 codificaciones diferentes, es decir, 9 versiones del mismo vídeo. Es posible entregar el archivo correcto con reglas simples como la resolución de pantalla y una lógica de diseño responsiva.
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- | -------------------------------------------------- -------------------------------------------------- -- | :----------------------: |
- | vídeos con una definición de 1080p o superior mostrados en el sitio web cuando el dispositivo es un teléfono inteligente | 0 |
+| El número de...                                                                                                          | es igual o menor que |
+|--------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Vídeos con una definición de 1080p o superior mostrados en el sitio web cuando el dispositivo es un teléfono inteligente |                      |
