@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:---:|:----:|
  | 67 | 85 | 87 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:------------ --:|
+ |:-------------:|:----------:|:--------------:|
  | 4. Producción | Centro de datos | Administrador del sistema |
 
  ### Indicaciones
@@ -18,16 +18,16 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 3 | 3 | 2 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Ahorro de recursos |
+ |:---------------------------------------------------------:|
  | Emisiones de gases de efecto invernadero |
 
  ### Descripción
 
- Utilice la fuente de electricidad que tenga el menor impacto ambiental posible durante su producción (por ejemplo hidráulica) para alimentar su equipo digital.
+Utiliza la fuente de electricidad que tenga el menor impacto ambiental posible durante su producción (por ejemplo, hidráulica) para alimentar tus equipos digitales.
 
-Tenga en cuenta que hasta el día de hoy no existe una forma fiable de garantizar que la electricidad se haya producido con el menor impacto.
-Como alternativa puede elegir un proveedor que no compre electricidad producida a partir de combustibles fósiles o comprar EAC (Certificado de Atributo Energético).
+Tenga en cuenta que, a día de hoy, no existe ninguna forma fiable de garantizar que la electricidad se ha producido con el menor impacto. 
+Como alternativa, puede elegir un proveedor que no compre electricidad producida a partir de combustibles fósiles o comprar EAC (Certificado de Atributo Energético).
 
  ### Ejemplo
 
@@ -39,5 +39,5 @@ Como alternativa puede elegir un proveedor que no compre electricidad producida 
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |------------------------------------------------ ------------------------------------------------|: ------------------------:|
- | casos en los que el anfitrión no ha proporcionado prueba de compra de certificados de atributos energéticos | 0 |
+ |------------------------------------------------------------------------------------------------|: ------------------------:|
+ | casos en los que el anfitrión no ha presentado la prueba de compra de certificados de atributos energéticos | 0 |

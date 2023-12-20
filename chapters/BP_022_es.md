@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 10 | 25 | 22 | |
 
@@ -18,13 +18,14 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 4 | 4 | 4 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Red / Consultas |
 
  ### Descripción
 
- Limite la cantidad de CSS para evitar solicitudes HTTP y simplificar la representación en el navegador. Utilice una hoja de estilo común para todos los elementos comunes independientemente de la visualización y un archivo para cada tamaño de pantalla de destino o consulta de medios.
+Limitar el número de CSS para evitar peticiones HTTP y simplificar la renderización en el navegador. 
+Utilice una hoja de estilos común para todos los elementos comunes, independientemente de la pantalla, y un archivo para cada tamaño de pantalla de destino o consulta de medios.
 
 Tenga cuidado: importe estos archivos en el código HTML y NO con directivas @import en los propios archivos CSS. Al dividirse de esta forma los dispositivos de los usuarios elegirán cuál es el más adecuado y aplazarán la carga de los archivos que no necesiten.
 

@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT  | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 13 | 27 | 24 | |
 
@@ -18,13 +18,13 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 3 | 3 | 2 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Procesador |
 
  ### Descripción
 
- Utilice selectores basados ​​en ID o clases ya que se filtrarán más rápidamente ahorrando así ciclos de CPU en el dispositivo asociado.
+ Utilice selectores basados en ID o clases, ya que se filtrarán más rápidamente, ahorrando así ciclos de CPU en el dispositivo asociado.
 
  ### Ejemplo
 
@@ -33,7 +33,7 @@
  elemento de árbolcarpeta de correo="true" > fila de árbol > celda de árbol {…}
  ```
 
- en su lugar escribe:
+Escriba en su lugar:
 
  ```css
  .treecell-carpeta de correo {…}
@@ -43,13 +43,13 @@
  ```css
  cabeza de árbol > fila de árbol > celda de árbol {…}
  ```
- en su lugar escribe:
+Escriba en su lugar:
  ```css
  .treecell-encabezado {…}
  ```
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | Selectores CSS que no utilizan ID clases o atributos | 0 |
+ | El número de...                                       | es igual o menor que |
+ |-------------------------------------------------------|:-------------------------:|
+ | Selectores CSS que no utilizan ID, clases o atributos | 0 |
