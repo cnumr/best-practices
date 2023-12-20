@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 96 | 60 | 60 | |
 
@@ -15,11 +15,11 @@
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
+ |:--------:|:-------------------------:|:---------------:|
  | 4 | 4 | 4 |
-
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ 
+ |        Recursos ahorrados         |
+ |:---------------------------------:|
  | Procesador/RAM/Red/Almacenamiento |
 
  ### Descripción
@@ -28,13 +28,13 @@
 
  ### Ejemplos
 
- Si un archivo de audio agregado directamente al CMS pesa 7 MB es posible guardar:
- - 7 MB de ancho de banda en el momento de la carga;
- - 100 KB al escuchar el archivo de resultados;
+ Si un archivo de audio agregado directamente al CMS pesa 7 MB es posible ahorrar:
+ - 7 MB de ancho de banda en el momento de la carga.
+ - 100 KB al escuchar el archivo
  - 69 MB de almacenamiento en el disco duro del servidor.
 
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |-----------------------------------------|:----- -------------------:|
+ |-----------------------------------------|:------------------------:|
  | archivos de audio codificados directamente por el CMS | 0 |

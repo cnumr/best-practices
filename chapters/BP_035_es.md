@@ -1,8 +1,8 @@
-## Evite el uso de imágenes rasterizadas para la interfaz
+## Evitar el uso de imágenes rasterizadas para la interfaz
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 161 | 21 | 35 | |
 
@@ -14,22 +14,26 @@
 
  ### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
+ | Prioridad | Dificultad de aplicación | Impacto ecológico |
+ |:--------:|:-------------------------:|:-----------------:|
  | 4 | 4 | 4 |
 
- | Recursos guardados |
+ | Recursos ahorrados |
  |:---------------:|
  | Red |
 
  ### Descripción
 
-Elegir el formato de imagen más adecuado es fundamental para ahorrar ancho de banda.
+Elegir el formato de imagen más adecuado es esencial para ahorrar ancho de banda.
 
-Además con el creciente número de dispositivos y tamaños de pantalla y el aumento de las resoluciones de pantalla se deberían preferir los enfoques basados ​​en vectores a las imágenes rasterizadas.
-Con este enfoque la interfaz se desacoplará de la resolución de la pantalla lo que limitará la deuda técnica.
- La primera regla es reemplazar las imágenes rasterizadas (GIF PNG JPEG WebP etc.) con estilos (CSS) pictogramas glifos o íconos proporcionados por fuentes web o fuentes estándar (ya instaladas en los dispositivos de los usuarios).
- Esto no requiere ningún recurso adicional para descargar. Si no es posible utilizar CSS o fuentes estándar también puedes:
+Además, con el creciente número de dispositivos y tamaños de pantalla, y el aumento de las 
+resoluciones de pantalla, hay que favorecer los enfoques basados en vectores frente a las 
+imágenes rasterizadas. Con este enfoque, la interfaz estará desvinculada de la resolución 
+de pantalla, lo que limitará la deuda técnica. La primera regla es sustituir las imágenes 
+de trama (GIF, PNG, JPEG, WebP, etc.) por estilos (CSS), pictogramas, glifos o iconos proporcionados 
+por fuentes web o fuentes estándar (ya instaladas en los dispositivos de los usuarios). 
+Esto no requiere descargar ningún recurso adicional. Si no es posible utilizar CSS o fuentes 
+estándar también puedes.
 
  - utilizar fuentes web
  - utilice una imagen vectorial en formato SVG estándar
@@ -41,15 +45,15 @@ Con este enfoque la interfaz se desacoplará de la resolución de la pantalla lo
  !img.png(img.png)
 
  Este tamaño de imagen de 198 × 198 píxeles es:
- - 118 KB en formato rasterizado sin comprimir;
- - 65 KB en JPEG (90% de compresión);
- - 38 KB en formato PNG;
- - 07 KB en SVG minimizado.
+ - 118 KB en formato rasterizado sin comprimir.
+ - 65 KB en formato JPEG (compresión del 90%).
+ - 38 KB en formato PNG.
+ - 0,7 KB en SVG minificado.
 
- En este caso particular el formato vectorial es de 5 a 10 veces más ligero que el formato ráster y al mismo tiempo puede cambiar su tamaño infinitamente.
-
+En este caso concreto, el formato vectorial es entre 5 y 10 veces más 
+ligero que el formato rasterizado, a la vez que se puede redimensionar infinitamente.
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |----------------------------------|:------------ ------------:|
- | imágenes rasterizadas para la URL probada | 5 |
+ | El número de...                           | es igual o inferior a |
+ |-------------------------------------------|:------------------:|
+ | Imágenes rasterizadas para la URL probada |         5          |

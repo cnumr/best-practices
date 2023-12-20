@@ -1,40 +1,40 @@
 ## Prefiere una solución personalizada a un CMS
 
- ### Identificadores
+### Identificadores
 
- | TI verde | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 2 | 12 | 11 | |
+| GreenIT | V2  | V3  | V4  |
+|:-------:|:---:|:---:|:---:|
+| 2       | 12  | 11  |     |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:----------:|:--------------------- :|
- | 2. Diseño | Centro de datos | Arquitecto / Desarrollador |
+| Ciclo de vida | Niveles         | Responsable                |
+|:-------------:|:---------------:|:--------------------------:|
+| 2. Diseño     | Centro de datos | Arquitecto / Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
- | 3 | 3 | 3 |
+| Prioridad | Dificultad de implementación | Impacto ecológico |
+|:---------:|:----------------------------:|:-----------------:|
+| 3         | 3                            | 3                 |
 
- | Recursos guardados |
- |:-------------------------:|
- | Procesador/RAM/Red |
+| Recursos ahorrados |
+|:------------------:|
+| Procesador/RAM/Red |
 
- ### Descripción
+### Descripción
 
-Utilice un marco o una solución personalizada para tener más libertad para optimizar el servicio digital.
+Utilice un framework o una solución personalizada para tener más libertad para optimizar el servicio digital.
 
-Para lograr su flexibilidad los CMS requieren más recursos que las soluciones simples y personalizadas.
+Para lograr su flexibilidad, los CMS requieren más recursos que las soluciones simples y personalizadas.
 
-Por ejemplo para administrar sus complementos los CMS utilizan un sistema de enlace que generalmente se basa en una convención de nomenclatura de funciones.
- La prueba de la existencia de nuevas funciones utiliza recursos mientras que los desarrollos personalizados no tienen que comprobar la existencia de nuevas funciones.
+Por ejemplo, para administrar sus plugins, los CMS utilizan un sistema de enlace, que generalmente se basa en una convención de nomenclatura de funciones.
+Comprobar la existencia de nuevas funciones utiliza recursos, mientras que los desarrollos personalizados no tienen que comprobar la existencia de nuevas características.
 
-El uso de demasiadas extensiones puede ralentizar el sitio.
+Utilizar demasiadas extensiones puede ralentizar el sitio.
 
- ### Regla de validación
+### Regla de validación
 
- | El número de... | es igual o menor que |
- |----------------------------------|:------------ --------------:|
- | extensiones de un sitio usando un CMS | 3 |
+| El número de...                            | es igual o menor que |
+|--------------------------------------------|:--------------------:|
+| extensiones de un sitio que utiliza un CMS | 3                    |

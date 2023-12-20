@@ -2,29 +2,29 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2  |  V3  | V4  |
  | :-----: | :-: | :--: | :-: |
- | 84 | 100 | 1 04 | |
+ |    84   | 100 | 1 04 |     |
 
  ### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- | :-----------: | :--------: | :------------------: |
+ | Ciclo de vida |     Niveles     |        Responsable        |
+ | :-----------: | :-------------: | :-----------------------: |
  | 4. Producción | Centro de datos | Administrador del sistema |
 
  ### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :------: | :----------------------: | :-----------------------: |
- | 2 | 2 | 3 |
+ | Prioridad | Dificultad de implementación |     Impacto ecológico     |
+ | :-------: | :--------------------------: | :-----------------------: |
+ |     2     |               2              |              3            |
 
- | Recursos guardados |
+ |  Recursos ahorrados |
  | :-----------------: |
- | Procesador/Red |
+ |   Procesador/Red    |
 
  ### Descripción
 
- Los servidores web registran información para todas las solicitudes HTTP y generalmente traducen las direcciones IP de los usuarios en nombres de dominio. Esta conversión (búsqueda de DNS) es uno de los cuellos de botella del servidor Apache HTTP.
+ Los servidores web registran información para todas las solicitudes HTTP, y generalmente traducen las direcciones IP de los usuarios en nombres de dominio. Esta conversión (búsqueda de DNS) es uno de los cuellos de botella del servidor Apache HTTP.
 
 Por lo tanto debería estar deshabilitado.
 
@@ -32,12 +32,12 @@ Por lo tanto debería estar deshabilitado.
 
  En el archivo de configuración de su servidor Apache ubicado en `/etc/apache/httpd.conf` o en `/etc/apache2/apache2.conf` escriba:
 
- ```apacheconf
- Búsquedas de nombre de host desactivadas
- ```
+```apacheconf
+ HostnameLookups Off
+```
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- | ------------------ | :----------------------: |
- | búsquedas DNS activas | 0 |
+ | El número de...       | es igual o menor que |
+ | --------------------- | :------------------: |
+ | búsquedas DNS activas |          0           |

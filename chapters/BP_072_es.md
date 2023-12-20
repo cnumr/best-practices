@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 55 | 71 | 72 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:----------:|:-------------- --------------:|
+ |:-----------------:|:----------:|:----------------------------:|
  | 3. Implementación | Centro de datos | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -19,15 +19,16 @@
  | 3 | 3 | 3 |
 
  | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ |:---------------------------------------------------------:|
  | Procesador/RAM/Red |
 
  ### Descripción
 
- Realizar consultas SQL dentro de un bucle provoca importantes problemas de rendimiento especialmente si el servidor SQL no está en la máquina local.
-Estos servidores están optimizados para manejar múltiples selecciones inserciones o modificaciones en una sola consulta o una sola transacción.
+Realizar consultas SQL dentro de un bucle causa problemas de rendimiento significativos, especialmente si el servidor SQL no está en la máquina local. 
+Estos servidores están optimizados para manejar múltiples selecciones, inserciones o modificaciones en una sola consulta o una sola transacción.
 
-El uso inadecuado de estas consultas consume innecesariamente ciclos de CPU memoria y ancho de banda.
+
+El uso inadecuado de estas consultas consume innecesariamente ciclos de CPU, memoria y ancho de banda.
 
  ### Ejemplos
 
@@ -51,5 +52,5 @@ El uso inadecuado de estas consultas consume innecesariamente ciclos de CPU memo
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |---------------------------|:------------------ -----:|
+ |---------------------------|:-----------------------:|
  | Consultas SQL dentro de un bucle | 0 |

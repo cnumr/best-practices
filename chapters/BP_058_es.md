@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 99 | 58 | 58 | |
 
@@ -18,22 +18,23 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 4 | 4 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Recursos ahorrados |
+ |:---------------------------------------------------------:|
  | Procesador/RAM/Red/Almacenamiento |
 
  ### Descripción
 
- Los CMS más conocidos ofrecen muchas funciones para optimizar (comprimir cambiar el tamaño etc.) y generar sus medios (imágenes pdf
- documentos audios y vídeos) a menudo a través de complementos o extensiones. A veces no es gratuito pero siempre requiere muchos recursos en términos
- de CPU RAM red y almacenamiento estos complementos no evitan la importación desproporcionada (tamaño dimensión y calidad)
- o medios inadecuados en comparación con su uso.
+Los CMS más conocidos ofrecen numerosas funcionalidades para optimizar (comprimir, redimensionar, etc.) 
+y generar sus medios (imágenes, pdf, documentos, audios y vídeos) a menudo a través de plugins o extensiones. 
+A veces no son gratuitos, pero siempre intensivos en recursos en términos de CPU, RAM, red y almacenamiento, 
+estos plugins no evitan la importación de medios desproporcionados (tamaño, dimensión y calidad) o inadecuados en 
+comparación con su uso.
 
  ### Ejemplos
 
-Aquí hay algunas herramientas que pueden ayudarlo a optimizar sus medios en su computadora:
+Aquí tienes algunas herramientas que pueden ayudarte a optimizar el contenido multimedia de tu ordenador:
 
- -FFmpeg(https://www.ffmpeg.org/)
+ - FFmpeg(https://www.ffmpeg.org/)
  - Any Video Converter(https://www.any-video-converter.com/products/video-converter-free/)
  - Xnview(https://www.xnview.com/)
  - Gimp(https://www.gimp.org/)
@@ -44,5 +45,5 @@ Aquí hay algunas herramientas que pueden ayudarlo a optimizar sus medios en su 
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |------------------------------------------------ ---|:------------------------:|
- | contenidos directamente optimizados por el CMS | 0 |
+ |---------------------------------------------------|:------------------------:|
+ | contenidos optimizados directamente por el CMS | 0 |

@@ -2,29 +2,29 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2  | V3  | V4  |
  | :-----: | :-: | :-: | :-: |
- | 82 | 99 | 103 | |
+ |   82    | 99  | 103 |     |
 
  ### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- | :-----------: | :--------: | :--------------------------: |
+ | Ciclo de vida |     Niveles     |            Responsable               |
+ | :-----------: | :-------------: | :----------------------------------: |
  | 4. Producción | Centro de datos | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :------: | :----------------------: | :-----------------------: |
- | 2 | 2 | 3 |
+ | :-------: | :--------------------------: | :---------------: |
+ |     2     |             2                |          3        |
 
- | Recursos guardados |
- | :----------------------: |
+ |       Recursos ahorrados      |
+ | :---------------------------: |
  | Procesador/RAM/Almacenamiento |
 
  ### Descripción
 
- Los registros del servidor (web aplicación base de datos) pueden llegar a ser muy grandes. Se recomienda configurarlos. Al ajustar el nivel de registro de la aplicación al nivel más alto posible (por ejemplo solo información/advertencia/error) y al registrar solo información relevante se evitan las escrituras en el disco se reduce la cantidad de ciclos de CPU y el uso del espacio de almacenamiento.
+ Los registros del servidor (web, aplicación, base de datos) pueden llegar a ser muy grandes. Se recomienda configurarlos ajustando el nivel de registro de la aplicación al nivel más alto posible (por ejemplo, sólo información/advertencia/error) y al registrar sólo información relevante, se evitan las escrituras en el disco, se reduce la cantidad de ciclos de CPU y el uso del espacio de almacenamiento.
 
 Para evitar la saturación del disco también se recomienda configurar un tiempo de retención y una rotación de registros según las necesidades operativas del servicio.
 
@@ -40,6 +40,6 @@ Los registros de acceso de un servidor Apache se pueden configurar de la siguien
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |-----------------------------------------------| :----------------------: |
- | registra archivos sin un tiempo máximo de retención | 0 |
+ | El número de...                                     | es igual o menor que |
+ |-----------------------------------------------------| :------------------: |
+ | registra archivos sin un tiempo máximo de retención |           0          |

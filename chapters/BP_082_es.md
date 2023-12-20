@@ -2,14 +2,14 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 65 | 82 | 82 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:----------------- -----------:|
+ |:-----------------:|:-------:|:----------------------------:|
  | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
@@ -18,19 +18,18 @@
  |:------------------:|:-------------------------: |:-----------------:|
  | 3 | 4 | 3 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Recursos ahorrados |
+ |:---------------------------------------------------------:|
  | Red |
 
  ### Descripción
 
-Las cookies permiten tener un estado compartido entre el navegador del usuario y el servidor web remoto gracias a los datos compartidos.
- Estos datos se envían con cada solicitud HTTP. Por tanto es necesario optimizar al máximo el tamaño de la cookie.
- y eliminarlo tan pronto como ya no sea necesario.
+Las cookies permiten tener un estado compartido entre el navegador del usuario y el servidor web remoto gracias a los
+datos compartidos. Estos datos se envían con cada petición HTTP. Por lo tanto, es necesario optimizar al máximo el tamaño de las cookies y eliminarlas en cuanto dejen de ser necesarias.
 
  ### Ejemplo
 
- Es posible eliminar las cookies que ya no son necesarias especificando una duración de caducidad nula o negativa de la siguiente manera:
+Es posible eliminar las cookies que ya no se necesiten especificando una duración de expiración nula o negativa, como se indica a continuación:
  ```
  Establecer cookie: user_mavariable=; Edad máxima = 0
  ```
@@ -39,6 +38,6 @@ Las cookies permiten tener un estado compartido entre el navegador del usuario y
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- |--------------------------------|:-------------- ----------:|
+ | El número de... | es igual o inferior a |
+ |--------------------------------|:------------------------:|
  | cookies inútiles o no optimizadas | 0 |

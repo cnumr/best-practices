@@ -24,9 +24,10 @@
 
  ### Descripción
 
- Evite modificar las propiedades de CSS una por una para limitar el número de repintados/reflujos.
+Evitar modificar las propiedades CSS una a una para limitar el número de repintados/reﬂows.
 
- En lugar de agregar/eliminar clases CSS que permiten modificar varias propiedades a la vez mientras solo se genera un único repaint/reﬂow (consulte [la buena práctica n.° 45](/chapters/BP_045_es.md)).
+En su lugar, añada/elimine clases CSS que permitan modificar varias propiedades a la vez y generar un único repintado/reﬂujo 
+(véase la regla nº 45).
 
  ### Ejemplo
 
@@ -53,4 +54,4 @@
 
  | El número de... | es igual o menor que |
  |-------------------------------------------------------------------------------|:-------------------------:|
- | Declaraciones CSS que se pueden agrupar en una sola (margen, relleno,...) | 0 |
+ | Declaraciones CSS que pueden agruparse en una sola (margen, relleno, ...) | 0 |

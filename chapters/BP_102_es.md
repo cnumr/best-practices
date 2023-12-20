@@ -2,25 +2,25 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2  | V3  | V4  |
  | :-----: | :-: | :-: | :-: |
- | 91 | 107 | 102 | |
+ |    91   | 107 | 102 |     |
 
  ### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- | :-----------: | :-----------: | :--------------------------: |
+ | Ciclo de vida |      Niveles     |             Responsable              |
+ | :-----------: | :--------------: | :----------------------------------: |
  | 4. Producción | Usuario/Terminal | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :------: | :----------------------: | :-----------------------: |
- | 3 | 2 | 4 |
+ | :-------: | :--------------------------: | :---------------: |
+ |     3     |              2               |          4        |
 
- | Recursos guardados |
+ |      Recursos ahorrados   |
  | :-----------------------: |
- | Red / Consultas |
+ |        Red / Consultas    |
 
  ### Descripción
 
@@ -28,10 +28,10 @@
 
  ### Ejemplo
 
- Si una solicitud Ajax devuelve una lista de nombres de ciudades nombres de contactos o cualquier elemento no calculado estas respuestas deben almacenarse en caché en el lado del cliente para evitar generar otras solicitudes al servidor.
+ Si una solicitud Ajax devuelve una lista de nombres de ciudades, nombres de contactos o cualquier elemento no calculado, estas respuestas deben almacenarse en caché en el lado del cliente para evitar generar otras solicitudes al servidor.
 
  ### Regla de validación
 
- | El número de... | es igual o menor que |
- | ------------------------- | :----------------------: |
- | respuestas Ajax no almacenadas en caché | 10% |
+ | El número de...                         | es igual o menor que |
+ | --------------------------------------- | :------------------: |
+ | respuestas Ajax no almacenadas en caché |          10%         |

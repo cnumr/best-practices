@@ -1,15 +1,15 @@
-## Usar todos los niveles de la caché del CMS
+## Utilizar todos los niveles del caché CMS
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:---:|:---:|:----:|
  | 60 | 57 | 57 | |
 
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:------------ --:|
+ |:-------------:|:----------:|:--------------:|
  | 4. Producción | Centro de datos | Administrador del sistema |
 
  ### Indicaciones
@@ -18,25 +18,26 @@
  |:------------------:|:-------------------------- :|:-----------------:|
  | 4 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
+ | Recursos ahorrados |
+ |:---------------------------------------------------------:|
  | Procesador/RAM |
 
  ### Descripción
 
- Si el CMS (como Wordpress Drupal eZ Publish etc.) ofrece un sistema de caché de varios niveles utilice estos diferentes niveles como
- su granularidad reduce los recursos utilizados (ciclos de CPU memoria) y ofrece mejores rendimientos a los usuarios.
+Si el CMS (como Wordpress, Drupal, eZ Publish, etc.) ofrece un sistema de caché multinivel, 
+el uso de estos diferentes niveles en su granularidad reduce los recursos utilizados (ciclos de CPU, memoria) y ofrece mejores prestaciones a los usuarios.
 
  ### Ejemplo
 
- Un CMS como WordPress no tiene de forma nativa un sistema de caché pero existen varios complementos que pueden responder a este requisito. Los más populares son:
+Un CMS como WordPress no dispone de forma nativa de un sistema de caché, pero existen varios plugins que pueden 
+responder a esta necesidad. Los más populares son:
 
- - Caché total W3
+ - W3 Total Cache
  - WP Súper Caché
- - cohete WP
+ - WP-rocket
 
- Con uno de estos complementos las páginas se almacenan en caché en el servidor y ya no se generan para cada usuario. Además este tipo de herramientas también proporciona otras optimizaciones orientadas a WebPerf siguiendo principios de ecodiseño web.
-
+Con uno de estos plugins, las páginas se almacenan en el caché del servidor y ya no se generan para cada usuario. Además,
+este tipo de herramientas también proporcionan otras optimizaciones orientadas a WebPerf siguiendo los principios del ecodiseño web.
 
  ### Regla de validación
 

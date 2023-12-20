@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 15 | 29 | 26 | |
 
@@ -18,8 +18,8 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 2 | 3 | 2 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
+ |Recursos ahorrados |
+ |:----------------------------------------------------------:|
  | Red |
 
  ### Descripción
@@ -32,7 +32,7 @@ Utilice notaciones CSS abreviadas para reducir el tamaño de las hojas de estilo
  ```css
  margen superior: 1em; margen derecho: 0; margen inferior: 2em; margen izquierdo: 05 em;
  ```
- en su lugar escribe:
+Escriba en su lugar :
  ```css
  margen:1em 0 2em 05em;
  ```
@@ -44,5 +44,5 @@ Utilice notaciones CSS abreviadas para reducir el tamaño de las hojas de estilo
  ### Regla de validación
 
  | El número de... | es igual o menor que |
- |--------------------------------|:-------------- -----------:|
+ |--------------------------------|:-------------------------:|
  | declaraciones CSS no abreviadas | 0% |

@@ -2,7 +2,7 @@
 
  ### Identificadores
 
- | TI verde | V2 | V3 | V4 |
+ | GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 170 | 55 | 18 | |
 
@@ -18,26 +18,29 @@
  |:-------------------:|:------------------------- :|:---------------------:|
  | 3 | 3 | 4 |
 
- |Recursos guardados |
- |:----------------------------------------------- -----------:|
- | Consultas |
+ | Recursos ahorrados |
+ |:------------------:|
+ |     Consultas      |
 
  ### Descripción
 
-Cuando un sitio web o servicio en línea aloja componentes de páginas web en múltiples dominios el navegador debe establecer una conexión HTTP con cada uno de estos dominios. Una vez recibida la página HTML
+Cuando un sitio web o servicio en línea aloja componentes de páginas web en múltiples dominios el navegador debe 
+establecer una conexión HTTP con cada uno de estos dominios. Una vez recibida la página HTML
  el navegador busca recursos mientras recorre el DOM (modelo de objetos de documento).
-Algunos recursos son esenciales para que la página web funcione. Si están alojados en dominios que no responden la página puede volverse más lenta. Cuando sea posible todos los recursos deben agruparse en un único dominio.
+Algunos recursos son esenciales para que la página web funcione. Si están alojados en dominios que no responden 
+la página puede volverse más lenta. Cuando sea posible todos los recursos deben agruparse en un único dominio.
 
- La única excepción a esta regla sería el alojamiento de recursos estáticos (hojas de estilo imágenes etc.) en un dominio dedicado.
- para evitar la carga de una o más cookies por cada GET HTTP por parte del navegador. El tiempo de respuesta disminuirá y el ancho de banda consumido innecesariamente.
+La única excepción a esta regla sería el alojamiento de recursos estáticos (hojas de estilo, imágenes, etc.) 
+en un dominio dedicado para evitar la carga de una o más cookies por cada GET HTTP del navegador. El tiempo de respuesta disminuirá, así como el ancho de banda consumido innecesariamente.
+
 
  ### Ejemplo
 
- Para un sitio web institucional con mucho tráfico se deben preferir dos subdominios:
+Para un sitio web institucional con mucho tráfico, es preferible utilizar dos subdominios:
  - servidor de aplicaciones en www.dominio.tld
  - servidor de medios “sin cookies” en media.domain.tld
 
- Esto reduce la cantidad de dominios y evita el transporte innecesario de cookies con cada solicitud HTTP GET en recursos estáticos.
+Esto reduce el número de dominios y evita transportar innecesariamente cookies con cada petición HTTP GET sobre recursos estáticos.
 
  ### Regla de validación
 

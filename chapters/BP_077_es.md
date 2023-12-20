@@ -9,22 +9,23 @@
  ### Categorías
 
  | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------:|:--------------------- -------:|
+ |:-------------:|:-------:|:----------------------------:|
  | 4. Producción | Red | Arquitecto/Desarrollador de Software |
 
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
+ |:--------:|:-------------------------:|:-----------------:|
  | 4 | 3 | 4 |
 
- | Recursos guardados |
- |:----------------------------------------------- ----------:|
- | Red |
+ | Recursos ahorrados |
+ |:------------------:|
+ |        Red         |
 
  ### Descripción
 
-Las herramientas de minificación  CSS Javascript HTML y SVG eliminan espacios innecesarios comentarios de desarrolladores saltos de línea delimitadores de bloques y reducen su tamaño.
+Las herramientas de minificación de CSS, Javascript, HTML y SVG eliminan los espacios innecesarios, 
+los comentarios de los desarrolladores, los saltos de línea y los delimitadores de bloque, reduciendo su tamaño.
 
  ### Ejemplos
 

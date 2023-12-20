@@ -2,7 +2,8 @@
 
  ### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
+
+ |  GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
  | 19 | 17 | 29 | |
 
@@ -18,35 +19,38 @@
  |:-------------------:|:-------------------------:|:---------------------:|
  | 4 | 3 | 4 |
 
- |Recursos guardados |
+
+ |Recursos ahorrados |
  |:----------------------------------------------------------:|
  | Almacenamiento / Red / Consultas |
 
  ### Descripción
 
- Utilice fuentes estándar, que ya están instaladas en la computadora del usuario, por lo que no necesitan descargarlas. Esto ahorra ancho de banda y al tiempo que acelera la carga del sitio. Puede encontrar una lista de fuentes estándar en [https://systemfontstack.com/](https://systemfontstack.com/), por ejemplo.
+Utilice fuentes estándar que ya estén instaladas en el ordenador del usuario y no necesiten descargas adicionales para
+ahorrar ancho de banda y acelerar la carga de las páginas web. Puede encontrar una lista de fuentes estándar en https://systemfontstack.com/.
 
- Si sin embargo, necesitas una fuente específica para tu servicio digital, incluso si es una API font(Google font, Adobe font, etc.) debe:
+Sin embargo, si necesita una fuente específica para su servicio digital, aunque se trate de una fuente API (Google font, Adobe font, etc.), deberá:
+
  - Alojar la fuente usted mismo
- - Utilizar negrita falsa a través de la propiedad CSS ```-webkit-text-stroke``` si es posible
- - Prefiere el uso de variable font si necesitas más de una fuente (por ejemplo: normal, negrita, etc.)
- - Optimice la fuente de texto eliminando caracteres innecesarios (ejemplo: los sitios franceses sólo requieren caracteres latinos, por lo que se puede eliminar el alfabeto cirílico)
+ - Utilice negrita falsa a través de la propiedad CSS ```-webkit-text-stroke``` cuando sea posible
+ - Preferir el uso de fuentes variables si necesitas más de una variante (por ejemplo: normal, negrita, etc.).
+ - Optimice la fuente eliminando los caracteres innecesarios (ejemplo: Los sitios franceses sólo requieren caracteres latinos, por lo que se puede suprimir el alfabeto cirílico)
 
-Si tiene pictogramas o ilustraciones monocromáticas (ver regla 30: Preferir glifos a imágenes) y  si los derechos de uso de las fuentes de texto lo permiten, incorpore los nuevos glifos directamente en las fuentes de texto.
+Debería incorporar nuevos glifos directamente a las fuentes si dispone de pictogramas o ilustraciones monocromáticas (véase la regla 30: Prefiera los glifos a las imágenes) y los derechos de uso de la fuente lo permiten.
 
  ### Ejemplo
 
-Aquí hay un cuadro comparativo de tamaños de fuente tipográfica Oswald:
+Aquí hay tabla comparativa de los tamaños de los tipos de letra Oswald:
 
  | | Regular | Regular + Negrita | Variables | Latín regular | Latín regular + Latín negrita | Latín variable |
- |:------:|:-------:|:--------------:|:--------:|:-------------:|:--------------------------:|:--------------:|
+ |:------:|:-------:|:--------------:|:--------:|: -------------:|:--------------------------:|:--------------:|
  | Peso | 376 KB | 769 KB | 66kb | 16kb | 325 KB | ?
 
  ### Solución alternativa
 
-Los usuarios pueden elegir, a través de la configuración del navegador, solicitar a los sitios web que visitan que optimicen las solicitudes de red. Puede detectarlo con la media query `prefiere-datos-reducidos`.
+Los usuarios pueden elegir, a través de la configuración del navegador, pedir a los sitios web que visitan que optimicen las peticiones de red. Puede detectarlo con la consulta de medios `prefers-reduced-data`.
 
- En el siguiente ejemplo, la fuente  `Montserrat` solo se descargará si los usuarios no establecieron ninguna configuración personal. De lo contrario, se utilizará la fuente `Arial` y no se descargará `Montserrat`.
+En el ejemplo siguiente, la fuente `Montserrat` sólo se descargará si los usuarios no han establecido ninguna configuración personal. En caso contrario, se utilizará la fuente `Arial` y no se descargará `Montserrat`.
 
 ```css
 @media (prefers-reduced-data: no-preference) {
