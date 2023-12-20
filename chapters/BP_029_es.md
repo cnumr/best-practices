@@ -1,6 +1,7 @@
-## Prefiere fuentes estándar
+## Preferir fuentes estándar
 
  ### Identificadores
+
 
  |  GreenIT | V2 | V3 | V4 |
  |:-------:|:----:|:----:|:----:|
@@ -15,8 +16,9 @@
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
+ |:-------------------:|:-------------------------:|:---------------------:|
  | 4 | 3 | 4 |
+
 
  |Recursos ahorrados |
  |:----------------------------------------------------------:|
@@ -50,22 +52,23 @@ Los usuarios pueden elegir, a través de la configuración del navegador, pedir 
 
 En el ejemplo siguiente, la fuente `Montserrat` sólo se descargará si los usuarios no han establecido ninguna configuración personal. En caso contrario, se utilizará la fuente `Arial` y no se descargará `Montserrat`.
 
- ```css
- @media (prefiere-datos-reducidos: sin preferencia) {
-      @Perfil delantero {
- familia de fuentes: Montserrat;
- estilo de fuente: normal;
- peso de fuente: 400;
- src: url('fonts/montserrat-latin-regular.woff2');
- }
- }
+```css
+@media (prefers-reduced-data: no-preference) {
+     @font-face {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 400;
+         src: url('fonts/montserrat-latin-regular.woff2');
+     }
+}
 
- mono {
- familia de fuentes: Montserrat Arial;
- }
- ```
+bodysuit {
+   font-family: Montserrat, Arial;
+}
+```
 
- Para obtener más información sobre la consulta de medios `prefers-reduced-data`: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data(https:/ /developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
+
+ Para obtener más información sobre la media query `prefers-reduced-data`: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
 
  ### Regla de validación
 

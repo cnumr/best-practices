@@ -15,7 +15,7 @@
  ### Indicaciones
 
  | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------- :|:--------------------:|
+ |:------------------:|:--------------------------:|:--------------------:|
  | 3 | 4 | 2 |
 
  | Recursos ahorrados |
@@ -32,21 +32,22 @@ En su lugar, añada/elimine clases CSS que permitan modificar varias propiedades
  ### Ejemplo
 
  Escribir:
- ```html
- <estilo>
- .en-error { color: rojo;
- peso de fuente: negrita;
- }
- </estilo>
- <guión>
- $el.bind('error' función () {
- $el.addClass('en error');
- });
- $el.bind('ejecutando' función () {
- $el.removeClass('en error');
- };
- </script>
- ```
+
+```html
+<styling>
+     .in-error { color: red;
+         font-weight: bold;
+     }
+</style>
+<script>
+     $el.bind('error', function () {
+         $el.addClass('in-error');
+     });
+     $el.bind('running', function () {
+         $el.removeClass('in-error');
+     };
+</script>
+```
 
 
  #### Regla de validación
