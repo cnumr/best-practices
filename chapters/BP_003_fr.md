@@ -28,7 +28,7 @@ Optimiser le parcours utilisateur consiste à diminuer le temps passé par l'uti
 
 A minima, sonder en observant son entourage utilisant le service est un bon moyen d’identifier les points de friction - situations ou interactions qui contribuent à dégrader l’expérience utilisateur et à ralentir le parcours - des utilisateurs. Les tests utilisateurs permettent d'aller plus en profondeur dans la recherche de ces points de friction.
 
-Le temps passé par l'utilisateur sur son terminal est le deuxième post en termes d'impacts environnementaux.
+Le temps passé par l'utilisateur sur son terminal est le deuxième poste en termes d'impacts environnementaux.
 
 ### Exemple
 
