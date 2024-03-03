@@ -42,7 +42,7 @@ Interactions related to assisted input are managed locally, which reduces exchan
 For the example of searching for a route and entering a city, it is possible, in case of ambiguity, to propose
 the different results after submitting the form. The user enters a string, for example "Lens",
 submits the form, and is then offered different options: "Lens (France)", "Lens (Belgium)",
-"Loison under Lens".
+"Loison sous Lens".
 
 If the use of autocompletion cannot be avoided, it is possible to minimize the number of requests with simple optimizations:
 - Add a delay of a few tenths of a second between the addition of a character and the request: this allows not to trigger a query if the user has not finished typing.
