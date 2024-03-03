@@ -67,6 +67,7 @@ Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibl
 * [Utiliser le rechargement partiel d'une zone de contenu](/chapters/BP_038_fr.md)
 * [Éviter les animations JavaScript / CSS](/chapters/BP_039_fr.md)
 * [N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS](/chapters/BP_040_fr.md)
+  * [Utilisez des alternatives à Moment.js pour la gestion des dates](/chapters/BP_040_1_fr.md)
 * [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
 * [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
 * [Réduire au maximum le repaint (appearence) et le reflow (layout)](/chapters/BP_043_fr.md)
