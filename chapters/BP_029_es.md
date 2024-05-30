@@ -1,77 +1,75 @@
-## Preferir fuentes estándar
+## Favorecer las fuentes (tipo de letra) estándar
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   19   | 17  | 29  | |
 
- |  GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 19 | 17 | 29 | |
+### Categorías
 
- ### Categorías
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Diseñador UX/UI|
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Diseñador UX/UI |
+### Indicaciones
 
- ### Indicaciones
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|-------------------|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:-------------------------:|:---------------------:|
- | 4 | 3 | 4 |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Almacenamiento/ Red/ Consultas  |
 
+### Descripción
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Almacenamiento / Red / Consultas |
+Preferir las fuentes estándar, puesto que ya están presentes en el ordenador del usuario, por lo que no es necesario descargarlas.
+Esto ahorra ancho de banda y acelera la visualización del sitio. Estos tipos de letra estándar se enumeran en https://systemfontstack.com/ por ejemplo.
 
- ### Descripción
+Sin embargo si necesita una fuente particular para su servicio digital, incluso si es una Api font (google font, adobe font, etc.), debe:
+- Alojar la fuente usted mismo
+- Utilizar una negrita falsa mediante la propiedad css ```-webkit-text-Stroke```
+- Preferir una variable fuente si necesita más de una fuente (por ejemplo: regular, bold, etc.)
+- Optimizar la fuente aligerando caracteres innecesarios (ejemplo: un sitio en francés solo necesita caracteres latinos, por lo que puede eliminar el alfabeto cirílico)
 
-Utilice fuentes estándar que ya estén instaladas en el ordenador del usuario y no necesiten descargas adicionales para
-ahorrar ancho de banda y acelerar la carga de las páginas web. Puede encontrar una lista de fuentes estándar en https://systemfontstack.com/.
+Si usted tiene pictogramas o ilustraciones monocromáticas (vea la buena práctica: Prefiera los glifos a las imágenes) y si los derechos de los usos de la fuente lo permiten, incorporar los nuevos glifos directamente a la fuente.
 
-Sin embargo, si necesita una fuente específica para su servicio digital, aunque se trate de una fuente API (Google font, Adobe font, etc.), deberá:
+### Ejemplo
 
- - Alojar la fuente usted mismo
- - Utilice negrita falsa a través de la propiedad CSS ```-webkit-text-stroke``` cuando sea posible
- - Preferir el uso de fuentes variables si necesitas más de una variante (por ejemplo: normal, negrita, etc.).
- - Optimice la fuente eliminando los caracteres innecesarios (ejemplo: Los sitios franceses sólo requieren caracteres latinos, por lo que se puede suprimir el alfabeto cirílico)
+Aquí está una tabla comparativa de los pesos  de la fuente Oswald:
+| | Regular  | Regular + bold   | Variable | Latino Regular (  Latino Regular + Latino Bold (  Latino Variable |
+|---:| :---------------: |:---------------:|:------------:| :-----:| :-----:| :-----:|
+|Peso|37.6kb|76.9kb|66kb|16kb|32.5kb| ?
 
-Debería incorporar nuevos glifos directamente a las fuentes si dispone de pictogramas o ilustraciones monocromáticas (véase la regla 30: Prefiera los glifos a las imágenes) y los derechos de uso de la fuente lo permiten.
+### Solución Alternativa
 
- ### Ejemplo
+Sus usuarios pueden elegir, a través de las preferencias de sus navegadores, solicitar a los sitios web que visiten y que utilizan el media query `prefers-reduced-data`, que optimicen las consultas de red realizadas.
 
-Aquí hay tabla comparativa de los tamaños de los tipos de letra Oswald:
-
- | | Regular | Regular + Negrita | Variables | Latín regular | Latín regular + Latín negrita | Latín variable |
- |:------:|:-------:|:--------------:|:--------:|: -------------:|:--------------------------:|:--------------:|
- | Peso | 376 KB | 769 KB | 66kb | 16kb | 325 KB | ?
-
- ### Solución alternativa
-
-Los usuarios pueden elegir, a través de la configuración del navegador, pedir a los sitios web que visitan que optimicen las peticiones de red. Puede detectarlo con la consulta de medios `prefers-reduced-data`.
-
-En el ejemplo siguiente, la fuente `Montserrat` sólo se descargará si los usuarios no han establecido ninguna configuración personal. En caso contrario, se utilizará la fuente `Arial` y no se descargará `Montserrat`.
+En el ejemplo de abajo, solo descargamos el tipo de letra `Montserrat` si y solo si el usuario no ha definido una preferencia. Por el contrario, se utilizará la fuente `Arial` sin descargar la `Montserrat`.
 
 ```css
 @media (prefers-reduced-data: no-preference) {
-     @font-face {
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 400;
-         src: url('fonts/montserrat-latin-regular.woff2');
-     }
+	@font-face {
+    	font-family: Montserrat;
+    	font-style: normal;
+    	font-weight: 400,
+    	src:  url('fonts/Montserrat-latin-regular.woff2');
+	}
 }
 
-bodysuit {
-   font-family: Montserrat, Arial;
+body {
+  font-family: Montserrat, Arial;
 }
 ```
 
+Para más información sobre la media query `prefers-reduced-data`: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https//developer.mozilla.org/enUS/USdocs/Wed@s/reduced/bDatos/
 
- Para obtener más información sobre la media query `prefers-reduced-data`: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de fuentes descargadas  | 2  |
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | fuentes descargadas | 2 |
+

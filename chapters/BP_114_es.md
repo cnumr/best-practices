@@ -1,47 +1,49 @@
-## Adaptar vídeos a contextos de visualización
+## Adaptar los vídeos a los contextos de visualización
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   92    | 115 | 114 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   92   |  115 |  114 |  	|
 
 ### Categorías
 
-| Ciclo de vida |       Niveles       | Responsable |
-|:-------------:|:-------------------:|:-----------:|
-|    5. Uso     | Usuario/Dispositivo |   Usuario   |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              2               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 2 | 3 |
 
 | Recursos ahorrados |
-|:------------------:|
-|  Procesador / Red  |
+|:----------------------------------------------------------:|
+| Procesador/ Red  |
 
- ### Descripción
+### Descripción
 
- Proporcione varios formatos (tamaño, velocidad de fotogramas, compresión de audio, etc.) según el contexto de visualización del vídeo (computadora de escritorio, tableta Wi-Fi, teléfono inteligente EDGE).
+Prever varios formatos (tamaño, velocidad de fotograma, compresión de audio, etc.) según el contexto de reproducción de los vídeos (ordenador de escritorio, tableta Wi-Fi, smartphone EDGE. ).
 
-La optimización del vídeo debe realizarse fuera del sitio web, idealmente durante la postproducción. Si no es posible, utilice servicios como YouTube o Vimeo, ya que ofrecen varios formatos optimizados (SD, HD, etc.) por defecto.
+La optimización de los vídeos debe realizarse fuera del sitio web, idealmente durante la postproducción. Si esto no es posible, utilizar servicios como Youtube o Vimeo que ofrecen, por defecto, múltiples formatos optimizados (SD, HD, etc).
 
- ### Ejemplo
+### Ejemplo
 
- Una guía del usuario de 15 segundos filmada con una resolución de 1680 x 1050 pesa:
+Una ayuda de usuario en 1 680 x 1 050, con una duración de 15 segundos, pesa:
+ - 49 MB no optimizada;
+ - 3 MB optimizada para una resolución igual o superior a 1.024 x 720 en MPEG 4/ H.264/ AAC;
+ - 1,2 MB optimizada para una resolución igual o superior a 480 x 320 en MPEG 4/ H.264/ AAC.
 
- - 49 MB cuando no está optimizado;
- - 3 MB cuando está optimizado para una resolución igual o superior a 1.024 x 720 en MPEG 4/H.264/AAC;
- - 1.2 MB cuando está optimizado para una resolución igual o superior a 480 x 320 en MPEG 4/H.264/AAC.
+Por lo tanto, se puede estimar un ahorro de al menos el 50 % del peso (y probablemente de las ganancias durante la decodificación, ya que el formato de codificación tiene en cuenta los materiales de destino) entre la versión «desktop» y la versión «móvil» del vídeo.
 
-Se puede estimar que hay al menos un aumento de tamaño del 50% (y probablemente ahorros durante la decodificación, ya que el formato de codificación tiene en cuenta el hardware específico) entre las versiones de video de una "computadora de escritorio" y "móviles".
+Con 3 tamaños diferentes 3 codificaciones diferentes, es decir, 9 versiones de un mismo vídeo, la mayoría de los casos deben ser cubiertos. Con una lógica de diseño sensible, es posible servir tal o cual vídeo en función de reglas simples como resolución de pantalla.
 
-La mayoría de los casos deben cubrirse con 3 tamaños diferentes x 3 codificaciones diferentes, es decir, 9 versiones del mismo vídeo. Es posible entregar el archivo correcto con reglas simples como la resolución de pantalla y una lógica de diseño responsiva.
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de vídeos con una definición de 1080p o mas visualizados en el sitio web cuando el terminal detectado es un smartphone  |  0 |
 
-| El número de...                                                                                                          | es igual o menor que |
-|--------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Vídeos con una definición de 1080p o superior mostrados en el sitio web cuando el dispositivo es un teléfono inteligente |                      |
+

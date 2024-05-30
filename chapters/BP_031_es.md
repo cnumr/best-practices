@@ -1,41 +1,42 @@
-## Validar páginas con las herramientas del W3C
+## Validar las páginas con el W3C
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 8 | 15 | 31 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 8  | 15 | 31  Ê   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:---------:|:-------------------------:|:-----------------:|
- | 3 | 5 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|-------------------|:-------------------------:|:---------------------:|
+| 3 | 5 | 2 |
 
- | Recursos ahorrados |
- |:---------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador  |
 
- ### Descripción
+### Descripción
 
- Asegúrese de que el código HTML sea válido, de lo contrario los navegadores corregirán dinámicamente varios elementos para mostrar mejor las páginas problemáticas.
- Estas correcciones dinámicas provocarían un mayor consumo de recursos.
+Comprobar que el código HTML de las páginas está correctamente formado. De lo contrario, el navegador corregirá dinámicamente una serie de elementos para mostrar de la mejor manera posible las páginas problemáticas.
+Estas correcciones dinámicas consumen recursos innecesarios cada vez que se cargan las páginas afectadas.
+
+### Ejemplo
+
+Usar el validador del W3C (World Wide Web Consortium) para comprobar que las páginas son válidas y que el código HTML está correctamente formado:
+https://validator.w3.org
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de errores críticos  | 0  |
 
 
- ### Ejemplo
-
- Utilice el validador del W3C (World Wide Web Consortium) para verificar que las páginas sean válidas y que el código HTML no tenga ningún fallo :
-
- https://validator.w3.org
-
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | errores críticos | 0 |

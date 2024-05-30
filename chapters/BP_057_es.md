@@ -1,46 +1,47 @@
-## Utilizar todos los niveles del caché CMS
+## Usar todos los niveles de caché del CMS
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 60 | 57 | 57 | |
+| GreenIT | V2 | V3 | V4 |
+|:-------:|:----:|:----:|:----:|
+|   60   | 57  | 57  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:--------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------- :|:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM |
+|Recursos Economizados   |
+|:----------------------------------------------------------:|
+| Procesador/ RAM  |
 
- ### Descripción
+### Descripción
 
-Si el CMS (como Wordpress, Drupal, eZ Publish, etc.) ofrece un sistema de caché multinivel, 
-el uso de estos diferentes niveles en su granularidad reduce los recursos utilizados (ciclos de CPU, memoria) y ofrece mejores prestaciones a los usuarios.
+Si el CMS (como Wordpress, Drupal, ez Publish...) propone un sistema de caché multinivel, utilizar estos diferentes niveles porque su granularidad permite reducir los recursos consumidos (ciclos CPU, memoria) y ofrecer un buen rendimiento al usuario.
 
- ### Ejemplo
+### Ejemplo
 
-Un CMS como WordPress no dispone de forma nativa de un sistema de caché, pero existen varios plugins que pueden 
-responder a esta necesidad. Los más populares son:
+Un CMS como WordPress no tiene nativamente un sistema de caché, pero hay varios plugins que suplen esta carencia, siendo los más conocidos:
 
- - W3 Total Cache
- - WP Súper Caché
- - WP-rocket
+- W3 total Cache
+- Wp Super Cache
+- Wp-rocket
 
-Con uno de estos plugins, las páginas se almacenan en el caché del servidor y ya no se generan para cada usuario. Además,
-este tipo de herramientas también proporcionan otras optimizaciones orientadas a WebPerf siguiendo los principios del ecodiseño web.
+Por lo tanto, con uno de estos plugins, las páginas se almacenan en caché en el servidor y ya no se generan para cada usuario. Por cierto, este tipo de herramienta también proporciona otras optimizaciones orientadas a WebPerf que van en el sentido del ecodiseño web.
 
- ### Regla de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:------------------------ :|
- | cachés no activados | 0 |
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de caché no activado | 0 |
+
+

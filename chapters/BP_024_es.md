@@ -1,55 +1,56 @@
-## Escribe selectores CSS eficientes
+## Escribir selectores CSS eficaces
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT  | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 13 | 27 | 24 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 13   | 27 | 24 |   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 3 | 3 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 2 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+|  Procesador  |
 
- ### Descripción
+### Descripción
 
- Utilice selectores basados en ID o clases, ya que se filtrarán más rápidamente, ahorrando así ciclos de CPU en el dispositivo asociado.
+Favorecer los selectores basados en ID o clases. De este modo, se filtran más rápidamente, ahorrando ciclos de CPU a la máquina que interpreta las reglas.
 
- ### Ejemplo
+### Ejemplo
 
- No escriba :
- ```css
- elemento de árbolcarpeta de correo="true" > fila de árbol > celda de árbol {…}
- ```
+No escriba lo siguiente:
+```css
+treeitem[mailfolder="true"] > treerow > treecell {...}
+```
+sino más bien:
+```css
+.treecell-mailfolder {...}
+```
 
-Escriba en su lugar:
+No escriba lo siguiente:
+```css
+treehead > treerow > treecell {...}
+```
+sino más bien:
+```css
+.treecell-header {...}
+```
 
- ```css
- .treecell-carpeta de correo {…}
- ```
+### Principio de validación
 
- No escriba :
- ```css
- cabeza de árbol > fila de árbol > celda de árbol {…}
- ```
-Escriba en su lugar:
- ```css
- .treecell-encabezado {…}
- ```
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de selectores CSS que no utilicen identificación, clase o atributo | 0 |
 
- ### Regla de validación
 
- | El número de...                                       | es igual o menor que |
- |-------------------------------------------------------|:-------------------------:|
- | Selectores CSS que no utilizan ID, clases o atributos | 0 |

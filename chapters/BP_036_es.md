@@ -1,51 +1,49 @@
-## Optimizar imágenes vectoriales
+## Optimizar las imágenes vectoriales
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:--------:|:-----:|:-----:|:-----:|
- | 1050 | 22 | 36 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  1050   | 22  | 36 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-----------:|:-------------:|
- | 5. Uso | Usuario/Dispositivo | Usuario |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:---------:|:--------------------------:|:-----------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- | Recursos ahorrados |
- |:---------------:|
- | Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- ### Descripción
+### Descripción
 
-Todos los navegadores modernos son compatibles con el formato de imagen SVG (Scalable Vector Graphics), basado en un 
-conjunto de vectores descritos en XML. Las imágenes SVG tienen dos ventajas innegables: por un lado, pueden reducirse y
-ampliarse infinitamente sin pérdida de calidad; por otro, suelen ser más ligeras que las imágenes de mapa de bits.
+Todos los navegadores modernos son compatibles con el formato de imagen vectorial SVG (Scalable Vector Graphics), basado en un conjunto de vectores descritos en XML. Las imágenes SVG tienen dos ventajas innegables: por un lado, pueden reducirse y ampliarse al infinito sin degradación de calidad; por otra parte, son, la mayoría de las veces, menos pesadas que las imágenes de mapa de bits.
 
-Sin embargo, la mayoría de las imágenes SVG contienen muchos metadatos que fueron necesarios para crearlas, 
-como información sobre capas, comentarios, etc., que son esenciales en el proceso de edición de la imagen, 
-pero inútiles para mostrarla. Si los elimina, reducirá el tamaño total de sus archivos. Existen muchas herramientas de
-minificación y optimización, como Compressor.io, SVG Cleaner o SVGO.
+Sin embargo, la mayoría de las imágenes SVG contienen muchos metadatos que fueron necesarios para su creación.
+Es el caso, por ejemplo, de las informaciones de capa (layer), de los comentarios, etc., que son indispensables para editar la imagen, pero innecesarios para visualizarla. De ahí la idea de eliminarlos para reducir el peso de los archivos.
+Están disponibles numerosas herramientas de minificación y optimización, como Compressor.io, SVG Cleaner o SVGO.
 
-La tasa de compresión Gzip depende de la complejidad de la imagen, pero sigue siendo importante, ya que se trata de 
-comprimir texto: en general, se pueden alcanzar ratios del 75% al 80%.
+La tasa de compresión a través de gzip varía según la complejidad de la imagen. Pero siempre es alta, porque se trata de comprimir texto: en general, se alcanzan ratios del orden del 75 % al 80 %.
+
+### Ejemplo
+
+Ahorro potencial: hasta 75% menos de KB.
+
+Hemos probado SVGO en un archivo SVG de 1 KB. Redujo su tamaño en un 36 %, de 1101 a 700 bytes. Al comprimir el archivo a través de gzip antes de su transferencia, el tamaño se redujo a 498 bytes, menos de la mitad (45%) del tamaño inicial, sin ninguna pérdida de calidad de visualización.
 
 
- ### Ejemplos
+### Principio de validación
 
-Ganancia potencial: hasta un 75% menos de KB.
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes no optimizadas  | 0% |
 
-Hemos probado SVGO en un archivo SVG de 1 KB. Su tamaño se ha reducido en un 36%, pasando de 1101 a 700 bytes. 
-El tamaño del archivo se redujo aún más, a 498 bytes, al comprimir este archivo mediante gzip antes de su transferencia, 
-menos de la mitad (45%) de su tamaño inicial, sin pérdida de calidad de visualización.
- ### Regla de validación
 
- | El número de... | es igual o inferior a |
- |----------------------|:------------------:|
- | imágenes no optimizadas |         0%         |

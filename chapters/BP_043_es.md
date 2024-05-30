@@ -1,46 +1,46 @@
-## Minimizar los repintados (aspecto) y reflujos (diseño)
+## Reducir al máximo el repaint (appearence) y el reflow (layout)
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 42 | 45 | 43 | |
+| GreenIT | V2 | V3 | V4 |
+|:-------:|:----:|:----:|:----:|
+|  42   | 45  | 43   | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador   |
 
- ### Descripción
+### Descripción
 
-El repintado se refiere al cambio de apariencia de los elementos DOM, mientras que el reflujo se refiere al 
-cambio / recálculo de su posición. Ambas operaciones consumen muchos recursos, especialmente ciclos de CPU, por lo que 
-es necesario evitar activarlas siempre que sea posible.
+El repaint es el cambio de apariencia de un elemento del DOM (Document Object Model), mientras que el re?ow es el proceso de cambiar o recalcular la posición de los elementos en el DOM. Ambas operaciones son costosas en recursos, sobre todo en ciclos de CPU: por lo tanto, hay que evitar activarlas.
 
- ### Ejemplo
+### Ejemplo
 
-No modifique las propiedades de estilo de los elementos (color de fondo, estilo de borde, color de texto, tamaño, etc.) para evitar repintados.
+Para evitar los repaint, no cambie las propiedades estilísticas de un elemento (color de fondo, estilo de borde, color del texto, tamaño, etc.).
 
-Limite los cambios de propiedades como posición, dimensión, tipo de posicionamiento, contenido, ( etc.) para evitar repintados. 
-Esto es especialmente importante en el caso de algunos elementos HTML como las tablas, cuyos reflujos pueden requerir hasta tres veces más tiempo que otros elementos.
+Para evitar el re?ow, hay que limitar los cambios en las propiedades de posición, tamaño, tipo de posicionamiento, contenido, etc. Esta sugerencia es válida para determinados elementos HTML como tablas, cuyo re?ow puede requerir hasta tres veces más tiempo que un elemento equivalente con un block display.
 
- Para más información :
- https://developers.google.com/speed/articles/reflow
+Para ir más lejos:
+https://developers.google.com/speed/articles/reflow
 
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o inferior a |
- |-------------------------------------------------------------------------------------------------- |:------------------------:|
- | modificaciones que no afectan a la maquetación y provocan un repintado (por ejemplo: color, fondo, visibilidad) | 1 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de modificaciones que no afectan a la maquetación y dan lugar a un repaint (ej.: color, fondo, visibilidad) | 1  |
+
+

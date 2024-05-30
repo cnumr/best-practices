@@ -1,57 +1,52 @@
-## Utilizar la estrategia «mobile first» y/o considere la carga adaptativa
+## Privilegiar un enfoque "mobile first", en su defecto una carga adaptativa
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 6 | 7 | 6 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  6  | 7  | 6  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-------------:|:--------------:|
- | 2. Diseño | Usuario/Dispositivo | PO / Desarrollo frontal |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 2. Diseño | Usuario/Terminal | PO/AMOA |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 5 |
+| Grado de prioridad | ejecución | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 5 |
 
- | Recursos ahorrados |
- |:-------------------:|
- | Procesador/Red |
+|Recursos Economizados   |
+|:----------------------------------------------------------:|
+|Procesador/ Red  |
 
- ### Descripción
+### Descripción
+
+Cuando el contexto lo permita, privilegiar el enfoque «mobile first» que consiste en diseñar un sitio/servicio en línea para las terminales móviles, y ampliar su cobertura funcional para pantallas más grandes solo si se justifica la contribución funcional/ergonómica.
+En este caso, optar por la carga adaptativa.
+Este enfoque consiste en seleccionar los recursos, incluyendo JS y CSS, más adecuados para el contexto de uso (tamaño de pantalla/ ventana, densidad de píxeles, calidad de red, cantidad de memoria RAM, etc.), si es posible en el lado del servidor.
+Esto garantiza que no se consume innecesariamente ancho de banda, ni de sobrecargar el procesador y la memoria del terminal para tratamientos innecesarios.
+
+### Ejemplo
+
+En el lado del servidor, se podrán utilizar los _client hints_, o en su defecto el identificador del navegador asociado a una matriz de capacidades de los navegadores (también llamado _user agent sniffing_, con sus limitaciones).
+
+En el lado del cliente, los _media queries_  (en particular, en los atributos `media`<link>` para la selección de hojas de estilos CSS), los atributos `srcset` y `sizes`; de los `<img>`, los subelementos `<source>` de las `<picture>`, `<video>` y `<audio>` podrán ser útiles, y la misma información disponible en los _client hints_ también podrán ser recuperados por APIs JavaScript para eventualmente cargar dinámicamente código y/o contenido complementario .
+
+En cualquier caso, priorice un modo por defecto minimalista que permite el acceso a su sitio aunque todas sus características no sean soportadas por todos los navegadores (¡sin dañar demasiado la experiencia del usuario, por supuesto!).
+
+### Fuentes
+
+* https://developers.google.com/web/fundamentals/performance/optimizCon-efficienciy/client-hints
+* https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| De diseño no basado en un enfoque "mobile first" | 1 |
 
 
- La estrategia mobile first consiste en diseñar un sitio/servicio en línea para uso móvil, con el tamaño de pantalla y la red asociados limitados, expandirlos para una pantalla más grande si y sólo si el aporte funcional/ergonómico está justificado. En este caso, utilice la carga adaptativa.
-
- El enfoque de carga adaptativa consiste en seleccionar los recursos, incluidos archivos JS y CSS, que sean los más adecuados para el contexto de uso (tamaño de pantalla/ventana, densidad de píxeles, calidad de la red, cantidad de RAM, etc.).
-
-Estas limitaciones empujan el diseño hacia una aplicación web más ligera y eficiente.
-
- ### Ejemplo
-
-En el lado del servidor, se pueden utilizar las _client hints_, o se puede reconocer el user agent del navegador para ofrecer contenido adaptado.
- Atención: el user agent no siempre es fiable, y los actores de la web desaconsejan su uso. Prefiera las
-  _client hints_ o las opciones del lado del cliente.
-
- En el lado del cliente, se pueden utilizar las _media queries_, así como, los atributos `media` de la etiqueta `<link>` para la inclusión de CSS,  el `srcset` y `sizes` de `<img>` y toda la etiqueta `<picture>` para crear imágenes responsivas, y las apropiadas
- propiedades de `<video>` y `<audio>`.
-
-La información proporcionada por las _client hints_ también se puede recuperar a través de JavaScript para elegir el contenido de forma dinámica.
-
- En cualquier caso, prefiera un modo predeterminado minimalista que permita el acceso a su sitio incluso si no todas sus funciones son compatibles por todos los navegadores (¡sin deteriorar demasiado la experiencia del usuario por supuesto!).
-
- ## Fuentes
-
- * https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
- * https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
- * https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
-
- ### Principio de validación
-
- | El número de... | es igual o menor que |
- |-------------------------------------------------|:------------------------:|
- | diseños que no utilizan la estrategia «mobile first» | 1 |

@@ -1,44 +1,43 @@
 ## Apache Vhost: deshabilitar AllowOverride
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  | V4  |
- | :-----: | :-: | :-: | :-: |
- |    81   | 101 | 105 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  81	| 101  | 105  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |     Niveles     |        Responsable        |
- | :-----------: | :-------------: | :-----------------------: |
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :-------: | :--------------------------: | :---------------: |
- |     2     |              2               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 2 | 3 |
 
- | Recursos ahorrados |
- | :----------------: |
- |     Procesador     |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+|  Procesador  |
 
- ### Descripción
+### Descripción
 
- Cuando la directiva AllowOverride está habilitada, el servidor HTTP Apache debe recorrer toda la jerarquía de directorios para encontrar posiblemente un archivo .htaccess que contenga reglas de anulación. Se recomienda deshabilitar esta directiva si es posible en la configuración de Apache.
+Cuando la directiva `AllowOverride` está activada, el servidor HTTP Apache debe subir toda la jerarquía de directorios para, tal vez, encontrar un archivo . htaccess que contiene reglas de sobrecarga.
+Por lo tanto, es aconsejable desactivar esta directiva en la configuración de Apache.
 
- ### Ejemplo
+### Ejemplo
 
- En su archivo de configuración de host Apache agregue:
+En el archivo de configuración de su host Apache, agregue:
+```apacheconf
+AllowOverride none
+```
 
- ```apacheconf
- AllowOverride none
- ```
+### Principio de validación
 
- Para llegar más lejos:
- https://httpd.apache.org/docs/2.0/mod/core.html#allowoverride
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos de configuración que contienen el texto "AllowOverride" con algo más que "AllowOverride None" | 0  |
 
- ### Regla de validación
-
- | El número de...                                                                                                  | es igual o menor que |
- | ---------------------------------------------------------------------------------------------------------------- | :------------------: |
- | archivos de configuración que contienen texto "AllowOverride" con cualquier cosa que no sea "AllowOverride None" |           0          |

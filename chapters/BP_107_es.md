@@ -1,44 +1,46 @@
-## Comprimir documentos
+## Comprimir los documentos
+Traducido por: Murielle Timsit y Franklin Lecointre
 
-### Identificadores
+#### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   97    | 108 | 107 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  97	| 108  | 107  |  	|
 
 ### Categorías
 
-|  Ciclo de Vida  |        Niveles         |  Responsable  |
-|:---------------:|:----------------------:|:-------------:|
-|     5. Uso      |  Usuario/Dispositivo   |    Usuario    |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              2               |         4         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 2 | 4 |
 
 | Recursos ahorrados |
-|:------------------:|
-| Red/Almacenamiento |
+|:----------------------------------------------------------:|
+| Red/ Almacenamiento  |
 
 ### Descripción
 
-Comprime todos los documentos que se pueden descargar desde una página web, a menos que la compresión no aporte mayor
-beneficio (por ejemplo: archivos PDF que esten optimizados para la web).
+Comprimir todos los documentos que se pueden descargar desde una página web, a menos que la compresión no aporte una ganancia evidente (por ejemplo, caso de un PDF perfectamente optimizado para la Web).
 
 ### Ejemplo
 
-Un archivo de tipo .doc que pesa 7.8 MB se reducirá a 5.5 MB después de la compresión, lo que representa una ganancia del 30% (compresión WinZip por defecto). Los formatos de archivos de Office que se pueden comprimir fácilmente incluyen:
+Un documento en formato DOC con un peso de 7,8 MB solo pesa 5,5 MB cuando se comprime, lo que supone una ganancia del 30 % (compresión WinZip predeterminada).
+Tipos de archivos de escritorio que se pueden comprimir fácilmente:
+ - documentos resultantes de un tratamiento de textos (.doc, .docx, .rtf, .txt, etc.);
+ - documentos de hoja de cálculo (.xls, .xslx, etc.);
+ - presentaciones (.ppt, .pptx, etc.);
+ - documentos PDF;
+ - contenidos multimedia (imágenes, audio y vídeo).
 
-- Documentos de texto (.doc, .docx, .rtf, .txt, etc.);
-- Hojas de cálculo (.xls, .xslx, etc.);
-- Presentaciones (.ppt, .pptx, etc.);
-- documentos PDF;
-- Contenidos multimedia (imágenes, audio y vídeo).
+### Principio de validación
 
-### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de documentos sin comprimir   | 0  |
 
-| El número de ...         | es igual o menor que |
-|:-------------------------|:--------------------:|
-| documentos sin comprimir |          0           |
+

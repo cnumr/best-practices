@@ -1,76 +1,67 @@
-## Optimizar imágenes
+## Optimizar las imágenes
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:----:|:----:|
- | 21 | 76 | 80 | |
+### Identificadores
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|  21   | 76   | 80   | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:-----------:|
- | 3. Implementación | Usuario/Dispositivo | Usuario |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/desarrollo) | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Red / Solicitudes / Almacenamiento |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Consultas /  Almacenamiento |
 
- ### Descripción
+### Descripción
+Las imágenes a menudo representan la mayoría de los bytes descargados, después de los videos y justo antes de las bibliotecas CSS y JavaScript.
+Por lo tanto, su optimización es crucial para reducir el ancho de banda consumido. El primer paso es elegir el formato ideal a sus necesidades de presentación.
 
-Las imágenes suelen representar la mayor parte de los bytes descargados, justo después de los vídeos
-y justo antes de las bibliotecas CSS y JavaScript. Optimizar las imágenes es importante para reducir el ancho de banda utilizado. 
-El primer paso es elegir el formato ideal para sus necesidades de visualización.
+Las imágenes matriciales deben reservarse esencialmente a las fotos y a los elementos de la interfaz que no pueden ser reemplazados por iconos o estilos CSS.
 
+La elección del formato depende de las características de la imagen: blanco y negro o color, paleta de colores, necesidad de transparencia... Entre estas características, el hecho de poder degradar la imagen definitivamente (lossy) orienta más bien a los formatos `JPEG`, `JPEG XL`, `AVIF` o `webp`, mientras que una necesidad de transparencia y/o la imposibilidad de degradar la imagen (Lossless) orientará más bien hacia un formato `PNG` o `webp Lossless` (que soporta la transparencia).
 
-Las imágenes rasterizadas deben reservarse para fotos y elementos de la interfaz que no puedan mostrarse con iconos o estilos CSS.
+El peso de las imágenes se ve muy afectado por el formato que va a elegir: en promedio.
+Una imagen `.webp` será 30% más ligera que una imagen `.jpeg` o una imagen `.png`.
+Una imagen `.avif` será hasta un 20% más ligera que una imagen `.webp` y un 50% más ligera que una imagen `.jepg`.
 
-El formato adecuado depende de las propiedades de la imagen: blanco y negro o color, paleta de colores, necesidad de transparencia.
-Entre estas propiedades, la posibilidad de alterar irremediablemente la calidad de la imagen (compresión con pérdida) 
-tiende a favorecer formatos como JPEG, JPEG XL, AVIF o WebP, mientras que la necesidad de transparencia y/o 
-la imposibilidad de alterar la calidad de la imagen (compresión sin pérdida) tenderá a favorecer los formatos sin pérdida PNG o WebP (que admite transparencia).
+No olvide prestar atención a la compatibilidad de estos formatos de imagen en los navegadores. Una imagen `.webp` no será reconocido por un navegador antiguo, y no se mostrará. Para paliar este problema, es posible proporcionar al navegador varios formatos para la misma imagen.
+Algunos módulos de servidor (como [modPageSpeed](https://www.modpagespeed.com/) de google, disponible para Apache y NGINX) permiten incluso proporcionar la imagen ideal en relación con el navegador que llama al servidor.
 
-El formato influye de forma importante en el tamaño de las imágenes: por término medio,
-las imágenes .webp serán un 30% más ligeras que las imágenes .jpeg o .png. 
-Las imágenes .avif pueden ser hasta un 20% más ligeras que las imágenes .webp y un 50% más ligeras que las imágenes .jepg.
-
-No olvides prestar atención a la compatibilidad de los navegadores. Las imágenes .webp no serán reconocidas 
-por los navegadores antiguos y no se mostrarán. Es posible proporcionar varios formatos para la misma imagen para superar este problema. 
-Algunos módulos del lado del servidor (como modPageSpeed de Google, también disponible para Apache y Nginx) permiten incluso proporcionar 
-la imagen adecuada para el navegador que llama al servidor.
-
-Muchas herramientas le ayudarán a minimizar el tamaño de las imágenes:
-
- - SQUOOSH
- - NUBLADO
- - ImagenMagick
- -PngCrush
+Muchas herramientas le ayudarán a minimizar el peso de las imágenes:
+ - [SQUOOSH](https://squoosh.app)
+ - [CLOUDINARY](https:///webspeedtest.cloudinary.com/)
+ - [ImageMagick](https://imagemagick.org/)
+ - [PngCrush](https://pmt.sourceforge.io/pngcrush/)
  - JpegTran
 
- ### Ejemplo
+### Ejemplo
+En este ejemplo, el elemento `<picture>` del DOM indica al navegador que hay dos imágenes: una imagen `.webp` y una imagen `. jpg`, la predeterminada. El navegador decidirá qué imagen subir, si soporta el formato `.webp` descargará la imagen `image.webp` si no, descargará la imagen `image.jpg`
 
-En este ejemplo, el elemento DOM informa al navegador de que hay dos imágenes: una imagen .webp y una imagen .jpg, 
-que se utiliza por defecto. El navegador decidirá qué imagen se descargará. Si el formato .webp es compatible, 
-se descargará la imagen image.webp; en caso contrario, se descargará la imagen image.jpg.
+```html
+<picture>
+	<source srcset="image.webp" type="image/webp">
+	<img src="image.jpg" alt="..." loading="lazy">
+</picture>
+```
 
- ```html
- <imagen>
- <fuente srcset="image.webp" tipo="image/webp">
- <img src="image.jpg" alt="..." cargando="perezoso">
- </imagen>
- ```
+Para ir más lejos:
+ - https://web.dev/choose-theright-image-format/
+ - https://www.fasterize.com/fr/blog/webp-avif-compresión/
 
- Para llegar más lejos :
- - https://web.dev/choose-the-right-image-format/
- - https://www.fasterize.com/fr/blog/webp-avif-compresser-images/
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes no optimizadas  | 0  |
 
- | El número de... | es igual o menor que |
- |----------------------|:------------------------ :|
- | imágenes no optimizadas | 0 |
+

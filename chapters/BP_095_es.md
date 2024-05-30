@@ -1,46 +1,48 @@
-## Evitar redirecciones
+## Evitar las redirecciones
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  |  V4  |
- |:-------:|:---:|:---:|:----:|
- |    45   | 97  | 95  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   45   | 97  | 95  |  	|
 
- ### Categorías
+### Categorías
 
- |        Ciclo de vida       | Niveles |             Responsable              |
- |:--------------------------:|:-------:|:------------------------------------:|
- | 6. Soporte / Mantenimiento |    Red  | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 6. Soporte/ mantenimiento | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- |      Prioridad     | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:----------------------------:|:-----------------:|
- |          3         |              3               |         4         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 4 |
 
- |                     Recursos ahorrados                    |
- |:---------------------------------------------------------:|
- |                Procesador/Red/Almacenamiento              |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Red/ Almacenamiento |
 
- ### Descripción
+### Descripción
 
- Redirige el tiempo de respuesta lento mientras utiliza recursos innecesarios. Por tanto, conviene evitarlos en la medida de lo posible. Los redireccionamientos pueden ocurrir en diferentes lugares: código HTML, código JavaScript, servidor HTTP y servidor de aplicaciones (PHP, etc.).
+Las redirecciones disminuyen el tiempo de respuesta, al tiempo que consumen recursos inútiles. Por lo tanto, hay que evitarlos lo mas posible. Estas redirecciones pueden tener lugar en diferentes niveles: código HTML, código JavaScript, servidor HTTP y servidor de aplicaciones (PHP, etc.).
 
- ### Ejemplo
+### Ejemplo
 
- A nivel del servidor HTTP (Apache, en este caso) las redirecciones implican activar la reescritura sistemática de URL a través del archivo .htaccess:
+A nivel del servidor HTTP (Apache, en este caso), una redirección consiste en habilitar una reescritura sistemática de las URL a través del archivo
+.htaccess:
+```apacheconf
+<ifmodule mod_alias. c>
+	Redirect permanente http:///old_web.es http://new.web.es/
+</ifmodule>
+```
+Es mejor reemplazar manualmente las direcciones estáticas integradas en las páginas web
 
- ```apacheconf
- <IfModule mod_alias.c>
-    Redirección permanente http://old_address.com http://new.address.com/
- </IfModule>
- ```
-Es preferible reemplazar manualmente las direcciones estáticas incrustadas en las páginas web.
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de redirecciones  | 1  |
 
 
-
- ### Regla de validación
-
- | El número de... |    es igual o menor que  |
- |-----------------|:------------------------:|
- | redirecciones   |             1            |

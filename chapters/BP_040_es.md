@@ -1,47 +1,47 @@
-## Utilice sólo las partes necesarias de las bibliotecas Javascript y los frameworks CSS
+## Utilizar sólo las partes esenciales de las bibliotecas JavaScript y frameworks CSS
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 811 | 77 | 40 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   811   | 77  | 40  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-------:|:----------------------------:|
- | 2. Diseño | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 2. Diseño | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+CPU/ RAM/ Red |
 
- ### Descripción
+### Descripción
 
-Las librerías JavaScript como jQuery y los frameworks CSS listos para usar (Bootstrap, skeleton, gumby, foundation, etc.)
-son excelentes herramientas para crear sitios web muy rápidamente, ya que casi cumplen todos los requisitos más comunes. 
-El inconveniente es que generalmente sólo se utiliza una pequeña parte de esas librerías; y algunos de estos frameworks y 
-librerías no se basan en una arquitectura modular, lo que hace que los usuarios descarguen librerías enteras sólo para 
-utilizar un pequeño porcentaje de sus características.
+Bibliotecas JavaScript como jQuery y frameworks CSS listos para usar (Bootstrap, skeleton, Gumby, foundation...) son herramientas excelentes para realizar sitios rápidamente, ya que satisfacen casi todas las necesidades más comunes.
+Por otro lado, por lo general solo se utiliza una pequeña parte de ellos; pero estos marcos y bibliotecas no se basan todos en una arquitectura modular, lo que obliga al usuario a descargar toda la biblioteca para utilizar solo un pequeño porcentaje de sus funcionalidades.
 
-Evite utilizar estas bibliotecas siempre que sea posible (consulte https://youmightnotneedjquery.com) o 
-conserve únicamente sus partes más utilizadas (consulte https://getbootstrap.com/customize).
+En la medida de lo posible, es preferible prescindir de estas bibliotecas (véase https://youmightnotneedjquery.com) o conservar únicamente las porciones realmente utilizadas (véase https://getbootstrap.com/customize).
 
-Bundlers como Webpack permiten la eliminación automática del código no utilizado. Esto se llama "tree shaking".
- ### Ejemplo
+Utilizar un Bundler (ej: Webpack) permite hacer fácilmente el tree shaking, es decir eliminar del código "muerto" entonces no utilizado.
 
-![img_1.png](img_1.png)
+### Ejemplo
 
-Algunos frameworks (aquí Bootstrap) permiten crear librerías personalizadas que sólo contienen las partes realmente 
-utilizadas por el sitio, reduciendo así el tamaño de las librerías y los recursos utilizados durante la ejecución.
- ### Regla de validación
+![img\1.png](img\1.png)
 
- | El número de... | es igual o inferior a |
- |----------------------------------|:------------------------:|
- | bibliotecas usadas con piezas sin usar | 1 |
+Algunos frameworks, aquí Bootstrap, permiten crear bibliotecas a medida que contienen solo las porciones realmente utilizados por el sitio, lo que reduce el peso de las bibliotecas y los recursos consumidos durante la ejecución.
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de librerías en las que se utilicen partes no indispensables  | 1  |
+
+

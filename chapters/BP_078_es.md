@@ -1,53 +1,57 @@
-## Comprimir archivos CSS Javascript HTML y SVG
+## Comprimir archivos CSS, JavaScript, HTML y SVG
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 86 | 80 | 78 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|  86   | 80 | 78  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:----------------------------:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:------------------:|
- |        Red         |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- ### Descripción
+### Descripción
 
-Comprime hojas de estilo CSS, bibliotecas JavaScript y archivos HTML para limitar el uso de ancho de banda y mejorar el tiempo de carga. 
-El algoritmo GZIP es un estándar de compresión del lado del servidor que comprime los recursos sobre la marcha antes de enviarlos a los clientes. 
-Más recientemente, BROTLI ha ganado popularidad gracias a su mayor rendimiento, y actualmente es compatible con los principales navegadores web.
- 
+Comprime hojas de estilo CSS, bibliotecas de JavaScript y archivos HTML para limitar el uso de ancho de banda y mejorar los tiempos de carga.
+El algoritmo GZIP es un estándar de compresión del lado del servidor, que permite comprimir los recursos sobre la marcha antes de enviarlos a los clientes.
+Más recientemente, BROTLI ha sido popularizado con un mayor rendimiento, es compatible con todos los navegadores más comunes.
+
 ### Ejemplo
 
-Para utilizar BROTLI en Apache, basta con añadir la siguiente configuración:
+Para utilizar `BROTLI` en Apache, basta con añadir la siguiente configuración:
 
- ```
- # comprimir html texto xml css javascript
- AddOutputFilterByType BROTLI_COMPRESS texto/texto html/texto sin formato/texto xml/texto css/aplicación javascript/javascript
+```
+# compress html, text, xml, css, javascript
+AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript
 
- # O comprimir ciertos tipos de archivos en un directorio específico:
- <Directorio "/tu-directorio">
- AddOutputFilterByType BROTLI_COMPRESS texto/html
- </Directorio>
- ```
+# Or, compress certain ?le types in a specific directory:
+<Directory "/your-directory">
+	AddOutputFilterByType BROTLI_COMPRESS text/html
+</Directory>
+```
 
-El servidor web NGINX gestiona la compresión GZIP por defecto, pero sólo para archivos HTML.
-Para habilitarla para imágenes y otros recursos, puede consultar esta página: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04.
+El servidor web NGINX administra por defecto la compresión GZIP, pero solo para archivos HTML.
+Para activarlo en las imágenes y otros recursos consulte esta página: https://www.digitalocean.com/community/tutorials/how-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04
 
- Para instalar y configurar BROTLI en NGINX consulte https://github.com/google/ngx_brotli.
- ### Regla de validación
+Para instalar y configurar Brotli en NGINX, consulte https://github.com/google/ngx_brotli
 
- | El número de... | es igual o menor que |
- |---------------------------------------------------|:------------------------:|
- | archivos CSS JavaScript HTML y SVG sin comprimir | 0 |
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos CSS, JavaScript,  HTML y SVG sin comprimir  |  0 |
+
+

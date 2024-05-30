@@ -1,68 +1,68 @@
-## Optimizar consultas de bases de datos
+## Optimizar las consultas de bases de datos
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 59 | 74 | 75 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+| 59  | 74  | 75  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:----------:|:----------------------------:|
- | 3. Implementación | Centro de datos | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Centro de Datos | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 3 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red   |
 
- ### Descripción
+### Descripción
 
-Las bases de datos suelen ser componentes esenciales de las aplicaciones. Como se utilizan muchas consultas para recuperar y
-almacenar datos, acaban teniendo un impacto significativo en el uso de recursos de la solución cuando se ejecutan con frecuencia.
+La base de datos es generalmente un componente esencial de las aplicaciones, y las consultas realizadas para recuperar y grabar datos son numerosas; ejecutadas con frecuencia, las consultas tienen una influencia importante en el consumo de recursos de la solución.
 
-Teniendo esto en cuenta, es importante prestar atención a estas consultas y asegurarse, al menos para las más costosas, de que están bien optimizadas.
+En este sentido es importante prestar atención a estas consultas y validar, al menos para las que más cuestan el, que están correctamente optimizadas.
 
-
- Los consejos de optimización más comunes son:
-
- - Utilizar menos datos y limitarlos al mínimo. Por ejemplo, la cláusula LIMIT limita el número de filas de resultados en las bases de datos relacionales. Cuando sea posible, utilizar la cláusula LIMIT reduce la cantidad de datos transferidos. El aumento del rendimiento será aún más significativo si los registros contienen un gran número de campos voluminosos.
- - Utilice sólo los campos necesarios en las tablas o documentos para evitar transferir innecesariamente datos que no se utilizarán y para evitar utilizar recursos del servidor de bases de datos y del servidor de aplicaciones para manipularlos.
- - Agregue índices en los campos utilizados como claves en su modelo. Agregarlos puede cambiar completamente el rendimiento de las consultas. Cuidado: agregar índices alarga la escritura ya que debe actualizarse para cada documento agregado, modificado o eliminado. Esto debe hacerse si hay más lecturas que escrituras o si las lecturas son particularmente costosas.
- - Utilizar herramientas del sistema de gestión de bases de datos para analizar las consultas con el fin de identificar las áreas de mejora, como EXPLAIN para RDBMS.
+Las pistas clásicas de optimización son:
+ - Traer menos datos y limitarse a lo necesario. Por ejemplo, para las bases de datos relacionales, la cláusula `LIMIT` limita el número de líneas del resultado. Cuando es posible, el uso reduce la cantidad de datos transferidos. El aumento del rendimiento será aún más importante si los registros contienen un gran número de campos grandes.
+ - Utilizar únicamente los campos que sean necesarios en las tablas o documentos utilizados. Para evitar la transferencia innecesaria de datos que no se utilizarán, y no utilizar recursos del servidor de base de datos y del servidor de aplicaciones para manipularlos.
+ - Añadir índices a los campos utilizados como claves. Estos dependen de su modelo. Añadirlos puede cambiar completamente el rendimiento de una consulta. Ten cuidado, añadir un índice alarga la escritura, ya que tienen que actualizarse para los documentos añadidos, modificados o eliminados. Hay que hacerlo si hay más lecturas que escrituras o si la lectura es particularmente costosa.
+ - Utilizar las herramientas del sistema de gestión de bases de datos que permiten analizar las consultas para identificar los puntos de mejora, por ejemplo EXPLAIN para un RDBMS.
  - Almacenar en caché los resultados de las consultas más costosas, así como los datos que cambian poco o nunca (datos de referencia).
- - Opcionalmente, modificar los modelos de datos para poder acceder más fácilmente a la información sin joins (desnormalización).
+ - Posiblemente, modificar el modelo de datos para poder acceder más fácilmente a la información sin uniones (desnormalización)
 
- ### Ejemplo
+### Ejemplo
 
-Aquí hay un ejemplo, con la cláusula `LIMIT`:
+He aquí un primer ejemplo, con la cláusula `LIMIT` :
 
- Si solo desea mostrar los primeros 25 registros de una tabla que contiene los apellidos y nombres de las personas debe reemplazar al seleccionar:
- ```sql
- SELECCIONE nombre apellido DE personas
- ```
- por :
- ```sql
- SELECCIONE nombre apellido DE personas LÍMITE 0 25
- ```
+Si desea mostrar solo los 25 primeros registros de una tabla que contiene el nombre y el apellido de las personas, reemplace al seleccionar:
+```sql
+SELECT firstname, lastname FROM people
+```
+por:
+```sql
+SELECT firstname, lastname FROM people LIMIT 0, 25
+```
 
- Ejemplo de creación de índice:
+Otro ejemplo, con la creación de un índice:
 
- ```sql
- CREAR ÍNDICE idx_people_lastname_firstname EN personas (apellido nombre)
- ```
+```sql
+CREATE INDEX idx_FName_LName ON people(firstname,lastname)
+```
 
- Siguiendo este comando el sistema de gestión de bases de datos podrá encontrar las filas de "personas" más rápidamente a partir de la información (nombre nombre).
+Después de este comando, el sistema de gestión de base de datos podrá encontrar más rápidamente las líneas de `people` a partir de las informaciones (firstname,lastname)..
 
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |-------------------------------------------------------------|:------------------------:|
- | identificó consultas de bajo rendimiento que no están optimizadas | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de consultas de bajo rendimiento identificadas como no optimizadas | 0  |
+
+

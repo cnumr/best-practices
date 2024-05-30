@@ -1,50 +1,53 @@
-## Reducir el tamaño de los correos electrónicos
+## Limitar el tamaño de los correos electrónicos enviados
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   104   | 112 | 111 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   104   | 112  | 111  |  	|
 
- ### Categorías
+### Categorías
 
-| Ciclo de vida |        Niveles        | Responsable |
-|:-------------:|:---------------------:|:-----------:|
-|    5. Uso     | Usuario / Dispositivo |   Usuario   |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              3               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
-|      Recursos ahorrados      |
-|:----------------------------:|
-| Procesador / Red / Consultas |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Reducir el tamaño de los correos electrónicos que se envían a los usuarios para notificaciones, alertas, o mensajes de confirmación. 
- Evite archivos adjuntos e imágenes incrustadas. Se prefiere el contenido abreviado. Opcionalmente, utilice texto sin formato en lugar de HTML.
+Cuando una notificación, alerta o mensaje de confirmación se debe enviar por correo electrónico al usuario, limitar el tamaño del correo electrónico enviado.
+Evitar adjuntos e imágenes incrustadas. Preferir contenido corto. Opcionalmente, utilizar texto plano en lugar de HTML.
 
- ### Ejemplo
+### Ejemplo
 
- El envío de correos electrónicos de confirmación para una solicitud de contacto no justifica agregar código HTML e imágenes. Los mensajes HTML básicos generalmente requieren:
-
- - Al menos 2 imágenes (logotipo y firma al final de la página) = aproximadamente 10 KB;
- - 12 KB de código HTML para formatear (estilos en línea, tablas, etc.);
+El envío de un correo electrónico de confirmación de una solicitud de contacto no justifica la adición de código HTML e imágenes.
+Un mensaje HTML básico usa en promedio:
+ - al menos 2 imágenes (el logotipo y una firma a pie de página), es decir, unos 10 KB;
+ - 12 KB de código HTML para el diseño (estilos en línea, tablas...);
  - 4 KB de texto (el mensaje + 2 enlaces de acción).
 
- Al final:
+Al final del día:
+ - correo electrónico HTML = 26 KB;
+ - texto bruto por correo electrónico = 4 KB.
 
- - Correo electrónico HTML = 26 KB;
- - Correo electrónico en texto plano = 4 KB.
+Es decir, 22 KB por correo electrónico.
+En el caso de un sitio transaccional con, por ejemplo, alertas de clientes e internos, el beneficio potencial se vuelve considerable.
 
- Esto da como resultado 22 KB de espacio liberado por cada correo electrónico enviado. En el caso de un sitio web transaccional (que incluye, por ejemplo, alertas internas y para clientes) las ganancias potenciales se vuelven significativas.
 
- ### Regla de validación
+### Principio de validación
 
-| El número de ...                                   | es igual o menor que |
-|----------------------------------------------------|:--------------------:|
-| correos electrónicos enviados que pesan más de 1MB |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de mensajes de correo electrónico de más de 1 MB | 0 |
+
 

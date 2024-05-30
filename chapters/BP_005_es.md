@@ -1,48 +1,53 @@
-## Prefiere un diseño sencillo limpio y adaptado a la web
+## Favorecer un diseño sencillo, depurado, adaptado a la web
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 5 | 6 | 5 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 5   | 6 | 5  |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------------:|:--------------: |
- | 2. Diseño | Usuario/dispositivo | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 2. Diseño | Usuario/Terminal | UX/UI Designer |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad | ejecución | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:-------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red   |
 
- ### Descripción
+### Descripción
 
- Cualquier diseño de interfaz o diseño web debe estar pensado previamente teniendo en cuenta:
- - Las necesidades del usuario (ver la buena práctica "Optimizar el recorrido del usuario")
- - heurística ergonómica (Bastien y Scapin Nielsen etc.)
- - limitaciones técnicas
- - buenas prácticas de ecodiseño
- - y, preferentemente, buenas prácticas de accesibilidad
+Cualquier diseño de interfaz o diseño web debe ser pensado temprano, teniendo en cuenta:
+- las necesidades del usuario (véase la buena práctica "Optimizar el recorrido del usuario")
+- las heurísticas de ergonomía (Bastien y Scapin, Nielsen, etc.)
+- las limitaciones técnicas
+- buenas prácticas de ecodiseño y preferiblemente las buenas prácticas de accesibilidad
 
- **Preferir un diseño simple y limpio que se pueda lograr únicamente con HTML5 y CSS3.**
+**Favorezca un diseño simple y depurado que puede realizarse utilizando únicamente
+HTML y CSS.**
 
- ### Ejemplo
+### Ejemplo
 
- **Descripción:** Algunos sitios contienen imágenes enmarcadas, sin contraste y no legibles (RGAA) y crean una inecesaria imagen de
- sobrecarga mental (2.2. Densidad Informativa de Scapin y Bastien). Descargados, pero no son visibles en el móvil (ecodiseño).
- En ocasiones se puede plantear la inconsistencia entre señalización y colorimetría (1.2.2. Agrupación/Distinción por el Formato de Scapin y Bastien).
+### Descripción
+Algunos sitios contienen imágenes enmarcadas, no contrastadas y no recomendadas por WCAG[1]. Crean una sobrecarga mental innecesaria.
+ Aunque se descarguen, no son visibles en el móvil (ecodiseño). A veces se puede plantear la incoherencia entre señalización y colorimetría.
 
- **Recomendación:** Elimine las imágenes de fondo y agregue un glifo (prefiera glifos a imágenes, buenas prácticas de diseño ecológico) con colorimetría consistente si es necesario agrupar.
+### Recomendación
+Eliminar las imágenes de fondo y añadir un glifo (Preferir los glifos a las imágenes, buena práctica de ecodiseño) con una colorimetría coherente si se va a realizar una agrupación.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |-------------------------------------------------|:--------------------:|
- | páginas cuyo diseño es más pesado de lo necesario | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+|	de páginas cuyo diseño es más complejo de lo necesario  | 0 |
+
+
+Pas sûre qu'il faille laisser le RGAA, les espagnols doivent à mon avis utiliser le WCAG, à creuser...

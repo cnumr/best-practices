@@ -1,48 +1,49 @@
-## Prefiera la lista de precarga HSTS a las redirecciones 301
+## Favorecer HSTS Preload list a las redirecciones 301
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 1060 | | 84 | |
+| GreenIT | V2  | V3  | V4  |
+|:-------:|:----:|:----:|:----:|
+|  1060	|   | 84  |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------:|:--------------------: |
- | 4. Producción | Red | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Red | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Red / Consultas |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
-HSTS permite notificar a cualquier navegador, mediante una cabecera de respuesta HTTP en caché, que sólo se puede acceder al dominio a través de HTTPS.
+El HSTS permite indicar a cualquier navegador, a través de un header de respuesta HTTP mantenido en caché, que el dominio debe ser contactado exclusivamente por HTTPS.
 
-Esto permite que las siguientes peticiones sobre el mismo dominio utilicen exclusivamente el protocolo HTTPS, 
-evitando numerosas redirecciones 301. Sin embargo, la primera llamada requiere una respuesta HTTP (potencialmente no segura) 
-con una cabecera STS (Strict-Transport-Security). Además de habilitar HSTS, es posible registrarse en una lista estática actualizada 
-en todos los navegadores recientes (https://hstspreload.org) para solucionar este problema y obligar a los navegadores a contactar con todo el dominio con HTTPS.
+Esto permite que las consultas posteriores, realizadas en el mismo dominio, sean contactadas exclusivamente con el protocolo HTTPS, lo que evita una multitud de redirecciones 301.
+Sin embargo, la primera llamada requiere una respuesta (potencialmente no segura) HTTP con un header STS (Strict-Transport-Security).
+Para resolver este problema, y obligar a los navegadores a ponerse en contacto con todo el dominio en HTTPS, es posible, además de activar el HSTS, registrarse en una lista estática actualizada en todos los navegadores recientes: https:/hstspreload.org.
 
-Tenga en cuenta que es rápido registrar dominios en htstpreload.org y afecta a todo el dominio (incluidos los subdominios). 
-Asegúrese de que ninguno de sus subdominios se vería afectado negativamente por el uso de HTTPS antes de realizar este registro, cuya cancelación puede ser relativamente lenta.
+Es importante señalar que el registro de su dominio en htstpreload.org es rápido y afecta a todo el dominio (incluidos los subdominios). Antes de realizar este registro, que es relativamente lento de eliminar, asegúrese de que ninguno de sus subdominios sea afectado por la configuración de HTTPS
 
- ### Ejemplo
+### Ejemplo
 
- Ejemplo de configuración
- ```apacheconf
- Estricta seguridad en el transporte: edad máxima = 63072000; incluirSubDominios; precarga
- ```
+Ejemplo de configuración
+```apacheconf
+Strict-Transport-Security: máx-age = 63072000; includeSubDomains; preload
+```
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o inferior a |
- |------------------------|:------------------------:|
- | no activación de HSTS | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de no activación de HSTS  | 0  |
+
+

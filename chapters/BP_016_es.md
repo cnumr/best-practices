@@ -1,40 +1,40 @@
-## Utilice bifurcaciones de aplicaciones orientadas al rendimiento
+## Utilizar algunos Forks de aplicación orientados "rendimiento"
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 4 | 5 3 | 1 6 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  4  | 53  | 16  |   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:----------:|:--------------------:|
- | 3. Implementación | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 3 | 3 |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- | Recursos ahorrados  |
- |:-------------------:|
- | Procesador/RAM/Red  |
+| Recursos Ahorrados  |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red  |
 
- ### Descripción
+### Descripción
 
-Los proyectos de software de código abierto suelen bifurcarse para mejorar su rendimiento. Las mejoras de rendimiento suelen 
-implicar un menor uso de recursos. Por lo tanto, si ya existe un fork optimizado y ofrece suficientes características funcionales 
-y técnicas para sus proyectos, debería utilizarlo.
+El software de código abierto (Open Source) es a menudo derivado «fork» por motivos de rendimiento. Una ganancia de rendimiento implica generalmente una reducción en términos de consumo de recursos. Por lo tanto, si existe un fork optimizado y ofrece un perímetro funcional y técnico suficiente para su proyecto, debe utilizarlo.
 
- ### Ejemplo
+### Ejemplo
 
- - KeyDB debería preferirse a Redis.
+ - En Redis, preferir la versión optimizada KeyDB.
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de Forks orientados al rendimiento es mayor o igual a   | 1  |
 
 
- ### Regla de validación
-
- | El número de... | es inferior o igual |
- |--------------------------------------------------------|:----------------------:|
- | bifurcaciones orientadas al rendimiento | 1 |

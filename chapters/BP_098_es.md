@@ -1,41 +1,42 @@
 ## Usar una CDN
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 75 | 102 | 98 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  75	| 102  | 98  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:--------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ RAM  |
 
- ### Descripción
+### Descripción
 
-Algunos archivos como bibliotecas de JavaScript, hojas de estilo CSS, imágenes, etc. consumen mucha red porque suelen ser numerosos y pequeños.
-Es por esto que se deben utilizar Content Delivery Networks (CDN) acercando físicamente estos archivos a los usuarios finales generando importantes ahorros de ancho de banda y tiempos de respuesta más cortos.
+Algunos archivos, como las bibliotecas JavaScript, las hojas de estilo CSS, las imágenes, etc., son intensivos en recursos de red, ya que suelen ser numerosos y pequeños. Por eso es recomendable utilizar las CDN (Content Delivery Network), que acercan físicamente estos ficheros a los internautas, generando así un ahorro importante de ancho de banda y un mejor tiempo de respuesta.
 
-Tenga en cuenta que puede haber casos en los que el uso de CDN no sea realmente relevante. Por ejemplo para audiencias muy localizadas (regionales)  es más apropiado priorizar soluciones de hosting locales y de calidad. Por otro lado los sitios web con muy poco  el tráfico podría hacer que las CDN basadas en extracción sean contraproducentes ya que la extracción de archivos del servidor original podría ser demasiado recurrente.
+Sin embargo, hay que reconocer que puede haber casos en los que el uso de una CDN no sea realmente pertinente. Por ejemplo, en el caso de los servicios con un objetivo muy localizado (por ejemplo, regional), es más oportuno favorecer un alojamiento local de calidad. Por otra parte, un sitio web con muy poco tráfico podría hacer contraproducente el uso de una CDN basada en el modelo "pull" ya que las extracciones de archivos del servidor original podrían ser demasiado frecuentes.
 
- ### Ejemplo
+### Ejemplo
 
- Utilizando CDN proporcionadas por Google que alojan bibliotecas de JavaScript de uso común.
+Utilizar las CDN proporcionadas por Google que alojan las diferentes bibliotecas JavaScript comúnmente utilizadas.
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de recursos servidos (ficheros) sin utilizar una CDN | 25%  |
 
 
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |----------------------------------|:------------------------:|
- | recursos (archivos) no servidos por CDN | 25% |

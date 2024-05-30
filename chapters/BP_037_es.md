@@ -1,57 +1,51 @@
-## Utilizar carga lenta
+## Usar la carga perezosa
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:--------:|:-----:|:-----:|:-----:|
- | 1010 | | 37 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   1010   |   |  37 |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:--------------:|
- | 3. Implementación | Red | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:------:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Diseñador UX/UI |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:---------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 5 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 5 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+|  Procesador/ Red  |
 
- ### Descripción
+### Descripción
+Cuando un internauta no consulta la totalidad de una página web, por defecto todos los recursos (imágenes, vídeos, iframes...) situadas fuera de la zona visitada, por debajo de la línea de flotación, se cargan innecesariamente. Para evitar esto, es posible utilizar la técnica de carga perezosa (Lazy loading) que consiste en cargar un elemento solamente cuando su ubicación sea visible en la pantalla.
 
-Por defecto, todos los recursos (imágenes, vídeos, iframes, etc.) de una página web se descargan, incluso cuando 
-los usuarios no los visualizan, por ejemplo si están fuera de la ventana gráfica. Para evitarlo, se puede utilizar la
-técnica de lazy loading: los elementos con este atributo sólo se cargarán cuando sean visibles en la pantalla.
+En HTML, es posible añadir un atributo `loading` a sus imágenes e iframes para que el navegador se encargue de descargar solo las imágenes que aparecen en pantalla. Sin embargo, este atributo es muy reciente: no será tenido en cuenta en versiones anteriores de navegadores. No obstante, en aras de una mayor compatibilidad, se podrá utilizar minibibliotecas Javascript, muy ligeras, que se ocuparán de la carga perezosa de sus imágenes, como:
+	- [LOZAD](https:///cdn.jsdelivr.net/npm/lozad) 1,9 KB (gzip)
+	
+### Ejemplo
+En este ejemplo, la imagen y el iframe serán cargados de manera perezosa automáticamente por el navegador. Si la imagen debe aparecer en la pantalla, se descargará y se mostrará, y si está por debajo de la línea de flotación, no se descargará.
 
-Es posible añadir un atributo `loading` a las imágenes e iframes en HTML para que el navegador sólo descargue las imágenes
-que se muestren en la pantalla. Sin embargo, este atributo es muy reciente: no funcionará en versiones anteriores del navegador.
-En aras de una mayor compatibilidad, aún es posible utilizar minibibliotecas Javascript muy ligeras que puedan manejar
-imágenes de carga lenta, como por ejemplo:
- - LOZAD(https://cdn.jsdelivr.net/npm/lozad) 19 KB (gzip)
- - vainilla-lazyload(https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 35 KB (gzip)
+```html
+<img src="image.jpg" alt="..." loading="Lazy">
+<iframe src="video-player.html" title="..." loading="Lazy"></iframe>
+```
 
- ### Ejemplo
-
-En este ejemplo, la imagen y el iframe serán cargados automáticamente por el navegador. Si es necesario mostrar una imagen en
-en la pantalla, se descargará y se mostrará. En caso contrario, no se descargará.
-
- ```html
- <img src="image.jpg" alt="..." cargando="perezoso">
- <iframe src="video-player.html" title="..." cargando="lazy"></iframe>
- ```
-
- Ver también :
- - https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading
+Para ir más lejos:
+ - https://developer.mozilla.org/en-US/Web/Performance/Lazy_loading
  - https://web.dev/browser-level-image-lazy-loading/
  - https://web.dev/lazy-loading-video/
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o inferior a |
- |-------------------------------------------------------------------------------------------------------|:--------------------:|
- | imágenes, iframes y vídeos llamados sin atributo lazy loading y por debajo del viewport inicial es |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes, de iframes y de vídeos llamados sin Lazy loading, por debajo de la línea de flotación  | 0% |
+
+

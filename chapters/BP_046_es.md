@@ -1,43 +1,44 @@
-## Valide su código con un Linter
+## Validar su código con un Linter
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 35 | 33 | 46 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   35   | 33  | 46   | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------------------:|:--------------------------:|:-----------------:|
- | 3 | 3 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 2 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| CPU |
 
- ### Descripción
+### Descripción
 
-El analizador de calidad de código ESLint comprueba que la sintaxis de JavaScript sea entendida por todos los navegadores. 
-El código resultante respeta las restricciones sintácticas que facilitan y agilizan la ejecución del código por parte de los intérpretes. 
-Por tanto, el procesador se solicitará durante menos tiempo.
+El analizador de calidad del código JSLint comprueba que la sintaxis JavaScript utilizada será comprendida por todos los navegadores.
+El código obtenido respeta así las restricciones sintácticas que permiten a los intérpretes ejecutar el código más fácilmente y por lo tanto más rápidamente. Entonces el procesador se utiliza menos tiempo.
 
-En el desarrollo moderno, se recomienda añadir distintas herramientas al proceso de entrega para garantizar la calidad del código.
+En desarrollos modernos, recomendamos añadir a su proceso de entrega diferentes herramientas que permitan garantizar la calidad de su código.
 
- ### Ejemplo
+### Ejemplo
 
- Podemos utilizar, por ejemplo:
- * ESLint(https://eslint.org/) para código JavaScript
- * Stylelint(https://stylelint.io/) para tus hojas de estilo
+Por ejemplo, podemos utilizar:
+* [Eslint](https://eslint.org/) para el código JavaScript
+* [Stylelint](https://stylelint.io/) para vs hojas de estilo
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o inferior a |
- |------------------------------------------------------------------|:------------------------:|
- | líneas de código fuente que no están validadas por herramientas como ESLint | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de líneas de código fuente no validadas por herramientas como Eslint | 0  |
+

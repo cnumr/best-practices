@@ -1,37 +1,40 @@
-## Caché de respuestas Ajax
+## Almacenar en caché las respuestas de Ajax
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  | V4  |
- | :-----: | :-: | :-: | :-: |
- |    91   | 107 | 102 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   91   | 107  | 102  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |      Niveles     |             Responsable              |
- | :-----------: | :--------------: | :----------------------------------: |
- | 4. Producción | Usuario/Terminal | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Usuario/Terminal | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :-------: | :--------------------------: | :---------------: |
- |     3     |              2               |          4        |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 2 | 4 |
 
- |      Recursos ahorrados   |
- | :-----------------------: |
- |        Red / Consultas    |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| portadas  Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Las respuestas Ajax que permanecerán sin cambios en un futuro próximo no deberían volver a solicitarse al servidor. Almacenarlos en caché puede ahorrar ancho de banda.
+Las respuestas Ajax que no cambien en un futuro próximo no deben ser pedidas de nuevo al servidor. Por lo tanto, almacenarlos en caché para ahorrar ancho de banda.
 
- ### Ejemplo
+### Ejemplo
 
- Si una solicitud Ajax devuelve una lista de nombres de ciudades, nombres de contactos o cualquier elemento no calculado, estas respuestas deben almacenarse en caché en el lado del cliente para evitar generar otras solicitudes al servidor.
+Si una consulta Ajax devuelve una lista de nombres de ciudades, nombres de contactos o cualquier elemento no calculado, debe almacenar estas respuestas en caché en el lado del cliente para no generar una nueva consulta al servidor.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                         | es igual o menor que |
- | --------------------------------------- | :------------------: |
- | respuestas Ajax no almacenadas en caché |          10%         |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de respuestas AJAX no almacenadas en caché  | 10%  |
+
+

@@ -1,49 +1,50 @@
-## Almacenamiento en caché de objetos de acceso frecuente en Javascript
+## Almacenar en caché los objetos a los que se accede con frecuencia en JavaScript
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 33 | 36 | 49 | |
+| GreenIT | V2 | V3 | V4 |
+|:-------:|:----:|:----:|:----:|
+| 33   | 36  | 49   | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:----------------------------:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------- :|:----------------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador   |
 
- ### Descripción
+### Descripción
 
-Acceder al DOM (Document Object Model) consume muchos recursos del procesador (ciclos de CPU). 
-Por lo tanto, cuando utilices el mismo elemento DOM varias veces en JavaScript, debes almacenar su referencia en una 
-variable para no tener que volver a recorrer el DOM para ese mismo elemento.
+El acceso al DOM (Document Object Model) es costoso en términos de recursos de procesador (ciclos de CPU). Así, cuando use el mismo elemento del DOM varias veces desde JavaScript, almacene su referencia en una variable para no volver a navegar por el DOM para ese mismo elemento.
 
- ### Ejemplos
+### Ejemplo
 
- No escriba :
- ```javascript
- document.getElementById('menú').property1 = 'foo'; document.getElementById('menú').property2 = 'barra';
- ```
+No escriba lo siguiente:
+```javascript
+document.getElementById('menú'). property1 = 'foo'; document.getElementById('menú').property2 = 'bar';
+```
 
- Escribe en su lugar:
- ```javascript
- menú constante = document.getElementById('menú');
- menu.property1 = 'foo';
- menú.property2 = 'barra'
- ```
+sino más bien:
+```javascript
+var mmenu = document.getElementById('menú');
+menú.property1 = 'foo';
+menú.property2 = 'Bar'
+```
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o inferior a |
- |---------------------------------------------------------------------------|:------------------------:|
- | datos constantes (o no volátiles) recuperados repetidamente sin ser almacenados en caché 0 | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de datos constantes (o no volátiles) recuperados varias veces sin ser almacenados en caché  | 0  |
+
+

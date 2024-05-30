@@ -1,48 +1,52 @@
-## Evite enviar correos electrónicos pesados y redundantes
+## Limitar los correos electrónicos pesados y redundantes
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   102   | 110 | 109 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   102   | 110  | 109  |  	|
 
- ### Categorías
+### Categorías
 
-| Ciclo de vida |       Niveles       | Responsable |
-|:-------------:|:-------------------:|:-----------:|
-|    5. Uso     | Usuario/Dispositivo |   Usuario   |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              3               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
-|      Recursos ahorrados      |
-|:----------------------------:|
-| Procesador / Red / Consultas |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Los correos electrónicos se guardan y duplican en los discos de su proveedor de servicios. Por lo tanto, es importante limitar la cantidad de correos electrónicos automáticos (ejemplo: boletines, gestión de clientes, seguimiento de pedidos) y reducir la cantidad de destinatarios, archivos adjuntos, y el volumen total.
+Los correos electrónicos se guardan y se duplican en los discos del proveedor de correo electrónico.
+Conviene razonar el envío de correos electrónicos automáticos (por ejemplo: newsletters, gestión de clientes, seguimiento de pedidos) limitando su número, los archivos adjuntos y el número de destinatarios.
 
- ### Ejemplo
+### Ejemplo
 
- Boletines:
+Newsletters:
 
- - Establecer la frecuencia de envío al mínimo necesario
- - Envíe boletines informativos únicamente a las personas y suscriptores requeridos (mediante una lista de suscripción voluntaria, orientación al cliente, etc.)
- - Envíe correos electrónicos para cancelar la suscripción a clientes que no han abierto una determinada cantidad de boletines anteriores
- - Evite los archivos adjuntos y utilice enlaces directos en su lugar.
- - Evite imágenes, reduzca su tamaño cuando estas sean necesarias.
+- Definir la frecuencia de envío a la estrictamente necesaria
+- Enviar únicamente a las personas esenciales para el boletín y las que lo deseen (lista de inscripción, segmentación del cliente)
+- Enviar correos electrónicos de "desuscripción" a clientes que no hayan abierto las newsletters anteriores
+- Evitar archivos adjuntos y preferir enlaces directos
+- Evitar las imágenes o limitar su tamaño
 
- Gestión de clientes:
+Gestión de clientes:
 
- - Reduzca el envío de múltiples correos electrónicos para pedidos en línea a uno solo (pedido, confirmación de pago, envío, satisfacción, recordatorio, satisfacción de entrega, factura, etc.)
- - Envíe archivos adjuntos solo cuando sea necesario: por ejemplo, proporcione enlaces a documentos en la cuenta del cliente
+- Reducir a un solo envío para pedidos por internet (pedido, confirmación de pago, envío, satisfacción, relanzamiento, satisfacción de entrega, factura, ...)
+- No envíe un archivo adjunto si no es necesario: enlace al documento en la cuenta de cliente, por ejemplo.
 
- ### Regla de validación
+### Principio de validación
 
-| El número de ...                           | es igual o menor que |
-|--------------------------------------------|:--------------------:|
-| correos electrónicos con archivos adjuntos |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de correos electrónicos con archivo adjunto  | 0  |
+
+

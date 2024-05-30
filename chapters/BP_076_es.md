@@ -1,51 +1,52 @@
-## Evite transferir grandes cantidades de datos para tareas de procesamiento
+## Evitar la transferencia de una gran cantidad de datos para realizar un tratamiento
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 58 | 75 | 76 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 58 | 75 | 76 |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-------:|:----------------------------:|
- | 2. Diseño | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 2. Diseño | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 3 | 3 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red   |
 
- ### Descripción
+### Descripción
 
-Los sistemas de gestión de bases de datos están diseñados y optimizados para ejecutar eficientemente grandes cantidades de procesamiento de datos. 
-En el caso de tareas con una lógica compleja, no se recomienda recuperar los datos "en bruto" y ejecutar todas las operaciones informáticas, 
-como la transformación o la agregación, en el servidor backend o incluso frontend.
+Los sistemas de gestión de bases de datos están diseñados y optimizados para responder de manera efectiva al procesamiento de grandes cantidades de datos.
+En el caso de tratamientos con una lógica compleja, se desaconseja recuperar los datos "brutos" y realizar todas las operaciones de cálculo, transformación o agregación del lado del servidor backend o incluso frontend.
 
- Estos procesos deben realizarse lo más cerca posible de los datos para:
+Estos tratamientos deben realizarse más cerca de los datos para:
 
- - Limitar el uso del ancho de banda debido a la transferencia de datos no procesados.
- - Aprovechar las optimizaciones de la base de datos para la manipulación de datos.
- - Reducir los ciclos de CPU en el servidor backend o incluso en el frontend.
+- limitar el ancho de banda debido a la transferencia de datos no procesados
+- aprovechar las optimizaciones de la base de datos sobre la manipulación de datos
+- aligerar el ciclo de CPU del lado del servidor backend o incluso frontend.
 
- ### Ejemplo
+### Ejemplo
 
-En el caso de consultas complejas con grandes cantidades de datos, cuando se utiliza un sistema de gestión de bases de datos relacionales (RDBMS), 
-se deben utilizar procedimientos almacenados porque:
+En el caso de consultas complejas con un gran número de datos y el uso de un sistema de gestión de bases de datos relacionales (DBMS), se recomienda utilizar procedimientos almacenados (VIEWS) porque:
 
- - Los procedimientos almacenados ahorran la interpretación de las consultas en el lado del servidor, ya que están precompilados.
- - Los procedimientos almacenados consumen menos ancho de banda, ya que se transfiere menos información entre servidores y clientes.
+ - un procedimiento almacenado ahorra al servidor la interpretación de la recuesta ya que está precompilada;
+ - un procedimiento almacenado requiere menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
 
-Todos los RDBMS recientes (SQL Server MySQL PostgreSQL etc.) admiten procedimientos almacenados.
+Todos los RDBMS (relational database management system) recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                                                                    | es igual o menor que |
- |------------------------------------------------------------------------------------|:------------------------:|
- | Procesos con gran cantidad de datos ejecutados fuera del servidor de base de datos | 1 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de tratamientos con una gran cantidad de datos ejecutados fuera del servidor de base de datos |  1 |
+
+

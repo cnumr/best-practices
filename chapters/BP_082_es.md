@@ -1,43 +1,45 @@
 ## Optimizar el tamaño de las cookies
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 65 | 82 | 82 | |
+| GreenIT | V2  | V3  | V4  |
+|:-------:|:----:|:----:|:----:|
+|  65   | 82  | 82  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:----------------------------:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 4 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 3 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Red |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- ### Descripción
+### Descripción
 
-Las cookies permiten tener un estado compartido entre el navegador del usuario y el servidor web remoto gracias a los
-datos compartidos. Estos datos se envían con cada petición HTTP. Por lo tanto, es necesario optimizar al máximo el tamaño de las cookies y eliminarlas en cuanto dejen de ser necesarias.
+Una cookie permite mantener un estado entre el navegador del internauta y el servidor web remoto gracias a un dato compartido.
+Este dato se transfiere a cada solicitud HTTP.
+Por lo tanto, es necesario optimizar al máximo su tamaño y suprimirlo en cuanto su presencia ya no sea obligatoria.
 
- ### Ejemplo
+### Ejemplo
 
-Es posible eliminar las cookies que ya no se necesiten especificando una duración de expiración nula o negativa, como se indica a continuación:
- ```
- Establecer cookie: user_mavariable=; Edad máxima = 0
- ```
- Consulte RFC 6265 del IETF (Internet Engineering Task Force) para obtener más información relacionada con las cookies:
- https://datatracker.ietf.org/doc/html/rfc6265
+Se puede eliminar una cookie cuando ya no es útil especificando un período de caducidad nulo o negativo, de la siguiente manera:
+```
+Set-Cookie: user_mavariable=; Max-Age=0
+```
+Consulte la RFC 6265 de IETF (Internet Engineering Task Force) para obtener más información sobre cookies:
+https://datatracker.ietf.org/doc/html/rfc6265
 
- ### Regla de validación
+#### Principio de validación
 
- | El número de... | es igual o inferior a |
- |--------------------------------|:------------------------:|
- | cookies inútiles o no optimizadas | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| Cookies no útiles o no optimizadas  | 0 |

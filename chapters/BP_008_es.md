@@ -1,47 +1,45 @@
-## Utilizar un proceso asíncrono cuando sea posible
+## Proponer tratamiento asíncrono cuando sea posible
+Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-|:-------:|:---:|:---:|:---:|
-| 112     | 8   | 8   |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 112  | 8 | 8 |     |
 
 ### Categorías
 
-| Ciclo de vida | Niveles | Responsable                |
-|:-------------:|:-------:|:--------------------------:|
-| 2. Diseño     | Red     | Arquitecto / Desarrollador |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 2. Diseño | Red | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-| 4         | 3                            | 4                 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
-| Recursos ahorrados      |
-|:-----------------------:|
-| RAM / Red / Solicitudes |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Memoria/ Red/ Consultas   |
 
 ### Descripción
 
-Si las acciones del usuario implican un proceso de ejecución prolongada, hazlo asíncrono si es posible.
-
-De esta forma, el usuario puede iniciarlo y volver a verificar más tarde si ha terminado y está bien, sin esperar a que se complete en su dispositivo.
-Este usuario puede ser notificado por un correo electrónico con un enlace, o se puede proporcionar un panel de los procesos en curso y terminarlos.
-
-Este enfoque hace que la experiencia del usuario sea más agradable y permite varias optimizaciones de backend:
-
-* si la arquitectura se divide de esta manera, hace posible liberar los servidores de presentación, permitiendo luego servir más solicitudes y mejorar el desempeño percibido.
-* resulta posible agrupar los procesos en lotes, a menudo más eficiente en recursos que el procesamiento síncrono sobre la marcha.
-* facilita suavizar la carga de los servidores responsables del procesamiento, lo que permite una mejor agrupación de servidores y, en consecuencia, un menor número de ellos.
+Cuando la interacción con el usuario induce un procesamiento pesado y largo en el lado del servidor, ofrecer un tratamiento asíncrono cuando sea posible.
+La idea es animar al usuario a iniciar el tratamiento y luego volver a conectarse cuando el tratamiento se haya completado sin esperar a que el dispositivo termine de ejecutarse;
+por ejemplo, a través de la recepción de un correo electrónico que contiene un enlace.
+Este enfoque permite realizar tratamientos por lotes (batch), a menudo más eficientes en recursos que los tratamientos síncronos sobre la marcha.
+Esto libera los servidores de presentación, que pueden soportar otros usuarios de Internet mientras el procesamiento se realiza en modo asíncrono en el lado del servidor.
+También es más fácil suavizar la carga del servidor responsable del tratamiento, lo que permite una mejor mutualización de servidores y, por tanto, menos servidores.
 
 ### Ejemplo
 
-En el caso de un servicio de conversión de documentos de Office en línea, el usuario puede cargar todos sus archivos a la vez y luego
-ser notificado por correo electrónico cuando se haya completado el proceso. Para optimizar el proceso, todos los archivos se pueden agrupar y comprimir en un archivo.
+En el caso de un servicio en línea de conversión de documentos de oficina, hacer que el usuario deposite sus archivos de una sola vez, y luego notificarle por correo electrónico cuando el procesamiento haya terminado. Para optimizar el proceso, todos los archivos se pueden agrupar y comprimir en un archivo.
 
-### Regla de validación
+### Principio de validación
 
-| El número de...                          | es igual o menor que |
-|------------------------------------------|:--------------------:|
-| procesos sincrónicos de más de un minuto | 0                    |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de tratamientos síncronos que tardan más de un minuto | 0  |
+
+

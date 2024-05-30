@@ -1,47 +1,49 @@
-## Elige las tecnologías más adecuadas
+## Elegir las tecnologías más adecuadas
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:---:|
- | 1 | 11 | 15 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 1   | 11 | 15 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:--------------:|:----------:|:---------------------:|
- | 3. Desarrollo | Centro de datos | Arquitecto / Desarrollador |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Producción (fabricación/ desarrollo) | Centro de datos| Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 5 |
+| Grado de prioridad  | ejecución  | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 5 |
 
- | Recursos ahorrados |
- |:-------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red  |
 
- ### Descripción
+### Descripción
 
-La elección de las tecnologías adecuadas es muy importante para ahorrar recursos: seleccione las más eficientes en función de las necesidades y el contexto.
+La elección de las tecnologías es fundamental para optimizar los recursos, seleccionar la herramienta más eficiente en función de sus necesidades y de sus necesidades empresarial.[1][fl2]
 
-Por ejemplo, utilizar páginas estáticas para un sitio cuyo contenido no cambia mucho permite almacenarlo en caché 
-y evitará el despliegue de servidores de aplicaciones y bases de datos.
+En la medida de lo posible, hay que privilegiar un sitio estático cuyo contenido cambie muy poco, y pueda almacenarse en caché y no solicite un servidor de aplicaciones o una base de datos.
 
- En el caso de un sitio web dinámico los desarrollos personalizados permiten optimizaciones técnicas más relevantes, 
- y permiten el uso del mínimo necesario para responder a las necesidades del usuario.
+En el caso de un sitio más dinámico, el personalizado permite una mayor flexibilidad en la optimización técnica y embarcar lo estrictamente necesario para satisfacer la necesidad empresarial.[3]
 
-Si tiene una parte de una aplicación web que depende de un número reducido de páginas y ofrece un servicio funcional 
-acotado (compra, solicitud de presupuesto, ...), el uso de una SPA (Single Page Application) puede ser interesante. 
-Evita peticiones y hace más fluida la experiencia del usuario.
+Si usted tiene una parte de un sitio web que se basa en un número muy limitado de páginas y que proporciona un servicio de negocio enmarcado (túnel de pedido, solicitud de presupuesto) se puede recomendar el uso de una SPA (Single Page Application o aplicación de página única). Esto permite limitar el número de idas y vueltas al servidor y hace que la experiencia sea más fluida y eficiente.
 
- ### Ejemplo
+### Ejemplo
 
-Un sitio de presentación de una empresa que se actualiza raramente con un formulario de contacto debería basarse en páginas web estáticas.
+Un sitio institucional con solo una presentación de la empresa y un formulario de contacto deberá privilegiar un sitio estático dada la baja frecuencia de actualización.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |----------------------------|:------------------------:|
- | tecnologías mal elegidas | 1 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de tecnologías inadecuada | 1  |
+
+
+Réfléchir à une autre formulation pour contrainte métier, pas convaincue par cette trad
+[fl2R1]necesidad empresarial 
+Idem, il faut chercher une meilleure expression pour contrainte métier et besoin métier, à investiguer

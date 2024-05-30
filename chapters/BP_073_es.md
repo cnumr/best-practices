@@ -1,51 +1,52 @@
-## Evite abrir conexiones de bases de datos cuando no sea necesario
+## Conectarse a una base de datos solo si es necesario
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 56 | 72 | 73 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   56   | 72  | 73  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------:|:----------:|:----------------------------:|
- | 2. Diseño | Centro de datos | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 2. Diseño | Centro de Datos | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 3 | 3 |
+| Grado de prioridad  | ejecución  | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red   |
 
- ### Descripción
-La apertura de una conexión es un proceso que consume muchos recursos, tanto para el cliente como para el servidor, independientemente del sistema de base de datos:
- * Asignación de memoria y E/S de disco para los búferes.
- * Viajes de ida y vuelta por la red para el protocolo de conexión.
- * Costo de CPU inducido.
+### Descripción
+Independientemente del sistema de base de datos, abrir una conexión es un proceso costoso para el cliente y el servidor:
+*    Asignación de memoria y I/O disco para búferes,
+*    Idas y vueltas por la red para el protocolo de conexión,
+*    Coste de CPU inducido.
 
-Ejemplo: para Oracle, son necesarios varios viajes de ida y vuelta 
-(validación de credenciales, información sobre controladores, negociación del tamaño óptimo de los paquetes, etc.). 
-Abrir y cerrar la conexión requiere asignar y desasignar estos recursos, así como muchos intercambios de red, cada vez.
+Ejemplo:  para Oracle se necesitan varias idas y vueltas (validación de credenciales, información sobre el driver, negociación del tamaño óptimo de los paquetes...).
+La apertura y el cierre de una conexión requieren la asignación y la eliminación de estos recursos, así como numerosos intercambios de red, cada vez.
+
+La buena práctica que se suele utilizar es la creación de un grupo de conexiones.
+Esto optimiza la gestión de conexiones y el rendimiento. Sin embargo, su configuración no es necesariamente una operación trivial (requiere supervisar su comportamiento para encontrar la configuración correcta).
+
+Dicho esto, siempre que la aplicación pueda evitar el acceso a la base de datos, ¡hágalo!
+
+### Ejemplo
+
+HikariCP es un grupo de conexiones JDBC sólido y potente. Está integrado en SpringBoot.
+
+En caso de que no haya un grupo de conexiones, vuelva a utilizar una conexión y no abra/cierre una nueva conexión con cada consulta.
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de conexiones a una base de datos para solicitar, almacenar un dato no necesario para la utilización del servicio | 0  |
 
 
-La mejor práctica habitual es crear un pool de conexiones. Optimiza la gestión de las conexiones, así como el rendimiento. 
-Sin embargo, su configuración no es necesariamente una operación trivial (se requiere supervisión para encontrar la configuración adecuada).
-
-Intente evitar en la medida de lo posible los accesos a la base de datos de la aplicación.
-
- ### Ejemplo
-
- HHikariCP es un pool de conexiones JDBC robusto y eficaz. Está integrado en SpringBoot.
-
-Cuando no exista un pool de conexiones, reutilice una conexión y no abra/cierre una nueva conexión para cada petición.
-
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |---------------------------------------|:------------------------:|
- | conexiones de bases de datos innecesarias para consultar o almacenar los datos de servicio necesarios | 0 |

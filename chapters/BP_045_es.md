@@ -1,57 +1,56 @@
-## Modificar varias propiedades CSS a la vez
+## Cambiar varias propiedades CSS de una sola vez
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 34 | 32 | 45 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|  34   | 32  | 45 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:--------------------------:|:--------------------:|
- | 3 | 4 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 2 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador |
 
- ### Descripción
+### Descripción
 
-Evitar modificar las propiedades CSS una a una para limitar el número de repintados/reﬂows.
+Para limitar el número de repaint/re?ow, se recomienda no modificar propiedades una a una.
+Preferir la adición/supresión de clases CSS, lo que permite modificar en una sola vez varias propiedades, generando solo uno repaint/re?ow.
 
-En su lugar, añada/elimine clases CSS que permitan modificar varias propiedades a la vez y generar un único repintado/reﬂujo 
-(véase la regla nº 45).
+### Ejemplo
 
- ### Ejemplo
-
- Escribir:
-
+Preferir la escritura:
 ```html
-<styling>
-     .in-error { color: red;
-         font-weight: bold;
-     }
+<style>
+	. in-error { color: rojo;
+    	font-weight: bold;
+	}
 </style>
 <script>
-     $el.bind('error', function () {
-         $el.addClass('in-error');
-     });
-     $el.bind('running', function () {
-         $el.removeClass('in-error');
-     };
+	$el.bind('error', function () {
+    	$el.addClass('in-error');
+	})
+	$el.bind('running'), function () {
+    	$el.removeClass('in-error');
+	};
 </script>
 ```
 
+### Principio de validación
 
- #### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de declaraciones CSS que pueden agruparse en una sola (margin, padding, ...) y que no utilizan la versión corta  | 0  |
 
- | El número de... | es igual o menor que |
- |-------------------------------------------------------------------------------|:-------------------------:|
- | Declaraciones CSS que pueden agruparse en una sola (margen, relleno, ...) | 0 |
+

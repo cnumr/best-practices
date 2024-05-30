@@ -1,43 +1,40 @@
-## Elija un proveedor de electricidad ecológico
+## Favorecer a un proveedor de electricidad responsable
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:---:|:----:|
- | 67 | 85 | 87 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+| 67   | 85  | 87 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:----------:|:--------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 3 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 2 |
 
- | Ahorro de recursos |
- |:---------------------------------------------------------:|
- | Emisiones de gases de efecto invernadero |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Emisiones de gases de efecto invernadero  |
 
- ### Descripción
+### Descripción
 
-Utiliza la fuente de electricidad que tenga el menor impacto ambiental posible durante su producción (por ejemplo, hidráulica) para alimentar tus equipos digitales.
+Para alimentar sus equipos digitales, utilice siempre que sea posible una electricidad con el mínimo impacto medioambiental durante su producción (por ejemplo, hidráulica).
+Hoy en dia, no existe un mecanismo sólido que garantice que la electricidad que consume se ha producido con impactos más bajos.
+A falta de otra alternativa, una opción es elegir un proveedor que no compre electricidad generada a partir de recursos fósiles o comprar certificados de garantía de origen.
 
-Tenga en cuenta que, a día de hoy, no existe ninguna forma fiable de garantizar que la electricidad se ha producido con el menor impacto. 
-Como alternativa, puede elegir un proveedor que no compre electricidad producida a partir de combustibles fósiles o comprar EAC (Certificado de Atributo Energético).
+### Ejemplo
 
- ### Ejemplo
+Aunque esto solo afecta a las emisiones de gases de efecto invernadero, https://app.electricitymap.org/map permite estar informado sobre la intensidad de carbono en función del país del proveedor.
 
- Aunque restringe las emisiones de gases de efecto invernadero https://app.electricitymap.org/map le permite estar informado sobre la intensidad de carbono de la electricidad del país proveedor.
+### Principio de validación
 
- Para conocer más sobre certificados de atributos energéticos y electricidad:
- https://www.greenit.fr/tag/electricite
-
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |------------------------------------------------------------------------------------------------|: ------------------------:|
- | casos en los que el anfitrión no ha presentado la prueba de compra de certificados de atributos energéticos | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| no presentación de prueba de la compra de certificados de garantía de origen por parte del proveedor de alojamiento   | 0  |

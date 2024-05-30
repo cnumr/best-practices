@@ -1,44 +1,46 @@
-## Prefiero páginas web estáticas
+## Favorecer páginas estáticas
+Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-|:-------:|:---:|:---:|:---:|
-| 3       | 51  | 13  |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  3   | 51  | 13  | |
 
 ### Categorías
 
-| Ciclo de vida | Niveles             | Responsable                | 
-|:-------------:|:-------------------:|:--------------------------:|
-| 2. Diseño     | Usuario/Dispositivo | Arquitecto / Desarrollador |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 2. Diseño | Usuario/Terminal | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-| 4         | 3                            | 5                 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 5 |
 
-| Recursos ahorrados |
-|:------------------:|
-| Procesador/RAM     |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ RAM  |
 
 ### Descripción
 
-Si una página sólo se modifica dos veces al año, no hay necesidad de un CMS: las páginas estáticas están bien. Al mantenerse en páginas estáticas permitirá ahorrar CPU, ancho de banda, energía, etc.
+Si una página necesita ser modificada solo dos veces al año, preferir páginas estáticas, construidas fuera del CMS.
+Esto ahorrará ciclos de CPU, ancho de banda, y reducirá el consumo de energía.
 
-Un CMS normalmente requiere varias capas de software para mostrar el contenido: servidor HTTP, servidor de aplicaciones (el propio CMS) y base de datos, con sistemas de caché opcionales. El servidor HTTP del sistema de archivos proporciona directamente una página estática al usuario. No es necesario un servidor de aplicaciones o base de datos.
+El uso de un sistema de gestión de contenidos dinámico requiere cargar las diferentes capas de software para servir el contenido solicitado por el internauta: el servidor HTTP, el servidor de aplicaciones, el sistema de almacenamiento del contenido (base de datos), quizás los sistemas de caché asociados, etc. En cambio, el servidor HTTP o el servidor de caché leen directamente un archivo estático y lo devuelven al internauta, sin solicitar el servidor de aplicaciones o la base de datos.
 
 ### Ejemplo
 
-Se pueden aplicar las siguientes soluciones dependiendo del servicio digital:
+Dependiendo del servicio digital que se va a diseñar, es posible:
+- para una página de destino o un simple sitio escaparate, crear un sitio estático en HTML, CSS y JS.
+- para un blog con poca actividad o de pequeño tamaño, crear un sitio estático generado a través de un JAMstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administrado, si es necesario, a través de un CMS headless o un CMS headless flat-file (Strapi, Contenful, Flextype, etc.).
+- para un sitio web o aplicación web más compleja hacer las páginas con bajas tasas de cambios (FAQ, About, Aviso legal, etc.) estáticas utilizando frameworks (Next, Nuxt, Svelte, etc.).
 
-- Para una página de destino o un sitio de visualización simple, se puede crear una página estática escrita directamente en HTML, CSS (y opcionalmente JS).
-- Para un blog con poca actividad, se puede utilizar una arquitectura JAMstack con un generador de contenidos como Jekyll, Hugo, Gasby o Eleventy. Si es necesario, se puede agregar un CMS headless o un CMS flat-file headless (Strapi, Contenful, Flextype, etc.).
-- para aplicaciones web más complejas, algunas páginas con baja tasa de edición (Preguntas frecuentes, Acerca de, términos legales, ...) pueden hacerse estáticas.
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de páginas dinámicas es   | 25% |
 
 
-### Regla de validación
-
-| El número de...      | es igual o menor que |
-|----------------------|:--------------------:|
-| páginas dinámicas es | 25%                  |

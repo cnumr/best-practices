@@ -1,39 +1,41 @@
 ## Mostrar páginas de error estáticas
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  |  V4  |
- |:-------:|:---:|:---:|:----:|
- |    46   | 98  | 96  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  46	| 98  | 96  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles |             Responsable              |
- |:-------------:|:-------:|:------------------------------------:|
- |   2. Diseño   |   Red   | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 2. Diseño | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- |       Prioridad    | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:----------------------------:|:-----------------:|
- |          3         |              3               |          3        |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- |                      Recursos ahorrados                   |
- |:---------------------------------------------------------:|
- |               Procesador/RAM/Red/Almacenamiento           |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+CPU/ RAM/ Red/ Almacenamiento  |
 
- ### Descripción
+### Descripción
 
- Las páginas de error (40x, 50x) deben ser lo más ligeras posible, idealmente inexistentes. Cuando los navegadores solicitan recursos inexistentes (imágen, hoja de estilo CSS, archivo JavaScript, etc.) o cuando los servidores devuelven errores, las páginas de error que se envían pueden ser más pesadas que el recurso o la página solicitada.
+Las páginas de errores (40x, 50x) deben ser lo más ligeras posible, e incluso idealmente inexistentes. De hecho, cuando el navegador solicita un recurso que no existe (imagen, hoja de estilos CSS, archivo JavaScript, etc.) o el servidor devuelve un error, la página de error devuelta puede ser más pesada que el recurso o la página solicitada.
 
-Además algunos CMSs ejecutan su rutina de búsqueda de contenidos (en la base de datos) para intentar encontrar los recursos solicitados. Como resultado, se ejecuta el código del servidor, se solicita el servidor de la base de datos y se ejecuta la generación dinámica de la página HTML. Todo este proceso desperdicia ciclos de CPU RAM y ancho de banda.
+Además, algunos CMS ejecutan su rutina de búsqueda de contenido (en la base de datos) para intentar encontrar un recurso solicitado. Por lo tanto, se ejecuta código de servidor, se solicita el servidor de base de datos, y se ejecuta la generación dinámica de la página HTML. Todo este proceso produce un desperdicio de ciclos de CPU, memoria RAM y ancho de banda.
 
- ### Ejemplo
+### Ejemplo
 
-Evite las páginas 404 dinámicas, que se personalizan según el contenido de las URL. Son preferibles las páginas 404 estáticas.
+Evitar las páginas 404 dinámicas, que se personalizan en función del contenido de la URL. Preferir una página 404 estática.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...            | es igual o menor que     |
- |----------------------------|:------------------------:|
- | páginas de error dinámicas |             0            |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de páginas dinámicas de error; 0 |
+

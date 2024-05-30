@@ -1,40 +1,43 @@
-## Codificar archivos de audio fuera del CMS
+## Codificar sonidos fuera del CMS
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 96 | 60 | 60 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|  96   | 60  | 60  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-----------:|:-----------:|
- | 5. Uso | Usuario/Dispositivo | Usuario |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:---------------:|
- | 4 | 4 | 4 |
- 
- |        Recursos ahorrados         |
- |:---------------------------------:|
- | Procesador/RAM/Red/Almacenamiento |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- ### Descripción
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red/ Almacenamiento |
 
- Adaptar y optimizar archivos de audio fuera de los sitios web. Este método ahorra mucho ancho de banda y libera CPU y RAM ya que los servidores web no están optimizados para (re)codificar archivos de audio.
+### Descripción
 
- ### Ejemplos
+Adaptar y optimizar los sonidos fuera del sitio web. Esta medida ahorra mucho ancho de banda y aliviará la CPU y la memoria RAM, ya que un servidor web no está optimizado para la (re)codificación de archivos de audio.
 
- Si un archivo de audio agregado directamente al CMS pesa 7 MB es posible ahorrar:
- - 7 MB de ancho de banda en el momento de la carga.
- - 100 KB al escuchar el archivo
- - 69 MB de almacenamiento en el disco duro del servidor.
+### Ejemplo
 
- ### Regla de validación
+Si el sonido añadido directamente en el CMS pesa 7 MB, se ahorrará:
+ - 7 MB de ancho de banda durante el envío;
+ - 100 KB al escuchar el resultado;
+ - 6,9 MB de almacenamiento en el disco duro del servidor.
 
- | El número de... | es igual o menor que |
- |-----------------------------------------|:------------------------:|
- | archivos de audio codificados directamente por el CMS | 0 |
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos de sonido codificados directamente por el CMS  | 0  |
+
+

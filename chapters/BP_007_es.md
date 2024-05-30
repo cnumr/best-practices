@@ -1,54 +1,60 @@
-## Respetar la caché Atrás/Adelante
+## Respetar el principio de navegación rápida en el historial (de navegación)
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 28 | 5 | 7 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   28   | 5  | 7 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-------------:|:--------------:|
- | 2. Diseño | Usuario/Dispositivo | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 2. Diseño | Usuario/Terminal | UX/UI Designer |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
- | 3 | 4 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 3 |
 
- | Recursos ahorrados |
- |:-------------------:|
- | Procesador/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+|Procesador/ Red   |
 
- ### Descripción
+### Descripción
 
- Los navegadores tienen una función de navegación rápida en el historial (botones de página anterior y página siguiente), llamada _back-forward cache_ o _bfcache_.
+Los navegadores tienen una función de navegación rápida en el historial (botones Página anterior y Página siguiente), a menudo llamada _back-forward cache_ o _bfcache_.
 
- A diferencia del caché HTTP que permite conservar en la memoria las respuestas a las solicitudes enviadas anteriormente y para acelerar la recarga de estas páginas, la caché _bfcache_ permite al navegador almacenar una página completa en la memoria.
- Sin embargo, como el uso de esta función requiere recursos adicionales de la máquina por parte del usuario, es interesante reducir
- las funcionalidades de las páginas almacenadas con _bfcache_ tanto como sea posible. Además, el uso de _bfcache_ implica  cierta precaución, especialmente cuando se excede el tiempo de espera (_setTimeout_).
- De hecho, a medida que los navegadores suspenden la ejecución de temporizadores y tareas pendientes en colas de JavaScript y la reanudan cuando la página
- se restaura desde _bfcache_, puede haber situaciones problemáticas. Por ejemplo, si el navegador suspende una tarea requerida como parte de una transacción de IndexedDB o uso de API y otras pestañas (que usan la misma base de datos de IndexedDB) están abiertas al mismo tiempo, el navegador no almacenará en caché páginas individuales.
+Al contrario de la caché HTTP, que permite mantener en memoria las respuestas a las consultas realizadas previamente y entonces evitar generarlas varias veces inútilmente y acelerar la carga de páginas, la caché _bfcache_ permite conservar en memoria una página entera.
+Sin embargo, dado que el uso de esta funcionalidad moviliza recursos de máquina adicionales del lado del usuario, hay que procurar aligerar al máximo las funcionalidades de las páginas almacenadas con el _bfcache_.
+Por otra parte, el uso de _bfcache_ implica ciertas precauciones, especialmente cuando el tiempo de espera esta superado (_setTimeout_)
+De hecho, como los navegadores suspenden la ejecución de los Timers en espera y las tareas en las colas de espera JavaScript, y reanudan el tratamiento de las tareas cuando la página se restaura desde el _bfcache_, puede haber situaciones problemáticas.
 
- Cualquier elemento que haría que la página no fuera elegible para _bfcache_ y/o que la dejaría inutilizable después de salir debe ser evitado.
+Por ejemplo, si el navegador suspende una tarea requerida como parte de una transacción de IndexedDB o el uso de API y otras pestañas (usando las mismas bases de datos de IndexedDB) están abiertas en ese momento, el navegador no almacenará en caché cada una des las páginas.
 
- ### Ejemplo
+Por lo tanto, se debe evitar cualquier elemento que haga la página no elegible para el _bfcache_,
+y/o que inutilizaría la página después de abandonarla
+(o posiblemente volver a utilizarlos cuando la página se vuelva a utilizar, o justo antes de que se almacene en caché).
 
- Evitar :
- - acciones activadas al salir de la página (eventos `unload` o `beforeunload`, prefiera `pagehide` si es realmente necesario)
- - enlaces que abren nuevas pestañas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
- - dejar las conexiones (IndexedDB `fetch()` o XMLHttpRequest, Web Sockets, etc.) abiertas cuando el usuario abandona la página
+### Ejemplo
 
- Utilice los eventos `pageshow` y/o `pagehide` para restablecer los elementos que lo requieran: p.e. volver a habilitar los botones del formulario que desactivar al enviar o eliminar la información sensible (como contraseñas) o cerrar/reabrir conexiones persistentes.
+Evitar:
+ - las acciones cuando se sale de la página (eventos `unload` o `beforeunload`, preferir `pagehide` si es realmente necesario)
+ - los enlaces que abran nuevas fichas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
+ - dejar abiertas las conexiones (IndexedDB, `fetch()` o xmlhttprequest, Web Sockets, etc.) cuando el usuario sale de la página
 
- Fuente:
- * https://web.dev/bfcache/ (contenido bajo licencia CC BY 4.0 - _Caché atrás/adelante_ de Philip Walton)
+Utilizar los eventos `pageshow` y/o `pagehide` para restablecer los elementos que lo requieran, por ejemplo, reactivar los botones de formulario que se desactivan durante el envío o eliminar información sensible (como contraseñas), o para cerrar/volver a abrir conexiones persistentes.
+
+Fuente:
+* https://web.dev/bfcache/ (contenido con licencia CC BY 4.0 - _Back/forward cache_ por Philip Walton)
 
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |-------------------------------|:------------------------:|
- | páginas no elegibles para _bfcache_ | 0% |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de páginas no admisibles en el _bfcache_  | 0% |
+
+

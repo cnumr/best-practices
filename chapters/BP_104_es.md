@@ -1,43 +1,45 @@
-## Deshabilitar la búsqueda de DNS de Apache
+## Deshabilitar el DNS Lookup de Apache
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  |  V3  | V4  |
- | :-----: | :-: | :--: | :-: |
- |    84   | 100 | 1 04 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  84	| 100  | 104  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |     Niveles     |        Responsable        |
- | :-----------: | :-------------: | :-----------------------: |
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación |     Impacto ecológico     |
- | :-------: | :--------------------------: | :-----------------------: |
- |     2     |               2              |              3            |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 2 | 3 |
 
- |  Recursos ahorrados |
- | :-----------------: |
- |   Procesador/Red    |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Red  |
 
- ### Descripción
+### Descripción
 
- Los servidores web registran información para todas las solicitudes HTTP, y generalmente traducen las direcciones IP de los usuarios en nombres de dominio. Esta conversión (búsqueda de DNS) es uno de los cuellos de botella del servidor Apache HTTP.
+Cada vez que un servidor web recibe una solicitud HTTP, registra esta información en un registro, traduciendo generalmente la dirección IP del usuario al nombre de dominio. Esta conversión (DNS Lookup) es uno de los cuellos de botella del servidor HTTP Apache.
 
-Por lo tanto debería estar deshabilitado.
+Por lo tanto, desactivar.
 
- ### Ejemplo
+### Ejemplo
 
- En el archivo de configuración de su servidor Apache ubicado en `/etc/apache/httpd.conf` o en `/etc/apache2/apache2.conf` escriba:
-
+En el archivo de configuración de su servidor Apache, en la dirección `/etc/apache/httpd.conf` o en la dirección `/etc/apache2/apache2.conf`, escriba:
 ```apacheconf
  HostnameLookups Off
 ```
 
- ### Regla de validación
+#### Principio de validación
 
- | El número de...       | es igual o menor que |
- | --------------------- | :------------------: |
- | búsquedas DNS activas |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de DNS Lookup activo | 0 |
+
+

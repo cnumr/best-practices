@@ -1,52 +1,54 @@
-## Agregar encabezados Expires o Cache-Control
+## Añadir encabezados Expires o Cache-Control
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  | V4  |
- | :-----: | :-: | :-: | :-: |
- |    78   | 105 | 101 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   78   |  105 | 101  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles |         Responsable       |
- | :-----------: | :-----: | :------------------------:|
- | 4. Producción |   Red   | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Red | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- | :-------: | :--------------------------: | :---------------: |
- |     4     |              3               |          4        |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- |           Recursos ahorrados         |
- | :----------------------------------: |
- |  Procesador / Red / RAM / Consultas  |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Red/ Memoria/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Los encabezados Expires y Cache-Control definen el tiempo durante el cual los navegadores deben mantener los recursos en su caché. Por lo tanto, es necesario agregarlos y configurarlos correctamente para hojas de estilo CSS, archivos JavaScript, e imágenes.
+Los encabezados Expires y Cache-Control definen el tiempo durante el cual un navegador debe mantener un recurso en su caché. Por lo tanto, debe preverse y configurarse correctamente para hojas de estilo CSS, scripts de JavaScript e imágenes.
 
-Lo ideal, es que la vida útil de estos elementos sea lo más larga posible para que los navegadores no tengan que volver a solicitarlos al servidor. Esto ahorra solicitudes HTTP, ancho de banda y ciclos de CPU desde el lado del servidor.
+Idealmente, la vida útil de estos elementos debe ser lo más larga posible, para que el navegador no vuelva a solicitarlos al servidor. Esto ahorra solicitudes HTTP, ancho de banda y ciclos de CPU en el servidor.
 
- ### Ejemplo
+### Ejemplo
 
-A continuación, se muestra un ejemplo de cómo configurar los encabezados Expires y Cache-Control para el servidor web Apache:
-
- ```apacheconf
- # BEGIN Encabezados de control de caché
+Aquí hay un ejemplo de configuración de los encabezados Expires y Cache-Control para el servidor web Apache:
+```apacheconf
+# BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
-    <FilesMatch "\\.(ico|jpe?g|png|gif|swf|css|gz)$">
-        Header set Cache-Control"max-age=2592000, public"
-    </FilesMatch>
-    <FilesMatch "\\.(html|htm)$">
-        Header set Cache-Control"max-age=7200, public"
-    </FilesMatch>
+	<FilesMatch "\\.(ico|jpe?g|png|gif|swf|css|gz)$">
+    	Header set Cache-Control"max-age=2592000, public"
+	</FilesMatch>
+	<FilesMatch "\\.(html|htm)$">
+    	Header set Cache-Control"max-age=7200, public"
+	</FilesMatch>
 </IfModule>
- # END Encabezados de control de caché
- ```
+# END Cache-Control Headers
+```
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                            | es igual o menor que |
- | ------------------------------------------ | :------------------: |
- | faltan encabezados Expires o Cache-Control |            0         |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de cabeceras que faltan Expires o Cache-Control  | 0 |
+
+

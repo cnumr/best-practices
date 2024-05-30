@@ -1,48 +1,50 @@
 ## Limitar el número de CSS
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 10 | 25 | 22 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   10   | 25  | 22  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Red / Consultas |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
-Limitar el número de CSS para evitar peticiones HTTP y simplificar la renderización en el navegador. 
-Utilice una hoja de estilos común para todos los elementos comunes, independientemente de la pantalla, y un archivo para cada tamaño de pantalla de destino o consulta de medios.
+Limitar el nombre de CSS para no multiplicar las solicitudes HTTP y simplificar la representación del lado del navegador. Utilizar una hoja de estilo común para todos los elementos comunes, independientemente de la pantalla, y un archivo por resolución de destino o media queries.
 
-Tenga cuidado: importe estos archivos en el código HTML y NO con directivas @import en los propios archivos CSS. Al dividirse de esta forma los dispositivos de los usuarios elegirán cuál es el más adecuado y aplazarán la carga de los archivos que no necesiten.
+Ten cuidado, hay que integrar estos archivos directamente en el código HTML y NO con directivas @import en los propios archivos CSS. Al cortar de esta manera, el terminal del usuario elegirá lo que se ajusta a él y dejará al lado la carga de los archivos que no necesita.
 
- Los archivos CSS necesarios para algunos componentes se pueden cargar según el contexto si es necesario.
+Si es necesario, se pueden cargar archivos CSS para algunos componentes en función del contexto.
 
- ### Ejemplo
+### Ejemplo
 
- ```
- <link rel='stylesheet' id='css-css' href='commons.css' type='text/css' media='all' />
- <link rel='stylesheet' id='css-xs-css' href='small-screens.css' type='text/css' media='(max-width: 959px)' />
- <link rel='stylesheet' id='css-sm-css' href='tablets.css' type='text/css' media='(min-width: 768px)' />
- <link rel='stylesheet' id='css-mdlg-css' href='large-screens.css' media='(min-width: 960px)' />
- <link rel='stylesheet' id='css-print-css' href='print.css' type='text/css' media='print' />
- ```
+```
+<link rel='stylesheet' id='css-css)  href='comunes.css' type='text/css' media='all' />
+<link rel='stylesheet' id='css-xs-css)  href=pequenas-pantallas.css' type='text/css' media='(máx-width: 959px)' />
+<link rel='stylesheet' id='css-sm-css)  href='tabletas.css' type='text/css' media='(min-width: 768px)' />
+<link rel='stylesheet' id='css-mdlg-css href='grandes-pantallas.css' media='(min-width: 960px)' />
+<link rel='stylesheet' id='css-print-css)  href='print.css' type='text/css' media='print' />
+```
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | Archivos CSS | 10 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos CSS  | 10  |
+
+

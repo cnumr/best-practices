@@ -1,50 +1,50 @@
-## Dividir CSS
+## Recortar los CSS
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 9 | 24 | 21 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   9   | 24  | 21  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Diseñador UX/UI|
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Procesador/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Red  |
 
- ### Descripción
+### Descripción
 
-Utilice un conjunto de CSS en lugar de uno solo, e importar sólo los necesarios según el contexto. Este método ayuda a
-limitar el tamaño de la página, por lo que ahorra ancho de banda y reduce la carga de la CPU.
+Utilizar un conjunto de CSS en lugar de un solo, y llamar solo a los CSS útiles según el contexto.Ese método ayuda a limitar el peso de la página en la primera descarga, lo que ahorra ancho de banda y reduce la carga de la CPU.
 
- ### Ejemplo
+### Ejemplo
 
- Utilice una lógica funcional para dividir el CSS:
-   - disposición;
-   - contenido;
+Cortar CSS según la lógica funcional:
+ - diseño;
+ - contenido;
  - módulo x;
  - módulo y;
  - etc...
 
- Esto excluirá todos los CSS de los módulos no utilizados en el caso de un sitio web con muchas funciones.
- La cantidad de archivos CSS debe seguir siendo razonable, más por motivos de mantenimiento que por problemas de rendimiento.
- ya que el CSS general (“diseño” y “contenido” en nuestro ejemplo) se concatenará en un solo archivo.
-
- Los archivos CSS opcionales (aquí "módulo x" y "módulo y") se descargarán dependiendo del contexto (página funcionalidades...).
+En el caso de un sitio funcionalmente rico, esto permitirá excluir todas los CSS de los módulos no utilizados.
+El número de CSS debe seguir siendo razonable, más por cuestiones de mantenibilidad que de rendimiento, en la medida en que los CSS generales («diseño» y «contenido» en nuestro ejemplo) serán concatenadas en un solo archivo.
+Los CSS complementarios (aquí, «módulo x» y «módulo y») se descargarán según el contexto (página, funcionalidades...).
 
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | Las bibliotecas CSS son superiores o iguales a | 2 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de librerías CSS es mayor o igual  | 2  |
+
+

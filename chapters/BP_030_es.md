@@ -1,47 +1,43 @@
-## Prefiera los glifos a las imágenes
+## Preferir los glifos a las imágenes
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:---:|:----:|
- | 20 | 18 | 30 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 20  | 18 | 30  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-------:|:--------------:|
- | 3. Implementación | Red | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Diseñador UX/UI |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|-------------------|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:----------------------------:|
- | Almacenamiento / Red / Consultas |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Almacenamiento/ Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Los glifos son caracteres tipográficos específicos incluidos en las fuentes, como los que se incluyen en los sistemas operativos.
- Se pueden utilizar para sustituir imágenes monocromas como símbolos o pictogramas (chevron, triángulo, punto, cuadrado, signos astrológicos, etc.) hasta ilustraciones que permitan:
+ Los glifos son caracteres tipográficos específicos, incluidos en fuentes como las de un sistema operativo, utilizables en sustitución de imágenes monocromáticas como símbolos o pictogramas (chevron, triángulo, punto, cuadrado, signos astrológicos, etc.) hasta las ilustraciones que permiten:
+- reducir el ancho de banda ahorrando peso
+- reducir el número de solicitudes
+- reducir la complejidad del DOM, especialmente con numerosos pictogramas SVG
 
- - Reducir el ancho de banda al disminuir el tamaño total del sitio web.
- - Reducir el número de solicitudes.
- - Reducir la complejidad del DOM, especialmente con muchos pictogramas SVG.
+### Ejemplo
 
- ### Ejemplo
+Se logró una ganancia del 91% del peso incluyendo pictogramas e ilustraciones vectoriales en un icono hecho a través de [Font Forge](https://fontforge.org/en-US/).
 
- Extracto de una fuente creada mediante Font Forge para ilustrar una página de aterrizaje(https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
+### Principio de validación
 
-Se ha conseguido un ahorro de tamaño del 91% incluyendo pictogramas e ilustraciones vectoriales en una fuente de iconos a través de Font Forge.
-(https://fontforge.org/en-US/).
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes que podrían haberse sustituido por un glifo (símbolo de fuente de carácter)  | 0  |
 
- Para ir más lejos: https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements(https://coding.smashingmagazine.com/2011 /03/19/elementos-de-estilo-con-glifos-sprites-y-pseudo-elementos)
 
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | imágenes que deberían haber sido reemplazadas por glifos (símbolo de fuente) | 0 |

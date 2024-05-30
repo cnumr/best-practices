@@ -1,39 +1,42 @@
 ## Combinar archivos CSS y JavaScript
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT  | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 89 | 81 | 79 | |
+| GreenIT | V2  | V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 89  | 81  | 79  |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------:|:----------------------------:|
- | 4. Producción | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:------------------:|
- |     Consultas      |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Peticiones |
 
- ### Descripción
+### Descripción
 
-La combinación de hojas de estilo CSS y bibliotecas JavaScript reduce el número de consultas HTTP.
+La combinación de hojas de estilo CSS o bibliotecas de JavaScript reduce la cantidad de solicitudes HTTP.
 
- ### Ejemplos
+### Ejemplos
 
-El plugin "Autoptimize" facilita la combinación de archivos CSS en WordPress y está disponible de forma gratuita.
+En Wordpress, el plugin gratuito, `Autoptimize`, permite combinar archivos CSS.
 
-El plugin "webpack-merge-and-include-globally" simplifica el proceso de combinar archivos CSS y JavaScript en Webpack.
+Con Webpack, el plugin `webpack-merge-and-include-Globally` facilita la fusión de archivos CSS y Javascript.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                 | es igual o menor que |
- |---------------------------------|:------------------------:|
- | Archivos CSS y JS no combinados | 2 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos CSS y JS sin combinar  | 2  |
+
+

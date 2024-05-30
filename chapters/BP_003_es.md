@@ -1,52 +1,45 @@
 ## Optimizar el recorrido del usuario
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 111 | 3 | 3 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  111   | 3  | 3  |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------------:|:--------------: |
- | 2. Diseño | Usuario/dispositivo | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:------:|:----:|
+| 2. Diseño | Usuario/Terminal | Diseñador UX/UI|
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:--------------------:|
- | 5 | 4 | 5 |
+| Grado de prioridad  | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 5 | 4 | 5 |
 
- | Recursos ahorrados |
- |:---------------------------------------------:|
- | Procesador / RAM / Almacenamiento / Red / Consultas |
+|Recursos ahorrados   |
+|:----------------------------------------------------------:|
+|Procesador / Memoria RAM / Almacenamiento / Red / Consultas   |
 
- ### Descripción
+### Descripción
 
- Optimizar el viaje del usuario consiste en reducir el tiempo que dedica el usuario a sus casos de uso más frecuentes.
+Optimizar el recorrido del usuario consiste en reducir el tiempo empleado por el usuario en sus usos más frecuentes. Primero, centrarse en los recorridos más frecuentes y luego optimizar su uso: reducir el número de pasos, reducir el número de acciones, eliminar lo inútil, identificar los casos de fracaso, optimizar los tiempos de respuesta... Un recorrido está bien diseñado cuando el programa se comporta exactamente como el usuario lo imagina.
 
- Comience por identificar los casos de uso más frecuentes, luego optimícelos, reduciendo el número de pasos y
- acciones, eliminando las innecesarias, identificando los casos de falla, optimizando los tiempos de respuesta, etc.
+Como mínimo, sondear observando a su entorno utilizando el servicio es una buena manera de identificar los puntos de fricción - situaciones o interacciones que contribuyen a degradar la experiencia del usuario y ralentizar el recorrido - de los usuarios. Las pruebas con usuarios permiten ir más allá en la búsqueda de estos puntos de fricción.
 
-El viaje del usuario está bien diseñado cuando el programa se comporta exactamente como el usuario lo espera.
+El tiempo pasado por el usuario en su terminal es el segundo factor en cuanto a impactos ambientales.
 
- La observación de las personas que utilizan el servicio es una forma sencilla de identificar los puntos de fricción, pero las pruebas de usuarios,
- realizadas con usuarios reales aleatorios del campo son mucho más interesantes. Personas que trabajan en y alrededor del producto tienden a ser usuarios avanzados.
+#### Ejemplo
 
-El tiempo que pasa el usuario en la terminal es el segundo mayor impacto medioambiental.
+* Proponer, para una web de gran distribución, un nuevo pedido basándose en el contenido del pedido anterior.
+* Comprar sin registrarse en un sitio de comercio electrónico.
+* Copiar/pegar su resumen de identificación bancaria directamente en vez  de descargarlo y transferirlo.
+* Destacar los campos o filtros más utilizados.
 
- ### Ejemplo
+### Principio de validación
 
- Sobre los servicios de comercio electrónico:
- * Proponer un nuevo pedido en base al contenido del pedido anterior.
- * Permitir a los usuarios comprar cosas sin registrarse
- * Permitir al usuario copiar/pegar su IBAN directamente en lugar de cargarlo.
- * Resaltar los campos o filtros más utilizados.
-
-
- ### Reglas de validación
-
- | El número de | es igual o menor que |
- |-----------------|:--------------------:|
- | puntos de fricción | 0 |
+| El número de | es inferior o igual a  |  
+|-------------------|:-------------------------:|
+| puntos de fricción | 0 |

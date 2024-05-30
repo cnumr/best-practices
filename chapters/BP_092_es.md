@@ -1,45 +1,46 @@
-## Coloque todos los cachés en la RAM (código de operación y kvs)
+## Poner caches completamente en RAM (Opcode y Kvs)
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  |  V4  |
- |:-------:|:---:|:---:|:----:|
- |   85    | 90  | 92  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  85	| 90  | 92  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |    Niveles      |       Responsable         |
- |:-------------:|:---------------:|:-------------------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:---------:|:----------------------------:|:-----------------:|
- |     2     |             2                |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 2 | 3 |
 
- |                    Recursos ahorrados                     |
- |:---------------------------------------------------------:|
- |                Procesador/Almacenamiento                  |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Almacenamiento   |
 
- ### Descripción
+### Descripción
 
- Los sistemas de almacenamiento en caché deben configurarse completamente en la memoria de acceso aleatorio (RAM) siempre que sea posible. Este método evita operaciones de entrada/salida en los discos duros y ciclos de CPU para gestionarlos.
+Los sistemas de caché deben montarse, en la medida de lo posible, completamente en memoria RAM. Esta medida evita entradas/salidas en discos duros, así como ciclos de CPU para administrarlos.
 
-Hay dos razones para hacerlo: entregar rápidamente respuestas al cliente, y limitar la cantidad de componentes de hardware y software involucrados en la respuesta devuelta por el servidor.
+El objetivo es doble: servir rápidamente una respuesta al cliente, y limitar el número de componentes de hardware (y software) implicados en la respuesta devuelta por el servidor.
 
-La duración del uso de recursos es particularmente corta, ya que la memoria de acceso aleatorio es muy rápida en términos de accesos de lectura/escritura. Además, con este método se ampliará la vida útil de los componentes, ya que no hay movimiento mecánico como cuando se utiliza un disco duro.
+Debido a que la memoria RAM es muy rápida en términos de acceso a lectura/escritura, la duración del consumo de recursos es particularmente corta. Además, la vida útil de los componentes se alarga con esta buena práctica, ya que no hay movimiento mecánico como cuando se utiliza el disco duro.
 
- ### Ejemplo
+### Ejemplo
 
- Ejemplos de integración de caché RAM en Drupal:
-
+Ejemplos de integración de caché RAM en Drupal:
  - integración de Memcache: https://drupal.org/project/memcache
  - integración de Varnish: https://drupal.org/project/varnish
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                                          | es igual o menor que |
- |----------------------------------------------------------|:--------------------:|
- | cachés que no están completamente configurados en la RAM |           0          |
- 
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de caches no almacenados en RAM  | 0  |
+
+

@@ -1,57 +1,52 @@
-## Contar con una estrategia de fin de vida para el sitio web
+## Establecer un plan de fin de vida del sitio
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:-----:|:---:|:----:|
- | 1030 | | 85 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   1030   |   | 85  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:--------------:|:----------:|:-----------:|
- | 7. Fin de vida | Centro de datos | PO |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 7. Fin de la vida útil | Centro de Datos | PO/ADO or ADP |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 2 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 2 | 3 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador / RAM / Red / Consultas / Almacenamiento |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red/ Consultas/ Almacenamiento   |
 
- ### Descripción
+### Descripción
 
-La mayoría de los entornos (POC - prueba de concepto, pruebas, aceptación, etc.) acaban siendo obsoletos y ya no se necesitan.
-Alrededor del 25% de los servidores físicos y el 20% de los servidores virtuales (VM) se convierten en zombis, 
-lo que significa que utilizan recursos a la espera de ser utilizados. Esto supone un impacto medioambiental y económico evitable.
+La mayoría de los entornos (POC - proof of concept, tests, receta, ...) acaban cayendo en desuso y ya no son necesarios. Aproximadamente el 25 % de los servidores físicos y el 20 % de los servidores virtuales (VM) son zombis. Es decir, los servidores consumen electricidad esperando que los usemos. Son impactos ambientales y económicos evitables.
 
-Aplicar un plan de fin de vida útil puede evitar este tipo de situaciones.
+Realizar un análisis de fin de vida evita esta situación.
 
-Un plan de fin de vida sencillo consiste en responsabilizar a alguien para que decida cuándo detener el servicio. 
-Su papel consistiría en supervisar la actividad de este servicio hasta que decida detenerlo. Otro método consiste en 
-redactar un escenario de fin de vida (fecha de caducidad, etc.) y asignar el presupuesto adecuado desde el principio. 
-Una tercera opción sería prolongar la vida útil del servicio.
+Un plan simple de fin de vida consiste en nombrar a la persona que decide la terminación del servicio. Su papel será entonces de monitorizar su actividad y luego de detenerla. Otro enfoque establece el escenario de fin de vida (fecha de caducidad...) y encarga el presupuesto adecuado desde la concepción. En lugar de interrumpir un servicio, una tercera pista consiste en prolongar su vida útil.
 
-Poner fin a un servicio implica:
+La interrupción de un servicio implica
+- Liberar recursos: desactivar el servicio, sus dependencias, las herramientas utilizadas por el equipo de desarrollo (por ejemplo, Chanel Teams).
+- Eliminar, archivar... los datos (incluyendo GED "Gestión Electrónica de Documentos" y sistema de seguimiento de errores).
+- Reasignar las instalaciones, equipos y otros recursos del proyecto (incluido el código fuente).
+- Valorizar las competencias adquiridas durante la vida del proyecto.
 
- - Liberar recursos: desmantelar el servicio, sus dependencias, las herramientas utilizadas por el equipo de desarrollo (por ejemplo, el canal Teams).
- - Borrar, archivar o gestionar de otro modo los datos (incluidos los sistemas de gestión de documentos y de seguimiento de errores).
- - Reasignar instalaciones, equipos y otros recursos del proyecto (incluido el código fuente).
- - Valorar las habilidades adquiridas durante la vida del proyecto.
+### Ejemplo
 
- ### Ejemplo
+Durante una migración de datos o aplicaciones a un entorno en la nube, existen varios escenarios de fin de vida:
+* copiar/pegar el existente al "cloud" con descomprimir el existente.
+* reutilizacion (refactoring) con una modificación de la arquitectura y del código y por lo tanto un cuestionamiento de lo existente: por ejemplo, un cuestionamiento sobre las funcionalidades no utilizadas y que se retoma por si acaso...
 
-Cuando se migran datos o aplicaciones a un entorno de nube pueden darse varios escenarios de fin de vida útil:
+### Principio de validación
 
- - Copiar y pegar los datos o aplicaciones existentes en la nube mediante el desmantelamiento del entorno anterior.
- - Refactorización con cambios en la arquitectura y el código, que pueden cuestionar el entorno existente. 
-Por ejemplo, cuestionar las funcionalidades no utilizadas guardadas para un hipotético uso posterior...
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de sitio sin plan de fin de vida | 0  |
 
- ### Regla de validación
 
- | El número de... | es igual o menor que |
- |-------------------------------------------------|:------------------------:|
- | sitios web sin plan de fin de vida | 0 |

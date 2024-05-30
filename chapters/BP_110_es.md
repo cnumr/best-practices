@@ -1,42 +1,45 @@
-## Utilice únicamente archivos de doble suscripción (the double opt-in)
+## Utilizar solo archivos de opt-in doble
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   103   | 111 | 110 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  103	| 111  | 110  |  	|
 
- ### Categorías
+### Categorías
 
-| Ciclo de Vida |       Niveles       | Responsable |
-|:-------------:|:-------------------:|:-----------:|
-|   2. Diseño   | Usuario/Dispositivo |     PO      |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 2. Diseño | Usuario/Terminal | PO/Asistencia a la Dirección de Obra |
 
- ### Indicaciones
+### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     2     |              3               |         2         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 3 | 2 |
 
-|      Recursos ahorrados      |
-|:----------------------------:|
-| Procesador / Red / Consultas |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| CPU/ Red/ Consultas |
 
- ### Descripción
+### Descripción
 
-La doble aceptación es una práctica de marketing que garantiza el consentimiento de los clientes potenciales, generalmente mediante un acuerdo electrónico, marcando una casilla; y luego validar este consentimiento enviando un correo electrónico de confirmación a la dirección indicada. El estado de la dirección se convierte en doble aceptación cuando el destinatario hace clic en el enlace proporcionado en el mensaje recibido. Este proceso permite validar la dirección y verificar que la persona que la proporcionó es el propietario. Esta doble verificación confirma así el compromiso del cliente potencial de recibir boletines, suscripciones,
-Por lo tanto, se recomienda utilizar la práctica de la doble aceptación (the double opt-in) para reducir significativamente:
+El doble opt-in es una práctica de marketing consistente en solicitar el consentimiento del prospecto, generalmente por acuerdo electrónico marcando una casilla, y luego hacer validar dicho consentimiento mediante el envío de un correo electrónico de confirmación a la dirección indicada. El estado de la dirección se convierte en doble opt-in cuando el destinatario hace clic en un enlace contenido en el mensaje recibido. Este procedimiento permite validar la dirección y verificar que la persona que la ha facilitado es la propietaria. Esta doble verificación confirma así el compromiso del prospecto de recibir un boletín, suscribirse a una suscripción, etc.
 
+Por lo tanto, se recomienda utilizar la práctica de doble opt-in para reducir significativamente:
  - el número de correos electrónicos sin impacto real (y, por tanto, el ancho de banda consumido);
- - Carga del servidor SMTP al enviar el correo electrónico;
- - carga del servidor al procesar bajas de suscripción.
+ - la carga del servidor SMTP al enviar el correo electrónico;
+ - la carga del servidor al procesar las cancelaciones de suscripción.
 
- ### Ejemplo
+### Ejemplo
 
- En el caso de un operador telefónico o un banco: dar a los clientes la posibilidad de elegir entre un catálogo de productos o servicios para los que aceptan ser contactados.
+En el caso de una empresa telefónica o de un banco, dejar a los clientes la elección entre un catálogo de productos o servicios para los que aceptan ser solicitados.
 
- ### Regla de validación
+### Principio de validación
 
-| El número de ...                             | es igual o menor que |
-|----------------------------------------------|:--------------------:|
-| archivos de contacto de exclusión voluntaria |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de contactos en opt-out | 0  |
+
+

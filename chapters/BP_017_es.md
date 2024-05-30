@@ -1,52 +1,49 @@
-## Elegir los formatos de datos adecuados
+## Elegir un formato de datos adecuado
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 113 | 54 | 17 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  113   | 54  | 17 |   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Centro de datos | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Centro de datos| Arquitecto Software/Desarrollador |
 
- ### Indicadores
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad  | ejecución  | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Procesador/RAM/Almacenamiento/Red |
+|Recursos Economizados   |
+|:----------------------------------------------------------:|
+CPU/ RAM/ Almacenamiento/ Red  |
 
- ### Descripción
+### Descripción
 
-Los formatos de datos utilizados para manipular y almacenar datos tienen un impacto significativo en el consumo de memoria 
-y los ciclos de procesador necesarios para las manipulaciones de bases de datos a nivel de servidores de aplicaciones e 
-incluso en los navegadores (manipulación a través de JavaScript), así como en el espacio de almacenamiento necesario. 
-La elección de formatos de datos inadecuados puede dar lugar a:
+El tipo de datos utilizados para manipular y almacenar datos tiene un impacto significativo en el consumo de memoria y los ciclos de procesador necesarios durante la manipulación en base de datos, en el servidor de aplicaciones e incluso en el navegador (manipulación mediante JavaScript), así como en el espacio de almacenamiento necesario. Elegir un tipo de datos incorrecto provoca:
+ - un derroche de memoria (por ejemplo, si se almacenan datos muy pequeños en una columna diseñada para almacenar grandes cantidades de datos);
+ - problemas de rendimiento (será más rápido realizar una búsqueda en un número que en una cadena de caracteres).
+   
+Idealmente, la elección del tipo de datos y su dimensionamiento deben basarse en el análisis de una muestra representativa de datos.
 
- - Desperdicio de memoria (si se almacenan datos muy pequeños en columnas diseñadas para almacenar grandes cantidades de datos, por ejemplo).
- - Problemas de rendimiento (es más rápido buscar un número que una cadena de caracteres).
+### Ejemplos
 
-Lo ideal es que la elección del formato de datos y el dimensionamiento adecuado se basen en una muestra representativa del análisis de datos.
+En el caso de un centro de formación, el tamaño del campo para almacenar el número de alumnos debe basarse en un estudio estadístico.
+Esto permite determinar si es posible utilizar un TINYINT (1 byte, hasta 127 bytes) en lugar de un SMALLINT (2 bytes, hasta 32 767).
+En cualquier caso, la elección por defecto de un INT (4 bytes, hasta 2 147 483 647) o incluso un BIGINT (8 bytes) es una aberración (que lamentablemente nos encontramos todos los días en nuestras auditorías...).
+Ganancia potencial: hasta 8 veces menos almacenamiento. El consumo en ciclo de procesador se reduce en las mismas proporciones.
 
- ### Ejemplos
+En el caso del almacenamiento de un identificador UUID, un almacenamiento de texto no será adecuado. Un UUID se almacena en 16 bytes, mientras que en su forma textual necesitaría un mínimo de 36 bytes. Los índices de base de datos tampoco serían tan eficaces como con el tipo UUID/GUID/uniqueidentifier.
 
-En el caso de un centro de formación, el tamaño del campo utilizado para almacenar el número de los alumnos debe basarse 
-en estudios estadísticos. Será más fácil determinar si es posible utilizar un TINYINT (1 byte, hasta 127)
-en lugar de un SMALLINT (2 bytes, hasta 32.767). En cualquier caso, la elección por defecto de un INT (4 bytes, hasta 2.147.483.647) 
-o incluso un BIGINT (8 bytes) no es apropiada (lo que eventualmente se encuentra comúnmente durante las auditorías). 
-Puede utilizar potencialmente hasta 8 veces menos almacenamiento. El consumo de ciclos del procesador se reducirá proporcionalmente.
+### Principio de validación
 
- En el caso del almacenamiento de identificadores UUID, el almacenamiento textual no será apropiado. 
- Los UUID requieren 16 bytes, mientras que los equivalentes textuales requerirían un mínimo de 36 bytes. Los índices de bases de datos tampoco serían tan eficientes como el tipo de formato UUID/GUID/identificador único.
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de campos de la base cuyo formato es inadecuado es  | 15%  |
 
- ### Regla de validación
 
- | El número de... | es inferior o igual |
- |----------------------------------------------|: -------------------------:|
- | campos de base de datos con un formato inadecuado | 15% |

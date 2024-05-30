@@ -1,52 +1,54 @@
-## Proporcionar un CSS para impresión
+## Proporcionar una CSS para imprimir
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 16 | 30 | 27 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   16   | 30  | 27  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Usuario/Dispositivo | Diseñador UX/UI |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | UX/UI Diseñador |
 
- ### Indicaciones
+### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 4 | 3 |
 
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Red |
+### Descripción
 
- ### Descripción
-
-Además del servicio prestado al usuario de Internet, la impresión de hojas de estilo CSS reduce el número de páginas impresas lo que indirectamente reduce la huella ecológica del sitio web. El diseño debe ser lo más sencillo posible con fuentes que ahorren tinta (Century Gothic por ejemplo). Recuerde también ocultar encabezados, pies de página, menús, barras laterales, imágenes que no sean contenido real, etc.
+Además del servicio al usuario, esta hoja de estilos reduce el número de páginas impresas, y, por lo tanto, indirectamente la huella ecológica del sitio web. Lo más despojado posible, debe proponer una fuente de caracteres ahorrativos en tinta (Century Gothic, por ejemplo). Piense también en ocultar el header, el footer, el menú, el sidebar, eliminar todas las imágenes excepto las del contenido, etc.
 
 ### Ejemplo
 
- Este CSS para impresión "limpia" las páginas mostradas para proporcionar una impresión refinada:
+Esta CSS print «limpia» la página mostrada en la pantalla para ofrecer una impresión despejada:
 ```css
-bodysuit {
-background-color:#ﬀf; font-family :Serif; font-size:15pt;
+body {
+background-color:#?f; font-family:Serif; font-size:15pt;
 }
 #page { margin:0;
 border:none;
 }
-#banner, #menuright, #footer { display: none;
+#banner, #menuright, #footer { display:none;
 }
 h1#top { margin:0;
-padding:0;
-text-indent:0; line height: 25pt; font-size:25pt;
+padding:0
+text-indent:0; line-height:25pt; font-size:25pt;
 } (...)
 ```
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | falta imprimir CSS | 1 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de CSS para imprimir faltante | 1 |
+
+

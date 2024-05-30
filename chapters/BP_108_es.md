@@ -1,44 +1,47 @@
-## Optimizar archivos PDF
+## Optimizar los PDF
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   98    | 109 | 108 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   98   | 109  | 108  |  	|
 
- ### Categorías
+#### Categorías
 
-| Ciclo de Vida |       Niveles       | Responsable |
-|:-------------:|:-------------------:|:-----------:|
-|    5 . Uso    | Usuario/Dispositivo |   Usuario   |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              3               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
-|  Recursos ahorrados  |
-|:--------------------:|
-| Red / Almacenamiento |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Almacenamiento  |
 
- ### Descripción
+### Descripción
 
-Asegúrese de que los archivos PDF estén realmente optimizados para la web antes de cargarlos: frecuencia de muestreo y compresión de imágenes, fuentes incrustadas, resolución, etc.
- De ser necesario, permita a los usuarios descargar PDF como capítulos individuales.
+Asegurarse, antes de su publicación, de que los PDF están realmente optimizados para la Web: tasa de muestreo y compresión de las imágenes, fuentes incorporadas, resolución...
 
- Si desea ofrecer a los usuarios la posibilidad de descargar un lector de PDF, prefiera un software liviano como Sumatra (4.3 MB) en lugar de Adobe Reader (48 MB), reducirá el uso de ancho de banda en un factor de 10 por cada descarga y, lo más importante, resultará en un menor uso de memoria (lo que ayuda a combatir la brecha digital y la obsolescencia programada).
+En su caso, proponer la descarga de los PDF capítulo por capítulo.
 
- ### Ejemplo
+Si desea ofrecer al usuario la posibilidad de descargar un lector PDF, prefiera un software ligero como Sumatra (4,3 MB) al lector de Adobe (48 MB), es decir, un ancho de banda dividido por 10 con cada descarga y, sobre todo, un menor consumo de memoria RAM (lo que permite luchar contra la brecha digital y la obsolescencia programada).
 
- En el caso de un informe anual en formato PDF:
+### Ejemplo
 
- - comprobar que las imágenes estén muy comprimidas y tengan una resolución máxima de 72 ppp;
- - incluir sólo las fuentes principales;
- - divida el informe en capítulos para limitar descargas innecesarias.
+Para un informe anual en PDF:
+ - comprobar que las imágenes están fuertemente comprimidas y con una resolución máxima de 72 dpi;
+ - incluir únicamente las principales fuentes;
+ - dividir el informe en capítulos, a fin de limitar las descargas innecesarias.
 
- ### Regla de validación
+### Principio de validación
 
-| El número de ...   | es igual o menor que |
-|--------------------|:--------------------:|
-| PDF no optimizados |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de PDF no optimizados | 0 |
+
+

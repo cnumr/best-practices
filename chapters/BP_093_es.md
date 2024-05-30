@@ -1,39 +1,42 @@
 ## Almacenar datos en la nube
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT |  V2   | V3  |  V4  |
- |:-------:|:-----:|:---:|:----:|
- |    71   |   92  | 93  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  71	|  92 |  93 |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |     Niveles     |       Responsable         |
- |:-------------:|:---------------:|:-------------------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:---------:|:----------------------------:|:-----------------:|
- |    2      |             3                |         2         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 3 | 2 |
 
- |                  Recursos ahorrados                       |
- |:---------------------------------------------------------:|
- |                    Almacenamiento                         |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Almacenamiento   |
 
- ### Descripción
+### Descripción
 
- Las soluciones de computación en la nube pueden resultar útiles para optimizar el espacio de almacenamiento necesario para los recursos de los sitios web o de los servicios en línea. De esta manera, si bien se tiene una solución elástica los recursos no se monopolizan innecesariamente. La otra ventaja es alojar recursos estáticos en dominios sin cookies. De esta manera, cada recurso transferido al navegador no requerirá el transporte de cookies (consulte la regla n.° 96).
+Para optimizar el espacio de almacenamiento necesario para los recursos de un sitio web o de un servicio en línea, puede ser interesante utilizar soluciones de cloud computing. Así pues, si bien se dispone de una solución evolutiva (Elastic en inglés), no se monopolizan recursos inútilmente. El otro interés es alojar los recursos estáticos en un dominio sin cookies. Por lo tanto, se evita transportar la cookie con cada recurso transferido al navegador (véase la buena práctica nº96).
 
-Este método es útil para imágenes y otros recursos estáticos. Como no debemos multiplicar dominios (consulte la mejor práctica n.° 55) la forma más sencilla es agrupar todos los recursos estáticos en un único servicio de almacenamiento en línea.
+Por lo tanto, este enfoque es adecuado para imágenes y otros recursos estáticos. Dado que no es necesario multiplicar los dominios (véase la buena práctica nº 55), lo más sencillo es agrupar todos los recursos estáticos en un único servicio de almacenamiento en línea.
 
- ### Ejemplo
+### Ejemplo
 
-Para un concurso de videos basado en testimonios, es más eficiente utilizar el servicio de almacenamiento S3 de Amazon que agregar nuevos discos duros a los servidores existentes.
+Para la realización de un concurso basado en testimonios de vídeo, es más eficaz utilizar el servicio de almacenamiento S3 de Amazon que añadir nuevos discos duros a los servidores existentes.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                                                                            | es igual o menor que |
- |--------------------------------------------------------------------------------------------|:--------------------:|
- | recursos datos de sitios web que no se almacenan en una solución de computación en la nube |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de recursos, datos del sitio web que no se almacenan en una solución de computación en la nube |  0 |
+
+

@@ -1,59 +1,54 @@
-## Evitar el uso de imágenes rasterizadas para la interfaz
+## Evitar el uso de imágenes matriciales para la interfaz
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 161 | 21 | 35 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  161   | 21  | 35 |   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------:|:-----------:|:-----------:|
- | 5. Uso | Usuario/Dispositivo | Usuario |
+Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de aplicación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|-------------------|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- | Recursos ahorrados |
- |:---------------:|
- | Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- ### Descripción
+### Descripción
 
-Elegir el formato de imagen más adecuado es esencial para ahorrar ancho de banda.
+Elegir el formato de imagen correcto es crucial para evitar transportar bytes innecesariamente y ahorrar ancho de banda.
+Además, con la multiplicación de los terminales, los tamaños de pantalla y el aumento de su resolución, un enfoque vectorial debe tener prioridad sobre las imágenes de matriz.
+Gracias a esta buena práctica, la interfaz es independiente de la resolución de la pantalla. Por lo tanto, también se limita la deuda técnica.
+La primera regla es reemplazar las imágenes matriciales (GIF, PNG, JPEG, webp, etc.) por estilos (CSS), pictos, glifos o iconos proporcionados por una webfont o una fuente estándar. El usuario no tiene ningún recurso adicional para descargar.
+Si no es posible utilizar CSS o una fuente estándar (ya instalada en el terminal del internauta), también puede:
+ - utilizar una webfont;
+ - utilizar una imagen vectorial en formato estándar SVG.
 
-Además, con el creciente número de dispositivos y tamaños de pantalla, y el aumento de las 
-resoluciones de pantalla, hay que favorecer los enfoques basados en vectores frente a las 
-imágenes rasterizadas. Con este enfoque, la interfaz estará desvinculada de la resolución 
-de pantalla, lo que limitará la deuda técnica. La primera regla es sustituir las imágenes 
-de trama (GIF, PNG, JPEG, WebP, etc.) por estilos (CSS), pictogramas, glifos o iconos proporcionados 
-por fuentes web o fuentes estándar (ya instaladas en los dispositivos de los usuarios). 
-Esto no requiere descargar ningún recurso adicional. Si no es posible utilizar CSS o fuentes 
-estándar también puedes.
+### Ejemplo
 
- - utilizar fuentes web
- - utilice una imagen vectorial en formato SVG estándar
+![img.png](img.png)
 
-
- ### Ejemplo
-
-
- !img.png(img.png)
-
- Este tamaño de imagen de 198 × 198 píxeles es:
- - 118 KB en formato rasterizado sin comprimir.
- - 65 KB en formato JPEG (compresión del 90%).
- - 38 KB en formato PNG.
+Esta imagen de 198 x 198 píxeles pesa:
+ - 118 KB en formato de matriz no comprimido;
+ - 6,5 KB en JPEG (compresión al 90 %);
+ - 3,8 KB en Papua Nueva Guinea;
  - 0,7 KB en SVG minificado.
 
-En este caso concreto, el formato vectorial es entre 5 y 10 veces más 
-ligero que el formato rasterizado, a la vez que se puede redimensionar infinitamente.
- ### Regla de validación
+El formato vectorial es, en este caso preciso, de 5 a 10 veces menos pesado que un formato matricial, pudiendo ser recortado al infinito.
 
- | El número de...                           | es igual o inferior a |
- |-------------------------------------------|:------------------:|
- | Imágenes rasterizadas para la URL probada |         5          |
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes matriciales para la URL probada   | 5  |
+
+

@@ -1,52 +1,52 @@
-## Ocultar elementos del DOM mientras se modifican
+## Hacer invisibles los elementos del DOM al modificarlos
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 44 | 44 | 42 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|   44   | 44  | 42   | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 3 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 4 |
 
- | Recursos ahorrados|
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+|  Procesador  |
 
- ### Descripción
+### Descripción
 
-Cuando hay que modificar varias propiedades de un elemento DOM (Document Object Model), cada cambio de contenido 
-o estilo provocará repintados y/o reflujos.
+Cuando un elemento del DOM (Document Object Model) necesita ser modificado por varias propiedades, cada cambio de estilo o de contenido generará un repaint o un re?ow. Por lo tanto, suele ser más económico:
+ - hacer invisible el elemento (pasar la propiedad display a none) (1 re?ow);
+ - modificar todas las propiedades del elemento y hacerlo visible de nuevo (1 re?ow).
 
-Suele ser preferible:
- - Ocultar estos elementos (establecer la propiedad display en ninguna) (1 reflujo);
- - Modificar todas las propiedades y hacer que los elementos vuelvan a ser visibles (1 reflujo).
+Dos re?ow como máximo.
 
- Es decir máximo 2 reflujos.
+### Ejemplo
 
- ### Ejemplo
+Proceder de la siguiente manera:
+```javascript
+var elem = document.getElementById('foo'); elem.style.display ='none'; // Genera 1 re?ow elem.style.width = '10em';
+elem.style.height ='auto';
+// ... otros cambios ...
+elem.style.display ='block'; // Genera 1 re?ow
+```
 
-Proceda de la siguiente manera:
- ```javascript
- var elem = document.getElementById('foo'); elem. estilo. mostrar = 'ninguno'; // Genera 1 reflujo elem.style.width ='10em';
- elemento. estilo. altura = 'automático';
- // ... otros cambios ...
- elemento. estilo. mostrar = 'bloque'; // Genera 1 reflujo
- ```
+Al final, se necesitan 2 re?ow en lugar de 6 o 7 potencialmente.
 
-Sólo se necesitan 2 reflujos (en lugar de los 6 o 7 potenciales).
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de manipulaciones de un elemento del DOM sin que se vuelva invisible durante su modificación | 1 |
 
- | El número de... | es igual o inferior a |
- |---------------------------------------------------------------|:------------------------:|
- | Manipulaciones de elementos DOM mientras el elemento aún está visible | 1 |
+

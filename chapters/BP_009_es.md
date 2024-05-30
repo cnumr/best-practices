@@ -1,44 +1,47 @@
 ## Limitar el número de solicitudes HTTP
+Traducido por: Murielle Timsit y Franklin Lecointre
 
-### Identificadores
+###Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-|:-------:|:---:|:---:|:---:|
-| 180     | 9   | 9   |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   180   | 9  | 9  | |
 
 ### Categorías
- 
-| Ciclo de vida     | Niveles | Responsable                |
-|:-----------------:|:-------:|:--------------------------:|
-| 3. Implementación | Red     | Arquitecto / Desarrollador |
+
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-| 4         | 3                            | 4                 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
-| Recursos ahorrados   |
-|:--------------------:|
-| Réseau / Solicitudes |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red/ Consultas   |
 
 ### Descripción
 
-El tiempo de carga de una página en el navegador está correlacionado con la cantidad de archivos que deben descargarse y con el tamaño
-de estos archivos.
+El tiempo de carga de una página del lado del navegador se correlaciona directamente con el número de archivos que el navegador debe descargar, y al peso unitario de cada fichero.
 
-Dependiendo del tipo de servidor, la cantidad de solicitudes puede limitar la cantidad de páginas que se entregan a los usuarios. Disminuir el número de solicitudes por página permite reducir el número de servidores HTTP, y tal vez de otros componentes de la arquitectura, como bases de datos y servidores de aplicaciones.
+Para cada archivo, el navegador envía un GET HTTP al servidor.
 
-Aunque el problema es mucho menos potente con el uso de HTTP 2, tener muchas solicitudes puede afectar significativamente al
-rendimiento de la aplicación del lado del cliente. En cualquier caso, tener demasiadas solicitudes es una buena señal de que algunas mejoras
-se pueden realizar en la aplicación.
+Espera su respuesta, luego descarga el recurso tan pronto como esté disponible. Dependiendo del tipo de servidor web que utilice, cuanto mayor sea el número de consultas por página, menor será el número de páginas por servidor.
+Reducir el número de consultas por página es crucial para reducir el número de servidores HTTP (o incluso servidores de aplicaciones y bases de datos) necesarios para el funcionamiento del sitio,
+y por lo tanto los impactos ambientales asociados.
 
 ### Ejemplo
 
-El uso de una hoja de sprite CSS (es decir, agrupar todas las imágenes pequeñas en una imagen más grande y, a continuación, seleccionar la que se muestra en el lado del cliente con CSS) para mostrar las banderas pequeñas en un selector de idioma reduce la cantidad de solicitudes asociadas con esta característica.
+Para mostrar pequeñas banderas para la elección de un idioma, el uso de un spritesheet CSS permite agruparlas en una sola imagen de mayor tamaño.
+Esto reduce el número de solicitudes HTTP.
 
-### Regla de validación
+### Principio de validación
 
-| el número...     | es igual o menor que |
-|:----------------:|:--------------------:|
-| Solicitudes HTTP | 40                   |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de peticiones HTTP  | 40  |
+
+

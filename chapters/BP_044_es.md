@@ -1,67 +1,68 @@
-## Utilizar delegaciones de eventos
+## Usar la delegación de eventos
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 41 | 46 | 44 | |
+| GreenIT | V2 | V3 | V4 |
+|:-------:|:----:|:----:|:----:|
+|  41   | 46  | 44  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------- :|:-----------------:|
- | 3 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador/RAM |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria RAM   |
 
- ### Descripción
+### Descripción
 
-La delegación de eventos evita sobrecargar la memoria del navegador instanciando un único oyente para varios elementos DOM (Document Object Model).
+La delegación de eventos permite no sobrecargar la memoria del navegador instanciando un solo "listener" para varios elementos del DOM (Document Object Model).
 
- ### Ejemplos
+### Ejemplo
 
-El elemento DOM cuyo ID es "t" se declara como delegado.
-
+El elemento del DOM cuyo ID se declara como el delegado.
 Intercepta los eventos de todos sus hijos.
+```html
+<head>
+	// ...
+	<style type="text/css">
+ 	#t { border: 1px solid red } #t1 { background-color: pink; }
+	</style>
+	<script type="text/javascript">
+    	function modifyText(new_text) {
+        	var t2 = document.getElementById("t2");
+        	t2.?rstChild.nodeValue = new_text;
+    	}
+    	function load() {
+        	var el = document.getElementById("t");
+        	el.addEventListener("click", function() {
+          	modifyText("four")
+        	}, false);
+    	}
+	</script>
+</head>
+<body onload="load();">
+	<table id="t">
+    	<tr><td id="t1"><button type="button">one</button></td></tr>
+    	<tr><td id="t2"><button type="button">two</button></td></tr>
+	</table>
+	<!-- ... -->
+</body>
+```
 
- ```html
- <cabeza>
- //...
- <tipo de estilo="texto/css">
- #t { borde: 1px rojo sólido } #t1 { color de fondo: rosa; }
- </estilo>
- <tipo de script="texto/javascript">
- función modificarTexto(nuevo_texto) {
- sea t2 = document.getElementById("t2");
- t2.primerChild.nodeValue = nuevo_texto;
- }
- carga de función() {
- var el = document.getElementById("t");
- el.addEventListener("hacer clic" función() {
- modificarTexto("cuatro")
-              } FALSO);
- }
- </script>
- </cabeza>
- <cuerpo onload="carga();">
- <id de tabla="t">
- <tr><td id="t1"><button type="button">uno</button></td></tr>
- <tr><td id="t2"><button type="button">dos</button></td></tr>
- </tabla>
- <!-- ... -->
- </cuerpo>
- ```
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de escuchas (listeners) de un mismo evento sobre varios elementos HTML, que forman parte de un mismo grupo, sin utilizar la delegación de eventos  | 0  |
 
- | El número de... | es igual o inferior a  |
- |--------------------------------------------------------------------------------------------------------------------|:------------------------:|
- | oyentes del mismo evento en múltiples elementos HTML pertenecientes al mismo grupo sin utilizar delegación de eventos | 0 |
+

@@ -1,56 +1,57 @@
-## Evite realizar consultas SQL dentro de un bucle
+## Evitar realizar consultas SQL dentro de un bucle
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 55 | 71 | 72 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+| 55   | 71 | 72  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:----------:|:----------------------------:|
- | 3. Implementación | Centro de datos | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Centro de Datos | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:-------------------------: |:-----------------:|
- | 3 | 3 | 3 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
- | Recursos guardados |
- |:---------------------------------------------------------:|
- | Procesador/RAM/Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Red  |
 
- ### Descripción
+### Descripción
 
-Realizar consultas SQL dentro de un bucle causa problemas de rendimiento significativos, especialmente si el servidor SQL no está en la máquina local. 
-Estos servidores están optimizados para manejar múltiples selecciones, inserciones o modificaciones en una sola consulta o una sola transacción.
+Las consultas SQL dentro de un bucle plantean grandes problemas de rendimiento, especialmente si el(s) servidor(s) SQL no está (no están) en la máquina local. Estos servidores están optimizados para procesar múltiples selecciones, inserciones o cambios en una sola consulta o transacción.
+
+Si se usan incorrectamente, estas consultas consumen innecesariamente ciclos de CPU, memoria RAM y ancho de banda.
+
+### Ejemplo
+
+No escriba lo siguiente:
+```php
+foreach ($userlist as $user) {
+	$query = 'INSERT INTO users (?rst_name,last_name) VALUES("'. $user['?rst_name'] .'", "'. $user['last_ name'] .'");
+	mysql_query($query);
+}
+```
+sino más bien:
+```php
+$userdata = array();
+foreach ($userlist as $user) {
+	$userdata[] = '("'. $user['?rst_name'] .'", "'.
+	$user['last_name'] . '")';
+}
+$query = 'INSERT INTO users (?rst_name,last_name) VALUES'. implode(',', $userdata); mysql_query($query);
+```
+
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| De consultas SQL dentro de un bucle | 0 |
 
 
-El uso inadecuado de estas consultas consume innecesariamente ciclos de CPU, memoria y ancho de banda.
-
- ### Ejemplos
-
- No escriba :
- ```php
- foreach ($listausuario como $usuario) {
- $consulta = 'INSERT INTO usuarios (primer_nombreapellido) VALUES("'. $usuario'primer_nombre' .'" "'. $usuario'apellido' .'")';
- mysql_query($consulta);
- }
- ```
- más bien escribe:
- ```php
- $datosdeusuario = matriz();
- foreach ($listausuario como $usuario) {
- $userData = '("'. $user'first_name' .'" "'.
- $usuario'apellido' .'")';
- }
- $consulta = 'INSERTAR EN LOS VALORES de los usuarios (nombre apellido)'. implosionar('' $datosdeusuario); mysql_query($consulta);
- ```
-
- ### Regla de validación
-
- | El número de... | es igual o menor que |
- |---------------------------|:-----------------------:|
- | Consultas SQL dentro de un bucle | 0 |

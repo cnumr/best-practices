@@ -1,45 +1,48 @@
-## Cuantificar con precisión las dimensiones de las características y componentes
+## Cuantificar con precisión la necesidad
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 110 | 2 | 2 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  110   | 2  | 2  |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:----------------:|:-------------:|:-----------: |
- | 1. Especificación | Usuario/Dispositivo | PO |
+| Ciclo de vida | Partes | Responsable  |
+|:------:|:----:|
+| 1. Especificación | Usuario/Terminal | PO/AMOA |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-------- ---------:|
- | 5 | 4 | 5 |
+| Grado de prioridad  | Dificultad de implementación o ejecución | impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 5 | 4 | 5 |
 
- | Recursos ahorrados |
- |:---------------------------------------------:|
- | Procesador / RAM / Almacenamiento / Red / Consultas |
+|Recursos ahorrados   |
+|:----------------------------------------------------------:|
+|Procesador/ Memoria RAM / Almacenamiento/ Red/ Consultas   |
 
- ### Descripción
+### Descripción
 
- Las "dimensiones" de cada funcionalidad deben definirse de forma precisa y en su conjunto. Podría ser la tasa de compresión para las imágenes de la interfaz gráfica, el tiempo máximo de respuesta para una solicitud HTTP,
- el número de elementos que se muestran en una lista, etc.
+Las «dimensiones» de cada funcionalidad deben definirse con precisión y en su conjunto. Pueden ser un coeficiente de compresión para las imágenes de la interfaz gráfica, el tiempo de respuesta máximo para una petición HTTP, el número de elementos mostrados en una lista, etc.
 
-Cuanto más se ajusten al negocio las "dimensiones" y los requisitos asociados con cada característica, más evitaremos el exceso de calidad.
-Por tanto, hay que invertir la lógica en relación con los hábitos actuales. Si no se específica alguna información, es el nivel mínimo de calidad o la cantidad mínima lo que se ofrece. Por ejemplo, si no se especifica el número de elementos en una lista está limitado a 5 elementos o al número máximo que se puede mostrar en la pantalla de destino más pequeña de la aplicación.
+Cuanto más se ajusten al negocio las «dimensiones» y los requisitos asociados a cada funcionalidad, más se evita el exceso de calidad.
+Por lo tanto, la lógica debe invertirse con respecto a los hábitos actuales. A falta de precisión, se propone el nivel de calidad o la cantidad mínima. Por ejemplo, si no se especifica, el número de elementos de una lista está limitado a 5 elementos o al número máximo que se muestra en la pantalla de destino más pequeña de la aplicación.
 
- Los valores predeterminados, que el usuario rara vez modifica, deben elegirse para satisfacer la necesidad con un impacto mínimo.
+Los valores predeterminados, que el usuario rara vez modifica, deben elegirse para satisfacer la necesidad con un impacto mínimo.
 
- ### Ejemplo
+### Ejemplo
 
- Ganancia potencial: ajustando el número de elementos mostrados en la página de resultados de su motor de búsqueda Bing, Microsoft Research ha demostrado que es posible reducir la infraestructura física subyacente  (número de servidores) hasta en un 80%.
+Beneficio potencial: jugando con el número de elementos que aparecen en la página de resultados de su motor de búsqueda Bing,
+Microsoft Research ha demostrado que es posible reducir hasta un 80 % la infraestructura física (número de servidores) subyacente.
 
- Otro ejemplo: al establecer de forma predeterminada una resolución de vídeo aceptable (480p) en lugar de la máxima, reducimos el ancho de banda utilizado por la mayoría de los usuarios (que no cambiarán el valor predeterminado), mientras que se dejan la posibilidad a otros de aumentar la resolución si fuera necesario.
+Otro ejemplo: usando una resolución de vídeo aceptable (480p) por defecto en lugar de máxima, se reduce el ancho de banda utilizado para la mayoría de los usuarios (que no cambiarán el valor predeterminado), dejando la posibilidad a otros aumentar la resolución si es necesario.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual a |
- |---------------------------------------------|:-----------:|
- | características con dimensiones mayores a las necesarias | 0 |
+| El número ..   | es igual a   |  
+|-------------------|:-------------------------:|
+| de funcionalidades con dimensiones superiores a las requeridas. | 0 |
+
+

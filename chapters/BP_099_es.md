@@ -1,37 +1,40 @@
 ## Usar una caché HTTP
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT |  V2  | V3  |  V4  |
- |:-------:|:----:|:---:|:----:|
- |    72   |  103 | 99  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  72	| 103  | 99  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles |       Responsable         |
- |:-------------:|:-------:|:-------------------------:|
- | 4. Producción |   Red   | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Red | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- |      Prioridad     | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:----------------------------:|:-----------------:|
- |         4          |               3              |          5        |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 5 |
 
- |                     Recursos ahorrados                    |
- |:---------------------------------------------------------:|
- |                      Procesador/RAM                       |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ RAM  |
 
- ### Descripción
+### Descripción
 
-Los proxies inversos como Varnish, Squid, o NGINX están optimizados para ofrecer contenido rápidamente (páginas HTML, imágenes, etc.) mientras consumen la menor cantidad de ciclos de CPU posible. Al evitar solicitudes innecesarias del servidor de aplicaciones, los servidores proxy inversos permiten el uso de infraestructuras más pequeñas.
+Los proxies reversos (Varnish, Squid o NGINX) están optimizados para servir contenido (páginas HTML, imágenes, etc.) de forma rápida, consumiendo el menor número posible de ciclos de CPU. Al evitar el uso inútil del servidor de aplicaciones, permiten utilizar una infraestructura más pequeña.
 
- ### Ejemplo
+### Ejemplo
 
-El uso de un proxy inverso especializado como Varnish reduce drásticamente el tiempo necesario para servir páginas dinámicas y al mismo tiempo aumenta la capacidad del CMS (Drupal, en este caso) para entregar una gran cantidad de ellas al mismo tiempo. También se observa que una caché de propósito general como APC no es apropiada (fuente: Asymptotix).
+El uso de un proxy reverso especializado como Varnish reduce drásticamente el tiempo necesario para servir a las páginas dinámicas, al tiempo que aumenta la capacidad del CMS (Drupal, aquí) a entregar un gran número al mismo tiempo. También se constata que un caché generalista como APC no es adecuado (fuente: Asymptotix).
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                         | es igual o menor que |
- |-----------------------------------------|:--------------------:|
- | Encabezados HTTP sin caché identificado |           0          |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| portadas no identificadas HTTP | 0  |
+
+

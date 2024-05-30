@@ -1,49 +1,47 @@
-## Evitar modificaciones durante el recorrido del DOM
+## No modificar el DOM al recorrerlo
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 43 | 43 | 41 | |
+| GreenIT | V2  | V3 | V4  |
+|:-------:|:----:|:----:|:----:|
+|  43   | 43  | 41   |  |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-----------------:|:-----------:|:----------------------------:|
- | 3. Implementación | Usuario/Dispositivo | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 4 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 4 | 4 |
 
- | Recursos ahorrados |
- |:---------------------------------------------------------:|
- | Procesador |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+|  Procesador  |
 
- ### Descripción
+### Descripción
 
-Modificar elementos del DOM (Document Object Model) mientras se navega por él puede dar lugar a situaciones que 
-provoquen un consumo abusivo de recursos, especialmente ciclos de CPU. Añadir elementos durante la navegación por el 
-DOM puede acabar creando un bucle infinito que consumirá una gran cantidad de recursos. Este tipo de modificación debe 
-evitarse siempre que sea posible.evitarse cuando sea posible.
+Modificar el DOM (Document Object Model) al recorrerlo puede generar situaciones en las que el bucle se vuelve muy codicioso en recursos, en particular en ciclos de CPU. En efecto, si se añaden elementos recorriéndolo, es posible generar un bucle infinito que consumirá una gran cantidad de recursos. Por lo tanto, se desaconseja encarecidamente este tipo de modificación.
 
- ### Ejemplo
+### Ejemplo
 
- Evitar :
- ```html
- <guión>
- // notación jQuery
- $('a.extlink').cada(función(el) {
- $(el).attr('rel''nofollow externo');
- });
- </script>
- ```
+Evitar:
+```html
+<script>
+	// Notación de jQuery
+	$('a. extlink'). each(function(el) {
+    	$(el). attr('rel','external nofollow');
+	})
+</script>
+```
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de inserciones en el DOM realizadas cuando esta misma parte del DOM es recorrida por código JavaScript  | 0  |
 
 
- ### Regla de validación
-
- | El número de... | es igual o inferior a |
- |--------------------------------------------------------------------------------------------------|:------------------------:|
- | Modificaciones de elementos DOM realizadas cuando la misma parte del DOM es recorrida por código JavaScript | 0 |

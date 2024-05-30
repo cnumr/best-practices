@@ -1,39 +1,43 @@
-## Adaptar textos a la web
+## Adaptar los textos a la web
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   100   | 114 | 113 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|  100	|  114 | 113  |  	|
 
- ### Categorías
+### Categorías
 
-| Ciclo de vida |       Niveles       | Responsable |
-|:-------------:|:-------------------:|:-----------:|
-|    5. Uso     | Usuario/Dispositivo |   Usuario   |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 5. Uso | Usuario/Terminal | Usuario |
 
 ### Indicaciones
 
-| Prioridad | Dificultad de implementación | Impacto ecológico |
-|:---------:|:----------------------------:|:-----------------:|
-|     3     |              3               |         3         |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 3 | 3 |
 
 | Recursos ahorrados |
-|:------------------:|
-|     RAM / Red      |
+|:----------------------------------------------------------:|
+| Memoria RAM/ Red  |
 
- ### Descripción
+#### Description
 
- Escribe textos breves utilizando un estilo "directo". Utilice formulaciones de ideas concisas, incluso si eso significa desarrollarlas en varias páginas de contenido si es muy extenso y/o incluye muchas nociones diferentes.
+Escribir textos cortos con un estilo directo. Favorecer la concisión de las ideas expresadas, sin perjuicio de desarrollar el tema en varias páginas si el contenido es muy largo y/o incorpora muchas nociones diferentes.
 
- Divida los contenidos extensos en varias páginas.
+Cortar en varias páginas los contenidos de una longitud considerable.
 
- ### Ejemplo
+### Descripción
 
- Si un tema requiere una explicación extensa, divida el contenido en varias páginas y/o proporcionélo como documento descargable. De esta manera, los usuarios solo mostrarán las páginas que quieran leer y solo descargarán los archivos que les interesen.
+Si un tema requiere una larga explicación, escríbalo en varias páginas y/o trátalo en un documento para descargar.
+Así, los usuarios solo mostrarán las páginas que desean leer y descargarán los archivos que les interesan.
 
- ### Regla de validación
+### Principio de validación
 
-| El número de ...                                                                                                       | es igual o menor que |
-|------------------------------------------------------------------------------------------------------------------------|:--------------------:|
-| Textos mostrados en el sitio web con una puntuación de legibilidad basada en el índice de Flesch-Kincaid inferior a 60 |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de textos publicados en el sitio web y con una nota del índice de legibilidad Flesch-Kincaid inferior a 60 | 0  |
+
+

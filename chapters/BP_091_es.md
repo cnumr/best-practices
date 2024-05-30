@@ -1,37 +1,40 @@
-## Instale lo mínimo en los servidores
+## Instalar el mínimo requerido en el servidor
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  |  V4  |
- |:-------:|:---:|:---:|:----:|
- |    74   | 89  | 91  |      |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   74   | 89  | 91  |  	|
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida |     Niveles     |         Responsable       |
- |:-------------:|:---------------:|:-------------------------:|
- | 4. Producción | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- |      Prioridad     | Dificultad de implementación | Impacto ecológico |
- |:------------------:|:---------------------------: |:-----------------:|
- |          3         |              4               |          3        |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 3 | 4 | 3 |
 
- |                    Recursos ahorrados                     |
- |:---------------------------------------------------------:|
- |               Procesador/RAM/Almacenamiento               |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Almacenamiento  |
 
- ### Descripción
+### Descripción
 
- Desinstale todos los servicios no esenciales que no sean necesarios para ejecutar su sitio web. Esta medida eliminará necesariamente los demonios (agentes y servicios que se ejecutan permanentemente en la memoria) que utilizan recursos, especialmente ciclos de CPU y RAM.
+Desinstalar todos los servicios que no sean indispensables para el buen funcionamiento del sitio. Esta medida eliminará necesariamente los daemons (agentes y servicios que funcionan permanentemente en memoria), que son consumidores de recursos, en particular en ciclos de CPU y en memoria viva.
 
- ### Ejemplo
+### Ejemplo
 
- Prefiera la instalación de servidores "manuales" (LAMP + CMS, por ejemplo) en lugar de distribuciones superpuestas de cPanel o Plesk. Si es necesaria una superposición de administración se prefieren soluciones ligeras como Webmin.
+Privilegiar una instalación «manual» del servidor (LAMP + CMS, por ejemplo) en lugar de una distribución con una sobreimpresión de tipo cPanel o Plesk. Y si es necesaria una administración excesiva, preferir soluciones ligeras como Webmin.
 
- ### Regla de validación
+### Principio de validación
 
- | El número de...                                                 | es igual o menor que |
- |-----------------------------------------------------------------|:--------------------:|
- | servicios no esenciales que se ejecutan en el sistema operativo |          0           |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de servicios no necesarios para el funcionamiento del emplazamiento ejecutados en el sistema operativo  | 0 |
+
+

@@ -1,43 +1,46 @@
-## Minimizar archivos CSS JavaScript HTML y SVG
+## Minificar archivos CSS, JavaScript, HTML y SVG
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | TI verde | V2 | V3 | V4 |
- |:-------:|:---:|:---:|:----:|
- | 12 | 78 | 77 | |
+| GreenIT | V2 | V3 | V4 |
+|:-------:|:----:|:----:|:----:|
+| 12  | 78  | 77 | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:-------------:|:-------:|:----------------------------:|
- | 4. Producción | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 4. Producción | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:--------:|:-------------------------:|:-----------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- | Recursos ahorrados |
- |:------------------:|
- |        Red         |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red   |
 
- ### Descripción
+### Descripción
 
-Las herramientas de minificación de CSS, Javascript, HTML y SVG eliminan los espacios innecesarios, 
-los comentarios de los desarrolladores, los saltos de línea y los delimitadores de bloque, reduciendo su tamaño.
+Usar una herramienta de minificación CSS, Javascript, HTML y SVG elimina espacios inútiles, comentarios de desarrolladores, saltos de línea, delimitadores de bloques y reduce su tamaño.
 
- ### Ejemplos
+### Ejemplo
 
- Existen diferentes herramientas disponibles para la minificación como:
+Existen diferentes herramientas para minificar como, por ejemplo:
 
- - CSS: cssnano csso o clean-css
- - Javascript: Terser UglifyJS o Babel-minify
- - HTML: htmlnano HTMLMinificador
- - SVG: SVGO minify-xml o equivalente.
+- CSS: cssnano, csso o clean-css
+- Javascript: Terser, UglifyJS o Babel-minify
+- HTML: htmlnano, HTMLMinifier
+- SVG: SVGO, minify-xml o equivalente
 
- ### Regla de validación
 
- | El número de... | es igual o menor que |
- |------------------------------------------------- |:------------------------:|
- | Archivos CSS JavaScript HTML y SVG no minificados | 0 |
+### Principio de validación
+
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de archivos CSS, JavaScript, HTML y SVG no minificados  | 0  |
+
+

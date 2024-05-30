@@ -1,53 +1,56 @@
-## Utilizar CSS en lugar de imágenes
+## Preferir CSS a imágenes
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 11 | 26 | 23 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 11   | 26 | 23  |   |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 4 | 3 | 4 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 4 | 3 | 4 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Red / Consultas |
+|Recursos Economizados   |
+|:----------------------------------------------------------:|
+| Red/ Consultas  |
 
- ### Descripción
+### Descripción
 
- Utilice propiedades CSS en lugar de imágenes. Las hojas de estilo son mucho más pequeñas, especialmente cuando están comprimidas. Solicitar una hoja de estilo solo genera una única solicitud HTTP mientras que el uso de muchas imágenes genera muchas solicitudes HTTP (una solicitud HTTP para cada imagen).
+Utilizar las propiedades CSS en lugar de imágenes. De hecho, el peso de una hoja de estilos es mucho menor, especialmente si está comprimida. Además, la llamada a una hoja de estilos genera una única petición HTTP, en vez de muchas si se utilizan muchas imágenes (una petición HTTP para cada imagen).
 
- ### Ejemplo
+### Ejemplo
 
-Las esquinas redondeadas de los elementos deben implementarse con CSS en lugar de imágenes.
+Hay que gestionar con CSS las esquinas redondeadas de las casillas y no con imágenes.
 
-Prefiera la escritura:
- ```css
- #marco {
- radio de borde: 10px;
- }
- ```
+Preferir la escritura:
+```css
+#frame {
+	border-radius: 10px;
+}
+```
 
- ```html
- <div id="marco">
- <p>
- Lorem ipsum dolor sit amet consectetur adipiscing elit.
- </p>
- </div>
- ```
+```html
+<div id="marco">
+	<p>
+	Lorem ipsum Dolor sit Amet, consectetur adipiscing Elit.
+	</p>
+</div>
+```
 
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |----------------------|:-------------------------:|
- | imágenes que podrían haber sido reemplazadas por CSS | 0 |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de imágenes que podrían haber sido sustituidas por CSS | 0 |
+
+

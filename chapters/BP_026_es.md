@@ -1,48 +1,49 @@
-## Utilice notaciones CSS abreviadas
+## Utilizar notaciones CSS abreviadas
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2 | V3 | V4 |
- |:-------:|:----:|:----:|:----:|
- | 15 | 29 | 26 | |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+|   15   | 29  | 26  | |
 
- ### Categorías
+### Categorías
 
- | Ciclo de vida | Niveles | Responsable |
- |:---------:|:----:|:----:|
- | 3. Implementación | Red | Arquitecto/Desarrollador de Software |
+| Ciclo de vida | Partes | Responsable  |
+|:---------:|:----:|:----:|
+| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación | Impacto ecológico |
- |:-------------------:|:------------------------- :|:---------------------:|
- | 2 | 3 | 2 |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|-------------------|:-------------------------:|:---------------------:|
+| 2 | 3 | 2 |
 
- |Recursos ahorrados |
- |:----------------------------------------------------------:|
- | Red |
+|Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Red  |
 
- ### Descripción
+### Descripción
 
-Utilice notaciones CSS abreviadas para reducir el tamaño de las hojas de estilo.
+Utilizar calificaciones CSS abreviadas para reducir el peso de la hoja de estilos.
 
- ### Ejemplos
+### Ejemplo
 
- No escriba :
- ```css
- margen superior: 1em; margen derecho: 0; margen inferior: 2em; margen izquierdo: 05 em;
- ```
-Escriba en su lugar :
- ```css
- margen:1em 0 2em 05em;
- ```
-
- Para llegar más lejos :
+No escriba lo siguiente:
+```css
+margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;
+```
+sino más bien:
+```css
+margin:1em 0 2em 0.5em;
+```
+Para ir más lejos:
  - https://www.w3.org/TR/CSS
- - https://www.456bereastreet.com/archive/200502/ficient_css_with_shorthand_properties/
+ - https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/
 
- ### Regla de validación
+### Principio de validación
 
- | El número de... | es igual o menor que |
- |--------------------------------|:-------------------------:|
- | declaraciones CSS no abreviadas | 0% |
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| de calificaciones CSS no abreviadas  | 0% |
+

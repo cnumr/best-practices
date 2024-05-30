@@ -1,41 +1,44 @@
-## Deshabilitar registros binarios
+## Desactivar los registros binarios
+Traducido por: Murielle Timsit y Franklin Lecointre
 
- ### Identificadores
+### Identificadores
 
- | GreenIT | V2  | V3  | V4  |
- | :-----: | :-: | :-: | :-: |
- |    83   | 93  | 106 |     |
+| GreenIT |  V2  |  V3  |  V4  |
+|:-------:|:----:|:----:|:----:|
+| 83 	| 93  | 106  |  	|
 
- ### Categorías
+### Categorías
 
- |        Ciclo de vida       |     Niveles     |        Responsable        |
- | :------------------------: | :-------------: | :-----------------------: |
- | 6. Soporte / mantenimiento | Centro de datos | Administrador del sistema |
+| Ciclo de vida | Partes | Responsable |
+|:---------:|:----:|:----:|
+| 6. Soporte/ mantenimiento | Centro de datos | Administrador de sistemas |
 
- ### Indicaciones
+### Indicaciones
 
- | Prioridad | Dificultad de implementación |      Impacto ecológico    |
- | :-------: | :--------------------------: | :-----------------------: |
- |     2     |              2               |             2             |
+| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
+|:-------------------:|:-------------------------:|:---------------------:|
+| 2 | 2 | 2 |
 
- |       Recursos ahorrados      |
- | :---------------------------: |
- | Procesador/RAM/Almacenamiento |
+| Recursos ahorrados |
+|:----------------------------------------------------------:|
+| Procesador/ Memoria/ Almacenamiento  |
 
- ### Descripción
+### Descripción
 
- Los registros binarios de los servidores MySQL o MariaDB pueden volverse muy grandes, consumiendo ciclos de CPU mientras se generan operaciones de entrada y salida (E/S) del disco duro, ya que cada solicitud de modificación/eliminación se registra en el archivo de registro. Deshabilitar estos registros ahorrará muchos recursos. Antes de deshabilitarla, asegúrese de que no sea necesaria una replicación de la base de datos y que la pérdida de datos de la última copia de seguridad sea aceptable.
+Los logs binarios del servidor MySQL o MariaDB pueden volverse muy voluminosos, consumiendo ciclos CPU y generando entradas-salidas (I/O) en el disco duro, ya que cada petición de modificación/supresión está inscrita en el archivo de log. Además, si tiene la opción de desactivar estos registros, se ahorrará una gran cantidad de recursos.
+Antes de desactivar, debe asegurarse de que no es necesaria una replicación de la base de datos y que la pérdida de datos desde la última copia de seguridad es aceptable.
 
- ### Ejemplo
+### Ejemplo
 
- Para MySQL, agregue la siguiente configuración:
+Para MySQL, añadir la siguiente configuración:
+```
+skip-log-bin
+```
 
- ```
- skip-log-bin
- ```
+### Principio de validación
 
- ### Regla de validación
+| El número ..   | es inferior o igual a   |  
+|-------------------|:-------------------------:|
+| opciones --skip-log-bin y --disable-log-bin no activadas en caso de que los logs binarios no sean útiles  | 0  |
 
- | El número de...                                                                                              | es igual o menor que |
- | ------------------------------------------------------------------------------------------------------------ | :------------------: |
- | opciones --skip-log-bin y --disable-log-bin no activadas en casos donde los registros binarios no son útiles |           0          |
+
