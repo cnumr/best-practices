@@ -1,0 +1,59 @@
+{
+  "name": "tina-self-hosted-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms dev -v -c \"next dev\"",
+    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms dev -c \"next dev\"",
+    "build": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms build --partial-reindex && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier . --write"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.78",
+    "@types/react-dom": "18.2.25",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.41.0",
+    "eslint-config-next": "14.2.1",
+    "postcss": "8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "3.4.3"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tinacms/cli": "1.5.43",
+    "@tinacms/datalayer": "1.2.33",
+    "clsx": "^2.1.1",
+    "mongodb-level": "0.0.4",
+    "next": "14.2.1",
+    "next-auth": "4.24.7",
+    "next-plugin-preval": "^1.2.6",
+    "node-fetch": "^3.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^2.3.0",
+    "tinacms": "1.6.4",
+    "tinacms-authjs": "2.0.1",
+    "tinacms-gitprovider-github": "1.0.4",
+    "typescript": "5.4.5",
+    "upstash-redis-level": "1.1.1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "bracketSameLine": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "singleAttributePerLine": true,
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
