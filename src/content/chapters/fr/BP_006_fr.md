@@ -1,3 +1,10 @@
+---
+title: title
+createdAt: 2024-09-06T20:43:42.530Z
+updatedAt: 2024-09-06T20:43:42.530Z
+language: fr
+published: false
+---
 ## Privilégier une approche "mobile first", à défaut un chargement adaptatif
 
 ### Identifiants
@@ -40,6 +47,13 @@ Côté client, les _media queries_ (notamment dans les attributs `media` des `<l
 
 Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'accès à votre site même si toutes ses fonctionnalités ne sont pas supportées par tous les navigateurs (sans trop détériorer l'expérience utilisateur bien sûr!).
 
+---
+title: title
+createdAt: 2024-09-06T20:43:42.530Z
+updatedAt: 2024-09-06T20:43:42.530Z
+language: fr
+published: false
+---
 ## Sources
 
 * https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints

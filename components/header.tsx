@@ -52,7 +52,7 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
               </li>
               <li className="!m-0">
                 <Link
-                  href={`/${lang}/fiches`}
+                  href={`/${lang}/chapters`}
                   className={`text-xl font-medium text-inherit text-white no-underline lg:text-base`}
                   title={t('Consulter les Bonnes pratiques')}>
                   {t('Bonnes pratiques')}

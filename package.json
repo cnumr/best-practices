@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms dev -v -c \"next dev\"",
-    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms dev -c \"next dev\"",
-    "build": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWP NEXT_PUBLIC_REF_NAME=RWP tinacms build --partial-reindex && next build",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=BP NEXT_PUBLIC_REF_NAME=BP tinacms dev -v -c \"next dev\"",
+    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=BP NEXT_PUBLIC_REF_NAME=BP tinacms dev -c \"next dev\"",
+    "build": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=BP NEXT_PUBLIC_REF_NAME=BP tinacms build --partial-reindex && next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier . --write"

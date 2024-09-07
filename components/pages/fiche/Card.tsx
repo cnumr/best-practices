@@ -1,9 +1,5 @@
 import { FunctionComponent } from 'react';
 import { ui } from '../../../i18n/ui';
-import {
-  FichesConnectionEdges,
-  FichesQuery,
-} from '../../../tina/__generated__/types';
 import { isStringInUi, useTranslations } from '../../../i18n/utils';
 import {
   MESURE_ON_3,

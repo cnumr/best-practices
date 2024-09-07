@@ -1,3 +1,10 @@
+---
+title: title
+createdAt: 2024-09-06T20:43:42.530Z
+updatedAt: 2024-09-06T20:43:42.530Z
+language: fr
+published: false
+---
 ## Valider les pages auprès du W3C
 
 ### Identifiants

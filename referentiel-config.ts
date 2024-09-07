@@ -53,7 +53,7 @@ export const getRefConfig: RefConfig = (specificRef) => {
     },
   };
   switch (currentRef) {
-    case 'RWP':
+    case 'BP':
       config.i18n.locales = ['fr', 'en', 'es'];
       config.i18n.languages = {
         fr: '🇫🇷 Français',

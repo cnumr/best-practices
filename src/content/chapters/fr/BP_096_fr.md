@@ -1,3 +1,10 @@
+---
+title: title
+createdAt: 2024-09-06T20:43:42.530Z
+updatedAt: 2024-09-06T20:43:42.530Z
+language: fr
+published: false
+---
 ## Afficher des pages d'erreurs statiques
 
 ### Identifiants

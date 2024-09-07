@@ -1,34 +1,41 @@
-import { imageBlock } from '../utils/templates';
 import {
-  defaultFields,
-  onDefaultPagesBeforeSubmit,
-  templateCTAWithIcon,
   titleField,
   warnField,
+  defaultFields,
+  templateCTAWithIcon,
 } from '../utils/commonFields';
 import { tinaTableTemplate, type Collection } from 'tinacms';
+import {
+  getRefConfig,
+} from '../../referentiel-config';
+import { imageBlock } from '../utils/templates.js';
 
 const PUBLIC_BASE =
   process.env.PUBLIC_BASE && process.env.PUBLIC_BASE !== ''
     ? process.env.PUBLIC_BASE + '/'
     : '';
 
+const TINA_PUBLIC_REF_NAME_PROCESS = process.env.TINA_PUBLIC_REF_NAME;
+
+
 const chapters: Collection = {
   name: 'chapters',
   label: 'Chapters pages',
   path: 'src/content/chapters',
   format: 'md',
-  match: { exclude: '{index}' },
-  ui: {
-    router: ({ document }) => {
-      // navigate to the post that was clicked
-      // return document._sys.path;
-      return `/${document._sys.filename}`;
-    },
-    beforeSubmit: onDefaultPagesBeforeSubmit,
-  },
   defaultItem: () => {
-    return { published: false };
+    return {
+      published: false,
+      refType: TINA_PUBLIC_REF_NAME_PROCESS,
+      validations: [{ rule: '<A CHANGER>', maxValue: '3' }],
+      versions: [
+        {
+          version: getRefConfig(process.env.TINA_PUBLIC_REF_NAME)
+            .refInformations.currentVersion,
+          idRef: '<A CHANGER>',
+        },
+      ],
+    };
   },
   fields: [
     warnField(

@@ -18,7 +18,6 @@ const home: Collection = {
   label: 'Home pages',
   path: 'src/content/home',
   format: 'mdx',
-  match: { include: '{en,fr,es}' },
   ui: {
     router: ({ document }) => {
       // navigate to the post that was clicked
