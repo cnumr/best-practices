@@ -1,27 +1,28 @@
 ## Adaptar los textos a la web
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  100	|  114 | 113  |  	|
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   100   | 114 | 113 | 110 |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 5. Uso | Usuario/Terminal | Usuario |
+| Ciclo de vida |      Partes      | Responsable |
+| :-----------: | :--------------: | :---------: |
+|    5. Uso     | Usuario/Terminal |   Usuario   |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Memoria RAM/ Red  |
+| :----------------: |
+|  Memoria RAM/ Red  |
 
 #### Description
 
@@ -36,8 +37,6 @@ Así, los usuarios solo mostrarán las páginas que desean leer y descargarán l
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de textos publicados en el sitio web y con una nota del índice de legibilidad Flesch-Kincaid inferior a 60 | 0  |
-
-
+| El número ..                                                                                               | es inferior o igual a |
+| ---------------------------------------------------------------------------------------------------------- | :-------------------: |
+| de textos publicados en el sitio web y con una nota del índice de legibilidad Flesch-Kincaid inferior a 60 |           0           |

@@ -2,31 +2,31 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  100    |  114 | 113  |      |
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   100   | 114 | 113 | 110 |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
+| Ressources Economisées |
+| :--------------------: |
 | Mémoire vive / Réseau  |
 
 ### Description
 
-Ecrire des textes courts à l’aide d’un style direct. Favoriser la concision des idées exprimées, quitte à développer le propos sur plusieurs pages si le contenu est très long et/ou intègre beaucoup de notions différentes.
+Écrire des textes courts à l’aide d’un style direct. Favoriser la concision des idées exprimées, quitte à développer le propos sur plusieurs pages si le contenu est très long et/ou intègre beaucoup de notions différentes.
 
-Découper en plusieurs pages les contenus d’une longueur conséquente.
+Découper en plusieurs pages les contenus d’une longueur importante. Ces bonnes pratiques permettent de limiter le temps de lecture à l’écran qui est un facteur augmentant significativement les impacts environnementaux.
 
 ### Exemple
 
@@ -35,6 +35,6 @@ Ainsi, les utilisateurs n’afficheront que les pages qu’ils souhaitent lire e
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de textes affichés sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 | 0  |
+| Le nombre ...                                                                                                      | est inférieur ou égal à |
+| ------------------------------------------------------------------------------------------------------------------ | :---------------------: |
+| de textes affichés sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 |            0            |

@@ -1,27 +1,28 @@
 ## Optimizar los PDF
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   98   | 109  | 108  |  	|
+| GreenIT | V2  | V3  | V4  |
+| :-----: | :-: | :-: | :-: |
+|   98    | 109 | 108 | 109 |
 
 #### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 5. Uso | Usuario/Terminal | Usuario |
+| Ciclo de vida |      Partes      | Responsable |
+| :-----------: | :--------------: | :---------: |
+|    5. Uso     | Usuario/Terminal |   Usuario   |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red/ Almacenamiento  |
+| Recursos ahorrados  |
+| :-----------------: |
+| Red/ Almacenamiento |
 
 ### Descripción
 
@@ -34,14 +35,13 @@ Si desea ofrecer al usuario la posibilidad de descargar un lector PDF, prefiera 
 ### Ejemplo
 
 Para un informe anual en PDF:
- - comprobar que las imágenes están fuertemente comprimidas y con una resolución máxima de 72 dpi;
- - incluir únicamente las principales fuentes;
- - dividir el informe en capítulos, a fin de limitar las descargas innecesarias.
+
+- comprobar que las imágenes están fuertemente comprimidas y con una resolución máxima de 72 dpi;
+- incluir únicamente las principales fuentes;
+- dividir el informe en capítulos, a fin de limitar las descargas innecesarias.
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de PDF no optimizados | 0 |
-
-
+| El número ..          | es inferior o igual a |
+| --------------------- | :-------------------: |
+| de PDF no optimizados |           0           |
