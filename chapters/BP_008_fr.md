@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   112   |  8 |  8 |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|   112   |  8 |  8 |      |       |
 
 ### Catégories
 
@@ -25,8 +25,8 @@
 ### Description
 
 Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
-L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution ; 
-par exemple, via la réception d’un e-mail contenant un lien.
+L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution. 
+Par exemple, via la réception d’un e-mail ou d’une notification indiquant la fin du traitement.
 Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée.
 On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
 Il est également plus aisé de lisser la charge du serveur responsable du traitement, ce qui permet une meilleure mutualisation de serveurs et par conséquent moins de serveurs.
