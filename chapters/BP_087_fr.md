@@ -1,10 +1,12 @@
-## Privilégier un fournisseur d'électricité écoresponsable
+## Privilégier une électricité à plus faibles impacts environnementaux
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  67    | 85  | 87  |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|  67    | 85  | 87  |      |      |
+
+RGESN : 8.5, 8.6
 
 ### Catégories
 
