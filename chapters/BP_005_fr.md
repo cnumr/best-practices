@@ -31,13 +31,11 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 - les bonnes pratiques d'écoconception
 - et de préférence les bonnes pratiques d'accessibilité
 
-**Privilégiez un design simple et épuré, en limitant le nombre d’éléments graphiques et réalisable uniquement en HTML et CSS.**
+Privilégiez un design simple et épuré, en limitant le nombre d’éléments graphiques et réalisable uniquement en HTML et CSS.
 
 ### Exemple
 
-**Description :** Certains sites contiennent des images encadrées, non contrastées et non lisibles (RGAA) et créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (écoconception). On peut parfois soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien).
-
-**Recommandation :** Supprimer les images de fond et ajouter un glyphe (Préférer les glyphes aux images, bonne pratique d'écoconception) avec une colorimétrie cohérente si un groupement doit avoir lieu.
+Certains sites contiennent des images encadrées, non contrastées et non lisibles (RGAA) et créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (écoconception). On peut parfois soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien).
 
 ### Principe de validation
 
