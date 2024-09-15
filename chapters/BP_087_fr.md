@@ -34,6 +34,8 @@ Faute de mieux, une possibilité est soit de choisir un fournisseur qui n'achèt
 
 Bien que cela ne concerne que les émissions de gaz à effet de serre, https://app.electricitymap.org/map permet d'être informé sur l'intensité carbone en fonction du pays du fournisseur.
 
+Le site https://calculator.green-algorithms.org permet d’estimer le CO2eq en fonction de la localisation de l’hébergement ainsi que des ressources physiques afin de prendre la meilleure décision.
+
 Pour en savoir plus sur les certificats de garantie d’origine et l’électricité :
 https://www.greenit.fr/tag/electricite
 
