@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  5    | 6  | 5  |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|  5    | 6  | 5  |      |      |
 
 ### Catégories
 
@@ -31,7 +31,7 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 - les bonnes pratiques d'écoconception
 - et de préférence les bonnes pratiques d'accessibilité
 
-**Privilégiez un design simple et épuré réalisable uniquement en HTML et CSS.**
+**Privilégiez un design simple et épuré, en limitant le nombre d’éléments graphiques et réalisable uniquement en HTML et CSS.**
 
 ### Exemple
 
@@ -41,6 +41,6 @@ Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant 
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| Le nombre ...     | est égal à   |  
 |-------------------|:-------------------------:|
-|   de pages dont le design est plus chargé que nécessaire  |  0 |
+|   de pages dont le design nécessite une explication |  0 |
