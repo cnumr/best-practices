@@ -42,8 +42,8 @@ load_module modules/ngx_http_brotli_static_module.so;
 
 http {
 	server {
-    	brotli on;
-    	#...
+		brotli on;
+		#...
 	}
 }
 ```
