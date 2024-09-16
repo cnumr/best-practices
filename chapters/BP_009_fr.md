@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   180   | 9  | 9  |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|   180   | 9  | 9  |   47   |   47  |
 
 ### Catégories
 
@@ -36,8 +36,12 @@ et donc les impacts environnementaux associés.
 
 ### Exemple
 
-Pour afficher des petits drapeaux pour le choix d'une langue, l'utilisation d'une spritesheet CSS permet de les regrouper dans une seule image de plus grande taille.
-Ce procédé réduit le nombre de requêtes HTTP.
+Il existe plusieurs techniques pour réduire le nombre de requêtes :
+- Concaténer des fichiers JS
+- Concaténer des fichiers CSS
+- Créer des sprites ou des fonts d'icônes pour les icônes
+- Utiliser le lazyload pour les images
+
 
 ### Principe de validation
 
