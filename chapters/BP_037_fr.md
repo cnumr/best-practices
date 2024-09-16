@@ -28,10 +28,10 @@ En HTML5, il est possible d’ajouter un attribut loading à vos images et à vo
 
 ### Exemple
 L’image et l’iframe seront chargées automatiquement par le navigateur : si l’image doit apparaître à l’écran, elle sera téléchargée et affichée, mais ne le sera pas si elle est située en dessous de la ligne de flottaison.
-..html
+```html
 <img src="image.jpg" alt="..." loading="lazy">
 <iframe src="video-player.html" title="..." loading="lazy"></iframe>
-..html
+```
 
 ### Principe de validation
 
