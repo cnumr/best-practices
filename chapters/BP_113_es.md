@@ -4,9 +4,9 @@ Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   100   | 114 | 113 | 110 |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   100   | 114 | 113 | 110 |     |
 
 ### Categorías
 
