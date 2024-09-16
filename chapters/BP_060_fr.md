@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  96    | 60  | 60  |      |
+| GreenIT |  V2  |  V3  | V4  | V5  |
+|:-------:|:----:|:----:|:---:|:---:|
+|  96    | 60  | 60  | 104 |  |
 
 ### Catégories
 
@@ -24,14 +24,11 @@
 
 ### Description
 
-Adapter et optimiser les sons en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulagera la CPU et la mémoire vive, car un serveur web n’est pas optimisé pour le (ré)encodage des fichiers audio.
+Convertir et optimiser les sons en dehors du service numérique permet d’économiser beaucoup de bande passante et soulagera la CPU et la mémoire vive du serveur, car celui-ci n’est pas optimisé pour le (ré)encodage des fichiers audio.
 
 ### Exemple
 
-Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
- - 7 Mo de bande passante lors de l’envoi ;
- - 100 Ko lors de l’écoute du résultat ;
- - 6,9 Mo de stockage sur le disque dur du serveur.
+Si vous ajoutez un fichier audio WAV dans la bibliothèque multimédia de Wordpress, il sera encodé en MP3 par le CMS. Or, un fichier MP3 permet typiquement un gain d’un facteur 10 sans dégrader la qualité du fichier audio. Si vous réalisez cette compression avant de l’importer, vous gagnez 90% d’espace de stockage auquel s’ajoutent les ressources économisées lors du traitement en délivrant strictement le même rendu audio pour l’utilisateur.
 
 ### Principe de validation
 
