@@ -75,7 +75,7 @@ Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibl
 * [Valider votre code avec un Linter](/chapters/BP_046_fr.md)
 * [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
 * [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
-* [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
+* [Utiliser tous les niveaux de cache du serveur d’application / CMS](/chapters/BP_057_fr.md)
 * [Optimiser et générer les médias avant importation sur un CMS](/chapters/BP_058_fr.md)
 * [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
 * [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
