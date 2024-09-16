@@ -1,4 +1,4 @@
-## Utiliser tous les niveaux de cache du CMS
+## Utiliser tous les niveaux de cache du serveur d’application / CMS
 
 ### Identifiants
 
@@ -24,18 +24,15 @@
 
 ### Description
 
-Si le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’utilisateur.
+Si le serveur d’application ou le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire). On délivre ainsi de bonnes performances à l’utilisateur tout en consommant moins de ressources côté serveur.
 
 ### Exemple
 
-Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il existe plusieurs plugins qui comblent cette lacune, les plus connus étant :
+WordPress dispose de différentes extensions de gestion de cache : LiteSpeed Cache, WP Fastest Cache, W3 Total Cache, WP Super Cache.
 
-- W3 total Cache
-- Wp Super Cache
-- Wp-rocket
+Les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d’outil fournit aussi d’autres optimisations orientées WebPerf qui vont dans le sens de l’écoconception web.
 
-Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d'outils fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'écoconception web.
-
+Il est intéressant également d’activer la mise en cache des requêtes SQL afin de soulager la base de données.
 
 ### Principe de validation
 
