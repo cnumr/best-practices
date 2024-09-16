@@ -2,9 +2,11 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   95   | 113  | 112  |      |
+| GreenIT |  V2  |  V3  | V4  | V5  |
+|:-------:|:----:|:----:|:---:|:---:|
+|   95   | 113  | 112  | 105 | |
+
+RGESN : 5.6
 
 ### Catégories
 
@@ -24,11 +26,12 @@
 
 ### Description
 
-Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier 3 formats couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
+Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier les 3 codecs couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
  - MP3 (MPEG-1 Audio Layer 3) ;
  - AAC (Advanced Audio Coding) ;
- - Vorbis.
-Ces formats appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs.
+ - Opus.
+Ces codecs appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs. 
+Le format de fichier multimédia ouvert WebM, supporté par la plupart des navigateurs, permet d'intégrer l’audio dans une page web avec la balise HTML5  <audio>. WebM peut contenir différents codecs audio, notamment Opus et Vorbis.
 
 ### Exemple
 

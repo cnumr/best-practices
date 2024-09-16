@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   102   | 110  | 109  |      |
+| GreenIT |  V2  |  V3  | V4  | V5  |
+|:-------:|:----:|:----:|:---:|:---:|
+|   102   | 110  | 109  | 103 |  |
 
 ### Catégories
 
@@ -18,9 +18,9 @@
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Réseau / Requêtes  |
+|     Ressources Economisées      |
+|:-------------------------------:|
+| Processeur / Réseau / Requêtes / Stockage |
 
 ### Description
 
@@ -31,11 +31,10 @@ Il convient de raisonner l'envoi d'e-mail automatiques (ex: newsletters, gestion
 
 Newsletters:
 
-- Définir la fréquence d'envoi au strict nécessaire
+- Définir la fréquence d'envoi au strict nécessaire ou au choix de l’utilisateur
 - Envoyer aux seules personnes essentielles à la newsletter et celles le souhaitant (liste d'inscription, ciblage client)
 - Envoyer des mails de désinscription aux clients n'ayant pas ouvert les x newsletters précédentes
-- Éviter les pièces jointes et préférer les liens directs
-- Éviter les images et à défaut limiter leur taille
+- Éviter les pièces jointes en utilisant un outil de transfert de fichiers comme SwissTransfer
 
 Gestion client:
 
@@ -44,6 +43,6 @@ Gestion client:
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'emails avec pièce jointe  | 0  |
+| Le nombre ...                                                                                    | est inférieur ou égal à   |  
+|--------------------------------------------------------------------------------------------------|:-------------------------:|
+| d'emails envoyés sans que l’utilisateur n’ait un contrôle complet sur la fréquence et le contenu | 0  |

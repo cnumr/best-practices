@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   104   | 112  | 111  |      |
+| GreenIT |  V2  |  V3  | V4  | V5  |
+|:-------:|:----:|:----:|:---:|:---:|
+|   104   | 112  | 111  | 102 |  |
 
 ### Catégories
 
@@ -18,18 +18,21 @@
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+| Ressources Economisées |
+|:----------------------:|
+|  Réseau / Requêtes / Stockage  |
 
 ### Description
 
-Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé.
-Éviter les pièces jointes et les images intégrées. Préférer un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
+Limitez au maximum la taille des e-mails envoyés lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur.
+Évitez les pièces jointes et les images intégrées. En privilégiant de partager un lien vers un espace de stockage de fichier dans le cloud, vous évitez que vos pièces jointes soient dupliquées sur autant de serveurs e-mail que de destinataires.
+Préférez un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
+Si vous devez absolument habiller votre e-mail, préférez des styles CSS aux images.
+Compressez le code HTML de votre e-mail avec un outil comme https://htmlcompressor.com/compressor/
 
 ### Exemple
 
-L’envoi d’un e-mail de confirmation de prise en compte d’une demande de contact ne justifie pas l’ajout de code HTML et d’images.
+L’envoi d’un e-mail de confirmation de prise en compte d’une demande de contact ne justifie pas forcément l’ajout de code HTML et d’images.
 Un message HTML basique utilise en moyenne :
  - au moins 2 images (le logo et une signature en bas de page), soit 10 Ko environ ;
  - 12 Ko de code HTML pour la mise en page (styles inline, tableaux...) ;
