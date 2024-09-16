@@ -28,7 +28,7 @@ En moyenne, une image .webp est 30 % plus légère qu’une image .jpg ou .png
 Certains modules côté serveur (comme modPageSpeed de Google, disponible pour Apache et Nginx) fournissent même l’image idéale en rapport au navigateur appelant le serveur.
 
 ### Exemple
-L’élément <picture> du DOM indique au navigateur qu’il y a deux images : une image .webp et une image.jpg, celle par défaut. Le navigateur décidera quelle image télécharger :
+L’élément `<picture>` du DOM indique au navigateur qu’il y a deux images : une image .webp et une image.jpg, celle par défaut. Le navigateur décidera quelle image télécharger :
 
 ```html
 <picture>
