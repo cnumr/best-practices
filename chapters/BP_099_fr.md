@@ -28,8 +28,9 @@ Les reverse proxies (Varnish, Squid ou NGINX) sont optimisés pour servir du con
 
 ### Exemple
 
-Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement le temps nécessaire pour servir les pages dynamiques, tout en augmentant la capacité du CMS (Drupal, ici)
-à en délivrer un grand nombre en même temps. On constate également qu’un cache généraliste comme APC n’est pas adapté (source : Asymptotix).
+Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement le temps nécessaire pour servir les pages dynamiques mise en cache, tout en soulageant le serveur d’application / CMS pour servir de nouvelles requêtes (non mises en cache).
+
+On constate également qu’un cache généraliste comme APC n’est pas adapté (source : Asymptotix).
 
 ### Principe de validation
 
