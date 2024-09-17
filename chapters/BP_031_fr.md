@@ -2,9 +2,9 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  8    | 15  | 31  |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|  8    | 15  | 31  |  61 |  |
 
 ### Catégories
 
@@ -24,8 +24,7 @@
 
 ### Description
 
-Vérifier que le code HTML des pages est bien formé. Dans le cas contraire, le navigateur corrigera dynamiquement un certain nombre d’éléments pour afficher au mieux les pages posant problème.
-Ces corrections dynamiques consomment inutilement des ressources à chaque chargement des pages concernées.
+Un code HTML bien formé permet une meilleure accessibilité, un meilleur référencement mais surtout une amélioration des performances. Dans le cas contraire, le navigateur corrigera dynamiquement un certain nombre d’éléments pour afficher au mieux les pages posant problème. Ces corrections dynamiques consomment inutilement des ressources à chaque chargement des pages concernées.
 
 ### Exemple
 
@@ -34,6 +33,6 @@ https://validator.w3.org
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| Le nombre ...     | est égal à   |  
 |-------------------|:-------------------------:|
 | d'erreurs critiques  | 0  |
