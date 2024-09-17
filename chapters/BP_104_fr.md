@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |  84    | 100  | 104  |      |
 
+RGESN : 3.1
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -24,13 +26,11 @@
 
 ### Description
 
-À chaque fois qu’un serveur web reçoit une requête HTTP, il enregistre cette information dans un log, en traduisant généralement l’adresse IP de l’internaute en nom de domaine. Cette conversion (DNS Lookup) constitue l’un des goulots d’étranglement du serveur HTTP Apache.
-
-À désactiver donc.
+À chaque fois qu’un serveur web reçoit une requête HTTP, il enregistre cette information dans un log, en traduisant l’adresse IP en nom de domaine. Cette conversion (DNS Lookup) constitue l’un des goulots d’étranglement de certains serveurs HTTP (Apachenotamment). Désactiver le DNS Lookup permet d’éviter de consommer des ressources serveurs inutilement et accélère le temps de chargement des pages améliorant l’expérience utilisateur.
 
 ### Exemple
 
-Dans le fichier de configuration de votre serveur Apache, situé à l’adresse `/etc/apache/httpd.conf` ou à l’adresse `/etc/apache2/apache2.conf`, écrire :
+Sur un serveur Apache, éditer le fichier de configuration  (`/etc/apache/httpd.conf` ou `/etc/apache2/apache2.conf`), et ajouter cette directive :
 ```apacheconf
  HostnameLookups Off
 ```
