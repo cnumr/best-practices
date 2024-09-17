@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |  1060    |   | 84  |      |
 
+RGESN : 3.1
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -24,19 +26,18 @@
 
 ### Description
 
-Le HSTS permet d’indiquer à n’importe quel navigateur, via un header de réponse HTTP gardé en cache que le domaine doit exclusivement être contacté en HTTPS.
+Le protocole HTTP Strict Transport Security (HSTS) permet d’indiquer à n’importe quel navigateur, via un header de réponse HTTP gardé en cache, que le domaine doit exclusivement être contacté en HTTPS. Cela permet aux requêtes suivantes, émises sur le même domaine, d’être exclusivement contactées avec le protocole HTTPS, ce qui évite une multitude de redirections 301 (pour forcer les appels en HTTPS).
 
-Cela permet aux requêtes suivantes, émises sur le même domaine, d’être exclusivement contactées avec le protocole HTTPS, ce qui évite une multitude de redirections 301.
-Néanmoins, le premier appel exige une réponse (potentiellement non sécurisé) HTTP avec un header STS (Strict-Transport-Security).
-Pour pallier ce problème, et obliger les navigateurs à contacter l’intégralité du domaine en HTTPS, il est possible, en plus d’activer le HSTS, de s’enregistrer dans une liste statique mise à jour sur tous les navigateurs récents : https://hstspreload.org.
+Néanmoins, le premier appel exige une réponse (potentiellement non sécurisée) HTTP avec un header STS. Pour pallier ce problème et obliger les navigateurs à contacter l’intégralité du domaine en HTTPS, il est possible, en plus d’activer le HSTS, de s’enregistrer dans une liste statique mise à jour sur tous les navigateurs récents (https://hstspreload.org). L’enregistrement est rapide et concerne l’intégralité du domaine (sous-domaines inclus). 
 
-Il est important de noter que l’enregistrement de son domaine sur htstpreload.org est rapide et concerne l’intégralité du domaine, (sous-domaines inclus). Avant d’effectuer cet enregistrement, qui est relativement lent à supprimer, veillez qu’aucun de vos sous-domaines ne soient perturbés par la mise en place du HTTPS.
+Avant d’effectuer cet enregistrement, assurez vous d'être sûr de pouvoir prendre en charge HTTPS sur l'ensemble des sous-domaines à long terme car une demande de suppression de la liste peut prendre plusieurs mois.
+
 
 ### Exemple
 
-Exemple de configuration
-```apacheconf
-Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
+Exemple de configuration pour Nginx
+```nginxconf
+add_header Strict-Transport-Security 'max-age=63072000; includeSubDomains; preload; always'
 ```
 
 ### Principe de validation
