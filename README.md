@@ -99,7 +99,7 @@ Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibl
 * [Installer le minimum requis sur le serveur](/chapters/BP_091_fr.md)
 * [Mettre les caches entièrement en RAM](/chapters/BP_092_fr.md)
 * [Stocker les ressources et données dans le cloud](/chapters/BP_093_fr.md)
-* [Héberger les ressources (CSS/JS) sur un domaine sans cookie](/chapters/BP_094_fr.md)
+* [Héberger les ressources statiques sur un domaine sans cookie](/chapters/BP_094_fr.md)
 * [Éviter les redirections](/chapters/BP_095_fr.md)
 * [Afficher des pages d'erreur statiques](/chapters/BP_096_fr.md)
 * [Utiliser un serveur asynchrone](/chapters/BP_097_fr.md)
