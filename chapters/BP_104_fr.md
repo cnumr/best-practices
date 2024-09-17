@@ -26,7 +26,7 @@ RGESN : 3.1
 
 ### Description
 
-À chaque fois qu’un serveur web reçoit une requête HTTP, il enregistre cette information dans un log, en traduisant l’adresse IP en nom de domaine. Cette conversion (DNS Lookup) constitue l’un des goulots d’étranglement de certains serveurs HTTP (Apachenotamment). Désactiver le DNS Lookup permet d’éviter de consommer des ressources serveurs inutilement et accélère le temps de chargement des pages améliorant l’expérience utilisateur.
+À chaque fois qu’un serveur web reçoit une requête HTTP, il enregistre cette information dans un log, en traduisant l’adresse IP en nom de domaine. Cette conversion (DNS Lookup) constitue l’un des goulots d’étranglement de certains serveurs HTTP (Apache notamment). Désactiver le DNS Lookup permet d’éviter de consommer des ressources serveurs inutilement et accélère le temps de chargement des pages améliorant l’expérience utilisateur.
 
 ### Exemple
 
