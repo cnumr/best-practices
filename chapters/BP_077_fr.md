@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |  12    | 78  | 77  |      |
 
+RGESN : 6.3
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -16,7 +18,7 @@
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
 |:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| 4 | 2 | 2 |
 
 |Ressources Economisées                                      |
 |:----------------------------------------------------------:|
@@ -33,7 +35,7 @@ Il existe différents outils pour minifier comme par exemple:
 - CSS: cssnano, csso ou clean-css 
 - Javascript: Terser, UglifyJS ou Babel-minify 
 - HTML: htmlnano, HTMLMinifier
-- SVG: SVGO, minify-xml ou équivalent
+- SVG: SVGO, minify-xml, SVGOMG ou équivalent
 
 
 ### Principe de validation

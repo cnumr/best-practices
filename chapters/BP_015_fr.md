@@ -2,9 +2,11 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   1   |  11 | 15  |      |
+| GreenIT |  V2  |  V3  |  V4  |  V5  |
+|:-------:|:----:|:----:|:----:|:----:|
+|   1   |  11 | 15  |  67  |  |
+
+RGESN : 1.9
 
 ### Catégories
 
@@ -24,18 +26,14 @@
 
 ### Description
 
-Le choix des technologies étant primordial pour optimiser les ressources, sélectionner l’outil le plus économe en fonction de ses besoins
-et de ses contraintes métier.
+Le choix des technologies étant primordial pour réduire la consommation de ressources, sélectionner l’outil le plus économe en fonction des besoins et des contraintes métier.
 
-Dans la mesure du possible, il faut privilégier un site statique dont le contenu change très peu, pourra être mis en cache et ne sollicitera pas de serveur d'application ou de base de données.
+Dans le cas d’un site dont le contenu change peu, privilégier un site statique qui pourra être mis en cache et ne sollicitera pas de serveur d’application ou de base de données. Pour un site plus dynamique, le sur-mesure permet plus de souplesse dans l’optimisation technique et d’embarquer le strict nécessaire pour répondre au besoin métier. Si une partie d’un site web repose sur un nombre très limité de pages et délivre un service spécifique (tunnel de commande, demande de devis), l’utilisation d’une SPA (Single Page Application) peut être recommandée. Cela permet de limiter les allers-retours avec le serveur et de rendre l’expérience utilisateur plus fluide.
 
-Dans le cas d'un site plus dynamique, le sur-mesure permet plus de souplesse dans l'optimisation technique et d'embarquer le strict nécessaire pour répondre au besoin métier.
-
-Si vous avez une partie d'un site web qui repose sur un nombre de pages très limité et qui délivre un service métier encadré (tunnel de commande, demande de devis) l'utilisation d'une SPA (Single Page Application) peut être recommandée. Cela permet de limiter les allers-retours avec le serveur et rendre l'expérience plus fluide et performante.
 
 ### Exemple
 
-Un site institutionnel avec uniquement une présentation de l'entreprise et un formulaire de contact devra privilégier un site statique étant donné la faible fréquence de mise à jour. 
+Pour un site institutionnel contenant uniquement une présentation de l’entreprise et un formulaire de contact, on privilégiera des pages web statiques étant donné la faible fréquence de mise à jour.
 
 ### Principe de validation
 

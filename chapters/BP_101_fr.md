@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |   78   |  105 | 101  |      |
 
+RGESN : 6.2
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -30,18 +32,13 @@ Idéalement, la durée de vie de ces éléments doit être la plus longue possib
 
 ### Exemple
 
-Voici un exemple de configuration des entêtes Expires et Cache-Control pour le serveur web Apache :
-```apacheconf
-# BEGIN Cache-Control Headers
-<IfModule mod_headers.c>
-    <FilesMatch "\\.(ico|jpe?g|png|gif|swf|css|gz)$">
-        Header set Cache-Control"max-age=2592000, public"
-    </FilesMatch>
-    <FilesMatch "\\.(html|htm)$">
-        Header set Cache-Control"max-age=7200, public"
-    </FilesMatch>
-</IfModule>
-# END Cache-Control Headers
+Voici un exemple de configuration des entêtes Expires et Cache-Control pour le serveur web Nginx :
+```nginxconf
+location ~* ^.+\.(xml|ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf|woff2|webp|webm)$ {
+	access_log off;
+	log_not_found off;
+	expires max;
+}
 ```
 
 ### Principe de validation
