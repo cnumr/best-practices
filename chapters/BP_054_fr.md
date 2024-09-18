@@ -23,12 +23,12 @@
 |  Processeur / Mémoire vive  |
 
 ### Description
-
-L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
+L’accès au DOM via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU), d’autant plus si la page a un DOM important. Réduisez autant que possible ces accès.
 
 Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
 
-Il est également possible d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
+Si la page a un DOM important, il peut être judicieux d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
+
 
 ### Exemple
 
