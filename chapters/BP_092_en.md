@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   85    | 90  |  92 |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   85    | 90  | 92  |     |     |
 
 ### Categories
 
 |  Life cycle   |   Tiers    |     Responsible      |
-|:-------------:|:----------:|:--------------------:|
+| :-----------: | :--------: | :------------------: |
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    2     |             2             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                    Processor / Storage                    |
+|   Saved resources   |
+| :-----------------: |
+| Processor / Storage |
 
 ### Description
 
@@ -39,6 +39,6 @@ Examples of RAM cache integration in Drupal:
 
 ### Validation rule
 
-| The number of ...                    | is equal to or less than |  
-|--------------------------------------|:------------------------:|
+| The number of ...                    | is equal to or less than |
+| ------------------------------------ | :----------------------: |
 | caches that are not fully set in RAM |            0             |

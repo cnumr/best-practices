@@ -1,27 +1,28 @@
 ## Utilizar sólo las partes esenciales de las bibliotecas JavaScript y frameworks CSS
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|   811   | 77  | 40  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   811   | 77  | 40  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+|   2. Diseño   |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-CPU/ RAM/ Red |
+| Recursos ahorrados |
+| :----------------: |
+|   CPU/ RAM/ Red    |
 
 ### Descripción
 
@@ -40,8 +41,6 @@ Algunos frameworks, aquí Bootstrap, permiten crear bibliotecas a medida que con
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de librerías en las que se utilicen partes no indispensables  | 1  |
-
-
+| El número ..                                                 | es inferior o igual a |
+| ------------------------------------------------------------ | :-------------------: |
+| de librerías en las que se utilicen partes no indispensables |           1           |

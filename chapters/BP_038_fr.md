@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  40    |  49 | 38  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   40    | 49  | 38  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 | Tiers  |  Responsable   |
+| :------------------------------------------: | :----: | :------------: |
 | 3. Réalisation (fabrication / développement) | Réseau | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Processeur / Mémoire vive / Réseau   |
+|       Ressources Economisées       |
+| :--------------------------------: |
+| Processeur / Mémoire vive / Réseau |
 
 ### Description
 
@@ -31,11 +31,11 @@ Il est même envisageable de ne pas inclure ces parties dans l'appel HTTP de la 
 
 ### Exemple
 
-Les sites d’actualités utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
+Les sites d’actualités utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent
 d’être mises à jour rapidement (flash d’informations, données météo, cours de la Bourse, résultats sportifs, etc.).
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de zones de contenus pouvant être mises à jour partiellement mais qui ne le sont pas  | 0%  |
+| Le nombre ...                                                                        | est inférieur ou égal à |
+| ------------------------------------------------------------------------------------ | :---------------------: |
+| de zones de contenus pouvant être mises à jour partiellement mais qui ne le sont pas |           0%            |

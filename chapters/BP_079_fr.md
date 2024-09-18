@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  89    | 81  | 79  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   89    | 81  | 79  |     |     |
 
 RGESN : 3.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |           Responsable           |
+| :-----------: | :----: | :-----------------------------: |
 | 4. Production | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Requêtes |
+| Ressources Economisées |
+| :--------------------: |
+|        Requêtes        |
 
 ### Description
 
@@ -36,6 +36,6 @@ Avec Webpack, le plugin `webpack-merge-and-include-globally` facilite la fusion 
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de fichiers CSS et JS non combinés  | 2  |
+| Le nombre ...                      | est inférieur ou égal à |
+| ---------------------------------- | :---------------------: |
+| de fichiers CSS et JS non combinés |            2            |

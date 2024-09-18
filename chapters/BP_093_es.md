@@ -1,27 +1,28 @@
 ## Almacenar datos en la nube
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  71	|  92 |  93 |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   71    | 92  | 93  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 3 | 2 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         2          |                    3                     |         2         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Almacenamiento   |
+| :----------------: |
+|   Almacenamiento   |
 
 ### Descripción
 
@@ -35,8 +36,6 @@ Para la realización de un concurso basado en testimonios de vídeo, es más efi
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de recursos, datos del sitio web que no se almacenan en una solución de computación en la nube |  0 |
-
-
+| El número ..                                                                                   | es inferior o igual a |
+| ---------------------------------------------------------------------------------------------- | :-------------------: |
+| de recursos, datos del sitio web que no se almacenan en una solución de computación en la nube |           0           |

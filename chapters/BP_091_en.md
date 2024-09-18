@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    74   | 89  | 91  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   74    | 89  | 91  |     |     |
 
 ### Categories
 
 |  Life cycle   |   Tiers    |     Responsible      |
-|:-------------:|:----------:|:--------------------:|
+| :-----------: | :--------: | :------------------: |
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         3          |             4             |         3         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             4             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Storage                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Storage |
 
 ### Description
 
@@ -32,6 +32,6 @@ Prefer "manual" servers installation (LAMP + CMS, for example) rather than cPane
 
 ### Validation rule
 
-| The number of ...                                      | is equal to or less than |  
-|--------------------------------------------------------|:------------------------:|
+| The number of ...                                      | is equal to or less than |
+| ------------------------------------------------------ | :----------------------: |
 | non-essential services running on the operating system |            0             |

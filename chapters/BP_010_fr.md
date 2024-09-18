@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  205    | 10  | 10  |  64 |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   205   | 10  | 10  | 64  |     |
 
 RGESN : 6.2
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |   Tiers    |           Responsable           |
+| :------------------------------------------: | :--------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Réseau / Requêtes    |
+| Ressources Economisées |
+| :--------------------: |
+|   Réseau / Requêtes    |
 
 ### Description
 
@@ -35,14 +35,13 @@ Le gain potentiel est la réduction de la charge serveur, donc du nombre d’éq
 ### Exemple
 
 Par exemple pour stocker le nom de l’utilisateur vous pouvez utiliser l’instruction suivante :
-```localStorage.setItem('name','nom_utilisateur');```
+`localStorage.setItem('name','nom_utilisateur');`
 
 Il suffit ensuite d’utiliser la ligne suivante pour le retrouver ultérieurement :
-```var myName = localStorage.getItem('name');```
-
+`var myName = localStorage.getItem('name');`
 
 ### Principe de validation
 
-| Le pourcentage ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de données statiques non stockées localement  | 25%  |
+| Le pourcentage ...                           | est inférieur ou égal à |
+| -------------------------------------------- | :---------------------: |
+| de données statiques non stockées localement |           25%           |

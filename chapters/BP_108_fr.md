@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   98   | 109  | 108  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   98    | 109 | 108 |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau / Stockage  |
+| Ressources Economisées |
+| :--------------------: |
+|   Réseau / Stockage    |
 
 ### Description
 
@@ -33,13 +33,13 @@ Si vous souhaitez offrir à l’utilisateur de télécharger un lecteur PDF, pr�
 ### Exemple
 
 Pour un rapport annuel en PDF :
- - vérifier que les images sont fortement compressées et à une résolution maximale de 72 dpi ;
- - n’inclure que les principales polices ;
- - découper le rapport en chapitres, afin de limiter les téléchargements inutiles.
 
+- vérifier que les images sont fortement compressées et à une résolution maximale de 72 dpi ;
+- n’inclure que les principales polices ;
+- découper le rapport en chapitres, afin de limiter les téléchargements inutiles.
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de PDF non optimisés  |  0 |
+| Le nombre ...        | est inférieur ou égal à |
+| -------------------- | :---------------------: |
+| de PDF non optimisés |            0            |

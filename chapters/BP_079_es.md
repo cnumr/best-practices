@@ -1,27 +1,28 @@
 ## Combinar archivos CSS y JavaScript
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 89  | 81  | 79  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   89    | 81  | 79  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+| 4. Producción |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Peticiones |
+| :----------------: |
+|     Peticiones     |
 
 ### Descripción
 
@@ -35,8 +36,6 @@ Con Webpack, el plugin `webpack-merge-and-include-Globally` facilita la fusión 
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de archivos CSS y JS sin combinar  | 2  |
-
-
+| El número ..                      | es inferior o igual a |
+| --------------------------------- | :-------------------: |
+| de archivos CSS y JS sin combinar |           2           |

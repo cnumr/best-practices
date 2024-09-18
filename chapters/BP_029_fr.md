@@ -2,34 +2,35 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   19   | 17  | 29  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   19    | 17  | 29  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 | Tiers  |  Responsable   |
+| :------------------------------------------: | :----: | :------------: |
 | 3. Réalisation (fabrication / développement) | Réseau | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Stockage / Réseau / Requêtes  |
+|    Ressources Economisées    |
+| :--------------------------: |
+| Stockage / Réseau / Requêtes |
 
 ### Description
 
-Préférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger. 
+Préférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger.
 On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standards sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par exemple.
 
 Cependant si vous avez besoin d'une police particulière pour votre service numérique, même si c'est une Api font (google font, adobe font, etc.), vous devez :
+
 - Héberger vous-même la font
-- Utiliser un faux-gras via la propriété css ```-webkit-text-stroke``` si possible
+- Utiliser un faux-gras via la propriété css `-webkit-text-stroke` si possible
 - Préférer une variable font si vous avez besoin de plus d'une font d'une police (ex: regular, bold, etc.)
 - Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latins, l'alphabet cyrillique peut donc être supprimé)
 - Enfin, limiter leur nombre (bonne pratique de web design déjà reconnue) à deux maximum, le moins possible étant le mieux.
@@ -39,7 +40,7 @@ Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratiq
 ### Exemple
 
 Voici un tableau comparatif de poids des fonts de la police Oswald :
-| | Regular  | Regular + bold         | Variable | Latin Regular |  Latin Regular + Latin Bold |  Latin Variable |
+| | Regular | Regular + bold | Variable | Latin Regular | Latin Regular + Latin Bold | Latin Variable |
 |---:| :---------------: |:---------------:|:------------:| :-----:| :-----:| :-----:|
 |Poids|37.6kb|76.9kb|66kb|16kb|32.5kb| ?
 
@@ -51,12 +52,12 @@ Dans l'exemple ci-dessous, nous ne téléchargeons que la font `Montserrat` si e
 
 ```css
 @media (prefers-reduced-data: no-preference) {
-    @font-face {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 400;
-        src:  url('fonts/montserrat-latin-regular.woff2');
-    }
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/montserrat-latin-regular.woff2");
+  }
 }
 
 body {
@@ -68,6 +69,6 @@ Pour plus d'informations sur la media query `prefers-reduced-data`: [https://dev
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de polices téléchargées  | 2  |
+| Le nombre ...           | est inférieur ou égal à |
+| ----------------------- | :---------------------: |
+| de polices téléchargées |            2            |

@@ -1,27 +1,28 @@
 ## No modificar el DOM al recorrerlo
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|  43   | 43  | 41   |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   43    | 43  | 41  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+|              Ciclo de vida               |      Partes      |            Responsable             |
+| :--------------------------------------: | :--------------: | :--------------------------------: |
 | 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-|  Procesador  |
+| Recursos ahorrados |
+| :----------------: |
+|     Procesador     |
 
 ### Descripción
 
@@ -30,18 +31,18 @@ Modificar el DOM (Document Object Model) al recorrerlo puede generar situaciones
 ### Ejemplo
 
 Evitar:
+
 ```html
 <script>
-	// Notación de jQuery
-	$('a. extlink'). each(function(el) {
-    	$(el). attr('rel','external nofollow');
-	})
+  // Notación de jQuery
+  $("a. extlink").each(function (el) {
+    $(el).attr("rel", "external nofollow");
+  });
 </script>
 ```
+
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de inserciones en el DOM realizadas cuando esta misma parte del DOM es recorrida por código JavaScript  | 0  |
-
-
+| El número ..                                                                                           | es inferior o igual a |
+| ------------------------------------------------------------------------------------------------------ | :-------------------: |
+| de inserciones en el DOM realizadas cuando esta misma parte del DOM es recorrida por código JavaScript |           0           |

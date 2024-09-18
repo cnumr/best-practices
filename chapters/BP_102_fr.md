@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   91   | 107  | 102  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   91    | 107 | 102 |     |     |
 
 RGESN : 6.2
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |        Tiers         |           Responsable           |
+| :-----------: | :------------------: | :-----------------------------: |
 | 4. Production | Utilisateur/Terminal | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 2 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       2        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+| Ressources Economisées |
+| :--------------------: |
+|   Réseau / Requêtes    |
 
 ### Description
 
@@ -34,6 +34,6 @@ Si une requête AJAX retourne une liste de noms de villes, de noms de contacts o
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de réponses AJAX non mises en cache  | 10%  |
+| Le nombre ...                       | est inférieur ou égal à |
+| ----------------------------------- | :---------------------: |
+| de réponses AJAX non mises en cache |           10%           |

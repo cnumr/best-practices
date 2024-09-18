@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  204    | 4  | 4  |      |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   204   |  4  |  4  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
-| 1. Spécification | Utilisateur/Terminal | PO/AMOA |
+|   Cycle de vie   |        Tiers         | Responsable |
+| :--------------: | :------------------: | :---------: |
+| 1. Spécification | Utilisateur/Terminal |   PO/AMOA   |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Requêtes    |
+| Ressources Economisées |
+| :--------------------: |
+|        Requêtes        |
 
 ### Description
 
@@ -35,21 +35,22 @@ Pour minimiser les allers-retours, si la donnée proposée à l’utilisateur es
 ### Exemple
 
 L’élément `<datalist>` un aller-retour avec le serveur.
+
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
 <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
 <datalist id="ice-cream-flavors">
-    <option value="Chocolate">
-    <option value="Coconut">
-    <option value="Mint">
-    <option value="Strawberry">
-    <option value="Vanilla">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
 </datalist>
 ```
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de champs en autocomplétion  | 20%  |
+| Le nombre ...               | est inférieur ou égal à |
+| --------------------------- | :---------------------: |
+| de champs en autocomplétion |           20%           |

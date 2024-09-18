@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|  8      | 15  | 31  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    8    | 15  | 31  |     |     |
 
 ### Categories
 
 |    Life cycle     |    Tiers    |         Responsible          |
-|:-----------------:|:-----------:|:----------------------------:|
+| :---------------: | :---------: | :--------------------------: |
 | 3. Implementation | User/Device | Software Architect/Developer |
 
 ### Indications
 
-| Priority  | Implementation difficulty | Ecological impact |
-|:---------:|:-------------------------:|:-----------------:|
-|     3     |            5              |         2         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             5             |         2         |
 
 | Saved resources |
-|:---------------:|
+| :-------------: |
 |    Processor    |
 
 ### Description
@@ -35,6 +35,6 @@ https://validator.w3.org
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-| critical errors  | 0  |
+| The number of ... | is equal to or less than |
+| ----------------- | :----------------------: |
+| critical errors   |            0             |

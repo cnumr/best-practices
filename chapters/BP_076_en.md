@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   58    | 75  | 76  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   58    | 75  | 76  |     |     |
 
 ### Categories
 
 | Life cycle |  Tiers  |         Responsible          |
-|:----------:|:-------:|:----------------------------:|
+| :--------: | :-----: | :--------------------------: |
 | 2. Design  | Network | Software Architect/Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Network                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Network |
 
 ### Description
 
@@ -36,7 +36,7 @@ These processes must rather be carried out as close as possible to the data in o
 
 ### Example
 
-In the case of complex queries with large amounts of data, whan a relational database management system (RDBMS) is used, 
+In the case of complex queries with large amounts of data, whan a relational database management system (RDBMS) is used,
 stored procedures should be used because:
 
 - stored procedures save queries interpretation on server side since they are pre-compiled;
@@ -46,6 +46,6 @@ All recent RDBMS (SQL Server, MySQL, PostgreSQL, etc.) support stored procedures
 
 ### Validation rule
 
-| The number of ...                                                        | is equal to or less than |  
-|--------------------------------------------------------------------------|:------------------------:|
-| processes with a large amount of data ran outside of the database server |             1            |
+| The number of ...                                                        | is equal to or less than |
+| ------------------------------------------------------------------------ | :----------------------: |
+| processes with a large amount of data ran outside of the database server |            1             |

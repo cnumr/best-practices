@@ -2,25 +2,25 @@
 
 ### Identificadores
 
-| GreenIT | V2 | V3 | V4 |
-|:-------:|:----:|:----:|:----:|
-|  93   | 20  | 34 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   93    | 20  | 34  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/desarrollo) | Usuario/Terminal | Usuario |
+|              Ciclo de vida              |      Partes      | Responsable |
+| :-------------------------------------: | :--------------: | :---------: |
+| 3. Realización (fabricación/desarrollo) | Usuario/Terminal |   Usuario   |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|-------------------|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| ------------------ | :--------------------------------------: | :---------------: |
+| 4                  |                    4                     |         4         |
 
-|Recursos Economizados   |
-|:----------------------------------------------------------:|
-| Procesador/ Red  |
+| Recursos Economizados |
+| :-------------------: |
+|    Procesador/ Red    |
 
 ### Descripción
 
@@ -34,7 +34,6 @@ La mejor solución es generar las imágenes en el tamaño al que se visualizan. 
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de imágenes redimensionadas en el navegador | 0  |
-
+| El número ..                                | es inferior o igual a |
+| ------------------------------------------- | :-------------------: |
+| de imágenes redimensionadas en el navegador |           0           |

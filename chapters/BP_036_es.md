@@ -1,27 +1,28 @@
 ## Optimizar las imágenes vectoriales
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  1050   | 22  | 36 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|  1050   | 22  | 36  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 5. Uso | Usuario/Terminal | Usuario |
+| Ciclo de vida |      Partes      | Responsable |
+| :-----------: | :--------------: | :---------: |
+|    5. Uso     | Usuario/Terminal |   Usuario   |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red  |
+| Recursos ahorrados |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -39,11 +40,8 @@ Ahorro potencial: hasta 75% menos de KB.
 
 Hemos probado SVGO en un archivo SVG de 1 KB. Redujo su tamaño en un 36 %, de 1101 a 700 bytes. Al comprimir el archivo a través de gzip antes de su transferencia, el tamaño se redujo a 498 bytes, menos de la mitad (45%) del tamaño inicial, sin ninguna pérdida de calidad de visualización.
 
-
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de imágenes no optimizadas  | 0% |
-
-
+| El número ..               | es inferior o igual a |
+| -------------------------- | :-------------------: |
+| de imágenes no optimizadas |          0%           |

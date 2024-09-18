@@ -1,27 +1,28 @@
 ## Limitar el número de solicitudes HTTP
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ###Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   180   | 9  | 9  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   180   |  9  |  9  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red/ Consultas   |
+| Recursos ahorrados |
+| :----------------: |
+|   Red/ Consultas   |
 
 ### Descripción
 
@@ -40,8 +41,6 @@ Esto reduce el número de solicitudes HTTP.
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de peticiones HTTP  | 40  |
-
-
+| El número ..       | es inferior o igual a |
+| ------------------ | :-------------------: |
+| de peticiones HTTP |          40           |

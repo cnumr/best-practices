@@ -2,29 +2,29 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   16   | 30  | 27  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   16    | 30  | 27  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |        Tiers         |  Responsable   |
+| :------------------------------------------: | :------------------: | :------------: |
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       4        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau  |
+| Ressources Economisées |
+| :--------------------: |
+|         Réseau         |
 
 ### Description
 
-Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, 
+Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées,
 et donc indirectement l’empreinte écologique du site web. La plus dépouillée possible, elle doit proposer une police
 de caractères économe en encre (Century Gothic, par exemple). Pensez aussi à masquer le header, le footer, le menu, le sidebar,
 supprimer toutes les images sauf celles du contenu, etc.
@@ -32,6 +32,7 @@ supprimer toutes les images sauf celles du contenu, etc.
 ### Exemple
 
 Cette CSS print « nettoie » la page affichée à l’écran afin de proposer une impression épurée :
+
 ```css
 body {
 background-color :#ﬀf; font-family :Serif; font-size :15pt;
@@ -49,6 +50,6 @@ text-indent :0; line-height :25pt; font-size :25pt;
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de CSS print manquantes  |  1 |
+| Le nombre ...           | est inférieur ou égal à |
+| ----------------------- | :---------------------: |
+| de CSS print manquantes |            1            |

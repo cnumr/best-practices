@@ -1,27 +1,28 @@
 ## Reducir los registros del servidor según sea necesario
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   82   | 99  | 103  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   82    | 99  | 103 |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |            Responsable            |
+| :-----------: | :-------------: | :-------------------------------: |
 | 4. Producción | Centro de datos | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         2          |                    2                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Almacenamiento  |
+|         Recursos ahorrados          |
+| :---------------------------------: |
+| Procesador/ Memoria/ Almacenamiento |
 
 ### Descripción
 
@@ -42,8 +43,6 @@ CustomLog/var/log/apache/access.log Combined env=! dontlog
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-|de logs sin tiempo máximo de retención   | 0  |
-
-
+| El número ..                           | es inferior o igual a |
+| -------------------------------------- | :-------------------: |
+| de logs sin tiempo máximo de retención |           0           |

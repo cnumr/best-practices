@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   60   | 57  | 57  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   60    | 57  | 57  |     |     |
 
 RGESN : 7.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  Ressources Economisées   |
+| :-----------------------: |
+| Processeur / Mémoire vive |
 
 ### Description
 
@@ -38,6 +38,6 @@ Il est intéressant également d’activer la mise en cache des requêtes SQL af
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de caches non activés |  0 |
+| Le nombre ...         | est inférieur ou égal à |
+| --------------------- | :---------------------: |
+| de caches non activés |            0            |

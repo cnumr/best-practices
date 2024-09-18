@@ -1,27 +1,28 @@
 ## Comprimir archivos CSS, JavaScript, HTML y SVG
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|  86   | 80 | 78  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   86    | 80  | 78  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red  |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -50,8 +51,6 @@ Para instalar y configurar Brotli en NGINX, consulte https://github.com/google/n
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de archivos CSS, JavaScript,  HTML y SVG sin comprimir  |  0 |
-
-
+| El número ..                                          | es inferior o igual a |
+| ----------------------------------------------------- | :-------------------: |
+| de archivos CSS, JavaScript, HTML y SVG sin comprimir |           0           |

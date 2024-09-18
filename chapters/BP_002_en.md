@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   110   | 2  | 2  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   110   |  2  |  2  |     |     |
 
 ### Categories
 
-|    Life cycle    |     Tiers     | Responsible |
-|:----------------:|:-------------:|:-----------:|
-| 1. Specification | User/Device   |     PO      |
+|    Life cycle    |    Tiers    | Responsible |
+| :--------------: | :---------: | :---------: |
+| 1. Specification | User/Device |     PO      |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
-|     5    |             4             |        5          |
+| :------: | :-----------------------: | :---------------: |
+|    5     |             4             |         5         |
 
-|               Resources saved                 |
-|:---------------------------------------------:|
+|                Resources saved                |
+| :-------------------------------------------: |
 | Processor / RAM / Storage / Network / Queries |
 
 ### Description
@@ -43,11 +43,11 @@ Microsoft Research has demonstrated that it is possible to reduce the underlying
 (number of servers) by up to 80%.
 
 Another example: by defaulting to an acceptable video resolution (480p) rather than maximum, we reduce the bandwidth
-used for most users (who will not change the default value), while leaving the possibility for others to increase the 
+used for most users (who will not change the default value), while leaving the possibility for others to increase the
 resolution if they need to.
 
 ### Validation rule
 
-| The number of ...                            | is equal to |  
-|----------------------------------------------|:-----------:|
-| features with larger dimensions than needed  |       0     |
+| The number of ...                           | is equal to |
+| ------------------------------------------- | :---------: |
+| features with larger dimensions than needed |      0      |

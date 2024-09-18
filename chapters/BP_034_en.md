@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  |  V3  |  V4  |
-|:-------:|:---:|:----:|:----:|
-| 93      | 20  | 34   |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   93    | 20  | 34  |     |     |
 
 ### Categories
 
 |    Life cycle     |    Tiers    | Responsible |
-|:-----------------:|:-----------:|:-----------:|
+| :---------------: | :---------: | :---------: |
 | 3. Implementation | User/Device |    User     |
 
 ### Indications
 
-|       Priority       | Implementation difficulty  |   Ecological impact    |
-|:--------------------:|:--------------------------:|:----------------------:|
-|          4           |             4              |           4            |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             4             |         4         |
 
-|    Saved resources    |
-|:---------------------:|
-| Processor / Network   |
+|   Saved resources   |
+| :-----------------: |
+| Processor / Network |
 
 ### Description
 
@@ -34,7 +34,6 @@ The best solution is to generate images at the target size. This can be done man
 
 ### Validation rule
 
-| The number of ...      | is equal to or less than |  
-|------------------------|:------------------------:|
+| The number of ...      | is equal to or less than |
+| ---------------------- | :----------------------: |
 | resized browser images |            0             |
-

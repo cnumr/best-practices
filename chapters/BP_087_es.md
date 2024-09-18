@@ -1,27 +1,28 @@
 ## Favorecer a un proveedor de electricidad responsable
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-| 67   | 85  | 87 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   67    | 85  | 87  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 2 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         2         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Emisiones de gases de efecto invernadero  |
+|            Recursos ahorrados            |
+| :--------------------------------------: |
+| Emisiones de gases de efecto invernadero |
 
 ### Descripción
 
@@ -35,6 +36,6 @@ Aunque esto solo afecta a las emisiones de gases de efecto invernadero, https://
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| no presentación de prueba de la compra de certificados de garantía de origen por parte del proveedor de alojamiento   | 0  |
+| El número ..                                                                                                        | es inferior o igual a |
+| ------------------------------------------------------------------------------------------------------------------- | :-------------------: |
+| no presentación de prueba de la compra de certificados de garantía de origen por parte del proveedor de alojamiento |           0           |

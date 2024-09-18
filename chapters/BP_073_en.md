@@ -2,31 +2,33 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    56   |  72 | 73  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   56    | 72  | 73  |     |     |
 
 ### Categories
 
 | Life -cycle |   Tiers    |         Responsible          |
-|:-----------:|:----------:|:----------------------------:|
+| :---------: | :--------: | :--------------------------: |
 |  2. Design  | Datacenter | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         3          |             3             |         3         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Network                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Network |
 
 ### Description
+
 Opening a connection is a resource-intensive process for both client and server, regardless of the database system:
-* Memory and disk I/O allocation for buffers,
-* Network round trips for the connection protocol,
-* Induced CPU cost.
+
+- Memory and disk I/O allocation for buffers,
+- Network round trips for the connection protocol,
+- Induced CPU cost.
 
 Example: for Oracle, several round trips are necessary (validation of credentials, driver information, optimal packet size negotiation, etc.).
 Opening and closing connection requires allocating and deallocating these resources, as well as many network exchanges, each time.
@@ -44,6 +46,6 @@ When there is no connection pool, reuse a connection and do not open/close a new
 
 ### Validation rule
 
-| The number of ...                                                               | is equal to or less than |  
-|---------------------------------------------------------------------------------|:------------------------:|
+| The number of ...                                                               | is equal to or less than |
+| ------------------------------------------------------------------------------- | :----------------------: |
 | unnecessary database connections for querying or storing necessary service data |            0             |

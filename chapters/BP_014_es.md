@@ -1,27 +1,28 @@
 ## Crear una arquitectura de aplicaciones modular
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 114  | 52  | 14 |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   114   | 52  | 14  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Centro de datos | Arquitecto Software/Desarrollador |
+| Ciclo de vida |     Partes      |            Responsable            |
+| :-----------: | :-------------: | :-------------------------------: |
+|   2. Diseño   | Centro de datos | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Almacenamiento  |
+|         Recursos ahorrados          |
+| :---------------------------------: |
+| Procesador/ Memoria/ Almacenamiento |
 
 ### Descripción
 
@@ -38,8 +39,6 @@ En el lado backend, el corte en microservicios permite aportar un nivel de modul
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| El número de arquitecturas no modulares | 0  |
-
-
+| El número ..                            | es inferior o igual a |
+| --------------------------------------- | :-------------------: |
+| El número de arquitecturas no modulares |           0           |

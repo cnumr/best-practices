@@ -1,27 +1,28 @@
 ## Cuantificar con precisión la necesidad
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  110   | 2  | 2  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   110   |  2  |  2  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:------:|:----:|
-| 1. Especificación | Usuario/Terminal | PO/AMOA |
+|   Ciclo de vida   |      Partes      | Responsable |
+| :---------------: | :--------------: | ----------- |
+| 1. Especificación | Usuario/Terminal | PO/AMOA     |
 
 ### Indicaciones
 
-| Grado de prioridad  | Dificultad de implementación o ejecución | impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 5 | 4 | 5 |
+| Grado de prioridad | Dificultad de implementación o ejecución | impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         5          |                    4                     |         5         |
 
-|Recursos ahorrados   |
-|:----------------------------------------------------------:|
-|Procesador/ Memoria RAM / Almacenamiento/ Red/ Consultas   |
+|                    Recursos ahorrados                    |
+| :------------------------------------------------------: |
+| Procesador/ Memoria RAM / Almacenamiento/ Red/ Consultas |
 
 ### Descripción
 
@@ -41,8 +42,6 @@ Otro ejemplo: usando una resolución de vídeo aceptable (480p) por defecto en l
 
 ### Principio de validación
 
-| El número ..   | es igual a   |  
-|-------------------|:-------------------------:|
-| de funcionalidades con dimensiones superiores a las requeridas. | 0 |
-
-
+| El número ..                                                    | es igual a |
+| --------------------------------------------------------------- | :--------: |
+| de funcionalidades con dimensiones superiores a las requeridas. |     0      |

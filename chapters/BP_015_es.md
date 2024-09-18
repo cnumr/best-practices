@@ -1,27 +1,28 @@
 ## Elegir las tecnologías más adecuadas
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 1   | 11 | 15 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    1    | 11  | 15  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Producción (fabricación/ desarrollo) | Centro de datos| Arquitecto Software/Desarrollador |
+|              Ciclo de vida              |     Partes      |            Responsable            |
+| :-------------------------------------: | :-------------: | :-------------------------------: |
+| 3. Producción (fabricación/ desarrollo) | Centro de datos | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad  | ejecución  | impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 5 |
+| Grado de prioridad | ejecución | impacto ecológico |
+| :----------------: | :-------: | :---------------: |
+|         4          |     4     |         5         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Red  |
+|    Recursos ahorrados    |
+| :----------------------: |
+| Procesador/ Memoria/ Red |
 
 ### Descripción
 
@@ -39,11 +40,10 @@ Un sitio institucional con solo una presentación de la empresa y un formulario 
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de tecnologías inadecuada | 1  |
-
+| El número ..              | es inferior o igual a |
+| ------------------------- | :-------------------: |
+| de tecnologías inadecuada |           1           |
 
 Réfléchir à une autre formulation pour contrainte métier, pas convaincue par cette trad
-[fl2R1]necesidad empresarial 
+[fl2R1]necesidad empresarial
 Idem, il faut chercher une meilleure expression pour contrainte métier et besoin métier, à investiguer

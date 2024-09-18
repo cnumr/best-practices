@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  | V4  |
-|:-------:|:---:|:---:|:---:|
-|    1    | 11  | 15  |     |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    1    | 11  | 15  |     |     |
 
 ### Categories
 
 |   Life cycle   |   Tiers    |      Responsible      |
-|:--------------:|:----------:|:---------------------:|
+| :------------: | :--------: | :-------------------: |
 | 3. Development | Datacenter | Architect / Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    4     |             4             |         5         |
 
 |     Ressources saved      |
-|:-------------------------:|
+| :-----------------------: |
 | Processor / RAM / Network |
 
 ### Description
@@ -32,7 +32,7 @@ the deployment of application servers and databases.
 
 In the case of a dynamic website, custom developments allow more relevant technical optimizations, and allow the use of the strict minimum to answer the user's needs.
 
-If you have a part of a web application that relies on a small number of pages and deliver a bounded functional service 
+If you have a part of a web application that relies on a small number of pages and deliver a bounded functional service
 (purchase, estimate request, ...), using a SPA (Single Page Application) may be interesting. It avoids requests and makes
 the user experience more fluid.
 
@@ -42,6 +42,6 @@ A seldomly updated display site about an enterprise with a contact form should r
 
 ### Validation rule
 
-| The number of ...          | is equal to or less than |  
-|----------------------------|:------------------------:|
+| The number of ...          | is equal to or less than |
+| -------------------------- | :----------------------: |
 | poorly chosen technologies |            1             |

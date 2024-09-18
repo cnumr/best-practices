@@ -1,27 +1,28 @@
 ## Almacenar en caché las respuestas de Ajax
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   91   | 107  | 102  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   91    | 107 | 102 |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |      Partes      |            Responsable            |
+| :-----------: | :--------------: | :-------------------------------: |
 | 4. Producción | Usuario/Terminal | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 2 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    2                     |         4         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| portadas  Red/ Consultas  |
+|   Recursos ahorrados    |
+| :---------------------: |
+| portadas Red/ Consultas |
 
 ### Descripción
 
@@ -33,8 +34,6 @@ Si una consulta Ajax devuelve una lista de nombres de ciudades, nombres de conta
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de respuestas AJAX no almacenadas en caché  | 10%  |
-
-
+| El número ..                               | es inferior o igual a |
+| ------------------------------------------ | :-------------------: |
+| de respuestas AJAX no almacenadas en caché |          10%          |

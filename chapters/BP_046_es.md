@@ -1,27 +1,28 @@
 ## Validar su código con un Linter
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|   35   | 33  | 46   | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   35    | 33  | 46  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
+|              Ciclo de vida               |      Partes      |            Responsable             |
+| :--------------------------------------: | :--------------: | :--------------------------------: |
 | 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 2 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         2         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| CPU |
+| Recursos ahorrados |
+| :----------------: |
+|        CPU         |
 
 ### Descripción
 
@@ -33,12 +34,12 @@ En desarrollos modernos, recomendamos añadir a su proceso de entrega diferentes
 ### Ejemplo
 
 Por ejemplo, podemos utilizar:
-* [Eslint](https://eslint.org/) para el código JavaScript
-* [Stylelint](https://stylelint.io/) para vs hojas de estilo
+
+- [Eslint](https://eslint.org/) para el código JavaScript
+- [Stylelint](https://stylelint.io/) para vs hojas de estilo
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de líneas de código fuente no validadas por herramientas como Eslint | 0  |
-
+| El número ..                                                         | es inferior o igual a |
+| -------------------------------------------------------------------- | :-------------------: |
+| de líneas de código fuente no validadas por herramientas como Eslint |           0           |

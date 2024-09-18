@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    86   |  80 | 78  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   86    | 80  | 78  |     |     |
 
 ### Categories
 
 |    Life cycle     |  Tiers  |         Responsible          |
-|:-----------------:|:-------:|:----------------------------:|
+| :---------------: | :-----: | :--------------------------: |
 | 3. Implementation | Network | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         4          |             3             |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                          Network                          |
+| Saved resources |
+| :-------------: |
+|     Network     |
 
 ### Description
 
@@ -46,8 +46,9 @@ The NGINX web server handles GZIP compression by default, but only for HTML file
 To enable it for images and other resources, you can refer to this page: https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04
 
 To install and configure BROTLI on NGINX, see https://github.com/google/ngx_brotli.
+
 ### Validation rule
 
-| The number of ...                                 | is equal to or less than |  
-|---------------------------------------------------|:------------------------:|
+| The number of ...                                 | is equal to or less than |
+| ------------------------------------------------- | :----------------------: |
 | uncompressed CSS, JavaScript, HTML, and SVG files |            0             |

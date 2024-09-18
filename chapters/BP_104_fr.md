@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  84    | 100  | 104  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   84    | 100 | 104 |     |     |
 
 RGESN : 3.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         2         |       2        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Réseau  |
+| Ressources Economisées |
+| :--------------------: |
+|  Processeur / Réseau   |
 
 ### Description
 
@@ -30,13 +30,14 @@ RGESN : 3.1
 
 ### Exemple
 
-Sur un serveur Apache, éditer le fichier de configuration  (`/etc/apache/httpd.conf` ou `/etc/apache2/apache2.conf`), et ajouter cette directive :
+Sur un serveur Apache, éditer le fichier de configuration (`/etc/apache/httpd.conf` ou `/etc/apache2/apache2.conf`), et ajouter cette directive :
+
 ```apacheconf
  HostnameLookups Off
 ```
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de DNS lookup actif  |  0 |
+| Le nombre ...       | est inférieur ou égal à |
+| ------------------- | :---------------------: |
+| de DNS lookup actif |            0            |

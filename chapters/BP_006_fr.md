@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   6   | 7  | 6  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    6    |  7  |  6  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | PO/AMOA |
+| Cycle de vie  |        Tiers         | Responsable |
+| :-----------: | :------------------: | :---------: |
+| 2. Conception | Utilisateur/Terminal |   PO/AMOA   |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 5 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         5         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|Processeur / Réseau  |
+| Ressources Economisées |
+| :--------------------: |
+|  Processeur / Réseau   |
 
 ### Description
 
@@ -29,7 +29,7 @@ pour les terminaux mobiles,
 et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l’apport fonctionnel/ergonomique est justifié.
 Dans ce cas, opter alors pour le chargement adaptatif.
 Cette approche consiste à sélectionner les ressources, y compris JS et CSS, les plus adaptées au contexte d'utilisation (taille de l'écran / de la fenêtre, densité de pixels, qualité du réseau, quantité de mémoire vive, etc.), si possible côté serveur.
-On s’assure ainsi de ne pas consommer inutilement de la bande passante, 
+On s’assure ainsi de ne pas consommer inutilement de la bande passante,
 ni de trop solliciter le processeur et la mémoire du terminal pour des traitements inutiles.
 
 ### Exemple
@@ -42,11 +42,11 @@ Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'acc�
 
 ## Sources
 
-* https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
-* https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
+- https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
+- https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 
 ### Validation rule
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de conceptions ne s'appuyant pas sur une approche "mobile first"  |  1 |
+| Le nombre ...                                                    | est inférieur ou égal à |
+| ---------------------------------------------------------------- | :---------------------: |
+| de conceptions ne s'appuyant pas sur une approche "mobile first" |            1            |

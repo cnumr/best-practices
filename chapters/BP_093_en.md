@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2   | V3  |  V4  |
-|:-------:|:-----:|:---:|:----:|
-|   71    |  92   |  93 |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   71    | 92  | 93  |     |     |
 
 ### Categories
 
 |  Life cycle   |   Tiers    |     Responsible      |
-|:-------------:|:----------:|:--------------------:|
+| :-----------: | :--------: | :------------------: |
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    2     |             3             |         2         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                          Storage                          |
+| Saved resources |
+| :-------------: |
+|     Storage     |
 
 ### Description
 
@@ -34,6 +34,6 @@ For a video contest based on testimonials, it is more efficient to use Amazon's 
 
 ### Validation rule
 
-| The number of ...                                                          | is equal to or less than |  
-|----------------------------------------------------------------------------|:------------------------:|
-| resources, website data, that are not stored on a cloud computing solution |             0            |
+| The number of ...                                                          | is equal to or less than |
+| -------------------------------------------------------------------------- | :----------------------: |
+| resources, website data, that are not stored on a cloud computing solution |            0             |

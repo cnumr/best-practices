@@ -2,31 +2,31 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    99   | 58  | 58  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   99    | 58  | 58  |     |     |
 
 ### Categories
 
 | Life cycle |    Tiers    | Responsible |
-|:----------:|:-----------:|:-----------:|
+| :--------: | :---------: | :---------: |
 |   5. Use   | User/Device |    User     |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         4          |             4             |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             4             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|            Processor / RAM / Network / Storage            |
+|           Saved resources           |
+| :---------------------------------: |
+| Processor / RAM / Network / Storage |
 
 ### Description
 
-The most well-known CMS offer many features to optimize (compress, resize, etc.) and generate your media (images, pdf, 
+The most well-known CMS offer many features to optimize (compress, resize, etc.) and generate your media (images, pdf,
 documents, audios and videos) often via plugins or extensions. Sometimes not free, but always resource intensive in terms
-of CPU, RAM, network and storage, these plugins do not avoid the import of disproportionate (size, dimension and quality) 
+of CPU, RAM, network and storage, these plugins do not avoid the import of disproportionate (size, dimension and quality)
 or unsuitable media compared to their use.
 
 ### Examples
@@ -43,6 +43,6 @@ Here are some tools that can help you optimize your media on your computer:
 
 ### Validation rule
 
-| The number of ...                                 | is equal to or less than |  
-|---------------------------------------------------|:------------------------:|
-| contents directly optimized by the CMS |             0            |
+| The number of ...                      | is equal to or less than |
+| -------------------------------------- | :----------------------: |
+| contents directly optimized by the CMS |            0             |

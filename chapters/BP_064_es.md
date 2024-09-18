@@ -1,26 +1,27 @@
 ## Almacenar en caché los datos calculados que se utilizan con frecuencia
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|  47   | 62  | 64 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   47    | 62  | 64  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 2. Diseño | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+|   2. Diseño   |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
+|   Recursos ahorrados    |
+| :---------------------: |
 | Procesador/ Memoria RAM |
 
 ### Descripción
@@ -36,6 +37,6 @@ Los tokens de acceso OAuth2 tienen una fecha de caducidad. Almacenar en caché e
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de datos poco volátiles, que requieren un cálculo y a los que se accede varias veces, no colocados en un sistema de caché  | 0 |
+| El número ..                                                                                                              | es inferior o igual a |
+| ------------------------------------------------------------------------------------------------------------------------- | :-------------------: |
+| de datos poco volátiles, que requieren un cálculo y a los que se accede varias veces, no colocados en un sistema de caché |           0           |

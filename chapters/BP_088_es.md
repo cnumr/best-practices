@@ -1,26 +1,27 @@
 ## Adaptar la calidad del servicio y el nivel de disponibilidad
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|  501	|  86 | 88  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   501   | 86  | 88  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 2 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    2                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
+| Recursos ahorrados |
+| :----------------: |
 | Consumo de energía |
 
 ### Descripción
@@ -34,8 +35,6 @@ A pesar de sus cientos de millones de usuarios, los gigantes de la Web no ofrece
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| aumento del nivel de disponibilidad cuando el nivel actual es suficiente  | 0  |
-
-
+| El número ..                                                             | es inferior o igual a |
+| ------------------------------------------------------------------------ | :-------------------: |
+| aumento del nivel de disponibilidad cuando el nivel actual es suficiente |           0           |

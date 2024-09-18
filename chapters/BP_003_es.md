@@ -1,27 +1,28 @@
 ## Optimizar el recorrido del usuario
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  111   | 3  | 3  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   111   |  3  |  3  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:------:|:----:|
-| 2. Diseño | Usuario/Terminal | Diseñador UX/UI|
+| Ciclo de vida |      Partes      | Responsable     |
+| :-----------: | :--------------: | --------------- |
+|   2. Diseño   | Usuario/Terminal | Diseñador UX/UI |
 
 ### Indicaciones
 
-| Grado de prioridad  | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 5 | 4 | 5 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         5          |                    4                     |         5         |
 
-|Recursos ahorrados   |
-|:----------------------------------------------------------:|
-|Procesador / Memoria RAM / Almacenamiento / Red / Consultas   |
+|                     Recursos ahorrados                      |
+| :---------------------------------------------------------: |
+| Procesador / Memoria RAM / Almacenamiento / Red / Consultas |
 
 ### Descripción
 
@@ -33,13 +34,13 @@ El tiempo pasado por el usuario en su terminal es el segundo factor en cuanto a 
 
 #### Ejemplo
 
-* Proponer, para una web de gran distribución, un nuevo pedido basándose en el contenido del pedido anterior.
-* Comprar sin registrarse en un sitio de comercio electrónico.
-* Copiar/pegar su resumen de identificación bancaria directamente en vez  de descargarlo y transferirlo.
-* Destacar los campos o filtros más utilizados.
+- Proponer, para una web de gran distribución, un nuevo pedido basándose en el contenido del pedido anterior.
+- Comprar sin registrarse en un sitio de comercio electrónico.
+- Copiar/pegar su resumen de identificación bancaria directamente en vez de descargarlo y transferirlo.
+- Destacar los campos o filtros más utilizados.
 
 ### Principio de validación
 
-| El número de | es inferior o igual a  |  
-|-------------------|:-------------------------:|
-| puntos de fricción | 0 |
+| El número de       | es inferior o igual a |
+| ------------------ | :-------------------: |
+| puntos de fricción |           0           |

@@ -1,27 +1,28 @@
 ## Instalar el mínimo requerido en el servidor
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   74   | 89  | 91  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   74    | 89  | 91  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    4                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Almacenamiento  |
+|         Recursos ahorrados          |
+| :---------------------------------: |
+| Procesador/ Memoria/ Almacenamiento |
 
 ### Descripción
 
@@ -33,8 +34,6 @@ Privilegiar una instalación «manual» del servidor (LAMP + CMS, por ejemplo) e
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de servicios no necesarios para el funcionamiento del emplazamiento ejecutados en el sistema operativo  | 0 |
-
-
+| El número ..                                                                                           | es inferior o igual a |
+| ------------------------------------------------------------------------------------------------------ | :-------------------: |
+| de servicios no necesarios para el funcionamiento del emplazamiento ejecutados en el sistema operativo |           0           |

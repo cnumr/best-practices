@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   14   | 28  | 25  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   14    | 28  | 25  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |  Tiers  |         Responsible          |
+| :---------------: | :-----: | :--------------------------: |
 | 3. Implementation | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 2 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         2         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network  |
+| Saved resources |
+| :-------------: |
+|     Network     |
 
 ### Description
 
@@ -28,26 +28,33 @@ When several DOM (Document Object Model) elements share some CSS properties, wri
 
 ### Example
 
-
 Do not write :
+
 ```css
 h1 {
-background-color: gray; color: navy;
+  background-color: gray;
+  color: navy;
 }
 
 h2 {
-background-color: gray; color: navy;
+  background-color: gray;
+  color: navy;
 }
 
 h3 {
-background-color: gray; color: navy;
+  background-color: gray;
+  color: navy;
 }
 ```
 
 rather write :
+
 ```css
-h1, h2, h3 {
-background-color: gray; color: navy;
+h1,
+h2,
+h3 {
+  background-color: gray;
+  color: navy;
 }
 ```
 
@@ -58,6 +65,6 @@ You can find the complete list of these shortened properties on this website [MD
 
 ### Validation rule
 
-| The number of ...                  | is equal to or less than   | 
-|------------------------------------|:-------------------------:|
-| similar CSS declarations not grouped together | 1  |
+| The number of ...                             | is equal to or less than |
+| --------------------------------------------- | :----------------------: |
+| similar CSS declarations not grouped together |            1             |

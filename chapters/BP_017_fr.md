@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  113    | 54  | 17  |  63  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   113   | 54  | 17  | 63  |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |   Tiers    |           Responsable           |
+| :------------------------------------------: | :--------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Stockage / Réseau  |
+|            Ressources Economisées             |
+| :-------------------------------------------: |
+| Processeur / Mémoire vive / Stockage / Réseau |
 
 ### Description
 
@@ -33,6 +33,6 @@ Gain potentiel : jusqu’à 8 fois moins de stockage. La consommation en cycle
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de champs de la base dont le format est inadapté est  | 15%  |
+| Le nombre ...                                        | est inférieur ou égal à |
+| ---------------------------------------------------- | :---------------------: |
+| de champs de la base dont le format est inadapté est |           15%           |

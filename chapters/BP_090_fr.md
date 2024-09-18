@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   68    |  88  |  90  |  92  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   68    | 88  | 90  | 92  |     |
 
 RGESN : N/A
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         2         |       2        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Consommation électrique   |
+| Ressources Economisées  |
+| :---------------------: |
+| Consommation électrique |
 
 ### Description
 
@@ -36,6 +36,6 @@ Il est aussi possible de choisir une architecture matérielle adaptée au type d
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou plus OU non écolabellisés ou Energy Star for server. | 0  |
+| Le nombre ...                                                                                                                   | est inférieur ou égal à |
+| ------------------------------------------------------------------------------------------------------------------------------- | :---------------------: |
+| de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou plus OU non écolabellisés ou Energy Star for server. |            0            |

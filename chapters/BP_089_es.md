@@ -1,26 +1,27 @@
 ## Usar servidores virtualizados
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|   70   | 87  | 89  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   70    | 87  | 89  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
+|   Recursos ahorrados    |
+| :---------------------: |
 | Procesador/ Memoria RAM |
 
 ### Descripción
@@ -28,8 +29,9 @@ Traducido por: Murielle Timsit y Franklin Lecointre
 La virtualización es una tecnología que permite crear y ejecutar representaciones virtuales de un ordenador en una o varias máquinas físicas. El software de virtualización asigna los recursos entre los diferentes entornos virtuales según sus necesidades.
 
 Como resultado, la virtualización permite:
-* un ahorro en el material por mutualización
-* uso óptimo de los recursos (RAM, CPU, disco)
+
+- un ahorro en el material por mutualización
+- uso óptimo de los recursos (RAM, CPU, disco)
 
 Esto reduce la cantidad de residuos electrónicos (RAEE) y el consumo de energía en comparación con el uso de varios servidores físicos.
 
@@ -45,8 +47,6 @@ En lugar de utilizar cuatro servidores dedicados para cuatro proyectos, y cargar
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de aplicaciones no alojadas de forma mutualizada | 0 |
-
-
+| El número ..                                     | es inferior o igual a |
+| ------------------------------------------------ | :-------------------: |
+| de aplicaciones no alojadas de forma mutualizada |           0           |

@@ -1,27 +1,28 @@
 ## Optimizar la eficiencia energética de los servidores
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   68   | 88  | 90  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   68    | 88  | 90  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         2          |                    2                     |         3         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Consumo de energía   |
+| :----------------: |
+| Consumo de energía |
 
 ### Descripción
 
@@ -35,8 +36,6 @@ También es posible elegir una arquitectura de hardware adecuada para el tipo de
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de servidores sin una fuente de alimentación certificada 80Plus Platinum o más o con etiqueta ecológica o Energy Star for server. | 0  |
-
-
+| El número ..                                                                                                                      | es inferior o igual a |
+| --------------------------------------------------------------------------------------------------------------------------------- | :-------------------: |
+| de servidores sin una fuente de alimentación certificada 80Plus Platinum o más o con etiqueta ecológica o Energy Star for server. |           0           |

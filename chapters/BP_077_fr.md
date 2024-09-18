@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  12    | 78  | 77  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   12    | 78  | 77  |     |     |
 
 RGESN : 6.3
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |           Responsable           |
+| :-----------: | :----: | :-----------------------------: |
 | 4. Production | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 2 | 2 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       2        |         2         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Réseau   |
+| Ressources Economisées |
+| :--------------------: |
+|         Réseau         |
 
 ### Description
 
@@ -32,14 +32,13 @@ Utiliser un outil de minification CSS, Javascript, HTML et SVG permet de supprim
 
 Il existe différents outils pour minifier comme par exemple:
 
-- CSS: cssnano, csso ou clean-css 
-- Javascript: Terser, UglifyJS ou Babel-minify 
+- CSS: cssnano, csso ou clean-css
+- Javascript: Terser, UglifyJS ou Babel-minify
 - HTML: htmlnano, HTMLMinifier
 - SVG: SVGO, minify-xml, SVGOMG ou équivalent
 
-
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de fichiers CSS, JavaScript, HTML et SVG non minifiés  | 0  |
+| Le nombre ...                                         | est inférieur ou égal à |
+| ----------------------------------------------------- | :---------------------: |
+| de fichiers CSS, JavaScript, HTML et SVG non minifiés |            0            |

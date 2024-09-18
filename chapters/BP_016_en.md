@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|    4    | 5 3 | 1 6 |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    4    | 53  | 16  |     |     |
 
 ### Categories
 
 |    Life cycle     |   Tiers    |     Responsible      |
-|:-----------------:|:----------:|:--------------------:|
+| :---------------: | :--------: | :------------------: |
 | 3. Implementation | Datacenter | System administrator |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Network                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Network |
 
 ### Description
 
@@ -28,11 +28,10 @@ Open source software projects are often forked to improve performance. Performan
 
 ### Example
 
- - KeyDB should be rather preferred over Redis.
-
+- KeyDB should be rather preferred over Redis.
 
 ### Validation rule
 
-| The number of ...                                      | is inferior or equals  |  
-|--------------------------------------------------------|:----------------------:|
-| performance-oriented forks is greater than or equal to |           1            |
+| The number of ...                                      | is inferior or equals |
+| ------------------------------------------------------ | :-------------------: |
+| performance-oriented forks is greater than or equal to |           1           |

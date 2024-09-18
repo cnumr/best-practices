@@ -1,27 +1,28 @@
 ## Evitar la transferencia de una gran cantidad de datos para realizar un tratamiento
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 58 | 75 | 76 |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   58    | 75  | 76  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 2. Diseño | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+|   2. Diseño   |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Red   |
+|    Recursos ahorrados    |
+| :----------------------: |
+| Procesador/ Memoria/ Red |
 
 ### Descripción
 
@@ -38,15 +39,13 @@ Estos tratamientos deben realizarse más cerca de los datos para:
 
 En el caso de consultas complejas con un gran número de datos y el uso de un sistema de gestión de bases de datos relacionales (DBMS), se recomienda utilizar procedimientos almacenados (VIEWS) porque:
 
- - un procedimiento almacenado ahorra al servidor la interpretación de la recuesta ya que está precompilada;
- - un procedimiento almacenado requiere menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
+- un procedimiento almacenado ahorra al servidor la interpretación de la recuesta ya que está precompilada;
+- un procedimiento almacenado requiere menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
 
 Todos los RDBMS (relational database management system) recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de tratamientos con una gran cantidad de datos ejecutados fuera del servidor de base de datos |  1 |
-
-
+| El número ..                                                                                  | es inferior o igual a |
+| --------------------------------------------------------------------------------------------- | :-------------------: |
+| de tratamientos con una gran cantidad de datos ejecutados fuera del servidor de base de datos |           1           |

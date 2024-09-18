@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   99   | 58  | 58  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   99    | 58  | 58  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Réseau / Stockage  |
+|            Ressources Economisées             |
+| :-------------------------------------------: |
+| Processeur / Mémoire vive / Réseau / Stockage |
 
 ### Description
 
@@ -29,6 +29,7 @@ Les CMS les plus connus proposent de nombreuses fonctionnalités pour optimiser 
 ### Exemple
 
 Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur :
+
 - [FFmpeg](https://www.ffmpeg.org/)
 - [Any Video Converter](https://www.any-video-converter.com/products/video-converter-free/)
 - [Xnview](https://www.xnview.com/fr/)
@@ -39,6 +40,6 @@ Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de contenus optimisés directement par le CMS   |  0 |
+| Le nombre ...                                | est inférieur ou égal à |
+| -------------------------------------------- | :---------------------: |
+| de contenus optimisés directement par le CMS |            0            |

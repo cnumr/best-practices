@@ -2,30 +2,30 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  42    | 45  | 43  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   42    | 45  | 43  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |        Tiers         |           Responsable           |
+| :------------------------------------------: | :------------------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Processeur   |
+| Ressources Economisées |
+| :--------------------: |
+|       Processeur       |
 
 ### Description
 
 Le repaint est le changement d’apparence d’un élément du DOM (Document Object Model), tandis que le reﬂow est le changement/recalcul de la position des éléments dans le DOM. Ces deux opérations sont coûteuses en ressources, notamment en cycles CPU : il faut donc éviter de les déclencher.
-Ces opérations ont généralement pour origine l’usage du JavaScript notamment pour manipuler le DOM. 
+Ces opérations ont généralement pour origine l’usage du JavaScript notamment pour manipuler le DOM.
 
 ### Exemple
 
@@ -36,9 +36,8 @@ Pour éviter les reﬂow, limiter les changements de propriétés de position, d
 Pour aller plus loin :
 https://developers.google.com/speed/articles/reflow
 
-
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de modifications n'affectant pas le layout et occasionnant un repaint (ex: color, background, visibility) | 1  |
+| Le nombre ...                                                                                             | est inférieur ou égal à |
+| --------------------------------------------------------------------------------------------------------- | :---------------------: |
+| de modifications n'affectant pas le layout et occasionnant un repaint (ex: color, background, visibility) |            1            |

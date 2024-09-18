@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   74    |  89  |  91  |  93  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   74    | 89  | 91  | 93  |     |
 
 RGESN : N/A
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       4        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Stockage  |
+|        Ressources Economisées        |
+| :----------------------------------: |
+| Processeur / Mémoire vive / Stockage |
 
 ### Description
 
@@ -34,6 +34,6 @@ Privilégier une installation « manuelle » du serveur (LAMP + CMS, par exemple
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de services non nécessaires au fonctionnement du site exécutés sur le système d'exploitation  |  0 |
+| Le nombre ...                                                                                | est inférieur ou égal à |
+| -------------------------------------------------------------------------------------------- | :---------------------: |
+| de services non nécessaires au fonctionnement du site exécutés sur le système d'exploitation |            0            |

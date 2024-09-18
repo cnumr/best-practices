@@ -1,27 +1,28 @@
 ## Usar una caché HTTP
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  72	| 103  | 99  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   72    | 103 | 99  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Administrador de sistemas |
+| Ciclo de vida | Partes |        Responsable        |
+| :-----------: | :----: | :-----------------------: |
+| 4. Producción |  Red   | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 5 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         5         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ RAM  |
+| :----------------: |
+|  Procesador/ RAM   |
 
 ### Descripción
 
@@ -33,8 +34,6 @@ El uso de un proxy reverso especializado como Varnish reduce drásticamente el t
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| portadas no identificadas HTTP | 0  |
-
-
+| El número ..                   | es inferior o igual a |
+| ------------------------------ | :-------------------: |
+| portadas no identificadas HTTP |           0           |

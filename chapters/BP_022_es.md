@@ -1,27 +1,28 @@
 ## Limitar el número de CSS
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   10   | 25  | 22  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   10    | 25  | 22  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red/ Consultas  |
+| Recursos ahorrados |
+| :----------------: |
+|   Red/ Consultas   |
 
 ### Descripción
 
@@ -43,8 +44,6 @@ Si es necesario, se pueden cargar archivos CSS para algunos componentes en funci
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de archivos CSS  | 10  |
-
-
+| El número ..    | es inferior o igual a |
+| --------------- | :-------------------: |
+| de archivos CSS |          10           |

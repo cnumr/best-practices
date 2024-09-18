@@ -1,27 +1,28 @@
 ## Reducir al máximo el repaint (appearence) y el reflow (layout)
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2 | V3 | V4 |
-|:-------:|:----:|:----:|:----:|
-|  42   | 45  | 43   | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   42    | 45  | 43  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
+|              Ciclo de vida               |      Partes      |            Responsable             |
+| :--------------------------------------: | :--------------: | :--------------------------------: |
 | 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador   |
+| Recursos ahorrados |
+| :----------------: |
+|     Procesador     |
 
 ### Descripción
 
@@ -36,11 +37,8 @@ Para evitar el re?ow, hay que limitar los cambios en las propiedades de posició
 Para ir más lejos:
 https://developers.google.com/speed/articles/reflow
 
-
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de modificaciones que no afectan a la maquetación y dan lugar a un repaint (ej.: color, fondo, visibilidad) | 1  |
-
-
+| El número ..                                                                                                | es inferior o igual a |
+| ----------------------------------------------------------------------------------------------------------- | :-------------------: |
+| de modificaciones que no afectan a la maquetación y dan lugar a un repaint (ej.: color, fondo, visibilidad) |           1           |

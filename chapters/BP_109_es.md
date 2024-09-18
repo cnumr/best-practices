@@ -1,27 +1,28 @@
 ## Limitar los correos electrónicos pesados y redundantes
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   102   | 110  | 109  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   102   | 110 | 109 |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 5. Uso | Usuario/Terminal | Usuario |
+| Ciclo de vida |      Partes      | Responsable |
+| :-----------: | :--------------: | :---------: |
+|    5. Uso     | Usuario/Terminal |   Usuario   |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Red/ Consultas  |
+|     Recursos ahorrados     |
+| :------------------------: |
+| Procesador/ Red/ Consultas |
 
 ### Descripción
 
@@ -45,8 +46,6 @@ Gestión de clientes:
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de correos electrónicos con archivo adjunto  | 0  |
-
-
+| El número ..                                | es inferior o igual a |
+| ------------------------------------------- | :-------------------: |
+| de correos electrónicos con archivo adjunto |           0           |

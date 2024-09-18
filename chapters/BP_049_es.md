@@ -1,27 +1,28 @@
 ## Almacenar en caché los objetos a los que se accede con frecuencia en JavaScript
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2 | V3 | V4 |
-|:-------:|:----:|:----:|:----:|
-| 33   | 36  | 49   | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   33    | 36  | 49  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador   |
+| Recursos ahorrados |
+| :----------------: |
+|     Procesador     |
 
 ### Descripción
 
@@ -30,21 +31,22 @@ El acceso al DOM (Document Object Model) es costoso en términos de recursos de 
 ### Ejemplo
 
 No escriba lo siguiente:
+
 ```javascript
-document.getElementById('menú'). property1 = 'foo'; document.getElementById('menú').property2 = 'bar';
+document.getElementById("menú").property1 = "foo";
+document.getElementById("menú").property2 = "bar";
 ```
 
 sino más bien:
+
 ```javascript
-var mmenu = document.getElementById('menú');
-menú.property1 = 'foo';
-menú.property2 = 'Bar'
+var mmenu = document.getElementById("menú");
+menú.property1 = "foo";
+menú.property2 = "Bar";
 ```
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de datos constantes (o no volátiles) recuperados varias veces sin ser almacenados en caché  | 0  |
-
-
+| El número ..                                                                               | es inferior o igual a |
+| ------------------------------------------------------------------------------------------ | :-------------------: |
+| de datos constantes (o no volátiles) recuperados varias veces sin ser almacenados en caché |           0           |

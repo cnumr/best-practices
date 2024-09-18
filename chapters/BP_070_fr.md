@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   51    |  65  |  70  |  87  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   51    | 65  | 70  | 87  |     |
 
 RGESN : N/A
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 3 | 2 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         2         |       3        |         2         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Processeur / Stockage   |
+| Ressources Economisées |
+| :--------------------: |
+| Processeur / Stockage  |
 
 ### Description
 
@@ -31,27 +31,38 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 ### Exemple
 
 Éviter :
+
 ```html
 <html>
-     <body>
-         <form method="post" accept-charset="utf-8">
-             <label>
-                 First Name
-                 <input type="text" name="ﬁrst_name" value="<?php print $_POST['ﬁrst_name'] ?>" placeholder="">
-            </label>     
-             <label>
-                  Last Name
-                  <input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
-             </label>     
-         </form>
-     </body>
+  <body>
+    <form method="post" accept-charset="utf-8">
+      <label>
+        First Name
+        <input
+          type="text"
+          name="ﬁrst_name"
+          value="<?php print $_POST['ﬁrst_name'] ?>"
+          placeholder=""
+        />
+      </label>
+      <label>
+        Last Name
+        <input
+          type="text"
+          name="last_name"
+          value="<?php print $_POST['last_name'] ?>"
+          placeholder=""
+        />
+      </label>
+    </form>
+  </body>
 </html>
 ```
-`$_POST['ﬁrst_name']` et `$_POST['last_name']` font générer des notices car ils ne sont pas nécessairement définis.
 
+`$_POST['ﬁrst_name']` et `$_POST['last_name']` font générer des notices car ils ne sont pas nécessairement définis.
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de warnings et notices en production | 0  |
+| Le nombre ...                        | est inférieur ou égal à |
+| ------------------------------------ | :---------------------: |
+| de warnings et notices en production |            0            |

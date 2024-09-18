@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   73   | 96  | 94  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   73    | 96  | 94  |     |     |
 
 RGESN : 6.7
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Réseau |
+| Ressources Economisées |
+| :--------------------: |
+|         Réseau         |
 
 ### Description
 
@@ -36,6 +36,6 @@ Les leaders du Web utilisent un domaine séparé pour servir les ressources stat
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de domaines servant des ressources statiques AVEC un cookie  | 1  |
+| Le nombre ...                                               | est inférieur ou égal à |
+| ----------------------------------------------------------- | :---------------------: |
+| de domaines servant des ressources statiques AVEC un cookie |            1            |

@@ -2,29 +2,29 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   102   | 110  | 109  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   102   | 110 | 109 |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Réseau / Requêtes  |
+|     Ressources Economisées     |
+| :----------------------------: |
+| Processeur / Réseau / Requêtes |
 
 ### Description
 
-Les e-mails sont sauvegardés et dupliqués sur les disques du fournisseur d'e-mail. 
+Les e-mails sont sauvegardés et dupliqués sur les disques du fournisseur d'e-mail.
 Il convient de raisonner l'envoi d'e-mail automatiques (ex: newsletters, gestion client, suivi de commande) en limitant leur nombre, les pièces jointes et le nombre de destinataires.
 
 ### Exemple
@@ -44,6 +44,6 @@ Gestion client:
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'emails avec pièce jointe  | 0  |
+| Le nombre ...              | est inférieur ou égal à |
+| -------------------------- | :---------------------: |
+| d'emails avec pièce jointe |            0            |

@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  46    | 98  | 96  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   46    | 98  | 96  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |           Responsable           |
+| :-----------: | :----: | :-----------------------------: |
 | 2. Conception | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Réseau / Stockage  |
+|            Ressources Economisées             |
+| :-------------------------------------------: |
+| Processeur / Mémoire vive / Réseau / Stockage |
 
 ### Description
 
@@ -34,6 +34,6 @@ De plus, certains CMS exécutent leur routine de recherche de contenu (dans la b
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de pages d'erreur dynamiques |  0 |
+| Le nombre ...                | est inférieur ou égal à |
+| ---------------------------- | :---------------------: |
+| de pages d'erreur dynamiques |            0            |

@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   47    | 62  | 64  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   47    | 62  | 64  |     |     |
 
 ### Categories
 
 | Life cycle |  Tiers  |         Responsible          |
-|:----------:|:-------:|:----------------------------:|
+| :--------: | :-----: | :--------------------------: |
 | 2. Design  | Network | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         4          |             3             |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                      Processor / RAM                      |
+| Saved resources |
+| :-------------: |
+| Processor / RAM |
 
 ### Description
 
-When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to avoid repeating these operations. 
+When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to avoid repeating these operations.
 Key-value type cache systems are designed to store this data. As they are generally stored entirely in RAM, they generate significant CPU cycles savings when the calculated data is used frequently..
 
 ### Examples
@@ -35,6 +35,6 @@ OAuth2 access tokens have expiration time. Caching tokens and their expiration t
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| non-volatile data that requires computation and accessed multiple times, but not stored in a cache system  |  0 |
+| The number of ...                                                                                         | is equal to or less than |
+| --------------------------------------------------------------------------------------------------------- | :----------------------: |
+| non-volatile data that requires computation and accessed multiple times, but not stored in a cache system |            0             |

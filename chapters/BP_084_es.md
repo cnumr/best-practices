@@ -1,27 +1,28 @@
 ## Favorecer HSTS Preload list a las redirecciones 301
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3  | V4  |
-|:-------:|:----:|:----:|:----:|
-|  1060	|   | 84  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|  1060   |     | 84  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Administrador de sistemas |
+| Ciclo de vida | Partes |        Responsable        |
+| :-----------: | :----: | :-----------------------: |
+| 4. Producción |  Red   | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red/ Consultas  |
+| :----------------: |
+|   Red/ Consultas   |
 
 ### Descripción
 
@@ -36,14 +37,13 @@ Es importante señalar que el registro de su dominio en htstpreload.org es rápi
 ### Ejemplo
 
 Ejemplo de configuración
+
 ```apacheconf
 Strict-Transport-Security: máx-age = 63072000; includeSubDomains; preload
 ```
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de no activación de HSTS  | 0  |
-
-
+| El número ..             | es inferior o igual a |
+| ------------------------ | :-------------------: |
+| de no activación de HSTS |           0           |

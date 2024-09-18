@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  | V3  |  V4  |
-|:-------:|:----:|:---:|:----:|
-|   72    |  103 | 99  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   72    | 103 | 99  |     |     |
 
 ### Categories
 
 |  Life cycle   |  Tiers  |     Responsible      |
-|:-------------:|:-------:|:--------------------:|
+| :-----------: | :-----: | :------------------: |
 | 4. Production | Network | System Administrator |
 
 ### Indications
 
-|      Priority      |      Implementation difficulty      | Ecological impact |
-|:------------------:|:-----------------------------------:|:-----------------:|
-|         4          |                  3                  |         5         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         5         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                      Processor / RAM                      |
+| Saved resources |
+| :-------------: |
+| Processor / RAM |
 
 ### Description
 
@@ -32,6 +32,6 @@ The use of a specialized reverse proxy like Varnish drastically reduces required
 
 ### Validation rule
 
-| The number of ...                     | is equal to or less than |  
-|---------------------------------------|:------------------------:|
+| The number of ...                     | is equal to or less than |
+| ------------------------------------- | :----------------------: |
 | HTTP headers without identified cache |            0             |

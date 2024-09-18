@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|      |   |   |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|         |     |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
-|  |  |  |
+| Cycle de vie | Tiers | Responsable |
+| :----------: | :---: | :---------: |
+|              |       |             |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    | 
-|-------------------|:-------------------------:|:---------------------:|
-|        |                  |                   | 
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| ----------------- | :------------: | :---------------: |
+|                   |                |                   |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
+|                  Ressources Economisées                  |
+| :------------------------------------------------------: |
+| Processeur / Mémoire vive / Stockage / Réseau / Requêtes |
 
 ### Description
 
@@ -36,6 +36,6 @@
 
 ### Principe de validation
 
-| Le nombre ... |     est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de ...    |  ... |
+| Le nombre ... | est inférieur ou égal à |
+| ------------- | :---------------------: |
+| de ...        |           ...           |

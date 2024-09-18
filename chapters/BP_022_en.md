@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   10   | 25  | 22  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   10    | 25  | 22  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |  Tiers  |         Responsible          |
+| :---------------: | :-----: | :--------------------------: |
 | 3. Implementation | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             4             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network / Queries  |
+|  Saved resources  |
+| :---------------: |
+| Network / Queries |
 
 ### Description
 
@@ -42,6 +42,6 @@ CSS files required for some components can be loaded depending on the context if
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |   
-|-------------------|:-------------------------:|
-| CSS files  | 10  |
+| The number of ... | is equal to or less than |
+| ----------------- | :----------------------: |
+| CSS files         |            10            |

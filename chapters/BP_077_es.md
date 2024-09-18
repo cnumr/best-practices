@@ -1,27 +1,28 @@
 ## Minificar archivos CSS, JavaScript, HTML y SVG
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2 | V3 | V4 |
-|:-------:|:----:|:----:|:----:|
-| 12  | 78  | 77 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   12    | 78  | 77  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+| 4. Producción |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red   |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -36,11 +37,8 @@ Existen diferentes herramientas para minificar como, por ejemplo:
 - HTML: htmlnano, HTMLMinifier
 - SVG: SVGO, minify-xml o equivalente
 
-
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de archivos CSS, JavaScript, HTML y SVG no minificados  | 0  |
-
-
+| El número ..                                           | es inferior o igual a |
+| ------------------------------------------------------ | :-------------------: |
+| de archivos CSS, JavaScript, HTML y SVG no minificados |           0           |

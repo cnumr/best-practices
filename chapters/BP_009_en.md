@@ -2,29 +2,29 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   180   |  9  |  9  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   180   |  9  |  9  |     |     |
 
 ### Categories
 
 |    Life cycle     |  Tiers  |      Responsible      |
-|:-----------------:|:-------:|:---------------------:|
+| :---------------: | :-----: | :-------------------: |
 | 3. Implementation | Network | Architect / Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
-|   4      |             3             |         4         |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
 | Ressources saved  |
-|:-----------------:|
+| :---------------: |
 | Réseau / Requêtes |
 
 ### Description
 
-The loading time of a page in the browser is correlated to the number of files that must be downloaded and to the size 
+The loading time of a page in the browser is correlated to the number of files that must be downloaded and to the size
 of these files.
 
 Depending on the server type, the number of requests can limit the number of pages that be served to the users. Decreasing the number of requests by page allows the reduction of the number of HTTP servers, and maybe of other components of the architecture, like databases and application servers.
@@ -35,10 +35,10 @@ can be performed on the application.
 
 ### Example
 
-Using a CSS sprite sheet (i.e., grouping all the small images in one bigger picture, then selecting the displayed one on the client side with CSS) to display the small flags in a language picker reduces the number of requests associated with  this feature.
+Using a CSS sprite sheet (i.e., grouping all the small images in one bigger picture, then selecting the displayed one on the client side with CSS) to display the small flags in a language picker reduces the number of requests associated with this feature.
 
 ### Validation rule
 
-| the number ... | is equal to or less than |  
-|----------------|:------------------------:|
+| the number ... | is equal to or less than |
+| -------------- | :----------------------: |
 | HTTP requests  |            40            |

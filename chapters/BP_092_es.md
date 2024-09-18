@@ -1,27 +1,28 @@
 ## Poner caches completamente en RAM (Opcode y Kvs)
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  85	| 90  | 92  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   85    | 90  | 92  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         2          |                    2                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Almacenamiento   |
+|     Recursos ahorrados     |
+| :------------------------: |
+| Procesador/ Almacenamiento |
 
 ### Descripción
 
@@ -34,13 +35,12 @@ Debido a que la memoria RAM es muy rápida en términos de acceso a lectura/escr
 ### Ejemplo
 
 Ejemplos de integración de caché RAM en Drupal:
- - integración de Memcache: https://drupal.org/project/memcache
- - integración de Varnish: https://drupal.org/project/varnish
+
+- integración de Memcache: https://drupal.org/project/memcache
+- integración de Varnish: https://drupal.org/project/varnish
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de caches no almacenados en RAM  | 0  |
-
-
+| El número ..                    | es inferior o igual a |
+| ------------------------------- | :-------------------: |
+| de caches no almacenados en RAM |           0           |

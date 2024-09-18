@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   2   | 12  | 11  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    2    | 12  | 11  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |           Responsable           |
+| :-----------: | :--------: | :-----------------------------: |
 | 2. Conception | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Réseau  |
+|       Ressources Economisées       |
+| :--------------------------------: |
+| Processeur / Mémoire vive / Réseau |
 
 ### Description
 
@@ -32,6 +32,6 @@ Le test de l’existence de nouvelles fonctions de ces extensions est un process
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'extensions d'un site reposant sur un CMS  | 3  |
+| Le nombre ...                              | est inférieur ou égal à |
+| ------------------------------------------ | :---------------------: |
+| d'extensions d'un site reposant sur un CMS |            3            |

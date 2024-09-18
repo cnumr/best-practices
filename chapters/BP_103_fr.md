@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   82    |  99  |  103 |  86  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   82    | 99  | 103 | 86  |     |
 
 RGESN : 7.2
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |           Responsable           |
+| :-----------: | :--------: | :-----------------------------: |
 | 4. Production | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         2         |       2        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Stockage  |
+|        Ressources Economisées        |
+| :----------------------------------: |
+| Processeur / Mémoire vive / Stockage |
 
 ### Description
 
@@ -46,6 +46,6 @@ Pour aller plus loin avec Logrotate, l’outil Linux dédié à la rotation des 
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|de logs sans durée maximale de rétention   | 0  |
+| Le nombre ...                            | est inférieur ou égal à |
+| ---------------------------------------- | :---------------------: |
+| de logs sans durée maximale de rétention |            0            |

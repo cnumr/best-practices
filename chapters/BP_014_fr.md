@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  114    | 52  | 14  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   114   | 52  | 14  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |           Responsable           |
+| :-----------: | :--------: | :-----------------------------: |
 | 2. Conception | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Stockage  |
+|        Ressources Economisées        |
+| :----------------------------------: |
+| Processeur / Mémoire vive / Stockage |
 
 ### Description
 
@@ -38,6 +38,6 @@ Côté backend, le découpage en microservices permet d'apporter un niveau de mo
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'architectures non modulaires | 0  |
+| Le nombre ...                  | est inférieur ou égal à |
+| ------------------------------ | :---------------------: |
+| d'architectures non modulaires |            0            |

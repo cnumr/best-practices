@@ -1,27 +1,28 @@
 ## Añadir encabezados Expires o Cache-Control
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   78   |  105 | 101  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   78    | 105 | 101 |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Administrador de sistemas |
+| Ciclo de vida | Partes |        Responsable        |
+| :-----------: | :----: | :-----------------------: |
+| 4. Producción |  Red   | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Red/ Memoria/ Consultas  |
+|         Recursos ahorrados          |
+| :---------------------------------: |
+| Procesador/ Red/ Memoria/ Consultas |
 
 ### Descripción
 
@@ -32,6 +33,7 @@ Idealmente, la vida útil de estos elementos debe ser lo más larga posible, par
 ### Ejemplo
 
 Aquí hay un ejemplo de configuración de los encabezados Expires y Cache-Control para el servidor web Apache:
+
 ```apacheconf
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
@@ -47,8 +49,6 @@ Aquí hay un ejemplo de configuración de los encabezados Expires y Cache-Contro
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de cabeceras que faltan Expires o Cache-Control  | 0 |
-
-
+| El número ..                                    | es inferior o igual a |
+| ----------------------------------------------- | :-------------------: |
+| de cabeceras que faltan Expires o Cache-Control |           0           |

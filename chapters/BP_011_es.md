@@ -1,27 +1,28 @@
 ## Promover un desarrollo personalizado para un CMS
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 2 | 12  | 11  |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    2    | 12  | 11  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Centro de dados | Arquitecto Software/Desarrollador |
+| Ciclo de vida |     Partes      |            Responsable            |
+| :-----------: | :-------------: | :-------------------------------: |
+|   2. Diseño   | Centro de dados | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Red  |
+|    Recursos ahorrados    |
+| :----------------------: |
+| Procesador/ Memoria/ Red |
 
 ### Descripción
 
@@ -33,8 +34,6 @@ La prueba de la existencia de nuevas funciones de estas extensiones es un proces
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de extensiones de un sitio basado en un CMS  | 3  |
-
-
+| El número ..                                | es inferior o igual a |
+| ------------------------------------------- | :-------------------: |
+| de extensiones de un sitio basado en un CMS |           3           |

@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   40    |  49 | 38  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   40    | 49  | 38  |     |     |
 
 ### Categories
 
 |    Life cycle     |  Tiers  |  Responsible   |
-|:-----------------:|:-------:|:--------------:|
+| :---------------: | :-----: | :------------: |
 | 3. Implementation | Network | UX/UI Designer |
 
 ### Indications
 
-| Priority  | Implementation difficulty  | Ecological impact |
-|:---------:|:--------------------------:|:-----------------:|
-|     4     |             3              |         4         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Network                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Network |
 
 ### Description
 
@@ -28,7 +28,7 @@ If your web page has one or more content zones with a high refresh rate, you sho
 To achieve this you can use several techniques, generally with Javascript : AJAX, Service Workers, Web Components, or custom developments.
 
 It is even possible to not include these parts in the HTTP response and to add them later with the Javascript described above.
-This architecture can be referred to as "component islands" or "islands architecture". 
+This architecture can be referred to as "component islands" or "islands architecture".
 On advantage is the ability to keep cache solutions for the "container" pages and to only reload the content parts that require it.
 
 ### Example
@@ -38,6 +38,6 @@ quick updates (news flash, weather data, stock market prices, sports results, et
 
 ### Validation rule
 
-| The number of ...                                       | is equal to or less than  |  
-|---------------------------------------------------------|:-------------------------:|
-| Content zones that can be partially updated but are not |             0             |
+| The number of ...                                       | is equal to or less than |
+| ------------------------------------------------------- | :----------------------: |
+| Content zones that can be partially updated but are not |            0             |

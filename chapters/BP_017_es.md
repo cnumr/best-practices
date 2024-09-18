@@ -1,34 +1,36 @@
 ## Elegir un formato de datos adecuado
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  113   | 54  | 17 |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   113   | 54  | 17  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Centro de datos| Arquitecto Software/Desarrollador |
+|              Ciclo de vida               |     Partes      |            Responsable            |
+| :--------------------------------------: | :-------------: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) | Centro de datos | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad  | ejecución  | impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | ejecución | impacto ecológico |
+| :----------------: | :-------: | :---------------: |
+|         4          |     3     |         4         |
 
-|Recursos Economizados   |
-|:----------------------------------------------------------:|
-CPU/ RAM/ Almacenamiento/ Red  |
+|     Recursos Economizados     |
+| :---------------------------: |
+| CPU/ RAM/ Almacenamiento/ Red |
 
 ### Descripción
 
 El tipo de datos utilizados para manipular y almacenar datos tiene un impacto significativo en el consumo de memoria y los ciclos de procesador necesarios durante la manipulación en base de datos, en el servidor de aplicaciones e incluso en el navegador (manipulación mediante JavaScript), así como en el espacio de almacenamiento necesario. Elegir un tipo de datos incorrecto provoca:
- - un derroche de memoria (por ejemplo, si se almacenan datos muy pequeños en una columna diseñada para almacenar grandes cantidades de datos);
- - problemas de rendimiento (será más rápido realizar una búsqueda en un número que en una cadena de caracteres).
-   
+
+- un derroche de memoria (por ejemplo, si se almacenan datos muy pequeños en una columna diseñada para almacenar grandes cantidades de datos);
+- problemas de rendimiento (será más rápido realizar una búsqueda en un número que en una cadena de caracteres).
+
 Idealmente, la elección del tipo de datos y su dimensionamiento deben basarse en el análisis de una muestra representativa de datos.
 
 ### Ejemplos
@@ -42,8 +44,6 @@ En el caso del almacenamiento de un identificador UUID, un almacenamiento de tex
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de campos de la base cuyo formato es inadecuado es  | 15%  |
-
-
+| El número ..                                       | es inferior o igual a |
+| -------------------------------------------------- | :-------------------: |
+| de campos de la base cuyo formato es inadecuado es |          15%          |

@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   86   |  80 | 78  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   86    | 80  | 78  |     |     |
 
 RGESN : 6.3
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 | Tiers  |           Responsable           |
+| :------------------------------------------: | :----: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 2 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       2        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Réseau  |
+| Ressources Economisées |
+| :--------------------: |
+|         Réseau         |
 
 ### Description
 
@@ -36,9 +36,9 @@ Pour utiliser `BROTLI` dans Nginx, il suffit d’ajouter la configuration suivan
 
 ```nginxconf
 # for compressing responses on-the-fly
-load_module modules/ngx_http_brotli_filter_module.so; 
+load_module modules/ngx_http_brotli_filter_module.so;
 # for serving pre-compressed files
-load_module modules/ngx_http_brotli_static_module.so; 
+load_module modules/ngx_http_brotli_static_module.so;
 
 http {
 	server {
@@ -52,6 +52,6 @@ Pour plus de détails sur l'installation et la configuration, voir https://githu
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de fichiers CSS, JavaScript,  HTML et SVG non compressés  |  0 |
+| Le nombre ...                                           | est inférieur ou égal à |
+| ------------------------------------------------------- | :---------------------: |
+| de fichiers CSS, JavaScript, HTML et SVG non compressés |            0            |

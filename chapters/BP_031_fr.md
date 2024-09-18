@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  8    | 15  | 31  |  61 |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    8    | 15  | 31  | 61  |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |        Tiers         |           Responsable           |
+| :------------------------------------------: | :------------------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 5 | 2 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       5        |         2         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur  |
+| Ressources Economisées |
+| :--------------------: |
+|       Processeur       |
 
 ### Description
 
@@ -33,6 +33,6 @@ https://validator.w3.org
 
 ### Principe de validation
 
-| Le nombre ...     | est égal à   |  
-|-------------------|:-------------------------:|
-| d'erreurs critiques  | 0  |
+| Le nombre ...       | est égal à |
+| ------------------- | :--------: |
+| d'erreurs critiques |     0      |

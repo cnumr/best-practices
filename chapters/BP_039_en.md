@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   810   | 48  | 39  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   810   | 48  | 39  |     |     |
 
 ### Categories
 
 | Life cycle |    Tiers    |  Responsible   |
-|:----------:|:-----------:|:--------------:|
+| :--------: | :---------: | :------------: |
 | 2. Design  | User/Device | UX/UI Designer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    4     |             3             |         5         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                      Processor / RAM                      |
+| Saved resources |
+| :-------------: |
+| Processor / RAM |
 
 ### Description
 
@@ -40,23 +40,24 @@ https://web.dev/animations-guide/
 
 ```css
 .box {
-     will-change: transform, opacity;
+  will-change: transform, opacity;
 }
 ```
+
 ### Alternative solution
 
 You can also let the users choose whether or not to play animations via the browser preferences and the through `prefers-reduced-motion` media queries. Animations will only be played if no preferences have been set by the user.
 
 ```css
-@media (prefers-reduced-motion: no-preference ) {
-   .animation {
-     animation: fadeIn 4s ease;
-   }
+@media (prefers-reduced-motion: no-preference) {
+  .animation {
+    animation: fadeIn 4s ease;
+  }
 }
 ```
 
 ### Validation rule
 
-| The number of ...            | is equal to or less than |  
-|------------------------------|:------------------------:|
+| The number of ...            | is equal to or less than |
+| ---------------------------- | :----------------------: |
 | JS / CSS animations per page |            2             |

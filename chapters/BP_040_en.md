@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   811   | 77  |  40 |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   811   | 77  | 40  |     |     |
 
 ### Categories
 
 | Life cycle |  Tiers  |         Responsible          |
-|:----------:|:-------:|:----------------------------:|
+| :--------: | :-----: | :--------------------------: |
 | 2. Design  | Network | Software Architect/Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    4     |             4             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                 Processor / RAM / Network                 |
+|      Saved resources      |
+| :-----------------------: |
+| Processor / RAM / Network |
 
 ### Description
 
@@ -38,11 +38,11 @@ Bundlers like Webpack allow the automatic removal of unused code. This is called
 
 ![img_1.png](img_1.png)
 
-Some frameworks (here Bootstrap) allow you to create custom libraries that only contain the parts actually used by the site, 
+Some frameworks (here Bootstrap) allow you to create custom libraries that only contain the parts actually used by the site,
 thus reducing libraries size and resources used during execution.
 
 ### Validation rule
 
-| The number of ...                | is equal to or less than |  
-|----------------------------------|:------------------------:|
+| The number of ...                | is equal to or less than |
+| -------------------------------- | :----------------------: |
 | used libraries with unused parts |            1             |

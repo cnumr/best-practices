@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   10   | 25  | 22  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   10    | 25  | 22  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 | Tiers  |           Responsable           |
+| :------------------------------------------: | :----: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+| Ressources Economisées |
+| :--------------------: |
+|   Réseau / Requêtes    |
 
 ### Description
 
@@ -42,6 +42,6 @@ Le cas échéant, des fichiers CSS pour certains composants peuvent être charg�
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de fichiers CSS  | 10  |
+| Le nombre ...   | est inférieur ou égal à |
+| --------------- | :---------------------: |
+| de fichiers CSS |           10            |

@@ -1,27 +1,28 @@
 ## Proponer tratamiento asíncrono cuando sea posible
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 112  | 8 | 8 |     |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   112   |  8  |  8  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+|   2. Diseño   |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Memoria/ Red/ Consultas   |
+|   Recursos ahorrados    |
+| :---------------------: |
+| Memoria/ Red/ Consultas |
 
 ### Descripción
 
@@ -38,8 +39,6 @@ En el caso de un servicio en línea de conversión de documentos de oficina, hac
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de tratamientos síncronos que tardan más de un minuto | 0  |
-
-
+| El número ..                                          | es inferior o igual a |
+| ----------------------------------------------------- | :-------------------: |
+| de tratamientos síncronos que tardan más de un minuto |           0           |

@@ -1,27 +1,28 @@
 ## Respetar el principio de navegación rápida en el historial (de navegación)
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   28   | 5  | 7 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   28    |  5  |  7  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Usuario/Terminal | UX/UI Designer |
+| Ciclo de vida |      Partes      |  Responsable   |
+| :-----------: | :--------------: | :------------: |
+|   2. Diseño   | Usuario/Terminal | UX/UI Designer |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    4                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-|Procesador/ Red   |
+| Recursos ahorrados |
+| :----------------: |
+|  Procesador/ Red   |
 
 ### Descripción
 
@@ -41,20 +42,19 @@ y/o que inutilizaría la página después de abandonarla
 ### Ejemplo
 
 Evitar:
- - las acciones cuando se sale de la página (eventos `unload` o `beforeunload`, preferir `pagehide` si es realmente necesario)
- - los enlaces que abran nuevas fichas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
- - dejar abiertas las conexiones (IndexedDB, `fetch()` o xmlhttprequest, Web Sockets, etc.) cuando el usuario sale de la página
+
+- las acciones cuando se sale de la página (eventos `unload` o `beforeunload`, preferir `pagehide` si es realmente necesario)
+- los enlaces que abran nuevas fichas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
+- dejar abiertas las conexiones (IndexedDB, `fetch()` o xmlhttprequest, Web Sockets, etc.) cuando el usuario sale de la página
 
 Utilizar los eventos `pageshow` y/o `pagehide` para restablecer los elementos que lo requieran, por ejemplo, reactivar los botones de formulario que se desactivan durante el envío o eliminar información sensible (como contraseñas), o para cerrar/volver a abrir conexiones persistentes.
 
 Fuente:
-* https://web.dev/bfcache/ (contenido con licencia CC BY 4.0 - _Back/forward cache_ por Philip Walton)
 
+- https://web.dev/bfcache/ (contenido con licencia CC BY 4.0 - _Back/forward cache_ por Philip Walton)
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de páginas no admisibles en el _bfcache_  | 0% |
-
-
+| El número ..                             | es inferior o igual a |
+| ---------------------------------------- | :-------------------: |
+| de páginas no admisibles en el _bfcache_ |          0%           |

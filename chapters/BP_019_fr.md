@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT | V2 | V3 | V4 | V5 |
-|:-------:|:--:|:--:|:--:|:--:|
-|   910   |    | 19 | 59 |    |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   910   |     | 19  | 59  |     |
 
 RGESN : 2.10
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |        Tiers         |  Responsable   |
+| :------------------------------------------: | :------------------: | :------------: |
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+| Ressources Economisées |
+| :--------------------: |
+|   Réseau / Requêtes    |
 
 ### Description
 
@@ -34,16 +34,19 @@ Cette bonne pratique ne se limite pas aux réseaux sociaux !
 On peut ajouter un bouton qui ouvre une pop-up de partage comme le font les boutons officiels, par exemple avec le code suivant :
 
 ```html
-<button type = "button" onclick = "window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
-    Je partage cette page sur Facebook
+<button
+  type="button"
+  onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')"
+>
+  Je partage cette page sur Facebook
 </button>
 ```
+
 Pour aller plus loin :
 https://www.nuweb.fr/736
 
-
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de bibliothèques externes  | 0  |
+| Le nombre ...             | est inférieur ou égal à |
+| ------------------------- | :---------------------: |
+| de bibliothèques externes |            0            |

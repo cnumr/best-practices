@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  43    | 43  | 41  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   43    | 43  | 41  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |        Tiers         |           Responsable           |
+| :------------------------------------------: | :------------------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur  |
+| Ressources Economisées |
+| :--------------------: |
+|       Processeur       |
 
 ### Description
 
@@ -30,18 +30,18 @@ en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments 
 ### Exemple
 
 Éviter :
+
 ```html
 <script>
-    // Notation jQuery
-    $('a.extlink').each(function(el) {
-        $(el).attr('rel','external nofollow');
-    });
+  // Notation jQuery
+  $("a.extlink").each(function (el) {
+    $(el).attr("rel", "external nofollow");
+  });
 </script>
 ```
 
-
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversée par un code JavaScript  | 0  |
+| Le nombre ...                                                                                            | est inférieur ou égal à |
+| -------------------------------------------------------------------------------------------------------- | :---------------------: |
+| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversée par un code JavaScript |            0            |

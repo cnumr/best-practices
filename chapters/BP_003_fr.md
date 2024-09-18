@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  | 
-|:-------:|:----:|:----:|:----:|:----:|
-|   111   | 3  | 3  |      |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   111   |  3  |  3  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |        Tiers         |  Responsable   |
+| :-----------: | :------------------: | :------------: |
 | 2. Conception | Utilisateur/Terminal | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 5 | 4 | 5 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         5         |       4        |         5         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
+|                  Ressources Economisées                  |
+| :------------------------------------------------------: |
+| Processeur / Mémoire vive / Stockage / Réseau / Requêtes |
 
 ### Description
 
@@ -32,14 +32,13 @@ Le temps passé par l'utilisateur sur son terminal est le deuxième poste en ter
 
 ### Exemple
 
-* Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
-* Acheter sans inscription sur un site d'e-commerce.
-* Copier/Coller son RIB directement plutôt que le télécharger puis le transférer.
-* Mettre en avant les champs ou les filtres les plus utilisés.
-
+- Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
+- Acheter sans inscription sur un site d'e-commerce.
+- Copier/Coller son RIB directement plutôt que le télécharger puis le transférer.
+- Mettre en avant les champs ou les filtres les plus utilisés.
 
 ### Principe de validation
 
-|  Le nombre de | est inférieur à ou égal à  |  
-|-------------------|:-------------------------:|
-| points de friction | 0 |
+| Le nombre de       | est inférieur à ou égal à |
+| ------------------ | :-----------------------: |
+| points de friction |             0             |

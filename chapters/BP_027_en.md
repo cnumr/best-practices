@@ -1,26 +1,26 @@
-## Provide a print CSS 
+## Provide a print CSS
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   16   | 30  | 27  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   16    | 30  | 27  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |    Tiers    |  Responsible   |
+| :---------------: | :---------: | :------------: |
 | 3. Implementation | User/Device | UX/UI Designer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             4             |         3         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network  |
+| Saved resources |
+| :-------------: |
+|     Network     |
 
 ### Description
 
@@ -29,6 +29,7 @@ In addition to the service provided to the Internet user, print CSS stylesheets 
 ### Example
 
 This print CSS "cleans" the displayed pages in order to provide a refined print design:
+
 ```css
 bodysuit {
 background-color:#ﬀf; font-family :Serif; font-size:15pt;
@@ -46,6 +47,6 @@ text-indent:0; line height: 25pt; font-size:25pt;
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-| missing print CSS  |  1 |
+| The number of ... | is equal to or less than |
+| ----------------- | :----------------------: |
+| missing print CSS |            1             |

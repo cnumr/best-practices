@@ -2,24 +2,24 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  96    | 60  | 60  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   96    | 60  | 60  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       4        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
+|            Ressources Economisées             |
+| :-------------------------------------------: |
 | Processeur / Mémoire vive / Réseau / Stockage |
 
 ### Description
@@ -29,12 +29,13 @@ Adapter et optimiser les sons en dehors du site web. Cette mesure permet d’éc
 ### Exemple
 
 Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
- - 7 Mo de bande passante lors de l’envoi ;
- - 100 Ko lors de l’écoute du résultat ;
- - 6,9 Mo de stockage sur le disque dur du serveur.
+
+- 7 Mo de bande passante lors de l’envoi ;
+- 100 Ko lors de l’écoute du résultat ;
+- 6,9 Mo de stockage sur le disque dur du serveur.
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de fichiers sonores encodés directement par le CMS  | 0  |
+| Le nombre ...                                      | est inférieur ou égal à |
+| -------------------------------------------------- | :---------------------: |
+| de fichiers sonores encodés directement par le CMS |            0            |

@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   77    | 94  | 97  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   77    | 94  | 97  |     |     |
 
 ### Categories
 
 |  Life cycle   |   Tiers    |     Responsible      |
-|:-------------:|:----------:|:--------------------:|
+| :-----------: | :--------: | :------------------: |
 | 4. Production | Datacenter | System Administrator |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    3     |             3             |         4         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|                      Processor / RAM                      |
+| Saved resources |
+| :-------------: |
+| Processor / RAM |
 
 ### Description
 
@@ -37,9 +37,8 @@ To go further:
 https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
 https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use
 
-
 ### Validation rule
 
-| The number of ...               | is equal to or less than |  
-|---------------------------------|:------------------------:|
+| The number of ...               | is equal to or less than |
+| ------------------------------- | :----------------------: |
 | synchronous application servers |            1             |

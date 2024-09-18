@@ -2,29 +2,30 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  5    | 6  | 5  |      |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    5    |  6  |  5  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |        Tiers         |  Responsable   |
+| :-----------: | :------------------: | :------------: |
 | 2. Conception | Utilisateur/Terminal | UX/UI Designer |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Processeur / Mémoire vive / Réseau   |
+|       Ressources Economisées       |
+| :--------------------------------: |
+| Processeur / Mémoire vive / Réseau |
 
 ### Description
 
 Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
+
 - les besoins de l'utilisateur (voir la bonne pratique "Optimiser le parcours utilisateur")
 - les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
 - les contraintes techniques
@@ -39,6 +40,6 @@ Certains sites contiennent des images encadrées, non contrastées et non lisibl
 
 ### Principe de validation
 
-| Le nombre ...     | est égal à   |  
-|-------------------|:-------------------------:|
-|   de pages dont le design nécessite une explication |  0 |
+| Le nombre ...                                     | est égal à |
+| ------------------------------------------------- | :--------: |
+| de pages dont le design nécessite une explication |     0      |

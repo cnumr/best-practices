@@ -1,27 +1,28 @@
 ## Usar una CDN
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  75	| 102  | 98  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   75    | 102 | 98  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ RAM  |
+| :----------------: |
+|  Procesador/ RAM   |
 
 ### Descripción
 
@@ -35,8 +36,6 @@ Utilizar las CDN proporcionadas por Google que alojan las diferentes bibliotecas
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de recursos servidos (ficheros) sin utilizar una CDN | 25%  |
-
-
+| El número ..                                         | es inferior o igual a |
+| ---------------------------------------------------- | :-------------------: |
+| de recursos servidos (ficheros) sin utilizar una CDN |          25%          |

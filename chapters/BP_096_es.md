@@ -1,27 +1,28 @@
 ## Mostrar páginas de error estáticas
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  46	| 98  | 96  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   46    | 98  | 96  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
-| 2. Diseño | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+|   2. Diseño   |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         3         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-CPU/ RAM/ Red/ Almacenamiento  |
+|      Recursos ahorrados       |
+| :---------------------------: |
+| CPU/ RAM/ Red/ Almacenamiento |
 
 ### Descripción
 
@@ -35,7 +36,6 @@ Evitar las páginas 404 dinámicas, que se personalizan en función del contenid
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
+| El número ..                     | es inferior o igual a |
+| -------------------------------- | :-------------------: |
 | de páginas dinámicas de error; 0 |
-

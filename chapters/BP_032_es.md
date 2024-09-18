@@ -1,27 +1,28 @@
 ## Externalizar CSS y JavaScript
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 7 | 16 | 32 | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    7    | 16  | 32  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|-------------------|:-------------------------:|:---------------------:|
-| 4 | 4 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| ------------------ | :--------------------------------------: | :---------------: |
+| 4                  |                    4                     |         4         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red  |
+| Recursos ahorrados |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -33,22 +34,25 @@ En cambio, si los códigos CSS y JavaScript se incluyen en sus propios archivos,
 ### Ejemplo
 
 En el código HTML, no escribir:
+
 ```html
 <style type="text/css" media="screen">
-	p { color: #333; margin: 2px 0 }
-	/* Todas las declaraciones CSS del sitio */
+  p {
+    color: #333;
+    margin: 2px 0;
+  }
+  /* Todas las declaraciones CSS del sitio */
 </style>
 ```
 
 sino más bien:
+
 ```html
-<link href="css/styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet" />
 ```
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| URL que incorporan una cantidad y/ o número significativo de código CSS/ Javascript (inline)   | 2  |
-
-
+| El número ..                                                                                 | es inferior o igual a |
+| -------------------------------------------------------------------------------------------- | :-------------------: |
+| URL que incorporan una cantidad y/ o número significativo de código CSS/ Javascript (inline) |           2           |

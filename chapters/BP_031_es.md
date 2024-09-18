@@ -1,27 +1,28 @@
 ## Validar las páginas con el W3C
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 8  | 15 | 31  Ê   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    8    | 15  | 31  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
+|              Ciclo de vida               |      Partes      |            Responsable             |
+| :--------------------------------------: | :--------------: | :--------------------------------: |
 | 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | Arquitecto Software/ Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|-------------------|:-------------------------:|:---------------------:|
-| 3 | 5 | 2 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| ------------------ | :--------------------------------------: | :---------------: |
+| 3                  |                    5                     |         2         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador  |
+| Recursos ahorrados |
+| :----------------: |
+|     Procesador     |
 
 ### Descripción
 
@@ -35,8 +36,6 @@ https://validator.w3.org
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de errores críticos  | 0  |
-
-
+| El número ..        | es inferior o igual a |
+| ------------------- | :-------------------: |
+| de errores críticos |           0           |

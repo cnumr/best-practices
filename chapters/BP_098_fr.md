@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  75    | 102  | 98  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   75    | 102 | 98  |     |     |
 
 RGESN : 3.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  Ressources Economisées   |
+| :-----------------------: |
+| Processeur / Mémoire vive |
 
 ### Description
 
@@ -36,6 +36,6 @@ Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèqu
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de ressources servies (fichiers) sans utiliser un CDN | 25%  |
+| Le nombre ...                                         | est inférieur ou égal à |
+| ----------------------------------------------------- | :---------------------: |
+| de ressources servies (fichiers) sans utiliser un CDN |           25%           |

@@ -2,32 +2,33 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  113    | 54  | 17  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   113   | 54  | 17  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |   Tiers    |         Responsible          |
+| :---------------: | :--------: | :--------------------------: |
 | 3. Implementation | Datacenter | Software Architect/Developer |
 
 ### Indicators
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Processor / RAM / Storage / Network  |
+|           Saved resources           |
+| :---------------------------------: |
+| Processor / RAM / Storage / Network |
 
 ### Description
 
 Data formats used to manipulate and store data have a significant impact on memory consumption and processor cycles required for database manipulations on application servers level and even in browsers (manipulation via JavaScript) as well as on required storage space. Choosing inappropriate data formats can result in:
- - memory waste (if you store very small data in columns designed to store large amounts of data for example) ;
- - performance issues (it is faster to search for a number than a string of characters).
-   
+
+- memory waste (if you store very small data in columns designed to store large amounts of data for example) ;
+- performance issues (it is faster to search for a number than a string of characters).
+
 Data format choice and appropriate sizing should ideally be based on a representative sample of data analysis.
 
 ### Examples
@@ -41,6 +42,6 @@ In the case of UUID identifiers storage, textual storage will not be appropriate
 
 ### Validation rule
 
-| The number of ...                            | is inferior to or equals   |  
-|----------------------------------------------|:-------------------------:|
-| database fields with an innapropriate format | 15%  |
+| The number of ...                            | is inferior to or equals |
+| -------------------------------------------- | :----------------------: |
+| database fields with an innapropriate format |           15%            |

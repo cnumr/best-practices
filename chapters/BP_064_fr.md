@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  47    | 62  | 64  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   47    | 62  | 64  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |           Responsable           |
+| :-----------: | :----: | :-----------------------------: |
 | 2. Conception | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive |
+|  Ressources Economisées   |
+| :-----------------------: |
+| Processeur / Mémoire vive |
 
 ### Description
 
@@ -35,6 +35,6 @@ Les jetons d'accès en OAuth2 sont associés à une date d'expiration. Mettre en
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  0 |
+| Le nombre ...                                                                                                | est inférieur ou égal à |
+| ------------------------------------------------------------------------------------------------------------ | :---------------------: |
+| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache |            0            |

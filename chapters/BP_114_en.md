@@ -2,9 +2,9 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   92    | 115 | 114 |     |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   92    | 115 | 114 |     |     |
 
 ### Categories
 
@@ -42,6 +42,6 @@ Most cases should be covered with 3 different sizes x 3 different encodings, i.e
 
 ### Validation rule
 
-| The number of ...                                                                                      | is equal to or less than |
-| ------------------------------------------------------------------------------------------------------ | :----------------------: |
+| The number of ...                                                                                    | is equal to or less than |
+| ---------------------------------------------------------------------------------------------------- | :----------------------: |
 | videos with a definition of 1080p or higher displayed on the website when the device is a smartphone |            0             |

@@ -1,27 +1,28 @@
 ## Usar un servidor asíncrono
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  77	| 94  | 97  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   77    | 94  | 97  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ RAM  |
+| :----------------: |
+|  Procesador/ RAM   |
 
 ### Descripción
 
@@ -34,12 +35,11 @@ Mientras que la mayoría de los servidores web aumentan el consumo de memoria RA
 NGINX tiene la reputación de ser más eficiente que Apache. Así, puede servir 2,1 veces más consultas por segundo que este servidor.
 
 Para ir más lejos:
- - https:///nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
- 
+
+- https:///nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
+
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de servidores de aplicaciones sincronizados  | 1  |
-
-
+| El número ..                                | es inferior o igual a |
+| ------------------------------------------- | :-------------------: |
+| de servidores de aplicaciones sincronizados |           1           |

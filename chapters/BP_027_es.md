@@ -1,27 +1,28 @@
 ## Proporcionar una CSS para imprimir
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   16   | 30  | 27  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   16    | 30  | 27  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
+|              Ciclo de vida               |      Partes      |   Responsable   |
+| :--------------------------------------: | :--------------: | :-------------: |
 | 3. Realización (fabricación/ desarrollo) | Usuario/Terminal | UX/UI Diseñador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 4 | 3 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    4                     |         3         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red  |
+| Recursos ahorrados |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -30,6 +31,7 @@ Además del servicio al usuario, esta hoja de estilos reduce el número de pági
 ### Ejemplo
 
 Esta CSS print «limpia» la página mostrada en la pantalla para ofrecer una impresión despejada:
+
 ```css
 body {
 background-color:#?f; font-family:Serif; font-size:15pt;
@@ -47,8 +49,6 @@ text-indent:0; line-height:25pt; font-size:25pt;
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de CSS para imprimir faltante | 1 |
-
-
+| El número ..                  | es inferior o igual a |
+| ----------------------------- | :-------------------: |
+| de CSS para imprimir faltante |           1           |

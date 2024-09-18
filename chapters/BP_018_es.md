@@ -1,27 +1,28 @@
 ## Limitar el número de dominios que sirven a los recursos
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   170   | 55  | 18  | |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   170   | 55  | 18  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 4. Producción | Red | Arquitecto Software/Desarrollador |
+| Ciclo de vida | Partes |            Responsable            |
+| :-----------: | :----: | :-------------------------------: |
+| 4. Producción |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         4         |
 
-|Recursos Economizados   |
-|:----------------------------------------------------------:|
-| Consultas  |
+| Recursos Economizados |
+| :-------------------: |
+|       Consultas       |
 
 ### Descripción
 
@@ -34,16 +35,14 @@ para evitar tener que llevar una o más cookies a cada GET HTTP del navegador. S
 ### Ejemplo
 
 Para un sitio web institucional de alto tráfico, se dará prioridad a dos subdominios:
- - el servidor de aplicaciones en www.dominio.tld;
- - el servidor multimedia «cookie-less» en media.dominio.tld.
+
+- el servidor de aplicaciones en www.dominio.tld;
+- el servidor multimedia «cookie-less» en media.dominio.tld.
 
 Esto limita el número de dominios y evita el envío innecesario de una cookie por cada GET HTTP en un recurso estático.
 
-
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| El número de dominios que sirven a los recursos   | 5 |
-
-
+| El número ..                                    | es inferior o igual a |
+| ----------------------------------------------- | :-------------------: |
+| El número de dominios que sirven a los recursos |           5           |

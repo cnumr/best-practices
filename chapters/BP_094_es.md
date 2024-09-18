@@ -1,27 +1,28 @@
 ## Hospedar recursos (CSS/JS) en un dominio sin cookies
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   73   | 96  | 94  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   73    | 96  | 94  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+| Ciclo de vida |     Partes      |        Responsable        |
+| :-----------: | :-------------: | :-----------------------: |
 | 4. Producción | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         3          |                    3                     |         4         |
 
 | Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Red |
+| :----------------: |
+|        Red         |
 
 ### Descripción
 
@@ -34,8 +35,6 @@ Los líderes web utilizan un dominio separado para servir a los recursos estáti
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de dominios que sirven recursos estáticos CON cookie  | 1  |
-
-
+| El número ..                                         | es inferior o igual a |
+| ---------------------------------------------------- | :-------------------: |
+| de dominios que sirven recursos estáticos CON cookie |           1           |

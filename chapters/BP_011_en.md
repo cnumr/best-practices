@@ -2,24 +2,24 @@
 
 ### Identifiants
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   2     | 12  | 11  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|    2    | 12  | 11  |     |     |
 
 ### Categories
 
 | Life cycle |   Tiers    |      Responsible      |
-|:----------:|:----------:|:---------------------:|
+| :--------: | :--------: | :-------------------: |
 | 2. Design  | Datacenter | Architect / Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    3     |             3             |         3         |
 
 |     Ressources saved      |
-|:-------------------------:|
+| :-----------------------: |
 | Processor / RAM / Network |
 
 ### Description
@@ -34,6 +34,6 @@ Using too many extensions can slow down the site.
 
 ### Validation rule
 
-| The number of ...                |  is equal to or less than  |  
-|----------------------------------|:--------------------------:|
-| extensions of a site using a CMS |             3              |
+| The number of ...                | is equal to or less than |
+| -------------------------------- | :----------------------: |
+| extensions of a site using a CMS |            3             |

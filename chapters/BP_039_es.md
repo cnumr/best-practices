@@ -1,27 +1,28 @@
 ## Evitar animaciones JavaScript/ CSS
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT | V2  | V3 | V4  |
-|:-------:|:----:|:----:|:----:|
-|   810   | 48  | 39  |  |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   810   | 48  | 39  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 2. Diseño | Usuario/Terminal | Diseñador UX/UI |
+| Ciclo de vida |      Partes      |   Responsable   |
+| :-----------: | :--------------: | :-------------: |
+|   2. Diseño   | Usuario/Terminal | Diseñador UX/UI |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 5 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         5         |
 
-|Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria RAM  |
+|   Recursos ahorrados    |
+| :---------------------: |
+| Procesador/ Memoria RAM |
 
 ### Descripción
 
@@ -39,25 +40,24 @@ https://web.dev/animations-guide/
 
 ```css
 .box {
-	will-change: transform, opacity;
+  will-change: transform, opacity;
 }
 ```
+
 ### Solución alternativa
 
 También puede dejar que sus usuarios elijan, a través de las preferencias de sus navegadores y la media query `prefers-reduced-motion`, si quieren o no reproducir la animación. La animación solo se reproduce si el usuario no ha definido ninguna preferencia.
 
 ```css
-@media (prefers-reduced-motion: no-preference ) {
+@media (prefers-reduced-motion: no-preference) {
   . animación {
-	animación: fadein 4s Ease;
+    animación: fadein 4s Ease;
   }
 }
 ```
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de animaciones JS/ CSS por página  | 2 |
-
-
+| El número ..                      | es inferior o igual a |
+| --------------------------------- | :-------------------: |
+| de animaciones JS/ CSS por página |           2           |

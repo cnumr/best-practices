@@ -2,29 +2,30 @@
 
 ### Identifiers
 
-| GreenIT |  V2  | V3  |  V4  |
-|:-------:|:----:|:---:|:----:|
-|   20    | 18   | 30  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   20    | 18  | 30  |     |     |
 
 ### Categories
 
 |    Life cycle     |  Tiers  |  Responsible   |
-|:-----------------:|:-------:|:--------------:|
+| :---------------: | :-----: | :------------: |
 | 3. Implementation | Network | UX/UI Designer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|       Saved resources        |
-|:----------------------------:|
-| Storage / Network / Queries  |
+|       Saved resources       |
+| :-------------------------: |
+| Storage / Network / Queries |
 
 ### Description
 
 Glyphs are specific typographic characters included in fonts, like those included in operating systems. They can be used to replace monochrome images such as symbols or pictograms (chevron, triangle, point, square, astrological signs, etc.) up to illustrations allowing to:
+
 - Reduce bandwidth by reducing the website total size
 - Reduce the number of requests
 - Reduce the DOM complexity, especially with many SVG pictograms
@@ -39,6 +40,6 @@ To go further: [https://coding.smashingmagazine.com/2011/03/19/styling-elements-
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   | 
-|-------------------|:-------------------------:|
-| images that should have been replaced by glyphs (font symbol)  | 0  |
+| The number of ...                                             | is equal to or less than |
+| ------------------------------------------------------------- | :----------------------: |
+| images that should have been replaced by glyphs (font symbol) |            0             |

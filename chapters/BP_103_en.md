@@ -2,9 +2,9 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  | V4  |
-| :-----: | :-: | :-: | :-: |
-|   82    | 99  | 103 |     |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   82    | 99  | 103 |     |     |
 
 ### Categories
 
@@ -41,5 +41,5 @@ CustomLog /var/log/apache/access.log combined env=!dontlog
 ### Validation rule
 
 | The number of ...                             | is equal to or less than |
-|-----------------------------------------------| :----------------------: |
+| --------------------------------------------- | :----------------------: |
 | logs files without a maximum a retention time |            0             |

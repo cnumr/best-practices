@@ -1,27 +1,28 @@
 ## Preferir CSS a imágenes
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 11   | 26 | 23  |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   11    | 26  | 23  |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable  |
-|:---------:|:----:|:----:|
-| 3. Realización (fabricación/ desarrollo) | Red | Arquitecto Software/Desarrollador |
+|              Ciclo de vida               | Partes |            Responsable            |
+| :--------------------------------------: | :----: | :-------------------------------: |
+| 3. Realización (fabricación/ desarrollo) |  Red   | Arquitecto Software/Desarrollador |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         4          |                    3                     |         4         |
 
-|Recursos Economizados   |
-|:----------------------------------------------------------:|
-| Red/ Consultas  |
+| Recursos Economizados |
+| :-------------------: |
+|    Red/ Consultas     |
 
 ### Descripción
 
@@ -32,25 +33,21 @@ Utilizar las propiedades CSS en lugar de imágenes. De hecho, el peso de una hoj
 Hay que gestionar con CSS las esquinas redondeadas de las casillas y no con imágenes.
 
 Preferir la escritura:
+
 ```css
 #frame {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 ```
 
 ```html
 <div id="marco">
-	<p>
-	Lorem ipsum Dolor sit Amet, consectetur adipiscing Elit.
-	</p>
+  <p>Lorem ipsum Dolor sit Amet, consectetur adipiscing Elit.</p>
 </div>
 ```
 
-
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| de imágenes que podrían haber sido sustituidas por CSS | 0 |
-
-
+| El número ..                                           | es inferior o igual a |
+| ------------------------------------------------------ | :-------------------: |
+| de imágenes que podrían haber sido sustituidas por CSS |           0           |

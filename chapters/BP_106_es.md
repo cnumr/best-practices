@@ -1,27 +1,28 @@
 ## Desactivar los registros binarios
+
 Traducido por: Murielle Timsit y Franklin Lecointre
 
 ### Identificadores
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-| 83 	| 93  | 106  |  	|
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   83    | 93  | 106 |     |     |
 
 ### Categorías
 
-| Ciclo de vida | Partes | Responsable |
-|:---------:|:----:|:----:|
+|       Ciclo de vida       |     Partes      |        Responsable        |
+| :-----------------------: | :-------------: | :-----------------------: |
 | 6. Soporte/ mantenimiento | Centro de datos | Administrador de sistemas |
 
 ### Indicaciones
 
-| Grado de prioridad   | Dificultad de implementación o ejecución | Impacto ecológico   |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 2 | 2 | 2 |
+| Grado de prioridad | Dificultad de implementación o ejecución | Impacto ecológico |
+| :----------------: | :--------------------------------------: | :---------------: |
+|         2          |                    2                     |         2         |
 
-| Recursos ahorrados |
-|:----------------------------------------------------------:|
-| Procesador/ Memoria/ Almacenamiento  |
+|         Recursos ahorrados          |
+| :---------------------------------: |
+| Procesador/ Memoria/ Almacenamiento |
 
 ### Descripción
 
@@ -31,14 +32,13 @@ Antes de desactivar, debe asegurarse de que no es necesaria una replicación de 
 ### Ejemplo
 
 Para MySQL, añadir la siguiente configuración:
+
 ```
 skip-log-bin
 ```
 
 ### Principio de validación
 
-| El número ..   | es inferior o igual a   |  
-|-------------------|:-------------------------:|
-| opciones --skip-log-bin y --disable-log-bin no activadas en caso de que los logs binarios no sean útiles  | 0  |
-
-
+| El número ..                                                                                             | es inferior o igual a |
+| -------------------------------------------------------------------------------------------------------- | :-------------------: |
+| opciones --skip-log-bin y --disable-log-bin no activadas en caso de que los logs binarios no sean útiles |           0           |

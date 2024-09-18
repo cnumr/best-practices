@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  11    | 26  | 23  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   11    | 26  | 23  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|    Life cycle     |  Tiers  |         Responsible          |
+| :---------------: | :-----: | :--------------------------: |
 | 3. Implementation | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    4     |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Network / Queries  |
+|  Saved resources  |
+| :---------------: |
+| Network / Queries |
 
 ### Description
 
@@ -31,23 +31,21 @@ Use CSS properties instead of images. Style sheets are much smaller, especially 
 Rounded corners of elements should be implemented with CSS rather than images.
 
 Prefer writing:
+
 ```css
 #frame {
-     border-radius: 10px;
+  border-radius: 10px;
 }
 ```
 
 ```html
 <div id="frame">
-     <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 ```
 
-
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-|  images that could have been replaced by CSS |  0 |
+| The number of ...                           | is equal to or less than |
+| ------------------------------------------- | :----------------------: |
+| images that could have been replaced by CSS |            0             |

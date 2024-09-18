@@ -2,24 +2,24 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  100    |  114 | 113  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   100   | 114 | 113 |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|  Cycle de vie  |        Tiers         | Responsable |
+| :------------: | :------------------: | :---------: |
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
+| Ressources Economisées |
+| :--------------------: |
 | Mémoire vive / Réseau  |
 
 ### Description
@@ -35,6 +35,6 @@ Ainsi, les utilisateurs n’afficheront que les pages qu’ils souhaitent lire e
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  de textes affichés sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 | 0  |
+| Le nombre ...                                                                                                      | est inférieur ou égal à |
+| ------------------------------------------------------------------------------------------------------------------ | :---------------------: |
+| de textes affichés sur le site web et ayant une note issue de l'indice de lisibilité Flesch-Kincaid inférieur à 60 |            0            |

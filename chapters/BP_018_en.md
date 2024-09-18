@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   170   | 55  | 18  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   170   | 55  | 18  |     |     |
 
 ### Categories
 
-| Life cycle |  Tiers  |  Responsible  |
-|:---------:|:----:|:----:|
+|  Life cycle   |  Tiers  |         Responsible          |
+| :-----------: | :-----: | :--------------------------: |
 | 4. Production | Network | Software Architect/Developer |
 
 ### Indications
 
-| Priority |      Implementation difficulty       |  Ecological impact    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         4         |
 
-|Saved resources                                    |
-|:----------------------------------------------------------:|
-|  Queries  |
+| Saved resources |
+| :-------------: |
+|     Queries     |
 
 ### Description
 
@@ -34,13 +34,14 @@ to avoid the upload of one or more cookies for each HTTP GET by the browser. Res
 ### Example
 
 For an institutional website with high traffic, two subdomains should be preferred:
-  - application server on www.domain.tld 
-  - “cookie-less” media server on media.domain.tld
+
+- application server on www.domain.tld
+- “cookie-less” media server on media.domain.tld
 
 This reduces the number of domains and avoids needlessly transporting cookies with each HTTP GET request on static resources.
 
 ### Validation rule
 
-| The number of ...     | is equal to or less than   |  
-|-------------------|:-------------------------:|
-| domains serving resources   |  5 |
+| The number of ...         | is equal to or less than |
+| ------------------------- | :----------------------: |
+| domains serving resources |            5             |

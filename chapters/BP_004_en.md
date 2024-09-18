@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  204    | 4  | 4  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   204   |  4  |  4  |     |     |
 
 ### Categories
 
 |    Life cycle    |     Tiers     | Responsible |
-|:----------------:|:-------------:|:-----------:|
+| :--------------: | :-----------: | :---------: |
 | 1. Specification | User / Device |     PO      |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
-|   3      |            3              |        3          |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
 | Ressources saved |
-|:----------------:|
+| :--------------: |
 |     Requests     |
 
 ### Description
@@ -32,6 +32,7 @@ This can result in many requests being sent and consume a lot of resources.
 
 If possible, this functionality should be replaced by assisted input.
 This consists of guiding the user through a set of information and advice:
+
 - Presentation of the expected format in grey in the input field (`placeholder`)
 - Text explaining the expected format
 - Reaction of the interface with an error message or a change of color and textual help when the input is incorrect
@@ -45,6 +46,7 @@ submits the form, and is then offered different options: "Lens (France)", "Lens 
 "Loison sous Lens".
 
 If the use of autocompletion cannot be avoided, it is possible to minimize the number of requests with simple optimizations:
+
 - Add a delay of a few tenths of a second between the addition of a character and the request: this allows not to trigger a query if the user has not finished typing.
 - Limit the number of results displayed, prioritized by a score of relevance
 - Set a minimum number of characters before trying to complete.
@@ -58,27 +60,26 @@ Potential gain: the number of requests might be reduced by a factor of 10.
 
 ### Alternative solution
 
-If the data that is offered to the user is quite small, you can include it directly in your HTML code and use 
+If the data that is offered to the user is quite small, you can include it directly in your HTML code and use
 the native [datalist](https://developer.mozilla.org/fr/docs/ Web/HTML/Element/datalist).
 
 This system will offer native and client side autocompletion mechanism.
-
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
 <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
 <datalist id="ice-cream-flavors">
-    <option value="Chocolate">
-    <option value="Coconut">
-    <option value="Mint">
-    <option value="Strawberry">
-    <option value="Vanilla">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
 </datalist>
 ```
 
 ### Validation rule
 
-| The number of ...        | is equal to or less than |  
-|--------------------------|:---------------------:|
-| fields with autocomplete |          20%          |
+| The number of ...        | is equal to or less than |
+| ------------------------ | :----------------------: |
+| fields with autocomplete |           20%            |

@@ -2,30 +2,30 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   112   |  8 |  8 |      |       |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   112   |  8  |  8  |     |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |           Responsable           |
+| :-----------: | :----: | :-----------------------------: |
 | 2. Conception | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-| Mémoire vive / Réseau / Requêtes    |
+|      Ressources Economisées      |
+| :------------------------------: |
+| Mémoire vive / Réseau / Requêtes |
 
 ### Description
 
 Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
-L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution. 
+L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution.
 Par exemple, via la réception d’un e-mail ou d’une notification indiquant la fin du traitement.
 Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée.
 On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
@@ -37,6 +37,6 @@ Dans le cas d’un service en ligne de conversion de documents bureautiques, inc
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de traitements synchrones qui prennent plus d'une minute  | 0  |
+| Le nombre ...                                            | est inférieur ou égal à |
+| -------------------------------------------------------- | :---------------------: |
+| de traitements synchrones qui prennent plus d'une minute |            0            |

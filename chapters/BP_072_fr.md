@@ -2,25 +2,25 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|   55   |  71 | 72  |  65  |   |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   55    | 71  | 72  | 65  |     |
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|                 Cycle de vie                 |   Tiers    |           Responsable           |
+| :------------------------------------------: | :--------: | :-----------------------------: |
 | 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 3 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         3         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|   Processeur / Mémoire vive / Réseau  |
+|       Ressources Economisées       |
+| :--------------------------------: |
+| Processeur / Mémoire vive / Réseau |
 
 ### Description
 
@@ -29,13 +29,16 @@ Par exemple, les requêtes SQL à l’intérieur d’une boucle posent de gros p
 ### Exemple
 
 Ne pas écrire :
+
 ```php
 foreach ($userList as $user) {
     $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES("'. $user['ﬁrst_name'] .'", "'. $user['last_ name'] .'")';
     mysql_query($query);
 }
 ```
+
 mais plutôt :
+
 ```php
 $userData = array();
 foreach ($userList as $user) {
@@ -47,6 +50,6 @@ mysql_query($query);
 
 ### Principe de validation
 
-| Le nombre ...     | est égal à   |  
-|-------------------|:-------------------------:|
-| de requêtes non groupées  |  0 |
+| Le nombre ...            | est égal à |
+| ------------------------ | :--------: |
+| de requêtes non groupées |     0      |

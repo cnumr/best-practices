@@ -2,24 +2,24 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|  205    | 10  | 10  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   205   | 10  | 10  |     |     |
 
 ### Catégories
 
 |    Life cycle     |   Tiers    |      Responsible      |
-|:-----------------:|:----------:|:---------------------:|
+| :---------------: | :--------: | :-------------------: |
 | 3. Implementation | Datacenter | Architect / Developer |
 
 ### Indications
 
 | Priority | Implementation difficulty | Ecological impact |
-|:--------:|:-------------------------:|:-----------------:|
+| :------: | :-----------------------: | :---------------: |
 |    4     |             3             |         4         |
 
 |  Ressources saved  |
-|:------------------:|
+| :----------------: |
 | Network / Requests |
 
 ### Description
@@ -32,6 +32,6 @@ It is also better for the application performance and responsiveness: it is much
 
 ### Validation rule
 
-| The number of ...             | is equal to or less than |  
-|-------------------------------|:------------------------:|
+| The number of ...             | is equal to or less than |
+| ----------------------------- | :----------------------: |
 | static data non saved locally |           25%            |

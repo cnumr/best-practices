@@ -2,26 +2,26 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |  V5  |
-|:-------:|:----:|:----:|:----:|:----:|
-|  501    |  86  |  88  |  90  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   501   | 86  | 88  | 90  |     |
 
 RGESN : N/A
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 2 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       2        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
+| Ressources Economisées  |
+| :---------------------: |
 | Consommation électrique |
 
 ### Description
@@ -35,6 +35,6 @@ Malgré leurs centaines de millions d’utilisateurs, les géants du Web ne prop
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| d'augmentations du niveau de disponibilité alors que le niveau actuel est suffisant  | 0  |
+| Le nombre ...                                                                       | est inférieur ou égal à |
+| ----------------------------------------------------------------------------------- | :---------------------: |
+| d'augmentations du niveau de disponibilité alors que le niveau actuel est suffisant |            0            |

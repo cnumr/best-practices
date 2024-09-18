@@ -2,25 +2,25 @@
 
 ### Identifiers
 
-| GreenIT | V2  | V3  |  V4  |
-|:-------:|:---:|:---:|:----:|
-|   46    | 98  | 96  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   46    | 98  | 96  |     |     |
 
 ### Categories
 
 | Life cycle |  Tiers  |         Responsible          |
-|:----------:|:-------:|:----------------------------:|
+| :--------: | :-----: | :--------------------------: |
 | 2. Design  | Network | Software Architect/Developer |
 
 ### Indications
 
-|      Priority      | Implementation difficulty | Ecological impact |
-|:------------------:|:-------------------------:|:-----------------:|
-|         3          |             3             |         3         |
+| Priority | Implementation difficulty | Ecological impact |
+| :------: | :-----------------------: | :---------------: |
+|    3     |             3             |         3         |
 
-|                      Saved resources                      |
-|:---------------------------------------------------------:|
-|            Processor / RAM / Network / Storage            |
+|           Saved resources           |
+| :---------------------------------: |
+| Processor / RAM / Network / Storage |
 
 ### Description
 
@@ -34,6 +34,6 @@ Avoid dynamic 404 pages, which are customized according URLs content. Static 404
 
 ### Validation rule
 
-| The number of ...   | is equal to or less than |  
-|---------------------|:------------------------:|
-| dynamic error pages |             0            |
+| The number of ...   | is equal to or less than |
+| ------------------- | :----------------------: |
+| dynamic error pages |            0             |

@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  72    | 103  | 99  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   72    | 103 | 99  |     |     |
 
 RGESN : 7.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  | Tiers  |       Responsable       |
+| :-----------: | :----: | :---------------------: |
 | 4. Production | Réseau | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 4 | 3 | 5 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         4         |       3        |         5         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  Ressources Economisées   |
+| :-----------------------: |
+| Processeur / Mémoire vive |
 
 ### Description
 
@@ -36,6 +36,6 @@ On constate également qu’un cache généraliste comme APC n’est pas adapté
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-|  d'entêtes sans cache HTTP identifié | 0  |
+| Le nombre ...                       | est inférieur ou égal à |
+| ----------------------------------- | :---------------------: |
+| d'entêtes sans cache HTTP identifié |            0            |

@@ -2,27 +2,27 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|  77    | 94  | 97  |      |
+| GreenIT | V2  | V3  | V4  | V5  |
+| :-----: | :-: | :-: | :-: | :-: |
+|   77    | 94  | 97  |     |     |
 
 RGESN : 3.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+| Cycle de vie  |   Tiers    |       Responsable       |
+| :-----------: | :--------: | :---------------------: |
 | 4. Production | Datacenter | Administrateur systèmes |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Degré de priorité | Mise en oeuvre | Impact écologique |
+| :---------------: | :------------: | :---------------: |
+|         3         |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  Ressources Economisées   |
+| :-----------------------: |
+| Processeur / Mémoire vive |
 
 ### Description
 
@@ -32,12 +32,12 @@ Alors que la plupart des serveurs web augmentent leur consommation de mémoire v
 
 ### Exemple
 
-Nginx est  plus performant qu’Apache, il permet de servir 2 fois plus de requêtes par seconde.
+Nginx est plus performant qu’Apache, il permet de servir 2 fois plus de requêtes par seconde.
 
 Gwan (bien qu’encore très peu utilisé) est plus performant que Nginx, il permet de servir 4 fois plus de requêtes par seconde en 4 fois moins de temps tout en consommant 2 fois moins de RAM.
 
 ### Principe de validation
 
-| Le nombre ...     | est inférieur ou égal à   |  
-|-------------------|:-------------------------:|
-| de serveurs applicatifs synchrones  | 1  |
+| Le nombre ...                      | est inférieur ou égal à |
+| ---------------------------------- | :---------------------: |
+| de serveurs applicatifs synchrones |            1            |
