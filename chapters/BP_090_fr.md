@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|:----:|
 |   68    |  88  |  90  |  92  |      |
 
+RGESN : N/A
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |

@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|:----:|
 |   51    |  65  |  70  |  87  |      |
 
+RGESN : N/A
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
