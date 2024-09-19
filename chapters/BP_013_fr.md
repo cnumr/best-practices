@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |   3   | 51  | 13  |      |
 
+RGESN: 7.1
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -24,7 +26,7 @@
 
 ### Description
 
-Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. 
+Si une page est peu mise à jour, préférer des pages statiques, construites en dehors du CMS. 
 Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
 
 L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles 

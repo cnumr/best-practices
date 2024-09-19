@@ -6,6 +6,8 @@
 |:-------:|:----:|:----:|:----:|
 |  58    | 75  | 76  |      |
 
+RGESN: 6.5
+
 ### Catégories
 
 | Cycle de vie |  Tiers  |  Responsable  |
@@ -31,7 +33,9 @@ Ces traitements doivent plutôt être réalisés au plus près de la donnée afi
 
 - limiter la bande passante à cause du transfert de données non traitées
 - profiter des optimisations de la base données sur la manipulation des données
-- d'alléger le cycle CPU côté serveur backend voire frontend 
+- d'alléger le cycle CPU côté serveur backend voire frontend
+
+Ces optimisations sont également possible sur les appels API qui transitent des fichiers JSON.
 
 ### Exemple
 
