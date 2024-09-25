@@ -2,24 +2,26 @@
 
 ### Identifiants
 
-| GreenIT |  V2  |  V3  |  V4  |
-|:-------:|:----:|:----:|:----:|
-|   45   | 97  | 95  |      |
+| GreenIT | V2  | V3  | V4  | V5 |
+|:-------:|:---:|:---:|:---:|:--:|
+|   45    |  97 | 95  | 112 |    |
+
+RGESN : 6.1
 
 ### Catégories
 
-| Cycle de vie |  Tiers  |  Responsable  |
-|:---------:|:----:|:----:|
+|       Cycle de vie       | Tiers  |           Responsable           |
+|:------------------------:|:------:|:-------------------------------:|
 | 6. Support / maintenance | Réseau | Architecte Logiciel/Développeur |
 
 ### Indications
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
-|:-------------------:|:-------------------------:|:---------------------:|
-| 3 | 3 | 4 |
+| Degré de priorité  | Mise en oeuvre | Impact écologique |
+|:------------------:|:--------------:|:-----------------:|
+|         3          |       3        |         4         |
 
-|Ressources Economisées                                      |
-|:----------------------------------------------------------:|
+|     Ressources Economisées     |
+|:------------------------------:|
 | Processeur / Réseau / Stockage |
 
 ### Description
