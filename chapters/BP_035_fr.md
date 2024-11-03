@@ -46,7 +46,7 @@ Cette image de 198 × 198 pixels pèse :
  - 3,8 Ko en PNG ;
  - 0,7 Ko en SVG minifié.
 
-Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un format matriciel tout en pouvant être retaillé à l’infini.
+Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un format matriciel tout en pouvant être redimensionné à l’infini.
 
 ### Principe de validation
 
