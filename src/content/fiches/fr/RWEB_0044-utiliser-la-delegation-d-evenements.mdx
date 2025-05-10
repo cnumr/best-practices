@@ -1,0 +1,71 @@
+---
+refID: '0044'
+title: Utiliser la délégation d'évènements
+createdAt: 2024-02-14T11:41:24.555Z
+updatedAt: 2024-07-04T21:41:03.295Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '41'
+  - version: 2.0.0
+    idRef: '0046'
+  - version: 3.0.0
+    idRef: '0044'
+  - version: 4.0.0
+    idRef: '0044'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      d'écoutes (listeners) d'un même événement sur plusieurs éléments HTML,
+      faisant partie d'un même groupe, sans utiliser la délégation d'événements
+    maxValue: '0'
+---
+
+## Description
+
+La délégation d’événements permet de ne pas surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs élé- ments du DOM (Document Object Model).
+
+## Exemple
+
+L’élément du DOM, dont l’ID est "t", est déclaré comme le délégué.
+Il intercepte les événements de tous ses fils.
+
+```html
+<head>
+    // ...
+    <style type="text/css">
+     #t { border: 1px solid red } #t1 { background-color: pink; }
+    </style>
+    <script type="text/javascript">
+        function modifyText(new_text) {
+            var t2 = document.getElementById("t2");
+            t2.ﬁrstChild.nodeValue = new_text;
+        }
+        function load() {
+            var el = document.getElementById("t");
+            el.addEventListener("click", function() {
+              modifyText("four")
+            }, false); 
+        }
+    </script>
+</head>
+<body onload="load();">
+    <table id="t">
+        <tr><td id="t1"><button type="button">one</button></td></tr>
+        <tr><td id="t2"><button type="button">two</button></td></tr>
+    </table>
+    <!-- ... -->
+</body>
+```

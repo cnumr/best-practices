@@ -1,0 +1,46 @@
+---
+refID: '4011'
+title: Réduire le volume de données stockées au strict nécessaire
+createdAt: 2024-02-14T13:56:14.338Z
+updatedAt: 2024-07-05T05:10:07.294Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4011'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: de données stockées et non utiles pour le service numérique
+    maxValue: '0'
+---
+
+## Description
+
+Réduire le volume de données stockées au nécessaire consiste à :
+
+* optimiser la gestion des gros volumes de données.
+* nettoyer les anciennes données, soit en les archivant hors ligne, soit en les supprimant.
+* vérifier que les sauvegardes peuvent être restaurées.
+* superviser la taille des espaces de stockage.
+
+Suivant le type de données et leurs propriétaires, des contraintes légales peuvent amener à stocker dans le temps des données jamais utilisées.
+
+L’utilisation des données et leur degré d’importance impactent aussi la manière de les stocker.
+
+Cette bonne pratique s'inscrit dans le cadre de la gestion du cycle de vie de l'information.
+
+## Exemple
+
+* Définir des processus d'archivage : au moment de sa sortie, un rapport annuel est stocké sur un SSD (zone chaude). Un mois plus tard, il est archivé sur un stockage classique (zone froide). Enfin, dix ans plus tard, il est supprimé.
+* Eviter les doublons entre les tables est un moyen d’optimiser le volume de données stockées.
+* L’utilisation des données peut conduire à une dénormalisation des tables et donc une augmentation de l’espace de stockage.

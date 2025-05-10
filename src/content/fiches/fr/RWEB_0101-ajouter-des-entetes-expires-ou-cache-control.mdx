@@ -1,0 +1,57 @@
+---
+refID: '0101'
+title: Ajouter des entêtes Expires ou Cache-Control
+createdAt: 2024-02-14T13:07:27.263Z
+updatedAt: 2024-07-05T04:55:04.495Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '78'
+  - version: 2.0.0
+    idRef: '0105'
+  - version: 3.0.0
+    idRef: '0101'
+  - version: 4.0.0
+    idRef: '0101'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - ram
+  - requests
+validations:
+  - rule: d'entêtes manquantes Expires ou Cache-Control
+    maxValue: '0'
+---
+
+## Description
+
+Les entêtes Expires et Cache-Control définissent la durée pendant laquelle un navigateur doit conserver une ressource dans son cache. Il faut donc en prévoir et les configurer correctement pour les feuilles de style CSS, les scripts JavaScript et les images.
+
+Idéalement, la durée de vie de ces éléments doit être la plus longue possible, afin que le navigateur ne les redemande pas au serveur. On économise ainsi des requêtes HTTP, de la bande passante et des cycles CPU côté serveur.
+
+## Exemple
+
+Voici un exemple de configuration des entêtes Expires et Cache-Control pour le serveur web Apache :
+
+```apache
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+    <FilesMatch "\\.(ico|jpe?g|png|gif|swf|css|gz)$">
+        Header set Cache-Control"max-age=2592000, public"
+    </FilesMatch>
+    <FilesMatch "\\.(html|htm)$">
+        Header set Cache-Control"max-age=7200, public"
+    </FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+```

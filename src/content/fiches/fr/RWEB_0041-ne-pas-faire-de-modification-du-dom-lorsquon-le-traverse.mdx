@@ -1,0 +1,51 @@
+---
+refID: '0041'
+title: Ne pas faire de modification du DOM lorsqu’on le traverse
+createdAt: 2024-02-14T11:34:20.720Z
+updatedAt: 2024-07-04T21:39:31.599Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '43'
+  - version: 2.0.0
+    idRef: '0043'
+  - version: 3.0.0
+    idRef: '0041'
+  - version: 4.0.0
+    idRef: '0041'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      d'insertions dans le DOM réalisées lorsque cette même partie du DOM est
+      traversée par un code JavaScript
+    maxValue: '0'
+---
+
+## Description
+
+Modifier le DOM (Document Object Model) lorsqu’on le traverse peut engendrer des situations où la boucle devient très gourmande
+en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments en le traversant, il est possible de générer une boucle infinie qui consommera une grande quantité de ressources. Ce genre de modification est donc fortement déconseillée.
+
+## Exemple
+
+Éviter :
+
+```html
+<script>
+    // Notation jQuery
+    $('a.extlink').each(function(el) {
+        $(el).attr('rel','external nofollow');
+    });
+</script>
+```

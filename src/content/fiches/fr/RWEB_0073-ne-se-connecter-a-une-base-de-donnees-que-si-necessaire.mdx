@@ -1,0 +1,57 @@
+---
+refID: '0073'
+title: Ne se connecter à une base de données que si nécessaire
+createdAt: 2024-02-14T12:10:46.925Z
+updatedAt: 2024-07-05T04:39:28.218Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '56'
+  - version: 2.0.0
+    idRef: '0072'
+  - version: 3.0.0
+    idRef: '0073'
+  - version: 4.0.0
+    idRef: '0073'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      de connexions à une base de données pour requêter, stocker une donnée non
+      nécessaire à l'utilisation du service
+    maxValue: '0'
+---
+
+## Description
+
+Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
+
+* Allocation de mémoire et I/O disque pour les buffers,
+* Allers-retours réseaux pour le protocole de connexion,
+* Coût CPU induit.
+
+Exemple :  pour Oracle, plusieurs allers-retours sont nécessaires (validation des credentials, information sur le driver, négociation de la taille des paquets optimale, ...).
+Le fait d’ouvrir et de fermer une connexion nécessite l’allocation et la désallocation de ces ressources ainsi que de nombreux échanges réseaux, à chaque fois.
+
+La bonne pratique qui est usuellement utilisée est la mise en place d’un pool de connexions.
+Il permet d’optimiser la gestion des connexions ainsi que les performances. Cependant, sa configuration n’est pas forcément une opération triviale (nécessite de superviser le comportement de celui-ci pour trouver le bon paramétrage).
+
+Ceci dit, chaque fois que l’application peut éviter un accès à la base de données, faites-le !
+
+## Exemple
+
+HikariCP est un pool de connexions JDBC solide et performant. Il est intégré dans SpringBoot.
+
+Dans les cas où il n'y a pas de pool de connexions, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.

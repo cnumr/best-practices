@@ -1,0 +1,35 @@
+---
+refID: '4001'
+title: Limiter les outils d'analytics et les données collectées
+createdAt: 2024-02-14T13:38:15.331Z
+updatedAt: 2024-07-05T05:04:06.530Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4001'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - storage
+  - network
+validations:
+  - rule: d'outils d'analytics
+    maxValue: '1'
+---
+
+## Description
+
+Les outils utilisés pour suivre les actions des utilisateurs utilisent souvent beaucoup de ressources coté client : requêtes
+nombreuses, fichiers javascript supplémentaires chargés, utilisation de plusieurs domaines additionnels, envoi de cookie, ...
+
+Si les informations issues de ce suivi ne sont pas indispensables, ne pas en utiliser. Sinon se limiter à un seul outil et privilégier
+une solution qui consomme peu de ressources.

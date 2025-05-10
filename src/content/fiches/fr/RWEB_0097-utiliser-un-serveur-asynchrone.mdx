@@ -1,0 +1,47 @@
+---
+refID: 0097
+title: Utiliser un serveur asynchrone
+createdAt: 2024-02-14T13:00:23.183Z
+updatedAt: 2024-07-05T04:53:02.076Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '77'
+  - version: 2.0.0
+    idRef: 0094
+  - version: 3.0.0
+    idRef: 0097
+  - version: 4.0.0
+    idRef: 0097
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: de serveurs applicatifs synchrones
+    maxValue: '1'
+---
+
+## Description
+
+Les serveurs (web, d’applications, etc.) tels que NGINX, node.js ou Gwan sont conçus pour utiliser le minimum de ressources possible. Grâce à leur fonctionnement en mode asynchrone, ils ne sont pas tenus de créer un processus ou un thread pour chaque requête. Ils évitent ainsi de gaspiller leurs ressources.
+
+Alors que la plupart des serveurs web augmentent leur consommation de mémoire vive au fur et à mesure des sollicitations, les serveurs asynchrones demeurent eux très stables.
+
+## Exemple
+
+NGINX a la réputation d’être plus performant qu’Apache. Il peut ainsi servir 2,1 fois plus de requêtes par seconde que ce serveur.
+
+Pour aller plus loin :
+
+* [https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan](https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan)
+* [https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use](https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use)

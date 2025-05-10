@@ -1,0 +1,53 @@
+---
+refID: 0049
+title: Mettre en cache les objets souvent accédés en JavaScript
+createdAt: 2024-02-14T11:48:46.183Z
+updatedAt: 2024-07-04T21:42:35.665Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '33'
+  - version: 2.0.0
+    idRef: '0036'
+  - version: 3.0.0
+    idRef: 0049
+  - version: 4.0.0
+    idRef: 0049
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de données constantes (ou non volatiles) récupérés à plusieurs reprises
+      sans être mises en cache
+    maxValue: '0'
+---
+
+## Description
+
+L’accès au DOM (Document Object Model) est coûteux en termes de ressources processeur (cycles CPU). Aussi, lorsque vous utilisez plusieurs fois le même élément du DOM depuis JavaScript, stockez sa référence dans une variable afin de ne pas parcourir à nouveau le DOM pour ce même élément.
+
+## Exemple
+
+Ne pas écrire :
+
+```javascript
+document.getElementById('menu').property1 = 'foo'; document.getElementById('menu').property2 = 'bar';
+```
+
+mais plutôt :
+
+```javascript
+var mmenu = document.getElementById('menu');
+menu.property1 = 'foo';
+menu.property2 = 'bar'
+```

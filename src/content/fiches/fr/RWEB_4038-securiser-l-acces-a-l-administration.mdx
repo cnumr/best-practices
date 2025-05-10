@@ -1,0 +1,54 @@
+---
+refID: '4038'
+title: Sécuriser l'accès à l'administration
+createdAt: 2024-02-14T14:36:53.559Z
+updatedAt: 2024-07-05T05:23:03.133Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4038'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      d'urls d'administration par défaut et d'identifiants classiques et de mots
+      de passe faibles
+    maxValue: '0'
+---
+
+## Description
+
+Lors de l'utilisation de CMS largement connus, le chemin d'accès à l'administration du site est souvent identique d'un site à l'autre.
+Cette remarque est vraie pour tous les sites utilisant une interface d'administration avec un chemin d'accès classique.
+De ce fait, les attaques de type "brute force" sont très fréquentes dès lorsqu'une url facile est trouvée.
+Ces attaques sont très impactantes pour le réseau et les infrastructures.
+
+Les attaques aboutissent d'autant plus lorsque l'identifiant d'un utilisateur est classique lui aussi ou que les mots de passe ne sont pas assez forts.
+
+## Exemple
+
+WordPress, un des CMS les plus utilisés du marché propose son administration sur l'url : /wp-admin ou /wp-login.php
+Joomla lui propose /administrator
+Pour Kirby, il s'agit de /panel
+etc...
+
+Il est toujours possible de modifier cette adresse pour limiter les attaques et mieux garantir la sécurité de votre site.
+Remplacez l'url d'accès aux pages d'administration par :
+
+* une chaine aléatoire sans majuscule  : /ze62ane96,  /o6\_jhej639, /dj5zjaih2-ep8e
+* un ou plusieurs mots en rapport avec votre activité : /construire,  /jouer, /preparer-le-menu
+* ou cumuler les deux : /jouer\_562fg6
+
+Ne pas utiliser comme identifiant "admin", "nom de domaine du site", "prénom ou nom du dirigeant de l'entreprise"
+Un mot de passe sécurisé comporte au moins 8 caractères dont : des lettres minuscules et majuscules, des caractères spéciaux et des chiffres.
+Il est possible d'utiliser aussi le générateur de mot de passe de la cnil: [https://www.cnil.fr/fr/generer-un-mot-de-passe-solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide)

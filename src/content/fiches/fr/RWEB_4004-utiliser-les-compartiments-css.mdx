@@ -1,0 +1,57 @@
+---
+refID: '4004'
+title: Utiliser les compartiments CSS
+createdAt: 2024-02-14T13:43:55.999Z
+updatedAt: 2024-07-05T05:06:30.552Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4004'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: '''éléments non isolés'
+    maxValue: 20%
+---
+
+## Description
+
+Le CSS Containment (ou compartimentation CSS) indique qu'un nœud et son contenu sont, autant que possible, indépendants du reste de l'arborescence de la page.
+
+En fonction du type d'indépendance (`strict`, `content`, `size`, `layout`, `style` et/ou `paint`) de la propriété `contain`, le navigateur :
+
+* recalcule le rendu (les positions, la mise en forme, les dispositions et/ou l'affichage) pour le seul nœud indépendant économisant ainsi, de recalculer l’entièreté du DOM de la page
+* ne fait pas le rendu du contenu des nœuds indépendants hors zone visible
+
+## Exemples
+
+* Une architecture DOM complexe dont le contenu de noeuds est modifié à un moment donné
+
+```css
+article {
+   contain: content;
+}
+```
+
+* Un widget externe
+
+```css
+.widget-name {
+   contain: layout;
+}
+```
+
+Pour aller plus loin :
+
+* [https://developer.mozilla.org/fr/docs/Web/CSS/CSS\_Containment](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Containment)
+* [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)

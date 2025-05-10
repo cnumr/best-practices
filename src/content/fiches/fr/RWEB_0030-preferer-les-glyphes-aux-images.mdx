@@ -1,0 +1,54 @@
+---
+refID: '0030'
+title: Préférer les glyphes aux images
+createdAt: 2024-02-14T10:56:26.183Z
+updatedAt: 2025-04-27T21:55:58.898Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '20'
+  - version: 2.0.0
+    idRef: 0018
+  - version: 3.0.0
+    idRef: '0030'
+  - version: 4.0.0
+    idRef: '0030'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - storage
+  - network
+  - requests
+validations:
+  - rule: >-
+      d'images qui auraient pu être remplacées par un glyphe (symbole de police
+      de caractère)
+    maxValue: '0'
+---
+
+## Description
+
+Les glyphes sont des caractères typographiques spécifiques, inclus dans les polices de caractères comme celles d'un système d'exploitation, utilisables en remplacement d'images monochromes telles que des symboles ou pictogrammes (chevron, triangle, point, carré, signes astrologiques, etc.) jusqu'aux illustrations permettant :
+
+* de réduire la bande passante en économisant sur le poids
+* de réduire le nombre de requêtes
+* de réduire la complexité du DOM, notamment avec de nombreux pictogrammes SVG
+
+## Exemple
+
+Pour optimiser une landing page comprenant visuellement :
+
+![Exemple de police créée via Font Forge pour illustrer une landing page](/img_fiches/rweb-0030/vue-font-forge.svg "Exemple de police créée via Font Forge pour illustrer une landing page")
+*Extrait d'une police créée via Font Forge*
+
+Un gain de 91% du poids a été réalisé en incluant pictogrammes et illustrations vectorielles dans une icon font via [Font Forge](https://fontforge.org/en-US/).
+
+Pour aller plus loin : [https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements](https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements)

@@ -1,0 +1,55 @@
+---
+refID: '0006'
+title: 'Privilégier une approche "mobile first", à défaut un chargement adaptatif'
+createdAt: 2024-02-14T09:31:32.923Z
+updatedAt: 2024-07-04T18:36:09.883Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '6'
+  - version: 2.0.0
+    idRef: '0007'
+  - version: 3.0.0
+    idRef: '0006'
+  - version: 4.0.0
+    idRef: '0006'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 2-concept
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: de conceptions ne s'appuyant pas sur une approche "mobile first"
+    maxValue: '1'
+---
+
+## Description
+
+Lorsque le contexte le permet, privilégier l’approche « mobile first » qui consiste à concevoir un site/service en ligne
+pour les terminaux mobiles,
+et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l’apport fonctionnel/ergonomique est justifié.
+Dans ce cas, opter alors pour le chargement adaptatif.
+Cette approche consiste à sélectionner les ressources, y compris JS et CSS, les plus adaptées au contexte d'utilisation (taille de l'écran / de la fenêtre, densité de pixels, qualité du réseau, quantité de mémoire vive, etc.), si possible côté serveur.
+On s’assure ainsi de ne pas consommer inutilement de la bande passante,
+ni de trop solliciter le processeur et la mémoire du terminal pour des traitements inutiles.
+
+## Exemple
+
+Côté serveur, on pourra utiliser les *client hints*, ou à défaut l'identifiant du navigateur couplé à un tableau de capacités des navigateurs (aussi appelé *user agent sniffing*, avec ses limitations).
+
+Côté client, les *media queries* (notamment dans les attributs `media` des `<link>` pour la sélection de feuilles de styles CSS), les attributs `srcset` et `sizes` des `<img>`, les sous-éléments `<source>` des `<picture>`, `<video>` et `<audio>` pourront être utiles, et les mêmes informations disponibles dans les *client hints* peuvent également être récupérées par des APIs JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement.
+
+Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'accès à votre site même si toutes ses fonctionnalités ne sont pas supportées par tous les navigateurs (sans trop détériorer l'expérience utilisateur bien sûr!).
+
+## Sources
+
+* [https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints)
+* [https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)

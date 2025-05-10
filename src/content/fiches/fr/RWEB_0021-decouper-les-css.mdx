@@ -1,0 +1,53 @@
+---
+refID: '0021'
+title: Découper les CSS
+createdAt: 2024-02-14T10:28:42.760Z
+updatedAt: 2024-07-04T21:30:35.074Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '9'
+  - version: 2.0.0
+    idRef: '0024'
+  - version: 3.0.0
+    idRef: '0021'
+  - version: 4.0.0
+    idRef: '0021'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: de bibliothèques CSS **est supérieur ou égal**
+    maxValue: '2'
+---
+
+## Description
+
+Employer un ensemble de CSS plutôt qu’une seule, et appeler uniquement les CSS utiles en fonction du contexte.
+Cette méthode permet de limiter le poids de la page lors du premier téléchargement, donc d’économiser de la bande passante
+et de réduire la charge CPU.
+
+## Exemple
+
+Découper les CSS en fonction de la logique fonctionnelle :
+
+* layout ;
+* content ;
+* module x ;
+* module y ;
+* etc...
+
+Dans le cas d’un site fonctionnellement riche, cela permettra d’exclure toutes les CSS des modules non utilisés.
+Le nombre de CSS doit rester raisonnable, plus pour des questions de maintenabilité que de performance,
+dans la mesure où les CSS générales (« layout » et « content » dans notre exemple) seront concaténées en un seul fichier.
+Les CSS complémentaires (ici, « module x » et « module y ») seront téléchargées en fonction du contexte (page, fonctionnalités...).

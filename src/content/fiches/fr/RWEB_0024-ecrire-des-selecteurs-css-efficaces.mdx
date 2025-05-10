@@ -1,0 +1,61 @@
+---
+refID: '0024'
+title: Écrire des sélecteurs CSS efficaces
+createdAt: 2024-02-14T10:41:32.065Z
+updatedAt: 2024-07-04T21:31:56.851Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '13'
+  - version: 2.0.0
+    idRef: '0027'
+  - version: 3.0.0
+    idRef: '0024'
+  - version: 4.0.0
+    idRef: '0024'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+validations:
+  - rule: 'de sélecteurs CSS qui n''utilisent ni d''id, ni de class et ni d''attribut'
+    maxValue: '0'
+---
+
+## Description
+
+Privilégier les sélecteurs basés sur des ID ou des classes. Ils seront ainsi filtrés plus rapidement, économisant des cycles CPU à la machine interprétant les règles.
+
+## Exemple
+
+Ne pas écrire :
+
+```css
+treeitem[mailfolder="true"] > treerow > treecell {…}
+```
+
+mais plutôt :
+
+```css
+.treecell-mailfolder {...}
+```
+
+Ne pas écrire :
+
+```css
+treehead > treerow > treecell {...}
+```
+
+mais plutôt :
+
+```css
+.treecell-header {...}
+```

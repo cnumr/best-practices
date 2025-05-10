@@ -1,0 +1,51 @@
+---
+refID: '0005'
+title: 'Favoriser un design simple, épuré, adapté au web'
+createdAt: 2024-02-14T09:25:44.819Z
+updatedAt: 2024-07-04T18:35:52.022Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '5'
+  - version: 2.0.0
+    idRef: '0006'
+  - version: 3.0.0
+    idRef: '0005'
+  - version: 4.0.0
+    idRef: '0005'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: de pages dont le design est plus chargé que nécessaire
+    maxValue: '0'
+---
+
+## Description
+
+Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
+
+* les besoins de l'utilisateur (voir la bonne pratique "Optimiser le parcours utilisateur")
+* les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
+* les contraintes techniques
+* les bonnes pratiques d'écoconception
+* et de préférence les bonnes pratiques d'accessibilité
+
+**Privilégiez un design simple et épuré réalisable uniquement en HTML et CSS.**
+
+## Exemple
+
+**Description :** Certains sites contiennent des images encadrées, non contrastées et non lisibles (RGAA) et créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (écoconception). On peut parfois soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien).
+
+**Recommandation :** Supprimer les images de fond et ajouter un glyphe (Préférer les glyphes aux images, bonne pratique d'écoconception) avec une colorimétrie cohérente si un groupement doit avoir lieu.

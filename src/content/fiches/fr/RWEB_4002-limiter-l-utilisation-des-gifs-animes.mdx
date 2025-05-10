@@ -1,0 +1,52 @@
+---
+refID: '4002'
+title: Limiter l'utilisation des GIFs animés
+createdAt: 2024-02-14T13:40:22.299Z
+updatedAt: 2024-07-05T05:04:44.771Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4002'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+validations:
+  - rule: de fichiers gif animés
+    maxValue: '0'
+---
+
+## Description
+
+Le gif animé, format image animée datant de 1995, est plus lourd et plus lent que d'autres formats tels que les formats vidéo webm ou le mp4.
+Le webp animé est moindre dans son gain de poids et est actuellement peu supporté par les navigateurs.
+
+## Exemple
+
+|             | .gif (animé) | .webp (animé) |  .webm |   .mp4 |
+| :---------- | -----------: | ------------: | -----: | -----: |
+| Animation 1 |        90 Ko |         74 Ko |  36 Ko |  38 Ko |
+| Animation 2 |      5,45 Mo |        2,2 Mo | 274 Ko | 266 Ko |
+
+```html
+<!--  Autoplay, loop and muted video  -->
+<video autoplay loop muted playsinline>
+  <source src="my-animation.webm" type="video/webm">
+  <source src="my-animation.mp4" type="video/mp4">
+</video>
+```
+
+En savoir plus :
+
+* [https://web.dev/replace-gifs-with-videos/](https://web.dev/replace-gifs-with-videos/)

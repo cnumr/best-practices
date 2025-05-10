@@ -1,0 +1,59 @@
+---
+refID: '0023'
+title: Préférer les CSS aux images
+createdAt: 2024-02-14T10:37:59.033Z
+updatedAt: 2024-07-04T21:31:30.232Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '11'
+  - version: 2.0.0
+    idRef: '0026'
+  - version: 3.0.0
+    idRef: '0023'
+  - version: 4.0.0
+    idRef: '0023'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: d'images qui auraient pu être remplacées par des CSS
+    maxValue: '0'
+---
+
+## Description
+
+Utiliser les propriétés CSS à la place d’images. En effet, le poids d’une feuille de styles est bien plus faible,
+surtout si elle est compressée. En outre, l’appel d’une feuille de styles ne génère qu’une seule requête HTTP,
+contre un grand nombre si l’on emploie beaucoup d’images
+(une requête HTTP pour chaque image).
+
+## Exemple
+
+Les coins arrondis, les bordures décorées, les effets de filtre des éléments doivent être gérés en CSS plutôt qu’avec des images.
+
+Préférer l’écriture :
+
+```css
+#cadre {
+    border-radius: 10px;
+}
+```
+
+```html
+<div id="cadre">
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+</div>
+```

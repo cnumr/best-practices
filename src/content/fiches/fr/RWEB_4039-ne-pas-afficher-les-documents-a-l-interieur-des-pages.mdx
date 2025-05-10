@@ -1,0 +1,37 @@
+---
+refID: '4039'
+title: Ne pas afficher les documents à l'intérieur des pages
+createdAt: 2024-02-14T14:38:37.827Z
+updatedAt: 2024-07-05T05:23:21.331Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4039'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 2
+moe: 1
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: documents affichés dans un contenu
+    maxValue: '0'
+---
+
+## Description
+
+Certains rédacteurs de contenu éprouvent parfois le besoin d'intégrer des documents à l'intérieur des pages, en visualisation directe.
+Cela nécessite un développement spécifique pour une fonctionnalité malvenue.
+En effet, le chargement d'un document, à l'intérieur d'un contenu, est non voulu par l'utilisateur si son système en permet l'affichage.
+De plus à chaque consultation de la page, le fichier est téléchargé pour être affiché.
+
+## Exemple
+
+Pour être affiché, un fichier de traitement de texte devra, par exemple, appeler un logiciel adapté. Or si ce logiciel n'est pas installé sur le poste de l'utilisateur, le fichier ne pourra pas être lu sans un développement spécifique coûteux.
+Il est donc préférable d'insérer un lien de téléchargement du document à l'intérieur de votre page afin que seuls les utilisateurs concernés le téléchargent.

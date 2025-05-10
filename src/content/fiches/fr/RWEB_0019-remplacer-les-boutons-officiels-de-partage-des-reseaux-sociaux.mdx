@@ -1,0 +1,58 @@
+---
+refID: 0019
+title: Remplacer les boutons officiels de partage des réseaux sociaux
+createdAt: 2024-02-14T10:25:25.835Z
+updatedAt: 2024-07-04T21:30:03.619Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '910'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: 0019
+  - version: 4.0.0
+    idRef: 0019
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de bibliothèques externes
+    maxValue: '0'
+---
+
+## Description
+
+Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. fournissent des plugins à installer sur une page web
+pour y afficher un bouton Partager et un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources :
+pour fonctionner, ils nécessitent un grand nombre de requêtes et de télécharger des fichiers lourds.
+Mieux vaut leur préférer des liens directs, en HTML, vers les pages de partage.
+On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que [https://www.sharelinkgenerator.com/](https://www.sharelinkgenerator.com/).
+
+## Exemple
+
+Les réseaux sociaux possèdent tous une URL qui permet à leurs membres de partager une page web :
+
+* Facebook Share : [https://www.facebook.com/sharer/sharer.php?u=XXXXX](https://www.facebook.com/sharer/sharer.php?u=XXXXX)
+* Facebook Like : [https://www.facebook.com/plugins/like.php?href=XXXXX](https://www.facebook.com/plugins/like.php?href=XXXXX)
+* Twitter : [https://twitter.com/intent/tweet?url=XXXXX](https://twitter.com/intent/tweet?url=XXXXX)
+  On peut donc facilement ajouter un bouton qui ouvre une pop-up de partage comme le font les boutons officiels, par exemple avec le code suivant :
+
+```html
+<button type = "button" onclick = "window.open('https://www.facebook.com/ sharer/sharer.php?u=XXXXX', '', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
+    Je partage cette page sur Facebook
+</button>
+```
+
+Pour aller plus loin :
+[https://www.nuweb.fr/736](https://www.nuweb.fr/736)

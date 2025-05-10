@@ -1,0 +1,43 @@
+---
+refID: '4032'
+title: Mettre en place un "Circuit breaker"
+createdAt: 2024-02-14T14:26:40.125Z
+updatedAt: 2024-07-05T05:20:50.218Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4032'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+validations:
+  - rule: de "circuit breakers" non mis en place sur des services non critiques
+    maxValue: '0'
+---
+
+## Description
+
+Un "circuit breaker" casse le traitement d'une requête à travers plusieurs services dans le cas où un des services ne répond pas.
+Des requêtes provenant des terminaux utilisateurs peuvent solliciter des services utiles et aussi pour lesquels un mode dégradé est acceptable.
+Ils sont qualifiés de non critiques.
+En fonction d’un certain nombre de critères d’erreur (timeout, nombre d’erreurs), le service appelant un service non critique
+peut désactiver cet appel et renvoyer immédiatement une réponse alternative.
+Ce pattern permet de ne pas solliciter inutilement un service et le réseau.
+
+## Exemple
+
+Sur un site e-commerce les informations détaillées d'une fiche produit peuvent être fournies par un service dédié.
+Le service principal qui récupère une page produit a "appris" que le service des informations détaillées était en erreur, il évite alors
+de l'appeler inutilement tant qu'il ne répond pas favorablement et ne renvoie donc pas cette information à l'utilisateur final.
+Le service reste opérationnel bien que l'expérience soit dégradée.

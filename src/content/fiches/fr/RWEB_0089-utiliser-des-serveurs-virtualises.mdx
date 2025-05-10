@@ -1,0 +1,53 @@
+---
+refID: 0089
+title: Utiliser des serveurs virtualisés
+createdAt: 2024-02-14T12:42:33.893Z
+updatedAt: 2024-07-05T04:48:39.160Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '70'
+  - version: 2.0.0
+    idRef: 0087
+  - version: 3.0.0
+    idRef: 0089
+  - version: 4.0.0
+    idRef: 0089
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: d'applications non hébergées de façon mutualisée
+    maxValue: '0'
+---
+
+## Description
+
+La virtualisation est une technologie permettant de créer et d’exécuter des représentations virtuelles d’un ordinateur sur une ou plusieurs machines physiques. Le logiciel en charge de la virtualisation se charge d'allouer les ressources entre les différents environnements virtuels en fonction de leurs besoins.
+
+En conséquence, la virtualisation permet :
+
+* une économie sur le matériel par mutualisation
+* une utilisation optimale des ressources (RAM, CPU, disque)
+
+Cette démarche réduit la quantité de déchets électroniques (DEEE) et la consommation électrique comparé à l'utilisation de plusieurs serveurs physiques.
+
+La conteneurisation est le compagnon à la virtualisation : une machine virtuelle peut accueillir un service de conteneurisation. Il va permettre d'executer de manière isolé plusieurs applications sur le même système d'exploitation.
+
+## Exemple
+
+Utiliser des outils de virtualisation tels que VMware, Xen, KVM, etc.
+
+Utiliser des outils de conteneurisation tels que Docker, Kubernetes, etc.
+
+Au lieu d’utiliser quatre serveurs dédiés pour quatre projets, et de les charger au maximum à 20 % de leur capacité, mutualiser les ressources en mettant en place un hyperviseur. En effet, une seule machine physique pourra offrir les mêmes services que les quatre serveurs dédiés.

@@ -1,0 +1,42 @@
+---
+refID: '0010'
+title: Stocker les données statiques localement
+createdAt: 2024-02-14T09:56:27.377Z
+updatedAt: 2024-07-04T21:26:12.064Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '205'
+  - version: 2.0.0
+    idRef: '0010'
+  - version: 3.0.0
+    idRef: '0010'
+  - version: 4.0.0
+    idRef: '0010'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de données statiques non stockées localement
+    maxValue: 25%
+---
+
+## Description
+
+Avec le support désormais généralisé sur tous les navigateurs des bases de données clé-valeur (IndexDB, Web Storage), et de la mise en cache dans le Cache Storage API, il est possible de stocker localement des données structurées statiques.
+
+L’intérêt du stockage local est double. D’une part, on évite les allers-retours inutiles avec le serveur, ce qui économise des ressources et du temps de réponse.
+D’autre part, comme les données sont locales, il est plus facile et plus rapide de les manipuler au sein de l’interface.
+
+Le gain potentiel est la réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique),
+des serveurs HTTP jusqu’aux serveurs de base de données.

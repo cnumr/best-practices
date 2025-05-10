@@ -1,0 +1,54 @@
+---
+refID: '0111'
+title: Limiter la taille des e-mails envoyés
+createdAt: 2024-02-14T13:30:05.473Z
+updatedAt: 2024-07-05T05:01:19.639Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '104'
+  - version: 2.0.0
+    idRef: '0112'
+  - version: 3.0.0
+    idRef: '0111'
+  - version: 4.0.0
+    idRef: '0111'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de courriels envoyés de plus de 1mo
+    maxValue: '0'
+---
+
+## Description
+
+Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé.
+Éviter les pièces jointes et les images intégrées. Préférer un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
+
+## Exemple
+
+L’envoi d’un e-mail de confirmation de prise en compte d’une demande de contact ne justifie pas l’ajout de code HTML et d’images.
+Un message HTML basique utilise en moyenne :
+
+* au moins 2 images (le logo et une signature en bas de page), soit 10 Ko environ ;
+* 12 Ko de code HTML pour la mise en page (styles inline, tableaux...) ;
+* 4 Ko de texte (le message + 2 liens d’action).
+
+Au final :
+
+* e-mail HTML = 26 Ko ;
+* e-mail text brut = 4 Ko.
+
+Soit un gain de 22 Ko par e-mail envoyé.
+Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et internes, le gain potentiel devient considérable.

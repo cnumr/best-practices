@@ -1,0 +1,46 @@
+---
+refID: 0008
+title: Proposer un traitement asynchrone lorsque c'est possible
+createdAt: 2024-02-14T09:41:02.130Z
+updatedAt: 2024-07-04T18:37:02.601Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '112'
+  - version: 2.0.0
+    idRef: 0008
+  - version: 3.0.0
+    idRef: 008
+  - version: 4.0.0
+    idRef: 008
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - ram
+  - network
+  - requests
+validations:
+  - rule: de traitements synchrones qui prennent plus d'une minute
+    maxValue: '0'
+---
+
+## Description
+
+Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
+L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution ;
+par exemple, via la réception d’un e-mail contenant un lien.
+Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée.
+On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
+Il est également plus aisé de lisser la charge du serveur responsable du traitement, ce qui permet une meilleure mutualisation de serveurs et par conséquent moins de serveurs.
+
+## Exemple
+
+Dans le cas d’un service en ligne de conversion de documents bureautiques, inciter l’utilisateur à déposer ses fichiers en une seule fois, puis l’avertir par e-mail lorsque le traitement est terminé. Pour optimiser le processus, l’ensemble des fichiers peut être regroupé et compressé dans une archive.

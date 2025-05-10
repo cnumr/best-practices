@@ -1,0 +1,48 @@
+---
+refID: 0108
+title: Optimiser les PDF
+createdAt: 2024-02-14T13:23:25.420Z
+updatedAt: 2024-07-05T04:58:51.723Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '98'
+  - version: 2.0.0
+    idRef: 0109
+  - version: 3.0.0
+    idRef: 0108
+  - version: 4.0.0
+    idRef: 0108
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: de PDF non optimisés
+    maxValue: '0'
+---
+
+## Description
+
+S’assurer, avant leur mise en ligne, que les PDF sont réellement optimisés pour le Web : taux d’échantillonnage et de compression des images, polices incorporées, résolution…
+
+Le cas échéant, proposer le téléchargement des PDF chapitre par chapitre.
+
+Si vous souhaitez offrir à l’utilisateur de télécharger un lecteur PDF, préférer un logiciel léger tel que Sumatra (4,3 Mo) au lecteur d’Adobe (48 Mo), soit une bande passante divisée par 10 à chaque téléchargement et, surtout, une plus faible consommation de mémoire vive (ce qui permet de lutter contre la fracture numérique et l’obsolescence programmée).
+
+## Exemple
+
+Pour un rapport annuel en PDF :
+
+* vérifier que les images sont fortement compressées et à une résolution maximale de 72 dpi ;
+* n’inclure que les principales polices ;
+* découper le rapport en chapitres, afin de limiter les téléchargements inutiles.

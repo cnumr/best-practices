@@ -1,0 +1,50 @@
+---
+refID: 0095
+title: Éviter les redirections
+createdAt: 2024-02-14T12:56:03.366Z
+updatedAt: 2024-07-05T04:52:02.217Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '45'
+  - version: 2.0.0
+    idRef: 0097
+  - version: 3.0.0
+    idRef: 0095
+  - version: 4.0.0
+    idRef: 0095
+people: TBDs
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 6-support
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - storage
+validations:
+  - rule: de redirections
+    maxValue: '1'
+---
+
+## Description
+
+Les redirections dégradent le temps de réponse, tout en consommant des ressources inutilement. Il faut donc les éviter autant que possible. Ces redirections peuvent avoir lieu à différents niveaux : code HTML, code JavaScript, serveur HTTP et serveur d’applications (PHP, etc.).
+
+## Exemple
+
+Au niveau du serveur HTTP (Apache, dans ce cas), une redirection consiste à activer une réécriture systématique des URL via le fichier
+.htaccess :
+
+```apache
+<IfModule mod_alias.c>
+    Redirect permanent http://ancienne_adresse.fr http://nouvelle.adresse.fr/
+</IfModule>
+```
+
+Mieux vaut remplacer manuellement les adresses statiques intégrées aux pages web

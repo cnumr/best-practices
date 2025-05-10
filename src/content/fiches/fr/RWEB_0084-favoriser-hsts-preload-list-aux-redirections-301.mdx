@@ -1,0 +1,50 @@
+---
+refID: 0084
+title: Favoriser HSTS Preload list aux redirections 301
+createdAt: 2024-02-14T12:31:39.471Z
+updatedAt: 2024-07-05T04:45:36.944Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '1060'
+  - version: 2.0.0
+    idRef: 0084
+  - version: 3.0.0
+    idRef: 0084
+  - version: 4.0.0
+    idRef: 0084
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de non activations de HSTS
+    maxValue: '0'
+---
+
+## Description
+
+Le HSTS permet d’indiquer à n’importe quel navigateur, via un header de réponse HTTP gardé en cache que le domaine doit exclusivement être contacté en HTTPS.
+
+Cela permet aux requêtes suivantes, émises sur le même domaine, d’être exclusivement contactées avec le protocole HTTPS, ce qui évite une multitude de redirections 301.
+Néanmoins, le premier appel exige une réponse (potentiellement non sécurisé) HTTP avec un header STS (Strict-Transport-Security).
+Pour pallier ce problème, et obliger les navigateurs à contacter l’intégralité du domaine en HTTPS, il est possible, en plus d’activer le HSTS, de s’enregistrer dans une liste statique mise à jour sur tous les navigateurs récents : [https://hstspreload.org](https://hstspreload.org).
+
+Il est important de noter que l’enregistrement de son domaine sur htstpreload.org est rapide et concerne l’intégralité du domaine, (sous-domaines inclus). Avant d’effectuer cet enregistrement, qui est relativement lent à supprimer, veillez qu’aucun de vos sous-domaines ne soient perturbés par la mise en place du HTTPS.
+
+## Exemple
+
+Exemple de configuration
+
+```apache
+Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
+```

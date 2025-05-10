@@ -1,0 +1,40 @@
+---
+refID: 0094
+title: Héberger les ressources (CSS/JS) sur un domaine sans cookie
+createdAt: 2024-02-14T12:53:29.289Z
+updatedAt: 2024-07-05T04:51:18.642Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '73'
+  - version: 2.0.0
+    idRef: 0096
+  - version: 3.0.0
+    idRef: 0094
+  - version: 4.0.0
+    idRef: 0094
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+validations:
+  - rule: de domaines servant des ressources statiques AVEC un cookie
+    maxValue: '1'
+---
+
+## Description
+
+Les images, feuilles de style CSS et fichiers JavaScript doivent être hébergés sur un domaine sans cookies. Cela évite au navigateur d’envoyer un cookie pour chaque ressource... alors qu’il est inutile. En effet, bien que transféré dans chaque requête HTTP, le cookie
+est inutile pour les contenus statiques, puisqu’il sert à maintenir un état entre le navigateur de l’internaute et le serveur d’applications distant grâce aux identifiants contenus dans le fichier texte. Il est donc préférable de stocker ce type de contenus sur un nom de domaine spécifique, par exemple static.mondomaine.com.
+
+## Exemple
+
+Les leaders du Web utilisent un domaine séparé pour servir les ressources statiques qui ne nécessitent pas de cookies. Yahoo! emploie par exemple le domaine yimg.com, YouTube le domaine ytimg.com et Amazon le domaine images-amazon.com.

@@ -1,0 +1,41 @@
+---
+refID: '4005'
+title: Fournir une alternative textuelle aux contenus multimédias
+createdAt: 2024-02-14T13:45:46.980Z
+updatedAt: 2024-07-05T05:07:07.796Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4005'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: de fichiers multimédias sans alternative textuelle
+    maxValue: 10%
+---
+
+## Description
+
+Le texte, même mise en forme en HTML/CSS, utilise beaucoup moins de bande passante que des formats multimédias comme l'audio ou la vidéo.
+Fournir aux utilisateurs une alternative textuelle à ces contenus leur permet s'ils le souhaitent de lire plutôt que d'écouter ou de visionner, et donc de transférer moins de données.
+Si cette alternative textuelle a elle même une taille importante, elle peut ne pas être chargée par défaut mais suite à une action utilisateur.
+
+Cette pratique est également bénéfique pour l'accessibilité : les mal entendants pourront lire le contenu et y auront donc accès, de même pour les mal voyants, si le texte inclut une description des éléments des vidéos qui ne sont que visibles.
+
+Cette pratique est également bénéfique pour le référencement, les moteurs de recherche pouvant plus facilement analyser le texte que l'audio et la vidéo.
+
+Voir aussi sur le même sujet la pratique « Eviter la lecture automatique des vidéos et des sons »
+
+## Exemple
+
+Une video de 30 minutes va typiquement faire 500mo, un podcast de la même durée fera 30mo, et l'équivalent texte moins d'1 mo.

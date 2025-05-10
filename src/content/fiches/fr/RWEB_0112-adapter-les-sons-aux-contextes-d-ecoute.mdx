@@ -1,0 +1,51 @@
+---
+refID: '0112'
+title: Adapter les sons aux contextes d'écoute
+createdAt: 2024-02-14T13:32:09.871Z
+updatedAt: 2024-07-05T05:01:52.880Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '95'
+  - version: 2.0.0
+    idRef: '0113'
+  - version: 3.0.0
+    idRef: '0112'
+  - version: 4.0.0
+    idRef: '0112'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de codecs audio propriétaires (non libres) et de pistes audio dont le
+      ratio poids en mega octet/durée en minute est superieur a 1
+    maxValue: '0'
+---
+
+## Description
+
+Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier 3 formats couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
+
+* MP3 (MPEG-1 Audio Layer 3) ;
+* AAC (Advanced Audio Coding) ;
+* Vorbis.
+  Ces formats appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs.
+
+## Exemple
+
+Des encodeurs comme LAME permettent de convertir au format MP3 des fichiers audio non compressés, mais également de jouer sur le taux d’échantillonnage, afin de gagner encore du poids, au détriment de la qualité audio. À tester sur chaque fichier sonore.
+
+Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conversion en MP3 donne :
+
+* un fichier son-128.mp3 de 10 823 octets (128 kb/s), 6 fois plus léger ;
+* un fichier son-64.mp3 de 6 508 octets (64 kb/s), 10 fois plus léger.

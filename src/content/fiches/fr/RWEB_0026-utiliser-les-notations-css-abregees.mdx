@@ -1,0 +1,54 @@
+---
+refID: '0026'
+title: Utiliser les notations CSS abrégées
+createdAt: 2024-02-14T10:47:59.440Z
+updatedAt: 2024-07-04T21:32:45.216Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '15'
+  - version: 2.0.0
+    idRef: 0029
+  - version: 3.0.0
+    idRef: '0026'
+  - version: 4.0.0
+    idRef: '0026'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: de notations CSS non abrégées
+    maxValue: 0%
+---
+
+## Description
+
+Utiliser les notations CSS abrégées pour réduire le poids de la feuille de styles.
+
+## Exemple
+
+Ne pas écrire :
+
+```css
+margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;
+```
+
+mais plutôt :
+
+```css
+margin:1em 0 2em 0.5em;
+```
+
+Pour aller plus loin :
+
+* [https://www.w3.org/TR/CSS](https://www.w3.org/TR/CSS)
+* [https://www.456bereastreet.com/archive/200502/efficient\_css\_with\_shorthand\_properties/](https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/)

@@ -1,0 +1,40 @@
+---
+refID: '0102'
+title: Mettre en cache les réponses AJAX
+createdAt: 2024-02-14T13:09:38.322Z
+updatedAt: 2024-07-05T04:55:29.490Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '91'
+  - version: 2.0.0
+    idRef: '0101'
+  - version: 3.0.0
+    idRef: '0102'
+  - version: 4.0.0
+    idRef: '0102'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 4-production
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de réponses AJAX non mises en cache
+    maxValue: 10%
+---
+
+## Description
+
+Les réponses AJAX qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, les mettre en cache pour économiser de la bande passante.
+
+## Exemple
+
+Si une requête AJAX retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client pour ne pas générer à nouveau une requête vers le serveur.

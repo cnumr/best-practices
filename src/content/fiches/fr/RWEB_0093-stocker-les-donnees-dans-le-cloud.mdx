@@ -1,0 +1,43 @@
+---
+refID: 0093
+title: Stocker les données dans le cloud
+createdAt: 2024-02-14T12:51:19.943Z
+updatedAt: 2024-07-05T04:50:51.841Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '71'
+  - version: 2.0.0
+    idRef: 0092
+  - version: 3.0.0
+    idRef: 0093
+  - version: 4.0.0
+    idRef: 0093
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: >-
+      de ressources, données du site web qui ne sont pas stockées sur une
+      solution de cloud computing
+    maxValue: '0'
+---
+
+## Description
+
+Pour optimiser l’espace de stockage nécessaire aux ressources d’un site web ou d’un service en ligne, il peut être intéressant d’utiliser des solutions de cloud computing. Ainsi, tout en disposant d’une solution évolutive (elastic en anglais), on ne monopolise pas de ressources inutilement. L’autre intérêt est d’héberger les ressources statiques sur un domaine sans cookies. On évite alors de transporter le cookie avec chaque ressource transférée vers le navigateur (voir la bonne pratique "Héberger les ressources (CSS/JS) sur un domaine sans cookie").
+
+Cette approche est donc judicieuse pour les images et autres ressources statiques. Comme il ne faut pas multiplier les domaines (voir la bonne pratique "Limiter le nombre de domaines servant les ressources"), le plus simple est de regrouper toutes les ressources statiques sur un seul service de stockage en ligne.
+
+## Exemple
+
+Pour la réalisation d’un jeu concours basé sur des témoignages vidéo, il est plus efficace de recourir au service de stockage S3 d’Amazon que d’ajouter de nouveaux disques durs aux serveurs existants.

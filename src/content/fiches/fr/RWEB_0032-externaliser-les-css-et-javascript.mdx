@@ -1,0 +1,60 @@
+---
+refID: '0032'
+title: Externaliser les CSS et JavaScript
+createdAt: 2024-02-14T11:01:42.726Z
+updatedAt: 2024-07-04T21:35:12.509Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '7'
+  - version: 2.0.0
+    idRef: '0016'
+  - version: 3.0.0
+    idRef: '0032'
+  - version: 4.0.0
+    idRef: '0032'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      d'URL intégrant une quantité et / ou un nombre significatif de code CSS /
+      Javascript (inline)
+    maxValue: '2'
+---
+
+## Description
+
+Veiller à ce que les codes CSS et JavaScript ne soient pas embarqués dans le code HTML de la page, à l’exception d’éventuelles
+variables de configuration pour les objets JavaScript.
+
+En effet, si vous incluez du code CSS ou JavaScript dans le corps du fichier HTML, alors que ce dernier est utilisé par plusieurs pages
+(voire tout le site), ce code doit être transféré pour chaque page demandée par l’internaute, ce qui augmente le volume de données transmises.
+En revanche, si les codes CSS et JavaScript sont inclus dans leurs propres fichiers,
+le navigateur peut les stocker dans son système de cache local afin de ne pas les redemander.
+
+## Exemple
+
+Dans le code HTML, ne pas écrire :
+
+```html
+<style type="text/css" media="screen">
+    p { color: #333; margin: 2px 0 }
+    /* Toutes les déclarations CSS du site */
+</style>
+```
+
+mais plutôt :
+
+```html
+<link href="css/styles.css" rel="stylesheet">
+```

@@ -1,0 +1,46 @@
+---
+refID: '0060'
+title: Encoder les sons en dehors du CMS
+createdAt: 2024-02-14T11:57:39.232Z
+updatedAt: 2024-07-04T21:44:04.623Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '96'
+  - version: 2.0.0
+    idRef: '0060'
+  - version: 3.0.0
+    idRef: '0060'
+  - version: 4.0.0
+    idRef: '0060'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - network
+  - storage
+validations:
+  - rule: de fichiers sonores encodés directement par le CMS
+    maxValue: '0'
+---
+
+## Description
+
+Adapter et optimiser les sons en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulagera la CPU et la mémoire vive, car un serveur web n’est pas optimisé pour le (ré)encodage des fichiers audio.
+
+## Exemple
+
+Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
+
+* 7 Mo de bande passante lors de l’envoi ;
+* 100 Ko lors de l’écoute du résultat ;
+* 6,9 Mo de stockage sur le disque dur du serveur.

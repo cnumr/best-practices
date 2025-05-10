@@ -1,0 +1,49 @@
+---
+refID: '0013'
+title: Favoriser les pages statiques
+createdAt: 2024-02-14T10:04:22.896Z
+updatedAt: 2024-07-04T21:27:09.526Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '3'
+  - version: 2.0.0
+    idRef: '0051'
+  - version: 3.0.0
+    idRef: '0013'
+  - version: 4.0.0
+    idRef: '0013'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: de pages dynamiques
+    maxValue: 25%
+---
+
+## Description
+
+Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS.
+Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
+
+L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles
+pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données),
+éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
+
+## Exemple
+
+En fonction du service numérique à concevoir, il est envisageable :
+
+* pour une landing page ou simple site vitrine de créer un site statique en HTML, CSS et JS.
+* pour un blog avec peu d'activité, ou de petite taille, de créer un site statique généré via un JAMstack (Jekyll, Hugo, Gasby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contenful, Flextype, etc.).
+* pour un site ou une application web plus complexe de rendre les pages à faible taux de modifications (FAQ, About, mentions légales, etc.) statiques en utilisant des frameworks (Next, Nuxt, Svelte, etc.).
