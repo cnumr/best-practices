@@ -2,7 +2,7 @@
 refID: '4032'
 title: Mettre en place un "Circuit breaker"
 createdAt: 2024-02-14T14:26:40.125Z
-updatedAt: 2024-07-05T05:20:50.218Z
+updatedAt: 2025-05-16T09:46:51.897Z
 language: fr
 published: true
 refType: RWEB
@@ -13,6 +13,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: '2.1'
 environmental_impact: 2
 priority_implementation: 2
 moe: 2
@@ -22,18 +23,17 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de "circuit breakers" non mis en place sur des services non critiques
+  - rule: de "circuit breakers" non mis en place sur des services externes
     maxValue: '0'
 ---
 
 ## Description
 
-Un "circuit breaker" casse le traitement d'une requête à travers plusieurs services dans le cas où un des services ne répond pas.
-Des requêtes provenant des terminaux utilisateurs peuvent solliciter des services utiles et aussi pour lesquels un mode dégradé est acceptable.
-Ils sont qualifiés de non critiques.
-En fonction d’un certain nombre de critères d’erreur (timeout, nombre d’erreurs), le service appelant un service non critique
-peut désactiver cet appel et renvoyer immédiatement une réponse alternative.
-Ce pattern permet de ne pas solliciter inutilement un service et le réseau.
+Un circuit breaker est un patron de conception (design pattern) permettant d’optimiser les appels à un service (typiquement une API) dans le cas où celui-ci est en erreur.
+
+En fonction d’un certain nombre de critères d’erreur (timeout, nombre d’erreurs), le service appelant détecte le problème et, au lieu d’appeler le service de façon indifférenciée, il peut remplacer l’appel par un comportement prédéfini comme l’utilisation d’une valeur par défaut ou l’appel d’un autre service. Dans tous les cas, le circuit breaker permet de définir une politique pour retenter d’appeler le service défaillant : réessayer toutes les x secondes, par exemple.
+
+Cette pratique permet d’économiser des ressources (appels réseaux) aussi bien au niveau de l’appelant (inutile d’appeler un service qui échoue), que de l’appelé, qui peut alors plus facilement se rétablir.
 
 ## Exemple
 
