@@ -1,0 +1,40 @@
+---
+refID: '4021'
+title: Set up an elastic architecture
+createdAt: 2025-05-16T11:54:45.418Z
+updatedAt: 2025-05-16T11:54:45.418Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-conception-design
+rgesn: '3.2'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: unnecessarily deployed resources used when the load is low
+    maxValue: '0'
+---
+
+## Description
+
+Most of the time, an application's load is not constant.
+
+For example, there may be few (if any) users connected at night. In this case, it is not necessary to use as much  infrastructure during low hours than during peak ours.
+
+Furthermore, implementing an elastic architecture saves money since less server resources are used.
+
+However, an elastic architecture has a significant implementation cost  as it increased solution complexity. If your application has a low load or if the load varies little, it is not essential to implement it.
+
+## Exemple
+
+With the mutualisation of (see "Using virtualized servers"), particularly in the cloud, it is possible to dynamically and automatically scale up and down the infrastructure to follow the load. This can be done with scheduled tasks (e.g., switching off at night) or by reacting to technical metrics such as the number of requests.
