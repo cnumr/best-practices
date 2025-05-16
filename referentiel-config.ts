@@ -86,9 +86,9 @@ export const getRefConfig: RefConfig = (specificRef) => {
         es: '🇪🇸 Español',
       };
       config.i18n.refTitles = {
-        es: { short: 'Performance Web', long: ' para Performance Web' },
-        en: { short: 'Web Performance', long: ' for Web Performance' },
-        fr: { short: 'Performance Web', long: ' pour Performance Web' },
+        es: { short: 'Ecodiseño web', long: ' para Ecodiseño web' },
+        en: { short: 'Web eco-design', long: ' for Web eco-design' },
+        fr: { short: 'Ecoconception web', long: ' pour Performance Web' },
       };
       config.refInformations = {
         currentVersion: '4.0.0',
