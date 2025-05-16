@@ -22,7 +22,7 @@ type RefConfig = (specificRef?: string) => {
 };
 
 export const getRefConfig: RefConfig = (specificRef) => {
-  const currentRef = specificRef || process.env.TINA_PUBLIC_REF_NAME || 'RWEB';
+  const currentRef = specificRef || process.env.NEXT_PUBLIC_REF_NAME;
   const config = {
     i18n: {
       defaultLang: 'fr' as 'fr',
@@ -50,11 +50,10 @@ export const getRefConfig: RefConfig = (specificRef) => {
       moe: false,
       tiers: false,
       scope: false,
-      rgesnField: false,
     },
   };
   switch (currentRef) {
-    case 'RWP':
+    case 'BP':
       config.i18n.locales = ['fr', 'en', 'es'];
       config.i18n.languages = {
         fr: '🇫🇷 Français',
@@ -77,7 +76,6 @@ export const getRefConfig: RefConfig = (specificRef) => {
       config.featuresEnabled.moe = false;
       config.featuresEnabled.tiers = false;
       config.featuresEnabled.scope = true;
-      config.featuresEnabled.rgesnField = false;
       break;
 
     case 'RWEB':
@@ -88,12 +86,12 @@ export const getRefConfig: RefConfig = (specificRef) => {
         es: '🇪🇸 Español',
       };
       config.i18n.refTitles = {
-        es: { short: 'Performance Web', long: ' para Performance Web' },
-        en: { short: 'Web Performance', long: ' for Web Performance' },
-        fr: { short: 'Performance Web', long: ' pour Performance Web' },
+        es: { short: 'Ecodiseño web', long: ' para Ecodiseño web' },
+        en: { short: 'Web eco-design', long: ' for Web eco-design' },
+        fr: { short: 'Ecoconception web', long: ' pour Performance Web' },
       };
       config.refInformations = {
-        currentVersion: '5.0.0',
+        currentVersion: '4.0.0',
         creationYear: 2012,
       };
       config.featuresEnabled.lexique = true;
@@ -103,11 +101,10 @@ export const getRefConfig: RefConfig = (specificRef) => {
       config.featuresEnabled.moe = true;
       config.featuresEnabled.tiers = true;
       config.featuresEnabled.scope = false;
-      config.featuresEnabled.rgesnField = true;
       break;
 
     default:
-      console.error(`TINA_PUBLIC_REF_NAME NOT CONFIGURED!`);
+      console.error(`NEXT_PUBLIC_REF_NAME NOT CONFIGURED!`);
       break;
   }
 
@@ -116,5 +113,5 @@ export const getRefConfig: RefConfig = (specificRef) => {
 
 export const getCurrentRef = () => {
   // @ts-ignore
-  return process.env.TINA_PUBLIC_REF_NAME;
+  return process.env.NEXT_PUBLIC_REF_NAME;
 };
