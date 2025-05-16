@@ -324,13 +324,13 @@ export const ui = {
   fr: {
     '': '',
     // SEO
-    'seo.site_name': "Les bonnes pratiques d'écoconception",
-    'seo.default.description': "Les bonnes pratiques d'écoconception",
+    'seo.site_name': "Référentiel de bonnes pratiques",
+    'seo.default.description': "Référentiel de bonnes pratiques",
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Collectif Green IT',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': "Les bonnes pratiques d'écoconception",
+    'seo.image.alt': "Référentiel de bonnes pratiques",
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
