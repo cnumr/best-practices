@@ -14,13 +14,13 @@ export const defaultLang = getRefConfig().i18n.defaultLang;
 export const ui = {
   es: {
     // SEO
-    'seo.site_name': 'Buenas prácticas de ecodiseño',
-    'seo.default.description': 'Buenas prácticas de ecodiseño',
+    'seo.site_name': 'Directrices de buenas prácticas',
+    'seo.default.description': 'Directrices de buenas prácticas',
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Colectivo de TI Verde',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': 'Buenas prácticas de ecodiseño',
+    'seo.image.alt': 'Directrices de buenas prácticas',
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
@@ -146,13 +146,6 @@ export const ui = {
     '7-deployment': '7. Publicación',
     '8-maintenance': '8. Mantenimiento / Uso / Aporte',
     '9-end-of-life': '9. Fin de la vida',
-    '1-specification': '1. Especificación',
-    '2-concept': '2. Conception',
-    '3-developement': '3. Diseño',
-    '4-production': '4. Producción',
-    '5-utilization': '5. Utilice',
-    '6-support': '6. Ayuda',
-    '7-retirement': '7. Fin de la vida',
     // Environmental impact
     environmental_impact: 'Impacto medioambiental',
     high_environmental_impact: 'Fuerte 🌱🌱🌱',
@@ -173,18 +166,16 @@ export const ui = {
     electricity: 'El consumo de energía',
     ghg: 'Emisiones de gases de efecto invernadero',
     tdb: 'A definir',
-    "Previous REF ID": 'REF ID anterior',
-    "No previous Version": 'Sin versión anterior',
   },
   en: {
     // SEO
-    'seo.site_name': 'Good ecodesign practices',
-    'seo.default.description': 'Good ecodesign practices',
+    'seo.site_name': 'Best practice guidelines',
+    'seo.default.description': 'Best practice guidelines',
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Green IT Collective',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': 'Good ecodesign practices',
+    'seo.image.alt': 'Best practice guidelines',
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
@@ -309,13 +300,6 @@ export const ui = {
     '7-deployment': '7. Put online',
     '8-maintenance': '8. Maintenance / Use / Contribution',
     '9-end-of-life': '9. End of life',
-    '1-specification': '1. Specification',
-    '2-concept': '2. Concept',
-    '3-developement': '3. Development',
-    '4-production': '4. Production',
-    '5-utilization': '5. Utilization',
-    '6-support': '6. Support',
-    '7-retirement': '7. Retirement',
     // Environmental impact
     environmental_impact: 'Environmental impact',
     high_environmental_impact: 'Strong 🌱🌱🌱',
@@ -336,19 +320,17 @@ export const ui = {
     electricity: 'Power consumption',
     ghg: 'Greenhouse gas emissions',
     tdb: 'To define',
-    "Previous REF ID": 'Previous REF ID',
-    "No previous Version": 'No previous Version',
   },
   fr: {
     '': '',
     // SEO
-    'seo.site_name': "Les bonnes pratiques d'écoconception",
-    'seo.default.description': "Les bonnes pratiques d'écoconception",
+    'seo.site_name': "Référentiel de bonnes pratiques",
+    'seo.default.description': "Référentiel de bonnes pratiques",
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Collectif Green IT',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': "Les bonnes pratiques d'écoconception",
+    'seo.image.alt': "Référentiel de bonnes pratiques",
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
@@ -475,14 +457,6 @@ export const ui = {
     '7-deployment': '7. Mise en ligne',
     '8-maintenance': '8. Maintenance / Usage / Contribution',
     '9-end-of-life': '9. Fin de vie',
-    '1-specification': '1. Spécification',
-    '2-concept': '2. Conception',
-    '3-developement': '3. Développement',
-    '4-production': '4. Production',
-    '5-utilization': '5. Utilisation',
-    '6-support': '6. Support',
-    '7-retirement': '7. Fin de vie',
-
     // Environmental impact
     environmental_impact: 'Impact environnemental',
     high_environmental_impact: 'Fort 🌱🌱🌱',
@@ -511,8 +485,5 @@ export const ui = {
     'user-device': 'Utilisateur/Terminal',
     // "network": "Réseau",
     datacenter: 'Datacenter',
-    "Previous REF ID": 'REF ID précédente',
-    "No previous Version": 'Pas de version précédente',
-    "rgesn": 'RGESN',
   },
 } as const;
