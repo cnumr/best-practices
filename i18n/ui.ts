@@ -14,13 +14,13 @@ export const defaultLang = getRefConfig().i18n.defaultLang;
 export const ui = {
   es: {
     // SEO
-    'seo.site_name': 'Buenas prácticas de ecodiseño',
-    'seo.default.description': 'Buenas prácticas de ecodiseño',
+    'seo.site_name': 'Directrices de buenas prácticas',
+    'seo.default.description': 'Directrices de buenas prácticas',
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Colectivo de TI Verde',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': 'Buenas prácticas de ecodiseño',
+    'seo.image.alt': 'Directrices de buenas prácticas',
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
@@ -169,13 +169,13 @@ export const ui = {
   },
   en: {
     // SEO
-    'seo.site_name': 'Good ecodesign practices',
-    'seo.default.description': 'Good ecodesign practices',
+    'seo.site_name': 'Best practice guidelines',
+    'seo.default.description': 'Best practice guidelines',
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Green IT Collective',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': 'Good ecodesign practices',
+    'seo.image.alt': 'Best practice guidelines',
     'seo.noRobots': true,
 
     // src/components/BackToTop.astro
