@@ -1,0 +1,50 @@
+---
+refID: '0042'
+title: Hide DOM elements while they are being modified
+createdAt: 2025-05-18T20:09:27.544Z
+updatedAt: 2025-05-18T20:09:27.545Z
+language: en
+published: false
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: DOM elements manipulations while the element is still visible
+    maxValue: '1'
+---
+
+### Description
+
+When several properties of a DOM (Document Object Model) element need to be modified, each content or style change will trigger repaints and / or reflows.
+
+It is usually preferable to:
+
+* Hide these elements (set display property to none) (1 reﬂow);
+* Modify all properties and make the elements visible again (1 reﬂow).
+
+That is, maximum 2 reﬂows.
+
+### Example
+
+Proceed as follows:
+
+```javascript
+var elem = document.getElementById('foo'); elem.style.display = 'none'; // Generate 1 reﬂow elem.style.width ='10em';
+elem.style.height = 'auto';
+// ... other changes ...
+elem.style.display = 'block'; // Generate 1 reﬂow
+```
+
+Only 2 reflows are required (instead of potentially 6 or 7).
