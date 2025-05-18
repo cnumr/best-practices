@@ -1,0 +1,57 @@
+---
+refID: '0041'
+title: Avoid updates during DOM traversal
+createdAt: 2025-05-18T20:05:35.133Z
+updatedAt: 2025-05-18T20:05:35.133Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: "DOM element modifications performed when the same part of the DOM is traversed by JavaScript code\t"
+    maxValue: '0'
+---
+
+### Description
+
+Updating DOM (Document Object Model) elements while navigating through it can result in situations leading to greedy resource consumption, especially CPU cycles. Adding elements during DOM traversal might end up creating an infinite loop which will consume a large amount of resources. This kind of modification should be avoided when possible.
+
+### Example
+
+Avoid:
+
+```html
+<script>
+  // jQuery notation
+  $('a.extlink').each(function(el) {
+    $(el).attr('rel', 'external nofollow');
+     });
+</script>
+```
+
+Write:
+
+```html
+<script>
+  $(document).ready(function() {
+    var itemsToUpdate = [];
+  $('a.extlink').each(function() {
+    itemsToUpdate.push(this);
+    });
+  $(itemsToUpdate).attr('rel', 'external nofollow');
+});
+</script>
+```
