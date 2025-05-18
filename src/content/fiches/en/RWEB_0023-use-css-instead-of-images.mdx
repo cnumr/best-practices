@@ -1,0 +1,51 @@
+---
+refID: '0023'
+title: Use CSS instead of images
+createdAt: 2025-05-18T19:41:34.968Z
+updatedAt: 2025-05-18T19:41:34.968Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: images that could have been replaced by CSS
+    maxValue: '0'
+---
+
+### Description
+
+Use CSS properties instead of images. Style sheets are much smaller, especially when they are compressed. Calling for a stylesheet only generates a single HTTP request while using many images generates many HTTP requests (one HTTP request for each image).
+
+### Example
+
+Rounded corners of elements should be implemented with CSS rather than images.
+
+Prefer writing:
+
+```css
+#frame {
+  border-radius: 10px;
+}
+```
+
+```html
+<div id="frame">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+```
