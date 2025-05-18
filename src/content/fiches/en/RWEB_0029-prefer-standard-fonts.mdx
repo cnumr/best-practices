@@ -1,0 +1,72 @@
+---
+refID: 0029
+title: Prefer standard fonts
+createdAt: 2025-05-18T19:12:46.690Z
+updatedAt: 2025-05-18T19:12:46.690Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: '4.8'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - storage
+  - network
+  - requests
+validations:
+  - rule: downloaded fonts
+    maxValue: '2'
+---
+
+### Description
+
+Use standard fonts that are already installed on the user's computer and do not need any additional downloads to save bandwidth and accelerate web pages loading. You can find a list of standard fonts at [https://systemfontstack.com/](https://systemfontstack.com/).
+
+If however you need a specific font for your digital service, even if it is an API font (Google font, Adobe font, etc.), you must:
+
+* Host the font by yourself
+* Use faux-bold via the -webkit-text-strokeCSS property when possible
+* Prefer the use of variable fonts if you need more than one variant (ex: regular, bold, etc.)
+* Optimize the font by removing unnecessary characters (example: French sites only require latin characters, cyrillic alphabet can therefore be deleted). This can be achieved with [https://www.glyphrstudio.com/](https://www.glyphrstudio.com/).
+
+You should incorporate new glyphs directly into fonts if you have monochrome pictograms or illustrations (see rule 30: Prefer glyphs to images) and font usage rights allow it.
+
+### Example
+
+Here is a comparison chart of Oswald typeface font sizes:
+
+|        | Regular | Regular + Bold | Variable | Regular Latin | Latin Regular + Latin Bold | Variable Latin |
+| ------ | ------- | -------------- | -------- | ------------- | -------------------------- | -------------- |
+| Weight | 37.6kb  | 76.9kb         | 66kb     | 16kb          | 32.5kb                     | ?              |
+
+### Alternative solution
+
+Users can choose, through browser settings, to ask websites they visit to optimize the network requests. You can detect it with the prefers-reduced-datamedia query.
+
+In the example below, Montserratfont will only be downloaded if users didn't set any personal settings. Otherwise, the Arialfont will be used and Montserratwill not be downloaded.
+
+```javascript
+@media(prefers - reduced - data: no - preference) {
+  @font-face {
+    font - family: Montserrat;
+    font - style: normal;
+    font - weight: 400;
+    src: url('fonts/montserrat-latin-regular.woff2');
+  }
+}
+
+bodysuit {
+  font - family: Montserrat, Arial;
+}
+```
+
+For more information on the prefers-reduced-datamedia query: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
