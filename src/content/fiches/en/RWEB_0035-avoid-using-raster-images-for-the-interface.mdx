@@ -1,0 +1,50 @@
+---
+refID: '0035'
+title: Avoid using raster images for the interface
+createdAt: 2025-05-18T19:45:18.092Z
+updatedAt: 2025-05-18T19:45:18.092Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 5-utilization
+rgesn: '5.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: raster images for the tested URL
+    maxValue: '5'
+---
+
+### Description
+
+Choosing the most appropriate image format is essential to save bandwidth.
+
+Furthermore, with the growing number of devices and screen sizes, and the increasing screen resolutions, vector-based approaches should be favored over raster images. With this approach the interface will be decoupled from screen resolution, limiting technical debt. The first rule is to replace raster images (GIF, PNG, JPEG, WebP, etc.) with styles (CSS), pictograms, glyphs, or icons provided by web fonts or standard fonts (already installed on the users' devices). This doesn't require any additional resources to download. If it isn't possible to use CSS or standard fonts you can also:
+
+* use webfonts
+* use a vector image in standard SVG format
+
+To go further and optimize SVGs, you can use [https://svgomg.net/.](https://svgomg.net/)
+
+### Example
+
+![](/img.png)
+
+This 198 × 198 pixel image size is:
+
+* 118 KB in uncompressed raster format;
+* 6.5 KB in JPEG (90% compression);
+* 3.8 KB in PNG;
+* 0.7 KB in minified SVG.
+
+In this particular case, the vector format is 5 to 10 times lighter than the raster format while being infinitely resizable.
