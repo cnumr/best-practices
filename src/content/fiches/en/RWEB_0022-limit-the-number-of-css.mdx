@@ -1,0 +1,47 @@
+---
+refID: '0022'
+title: Limit the number of CSS
+createdAt: 2025-05-18T19:34:02.819Z
+updatedAt: 2025-05-18T19:34:02.819Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBDs
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: "CSS files\t**between**"
+    maxValue: 3 and 10
+---
+
+### Description
+
+Limit the number of CSS in order to avoid HTTP requests and simplify the rendering in the browser. Use a common stylesheet for all common elements, regardless of display, and one file for each target screen size or media query.
+
+Be cautious: import these files into the HTML code and NOT with @import directives in the CSS files themselves. By splitting this way, users devices will choose what is most appropriate and will defer the loading of the files that they do not need.
+
+CSS files required for some components can be loaded depending on the context if necessary.
+
+However, do not have just one CSS file in your application. It would make browser cache less effective, and make the browser execute unnessesary CSS.
+
+### Example
+
+```html
+<link rel='stylesheet' id='css-css' href='commons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='css-xs-css' href='small-screens.css' type='text/css' media='(max-width: 959px)' />
+<link rel='stylesheet' id='css-sm-css' href='tablets.css' type='text/css' media='(min-width: 768px)' />
+<link rel='stylesheet' id='css-mdlg-css' href='large-screens.css' media='(min-width: 960px)' />
+<link rel='stylesheet' id='css-print-css' href='print.css' type='text/css' media='print' />
+```
