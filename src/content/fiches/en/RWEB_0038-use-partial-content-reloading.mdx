@@ -1,0 +1,36 @@
+---
+refID: 0038
+title: Use partial content reloading
+createdAt: 2025-05-18T19:25:44.363Z
+updatedAt: 2025-05-18T19:25:44.363Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: Content zones that can be partially updated but are not
+    maxValue: '0'
+---
+
+### Description
+
+If your web page has one or more content zones with a high refresh rate, you should only reload these zones instead of the entire page. To achieve this you can use several techniques, generally with Javascript : Service Workers, Web Components, or custom developments.
+
+It is even possible to not include these parts in the HTTP response and to add them later with the Javascript described above. This architecture can be referred to as "component islands" or "islands architecture". On advantage is the ability to keep cache solutions for the "container" pages and to only reload the content parts that require it.
+
+### Example
+
+News sites very commonly use this technique, for clearly identifiable areas that require quick updates (news flash, weather data, stock market prices, sports results, etc.).
