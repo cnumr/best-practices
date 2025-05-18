@@ -2,7 +2,7 @@
 refID: 0029
 title: Favoriser les polices standards
 createdAt: 2024-02-14T10:54:04.976Z
-updatedAt: 2024-07-04T21:33:55.505Z
+updatedAt: 2025-05-18T16:44:23.215Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/designeuser.mdx
 lifecycle: 3-developement
+rgesn: '4.8'
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -37,29 +38,14 @@ validations:
 Préférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger.
 On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standards sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par exemple.
 
-Cependant si vous avez besoin d'une police particulière pour votre service numérique, même si c'est une Api font (google font, adobe font, etc.), vous devez :
+Préférez les polices standards, déjà présentes sur l’ordinateur de l’utilisateur. Elles sont listées sur le site [https://systemfontstack.com/](https://systemfontstack.com/). Si vous ajoutez une police particulière pour votre service numérique, même si c’est une API font (Google Fonts, Adobe Fonts, etc.), vous devez :
 
-* Héberger vous-même la font
-* Utiliser un faux-gras via la propriété css `-webkit-text-stroke` si possible
-* Préférer une variable font si vous avez besoin de plus d'une font d'une police (ex: regular, bold, etc.)
-* Optimiser la font en l'allégeant des caractères non nécessaires (exemple: un site en français n'a besoin que de caractères latins, l'alphabet cyrillique peut donc être supprimé)
-* Enfin, limiter leur nombre (bonne pratique de web design déjà reconnue) à deux maximum, le moins possible étant le mieux.
+* héberger vous-même la font ;
+* utiliser un faux-gras via la propriété CSS  `-webkit-text-stroke` ;
+* préférer une variable font si vous avez besoin de plus d’une font ;
+* optimiser la font en l’allégeant des caractères non nécessaires via le site [https://www.glyphrstudio.com/](https://www.glyphrstudio.com/).
 
-Si vous avez des pictogrammes ou illustrations monochromes (voir la bonne pratique : Préférez les glyphes aux images) et si les droits d'utilisations de la font le permettent, incorporer les nouveaux glyphes directement dans la font.
-
-### Exemple
-
-Voici un tableau comparatif de poids des fonts de la police Oswald :
-
-|       | Regular | Regular + bold | Variable | Latin Regular | Latin Regular + Latin Bold | Latin Variable |
-| ----: | :-----: | :------------: | :------: | :-----------: | :------------------------: | :------------: |
-| Poids |  37.6kb |     76.9kb     |   66kb   |      16kb     |           32.5kb           |        ?       |
-
-### Solution Alternative
-
-Vos utilisateurs peuvent faire le choix, via les préférences de leurs navigateurs, de demander aux sites web, utilisant le media query `prefers-reduced-data` qu'ils visitent d'optimiser les requêtes réseau réalisées.
-
-Dans l'exemple ci-dessous, nous ne téléchargeons que la font `Montserrat` si et seulement si l'utilisateur n'a pas défini de préférence. A contrario, la font `Arial` sera utilisée sans téléchargement de la `Montserrat`.
+Ici la font Montserrat n’est téléchargée que si l’utilisateur n’a pas défini de préférence. A contrario, la font Arial sera utilisée sans téléchargement de Montserrat.
 
 ```css
 @media (prefers-reduced-data: no-preference) {
@@ -75,5 +61,3 @@ body {
   font-family: Montserrat, Arial;
 }
 ```
-
-Pour plus d'informations sur la media query `prefers-reduced-data`: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
