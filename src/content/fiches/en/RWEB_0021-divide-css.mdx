@@ -1,0 +1,45 @@
+---
+refID: '0021'
+title: Divide CSS
+createdAt: 2025-05-18T19:37:17.299Z
+updatedAt: 2025-05-18T19:37:17.299Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: Na
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: CSS libraries **is between**
+    maxValue: 2 and 5
+---
+
+### Description
+
+Use a set of CSS instead of a single one, and only import the necessary ones according to the context. This method helps to limit the page size, therefore saving bandwidth and reducing CPU load.
+
+### Example
+
+Use a functional logic to divide the CSS :
+
+* layout;
+* content;
+* module x;
+* module y;
+* etc...
+
+This will exclude all CSS from unused modules in the case of a feature-rich website. The number of CSS files must remain reasonable, more for maintainability purposes than performance issues, as general CSS (“layout” and “content” in our example) will be concatenated into a single file.
+
+Optional CSS files (here "module x" and "module y") will be downloaded depending on the context (page, functionalities...).
