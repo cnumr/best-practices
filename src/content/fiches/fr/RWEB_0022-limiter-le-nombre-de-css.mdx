@@ -2,7 +2,7 @@
 refID: '0022'
 title: Limiter le nombre de CSS
 createdAt: 2024-02-14T10:35:04.172Z
-updatedAt: 2024-07-04T21:31:09.897Z
+updatedAt: 2025-05-18T16:56:57.216Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 3-developement
+rgesn: '6.5'
 environmental_impact: 4
 priority_implementation: 5
 moe: 4
@@ -33,11 +34,9 @@ validations:
 
 ## Description
 
-Limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP et pour simplifier le rendu côté navigateur. Utiliser une feuille de style commune pour tous les éléments communs, quel que soit l'affichage, et un fichier par résolution cible ou media querie.
+Nous préconisons de limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP et pour simplifier le rendu côté navigateur. Utilisez une feuille de styles commune pour tous les éléments communs, quel que soit l’affichage, et un fichier par résolution cible ou media query. Attention, il faut intégrer ces fichiers directement dans le code HTML et non avec des directives @import dans les fichiers CSS eux-mêmes. En découpant de la sorte, le terminal de l’utilisateur choisira ce qui lui correspond et dépriorisera le chargement des fichiers dont il a n’a pas besoin. Le cas échéant, des fichiers CSS pour certains composants peuvent être chargés en fonction du contexte.
 
-Attention, intégrer ces fichiers directement dans le code HTML et NON PAS avec des directives @import dans les fichiers CSS eux-mêmes. En découpant de la sorte, le terminal de l'utilisateur choisira ce qu'il lui correspond et dépriorisera le chargement des fichiers dont il a n'a pas besoin.
-
-Le cas échéant, des fichiers CSS pour certains composants peuvent être chargés en fonction du contexte.
+Veillez cependant à ne pas pousser cette logique à l’extrême en n’ayant qu’un seul fichier CSS : cela rendrait le cache navigateur moins efficace, et ferait exécuter au navigateur du code CSS non nécessaire au chargement d’une page.
 
 ### Exemple
 
