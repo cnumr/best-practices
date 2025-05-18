@@ -1,8 +1,8 @@
 ---
 refID: '0041'
-title: Ne pas faire de modification du DOM lorsqu’on le traverse
+title: Limiter le nombre de modifications du DOM lorsqu’on le traverse
 createdAt: 2024-02-14T11:34:20.720Z
-updatedAt: 2024-07-04T21:39:31.599Z
+updatedAt: 2025-05-18T17:18:57.809Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 3-developement
+rgesn: NA
 environmental_impact: 4
 priority_implementation: 5
 moe: 4
@@ -49,3 +50,19 @@ en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments 
     });
 </script>
 ```
+
+Préférer
+
+```html
+<script>
+  $(document).ready(function() {
+    var itemsToUpdate = [];
+    $('a.extlink').each(function() {
+      itemsToUpdate.push(this);
+    });
+    $(itemsToUpdate).attr('rel', 'external nofollow');
+});
+</script>
+```
+
+Cette méthode permet de stocker les éléments du DOM à modifier dans une variable temporaire puis d’effectuer les modifications en une seule opération.
