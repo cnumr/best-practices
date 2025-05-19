@@ -2,7 +2,7 @@
 refID: '4003'
 title: Éviter la lecture et le chargement automatique des vidéos et des sons
 createdAt: 2024-02-14T13:42:06.893Z
-updatedAt: 2024-07-05T05:05:35.207Z
+updatedAt: 2025-05-19T20:20:28.300Z
 language: fr
 published: true
 refType: RWEB
@@ -13,6 +13,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 5-utilization
+rgesn: '4.1'
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -30,10 +31,10 @@ validations:
 
 ## Description
 
-L'activation automatique des vidéos et des sons (auto play) au chargement des pages web implique une utilisation de ressources sur chaque tiers (terminal, réseau, datacenter).
+L'activation automatique des vidéos et des sons (autoplay) au chargement des pages web implique une utilisation de ressources sur chaque tiers (terminal, réseau, datacenter).
 Dans de nombreux cas, la lecture automatique n'est pas nécessaire.
 D'autre part, elle attire l'attention de l'utilisateur et peut le détacher du service qui était demandé.
-Ces lectures doivent donc dans la mesure du possible se faire à la demande de l'utilisateur en ne mettant pas en place l'attribut `autoplay` dans les balises `<video>` ou `<audio>`.
+Ces lectures doivent donc se faire à la demande de l'utilisateur en ne mettant pas en place l'attribut `autoplay` dans les balises `<video>` ou `<audio>`.
 
 De plus, même en n'activant pas l'autoplay, certaines parties de la vidéo ou du fichier audio peuvent être téléchargées.
 Si l'utilisateur ne lance pas la lecture de la vidéo, ces données seront téléchargées inutilement.
