@@ -22,6 +22,7 @@ export const ui = {
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
     'seo.image.alt': 'Directrices de buenas prácticas',
     'seo.noRobots': true,
+    'last-update': 'Última actualización',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Volver al principio de la página',
@@ -173,8 +174,8 @@ export const ui = {
     electricity: 'El consumo de energía',
     ghg: 'Emisiones de gases de efecto invernadero',
     tdb: 'A definir',
-    "Previous REF ID": 'REF ID anterior',
-    "No previous Version": 'Sin versión anterior',
+    'Previous REF ID': 'REF ID anterior',
+    'No previous Version': 'Sin versión anterior',
   },
   en: {
     // SEO
@@ -186,6 +187,7 @@ export const ui = {
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
     'seo.image.alt': 'Best practice guidelines',
     'seo.noRobots': true,
+    'last-update': 'Last update',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Return to top of page',
@@ -336,20 +338,21 @@ export const ui = {
     electricity: 'Power consumption',
     ghg: 'Greenhouse gas emissions',
     tdb: 'To define',
-    "Previous REF ID": 'Previous REF ID',
-    "No previous Version": 'No previous Version',
+    'Previous REF ID': 'Previous REF ID',
+    'No previous Version': 'No previous Version',
   },
   fr: {
     '': '',
     // SEO
-    'seo.site_name': "Référentiel de bonnes pratiques",
-    'seo.default.description': "Référentiel de bonnes pratiques",
+    'seo.site_name': 'Référentiel de bonnes pratiques',
+    'seo.default.description': 'Référentiel de bonnes pratiques',
     'seo.url': siteURL + PUBLIC_BASE,
     'seo.titleTemplate': '%s | Collectif Green IT',
     'seo.fb.image.url': '/asso-greenit-share-fb.png',
     'seo.tw.image.url': '/asso-greenit-share-tw.png',
-    'seo.image.alt': "Référentiel de bonnes pratiques",
+    'seo.image.alt': 'Référentiel de bonnes pratiques',
     'seo.noRobots': true,
+    'last-update': 'Dernière mise à jour',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Retour en haut de page',
@@ -511,8 +514,8 @@ export const ui = {
     'user-device': 'Utilisateur/Terminal',
     // "network": "Réseau",
     datacenter: 'Datacenter',
-    "Previous REF ID": 'REF ID précédente',
-    "No previous Version": 'Pas de version précédente',
-    "rgesn": 'RGESN',
+    'Previous REF ID': 'REF ID précédente',
+    'No previous Version': 'Pas de version précédente',
+    rgesn: 'RGESN',
   },
 } as const;
