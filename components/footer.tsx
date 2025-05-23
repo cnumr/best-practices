@@ -45,7 +45,13 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
         </ul>
         <Licence lang={lang} />
         <div className="text-sm">
-          {`${t('last-update')}: ${new Date().toLocaleDateString(lang)}`}
+          {`${t('last-update')}: ${new Date().toLocaleDateString(lang)} @ ${new Date().toLocaleTimeString(
+            lang,
+            {
+              hour: '2-digit',
+              minute: '2-digit',
+            }
+          )}`}
         </div>
       </div>
       <div>
