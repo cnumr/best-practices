@@ -2,7 +2,7 @@
 refID: '0105'
 title: 'Apache Vhost : désactiver le AllowOverride'
 createdAt: 2024-02-14T13:16:26.433Z
-updatedAt: 2024-07-05T04:57:11.909Z
+updatedAt: 2025-05-23T16:42:25.584Z
 language: fr
 published: true
 refType: RWEB
@@ -34,7 +34,7 @@ validations:
 
 ## Description
 
-Lorsque la directive `AllowOverride` est activée, le serveur HTTP Apache doit remonter toute la hiérarchie des répertoires pour,
+Lorsque la directive `AllowOverride` est activée, le serveur HTTP Apache (contrairement à Nginx) doit remonter toute la hiérarchie des répertoires pour,
 peut-être, y trouver un fichier .htaccess contenant des règles de surcharge.
 C’est pourquoi il est conseillé de désactiver si possible cette directive dans la configuration d’Apache.
 
