@@ -2,11 +2,13 @@
 refID: 0088
 title: Adapter la qualité de service et le niveau de disponibilité
 createdAt: 2024-02-14T12:40:33.994Z
-updatedAt: 2024-12-20T11:12:36.504Z
+updatedAt: 2025-05-23T16:50:34.082Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: 0088
   - version: GreenIT
     idRef: '501'
   - version: 2.0.0
@@ -19,6 +21,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '3.1, 3.2, 8.9'
 environmental_impact: 4
 priority_implementation: 3
 moe: 2
@@ -34,7 +37,9 @@ validations:
 
 ## Description
 
-La qualité de service (QoS pour Quality of Service) et le niveau de disponibilité (SLA pour Service Level Agreement) doivent être déterminés avec les utilisateurs du site web ou du service en ligne. Il est par exemple inutile d’héberger le service dans un centre de données très haute disponibilité (Tier IV) si les utilisateurs acceptent un taux de disponibilité inférieur ou égal à 99 % pour un service non critique. En effet, à efficience énergétique équivalente, plus le centre de données qui héberge le site ou service en ligne est disponible, plus son empreinte environnementale globale est élevée, notamment parce que tout est redondé et actif : deux chaînes d’alimentation électrique, deux chaînes de production et distribution de froid, etc.
+La qualité de service (QoS pour Quality of Service) et le niveau de disponibilité (SLA pour Service Level Agreement) doivent être déterminés avec les utilisateurs du site web ou du service en ligne. Il est par exemple inutile d’héberger le service sur plusieurs zones géographiques ou de répliquer la base de données en continu sur plusieurs centres de données, surtout si les utilisateurs acceptent un taux de disponibilité inférieur ou égal à 99 % pour un service non critique. 
+
+En effet, à efficience énergétique équivalente, plus le centre de données qui héberge le site ou service en ligne est disponible, plus son empreinte environnementale globale est élevée, notamment parce que tout est redondé et actif : deux chaînes d’alimentation électrique, deux chaînes de production et distribution de froid, etc.
 En d'autres termes, il faut éviter de tomber dans la surqualité. Il est plutôt conseillé d'appliquer une qualité de service en fonction des ressources et du taux de disponibilité nécessaires et suffisants.
 
 ## Exemple
