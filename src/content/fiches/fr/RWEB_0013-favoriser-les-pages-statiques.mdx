@@ -2,7 +2,7 @@
 refID: '0013'
 title: Favoriser les pages statiques
 createdAt: 2024-02-14T10:04:22.896Z
-updatedAt: 2024-07-04T21:27:09.526Z
+updatedAt: 2025-05-25T08:30:45.790Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: 3.1 et 6.1
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -33,17 +34,14 @@ validations:
 
 ## Description
 
-Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS.
-Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
+Si une page n’est que très peu mise à jour, préférer des pages statiques, construites en dehors du CMS. Cela permet d’économiser des cycles CPU et de la bande passante.
 
-L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles
-pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données),
-éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
+L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données), éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
 
 ## Exemple
 
 En fonction du service numérique à concevoir, il est envisageable :
 
-* pour une landing page ou simple site vitrine de créer un site statique en HTML, CSS et JS.
-* pour un blog avec peu d'activité, ou de petite taille, de créer un site statique généré via un JAMstack (Jekyll, Hugo, Gasby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contenful, Flextype, etc.).
-* pour un site ou une application web plus complexe de rendre les pages à faible taux de modifications (FAQ, About, mentions légales, etc.) statiques en utilisant des frameworks (Next, Nuxt, Svelte, etc.).
+* pour une landing page ou un simple site vitrine, de créer un site statique en HTML, CSS et JS ;
+* pour un blog avec peu d’activité ou de petite taille, de créer un site statique généré via un jamstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contentful, Flextype, Cecil.app, etc.) ;
+* pour un site ou une application web plus complexe, de rendre les pages à faible taux de modifi cations (FAQ, À propos de, mentions légales, etc.) statiques en utilisant des frameworks adaptés (Next.js, Nuxt.js, Svelte, etc.).
