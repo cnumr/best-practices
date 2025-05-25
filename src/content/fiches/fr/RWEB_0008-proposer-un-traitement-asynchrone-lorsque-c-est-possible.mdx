@@ -1,8 +1,8 @@
 ---
 refID: 0008
-title: Proposer un traitement asynchrone lorsque c'est possible
+title: Proposer un traitement asynchrone lorsque c’est possible
 createdAt: 2024-02-14T09:41:02.130Z
-updatedAt: 2024-07-04T18:37:02.601Z
+updatedAt: 2025-05-25T13:18:41.766Z
 language: fr
 published: true
 refType: RWEB
@@ -34,12 +34,9 @@ validations:
 
 ## Description
 
-Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
-L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l'exécution ;
-par exemple, via la réception d’un e-mail contenant un lien.
-Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée.
-On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
-Il est également plus aisé de lisser la charge du serveur responsable du traitement, ce qui permet une meilleure mutualisation de serveurs et par conséquent moins de serveurs.
+Lorsque l’interaction avec l’utilisateur induit un traitement lourd et long côté serveur, il est recommandé de proposer un traitement asynchrone quand cela est possible. L’idée est d’encourager l’utilisateur à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son terminal la fin de l’exécution. Par exemple, via la réception d’un e-mail ou d’une notification indiquant la fin du traitement.\
+Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée. On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
+Il est également plus aisé de lisser la charge du serveur responsable du traitement, ce qui permet une meilleure mutualisation des serveurs et par conséquent moins de serveurs.
 
 ## Exemple
 
