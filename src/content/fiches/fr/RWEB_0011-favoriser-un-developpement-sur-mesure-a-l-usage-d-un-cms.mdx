@@ -2,7 +2,7 @@
 refID: '0011'
 title: Favoriser un développement sur-mesure à l'usage d'un CMS
 createdAt: 2024-02-14T10:01:06.390Z
-updatedAt: 2024-07-04T21:26:46.282Z
+updatedAt: 2025-05-25T08:38:13.386Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: 3.1 et 6.5
 environmental_impact: 3
 priority_implementation: 3
 moe: 3
@@ -35,7 +36,11 @@ validations:
 ## Description
 
 Utiliser un framework ou un développement sur mesure, afin de bénéficier d’une plus grande liberté dans l’optimisation de certains processus.
-Les CMS sont en effet plus contraignants et imposent des fonctionnements parfois gourmands en ressources pour atteindre leur principal objectif, la souplesse.
 
-Ainsi, pour la gestion de leurs extensions, les CMS utilisent des systèmes de « hook », qui reposent généralement sur une convention de nommage des fonctions.
-Le test de l’existence de nouvelles fonctions de ces extensions est un processus qui consomme des ressources, tandis que les développements sur mesure n’ont pas à « découvrir » l’existence de fonctions puisqu’elles sont déjà connues. L’usage d’un nombre trop important d’extensions peut consommer beaucoup de ressources et ralentir le site.
+Les CMS sont en effet plus contraignants et imposent des fonctionnements parfois gourmands en ressources pour atteindre leur principal objectif : la souplesse. Par ailleurs, l’usage d’un nombre trop important d’extensions peut consommer beaucoup de ressources et ralentir le site.
+
+On peut cependant utiliser un CMS très léger et modulaire tel qu’un générateur de site statique (Jekyll, Hugo, Gatsby, Eleventy, etc.) administré par un CMS découplé ou à fichier plat (Strapi, Contentful, Flex-type, etc.) afin de gagner du temps de développement.
+
+## Exemple
+
+Dans le cas d’un site vitrine dont les informations sont rarement mises à jour, privilégiez un site web statique tout en prévoyant quelques jours-hommes pour la mise à jour. Si une fonctionnalité nécessite des interactions avec l’utilisateur, privilégiez un développement sur mesure.
