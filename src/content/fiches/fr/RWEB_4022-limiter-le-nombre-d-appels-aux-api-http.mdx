@@ -2,7 +2,7 @@
 refID: '4022'
 title: Limiter le nombre d'appels aux API HTTP
 createdAt: 2024-02-14T14:20:42.319Z
-updatedAt: 2024-07-05T05:19:45.411Z
+updatedAt: 2025-05-25T08:35:52.054Z
 language: fr
 published: true
 refType: RWEB
@@ -13,6 +13,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: 6.2 et 7.1
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -28,11 +29,11 @@ validations:
 
 ## Description
 
-Lorsqu'un internaute consulte une page web, le site peut récupérer du contenu à travers des API HTTP (webservice).
-Dans ce cas, chaque affichage de page engendrera autant de requêtes HTTP vers les différentes API alors que le contenu sera probablement le même durant un certain temps.
+Lorsqu’un internaute consulte une page web, le site peut récupérer du contenu à travers des API HTTP (webservice). Dans ce cas, chaque affichage de page engendrera autant de requêtes HTTP vers les différentes API alors que le contenu sera probablement le même durant un certain temps.
 
-En tant que fournisseur d'API (serveur), vous pouvez fixer des quotas afin d'inciter les utilisateurs à définir une stratégie de mise en cache des réponses et éviter des appels systématiques.
-En tant qu'utilisateur d'API (client), vous devez mettre en cache les résultats obtenus afin de pouvoir les proposer à nouveau sans appeler systématiquement l'API HTTP.
+En tant que fournisseur d’API (serveur), vous pouvez fixer des quotas afin d’inciter les utilisateurs à défi nir une stratégie de mise en cache des réponses et éviter des appels systématiques.
+
+En tant qu’utilisateur d’API (client), vous devez mettre en cache les résultats obtenus afin de pouvoir les proposer à nouveau sans appeler systématiquement l’API HTTP.
 
 ## Exemple
 
