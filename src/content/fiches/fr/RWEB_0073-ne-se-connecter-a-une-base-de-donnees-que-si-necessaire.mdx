@@ -2,7 +2,7 @@
 refID: '0073'
 title: Ne se connecter à une base de données que si nécessaire
 createdAt: 2024-02-14T12:10:46.925Z
-updatedAt: 2024-07-05T04:39:28.218Z
+updatedAt: 2025-05-25T08:42:50.647Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: 3.2 et 7.1
 environmental_impact: 3
 priority_implementation: 3
 moe: 2
@@ -36,19 +37,13 @@ validations:
 
 ## Description
 
-Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
+Quel que soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
 
-* Allocation de mémoire et I/O disque pour les buffers,
-* Allers-retours réseaux pour le protocole de connexion,
-* Coût CPU induit.
+* allocation de mémoire et accès disque pour les buff ers ;
+* allers-retours réseaux pour le protocole de connexion ;
+* coût CPU induit.
 
-Exemple :  pour Oracle, plusieurs allers-retours sont nécessaires (validation des credentials, information sur le driver, négociation de la taille des paquets optimale, ...).
-Le fait d’ouvrir et de fermer une connexion nécessite l’allocation et la désallocation de ces ressources ainsi que de nombreux échanges réseaux, à chaque fois.
-
-La bonne pratique qui est usuellement utilisée est la mise en place d’un pool de connexions.
-Il permet d’optimiser la gestion des connexions ainsi que les performances. Cependant, sa configuration n’est pas forcément une opération triviale (nécessite de superviser le comportement de celui-ci pour trouver le bon paramétrage).
-
-Ceci dit, chaque fois que l’application peut éviter un accès à la base de données, faites-le !
+La bonne pratique qui est usuellement utilisée est la mise en place d’un pool de connexions. Ce dernier permet d’optimiser la gestion des connexions ainsi que les performances. Cependant, sa configuration n’est pas forcément une opération triviale (cela nécessite de superviser le comportement de celui-ci pour trouver le bon paramétrage). Ceci dit, chaque fois que l’application peut éviter un accès à la base de données, faites-le !
 
 ## Exemple
 
