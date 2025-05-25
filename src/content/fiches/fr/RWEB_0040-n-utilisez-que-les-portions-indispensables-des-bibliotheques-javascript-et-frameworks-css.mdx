@@ -4,7 +4,7 @@ title: >-
   N'utilisez que les portions indispensables des bibliothèques JavaScript et
   frameworks CSS
 createdAt: 2024-02-14T11:31:18.389Z
-updatedAt: 2024-07-04T21:38:37.557Z
+updatedAt: 2025-05-25T08:14:46.671Z
 language: fr
 published: true
 refType: RWEB
@@ -38,7 +38,7 @@ validations:
 
 Les bibliothèques JavaScript telles que jQuery et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
 sont d’excellents outils pour réaliser rapidement des sites, car ils répondent à presque tous les besoins les plus courants.
-Revers de la médaille, on n’en utilise généralement qu’une petite portion ; or ces frameworks et bibliothèques ne s’appuient pas tous sur une architecture modulaire,
+Cependant, on n’en utilise généralement qu’une petite portion. Par ailleurs ces frameworks et bibliothèques ne s’appuient pas tous sur une architecture modulaire,
 ce qui contraint l’internaute à télécharger toute la librairie pour n’utiliser qu’un faible pourcentage de ses fonctionnalités.
 
 Dans la mesure du possible, il est préférable de se passer de ces bibliothèques (voir [https://youmightnotneedjquery.com](https://youmightnotneedjquery.com))
@@ -48,7 +48,4 @@ Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, so
 
 ## Exemple
 
-<PositionableImage position="block" imgWidth="twoThirdWidth" zoomable={true} src="/src/assets/fiches/0040/img_1.png" alt="Exemple Bootstrap" caption="Exemple Bootstrap" />
-
-Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contiennent que les portions réellement
-utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
+Certains frameworks proposent des bibliothèques allégées qui ne contiennent que les portions réellement utilisées par le site. Cela réduit le poids des des fichiers téléchargés par le navigateur et les ressources consommées lors de l’exécution. Par exemple, jQuery propose une version « slim » qui n’inclut pas certaines fonctionnalités comme les animations CSS et le support des échanges de données en AJAX. Cela permet d’économiser 17 Ko pour la version 3.6.
