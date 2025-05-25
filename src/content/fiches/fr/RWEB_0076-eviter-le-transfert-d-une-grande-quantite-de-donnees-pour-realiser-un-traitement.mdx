@@ -1,10 +1,8 @@
 ---
 refID: '0076'
-title: >-
-  Éviter le transfert d'une grande quantité de données pour réaliser un  
-  traitement
+title: Éviter le transfert de grandes quantités de données depuis le SGBD
 createdAt: 2024-03-05T10:34:13.560Z
-updatedAt: 2024-07-05T04:41:31.680Z
+updatedAt: 2025-05-25T08:28:07.936Z
 language: fr
 published: true
 refType: RWEB
@@ -21,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 2-concept
+rgesn: 3.1 et 8.10
 environmental_impact: 3
 priority_implementation: 3
 moe: 3
@@ -38,18 +37,15 @@ validations:
 
 ## Description
 
-Les systèmes de gestion de base de données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données.
-Dans le cas de traitements avec une logique plus ou moins complexe, il est déconseillé de récupérer les données "brutes" et de réaliser toutes les opérations de calcul, de transformation ou encore d'agrégation côté serveur backend voire frontend.
+Les systèmes de gestion de base de données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données. Dans le cas de traitements avec une logique plus ou moins complexe, vous devriez les réaliser au plus près de la donnée afin de :
 
-Ces traitements doivent plutôt être réalisés au plus près de la donnée afin de:
-
-* limiter la bande passante à cause du transfert de données non traitées
-* profiter des optimisations de la base données sur la manipulation des données
-* d'alléger le cycle CPU côté serveur backend voire frontend
+* limiter la bande passante en raison du transfert de données non traitées ;
+* profiter des optimisations de la base de données sur la manipulation des données ;
+* alléger le cycle CPU côté serveur backend voire frontend.
 
 ## Exemple
 
-Dans le cas de requêtes complexes avec un nombre important de données et de l'utilisation d'un système de gestion de base de données relationnelles (SGBDR), il est conseillé d'utiliser des procédures stockées car:
+Dans le cas de requêtes complexes avec un nombre important de données et de l’utilisation d’un système de gestion de base de données relationnelles (SGBDR), il est conseillé d’utiliser des procédures stockées car :
 
 * une procédure stockée économise au serveur l’interprétation de la requête puisqu’elle est précompilée ;
 * une procédure stockée est moins gourmande en bande passante puisqu’il y a moins d’informations échangées entre le serveur et le client.
