@@ -1,0 +1,51 @@
+---
+refID: '0075'
+title: Optimise database queries
+createdAt: 2025-05-27T16:11:03.481Z
+updatedAt: 2025-05-27T16:11:03.481Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: of poor-performing queries identified as non-optimised
+    maxValue: '0'
+---
+
+## Description
+
+The requests made to retrieve and save data have a significant impact on resource consumption and must therefore be optimised. There are a number of classic ways of optimising them:
+
+* Bringing back less data and limiting it to what is necessary.
+* Select only the fields you need.
+* Add indexes to fields used as keys. This can drastically reduce the power required for the query.
+* Analyse queries to identify areas for improvement, for example using EXPLAIN for an RDBMS.
+* Cache the results of the most expensive and most frequent queries.
+* Possibly denormalise the data model to avoid joins, which can slow down queries.
+
+## Example
+
+If you only want to display the first 25 records in a table containing people's first and last names, replace:
+
+```sql
+SELECT prenom, nom FROM personnes
+```
+
+by:
+
+```sql
+SELECT prenom, nom FROM personnes LIMIT 0, 25
+```
