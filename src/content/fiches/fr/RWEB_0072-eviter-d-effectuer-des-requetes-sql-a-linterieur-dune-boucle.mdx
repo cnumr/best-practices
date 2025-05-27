@@ -1,8 +1,8 @@
 ---
 refID: '0072'
-title: Éviter d'effectuer des requêtes SQL à l’intérieur d’une boucle
+title: Regrouper les requêtes à la base de données quand c’est possible
 createdAt: 2024-02-14T12:08:16.230Z
-updatedAt: 2024-07-04T21:45:19.671Z
+updatedAt: 2025-05-27T15:58:27.020Z
 language: fr
 published: true
 refType: RWEB
@@ -15,6 +15,8 @@ versions:
     idRef: '0072'
   - version: 4.0.0
     idRef: '0072'
+  - version: 5.0.0
+    idRef: '65'
 people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
@@ -28,15 +30,13 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: de requêtes SQL à l'intérieur d'une boucle
+  - rule: de requêtes non groupées
     maxValue: '0'
 ---
 
 ## Description
 
-Les requêtes SQL à l’intérieur d’une boucle posent de gros problèmes de performance, et ce d’autant plus si le(s) serveur(s) SQL n’est (ne sont) pas sur la machine locale. En effet, ces serveurs sont optimisés pour traiter plusieurs sélections, insertions ou modifications dans une seule requête ou une seule transaction.
-
-Mal utilisées, ces requêtes consomment inutilement des cycles CPU, de la mémoire vive et de la bande passante.
+Par exemple, les requêtes SQL à l’intérieur d’une boucle posent de gros problèmes de performance, surtout si les serveurs SQL ne sont pas sur la machine locale. En effet, ces serveurs sont optimisés pour traiter plusieurs sélections, insertions ou modifications dans une seule requête ou transaction. Mal utilisées, ces requêtes consomment inutilement des cycles CPU, de la mémoire vive et de la bande passante.
 
 ## Exemple
 
