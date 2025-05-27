@@ -1,0 +1,52 @@
+---
+refID: '0072'
+title: Group database queries together whenever possible
+createdAt: 2025-05-27T16:02:13.471Z
+updatedAt: 2025-05-27T16:02:13.471Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: of non-grouped queries
+    maxValue: '0'
+---
+
+## Description
+
+For example, SQL queries within a loop pose major performance problems, especially if the SQL servers are not on the local machine. These servers are optimised to handle several selections, insertions or modifications in a single query or transaction. Used incorrectly, these queries consume unnecessary CPU cycles, RAM and bandwidth.
+
+## Example
+
+Do not write:
+
+```php
+foreach ($userList as $user) {
+    $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES("'. $user['ﬁrst_name'] .'", "'. $user['last_ name'] .'")';
+    mysql_query($query);
+}
+```
+
+but rather:
+
+```php
+$userData = array();
+foreach ($userList as $user) {
+    $userData[] = '("'. $user['ﬁrst_name'] .'", "'.
+    $user['last_name'] .'")';
+}
+$query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES'. implode(',', $userData); mysql_query($query);
+```
