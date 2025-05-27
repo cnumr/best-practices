@@ -2,7 +2,7 @@
 refID: '0016'
 title: Utiliser certains forks applicatifs orientés "performance"
 createdAt: 2024-02-14T10:16:16.821Z
-updatedAt: 2024-07-04T21:28:31.286Z
+updatedAt: 2025-05-27T16:21:51.886Z
 language: fr
 published: true
 refType: RWEB
@@ -15,10 +15,13 @@ versions:
     idRef: '0016'
   - version: 4.0.0
     idRef: '0016'
+  - version: 5.0.0
+    idRef: '68'
 people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 3-developement
+rgesn: '1.8, 3.1'
 environmental_impact: 3
 priority_implementation: 3
 moe: 3
@@ -28,16 +31,14 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: de forks orientés performance est supérieur ou égal à
+  - rule: Le nombre de forks orientés performance disponibles mais non déployés
     maxValue: '1'
 ---
 
 ## Description
 
-Les logiciels open source sont souvent « forkés » (dérivés) pour des raisons de performance. Or un gain de performance implique
-généralement une réduction en termes de consommation de ressources. Par conséquent, si un fork optimisé existe et offre
-un périmètre fonctionnel et technique suffisant pour votre projet, vous devez l’utiliser.
+Les logiciels open source sont souvent « forkés » (dérivés) pour des raisons de performance. Or un gain de performance implique généralement une réduction en termes de consommation de ressources. Par conséquent, si un fork optimisé existe et offre un périmètre fonctionnel et technique suffisant pour un projet, il est judicieux de l’utiliser.
 
 ## Exemple
 
-* À Redis, préférer plutôt la version optimisée KeyDB.
+À Redis, préférer plutôt la version optimisée KeyDB.
