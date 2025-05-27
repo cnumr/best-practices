@@ -1,0 +1,48 @@
+---
+refID: '0010'
+title: Store static data locally
+createdAt: 2025-05-27T15:54:19.325Z
+updatedAt: 2025-05-27T15:54:19.325Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 3-developement
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: of static data not stored locally
+    maxValue: 25 %
+---
+
+## Description
+
+With widespread support on all browsers for key-value databases (IndexDB, Web Storage), and caching via the Cache Storage API, it is now possible to store structured static data locally.
+
+The benefits of local storage are twofold. Firstly, it avoids unnecessary round-trips with the server, which saves resources and response time. Secondly, because the data is local, it is easier and quicker to manipulate it directly on the user's device.
+
+The potential gain is a reduction in the server load, and therefore in the amount of equipment needed (and its environmental and economic footprint), from HTTP servers to database servers.
+
+## Example
+
+For example, to store the user's name, you can use the following instruction:
+
+```javascript
+localStorage.setItem('name', 'user_name');
+```
+
+You can then use the following line to find it later:
+
+```javascript
+var myName = localStorage.getItem('name');
+```
