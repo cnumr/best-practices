@@ -1,0 +1,36 @@
+---
+refID: '0017'
+title: Choose an appropriate data format for the database
+createdAt: 2025-05-27T15:42:52.234Z
+updatedAt: 2025-05-27T15:42:52.234Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+validations:
+  - rule: of fields in the database with an inappropriate format
+    maxValue: 15 %
+---
+
+## Description
+
+The type of data used to manipulate and store a dataset has a significant impact on the memory consumption and processor cycles required when manipulating the database, the application server and even the browser (manipulation via JavaScript), as well as on the storage space required. Choosing the wrong data type wastes memory (for example, if you store very small amounts of data in a column designed to store large amounts of data) and causes performance problems. The choice of data type and its sizing should therefore be based on the analysis of a representative sample of data.
+
+## Example
+
+In the case of an educational establishment, the size of the field used to store the number of students must be based on a statistical study. This will determine whether it is possible to use a TINYINT (1 byte, up to 127) rather than a SMALLINT (2 bytes, up to 32,767). In all cases, the default choice of an INT (4 bytes, up to 2,147,483,647) or even a BIGINT (8 bytes) is an aberration (which we unfortunately come across every day during our audits...).\
+Potential savings: up to 8 times less storage. Processor cycle consumption is reduced in the same proportion.
