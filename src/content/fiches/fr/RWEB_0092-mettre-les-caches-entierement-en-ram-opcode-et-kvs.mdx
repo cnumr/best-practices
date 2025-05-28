@@ -1,8 +1,8 @@
 ---
 refID: 0092
-title: Mettre les caches entièrement en RAM (opcode et kvs)
+title: Mettre les caches entièrement en RAM
 createdAt: 2024-02-14T12:49:16.363Z
-updatedAt: 2024-07-05T04:50:10.661Z
+updatedAt: 2025-05-28T17:00:41.880Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '7.1'
 environmental_impact: 3
 priority_implementation: 3
 moe: 2
@@ -33,15 +34,20 @@ validations:
 
 ## Description
 
-Les systèmes de cache doivent être, autant que possible, montés entièrement en mémoire vive (RAM). Cette mesure permet d’éviter des entrées/sorties sur les disques durs, ainsi que des cycles CPU pour les gérer.
+Les systèmes de cache doivent être, autant que possible, montés entièrement en mémoire vive (RAM) qui est bien plus rapide en accès lecture/écriture qu’un stockage sur disque dur (SSD ou mécanique).
 
-L’objectif est double : servir rapidement une réponse au client, et limiter le nombre de composants matériels (et logiciels) impliqués dans la réponse retournée par le serveur.
+Cette mesure permet d’éviter :
 
-La mémoire vive étant très rapide en termes d’accès en lecture/écriture, la durée de consommation des ressources est particulièrement courte. En outre, la durée de vie des composants est allongée avec cette bonne pratique, puisqu’il n’y pas de mouvement mécanique comme lors d’un recours au disque dur.
+– des entrées / sorties sur les supports de stockage,
+
+– des cycles CPU.
 
 ## Exemple
 
 Exemples d’intégration d’un cache RAM à Drupal :
 
-* intégration de Memcache : [https://drupal.org/project/memcache](https://drupal.org/project/memcache)
-* intégration de Varnish : [https://drupal.org/project/varnish](https://drupal.org/project/varnish)
+– intégration de Memcache : https\://drupal.org/project/memcache ;
+
+– intégration de Varnish : https\://drupal.org/project/varnish.
+
+PHP dispose de son propre système de cache partagé en mémoire nommé APCu : https\://www\.php.net/manual/fr/book.apcu.php.
