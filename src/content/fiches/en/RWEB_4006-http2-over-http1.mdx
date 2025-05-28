@@ -1,0 +1,43 @@
+---
+refID: '4006'
+title: HTTP/2 over HTTP/1
+createdAt: 2025-05-28T19:30:30.864Z
+updatedAt: 2025-05-28T19:30:30.864Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: requests using HTTP/1
+    maxValue: '0'
+---
+
+## Description
+
+The HTTP/1 protocol loads resources sequentially. If a resource is large or cannot be loaded, it blocks the loading of subsequent resources, giving the user the impression of slowness.
+
+HTTP/2 is more efficient than HTTP/1, as it is a binary protocol (fewer bytes are transmitted), and also allows :
+
+\- **multiplexing**: send all resources at once using a single TCP connection;
+
+\- **prioritization**: the developer can specify the order in which resources are to be loaded (thus prioritizing the display of resources that are essential to the page);
+
+\- **HPACK compression**: an advanced compression method that eliminates redundant information in HTTP header packets;
+
+\- **server push**: allowing a server to “push” content to a client before the client requests it (be careful not to abuse this feature).
+
+## Example
+
+HTTP/2 targets a 50% reduction in page load time (PLT).
