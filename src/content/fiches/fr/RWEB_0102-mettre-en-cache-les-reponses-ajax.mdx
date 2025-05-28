@@ -2,7 +2,7 @@
 refID: '0102'
 title: Mettre en cache les réponses AJAX
 createdAt: 2024-02-14T13:09:38.322Z
-updatedAt: 2024-07-05T04:55:29.490Z
+updatedAt: 2025-05-28T16:49:51.223Z
 language: fr
 published: true
 refType: RWEB
@@ -19,9 +19,10 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 4-production
+rgesn: '6.2'
 environmental_impact: 4
-priority_implementation: 4
-moe: 3
+priority_implementation: 3
+moe: 2
 tiers: user-device
 saved_resources:
   - network
@@ -33,8 +34,8 @@ validations:
 
 ## Description
 
-Les réponses AJAX qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, les mettre en cache pour économiser de la bande passante.
+Les réponses Ajax qui seront inchangées dans un futur proche ne doivent pas être redemandées au serveur. Par conséquent, il est intéressant de les mettre en cache pour économiser de la bande passante.
 
 ## Exemple
 
-Si une requête AJAX retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client pour ne pas générer à nouveau une requête vers le serveur.
+Si une requête Ajax retourne une liste de noms de villes, de noms de contacts ou tout élément non calculé, il faut mettre ces réponses en cache du côté client (navigateur) pour ne pas générer à nouveau une requête vers le serveur.
