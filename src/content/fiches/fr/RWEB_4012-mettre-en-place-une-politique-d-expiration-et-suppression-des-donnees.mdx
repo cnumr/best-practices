@@ -2,7 +2,7 @@
 refID: '4012'
 title: Mettre en place une politique d'expiration et suppression des données
 createdAt: 2024-02-14T13:58:13.859Z
-updatedAt: 2024-07-05T05:10:37.101Z
+updatedAt: 2025-05-28T18:34:13.213Z
 language: fr
 published: true
 refType: RWEB
@@ -13,6 +13,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '7.2'
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -21,42 +22,33 @@ saved_resources:
   - storage
   - requests
 validations:
-  - rule: de données stockées inutilisées et sans contrainte légale
+  - rule: de données stockées inutilisées
     maxValue: '0'
 ---
 
 ## Description
 
-Depuis la mise en place du RGPD par la CNIL, il est obligatoire de supprimer les données personnelles d'un utilisateur
-après une durée définie d'après plusieurs conditions. Il est obligatoire de le faire sur les données personnelles de nos
-utilisateurs, mais nous pouvons également définir une durée de vie pour toute autre donnée. Heureusement, organiser la
-durée de vie de nos données peut être effectué de manière automatique, sans avoir à purger manuellement les données obsolètes.
+Définir une durée de rétention de chaque donnée stockée afin de permettre sa suppression ou son archivage via un traitement (batch, durée de vie (« TTL ») en base de données...). De nombreux SGBDR permettent de supprimer  automatiquement et défi nitivement via un TTL (Time To Live) sur une table ou sur une donnée.
 
-De nombreux systèmes de gestion de bases de données, comme `MongoDB` , `AWS DynamoDB`, `Redis` ou `Oracle` permettent de
-définir un "TTL" sur une table ou sur une donnée.
-Après avoir défini une durée de vie, les données expirées sont purgées et effacées définitivement de la base.
+De plus, depuis la mise en place du RGPD, il est obligatoire de supprimer les données personnelles d’un utilisateur après une certaine durée ce qui va dans le sens de l’écoconception.
 
 ## Exemple
 
-Dans cet exemple en Java, sur une base Oracle, la durée de vie de la donnée expirera au bout de 5 jours
+Ici, sur une base Oracle en Java, la donnée expire après 5 jours :
 
 ```java
-String aKey = "myFirstKey";
-String aData = "myFirstData";
-
+String aKey = «myFirstKey»;
+String aData = «myFirstData»;
 try {
     DatabaseEntry theKey = new DatabaseEntry(aKey.getBytes("UTF-8"));
     DatabaseEntry theData = new DatabaseEntry(aData.getBytes("UTF-8"));
-
     WriteOptions wo = new WriteOptions();
-    wo.setTTL(5); // TTL de 5 jours
-    myDatabase.put(null,             // Transaction 
-                   theKey,           // Clé.
-                   theData,          // valeur.
-                   Put.NO_OVERWRITE, 
-                   wo);              // Options (incluant la durée de TTL).
-
+    wo.setTTL(5);
+    myDatabase.put(null,
+                    theKey,
+                    theData,
+                    Put.NO_OVERWRITE,
+                    wo);
 } catch (Exception e) {
-    // ...
-} 
+}
 ```
