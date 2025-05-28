@@ -1,0 +1,36 @@
+---
+refID: 0097
+title: Using an asynchronous server
+createdAt: 2025-05-28T19:58:47.745Z
+updatedAt: 2025-05-28T19:58:47.745Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: synchronous application servers
+    maxValue: '1'
+---
+
+## Description
+
+Servers (web, application, etc.) such as Nginx, node.js or Gwan are designed for high performance and, above all, minimum resource consumption (CPU and RAM). Thanks to their asynchronous mode of operation, they are not required to create a process or thread for each request. This avoids wasting resources.
+
+While most web servers increase their RAM consumption as requests increase, asynchronous servers remain very stable.
+
+## Example
+
+Nginx outperforms Apache by serving twice as many requests per second. Gwan (although not yet widely used) outperforms Nginx, serving 4 times more requests per second in 4 times less time, while consuming time, while consuming 2 times less RAM.
