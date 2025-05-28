@@ -2,11 +2,13 @@
 refID: 0098
 title: Utiliser un CDN
 createdAt: 2024-02-14T13:02:36.420Z
-updatedAt: 2024-07-05T04:53:27.082Z
+updatedAt: 2025-05-28T16:19:54.768Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '98'
   - version: GreenIT
     idRef: '75'
   - version: 2.0.0
@@ -19,6 +21,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '3.1'
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -33,9 +36,9 @@ validations:
 
 ## Description
 
-Certains fichiers comme les bibliothèques JavaScript, les feuilles de style CSS, les images, etc., sont gourmands en ressources réseau, car ils sont généralement nombreux et de petite taille. C’est pourquoi il est conseillé d’utiliser les CDN (Content Delivery Network), qui rapprochent physiquement ces fichiers des internautes, générant de ce fait un gain important de bande passante et un meilleur temps de réponse.
+Certains fichiers comme les bibliothèques JavaScript, les feuilles de styles CSS, les images, etc., sollicitent beaucoup le réseau, car ils sont généralement nombreux et de petite taille. C’est pourquoi il est conseillé d’utiliser les CDN (Content Delivery Network), qui rapprochent physiquement ces fichiers des internautes, générant de ce fait un gain important de bande passante et un meilleur temps de réponse.
 
-Il convient néanmoins de prendre conscience qu'il peut exister des cas où l'utilisation d'un CDN n'est pas réellement pertinente. Par exemple, dans le cas de services dont la cible est très localisée (par exemple: régional), il est plus opportun de privilégier un hébergement local et de qualité. D'autre part, un site web avec très peu de trafic pourrait rendre contre-productive l'utilisation d'un CDN basé sur le modèle "pull" car les extractions de fichiers du serveur d'origine pourraient être trop fréquentes.
+Il convient néanmoins de prendre conscience qu’il peut exister des cas où l’utilisation d’un CDN n’est pas réellement pertinente. C’est le cas des services dont la cible est très localisée (par exemple, régional). Il est alors plus opportun de privilégier un hébergement local et de qualité. Par ailleurs, un site web avec très peu de trafic pourrait rendre contre-productive l’utilisation d’un CDN basé sur le modèle « pull » car les extractions de fichiers du serveur d’origine pourraient être trop fréquentes.
 
 ## Exemple
 
