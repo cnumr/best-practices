@@ -2,7 +2,7 @@
 refID: 0078
 title: 'Compresser les fichiers CSS, JavaScript, HTML et SVG'
 createdAt: 2024-02-14T12:21:24.409Z
-updatedAt: 2024-07-05T04:42:31.565Z
+updatedAt: 2025-05-28T18:13:04.512Z
 language: fr
 published: true
 refType: RWEB
@@ -19,9 +19,10 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 3-developement
+rgesn: '6.3'
 environmental_impact: 4
-priority_implementation: 4
-moe: 3
+priority_implementation: 3
+moe: 2
 tiers: network
 saved_resources:
   - network
@@ -32,25 +33,23 @@ validations:
 
 ## Description
 
-Compresser les feuilles de style CSS, les bibliothèques JavaScript ainsi que les fichiers HTML pour limiter l’utilisation de la bande passante et améliorer les temps de chargement.
-L’algorithme GZIP est un standard de la compression coté serveur, il permet de compresser à la volée les ressources avant de les envoyer aux clients.
-Plus récemment, BROTLI a été popularisé avec des performances accrues, il est supporté par tous les navigateurs les plus répandus.
+Pour limiter l’utilisation de la bande passante et améliorer les temps de chargement, compressez les fichiers texte : CSS, JS, HTML et SVG. L’algorithme permet de compresser à la volée les ressources avant de les envoyer aux clients.
+
+Plus récemment, `BROTLI` a été popularisé avec des performances accrues. Il est supporté par tous les navigateurs les plus répandus.
 
 ## Exemple
 
-Pour utiliser `BROTLI` dans Apache, il suffit d’ajouter la configuration suivante :
+Pour utiliser `BROTLI` dans NGinx, il suffi t d’ajouter la configuration suivante :
 
 ```
-# compress html, text, xml, css, javascript
-AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript
-
-# Or, compress certain ﬁle types in a specific directory:
-<Directory "/your-directory">
-    AddOutputFilterByType BROTLI_COMPRESS text/html
-</Directory>
+# for compressing responses on-the-fly
+load_module modules/ngx_http_brotli_filter_module.so;
+# for serving pre-compressed files
+load_module modules/ngx_http_brotli_static_module.so;
+http {
+    server {
+    brotli on;
+    #...
+    }
+}
 ```
-
-Le serveur web NGINX gère par défaut la compression GZIP mais uniquement pour les fichiers HTML.
-Pour l'activer sur les images et autres ressources se référer à cette page: [https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-improve-website-performance-using-gzip-and-nginx-on-ubuntu-20-04)
-
-Pour installer et configurer brotli sur NGINX, voir [https://github.com/google/ngx\_brotli](https://github.com/google/ngx_brotli).
