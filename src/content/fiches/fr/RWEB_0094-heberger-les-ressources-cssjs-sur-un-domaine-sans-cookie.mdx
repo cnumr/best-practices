@@ -1,8 +1,8 @@
 ---
 refID: 0094
-title: Héberger les ressources (CSS/JS) sur un domaine sans cookie
+title: Héberger les ressources statiques sur un domaine sans cookie
 createdAt: 2024-02-14T12:53:29.289Z
-updatedAt: 2024-07-05T04:51:18.642Z
+updatedAt: 2025-05-28T18:43:43.719Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '6.7'
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -32,9 +33,8 @@ validations:
 
 ## Description
 
-Les images, feuilles de style CSS et fichiers JavaScript doivent être hébergés sur un domaine sans cookies. Cela évite au navigateur d’envoyer un cookie pour chaque ressource... alors qu’il est inutile. En effet, bien que transféré dans chaque requête HTTP, le cookie
-est inutile pour les contenus statiques, puisqu’il sert à maintenir un état entre le navigateur de l’internaute et le serveur d’applications distant grâce aux identifiants contenus dans le fichier texte. Il est donc préférable de stocker ce type de contenus sur un nom de domaine spécifique, par exemple static.mondomaine.com.
+Pour réduire l’espace de stockage nécessaire aux ressources d’un site web ou d’un service en ligne, il peut être intéressant d’utiliser des solutions de cloud computing. Ainsi, tout en disposant d’une solution évolutive (elastic en anglais), on ne monopolise pas de ressources inutilement. Comme il ne faut pas multiplier les domaines (voir la bonne pratique n° 82), le plus simple est de regrouper toutes les ressources statiques sur un seul service de stockage en ligne. Veillez à sélectionner un fournisseur cloud le plus responsable possible.
 
 ## Exemple
 
-Les leaders du Web utilisent un domaine séparé pour servir les ressources statiques qui ne nécessitent pas de cookies. Yahoo! emploie par exemple le domaine yimg.com, YouTube le domaine ytimg.com et Amazon le domaine images-amazon.com.
+La plupart du temps, il est plus efficace de recourir au service de stockage S3 d’Amazon pour stocker des données que d’ajouter de nouveaux disques durs aux serveurs existants.
