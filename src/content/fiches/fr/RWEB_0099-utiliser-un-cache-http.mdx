@@ -2,7 +2,7 @@
 refID: 0099
 title: Utiliser un cache HTTP
 createdAt: 2024-02-14T13:04:57.471Z
-updatedAt: 2025-05-28T17:24:02.191Z
+updatedAt: 2025-05-28T17:31:12.813Z
 language: fr
 published: true
 refType: RWEB
@@ -33,9 +33,8 @@ validations:
 
 ## Description
 
-Les reverse proxies (Varnish, Squid ou NGINX) sont optimisés pour servir du contenu (pages HTML, images, etc.) de façon rapide, tout en consommant le moins de cycles CPU possible. En évitant de solliciter inutilement le serveur d’applications, ils permettent d’utiliser une infrastructure plus réduite. 
+Les reverse proxies (Varnish, Squid ou Nginx) sont optimisés pour servir du contenu (pages HTML, images, etc.) de façon rapide, tout en consommant le moins possible de cycle CPU. En évitant de solliciter inutilement le serveur d’applications, ils permettent d’utiliser une infrastructure matérielle plus réduite ce qui limite les impacts environnementaux associés.
 
 ## Exemple
 
-Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement le temps nécessaire pour servir les pages dynamiques, tout en augmentant la capacité du CMS (Drupal, ici)
-à en délivrer un grand nombre en même temps. On constate également qu’un cache généraliste comme APC n’est pas adapté (source : Asymptotix).
+Le recours à un reverse proxy spécialisé comme Varnish réduit drastiquement le temps nécessaire pour servir les pages dynamiques mises en cache, tout en soulageant le serveur d’application / CMS pour servir de nouvelles requêtes (non mises en cache). On constate également qu’un cache généraliste comme APC n’est pas adapté.
