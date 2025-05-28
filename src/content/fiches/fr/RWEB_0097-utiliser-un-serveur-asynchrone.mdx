@@ -2,7 +2,7 @@
 refID: 0097
 title: Utiliser un serveur asynchrone
 createdAt: 2024-02-14T13:00:23.183Z
-updatedAt: 2024-07-05T04:53:02.076Z
+updatedAt: 2025-05-28T19:58:58.113Z
 language: fr
 published: true
 refType: RWEB
@@ -19,8 +19,9 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
-environmental_impact: 4
-priority_implementation: 4
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
 moe: 3
 tiers: datacenter
 saved_resources:
@@ -33,15 +34,10 @@ validations:
 
 ## Description
 
-Les serveurs (web, d’applications, etc.) tels que NGINX, node.js ou Gwan sont conçus pour utiliser le minimum de ressources possible. Grâce à leur fonctionnement en mode asynchrone, ils ne sont pas tenus de créer un processus ou un thread pour chaque requête. Ils évitent ainsi de gaspiller leurs ressources.
+Les serveurs (web, d’applications, etc.) tels que Nginx, node.js ou Gwan sont conçus pour être très performants et surtout utiliser le minimum de ressources (CPU et RAM). Grâce à leur fonctionnement en mode asynchrone, ils ne sont pas tenus de créer un processus ou un thread pour chaque requête. Ils évitent ainsi de gaspiller leurs ressources.
 
-Alors que la plupart des serveurs web augmentent leur consommation de mémoire vive au fur et à mesure des sollicitations, les serveurs asynchrones demeurent eux très stables.
+Alors que la plupart des serveurs web augmentent leur consommation de mémoire vive au fur et à mesure des sollicitations, les serveurs asynchrones demeurent quant à eux très stables.
 
 ## Exemple
 
-NGINX a la réputation d’être plus performant qu’Apache. Il peut ainsi servir 2,1 fois plus de requêtes par seconde que ce serveur.
-
-Pour aller plus loin :
-
-* [https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan](https://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan)
-* [https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use](https://nbonvin.wordpress.com/2011/03/24/serving-small-static-files-which-server-to-use)
+Nginx est plus performant qu’Apache, il permet de servir 2 fois plus de requêtes par seconde. Gwan (bien qu’encore très peu utilisé) est plus performant que Nginx, il permet de servir 4 fois plus de requêtes par seconde en 4 fois moins de temps, tout en consommant 2 fois moins de RAM.
