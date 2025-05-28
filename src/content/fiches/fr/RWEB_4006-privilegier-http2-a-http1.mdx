@@ -2,11 +2,13 @@
 refID: '4006'
 title: Privilégier HTTP/2 à HTTP/1
 createdAt: 2024-02-14T13:47:16.996Z
-updatedAt: 2025-05-28T19:30:48.079Z
+updatedAt: 2025-05-28T20:20:31.794Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '4006'
   - version: 4.0.0
     idRef: '4006'
 people: TBD
@@ -31,9 +33,9 @@ Le protocole HTTP/1 charge les ressources de manière séquentielle. Si une ress
 
 HTTP/2 est plus performant que HTTP/1, c’est un protocole binaire (il fait transiter moins d’octets) de plus il permet :
 
-– le **multiplexage **: envoyer toutes les ressources en une fois tout en utilisant qu’une connexion TCP ;
+– le \*\*multiplexage \*\*: envoyer toutes les ressources en une fois tout en utilisant qu’une connexion TCP ;
 
-– la **priorisation **: le développeur peut indiquer l’ordre de chargement des ressources (ce qui permet d’afficher en priorité les ressources indispensables à l’affichage de la page) ;
+– la \*\*priorisation \*\*: le développeur peut indiquer l’ordre de chargement des ressources (ce qui permet d’afficher en priorité les ressources indispensables à l’affichage de la page) ;
 
 – la **compression HPACK** : une méthode de compression avancée qui élimine les informations redondantes dans les paquets d’en-tête HTTP ;
 
