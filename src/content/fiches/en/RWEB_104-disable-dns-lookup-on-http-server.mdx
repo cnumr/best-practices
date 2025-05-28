@@ -1,0 +1,38 @@
+---
+refID: '104'
+title: Disable DNS Lookup on HTTP server
+createdAt: 2025-05-28T19:48:55.066Z
+updatedAt: 2025-05-28T19:48:55.066Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: active DNS Lookups
+    maxValue: '0'
+---
+
+## Description
+
+Every time a web server receives an HTTP request, it records this information in a log, translating the IP address into a domain name. This conversion (DNS Lookup) is one of the bottlenecks of some HTTP servers (Apache in particular). Disabling DNS Lookup avoids unnecessary consumption of server resources and speeds up page loading times, improving the user experience.
+
+## Example
+
+On an Apache server, edit the configuration file (`/etc/apache/httpd.conf` or `/etc/apache2/apache2.conf`), and add the following directive this directive:
+
+```
+HostnameLookups Off
+```
