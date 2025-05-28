@@ -2,7 +2,7 @@
 refID: '4006'
 title: Privilégier HTTP/2 à HTTP/1
 createdAt: 2024-02-14T13:47:16.996Z
-updatedAt: 2024-07-05T05:08:01.339Z
+updatedAt: 2025-05-28T19:30:48.079Z
 language: fr
 published: true
 refType: RWEB
@@ -13,6 +13,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/administrateur-systemes.mdx
 lifecycle: 4-production
+rgesn: '6.7'
 environmental_impact: 4
 priority_implementation: 5
 moe: 4
@@ -26,18 +27,18 @@ validations:
 
 ## Description
 
-Le protocole HTTP/2 a troqué la représentation textuelle des requêtes et réponses pour une représentation binaire avec un mécanisme de compression des entêtes HTTP (HPACK).
-Il permet aussi le multiplexage des échanges, permettant de n'utiliser qu'une seule connexion TCP (et donc un seul *handshake* TLS) avec le serveur, et ainsi tirer le meilleur avantage de HPACK.
+Le protocole HTTP/1 charge les ressources de manière séquentielle. Si une ressource est volumineuse ou ne peut pas être chargée, elle bloque le chargement des ressources suivantes, ce qui donne une impression de lenteur à l’utilisateur.
 
-Pour aller encore plus loin, si un autre nom de domaine résout vers la même adresse IP et est compatible avec le certificat TLS, la connexion TCP pourra être réutilisée également, ce qui permet d'utiliser un nom de domaine distinct sans cookie pour les ressources statiques (cf. la [bonne pratique “Héberger les ressources (CSS/JS) sur un domaine sans cookie”](/chapters/BP_094_fr.md)) sans autre surcoût que la résolution DNS.
-Une extension de HTTP/2 permet même d'économiser cette résolution pour les navigateurs la supportant et à condition que le serveur l'utilise.
+HTTP/2 est plus performant que HTTP/1, c’est un protocole binaire (il fait transiter moins d’octets) de plus il permet :
+
+– le **multiplexage **: envoyer toutes les ressources en une fois tout en utilisant qu’une connexion TCP ;
+
+– la **priorisation **: le développeur peut indiquer l’ordre de chargement des ressources (ce qui permet d’afficher en priorité les ressources indispensables à l’affichage de la page) ;
+
+– la **compression HPACK** : une méthode de compression avancée qui élimine les informations redondantes dans les paquets d’en-tête HTTP ;
+
+– le **push serveur** : autorisant un serveur à « pousser » le contenu vers un client avant que le client ne le demande (attention à ne pas abuser de cette fonctionnalité).
 
 ## Exemple
 
-Fin 2016, Cloudflare a pu mesurer des gains en bande passante, comparé à HTTP/1, de plus de 50% sur les requêtes et de 1% à 15% sur les réponses, en fonction de la nature des échanges (peu de gros fichiers vs beaucoup de petites requêtes).
-
-## Sources
-
-* [Analyse par Cloudflare des gains de HTTP/2](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/)
-* [Expérimentation par Cloudflare sur la réutilisation de connexion entre plusieurs domaines](https://blog.cloudflare.com/connection-coalescing-experiments/)
-* [The ORIGIN HTTP/2 Frame](https://httpwg.org/specs/rfc8336.html)
+HTTP/2 permet de cibler une réduction de 50 % du temps de chargement des pages (PLT).
