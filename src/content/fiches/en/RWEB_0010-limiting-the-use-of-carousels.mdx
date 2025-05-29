@@ -1,0 +1,46 @@
+---
+refID: '0010'
+title: Limiting the use of carousels
+createdAt: 2025-05-29T07:50:45.728Z
+updatedAt: 2025-05-29T07:50:45.728Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0010'
+people: TBD
+responsible: []
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: of carousels on the page
+    maxValue: '1'
+---
+
+## Description
+
+The carousel, used to highlight multiple content items, quickly shows its limits in terms of conversion, with a negative impact on the user experience. Its use implies several critical points:
+
+* the weight of the pages is increased by the presence of dedicated CSS and JavaScript, but also by the content present on each screen of the carousel;
+* a complexity in terms of web quality and accessibility;
+* a greater use of processor resources in the case of an automatic, looped carousel.\
+
+
+The best practice is to limit the use of carousels as much as possible, giving priority to regularly updated static content. Otherwise :
+
+* set up a simple and complete component control (stop, next/previous screen);
+* prefer progressive loading.
+
+## Example
+
+Animation of some CSS attributes requires browsers to repaint/reflow, which requires processor resources. To limit this, prefer to animate carousels using the CSS transform property.
