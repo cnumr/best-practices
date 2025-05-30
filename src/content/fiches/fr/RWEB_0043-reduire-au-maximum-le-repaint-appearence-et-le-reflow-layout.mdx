@@ -1,12 +1,14 @@
 ---
 refID: '0043'
-title: Réduire au maximum le repaint (appearence) et le reflow (layout)
+title: 'Réduire au maximum le repaint et le reflow '
 createdAt: 2024-02-14T11:38:52.348Z
-updatedAt: 2025-05-29T08:15:29.706Z
+updatedAt: 2025-05-30T13:54:36.391Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '0043'
   - version: GreenIT
     idRef: '42'
   - version: 2.0.0
@@ -35,9 +37,9 @@ validations:
 
 ## Description
 
-Le `repaint` est le changement d’apparence d’un élément du DOM (Document Object Model), tandis que le `reﬂow` est le changement/recalcul de la position des éléments dans le DOM. Ces deux opérations sont coûteuses en ressources, notamment en cycles CPU : il faut donc éviter de les déclencher.
+Le repaint est le changement d’apparence d’un élément du DOM, tandis que le reﬂow est le changement/recalcul de la position des éléments dans le DOM. Ces deux opérations sont coûteuses en ressources, notamment en cycles CPU : il faut donc éviter de les déclencher.
 
-Ces opérations ont généralement pour origine l’usage du JavaScript notamment pour manipuler le DOM. 
+Ces opérations ont généralement pour origine l’usage du JavaScript notamment pour manipuler le DOM.
 
 ## Exemple
 
