@@ -2,11 +2,13 @@
 refID: '0034'
 title: Dimensionner correctement les images coté navigateur
 createdAt: 2024-02-14T11:05:07.836Z
-updatedAt: 2025-05-30T09:08:02.936Z
+updatedAt: 2025-05-30T09:33:46.123Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '48'
   - version: GreenIT
     idRef: '93'
   - version: 2.0.0
@@ -35,7 +37,7 @@ validations:
 
 Idéalement, la taille d’affichage d’une image dans le navigateur doit être la plus proche possible de celle du fichier image téléchargée.
 
-Dans le cadre des intégrations modernes, avec les images responsives il faut bien définir les attributs srcset ou sources pour que chaque type d’appareil utilise une version d’image adaptée à la taille et à la résolution de son écran. 
+Dans le cadre des intégrations modernes, avec les images responsives il faut bien définir les attributs srcset ou sources pour que chaque type d’appareil utilise une version d’image adaptée à la taille et à la résolution de son écran.
 
 NB : les attributs height et width permettent généralement  de définir le plus petit ratio d’affichage mais ce sont surtout les css qui aujourd’hui déterminent les tailles d’affichage selon les tailles des écrans.
 
@@ -43,11 +45,11 @@ Comparez le nombre de pixels de l’image chargée au nombre de pixels réelleme
 
 ## Exemple
 
-Une image de 350 × 300 pixels encodée en PNG 24 pèse 41 Ko. La même image affichée en vignette à 70 × 60 pixels pèse toujours 41 Ko, alors qu’elle ne devrait pas dépasser 3 Ko ! 
+Une image de 350 × 300 pixels encodée en PNG 24 pèse 41 Ko. La même image affichée en vignette à 70 × 60 pixels pèse toujours 41 Ko, alors qu’elle ne devrait pas dépasser 3 Ko !
 
-Exemple de syntaxe responsive : 
+Exemple de syntaxe responsive :
 
-HTML : 
+HTML :
 
 ```html
 <img id="monimage" src="image_3ko.png" width="70" height="60"
@@ -55,7 +57,7 @@ HTML :
 
 ```
 
-CSS : 
+CSS :
 
 ```javascript
 #monimage { width: 70px; height: 60px }
@@ -64,5 +66,3 @@ CSS :
 }
 
 ```
-
-
