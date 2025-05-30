@@ -2,7 +2,7 @@
 refID: 0009
 title: Limiter le nombre de requêtes HTTP
 createdAt: 2024-02-14T09:46:46.134Z
-updatedAt: 2024-07-04T18:37:41.460Z
+updatedAt: 2025-05-30T08:57:18.515Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
 lifecycle: 3-developement
+rgesn: 6.1 et 4.9
 environmental_impact: 4
 priority_implementation: 4
 moe: 3
@@ -36,14 +37,16 @@ validations:
 Le temps de chargement d’une page côté navigateur est directement corrélé au nombre de fichiers que le navigateur doit télécharger,
 et au poids unitaire de chaque fichier.
 
-Pour chaque fichier, le navigateur émet un GET HTTP vers le serveur.
-
-Il attend sa réponse, puis télécharge la ressource dès qu’elle est disponible. Selon le type de serveur web que vous utilisez,
+Pour chaque fichier, le navigateur émet un GET HTTP vers le serveur. Il attend sa réponse, puis télécharge la ressource dès qu’elle est disponible. Selon le type de serveur web que vous utilisez,
 plus le nombre de requêtes par page est important, moins vous pourrez servir de pages par serveur.
 Diminuer le nombre de requêtes par page est crucial pour réduire le nombre de serveurs HTTP (voire des serveurs d'application et de base de données) nécessaires au fonctionnement du site,
 et donc les impacts environnementaux associés.
 
 ## Exemple
 
-Pour afficher des petits drapeaux pour le choix d'une langue, l'utilisation d'une spritesheet CSS permet de les regrouper dans une seule image de plus grande taille.
-Ce procédé réduit le nombre de requêtes HTTP.
+Il existe plusieurs techniques pour réduire le nombre de requêtes :
+
+* Concaténer des fichiers JS
+* Concaténer des fichiers CSS
+* Créer des sprites ou des fonts d'icônes pour les icônes
+* Utiliser le lazyload pour les images
