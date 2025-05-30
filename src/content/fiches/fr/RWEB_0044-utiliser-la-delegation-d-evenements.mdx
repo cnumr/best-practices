@@ -2,11 +2,13 @@
 refID: '0044'
 title: Utiliser la délégation d'évènements
 createdAt: 2024-02-14T11:41:24.555Z
-updatedAt: 2024-07-04T21:41:03.295Z
+updatedAt: 2025-05-30T15:36:15.457Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '0044'
   - version: GreenIT
     idRef: '41'
   - version: 2.0.0
@@ -27,45 +29,39 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: >-
-      d'écoutes (listeners) d'un même événement sur plusieurs éléments HTML,
-      faisant partie d'un même groupe, sans utiliser la délégation d'événements
+  - rule: de listeners qui n’utilise pas la délégation d’événements
     maxValue: '0'
 ---
 
 ## Description
 
-La délégation d’événements permet de ne pas surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs élé- ments du DOM (Document Object Model).
+La délégation d’événements évite de surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs éléments du DOM.
+
+Le principe est le suivant : au lieu d’assigner un événement à plusieurs éléments de la page, vous pouvez mettre un seul événement sur un élément parent de ces objets. C’est dans ce gestionnaire d'événement que l'élément déclencheur sera déterminé grâce à event.target.
+
+Plus d’infos sur  : https\://fr.javascript.info/event-delegation
 
 ## Exemple
 
-L’élément du DOM, dont l’ID est "t", est déclaré comme le délégué.
-Il intercepte les événements de tous ses fils.
+Exemple de script pour surligner une cellule de tableau :
 
-```html
-<head>
-    // ...
-    <style type="text/css">
-     #t { border: 1px solid red } #t1 { background-color: pink; }
-    </style>
-    <script type="text/javascript">
-        function modifyText(new_text) {
-            var t2 = document.getElementById("t2");
-            t2.ﬁrstChild.nodeValue = new_text;
-        }
-        function load() {
-            var el = document.getElementById("t");
-            el.addEventListener("click", function() {
-              modifyText("four")
-            }, false); 
-        }
-    </script>
-</head>
-<body onload="load();">
-    <table id="t">
-        <tr><td id="t1"><button type="button">one</button></td></tr>
-        <tr><td id="t2"><button type="button">two</button></td></tr>
-    </table>
-    <!-- ... -->
-</body>
+```javascript
+<script type="text/javascript">
+  let selectedTd;
+  table.onclick = function(event) {
+    let target = event.target;
+    if (target.tagName != 'TD') return;
+    highlight(target);
+  };
+  function highlight(td) {
+    if (selectedTd) {
+      selectedTd.classList.remove('highlight');
+    }
+    selectedTd = td;
+    selectedTd.classList.add('highlight');
+  }
+</script>
+
 ```
+
+Ici on ne greffe pas un événement sur chaque cellule mais uniquement sur le tableau.
