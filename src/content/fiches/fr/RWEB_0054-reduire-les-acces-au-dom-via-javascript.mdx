@@ -2,11 +2,13 @@
 refID: '0054'
 title: Réduire les accès au DOM via JavaScript
 createdAt: 2024-02-14T11:51:06.292Z
-updatedAt: 2024-07-04T21:42:57.531Z
+updatedAt: 2025-05-30T15:38:37.061Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '0054'
   - version: GreenIT
     idRef: '32'
   - version: 2.0.0
@@ -33,11 +35,11 @@ validations:
 
 ## Description
 
-L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
+L’accès au DOM via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU), d’autant plus si la page a un DOM important. Réduisez autant que possible ces accès.
 
 Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
 
-Il est également possible d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
+Si la page a un DOM important, il peut être judicieux d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
 
 ## Exemple
 
