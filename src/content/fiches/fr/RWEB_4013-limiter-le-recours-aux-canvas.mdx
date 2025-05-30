@@ -2,11 +2,13 @@
 refID: '4013'
 title: Limiter le recours aux canvas
 createdAt: 2024-02-14T13:59:50.084Z
-updatedAt: 2024-07-05T05:11:25.517Z
+updatedAt: 2025-05-30T15:26:52.062Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '4013'
   - version: 4.0.0
     idRef: '4013'
 people: TBD
@@ -27,9 +29,9 @@ validations:
 
 ## Description
 
-L'élément HTML `canvas` est initialement conçu pour dessiner des graphiques, réaliser des jeux ou générer des images à la volée via des API JavaScript. Comme chaque script, l'utilisation de `canvas` a un impact significatif sur les besoins de ressources machines (CPU et/ou GPU) augmentant ainsi une mauvaise expérience utilisateur sur les machines les moins puissantes et entraînant également une surconsommation d'énergie.
-Cet impact est plus important quand le rendu est réalisé de manière répétitive (effet dynamique, animation).
-Il est recommandé d'utiliser d'autres éléments HTML natifs quand cela est possible et à défaut de mettre en place des optimisations pour limiter les besoins en ressources machines.
+L’élément HTML `canvas `est initialement conçu pour dessiner des graphiques, réaliser des jeux ou générer des images à la volée via des API JavaScript. Comme chaque script, l’utilisation de `canvas `consomme beaucoup de ressources CPU/GPU, ce qui se traduit par une sensation de lenteur sur les terminaux les moins véloces, poussant l’utilisateur à les remplacer.
+
+Cet impact est plus important quand le rendu est réalisé de manière répétitive (effet dynamique, animation). Il est recommandé d’utiliser d’autres éléments HTML natifs quand cela est possible et, à défaut, de mettre en place des optimisations pour limiter les besoins en ressources machines.
 
 ## Exemple
 
@@ -37,8 +39,3 @@ Il est recommandé d'utiliser d'autres éléments HTML natifs quand cela est pos
 * Avec les animations, utiliser `window.requestAnimationFrame()` plutôt que `window.setInterval()`.
 * Limiter l'utilisation de bibliothèques lourdes.
 * Tester les performances de rendu.
-
-## Sources
-
-* [Element canvas](https://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html)
-* [Optimiser les canvas](https://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)
