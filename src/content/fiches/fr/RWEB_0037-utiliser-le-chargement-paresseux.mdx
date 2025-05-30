@@ -2,11 +2,13 @@
 refID: '0037'
 title: Utiliser le chargement paresseux
 createdAt: 2024-02-14T11:24:11.818Z
-updatedAt: 2025-05-29T08:10:24.149Z
+updatedAt: 2025-05-30T13:01:27.244Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '0037'
   - version: GreenIT
     idRef: '1010'
   - version: 2.0.0
@@ -28,10 +30,8 @@ saved_resources:
   - cpu
   - network
 validations:
-  - rule: >-
-      d'images, d'iframes et de vidéos situées en dessous de la ligne de
-      flottaison et ppelés sans lazy loading
-    maxValue: 0%
+  - rule: ' d’images, d’iframes et de vidéos situés en dessous de la ligne de flottaison et appelés sans lazy loading'
+    maxValue: '0'
 ---
 
 ## Description
@@ -42,16 +42,9 @@ En HTML5, il est possible d’ajouter un attribut `loading` à vos images et à 
 
 ## Exemple
 
-Dans cet exemple, l'image et l'iframe seront lazy-loadés automatiquement par le navigateur, si l'image doit apparaitre à
-l'écran, elle sera téléchargée et affichée, si elle est en dessous de la ligne de flottaison, elle ne sera pas téléchargée.
+L’image et l’iframe seront chargées automatiquement par le navigateur : si l’image doit apparaître à l’écran, elle sera téléchargée et affichée, mais ne le sera pas si elle est située en dessous de la ligne de flottaison.
 
 ```html
 <img src="image.jpg" alt="..." loading="lazy">
 <iframe src="video-player.html" title="..." loading="lazy"></iframe>
 ```
-
-Pour aller plus loin :
-
-* [https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy\_loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
-* [https://web.dev/browser-level-image-lazy-loading/](https://web.dev/browser-level-image-lazy-loading/)
-* [https://web.dev/lazy-loading-video/](https://web.dev/lazy-loading-video/)
