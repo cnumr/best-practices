@@ -1,18 +1,21 @@
 ---
 refID: '4009'
-title: Assurer la compatibilité avec les plus anciens appareils et logiciels du parc
+title: Assurer la compatibilité avec les anciens appareils et logiciels
 createdAt: 2024-02-14T13:54:30.268Z
-updatedAt: 2024-07-05T05:09:34.760Z
+updatedAt: 2025-05-30T15:44:43.418Z
 language: fr
 published: true
 refType: RWEB
 versions:
+  - version: 5.0.0
+    idRef: '4009'
   - version: 4.0.0
     idRef: '4009'
 people: TBD
 responsible:
   - responsible: src/content/personas/fr/poamoa.mdx
 lifecycle: 3-developement
+rgesn: '2.2'
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -28,26 +31,10 @@ validations:
 
 ## Description
 
-Il faut s'assurer de la compatibilité du site avec les plus anciens matériels et logiciels que les utilisateurs peuvent possèder.
-Les pages doivent être utilisables sur les configurations les plus contraignantes : pas de mises en page cassées, de boutons inactifs,
-d'erreurs affichées ou autre problème empêchant la lecture ou la navigation.
+Pour ne pas déclencher l’obsolescence du terminal de l’utilisateur, les pages doivent être utilisables (pas de mises en page cassées, de boutons inactifs, d’erreurs affichées ou autre problème empêchant la lecture ou la navigation, etc.) sur les configurations les plus contraintes : versions de navigateurs anciennes ou qui posent des problèmes de compatibilité, vieux OS, et terminaux utilisateurs les moins puissants.
 
-Les configurations les plus contraignantes à choisir comprennent :
-
-* Les versions de navigateurs les plus anciennes, ou qui posent le plus de problèmes de compatibilités ;
-* Les versions d'OS les plus anciennes ;
-* Les terminaux les moins puissants que les utilisateurs possèdent : smartphones, ordinateurs ou autres.
-
-Le choix des configurations va dépendre de l'état du web au moment de l'implémentation de la solution, ainsi que du contexte
-projet : des publics différents amèneront des contraintes différentes.
-
-Ce choix peut être déterminé en partie grâce aux statistiques de fréquentations si elles sont disponibles. Attention cependant au biais du
-survivant : les utilisateurs qui ne peuvent pas du tout utiliser le site n'apparaitront pas dans ces statistiques. Le mieux
-est de faire une étude sur le terrain des utilisateurs et de leurs équipements.
+Analyser les statistiques de fréquentation pour déterminer quelles configurations techniques supporter. Attention cependant au biais du survivant : les utilisateurs qui ne peuvent pas du tout utiliser le site n’apparaîtront pas dans ces statistiques. Le mieux est d’étudier sur le terrain les équipements des utilisateurs.
 
 ## Exemple
 
-Pour différentes raisons (machines trop anciennes pour être mise à jour, manque d'un accès administrateur au système ou
-méconnaissance de l'existence d'alternatives), des utilisateurs sont bloqués sur Internet Explorer.
-Un site développé pour des navigateurs modernes, utilisant par exemple massivement *flexbox* ou *css grid* ne s'affichera
-pas correctement sur ce navigateur.
+Pour différentes raisons (machines trop anciennes pour être mises à jour, accès administrateur indisponible ou méconnaissance de l’existence d’alternatives), des utilisateurs sont bloqués sur Internet Explorer. Un site développé pour des navigateurs modernes, utilisant par exemple massivement `flexbox `ou `css grid` ne s’affichera pas correctement sur ce navigateur.
