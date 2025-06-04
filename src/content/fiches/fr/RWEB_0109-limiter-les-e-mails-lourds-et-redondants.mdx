@@ -2,7 +2,7 @@
 refID: 0109
 title: Limiter les e-mails lourds et redondants
 createdAt: 2024-02-14T13:25:58.681Z
-updatedAt: 2025-06-04T21:16:29.529Z
+updatedAt: 2025-06-04T21:18:50.729Z
 language: fr
 published: true
 refType: RWEB
@@ -30,8 +30,11 @@ saved_resources:
   - cpu
   - network
   - requests
+  - storage
 validations:
-  - rule: d'emails contenant une pièce jointe
+  - rule: >-
+      d'emails envoyés sans que l’utilisateur n’ait un contrôle complet sur la
+      fréquence et le contenu
     maxValue: '0'
 ---
 
@@ -43,12 +46,10 @@ Les e-mails sont sauvegardés sur les systèmes de stockage du fournisseur de me
 
 Newsletters:
 
-* définir la fréquence d’envoi au strict nécessaire ;
+* définir la fréquence d’envoi au strict nécessaire ou au choix de l’utilisateur ;
 * respecter la règle du double consentement (double opt-in) ;
 * envoyer des e-mails de désinscription aux clients n’ayant pas ouvert les x newsletters précédentes ;
-* éviter les pièces jointes et préférer les liens directs ;
-* éviter les images et à défaut limiter leur taille.
-
+* éviter les pièces jointes en utilisant un outil de transfert de fichiers comme  SwissTransfer.
 
 Gestion client:
 
