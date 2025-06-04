@@ -2,7 +2,7 @@
 refID: '0112'
 title: Adapter les sons aux contextes d'écoute
 createdAt: 2024-02-14T13:32:09.871Z
-updatedAt: 2025-06-04T21:30:13.249Z
+updatedAt: 2025-06-04T21:32:08.160Z
 language: fr
 published: true
 refType: RWEB
@@ -21,27 +21,32 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/contributeur.mdx
 lifecycle: 5-utilization
+rgesn: '5.6'
 environmental_impact: 3
 priority_implementation: 3
 moe: 2
-tiers: user-device
+tiers: network
 saved_resources:
   - network
 validations:
   - rule: >-
       de codecs audio propriétaires (non libres) et de pistes audio dont le
-      ratio poids en mega octet/durée en minute est superieur a 1
+      ratio poids en méga octet/durée en minute est superieur a 1
     maxValue: '0'
 ---
 
 ## Description
 
-Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier 3 formats couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
+Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier les 3 codecs couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
 
 * MP3 (MPEG-1 Audio Layer 3) ;
 * AAC (Advanced Audio Coding) ;
-* Vorbis.
-  Ces formats appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs.
+* Opus.
+
+
+Ces codecs appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs.
+
+Le format de fichier multimédia ouvert WebM, supporté par la plupart des navigateurs, permet d'intégrer l’audio dans une page web avec la balise HTML5  \<audio>. WebM peut contenir différents codecs audio, notamment Opus et Vorbis.
 
 ## Exemple
 
