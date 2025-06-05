@@ -2,7 +2,7 @@
 refID: '0001'
 title: Éliminer les fonctionnalités non essentielles
 createdAt: 2024-02-14T07:52:23.335Z
-updatedAt: 2024-07-04T18:34:00.467Z
+updatedAt: 2025-06-05T13:44:26.196Z
 language: fr
 published: true
 refType: RWEB
@@ -19,6 +19,7 @@ people: TBD
 responsible:
   - responsible: src/content/personas/fr/poamoa.mdx
 lifecycle: 1-specification
+rgesn: 1.2 et 2.7
 environmental_impact: 5
 priority_implementation: 5
 moe: 4
@@ -38,16 +39,16 @@ validations:
 
 ## Description
 
-Plusieurs études (Cast Software et Standish Group, notamment) démontrent que 70 % des fonctionnalités demandées par les utilisateurs ne sont pas essentielles et que 45 % ne sont jamais utilisées. En réduisant la couverture et la profondeur fonctionnelle de l’application, on abaisse son coût de développement initial, sa dette technique et les impacts environnementaux associés.
+Plusieurs études (Cast Software et Standish Group notamment) ont montré que jusqu’à 45% des fonctionnalités demandées par un utilisateur ne sont jamais utilisées et que jusqu’à 70% peuvent être considérées comme “non essentielles”. Bien qu’empiriques, ces études montrent clairement la nécessité de remettre en cause l’utilité des fonctionnalités d’un service numérique. 
 
-On diminue ainsi mécaniquement l’infrastructure nécessaire à son exécution. Par ailleurs, à niveau ergonomique constant, plus l’application est pauvre fonctionnellement, plus elle sera simple à utiliser. Il faut donc réduire le plus possible la couverture fonctionnelle de l’application, en la centrant sur le besoin essentiel de l’utilisateur.
+En réduisant la couverture et la profondeur fonctionnelle, on diminue les besoins en ressources informatiques (cycles CPU, bande passante, serveurs, etc.), ce qui réduit d’autant les impacts environnementaux associés à la dette technique. À niveau ergonomique constant, plus l’application est sobre fonctionnellement, plus elle sera simple à utiliser. Il faut donc centrer l’application sur le besoin essentiel de l’utilisateur. 
 
-Détecter une fonctionnalité non essentielle est possible au moment de l'analyse de l'expression du besoin. La méthode MoSCoW, des ateliers, des wireframes (maquettes fonctionnelles) ou des prototypes avec tests utilisateurs permettent de vérifier l'utilité d’une fonctionnalité en amont de son développement.
+On peut détecter une fonctionnalité non essentielle au moment de l’analyse de l’expression du besoin. La méthode MoSCoW, des ateliers, des wireframes ou des prototypes avec tests utilisateurs permettent de vérifier l’utilité d’une fonctionnalité en amont de son développement.
 
 ## Exemple
 
-Les succès récents du Web – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – fournissent un seul service et misent sur une grande sobriété fonctionnelle.
+Les succès récents du Web – Google, X (anciennement Twitter) WhatsApp, Pinterest, Instagram, etc. – fournissent un seul service et misent sur une grande sobriété fonctionnelle. 
 
-Se poser, au moment de l'analyse de l'expression du besoin, la question : « Que se passe-t-il si on ne l’a pas ? ».
+Au moment de l’analyse de l’expression du besoin, respectez le principe YAGNI (You Ain’t Gonna Need It) de l’extreme programming : développez quand vous avez effectivement besoin d’une fonctionnalité, pas lorsque vous imaginez en avoir besoin. 
 
-Respecter le principe YAGNI (You Ain't Gonna Need It) de l’extreme programming : développez quand vous avez effectivement besoin d’une fonctionnalité, pas lorsque vous imaginez en avoir besoin.
+Vous pouvez aussi vous appuyer sur la règle des 3U : Utile, Utilisable, Utilisé.
