@@ -1,0 +1,44 @@
+---
+refID: '0110'
+title: Only use e-mails validated by double consent
+createdAt: 2025-06-05T21:26:02.957Z
+updatedAt: 2025-06-05T21:26:02.957Z
+language: en
+published: false
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: AT
+responsible:
+  - {}
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - requests
+validations:
+  - rule: <A CHANGER>
+    maxValue: '3'
+---
+
+## Description
+
+Double opt-in is a marketing practice that involves requesting a prospect's consent to add their email address to mailing lists in two steps. First, by electronic consent, by providing their email address and checking an approval box, and then by validating this consent by sending a confirmation email to the address provided. The address becomes double opt-in in the database when the recipient clicks on the link in the confirmation email.
+
+This process simultaneously validates the email address and verifies that the person who provided it actually owns it. This double verification thus confirms the prospect's commitment to receive communications, newsletters, subscribe to a subscription, etc.
+
+It is therefore recommended to use the double opt-in practice to significantly reduce:
+
+* the number of emails sent without any real impact (and therefore the bandwidth consumed); 
+* SMTP server load when sending emails;
+* Server load when processing unsubscribes.
+
+## Example
+
+In the case of a telephone operator or a bank, give customers the choice from a catalog of products or services for which they agree to be contacted. Integrate double opt-in to double-validate this consent and offer a quick opt-out function in accordance with GDPR regulations.
