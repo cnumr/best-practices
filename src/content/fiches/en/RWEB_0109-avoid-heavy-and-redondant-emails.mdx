@@ -2,7 +2,7 @@
 refID: 0109
 title: Avoid heavy and redondant emails
 createdAt: 2025-06-06T15:51:58.940Z
-updatedAt: 2025-06-06T15:57:06.334Z
+updatedAt: 2025-06-06T15:58:55.237Z
 language: en
 published: true
 refType: RWEB
@@ -23,10 +23,27 @@ saved_resources:
   - requests
   - storage
 validations:
-  - rule: <A CHANGER>
-    maxValue: '3'
+  - rule: >-
+      emails sent without the user having complete control over the frequency
+      and content
+    maxValue: '0'
 ---
 
 ## Description
 
+Emails are saved on the email provider's storage systems, but also locally for IMAP and POP3 accounts. We can help reduce the environmental impact of a digital service by limiting automatic email sending (newsletters, customer management, order tracking, etc.) as much as possible, and also by limiting their size (attachments, graphics, etc.) and the number of recipients.
+
+
+
 ## Example
+
+Newsletters:
+
+* Set the sending frequency to the strict minimum or at the user's discretion;
+* Comply with the double opt-in rule;
+* Send unsubscribe emails to customers who have not opened the previous x newsletters;
+* Avoid attachments by using a file transfer tool like SwissTransfer.
+
+  Customer Management:
+* Reduce online orders to a single email (order, payment confirmation, shipping, satisfaction, reminder, delivery satisfaction, invoice, etc.).
+* Do not send attachments unless necessary: a link to the document in the customer account, for example.
