@@ -2,7 +2,7 @@
 refID: '0111'
 title: Limit the size of sent emails
 createdAt: 2025-06-06T15:49:17.603Z
-updatedAt: 2025-06-06T15:55:33.794Z
+updatedAt: 2025-06-06T15:56:45.401Z
 language: en
 published: true
 refType: RWEB
@@ -23,10 +23,24 @@ saved_resources:
   - requests
   - storage
 validations:
-  - rule: <A CHANGER>
-    maxValue: '3'
+  - rule: of sent emails heavier than 1MB
+    maxValue: '0'
 ---
 
 ## Description
 
+Limit the size of sent emails as much as possible when a notification, alert, or confirmation message must be sent by email to the user.
+Avoid attachments and embedded images. By sharing a link to cloud file storage, you prevent your attachments from being duplicated on as many email servers as there are recipients.
+Keep content short. If necessary, use plain text instead of HTML.
+If you absolutely must decorate your email, use CSS styles instead of images.
+
+Compress your email's HTML code with a tool like [https://htmlcompressor.com/compressor/](https://htmlcompressor.com/compressor/)
+
 ## Example
+
+Sending an email confirming the receipt of a contact request doesn't necessarily justify adding HTML code and images. A basic HTML message uses on average:
+at least two images (the logo and a signature at the bottom of the page), or approximately 10 KB;
+12 KB of HTML code for layout (inline styles, tables, etc.);
+4 KB of text (the message and the two action links).
+
+Ultimately, an HTML email weighs 26 KB, while a plain text email weighs 4 KB, a saving of 22 KB per email sent. In the case of a transactional site with, for example, customer and internal alerts, the potential savings become considerable. The number of emails sent over 1MB is zero.
