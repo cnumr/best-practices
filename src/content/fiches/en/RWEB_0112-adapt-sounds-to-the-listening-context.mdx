@@ -2,7 +2,7 @@
 refID: '0112'
 title: Adapt sounds to the listening context
 createdAt: 2025-06-06T15:55:04.268Z
-updatedAt: 2025-06-06T16:00:07.509Z
+updatedAt: 2025-06-06T16:01:22.712Z
 language: en
 published: true
 refType: RWEB
@@ -21,10 +21,26 @@ tiers: network
 saved_resources:
   - network
 validations:
-  - rule: <A CHANGER>
-    maxValue: '3'
+  - rule: >-
+      of proprietary (non-free) audio codecs and audio tracks whose ratio of
+      size in megabytes to duration in minutes is greater than 1
+    maxValue: '0'
 ---
 
 ## Description
 
+Audio files can be large and consume bandwidth. It is therefore essential to optimize their size. Favor the three codecs that cover the three major platforms (Windows, Mac OS X, and Linux):
+
+* MP3 (MPEG-1 Audio Layer 3);
+* AAC (Advanced Audio Coding);
+* Opus.
+
+These codecs apply highly advanced compression algorithms that allow for significant file size savings.
+The open multimedia file format WebM, supported by most browsers, allows audio to be embedded in a web page with the HTML5 \<audio> tag. WebM can contain different audio codecs, including Opus and Vorbis.
+
 ## Example
+
+Encoders like LAME allow you to convert uncompressed audio files to MP3 format, but also adjust the sample rate to further reduce file size, at the expense of audio quality. Test on each audio file.
+In the case of a reference WAV file, son.wav, of 63,128 bytes, its conversion to MP3 results in:
+a son-128.mp3 file of 10,823 bytes (128 kbps), 6 times smaller;
+a son-64.mp3 file of 6,508 bytes (64 kbps), 10 times smaller.
