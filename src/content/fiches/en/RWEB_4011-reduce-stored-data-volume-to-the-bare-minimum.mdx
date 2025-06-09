@@ -1,0 +1,45 @@
+---
+refID: '4011'
+title: Reduce stored data volume to the bare minimum.
+createdAt: 2025-06-09T13:10:17.943Z
+updatedAt: 2025-06-09T13:10:17.944Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: of Go of stored data that is useless for the digital service
+    maxValue: '0'
+---
+
+## Description
+
+Reducing the volume of stored data to the bare minimum implies:
+
+* optimizing the management of large data volumes
+* cleaning up old data, either by archiving it offline or deleting it
+* ensuring that backups can be restored
+* monitoring storage space size
+
+Legal constraints may require to store data that is never used over time, depending on the type of data, and its owners.
+
+The way the data is used and its importance degree also impacts how it will be stored.
+
+This practice is part of the management of the information lifecycle.
+
+## Exemple
+
+* Define the archiving processes: upon release, an annual report is stored on an SSD (hot zone). One month later, it will be archived on a classic storage system (cold zone). Finally, ten years later, it will be deleted.
+* Avoiding duplicates between tables is a way to optimize stored data volume.
+* Data use can lead to tables denormalization and therefore increasing storage space
