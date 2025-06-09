@@ -1,0 +1,36 @@
+---
+refID: '011'
+title: Prefer custom solutions to CMS
+createdAt: 2025-06-09T13:08:26.535Z
+updatedAt: 2025-06-09T13:08:26.535Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - ram
+validations:
+  - rule: extensions of a site using a CMS
+    maxValue: '3'
+---
+
+## Description
+
+Use a framework or a custom solution to have more liberty to optimize the digital service.
+
+To achieve their flexibility, CMS are indeed more resource intensive than simple, custom solutions.
+
+For instance, to manage their plugins, CMS use hook system, which is generally based on a function naming convention. Testing for the existence of new functions uses resources, whereas custom developments don't have to check for new features.
+
+Using too many extensions can slow down the site.
