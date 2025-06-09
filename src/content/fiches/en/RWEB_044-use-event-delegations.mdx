@@ -1,0 +1,64 @@
+---
+refID: '044'
+title: Use event delegations
+createdAt: 2025-06-09T13:47:11.442Z
+updatedAt: 2025-06-09T13:47:11.442Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - ram
+  - cpu
+validations:
+  - rule: >-
+      listeners of the same event on multiple HTML elements, belonging to the
+      same group, without using event delegation
+    maxValue: '0'
+---
+
+## Description
+
+Events delegation avoids overloading browser memory by instantiating a single listener for several DOM (Document Object Model) elements.
+
+## Exemple
+
+The DOM element whose ID is "t" is declared as the delegate.
+
+It intercepts the events of all of its children.
+
+
+\<head>
+     // ...
+     \<styletype="text/css">
+      \#t { border: 1px solid red } #t1 { background-color: pink; }
+     \</style>
+     \<script type="text/javascript">
+         function modifyText(new\_text) {
+             let t2 = document.getElementById("t2");
+             t2.ﬁrstChild.nodeValue = new\_text;
+         }
+         function load() {
+             var el = document.getElementById("t");
+             el.addEventListener("click", function() {
+               modifyText("four")
+             }, false);
+         }
+     \</script>
+\</head>
+\<body onload="load();">
+     \<table id="t">
+         \<tr>\<td id="t1">\<button type="button">one\</button>\</td>\</tr>
+         \<tr>\<td id="t2">\<button type="button">two\</button>\</td>\</tr>
+     \</table>
+     \<!-- ... -->
+\</body>
