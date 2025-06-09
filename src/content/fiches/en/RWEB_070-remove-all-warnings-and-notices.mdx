@@ -2,7 +2,7 @@
 refID: '070'
 title: Remove all warnings and notices
 createdAt: 2025-06-09T14:01:28.784Z
-updatedAt: 2025-06-09T14:01:28.784Z
+updatedAt: 2025-06-09T14:31:14.699Z
 language: en
 published: true
 refType: RWEB
@@ -32,19 +32,11 @@ Warnings and notices slow down application servers such as PHP as they have to t
 
 Avoid :
 
-\<html>
-     \<body>
-         \<form method="post" accept-charset="utf-8">
-             \<label>
-                 First Name
-                 \<input type="text" name="ﬁrst\_name" value="\<?php print $\_POST\['ﬁrst\_name'] ?>" placeholder="">
-            \</label>     
-             \<label>
-                  Last Name
-                  \<input type="text" name="last\_name" value="\<?php print $\_POST\['last\_name'] ?>" placeholder="">
-             \</label>     
-         \</form>
-     \</body>
-\</html>
+```html
+<form method="post">
+  <input type="text" name="name"
+         value="<?= htmlentities($_POST['name']) ?>">
+</form>
+```
 
-$\_POST\['ﬁrst\_name']\` and \`$\_POST\['last\_name'] generate notices because they are not necessarily defined.
+`$_POST['ﬁrst_name']` and `$_POST['last_name']` generate notices because they are not necessarily defined.
