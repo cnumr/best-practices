@@ -1,0 +1,50 @@
+---
+refID: '070'
+title: Remove all warnings and notices
+createdAt: 2025-06-09T14:01:28.784Z
+updatedAt: 2025-06-09T14:01:28.784Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 4-production
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+  - cpu
+validations:
+  - rule: warnings and notices
+    maxValue: '0'
+---
+
+## Description
+
+Warnings and notices slow down application servers such as PHP as they have to trace the errors origins and record messages explaining the associated problems in various logs systems.
+
+## Exemple
+
+Avoid :
+
+\<html>
+     \<body>
+         \<form method="post" accept-charset="utf-8">
+             \<label>
+                 First Name
+                 \<input type="text" name="ﬁrst\_name" value="\<?php print $\_POST\['ﬁrst\_name'] ?>" placeholder="">
+            \</label>     
+             \<label>
+                  Last Name
+                  \<input type="text" name="last\_name" value="\<?php print $\_POST\['last\_name'] ?>" placeholder="">
+             \</label>     
+         \</form>
+     \</body>
+\</html>
+
+$\_POST\['ﬁrst\_name']\` and \`$\_POST\['last\_name'] generate notices because they are not necessarily defined.
