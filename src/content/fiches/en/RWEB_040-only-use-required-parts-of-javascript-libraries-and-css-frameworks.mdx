@@ -1,0 +1,40 @@
+---
+refID: '040'
+title: Only use required parts of Javascript libraries and CSS frameworks
+createdAt: 2025-06-09T12:55:20.433Z
+updatedAt: 2025-06-09T12:55:20.433Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: used libraries with unused parts
+    maxValue: '1'
+---
+
+## Description
+
+JavaScript libraries such as jQuery and ready-to-use CSS frameworks (Bootstrap, skeleton, gumby, foundation, etc.) are excellent tools used to create websites very quickly, as they almost meet all the most common requirements.
+
+The downside is that only a small part of those libraries is generally used; and some of these frameworks and libraries do not rely on a modular architecture, making users download entire libraries only to use a small percentage of their features.
+
+Avoid using these libraries when possible (see [https://youmightnotneedjquery.com)](https://youmightnotneedjquery.com\)) or only keep their most used parts (see https\://getbootstrap.com/customize).
+
+Bundlers like Webpack allow the automatic removal of unused code. This is called tree shaking.
+
+## Exemple
+
+Some frameworks (here Bootstrap) allow you to create custom libraries that only contain the parts actually used by the site, thus reducing libraries size and resources used during execution.
