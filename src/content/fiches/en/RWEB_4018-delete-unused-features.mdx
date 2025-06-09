@@ -1,0 +1,50 @@
+---
+refID: '4018'
+title: Delete unused features
+createdAt: 2025-06-09T12:46:45.719Z
+updatedAt: 2025-06-09T12:46:45.719Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 1-specification
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: poorly used features during production
+    maxValue: 10%
+---
+
+## Description
+
+Eliminating unused features involves:
+
+* Measuring feature usage during production.
+* Controlling feature usage and removing those that are not sufficiently used or have lost value.
+
+Removing features reduces the application size, reducing its impact in production, and maintenance costs.
+
+How to remove a feature?
+
+* Disable it: using feature flipping, prevent it from being used with a flag.
+* Uninstall it: remove as much of the used code as possible and refactor the remaining code.
+
+The choice between these two methods will depend on the environmental and economic removal cost.
+
+## Exemple
+
+Let's consider an e-commerce website using two different lists: shopping lists and favorites lists. When redesigning this website, instead of remaining iso-functional, the website team evaluates these features relevance. Measurements show that the favorites list has become outdated. The favorites list is therefore removed along with all its database data.
+
+An administration page might only be used once a year and still be very important (for example: a cache purge that is only used in case of a reference update). In this case, this content must be conserved.
