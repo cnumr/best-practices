@@ -1,0 +1,41 @@
+---
+refID: '4013'
+title: Limit canvas use
+createdAt: 2025-06-09T13:45:43.300Z
+updatedAt: 2025-06-09T13:45:43.300Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: canvas that can be replaced by an HTML element
+    maxValue: '0'
+---
+
+## Description
+
+HTML canvas element is initially designed for drawing graphics, creating games, or generating images on-the-fly via JavaScript APIs. Like any script, the use of canvas has a significant impact on device resource requirements (CPU and/or GPU), worsening user experience on weaker devices and leading to energy overconsumption. This impact is greater when the rendering is done repetitively (dynamic effect, animation). It is recommended to use other native HTML elements when possible, or otherwise, to optimize the implementation to limit the device resource requirements.
+
+## Exemple
+
+* Only render when necessary.
+* Use \`window\.requestAnimationFrame()\` instead of \`window\.setInterval()\` for animations.
+* Avoid the use of heavy libraries.
+* Test rendering performance.
+
+Sources
+
+* [https://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html](https://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html) 
+* [https://developer.mozilla.org/fr/docs/Web/API/Canvas\_API/Tutorial/Optimizing\_canvas](https://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas) 
