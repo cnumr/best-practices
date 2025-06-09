@@ -1,0 +1,39 @@
+---
+refID: '105'
+title: 'Apache Vhost: disable AllowOverride'
+createdAt: 2025-06-09T14:03:33.427Z
+updatedAt: 2025-06-09T14:03:33.427Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      configuration files containing "AllowOverride" text with anything other
+      than "AllowOverride None"
+    maxValue: '0'
+---
+
+## Description
+
+When AllowOverride directive is enabled, Apache HTTP server must go up the entire directory hierarchy to possibly find an .htaccess file containing override rules. Disabling this directive if possible in the Apache configuration is recommended.
+
+## Exemple
+
+In your Apache host configuration file, add:
+
+AllowOverride none
+
+To go further:
+https\://httpd.apache.org/docs/2.0/mod/core.html#allowoverride 
