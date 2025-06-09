@@ -1,0 +1,40 @@
+---
+refID: '064'
+title: Cache frequently used calculated data
+createdAt: 2025-06-09T12:57:17.007Z
+updatedAt: 2025-06-09T12:57:17.007Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - ram
+validations:
+  - rule: >-
+      non-volatile data that requires computation and accessed multiple times,
+      but not stored in a cache system
+    maxValue: '0'
+---
+
+## Description
+
+When values or data calculations are resources intensive, you should cache the results when the values remain unchanged, to avoid repeating these operations. 
+
+Key-value type cache systems are designed to store this data. As they are generally stored entirely in RAM, they generate significant CPU cycles savings when the calculated data is used frequently..
+
+## Exemple
+
+The number of contents (e.g., products) belonging to a category is calculated while it is not updated very frequently. Caching each category's number of contents saves CPU cycles.
+
+OAuth2 access tokens have expiration time. Caching tokens and their expiration time avoids unnecessary calls to the authorization server to revalidate them.
