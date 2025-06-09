@@ -1,0 +1,40 @@
+---
+refID: '103'
+title: Reduce server logs as much as possible
+createdAt: 2025-06-09T13:59:29.199Z
+updatedAt: 2025-06-09T13:59:29.199Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: logs files without a maximum a retention time
+    maxValue: '0'
+---
+
+## Description
+
+Server logs (web, application, database) can become very large. It is recommended to configure them. By adjusting the application's log level at the highest possible level (e.g. only information/warning/error) and by logging only relevant information, disk writes are avoided, the number of CPU cycles is reduced as well as storage space use.
+
+To avoid disk saturation, it is also recommended to set up a retention time and log rotation based on the service operational needs.
+
+## Exemple
+
+The access logs of an Apache server can be configured as follows to exclude static resources and RSS feeds:
+
+SetEnvIf Request\_URI "\\.(ico|pdf|ﬂv|jpg|jpeg|png|gif| js|css|gz|swf|txt)$" dontlog
+SetEnvIf Request\_URI "^/rss/" dontlog
+CustomLog /var/log/apache/access.log combined env=!dontlog
