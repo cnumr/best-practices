@@ -24,16 +24,18 @@ Lea [la guía del colaborador] (CONTRIBUTING.md).
 
 Para simplificar sus búsquedas, no olvide utilizar los filtros disponibles en la página de discusiones.
 
-   - :infinity: [Lista de todas las discusiones](https://github.com/cnumr/best-practices/discussions)
-   - :heavy_plus_sign: [Lista de discusiones para agregar BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
-   - :memo: [Lista de discusiones para modificar BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
-   - :heavy_multiplication_x: [Lista de discusiones sobre la eliminación de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
+- :infinity: [Lista de todas las discusiones](https://github.com/cnumr/best-practices/discussions)
+- :heavy_plus_sign: [Lista de discusiones para agregar BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
+- :memo: [Lista de discusiones para modificar BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
+- :heavy_multiplication_x: [Lista de discusiones sobre la eliminación de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
 ## Lista de mejores prácticas
 
 > [!IMPORTANT]
-> A mettre à jour avec les nouvelles BP.
-
+>
+> - [Carpeta conteniendo las fiches de buenas prácticas](src/content/fiches/es/) ;
+> - [Carpeta conteniendo el glosario (POR HACER)](src/content/lexique/es/) ;
+> - [Carpeta conteniendo las personas (POR HACER)](src/content/personas/es/).
 
 ## Licencia
 

@@ -1,4 +1,4 @@
-# 115 best practices of web Eco-Design 
+# 115 best practices of web Eco-Design
 
 ## The project
 
@@ -24,15 +24,18 @@ Please read [the contributor's guide](CONTRIBUTING.md).
 
 To simplify your searches, don't forget to use the available filters on the discussions page.
 
-  - :infinity: [List of all discussions](https://github.com/cnumr/best-practices/discussions)
-  - :heavy_plus_sign: [List of discussions for adding BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
-  - :memo: [List of discussions for modifying BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
-  - :heavy_multiplication_x: [List of discussions about BP removal](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
+- :infinity: [List of all discussions](https://github.com/cnumr/best-practices/discussions)
+- :heavy_plus_sign: [List of discussions for adding BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
+- :memo: [List of discussions for modifying BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
+- :heavy_multiplication_x: [List of discussions about BP removal](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
 ## Best Practices list
 
 > [!IMPORTANT]
-> A mettre à jour avec les nouvelles BP.
+>
+> - [Folder containing best practice sheets](src/content/fiches/en/) ;
+> - [Folder containing the glossary (TO DO)](src/content/lexique/en/) ;
+> - [Personas folder (TO DO)](src/content/personas/en/).
 
 ## Licence
 

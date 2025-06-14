@@ -24,16 +24,18 @@ N'hésitez pas à lire [le guide des contributeurs](CONTRIBUTING.md).
 
 Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibles sur la page de discussions.
 
-  - :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
-  - :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
-  - :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
-  - :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
+- :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
+- :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
+- :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
+- :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
 ## La liste des Bonnes Pratiques
 
 > [!IMPORTANT]
-> A mettre à jour avec les nouvelles BP.
-
+>
+> - [Dossier contenant les fiches de bonnes pratiques](src/content/fiches/fr/) ;
+> - [Dossier contenant le lexique](src/content/lexique/fr/) ;
+> - [Dossier contenant les personas](src/content/personas/fr/).
 
 ## Licence
 
