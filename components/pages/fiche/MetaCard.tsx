@@ -25,9 +25,7 @@ export const FicheMetaDisplay: FunctionComponent<
     <aside>
       <div
         className={cn(
-          `box flex flex-col border-neutral-transparent
-        md:flex-row md:flex-wrap md:justify-between md:gap-4
-        lg:sticky lg:top-[80px] lg:mt-8 lg:flex-col`,
+          `box flex flex-col border-neutral-transparent md:flex-row md:flex-wrap md:justify-between md:gap-4 lg:sticky lg:top-[80px] lg:mt-8 lg:flex-col`,
           className
         )}>
         <ul className="my-2 md:mb-0">
@@ -87,7 +85,7 @@ export const FicheMetaDisplay: FunctionComponent<
               displayTitle
             />
           )}
-          {getRefConfig().featuresEnabled.perimetre === true ? (
+          {getRefConfig().featuresEnabled.scope === true ? (
             <FicheMetaItem
               fiche={fiche}
               meta="scope"
