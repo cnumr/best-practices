@@ -2,7 +2,7 @@
 refID: '037'
 title: Use lazy loading
 createdAt: 2025-06-09T13:34:10.388Z
-updatedAt: 2025-06-09T13:34:10.388Z
+updatedAt: 2025-06-15T12:16:54.261Z
 language: en
 published: true
 refType: RWEB
@@ -12,45 +12,32 @@ versions:
 people: '-'
 responsible: []
 lifecycle: 3-developement
-environmental_impact: 5
+rgesn: '6.5'
+environmental_impact: 4
 priority_implementation: 5
-moe: 4
+moe: 5
 tiers: network
 saved_resources:
   - cpu
   - network
 validations:
   - rule: >-
-      images, iframes, and videos called without a lazy loading attribute and
+      images, iframes, and videos declared without a lazy loading attribute and
       below the initial viewport is
     maxValue: '0'
 ---
 
 ## Description
 
-By default, all resources (images, videos, iframes, etc.) of a web page are downloaded, even when users do not display them, for instance if they are outside the viewport. To avoid this, the lazy loading technique can be used: elements with this attribute will be loaded only when they become visible on the screen.
+When a user doesn't view all the web al once, all resources (images, videos, iframes, etc.) located outside the visible area, below the fold, are loaded unnecessarily. Avoid this by using lazy loading, which implies loading an element only when its location becomes visible on the screen.
 
-It is possible to add a \`loading\` attribute to images and iframes in HTML so that the browser will only download images  that are displayed on the screen. However, this attribute is very recent: it will not work on older browser versions. 
-
-For the sake of improved compatibility, it is still possible to use very light Javascript mini-libraries which can handle 
-
-images lazy-loading, such as:
-
-* LOZAD https\://cdn.jsdelivr.net/npm/lozad 1.9 KB (gzip)
-* vanilla-lazyload https\://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js 3.5 KB (gzip)
+In HTML5, you can add a loading attribute to your images and iframes so that the browser only loads the resources that appear on the screen.
 
 ## Exemple
 
-In this example, the image and iframe will be automatically lazy-loaded by the browser. If an image must be displayed on
+The image and iframe will be loaded automatically by the browser: if the image should appear on screen, it will be downloaded and displayed, but it will not be if it is located below the fold.
 
-the screen, it will be downloaded and displayed. Otherwise, it will not be downloaded.
-
-\<img src="image.jpg" alt="..." loading="lazy">
-
-\<iframe src="video-player.html" title="..." loading="lazy">\</iframe>
-
-See also :
-
-* [https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy\_loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
-* [https://web.dev/browser-level-image-lazy-loading/](https://web.dev/browser-level-image-lazy-loading/)
-* [https://web.dev/lazy-loading-video/](https://web.dev/lazy-loading-video/) 
+```html
+<img src="image.jpg" alt="..." loading="lazy">
+<iframe src="video-player.html" title="..." loading="lazy"></iframe>
+```
