@@ -2,7 +2,7 @@
 refID: '4009'
 title: Ensure compatibility with older devices and software configurations
 createdAt: 2025-06-09T13:54:32.087Z
-updatedAt: 2025-06-09T13:54:32.087Z
+updatedAt: 2025-06-15T12:42:51.566Z
 language: en
 published: true
 refType: RWEB
@@ -12,6 +12,7 @@ versions:
 people: '-'
 responsible: []
 lifecycle: 3-developement
+rgesn: '2.2'
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -27,18 +28,10 @@ validations:
 
 ## Description
 
-It is necessary to ensure the website's compatibility with the oldest hardware and software that the users may still use. Web pages must remain available on the most restrictive configurations: no broken layouts, inactive buttons, errors displayed, or any other problem that prevents reading or navigation.
+To avoid pushing the user's device to obsolescence, pages must be usable (no broken layouts, inactive buttons, errors displayed, or other problems preventing reading or navigation) on the most demanding configurations: older browser versions or those with compatibility issues, older operating systems, and less powerful user devices.
 
-The most restrictive configurations include:
-
-* Oldest browsers versions, or those who trigger most compatibility problems.
-* Oldest OS versions.
-* Least powerful devices that the users have: smartphones, computers, or others.
-
-Configuration choices will depend on the state of the web at the solution implementation time, as well as the project's context: different audiences will bring different constraints.
-
-This configuration choice can be in part determined with available web traffic statistics. However, take the survivor bias in consideration: users who cannot use the site at all will not appear in these statistics. The best way is to conduct a field study of users and their equipment.
+You can analyse the traffic statistics to determine which technical configurations to support. However, beware of survivor bias: users who cannot use the site at all will not appear in these statistics. It's best to study users' equipment in the field.
 
 ## Exemple
 
-For various reasons (devices that are too old to be updated, lack of administrator access to the system, or ignorance of the existing alternatives), users are stuck on Internet Explorer. Sites developed for modern browsers, using, for example, a lot of flexbox or css grid properties, will not correctly display content on this browser.
+For various reasons (devices that are too old to be updated, lack of administrator access to the system, or ignorance of the existing alternatives), users are stuck on Internet Explorer. Sites developed for modern browsers, using, for example, a lot of `flexbox` or `css grid `properties, will not correctly display content on this browser.
