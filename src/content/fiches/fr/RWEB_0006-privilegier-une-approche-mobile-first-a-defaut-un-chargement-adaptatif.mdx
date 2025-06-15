@@ -2,7 +2,7 @@
 refID: '0006'
 title: Privilégier une approche "mobile first"
 createdAt: 2024-02-14T09:31:32.923Z
-updatedAt: 2025-06-05T14:03:51.186Z
+updatedAt: 2025-06-15T12:57:38.777Z
 language: fr
 published: true
 refType: RWEB
@@ -36,7 +36,7 @@ validations:
 
 En phase de spécification puis de conception, se contraindre fonctionnellement et en termes d’UX avec les limitations d’un mobile (réseau aléatoire, petit écran, etc…) est recommandé. Lorsque cela est  justifié (par exemple par un fort gain de productivité comme pour une application d’emails), on peut envisager une déclinaison pour grands écrans. 
 
-Ensuite, lors de l’implémentation, différentes mesures peuvent être mises en oeuvre, comme le chargement adaptatif, les media queries (notamment dans les attributs media des \<link> pour la sélection de feuilles de styles CSS), les attributs srcset et sizes des \<img>, les sous-éléments \<source> des \<picture>, \<video> et \<audio>. Il est aussi possible de récupérer ces informations via des API JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement. Utiliser la détection de user-agent côté serveur est également envisageable, mais cette pratique est fortement découragée par les acteurs du web.
+Ensuite, lors de l’implémentation, différentes mesures peuvent être mises en oeuvre, comme le chargement adaptatif, les media queries (notamment dans les attributs media des \<link> pour la sélection de feuilles de styles CSS), les attributs srcset et sizes des \<img>, les sous-éléments \<source> des \<picture>, \<video> et \<audio>. Il est aussi possible de récupérer ces informations via des API JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement. Utiliser la détection de user-agent côté serveur est fortement découragé par les acteurs du web.
 
 Utiliser ces différentes techniques permet d’éviter de charger du contenu qui serait inutile ou inutilisable sur un terminal qui n’aurait pas les capacités requises.
 
