@@ -2,7 +2,7 @@
 refID: '044'
 title: Use event delegations
 createdAt: 2025-06-09T13:47:11.442Z
-updatedAt: 2025-06-09T13:47:11.442Z
+updatedAt: 2025-06-15T12:38:03.042Z
 language: en
 published: true
 refType: RWEB
@@ -30,35 +30,31 @@ validations:
 
 Events delegation avoids overloading browser memory by instantiating a single listener for several DOM (Document Object Model) elements.
 
+Instead of assigning an event listener to several elements on the page, you can put a single event listener on a parent element of these objects. It is in this event handler that the triggering element will be determined using `event.target`.
+
+More informations : [https://fr.javascript.info/event-delegation](https://fr.javascript.info/event-delegation)
+
 ## Exemple
 
-The DOM element whose ID is "t" is declared as the delegate.
+Example script to highlight a table cell:
 
-It intercepts the events of all of its children.
+```javascript
+<script type="text/javascript">
+  let selectedTd;
+  table.onclick = function(event) {
+    let target = event.target;
+    if (target.tagName != 'TD') return;
+    highlight(target);
+  };
+  function highlight(td) {
+    if (selectedTd) {
+      selectedTd.classList.remove('highlight');
+    }
+    selectedTd = td;
+    selectedTd.classList.add('highlight');
+  }
+</script>
 
+```
 
-\<head>
-     // ...
-     \<styletype="text/css">
-      \#t { border: 1px solid red } #t1 { background-color: pink; }
-     \</style>
-     \<script type="text/javascript">
-         function modifyText(new\_text) {
-             let t2 = document.getElementById("t2");
-             t2.ﬁrstChild.nodeValue = new\_text;
-         }
-         function load() {
-             var el = document.getElementById("t");
-             el.addEventListener("click", function() {
-               modifyText("four")
-             }, false);
-         }
-     \</script>
-\</head>
-\<body onload="load();">
-     \<table id="t">
-         \<tr>\<td id="t1">\<button type="button">one\</button>\</td>\</tr>
-         \<tr>\<td id="t2">\<button type="button">two\</button>\</td>\</tr>
-     \</table>
-     \<!-- ... -->
-\</body>
+Here we do not set an event listener on each cell but only on the table.
