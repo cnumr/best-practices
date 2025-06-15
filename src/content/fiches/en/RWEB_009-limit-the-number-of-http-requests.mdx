@@ -2,7 +2,7 @@
 refID: 009
 title: Limit the number of HTTP requests
 createdAt: 2025-06-09T13:16:07.724Z
-updatedAt: 2025-06-09T13:16:07.724Z
+updatedAt: 2025-06-15T11:57:13.192Z
 language: en
 published: true
 refType: RWEB
@@ -28,10 +28,15 @@ validations:
 
 The loading time of a page in the browser is correlated to the number of files that must be downloaded and to the size of these files.
 
-Depending on the server type, the number of requests can limit the number of pages that be served to the users. Decreasing the number of requests by page allows the reduction of the number of HTTP servers, and maybe of other components of the architecture, like databases and application servers.
-
-Although the issue is much less potent with the use of HTTP 2, having a lot of requests can significantly impact the performance of the application of the client side. In any case, having too many requests is a good sign that some improvements can be performed on the application.
+For each file, the browser issues an HTTP GET to the server. It waits for a response, then downloads the resource. \
+\
+Reducing the number of requests per page is crucial for reducing the number of HTTP servers (and even application and database servers) required to run your site, and therefore the associated environmental impacts.
 
 ## Exemple
 
-Using a CSS sprite sheet (i.e., grouping all the small images in one bigger picture, then selecting the displayed one on the client side with CSS) to display the small flags in a language picker reduces the number of requests associated with  this feature.
+There are several techniques to reduce the number of requests:
+
+* Concatenate JS files
+* Concatenate CSS files
+* Create sprites or icon fonts for icons
+* Use lazyload for images
