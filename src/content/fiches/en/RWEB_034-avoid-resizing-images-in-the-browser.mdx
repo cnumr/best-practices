@@ -2,7 +2,7 @@
 refID: '034'
 title: Avoid resizing images in the browser
 createdAt: 2025-06-09T13:17:52.634Z
-updatedAt: 2025-06-09T13:17:52.634Z
+updatedAt: 2025-06-15T12:07:17.141Z
 language: en
 published: true
 refType: RWEB
@@ -14,7 +14,7 @@ responsible: []
 lifecycle: 3-developement
 environmental_impact: 4
 priority_implementation: 5
-moe: 4
+moe: 5
 tiers: user-device
 saved_resources:
   - cpu
@@ -26,10 +26,34 @@ validations:
 
 ## Description
 
-Do not resize images using HTML code's HEIGHT and WIDTH attributes as this requires transferring those images in their original size, wasting bandwidth and CPU cycles.
+The size of the image sent to the browser should be as close as possible to that of the display size.
+
+In modern integrations, with responsive images, it's important to define the `srcset` or `source` attributes so that each device type uses a version of the image adapted to its screen size and resolution.
+
+Note: The `height` and `width` attributes generally allow you to define the smallest display ratio, but CSS is currently the main driver for determining display sizes based on screen sizes.
+
+Compare the number of pixels in the uploaded image to the number of pixels actually displayed.
+
+The yellowlab.tools tool can help you with this.
 
 ## Exemple
 
-A 350 × 300 pixels PNG 24 image weighs 41 KB. The same image still weighs 41 KB, even though it should not exceed 3 KB, when resized in HTML code to be displayed as a thumbnail with dimensions of 70 × 60 pixels. This means that 38 KB are unnecessarily downloaded each time this image is viewed. Also note that browser resizing can lead to a more pixelated rendering.
+A 350 × 300 pixel image encoded in PNG 24 weighs 41 KB. The same image displayed as a thumbnail at 70 × 60 pixels still weighs 41 KB, although it shouldn't exceed 3 KB!
 
-The best solution is to generate images at the target size. This can be done manually using image editors or automatically using CMS routines that generate images at the right size for the template.
+Example of responsive syntax:
+
+HTML:
+
+```html
+<img id="monimage" src="image_3ko.png" width="70" height="60"
+ srcset="image_3ko.png 640w, image_41ko.png 1920w">
+```
+
+CSS : 
+
+```javascript
+#monimage { width: 70px; height: 60px }
+@media(min - width: 640px) {
+      #monimage { width: 350px; height: 300px }
+}
+```
