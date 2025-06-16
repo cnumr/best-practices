@@ -1,8 +1,8 @@
 ---
 refID: '013'
-title: Favoriser les pages statiques
+title: Prefer static pages
 createdAt: 2025-06-09T13:01:39.185Z
-updatedAt: 2025-06-09T13:01:39.185Z
+updatedAt: 2025-06-16T10:11:32.657Z
 language: en
 published: true
 refType: RWEB
@@ -12,6 +12,7 @@ versions:
 people: '-'
 responsible: []
 lifecycle: 2-concept
+rgesn: 3.1 and 6.1
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -26,16 +27,14 @@ validations:
 
 ## Description
 
-Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. 
+If a page is updated very infrequently, static pages built outside the CMS are preferable. This saves CPU cycles and bandwidth.
 
-Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
-
-L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données), éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
+Using a dynamic content management system requires loading the various software layers needed to serve the content requested by the surfer: the HTTP server, the application server, the content storage system (database), any associated caching systems, etc. A static file, on the other hand, is directly loaded into the CMS. A static file, on the other hand, is directly read and sent back to the user by the HTTP server or cache server, without calling on the application server or database.
 
 ## Exemple
 
-En fonction du service numérique à concevoir, il est envisageable :
+Depending on the digital service to be designed, you might consider:
 
-* pour une landing page ou simple site vitrine de créer un site statique en HTML, CSS et JS.
-* pour un blog avec peu d'activité, ou de petite taille, de créer un site statique généré via un JAMstack (Jekyll, Hugo, Gasby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contenful, Flextype, etc.).
-* pour un site ou une application web plus complexe de rendre les pages à faible taux de modifications (FAQ, About, mentions légales, etc.) statiques en utilisant des frameworks (Next, Nuxt, Svelte, etc.).
+* for a landing page or simple showcase site, creating a static site in HTML, CSS and JS;
+* for a blog with little activity or of small size, creating a static site generated via a jamstack (Jekyll, Hugo, Gatsby, Eleventy, etc. ) administered, if necessary, via a headless CMS or a headless flat-file CMS (Strapi, Contentful, Flextype, Cecil.app, etc.);
+* for a more complex site or web application, make low-modification pages (FAQ, About, Legal Notice, etc.) static using suitable frameworks (Next.js, Nuxt.js, Svelte, etc.).
