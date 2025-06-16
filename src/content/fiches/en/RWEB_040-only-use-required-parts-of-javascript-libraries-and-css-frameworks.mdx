@@ -2,7 +2,7 @@
 refID: '040'
 title: Only use required parts of Javascript libraries and CSS frameworks
 createdAt: 2025-06-09T12:55:20.433Z
-updatedAt: 2025-06-09T12:55:20.433Z
+updatedAt: 2025-06-16T09:55:21.115Z
 language: en
 published: true
 refType: RWEB
@@ -12,6 +12,7 @@ versions:
 people: '-'
 responsible: []
 lifecycle: 2-concept
+rgesn: '6.5'
 environmental_impact: 4
 priority_implementation: 5
 moe: 4
@@ -27,14 +28,10 @@ validations:
 
 ## Description
 
-JavaScript libraries such as jQuery and ready-to-use CSS frameworks (Bootstrap, skeleton, gumby, foundation, etc.) are excellent tools used to create websites very quickly, as they almost meet all the most common requirements.
+JavaScript libraries such as jQuery and off-the-shelf CSS frameworks (Bootstrap, Skeleton, Gumby, Foundation...) can be used to create sites quickly and easily. But not all of them are based on a modular architecture, forcing the web user to download the entire library only to use a small percentage of the functionalities.
 
-The downside is that only a small part of those libraries is generally used; and some of these frameworks and libraries do not rely on a modular architecture, making users download entire libraries only to use a small percentage of their features.
-
-Avoid using these libraries when possible (see [https://youmightnotneedjquery.com)](https://youmightnotneedjquery.com\)) or only keep their most used parts (see https\://getbootstrap.com/customize).
-
-Bundlers like Webpack allow the automatic removal of unused code. This is called tree shaking.
+It's preferable to do without these libraries, or to retain only those portions that are actually used. Using a bundler (e.g. Webpack) makes tree shaking easy, i.e. eliminating dead and therefore unused code. You can also estimate the weight of a library by visiting [https://bundlephobia.com](https://bundlephobia.com) , which will give you an idea of the total weight of a “package.json” file.
 
 ## Exemple
 
-Some frameworks (here Bootstrap) allow you to create custom libraries that only contain the parts actually used by the site, thus reducing libraries size and resources used during execution.
+Some frameworks, such as Tailwind CSS, offer lightweight libraries containing only the portions actually used. This reduces the weight of files downloaded by the browser and the resources consumed at runtime. For example, jQuery offers a “slim” version that does not include certain functionalities such as CSS animations and AJAX data exchange support. This saves 17 Kb for version 3.6.
