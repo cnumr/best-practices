@@ -2,7 +2,7 @@
 refID: '073'
 title: Avoid opening database connections when not necessary
 createdAt: 2025-06-09T13:11:58.246Z
-updatedAt: 2025-06-09T13:11:58.246Z
+updatedAt: 2025-06-16T10:27:15.090Z
 language: en
 published: true
 refType: RWEB
@@ -12,9 +12,10 @@ versions:
 people: '-'
 responsible: []
 lifecycle: 2-concept
+rgesn: 3.2 and 7.1
 environmental_impact: 3
 priority_implementation: 3
-moe: 3
+moe: 2
 tiers: datacenter
 saved_resources:
   - cpu
@@ -29,21 +30,13 @@ validations:
 
 ## Description
 
-Opening a connection is a resource-intensive process for both client and server, regardless of the database system:
+Whatever the database system, opening a connection is a resource-intensive process for both client and server:
 
-* Memory and disk I/O allocation for buffers,
-* Network round trips for the connection protocol,
-* Induced CPU cost.
+* memory allocation and disk access for buffers;
+* network round-trips for the connection protocol;
+* induced CPU cost.
 
-Example: for Oracle, several round trips are necessary (validation of credentials, driver information, optimal packet size negotiation, etc.).
-
-Opening and closing connection requires allocating and deallocating these resources, as well as many network exchanges, each time.
-
-The usual best practice is to set up a connection pool.
-
-It optimizes connection management as well as performance. However, its configuration is not necessarily a trivial operation (supervision is required to find the right settings).
-
-Try to avoid application database accesses as much as possible.
+The best practice usually used is to set up a connection pool. This optimizes connection management and performance. However, configuring it is not necessarily a trivial operation (it requires monitoring its behavior to find the right settings). That said, whenever the application can avoid database access, do it!
 
 ## Exemple
 
