@@ -56,7 +56,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-0 lg:items-end">
-        <span>{t(`Site web fièrement réalisé par`)}</span>
+        <span className="text-sm">{t(`Site web fièrement réalisé par`)}</span>
         <Link
           className="inline-flex items-center gap-[.15rem] no-underline"
           target="_blank"
