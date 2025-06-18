@@ -18,12 +18,13 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
         <ul className="flex flex-col items-center gap-4 lg:flex-row">
           <li>
             <span>
-              © {getRefConfig().refInformations.creationYear}-
+              {process.env.TINA_PUBLIC_REF_NAME || 'RWEB'}©
+              {getRefConfig().refInformations.creationYear}-
               <span id="copyright">{new Date().getFullYear().toString()}</span>
             </span>
+          </li>
+          <li className="hidden lg:inline">
             <span>&middot;</span>
-            <span>{t('Association Green IT')}</span>
-            <span className="hidden lg:inline">&middot;</span>
           </li>
           <li>
             <Link
@@ -44,7 +45,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
           </li>
         </ul>
         <Licence lang={lang} />
-        <div className="text-center text-sm">
+        <div className="text-center text-sm lg:text-left">
           {`${t('last-update')}: ${new Date().toLocaleDateString(lang)} @ ${new Date().toLocaleTimeString(
             lang,
             {
@@ -54,7 +55,8 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
           )}`}
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center gap-0 lg:items-end">
+        <span>{t(`Site web fièrement réalisé par`)}</span>
         <Link
           className="inline-flex items-center gap-[.15rem] no-underline"
           target="_blank"
