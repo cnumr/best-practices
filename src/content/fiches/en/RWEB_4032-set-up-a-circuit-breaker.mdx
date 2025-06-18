@@ -11,7 +11,7 @@ versions:
     idRef: <A CHANGER>
 people: '-'
 responsible: []
-lifecycle: 3-conception-design
+lifecycle: 3-developement
 rgesn: '2.1'
 environmental_impact: 2
 priority_implementation: 2
@@ -28,7 +28,7 @@ validations:
 
 A circuit breaker is a design pattern for optimizing calls to a service (typically an API) when it's not responding.
 
-Depending on a number of criteria (timeout, number of errors), the calling service detects the problem and, instead of forwarding requests to the remote service indiscriminately, can replace the call with a predefined behavior such as using a default value or calling another service. In all cases, the circuit breaker allows  to define a policy of retries : every x seconds, for example.
+Depending on a number of criteria (timeout, number of errors), the calling service detects the problem and, instead of forwarding requests to the remote service indiscriminately, can replace the call with a predefined behavior such as using a default value or calling another service. In all cases, the circuit breaker allows to define a policy of retries : every x seconds, for example.
 
 This practice saves resources (network calls) both for the caller (there's no point in calling a service that fails) and for the callee, who can then recover more easily.
 
