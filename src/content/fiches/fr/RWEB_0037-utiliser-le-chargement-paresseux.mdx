@@ -1,0 +1,50 @@
+---
+refID: '0037'
+title: Utiliser le chargement paresseux
+createdAt: 2024-02-14T11:24:11.818Z
+updatedAt: 2025-05-30T13:01:27.244Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0037'
+  - version: GreenIT
+    idRef: '1010'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '0037'
+  - version: 4.0.0
+    idRef: '0037'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: ' d’images, d’iframes et de vidéos situés en dessous de la ligne de flottaison et appelés sans lazy loading'
+    maxValue: '0'
+---
+
+## Description
+
+Lorsqu’un internaute ne consulte pas la totalité d’une page web, toutes les ressources (images, vidéos, iframes…) situées en dehors de la zone visible, en dessous de la ligne de flottaison, sont chargées inutilement. Évitez cela via la technique du chargement paresseux (lazy loading) qui consiste à ne charger un élément que lorsque son emplacement devient visible à l’écran.
+
+En HTML5, il est possible d’ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur ne télécharge que les ressources qui apparaissent à l’écran.
+
+## Exemple
+
+L’image et l’iframe seront chargées automatiquement par le navigateur : si l’image doit apparaître à l’écran, elle sera téléchargée et affichée, mais ne le sera pas si elle est située en dessous de la ligne de flottaison.
+
+```html
+<img src="image.jpg" alt="..." loading="lazy">
+<iframe src="video-player.html" title="..." loading="lazy"></iframe>
+```

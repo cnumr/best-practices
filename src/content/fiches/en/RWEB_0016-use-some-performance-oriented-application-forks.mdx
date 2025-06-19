@@ -1,0 +1,35 @@
+---
+refID: '0016'
+title: Use some performance-oriented application forks
+createdAt: 2025-05-27T16:25:25.886Z
+updatedAt: 2025-05-27T16:25:25.886Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 3-developement
+rgesn: '1.8, 3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: of performance-oriented forks available but not deployed
+    maxValue: '1'
+---
+
+## Description
+
+Open source software are often forked (derived) for performance reasons. Improved performance generally means a reduction in resource consumption. Consequently, if an optimised fork exists and offers a sufficient functional and technical scope for a project, it makes sense to use it.
+
+## Example
+
+Instead of Redis, prefer the optimised KeyDB version.

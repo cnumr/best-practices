@@ -1,0 +1,46 @@
+---
+refID: 0008
+title: Respect the principle of instant history navigation
+createdAt: 2025-05-25T14:05:45.054Z
+updatedAt: 2025-05-29T07:19:42.057Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: 0008
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: of pages ineligible for _bfcache_
+    maxValue: 0 %
+---
+
+## Description
+
+Browsers feature an instant history navigation function (Previous Page and Next Page buttons), frequently called *bfcache* or *back-forward cache*.
+
+Contrary to the HTTP cache, which stores responses to previously executed requests, avoiding the need to generate them several times and speeding up page loading, the *bfcache* cache stores an entire page. However, as the use of this feature requires additional resources on the user side, it is important to keep the functionality of pages stored with the *bfcache* as light as possible.
+
+In addition, the use of *bfcache* implies some precautions, in particular when the timeout is exceeded (*setTimeout*).
+
+## Example
+
+Avoid :
+
+* Actions when leaving the page (`unload` or `beforeunload` events, prefer `pagehide` if really necessary).
+* Links that open new tabs/windows without `rel="noopener" `or `rel="noreferrer"`.
+* Leave connections (IndexedDB, `fetch()` or XMLHttpRequest, Web Sockets, etc.) open when the user leaves the page.
+
+## Source
+
+* [https://web.dev/bfcache/](https://web.dev/bfcache/) (content licensed under CC BY 4.0 - Back/forward cache by Philip Walton)

@@ -1,0 +1,40 @@
+---
+refID: 0082
+title: Optimise cookie size
+createdAt: 2025-05-27T15:30:22.201Z
+updatedAt: 2025-05-27T15:31:09.015Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '62'
+people: TBD
+responsible: []
+lifecycle: 3-developement
+rgesn: '6.1'
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: of non-useful or non-optimised cookies
+    maxValue: '0'
+---
+
+## Description
+
+A cookie is a small text file stored on the Internet user's device. It enables a state to be maintained between the browser and the remote web server by means of shared data. It is included in every HTTP request, which means that an excessive size can make requests heavier, slow down page loading and consume more bandwidth. Its size should therefore be optimised as far as possible by limiting the data exchanged to essential information, using compact values, and deleting it as soon as its presence is no longer required.
+
+## Example
+
+A cookie can be deleted when it is no longer useful by specifying a zero or negative expiry date, as follows:
+
+```
+Set-Cookie: user_mavariable=; Max-Age=0
+```
+
+See RFC 6265 of the IETF (Internet Engineering Task Force) for more information on cookies:
+[https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265)

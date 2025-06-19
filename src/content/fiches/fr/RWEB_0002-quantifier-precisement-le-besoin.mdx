@@ -1,0 +1,50 @@
+---
+refID: '0002'
+title: Quantifier précisément le besoin
+createdAt: 2024-02-14T09:11:57.497Z
+updatedAt: 2025-06-05T13:47:05.887Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '110'
+  - version: 2.0.0
+    idRef: '0002'
+  - version: 3.0.0
+    idRef: '0002'
+  - version: 4.0.0
+    idRef: '0002'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 1-specification
+rgesn: '1.2'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: de fonctionnalités avec des dimensions supérieures au besoin
+    maxValue: '0'
+---
+
+## Description
+
+Les « dimensions » de chaque fonctionnalité doivent être définies précisément et dans leur ensemble. Il peut s’agir d’un taux de compression pour les images, du temps de réponse maximal pour une requête HTTP, du nombre d’éléments dans une liste, etc...
+
+Plus les dimensions et exigences associées à chaque fonctionnalité collent au métier, moins on gaspille de ressources. Ce niveau d’exigence peut varier selon le besoin et le métier auxquels on répond. Mais la logique générale doit être inversée par rapport aux habitudes actuelles. Si une quantification n’est pas précisée, c’est le niveau de qualité ou de quantité minimal qui est proposé.
+
+## Exemple
+
+En l’absence de précision, le nombre d’items d’une liste est limité à 5 éléments ou au nombre maximum affichable sur le plus petit écran cible de l’application.
+
+Gain potentiel : en jouant sur le nombre d’items affichés sur la page de résultats de son moteur de recherche Bing, Microsoft Research a démontré qu’il était possible de réduire jusqu’à 80 % l’infrastructure physique (nombre de serveurs) sous-jacente.
+
+En utilisant par défaut une résolution de vidéo acceptable (480p) plutôt que maximale, on réduit la bande passante utilisée pour la plupart des utilisateurs (qui ne changeront pas la valeur par défaut), tout en laissant la possibilité aux autres d’augmenter la résolution au besoin.

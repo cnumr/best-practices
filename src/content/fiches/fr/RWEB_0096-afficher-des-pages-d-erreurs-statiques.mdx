@@ -1,0 +1,47 @@
+---
+refID: 0096
+title: Afficher des pages d'erreurs statiques
+createdAt: 2024-02-14T12:58:16.510Z
+updatedAt: 2025-06-16T10:13:43.162Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+  - version: GreenIT
+    idRef: '46'
+  - version: 2.0.0
+    idRef: 0098
+  - version: 3.0.0
+    idRef: 0096
+  - version: 4.0.0
+    idRef: 0096
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 3.1 et 6.1
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+  - storage
+validations:
+  - rule: de pages d'erreur dynamiques
+    maxValue: '0'
+---
+
+## Description
+
+Les pages d’erreur (40x, 50x) doivent être les plus légères possibles et même idéalement inexistantes. En effet, lorsque le navigateur demande une ressource qui n’existe pas (image, feuille de styles CSS, fichier JavaScript, etc.) ou que le serveur renvoie une erreur, la page d’erreur renvoyée peut être plus lourde que la ressource ou la page demandée.
+
+De plus, certains CMS exécutent leur routine de recherche de contenu (dans la base de données) pour tenter de trouver une ressource demandée. Par conséquent, du code serveur est exécuté, le serveur de base de données est sollicité et la génération dynamique de la page HTML est exécutée. Tout ce processus aboutit à un gaspillage de cycles CPU, de mémoire vive et de bande passante.
+
+## Exemple
+
+Éviter les pages 404 dynamiques, qui sont personnalisées en fonction du contenu de l’URL. Préférer une page 404 statique.

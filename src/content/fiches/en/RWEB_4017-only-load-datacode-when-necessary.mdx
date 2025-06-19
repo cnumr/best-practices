@@ -1,0 +1,40 @@
+---
+refID: '4017'
+title: Only load data/code when necessary
+createdAt: 2025-05-18T20:11:24.551Z
+updatedAt: 2025-05-18T20:11:24.552Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: loaded resources that are not immediately used
+    maxValue: '0'
+---
+
+### Description
+
+It may be tempting to pre-load resources that could be used when specific actions are performed by users (including navigating to another page) for perceived performance reasons.
+
+These preloads will only result in wasted resources when these actions aren't taken.
+
+### Example
+
+Avoid \<link rel="prerender">, as well as all rel="preload", rel="prefetch", rel="preconnect", rel="modulepreload"and rel="dns-prefetch"on resources that will not be used on the current page, or used only under certain conditions.
+
+Avoid loading and caching (or storing locally) application data, such as values lists and other references if there is no guarantee that they will be used.
+
+By extension, divide JS code, and even CSS, into portions (chunks) related to specific user actions, and only load those portions when necessary. This is especially true for SPAs (Single Page Applications), where each screen (or possibly set of screens) can only be loaded on demand.

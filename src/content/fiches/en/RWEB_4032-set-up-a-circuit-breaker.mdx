@@ -1,0 +1,42 @@
+---
+refID: '4032'
+title: Set up a "Circuit breaker"
+createdAt: 2025-05-16T11:46:56.934Z
+updatedAt: 2025-05-16T12:22:36.726Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-developement
+rgesn: '2.1'
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+validations:
+  - rule: of circuit breakers not set up on external services
+    maxValue: '0'
+---
+
+## Description
+
+A circuit breaker is a design pattern for optimizing calls to a service (typically an API) when it's not responding.
+
+Depending on a number of criteria (timeout, number of errors), the calling service detects the problem and, instead of forwarding requests to the remote service indiscriminately, can replace the call with a predefined behavior such as using a default value or calling another service. In all cases, the circuit breaker allows to define a policy of retries : every x seconds, for example.
+
+This practice saves resources (network calls) both for the caller (there's no point in calling a service that fails) and for the callee, who can then recover more easily.
+
+## Example
+
+On e-commerce websites, some product information can be provided by dedicated services.
+
+When the main service that provide product page "learns" that the detailed information service encounters errors,
+it stops calling it, avoiding unnecessarily failed calls, leaving room for the external service to go back up and saving resources on both sides.
+
+The e-commerce service remains operational even though experience is degraded.

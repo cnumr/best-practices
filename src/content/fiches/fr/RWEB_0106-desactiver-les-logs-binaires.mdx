@@ -1,0 +1,48 @@
+---
+refID: '0106'
+title: Désactiver les logs binaires
+createdAt: 2024-02-14T13:18:55.807Z
+updatedAt: 2025-05-16T11:31:19.696Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '83'
+  - version: 2.0.0
+    idRef: 0093
+  - version: 3.0.0
+    idRef: '0106'
+  - version: 4.0.0
+    idRef: '0106'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 6-support
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: >-
+      d'options --skip-log-bin et --disable-log-bin non activées dans le cas où
+      les logs binaires ne sont pas utiles
+    maxValue: '0'
+---
+
+## Description
+
+Les logs binaires, par exemple ceux d’une base de données comme MySQL ou MariaDB, peuvent devenir très volumineux, consommant des cycles CPU tout en générant des entrées-sorties (I/O) sur le disque dur, puisque chaque requête de modification/suppression est inscrite dans le fichier de log. Aussi, si vous avez la possibilité de désactiver ces logs, vous économiserez beaucoup de ressources.
+Avant de désactiver, il faut s'assurer qu'une réplication de la base de données n'est pas nécessaire et que la perte des données depuis le dernier backup est acceptable.
+
+## Exemple
+
+Pour MySQL, ajouter la configuration suivante :
+
+```
+skip-log-bin
+```

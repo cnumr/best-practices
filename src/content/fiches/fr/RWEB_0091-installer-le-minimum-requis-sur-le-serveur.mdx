@@ -1,0 +1,43 @@
+---
+refID: 0091
+title: Installer le minimum requis sur le serveur
+createdAt: 2024-02-14T12:47:05.572Z
+updatedAt: 2024-07-05T04:49:42.075Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '74'
+  - version: 2.0.0
+    idRef: 0089
+  - version: 3.0.0
+    idRef: 0091
+  - version: 4.0.0
+    idRef: 0091
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: >-
+      de services non nécessaires au fonctionnement du site exécutés sur le
+      système d'exploitation
+    maxValue: '0'
+---
+
+## Description
+
+Désinstaller tous les services qui ne sont pas indispensables au bon fonctionnement du site. Cette mesure supprimera nécessairement des daemons (agents et services fonctionnant en permanence en mémoire), qui sont consommateurs de ressources, notamment en cycles CPU et en mémoire vive.
+
+## Exemple
+
+Privilégier une installation « manuelle » du serveur (LAMP + CMS, par exemple) plutôt qu’une distribution avec une surcouche de type cPanel ou Plesk. Et si une surcouche d’administration est nécessaire, préférer des solutions légères comme Webmin.

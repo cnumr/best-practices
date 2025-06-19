@@ -1,0 +1,33 @@
+---
+refID: 0093
+title: Store resources and data in the cloud
+createdAt: 2025-05-28T18:39:56.024Z
+updatedAt: 2025-05-28T18:39:56.024Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '3.2'
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: application resources/data not stored on a cloud solution
+    maxValue: '0'
+---
+
+## Description
+
+To reduce the amount of storage space required for the resources of a website or online service, it can be interesting to use cloud computing solutions. In this way, you don't monopolize resources unnecessarily, while still benefiting from an elastic solution. As you don't want to multiply domains (see best practice no. 82), the simplest solution is to group all static resources on a single online storage service. Make sure you select the most responsible cloud provider possible.
+
+## Example
+
+Most of the time, it's more efficient to use Amazon's S3 storage service to store data than to add new hard disks to existing servers.

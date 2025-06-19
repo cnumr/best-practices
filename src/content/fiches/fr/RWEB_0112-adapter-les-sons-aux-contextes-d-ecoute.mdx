@@ -1,0 +1,57 @@
+---
+refID: '0112'
+title: Adapter les sons aux contextes d'écoute
+createdAt: 2024-02-14T13:32:09.871Z
+updatedAt: 2025-06-06T15:45:57.301Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '95'
+  - version: 2.0.0
+    idRef: '0113'
+  - version: 3.0.0
+    idRef: '0112'
+  - version: 4.0.0
+    idRef: '0112'
+  - version: 5.0.0
+    idRef: '0112'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: '5.6'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de codecs audio propriétaires (non libres) et de pistes audio dont le
+      ratio poids en méga octet/durée en minute est supérieur à 1
+    maxValue: '0'
+---
+
+## Description
+
+Les fichiers audio peuvent être volumineux et consommateurs de bande passante. Aussi est-il indispensable d’en optimiser le poids. Privilégier les 3 codecs couvrant les 3 grandes plates-formes (Windows, Mac OS X et Linux) :
+
+* MP3 (MPEG-1 Audio Layer 3) ;
+* AAC (Advanced Audio Coding) ;
+* Opus.
+
+Ces codecs appliquent des algorithmes de compression très évolués permettant des gains de poids significatifs.
+
+Le format de fichier multimédia ouvert WebM, supporté par la plupart des navigateurs, permet d'intégrer l’audio dans une page web avec la balise HTML5  \<audio>. WebM peut contenir différents codecs audio, notamment Opus et Vorbis.
+
+## Exemple
+
+Des encodeurs comme LAME permettent de convertir au format MP3 des fichiers audio non compressés, mais également de jouer sur le taux d’échantillonnage, afin de gagner encore du poids, au détriment de la qualité audio. À tester sur chaque fichier sonore.
+
+Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conversion en MP3 donne :
+
+* un fichier son-128.mp3 de 10 823 octets (128 kb/s), 6 fois plus léger ;
+* un fichier son-64.mp3 de 6 508 octets (64 kb/s), 10 fois plus léger.

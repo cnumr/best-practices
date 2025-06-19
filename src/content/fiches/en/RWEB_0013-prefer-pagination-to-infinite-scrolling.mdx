@@ -1,0 +1,33 @@
+---
+refID: '0013'
+title: Prefer pagination to infinite scrolling
+createdAt: 2025-05-29T10:57:19.828Z
+updatedAt: 2025-05-29T10:57:19.828Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0013'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+rgesn: '4.2'
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: network
+saved_resources:
+  - storage
+  - network
+validations:
+  - rule: of lists without classic pagination is
+    maxValue: 10%
+---
+
+# Description
+
+When displaying a list of products or posts on a site, it's easy to give the visitor the chance to see everything by scrolling down the page, loading the content bit by bit. The next x posts/products will then be requested from the server with each scroll, which could cause problems in terms of performance, natural SEO and web accessibility.
+
+To avoid this, set up a classic pagination with a high-performance filter system. It's easier for visitors to find the content they're looking for, and easier for indexing robots to find it. In addition to reducing environmental impact, this best practice also facilitates compliance with the Référentiel général d'amélioration de l'accessibilité (RGAA) introduced by Law 2005-102 of February 11, 2005 on equal rights and opportunities, participation and citizenship for disabled people  (cf. [https://www.numerique.gouv.fr/publications/rgaa-accessibilite/obligations/](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/obligations/)").

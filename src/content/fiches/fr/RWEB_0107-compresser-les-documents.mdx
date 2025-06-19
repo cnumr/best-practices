@@ -1,0 +1,48 @@
+---
+refID: '0107'
+title: Compresser les documents
+createdAt: 2024-02-14T13:21:14.875Z
+updatedAt: 2025-05-19T20:31:21.887Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '97'
+  - version: 2.0.0
+    idRef: 0108
+  - version: 3.0.0
+    idRef: '0107'
+  - version: 4.0.0
+    idRef: '0107'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: '5.2, 5.4, 5.6'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: de documents non compressés
+    maxValue: '0'
+---
+
+## Description
+
+Compresser tous les documents pouvant être téléchargés depuis une page web, sauf si la compression n’apporte pas un gain évident (par exemple, cas d’un PDF parfaitement optimisé pour le Web).
+
+## Exemple
+
+Un document au format DOC pesant 7,8 Mo ne pèse plus que 5,5 Mo une fois compressé, soit un gain de 30 % (compression WinZip par défaut).
+Types de fichiers bureautiques pouvant être compressés facilement :
+
+* documents issus d’un traitement de texte (.doc, .docx, .rtf, .txt, etc.) ;
+* documents issus d’un tableur (.xls, .xslx, etc.) ;
+* présentations (.ppt, .pptx, etc.) ;
+* documents PDF ;
+* contenus multimédias (images, audio et vidéo).

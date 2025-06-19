@@ -1,0 +1,53 @@
+---
+refID: '0014'
+title: Prefer assisted input to autocomplete
+createdAt: 2025-05-29T11:13:54.261Z
+updatedAt: 2025-05-29T11:13:54.261Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0014'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 2-concept
+rgesn: '4.9'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: of autocomplete fields is
+    maxValue: 20%
+---
+
+## Description
+
+Autocomplete suggests matching results as the user types. For each character typed, a request is sent to the server to retrieve the appropriate results. This can be costly in resources.
+
+Assisted input is preferable, as it provides the user with a set of locally-managed information and hints, reducing the number of exchanges with the server.
+
+Reduce the impact of autocompletion with simple optimizations: delay of a few tenths of a second between the addition of a character and the query, launch the query only after a certain number of characters have been typed, limit the number of results displayed, etc.
+
+To reduce the amount of back-and-forth, if the data proposed to the user is small in quantity, you can include it directly in your HTML code and use the native \<datalist> element.
+
+## Example
+
+The \<datalist> element, a single back and forth with the server.
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
+</datalist>
+```

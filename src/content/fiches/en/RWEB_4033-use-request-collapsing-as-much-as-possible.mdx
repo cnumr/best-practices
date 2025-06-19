@@ -1,0 +1,42 @@
+---
+refID: '4033'
+title: Use "Request collapsing" as much as possible
+createdAt: 2025-06-09T13:13:42.818Z
+updatedAt: 2025-06-16T10:29:38.741Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: 3.1 and 8.10
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: >-
+      requests sent to retrieve data belonging to the same business domain
+      through a third-party service
+    maxValue: '2'
+---
+
+## Description
+
+"Request collapsing" is an application pattern that limits the number of remote calls by grouping multiple requests into a single one. It is appropriate to retrieve data belonging to the same business domain through a third-party service.
+
+It helps reduce:
+
+* network load,
+* high network latency impact,
+* per-request licensing costs
+
+## Exemple
+
+Retrieving customers' orders from their client accounts requires information about the ordered product, the billing address and the payment status. It is better for the order management service to allow retrieving these three sets of data in a single call instead of sending three separate requests to the order management service.

@@ -1,0 +1,63 @@
+---
+refID: 0029
+title: Favoriser les polices standards
+createdAt: 2024-02-14T10:54:04.976Z
+updatedAt: 2025-05-18T16:44:23.215Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '19'
+  - version: 2.0.0
+    idRef: '0017'
+  - version: 3.0.0
+    idRef: 0029
+  - version: 4.0.0
+    idRef: 0029
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+rgesn: '4.8'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - storage
+  - network
+  - requests
+validations:
+  - rule: de polices téléchargées
+    maxValue: '2'
+---
+
+## Description
+
+Préférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger.
+On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standards sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par exemple.
+
+Préférez les polices standards, déjà présentes sur l’ordinateur de l’utilisateur. Elles sont listées sur le site [https://systemfontstack.com/](https://systemfontstack.com/). Si vous ajoutez une police particulière pour votre service numérique, même si c’est une API font (Google Fonts, Adobe Fonts, etc.), vous devez :
+
+* héberger vous-même la font ;
+* utiliser un faux-gras via la propriété CSS  `-webkit-text-stroke` ;
+* préférer une variable font si vous avez besoin de plus d’une font ;
+* optimiser la font en l’allégeant des caractères non nécessaires via le site [https://www.glyphrstudio.com/](https://www.glyphrstudio.com/).
+
+Ici la font Montserrat n’est téléchargée que si l’utilisateur n’a pas défini de préférence. A contrario, la font Arial sera utilisée sans téléchargement de Montserrat.
+
+```css
+@media (prefers-reduced-data: no-preference) {
+    @font-face {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        src:  url('fonts/montserrat-latin-regular.woff2');
+    }
+}
+
+body {
+  font-family: Montserrat, Arial;
+}
+```

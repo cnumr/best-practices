@@ -1,5 +1,8 @@
 # Contribuer au référentiel de bonnes pratiques
 
+> [!IMPORTANT]
+> Cette documentation est ancienne et ne correspond plus à la réalité. Il faut utiliser maintenant la plateforme de contribution [URL à définir].
+
 Tout personne qui le souhaite peut se proposer pour contribuer au référentiel.
 
 Les règles du présent document devront être respectées.

@@ -1,0 +1,39 @@
+---
+refID: '4031'
+title: Avoir une stratégie de fin de vie des contenus
+createdAt: 2024-02-14T14:24:56.421Z
+updatedAt: 2025-05-16T11:33:28.477Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4031'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 7-retirement
+rgesn: '5.8'
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: de contenus stockés et non accessibles sur les pages web
+    maxValue: '0'
+---
+
+## Description
+
+Les contenus multimédias (images, sons, vidéos) peuvent permettre d'améliorer l'expérience utilisateur.
+Sur des sites web où l'information est vivante (ex: e-commerce, journalistique, événementiels), ces contenus sont très utilisés.
+Avec un poids plus important que le texte, ils sont à utiliser avec raison et à optimiser lors du transfert aux terminaux utilisateurs.
+Lorsqu'ils sont dépubliés, c'est à dire inaccessibles à l'utilisateur, continuer à les stocker n'a dans la plupart du temps pas d'intérêt d'un point
+de vue métier. C'est pourquoi, il convient de mettre en place une politique de suppression de ces contenus afin d'éviter la sollicitation inutile
+de stockage et permettre la libération d'espace pour de nouveaux contenus.
+
+### Exemple
+
+Sur un CMS par exemple, supprimer les contenus dépubliés des supports de stockage actifs et ne les conserver si besoin que sur des supports de stockage froids : bande LTO (bande magnétique), disques durs capacitifs, etc.

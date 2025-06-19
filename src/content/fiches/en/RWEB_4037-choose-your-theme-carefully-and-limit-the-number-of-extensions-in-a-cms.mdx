@@ -1,0 +1,43 @@
+---
+refID: '4037'
+title: Choose your theme carefully and limit the number of extensions in a CMS
+createdAt: 2025-06-09T08:20:49.873Z
+updatedAt: 2025-06-09T08:22:27.602Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '69'
+people: N/A
+responsible: []
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - storage
+  - network
+validations:
+  - rule: of extensions
+    maxValue: '10'
+---
+
+## Description
+
+When using a CMS, the choice of the theme is crucial.
+
+When you install it, extensions are added, sometimes even a page builder. The functionalities provided often exceed the needs. Each extension adds its own data in the database, its own CSS and JavaScript files, not to mention the number of files stored on the server to make it all work.
+
+Depending on the quality of development, the additional assets can be cumbersome and/or redundant. This leads to :
+
+* an increase in the number of requests,
+* an increase in page weight,
+* increased processing time for internal requests,
+* more complex administration of your content.
+
+## Example
+
+An all-in-one theme or a theme that includes a page builder can add features to add carousels to your articles, customise your action buttons, or create a portfolio, when you haven't planned to integrate these elements at all. Also beware of incompatibilities between certain extensions. Prefer a simple theme containing the essentials, then add a thoughtful feature when it's needed.

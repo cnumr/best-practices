@@ -1,0 +1,52 @@
+---
+refID: '0027'
+title: Provide a CSS print
+createdAt: 2025-05-18T19:07:55.273Z
+updatedAt: 2025-05-18T19:07:55.273Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: missing CSS prints
+    maxValue: '1'
+---
+
+### Description
+
+In addition to the service provided to the Internet user, print CSS stylesheets reduce the number of printed pages, indirectly reducing the website's ecological footprint. The design should be as lean as possible, with ink-saving font typefaces (Century Gothic, for example). Also remember to hide headers, footers, menus, sidebars, images that are not actual content. Etc.
+
+### Example
+
+This print CSS "cleans" the displayed pages in order to provide a refined print design:
+
+```javascript
+bodysuit {
+  background - color:#ﬀf; color: black; font - family : Serif; font - size: 15pt;
+}
+#page {
+  margin: 0;
+  border: none;
+}
+#banner, #menuright, #footer {
+  display: none;
+}
+h1#top {
+  margin: 0;
+  padding: 0;
+  text - indent: 0; line height: 25pt; font - size: 25pt;
+} (...)
+```

@@ -1,0 +1,54 @@
+---
+refID: '0073'
+title: Limiter le nombres de connexions aux bases de données
+createdAt: 2024-02-14T12:10:46.925Z
+updatedAt: 2025-06-16T10:25:19.126Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+  - version: GreenIT
+    idRef: '56'
+  - version: 2.0.0
+    idRef: '0072'
+  - version: 3.0.0
+    idRef: '0073'
+  - version: 4.0.0
+    idRef: '0073'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 3.2 et 7.1
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      de connexions à une base de données pour requêter, stocker une donnée non
+      nécessaire à l'utilisation du service
+    maxValue: '0'
+---
+
+## Description
+
+Quel que soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
+
+* allocation de mémoire et accès disque pour les buff ers ;
+* allers-retours réseaux pour le protocole de connexion ;
+* coût CPU induit.
+
+La bonne pratique qui est usuellement utilisée est la mise en place d’un pool de connexions. Ce dernier permet d’optimiser la gestion des connexions ainsi que les performances. Cependant, sa configuration n’est pas forcément une opération triviale (cela nécessite de superviser le comportement de celui-ci pour trouver le bon paramétrage). Ceci dit, chaque fois que l’application peut éviter un accès à la base de données, faites-le !
+
+## Exemple
+
+HikariCP est un pool de connexions JDBC solide et performant. Il est intégré dans SpringBoot.
+
+Dans les cas où il n'y a pas de pool de connexions, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.

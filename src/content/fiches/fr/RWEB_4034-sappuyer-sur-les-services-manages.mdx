@@ -1,0 +1,44 @@
+---
+refID: '4034'
+title: S’appuyer sur les services managés
+createdAt: 2024-02-14T14:29:46.180Z
+updatedAt: 2025-06-05T14:05:33.340Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4034'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: d'applications "backend" ne s'appuyant pas sur un service managé
+    maxValue: '1'
+---
+
+## Description
+
+Les plateformes cloud sont spécialisées dans la mise en place d'infrastructures résilientes, scallables, efficientes, sécurisées et mutualisées.
+Elles proposent des services managés reposant sur ces infrastructures comme :
+
+* le stockage de contenus multimédias
+* la persistance de données via des bases de données de référence (ex: Postgresql)
+* la gestion de services de stockage et de flux de messages (ex: Kafka)
+* la gestion de conteneurs (ex: Kubernetes)
+
+À moins d'avoir une forte expertise dans ses équipes, il est préférable d'utiliser ces services managés.
+À service équivalent, il sera généralement très difficile d’obtenir une meilleure efficience que ceux-ci.
+
+## Exemple
+
+Les hébergeurs proposent désormais du « serverless computing », un paradigme dans lequel les ressources allouées au service sont gérées dynamiquement. Cela permet aux équipes en charge du service de moins se soucier de l’infrastructure et à l’hébergeur d’optimiser l’affectation de ressources.

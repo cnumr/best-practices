@@ -1,0 +1,49 @@
+---
+refID: '0010'
+title: Limiter le recours aux carrousels
+createdAt: 2024-02-14T14:22:47.984Z
+updatedAt: 2025-05-29T07:35:07.681Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4030'
+  - version: 5.0.0
+    idRef: '0010'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: de carrousels présents sur la page
+    maxValue: '1'
+---
+
+## Description
+
+Le carrousel, souvent utilisé pour mettre en avant de multiples contenus, montre rapidement ses limites en matière de conversion, avec un impact négatif sur l’expérience utilisateur. Sa présence implique plusieurs points critiques :
+
+* un alourdissement du poids des pages par la présence de CSS et JavaScript dédié, mais également par le contenu présent sur chaque écran du carrousel ;
+* une complexité en termes d’assurance qualité web et d’accessibilité numérique ;
+* une utilisation plus importante des ressources processeurs dans le cas d’un carrousel automatique et en boucle ;\
+
+
+La bonne pratique est donc de limiter au maximum l’utilisation des carrousels en privilégiant du contenu statique mis à jour régulièrement. Dans le cas contraire :
+
+* mettre en place un contrôle simple et complet du composant (arrêt, écran suivant/précédent) ;
+* préférer un chargement progressif.
+
+## Exemple
+
+Les animations de certains attributs CSS impliquent un `repaint/ reflow` des navigateurs qui demandent des ressources machines. Pour limiter cela, préférez l’animation des carrousels par la propriété CSS `transform`.

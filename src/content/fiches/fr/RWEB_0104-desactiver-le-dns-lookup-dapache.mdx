@@ -1,0 +1,47 @@
+---
+refID: '0104'
+title: Désactiver le DNS Lookup du serveur HTTP
+createdAt: 2024-02-14T13:14:17.678Z
+updatedAt: 2025-05-28T20:47:37.709Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '84'
+  - version: 2.0.0
+    idRef: '0100'
+  - version: 3.0.0
+    idRef: '0104'
+  - version: 4.0.0
+    idRef: '0104'
+  - version: 5.0.0
+    idRef: '0104'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: de DNS lookup actif
+    maxValue: '0'
+---
+
+## Description
+
+À chaque fois qu’un serveur web reçoit une requête HTTP, il enregistre cette information dans un log, en traduisant l’adresse IP en nom de domaine. Cette conversion (DNS Lookup) constitue l’un des goulots d’étranglement de certains serveurs HTTP (Apache notamment). Désactiver le DNS Lookup permet d’éviter de consommer des ressources serveurs inutilement et accélère le temps de chargement des pages, améliorant l’expérience utilisateur.
+
+## Exemple
+
+Sur un serveur Apache, éditer le fichier de configuration (`/etc/apache/httpd.conf` ou `/etc/apache2/apache2.conf`), et ajouter cette directive :
+
+```apache
+ HostnameLookups Off
+```

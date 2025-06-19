@@ -1,0 +1,35 @@
+---
+refID: '4007'
+title: Save bandwidth with Service Workers
+createdAt: 2025-05-26T16:22:55.255Z
+updatedAt: 2025-05-26T16:24:02.250Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '60'
+people: TBD
+responsible: []
+lifecycle: 3-developement
+rgesn: '3.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: of pages loaded in their full version
+    maxValue: '1'
+---
+
+## Description
+
+Most pages share a common structure framing the ‘useful content’. It is therefore fairly easy to reconstitute them by concatenating three resources: a header and a footer common to all pages, and the content specific to each page. This concatenation can be done directly in the browser using a Service Worker. With the header and footer cached in HTTP, only ‘useful content’ is downloaded. However, the server must be able to provide both the complete page for initial access and for older browsers that do not support Service Workers, and the fragment of the page for concatenation by the Service Worker.
+
+Here we concede a little processor time at the terminal level, an additional initial request for the Service Worker, then two additional requests for the header and footer, in return for major savings in the quantities of data exchanged subsequently, as well as a significant gain in page loading time.
+
+## Example
+
+In early 2020, Philip Walton wrote on his blog that he was able to measure a reduction in network exchanges of almost 48% and an improvement in performance (First Contentful Paint) of more than 52% using this technique.

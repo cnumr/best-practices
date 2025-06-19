@@ -1,0 +1,59 @@
+---
+refID: '0045'
+title: Modifier plusieurs propriétés CSS en une seule fois
+createdAt: 2024-02-14T11:44:01.406Z
+updatedAt: 2025-05-18T17:08:49.910Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '34'
+  - version: 2.0.0
+    idRef: '0032'
+  - version: 3.0.0
+    idRef: '0045'
+  - version: 4.0.0
+    idRef: '0045'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de déclarations CSS pouvant être regroupées en une seule (margin, padding,
+      ...), et n'utilisant pas la version courte
+    maxValue: '0'
+---
+
+## Description
+
+Pour limiter le nombre de repaint/reﬂow, il est conseillé de ne pas modifier des propriétés une à une.
+Préférer l’ajout/la suppression de classes CSS, ce qui permet de modifier en une seule fois plusieurs propriétés, tout en ne générant qu’un repaint/reﬂow (voir [la bonne pratique n° 45](/chapters/bonne_pratique_045_fr.md)).
+
+## Exemple
+
+Préférer l’écriture :
+
+```html
+<style>
+    .in-error { color: red;
+        font-weight: bold;
+    }
+</style>
+<script>
+    $el.bind('error', function () {
+        $el.addClass('in-error');
+    });
+    $el.bind('running'), function () {
+        $el.removeClass('in-error');
+    };
+</script>
+```

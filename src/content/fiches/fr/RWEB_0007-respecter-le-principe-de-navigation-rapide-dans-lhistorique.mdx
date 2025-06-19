@@ -1,0 +1,54 @@
+---
+refID: 0008
+title: Respecter le principe de navigation rapide dans l’historique
+createdAt: 2024-02-14T09:36:53.391Z
+updatedAt: 2025-05-29T07:16:06.172Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '28'
+  - version: 2.0.0
+    idRef: '0005'
+  - version: 3.0.0
+    idRef: '0007'
+  - version: 4.0.0
+    idRef: '0007'
+  - version: 5.0.0
+    idRef: 0008
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: de pages inéligibles au _bfcache_
+    maxValue: 0%
+---
+
+## Description
+
+Les navigateurs possèdent une fonction de navigation rapide dans l’historique (boutons Page précédente et Page suivante), souvent nommée *back-forward cache* ou encore\* bfcache\*.
+
+Contrairement au cache HTTP qui permet de garder en mémoire les réponses aux requêtes précédemment effectuées, et donc d’éviter de les générer plusieurs fois inutilement et d’accélérer le chargement de pages, le cache *bfcache* permet de garder en mémoire une page entière. Néanmoins, comme l’utilisation de cette fonctionnalité mobilise des ressources supplémentaires côté utilisateur, il faut veiller à alléger au maximum les fonctionnalités des pages stockées avec le *bfcache*.
+
+Par ailleurs, l’utilisation de *bfcache* implique certaines précautions, notamment lorsque le délai d’attente est dépassé (*setTimeout*).
+
+## Exemple
+
+Éviter :
+
+* Les actions lorsqu'on quitte la page (événements `unload` ou `beforeunload`, leur préférer `pagehide` si c'est vraiment nécessaire)
+* Les liens qui ouvrent de nouveaux onglets/fenêtres sans `rel="noopener"` ou `rel="noreferrer"`
+* De laisser des connexions (IndexedDB, `fetch()` ou XMLHttpRequest, Web Sockets, etc.) ouvertes quand l'utilisateur quitte la page
+
+## Source
+
+* [https://web.dev/bfcache/](https://web.dev/bfcache/) (contenu sous licence CC BY 4.0 - *Back/forward cache* par Philip Walton)

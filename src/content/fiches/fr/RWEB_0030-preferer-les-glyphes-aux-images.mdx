@@ -1,0 +1,47 @@
+---
+refID: '0030'
+title: Préférer les glyphes aux images
+createdAt: 2024-02-14T10:56:26.183Z
+updatedAt: 2025-05-30T12:58:31.365Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0030'
+  - version: GreenIT
+    idRef: '20'
+  - version: 2.0.0
+    idRef: 0018
+  - version: 3.0.0
+    idRef: '0030'
+  - version: 4.0.0
+    idRef: '0030'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - storage
+  - network
+  - requests
+validations:
+  - rule: >-
+      d'images qui auraient pu être remplacées par un glyphe (symbole de police
+      de caractère)
+    maxValue: '0'
+---
+
+## Description
+
+Les glyphes sont des caractères typographiques spécifiques, inclus dans les polices de caractères du système d’exploitation. Ils peuvent être utilisés en remplacement d’images monochromes telles que des symboles ou pictogrammes ou même d’illustrations.
+
+Ils permettent :
+
+*  de réduire la bande passante en économisant sur le poids ;
+*  de réduire le nombre de requêtes ;
+* de réduire la complexité du DOM.

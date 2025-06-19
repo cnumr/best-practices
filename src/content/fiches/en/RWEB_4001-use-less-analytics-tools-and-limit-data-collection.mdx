@@ -1,0 +1,33 @@
+---
+refID: '4001'
+title: Use less analytics tools and limit data collection
+createdAt: 2025-05-25T20:10:42.516Z
+updatedAt: 2025-05-25T20:10:42.516Z
+language: en
+published: false
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: JRP
+responsible: []
+lifecycle: 5-utilization
+rgesn: '1.6'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - storage
+  - network
+validations:
+  - rule: analytics tools
+    maxValue: '1'
+---
+
+### Description
+
+Tools used to track users' actions often use a lot of client-side resources: large number of requests, additional JavaScript files, multiple additional domains, cookies, etc.
+
+If tracking information is not essential, do not use it. Otherwise, try to use a single tool and choose a solution that requires fewer resources.

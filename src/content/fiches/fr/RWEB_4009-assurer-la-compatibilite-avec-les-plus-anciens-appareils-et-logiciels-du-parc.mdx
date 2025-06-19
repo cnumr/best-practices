@@ -1,0 +1,40 @@
+---
+refID: '4009'
+title: Assurer la compatibilité avec les anciens appareils et logiciels
+createdAt: 2024-02-14T13:54:30.268Z
+updatedAt: 2025-05-30T15:44:43.418Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '4009'
+  - version: 4.0.0
+    idRef: '4009'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 3-developement
+rgesn: '2.2'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - e-waste
+validations:
+  - rule: >-
+      de pages non testées sur les configurations les plus contraignantes du
+      contexte projet
+    maxValue: '0'
+---
+
+## Description
+
+Pour ne pas déclencher l’obsolescence du terminal de l’utilisateur, les pages doivent être utilisables (pas de mises en page cassées, de boutons inactifs, d’erreurs affichées ou autre problème empêchant la lecture ou la navigation, etc.) sur les configurations les plus contraintes : versions de navigateurs anciennes ou qui posent des problèmes de compatibilité, vieux OS, et terminaux utilisateurs les moins puissants.
+
+Analyser les statistiques de fréquentation pour déterminer quelles configurations techniques supporter. Attention cependant au biais du survivant : les utilisateurs qui ne peuvent pas du tout utiliser le site n’apparaîtront pas dans ces statistiques. Le mieux est d’étudier sur le terrain les équipements des utilisateurs.
+
+## Exemple
+
+Pour différentes raisons (machines trop anciennes pour être mises à jour, accès administrateur indisponible ou méconnaissance de l’existence d’alternatives), des utilisateurs sont bloqués sur Internet Explorer. Un site développé pour des navigateurs modernes, utilisant par exemple massivement `flexbox `ou `css grid` ne s’affichera pas correctement sur ce navigateur.

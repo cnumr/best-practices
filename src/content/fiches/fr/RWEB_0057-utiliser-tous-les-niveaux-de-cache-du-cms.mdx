@@ -1,0 +1,47 @@
+---
+refID: '0057'
+title: Utiliser tous les niveaux de cache du serveur d’application / CMS
+createdAt: 2024-02-14T11:53:13.286Z
+updatedAt: 2025-05-28T20:06:05.398Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0057'
+  - version: GreenIT
+    idRef: '60'
+  - version: 2.0.0
+    idRef: '0057'
+  - version: 3.0.0
+    idRef: '0057'
+  - version: 4.0.0
+    idRef: '0057'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '7.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: de caches non activés
+    maxValue: '0'
+---
+
+## Description
+
+Si le serveur d’application ou le CMS propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire). On délivre ainsi de bonnes performances à l’utilisateur tout en consommant moins de ressources côté serveur.
+
+## Exemple
+
+WordPress dispose de différentes extensions de gestion de cache : LiteSpeed Cache, WP Fastest Cache, W3 Total Cache, WP Super Cache.
+
+Les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d’outil fournit aussi d’autres optimisations orientées WebPerf qui vont dans le sens de l’écoconception web.
+
+Il est intéressant également d’activer la mise en cache des requêtes SQL afin de soulager la base de données.

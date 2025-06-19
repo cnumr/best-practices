@@ -1,0 +1,42 @@
+---
+refID: 0079
+title: Combiner les fichiers CSS et JavaScript
+createdAt: 2024-02-14T12:24:11.679Z
+updatedAt: 2025-05-28T20:34:13.261Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: G
+    idRef: '89'
+  - version: 2.0.0
+    idRef: 0081
+  - version: 3.0.0
+    idRef: 0079
+  - version: 4.0.0
+    idRef: 0079
+  - version: 5.0.0
+    idRef: 0079
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - requests
+validations:
+  - rule: de fichiers CSS et JS non combinés
+    maxValue: '2'
+---
+
+## Description
+
+La combinaison de feuilles de styles CSS et/ou de bibliothèques JavaScript permet de réduire le nombre de requêtes HTTP.
+
+## Exemples
+
+Dans WordPress, les extensions gratuites `Autoptimize `ou `Assets CleanUp` permettent de combiner simplement les fichiers CSS. Avec Webpack, le plug-in `webpack-merge-and-include-globally` facilite la fusion des fichiers CSS et JavaScript.

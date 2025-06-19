@@ -1,0 +1,52 @@
+---
+refID: '0070'
+title: Supprimer tous les warnings et toutes les notices
+createdAt: 2024-02-14T12:04:44.103Z
+updatedAt: 2025-05-23T16:48:19.045Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0070'
+  - version: GreenIT
+    idRef: '51'
+  - version: 2.0.0
+    idRef: '0065'
+  - version: 3.0.0
+    idRef: '0070'
+  - version: 4.0.0
+    idRef: '0070'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - storage
+validations:
+  - rule: de warnings et notices en production
+    maxValue: '0'
+---
+
+## Description
+
+Les warnings et notices ralentissent les serveurs d’applications tels que PHP, car ces derniers doivent retracer l’origine des erreurs et inscrire dans les différents journaux système les messages expliquant les problèmes rencontrés.
+
+### Exemple
+
+Éviter :
+
+```html
+<form method="post">
+  <input type="text" name="name" 
+         value="<?= htmlentities($_POST['name']) ?>">
+</form>
+
+```
+
+`$_POST['`name`']`va générer une notices car ils n'est pas nécessairement défini. Il faut donc valider l'existence des variables avant de les afficher.

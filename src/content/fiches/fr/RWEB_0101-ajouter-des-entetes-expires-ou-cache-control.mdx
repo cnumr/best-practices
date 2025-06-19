@@ -1,0 +1,58 @@
+---
+refID: '0101'
+title: Ajouter des entêtes Expires ou Cache-Control
+createdAt: 2024-02-14T13:07:27.263Z
+updatedAt: 2025-05-28T20:33:43.922Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '78'
+  - version: 2.0.0
+    idRef: '0105'
+  - version: 3.0.0
+    idRef: '0101'
+  - version: 4.0.0
+    idRef: '0101'
+  - version: 5.0.0
+    idRef: '0101'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - ram
+  - requests
+validations:
+  - rule: d'entêtes manquantes Expires ou Cache-Control
+    maxValue: '0'
+---
+
+## Description
+
+Les en-têtes Expires et Cache-Control définissent la durée pendant laquelle un navigateur doit conserver une ressource dans son cache. Il faut donc en prévoir et les configurer correctement pour les feuilles de styles CSS, les scripts JavaScript et les images. Idéalement, la durée de vie de ces éléments doit être la plus longue possible, afin que le navigateur ne les redemande pas au serveur.
+
+On économise ainsi des requêtes HTTP, de la bande passante et des cycles CPU côté serveur.
+
+## Exemple
+
+Voici un exemple de configuration des en-têtes Expires et Cache-Control pour le serveur web Nginx :
+
+```apache
+location ~* ^.+\.(xml|ogg|ogv|svg|svgz|eot|otf|woff|
+mp4|ttf|css|rss|atom|js|jpg|jpeg|gif|png|ico|zip|tgz|
+gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf|
+webp|avif|webm)$ {
+    access_log off;
+    log_not_found off;
+    expires max;
+}
+```

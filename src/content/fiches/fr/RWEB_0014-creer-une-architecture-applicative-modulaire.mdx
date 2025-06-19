@@ -1,0 +1,48 @@
+---
+refID: '0014'
+title: Créer une architecture applicative modulaire
+createdAt: 2024-02-14T10:07:51.675Z
+updatedAt: 2025-05-16T09:56:33.082Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '114'
+  - version: 2.0.0
+    idRef: '0052'
+  - version: 3.0.0
+    idRef: '0014'
+  - version: 4.0.0
+    idRef: '0014'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: '3.2'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: d'architectures non modulaires
+    maxValue: '0'
+---
+
+## Description
+
+L’architecture modulaire apporte souvent une plus grande capacité à monter en charge,
+des coûts réduits de maintenance corrective et évolutive, ainsi qu’un code plus efficient.
+Si la couverture fonctionnelle du site web ou du service en ligne peut être amenée à évoluer, mieux vaut implémenter les fonctionnalités de base dans un noyau et les compléter au besoin par des modules. Ces derniers peuvent rassembler des fonctions appartenant à un même domaine métier. Cela permet de les développer indépendamment des autres domaines métiers ainsi que les partager à d'autres applications.
+
+Cette approche est valable à tous les niveaux de granularité, pour un développement sur mesure comme pour le choix d’un serveur HTTP ou d’un CMS.
+
+## Exemple
+
+Les logiciels open source les plus efficients, comme NGINX, Apache, MySQL ou PHP, reposent sur cette architecture modulaire.
+
+Côté backend, le découpage en microservices permet d'apporter un niveau de modularité pour des services HTTP. Il faudra néanmoins porter une attention particulière sur la granularité du découpage pour éviter un effet contre-productif (ajout d'une complexité d'interfaçage entre les services, augmentation globale des ressources informatiques).

@@ -1,0 +1,44 @@
+---
+refID: 0084
+title: Favor HSTS Preload List over 301 redirects
+createdAt: 2025-05-28T19:39:34.283Z
+updatedAt: 2025-05-28T19:39:34.283Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: HSTS non-activations
+    maxValue: '0'
+---
+
+## Description
+
+The HTTP Strict Transport Security (HSTS) protocol makes it possible to indicate to any browser, via a cached HTTP response header, that the domain must be contacted exclusively using HTTPS. This allows subsequent requests to the same domain to be addressed exclusively using the HTTPS protocol, thus avoiding a multitude of 301 redirects (to force calls to HTTPS).
+
+Nevertheless, the first call requires a (potentially insecure) HTTP response with an STS header. To overcome this problem and force browsers to contact the entire domain in HTTPS, it is possible, in addition to activating HSTS, to register in a static list updated on all recent browsers (https\://hstspreload.org). Registration is fast and covers the entire domain (including sub-domains).
+
+Before registering, please ensure that you can support HTTPS on all sub-domains in the long term, as a request to be removed from the list may take several months.
+
+## Example
+
+Example configuration for Nginx
+
+```
+add_header Strict - Transport - Security
+'max-age=63072000; include
+SubDomains; preload; always'
+```

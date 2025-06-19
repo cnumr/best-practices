@@ -1,0 +1,58 @@
+---
+refID: '0024'
+title: Write efficient CSS selectors
+createdAt: 2025-05-18T19:57:28.165Z
+updatedAt: 2025-05-18T19:57:28.165Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      CSS selectors that do not use IDs, classes, or attributes when it's
+      possible
+    maxValue: '0'
+---
+
+### Description
+
+Use selectors based on IDs or classes as they will be filtered more quickly, thus saving CPU cycles on the associated device.
+
+### Example
+
+Do not write :
+
+```css
+treeitem[mailfolder = "true"] > treerow > treecell { … }
+```
+
+instead write :
+
+```css
+.treecell-mailfolder { … }
+```
+
+Do not write :
+
+```css
+treehead > treerow > treecell { … }
+```
+
+instead write :
+
+```css
+.treecell-header { … }
+```

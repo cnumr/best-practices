@@ -1,0 +1,62 @@
+---
+refID: '0014'
+title: Préférer la saisie assistée à l’autocomplétion
+createdAt: 2024-02-14T09:20:22.612Z
+updatedAt: 2025-05-29T11:04:17.381Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '204'
+  - version: 2.0.0
+    idRef: '0004'
+  - version: 3.0.0
+    idRef: '0004'
+  - version: 4.0.0
+    idRef: '0004'
+  - version: 5.0.0
+    idRef: '0014'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 2-concept
+rgesn: '4.9'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: de champs en autocomplétion est
+    maxValue: 20%
+---
+
+## Description
+
+L’autocomplétion suggère à l’utilisateur des résultats correspondant à sa recherche pendant sa saisie. À chaque caractère saisi, une requête est envoyée au serveur pour récupérer les résultats appropriés. Ce qui peut être coûteux.
+
+Préférez la saisie assistée qui consiste à guider l’utilisateur par un ensemble d’informations et d’indices gérés localement, ce qui réduit les échanges avec le serveur.
+
+Minimisez l’impact de l’autocomplétion avec des optimisations simples : délai de quelques dixièmes de secondes entre l’ajout d’un caractère et la requête,\
+ne lancer la requête qu’après avoir saisi un certain nombre de caractères, limitation du nombre de résultats affichés, etc.
+
+Pour minimiser les allers-retours, si la donnée proposée à l’utilisateur est en assez petite quantité, vous pouvez l’inclure directement dans votre code HTML et utiliser l’élément natif `<datalist>`.
+
+## Exemple
+
+L’élément `<datalist>` un aller-retour avec le serveur.
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
+</datalist>
+```

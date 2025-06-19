@@ -1,0 +1,58 @@
+---
+refID: '4004'
+title: Use CSS Containment
+createdAt: 2025-05-18T19:49:15.255Z
+updatedAt: 2025-05-18T19:49:15.255Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: non-isolated elements
+    maxValue: 20%
+---
+
+### Description
+
+CSS containment indicates that a node and its contents are, as much as possible, independent of the rest of the page tree.
+
+Depending on the independence type (strict, content, size, layout, styleand/or paint) set by the containproperty, browsers:
+
+* recalculate renderings (positions, formatting, layouts, and/or display) for the independent node only, saving the need to recompute for the entire page
+* do not render independent nodes content outside the visible area
+
+### Examples
+
+* A complex DOM architecture whose NODE content is modified at some point
+
+```css
+article {
+  contain: content;
+}
+```
+
+* External widget
+
+```css
+.widget - name {
+  contain: layout;
+}
+```
+
+To go further :
+
+* [https://developer.mozilla.org/fr/docs/Web/CSS/CSS\_Containment](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Containment)
+* [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)

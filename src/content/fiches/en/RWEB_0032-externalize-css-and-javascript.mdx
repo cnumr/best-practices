@@ -1,0 +1,49 @@
+---
+refID: '0032'
+title: Externalize CSS and Javascript
+createdAt: 2025-05-18T20:00:39.503Z
+updatedAt: 2025-05-18T20:00:39.503Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: URL with a significant amount of inline CSS/Javascript code
+    maxValue: '2'
+---
+
+### Description
+
+Ensure that CSS and JavaScript code is not inlined in the HTML code of the page, with the possible exception of configuration variables for JavaScript objects.
+
+If CSS or JavaScript code is included in HTML file's body in several pages (or even in the entire site), then this code must be downloaded for each page requested by the users, increasing downloaded data volume. However, if CSS and JavaScript codes is written in external files, browsers can store them in their local cache and not download them again.
+
+### Examples
+
+In HTML code, do not write:
+
+```html
+<style type="text/css" media="screen">
+  p {color: #333; margin: 2px 0 }
+/* All CSS declarations of the site */
+</style>
+```
+
+but rather :
+
+```html
+<link href="css/styles.css" rel="stylesheet">
+```

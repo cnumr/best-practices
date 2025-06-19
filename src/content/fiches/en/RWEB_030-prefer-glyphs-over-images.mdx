@@ -1,0 +1,40 @@
+---
+refID: '030'
+title: Prefer glyphs over images
+createdAt: 2025-06-09T13:33:21.675Z
+updatedAt: 2025-06-09T13:33:21.675Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - storage
+  - network
+  - requests
+validations:
+  - rule: images that should have been replaced by glyphs (font symbol)
+    maxValue: '0'
+---
+
+## Description
+
+Glyphs are specific typographic characters included in fonts, like those included in operating systems. They can be used to replace monochrome images such as symbols or pictograms (chevron, triangle, point, square, astrological signs, etc.) up to illustrations allowing to:
+
+* Reduce bandwidth by reducing the website total size
+* Reduce the number of requests
+* Reduce the DOM complexity, especially with many SVG pictograms
+
+## Exemple
+
+A 91% size saving was achieved by including pictograms and vector illustrations in an icon font via https\://fontforge.org/en-US/.
+
+To go further: https\://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements.

@@ -1,0 +1,53 @@
+---
+refID: '4012'
+title: Define a data expiration and deletion policy
+createdAt: 2025-05-28T18:34:01.566Z
+updatedAt: 2025-05-28T18:34:01.566Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '7.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+  - requests
+validations:
+  - rule: unused stored data
+    maxValue: '0'
+---
+
+## Description
+
+Define a retention period for each stored item of data, to enable it to be deleted or archived via a process (batch, database time-to-live, etc.). Many RDBMSs enable automatic and definitive deletion via a TTL (Time To Live) on a table or piece of data.
+
+What's more, since the implementation of the RGPD, it has been mandatory to delete a user's personal data after a certain period of time, which goes in the direction of eco-design.
+
+## Example
+
+Here, on an Oracle Java database, the data expires after 5 days:
+
+```java
+String aKey = «myFirstKey»;
+String aData = «myFirstData»;
+try {
+    DatabaseEntry theKey = new DatabaseEntry(aKey.getBytes("UTF-8"));
+    DatabaseEntry theData = new DatabaseEntry(aData.getBytes("UTF-8"));
+    WriteOptions wo = new WriteOptions();
+    wo.setTTL(5);
+    myDatabase.put(null,
+                    theKey,
+                    theData,
+                    Put.NO_OVERWRITE,
+                    wo);
+} catch (Exception e) {
+}
+```

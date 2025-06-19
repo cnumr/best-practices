@@ -1,0 +1,37 @@
+---
+refID: '4009'
+title: Ensure compatibility with older devices and software configurations
+createdAt: 2025-06-09T13:54:32.087Z
+updatedAt: 2025-06-15T12:42:51.566Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 3-developement
+rgesn: '2.2'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - e-waste
+validations:
+  - rule: >-
+      untested pages on the most restrictive configurations in the project
+      context
+    maxValue: '0'
+---
+
+## Description
+
+To avoid pushing the user's device to obsolescence, pages must be usable (no broken layouts, inactive buttons, errors displayed, or other problems preventing reading or navigation) on the most demanding configurations: older browser versions or those with compatibility issues, older operating systems, and less powerful user devices.
+
+You can analyse the traffic statistics to determine which technical configurations to support. However, beware of survivor bias: users who cannot use the site at all will not appear in these statistics. It's best to study users' equipment in the field.
+
+## Exemple
+
+For various reasons (devices that are too old to be updated, lack of administrator access to the system, or ignorance of the existing alternatives), users are stuck on Internet Explorer. Sites developed for modern browsers, using, for example, a lot of `flexbox` or `css grid `properties, will not correctly display content on this browser.

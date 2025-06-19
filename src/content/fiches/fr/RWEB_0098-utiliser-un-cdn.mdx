@@ -1,0 +1,45 @@
+---
+refID: 0098
+title: Utiliser un CDN
+createdAt: 2024-02-14T13:02:36.420Z
+updatedAt: 2025-05-28T20:26:42.459Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '75'
+  - version: 2.0.0
+    idRef: '0102'
+  - version: 3.0.0
+    idRef: 0098
+  - version: 4.0.0
+    idRef: 0098
+  - version: 5.0.0
+    idRef: 0098
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: de ressources servies (fichiers) sans utiliser un CDN
+    maxValue: 25%
+---
+
+## Description
+
+Certains fichiers comme les bibliothèques JavaScript, les feuilles de styles CSS, les images, etc., sollicitent beaucoup le réseau, car ils sont généralement nombreux et de petite taille. C’est pourquoi il est conseillé d’utiliser les CDN (Content Delivery Network), qui rapprochent physiquement ces fichiers des internautes, générant de ce fait un gain important de bande passante et un meilleur temps de réponse.
+
+Il convient néanmoins de prendre conscience qu’il peut exister des cas où l’utilisation d’un CDN n’est pas réellement pertinente. C’est le cas des services dont la cible est très localisée (par exemple, régional). Il est alors plus opportun de privilégier un hébergement local et de qualité. Par ailleurs, un site web avec très peu de trafic pourrait rendre contre-productive l’utilisation d’un CDN basé sur le modèle « pull » car les extractions de fichiers du serveur d’origine pourraient être trop fréquentes.
+
+## Exemple
+
+Utiliser les CDN fournis par Google qui hébergent les différentes bibliothèques JavaScript couramment utilisées.

@@ -1,0 +1,43 @@
+---
+refID: '4032'
+title: Mettre en place un "Circuit breaker"
+createdAt: 2024-02-14T14:26:40.125Z
+updatedAt: 2025-05-16T09:46:51.897Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4032'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: '2.1'
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+validations:
+  - rule: de "circuit breakers" non mis en place sur des services externes
+    maxValue: '0'
+---
+
+## Description
+
+Un circuit breaker est un patron de conception (design pattern) permettant d’optimiser les appels à un service (typiquement une API) dans le cas où celui-ci est en erreur.
+
+En fonction d’un certain nombre de critères d’erreur (timeout, nombre d’erreurs), le service appelant détecte le problème et, au lieu d’appeler le service de façon indifférenciée, il peut remplacer l’appel par un comportement prédéfini comme l’utilisation d’une valeur par défaut ou l’appel d’un autre service. Dans tous les cas, le circuit breaker permet de définir une politique pour retenter d’appeler le service défaillant : réessayer toutes les x secondes, par exemple.
+
+Cette pratique permet d’économiser des ressources (appels réseaux) aussi bien au niveau de l’appelant (inutile d’appeler un service qui échoue), que de l’appelé, qui peut alors plus facilement se rétablir.
+
+## Exemple
+
+Sur un site e-commerce les informations détaillées d'une fiche produit peuvent être fournies par un service dédié.
+Le service principal qui récupère une page produit a "appris" que le service des informations détaillées était en erreur, il évite alors
+de l'appeler inutilement tant qu'il ne répond pas favorablement et ne renvoie donc pas cette information à l'utilisateur final.
+Le service reste opérationnel bien que l'expérience soit dégradée.

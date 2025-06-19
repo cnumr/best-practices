@@ -1,0 +1,55 @@
+---
+refID: '0045'
+title: Update several CSS properties at once
+createdAt: 2025-05-18T19:52:56.901Z
+updatedAt: 2025-05-18T19:52:56.901Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: TBD
+responsible:
+  - {}
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      CSS declarations that can be grouped into a single one (margin, padding,
+      ...)
+    maxValue: '0'
+---
+
+### Description
+
+Avoid modifying CSS properties one by one to limit the number of repaints/reﬂows.
+
+Rather add/remove CSS classes, which allow several properties to be modified at once while only generating a single repaint/reﬂow (see [rule no. 45](https://github.com/cnumr/best-practices/blob/main/chapters/best_practices_045_fr.md)).
+
+### Example
+
+Write:
+
+```html
+<style>
+  .in-error {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+<script>
+  $el.bind('error', function () {
+         $el.addClass('in-error');
+     });
+     $el.bind('running', function () {
+         $el.removeClass('in-error');
+     };
+</script>
+```

@@ -1,0 +1,57 @@
+---
+refID: '0010'
+title: Stocker les données statiques localement
+createdAt: 2024-02-14T09:56:27.377Z
+updatedAt: 2025-05-27T15:49:27.899Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '205'
+  - version: 2.0.0
+    idRef: '0010'
+  - version: 3.0.0
+    idRef: '0010'
+  - version: 4.0.0
+    idRef: '0010'
+  - version: 5.0.0
+    idRef: '64'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: de données statiques non stockées localement
+    maxValue: 25%
+---
+
+## Description
+
+Avec le support généralisé sur tous les navigateurs des bases de données clé-valeur (IndexDB, Web Storage), et de la mise en cache via l’API Cache Storage, il est désormais possible de stocker localement des données statiques structurées.
+
+L’intérêt du stockage local est double. D’une part, on évite les allers-retours inutiles avec le serveur, ce qui économise des ressources et du temps de réponse. D’autre part, comme les données sont locales, il est plus facile et plus rapide de les manipuler directement sur l’appareil de l’utilisateur.
+
+Le gain potentiel est la réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique), des serveurs HTTP jusqu’aux serveurs de base de données.
+
+## Exemple
+
+Par exemple pour stocker le nom de l’utilisateur vous pouvez utiliserl’instruction suivante :
+
+```javascript
+localStorage.setItem('name', 'nom_utilisateur');
+```
+
+Il suffit ensuite d’utiliser la ligne suivante pour le retrouver ultérieurement :
+
+```javascript
+var myName = localStorage.getItem('name');
+```

@@ -1,0 +1,44 @@
+---
+refID: '4037'
+title: Bien choisir son thème et limiter les extensions dans un CMS
+createdAt: 2024-02-14T14:34:26.597Z
+updatedAt: 2025-05-27T16:30:20.983Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4037'
+  - version: 5.0.0
+    idRef: '69'
+people: TBDs
+responsible:
+  - responsible: src/content/personas/fr/codeuseur-developpeuser.mdx
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: d'extensions
+    maxValue: '10'
+---
+
+## Description
+
+Lors de l’utilisation d’un CMS, le choix du thème est primordial.\
+Lorsque vous installez ce dernier, des extensions sont ajoutées, parfois même un constructeur de pages. Les fonctionnalités fournies dépassent souvent vos besoins. Chaque extension ajoute ses données en base, ses fichiers CSS et JavaScript, sans compter le nombre de fichiers stockés sur votre serveur pour faire fonctionner le tout.\
+Selon la qualité de développement, les assets supplémentaires peuvent être lourds et/ou redondants. Cela provoque une :
+
+* augmentation du nombre de requêtes,
+* augmentation du poids des pages,
+* augmentation du temps de traitement des requêtes internes,
+* complexification de l'administration de vos contenus.
+
+## Exemple
+
+Un thème tout-en-un ou qui intègre un constructeur de pages peut ajouter des fonctionnalités pour mettre des carrousels dans vos articles, personnaliser vos boutons d’action, ou créer un portfolio, alors que vous n’avez pas du tout prévu d’intégrer ces éléments. Attention également aux incompatibilités entre certaines extensions. Préférez un thème simple contenant l’essentiel, puis ajoutez une fonctionnalité réfléchie lorsqu’elle est nécessaire.

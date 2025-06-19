@@ -1,0 +1,46 @@
+---
+refID: '4006'
+title: Privilégier HTTP/2 à HTTP/1
+createdAt: 2024-02-14T13:47:16.996Z
+updatedAt: 2025-05-28T20:20:31.794Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '4006'
+  - version: 4.0.0
+    idRef: '4006'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: de requêtes utilisant HTTP/1
+    maxValue: '0'
+---
+
+## Description
+
+Le protocole HTTP/1 charge les ressources de manière séquentielle. Si une ressource est volumineuse ou ne peut pas être chargée, elle bloque le chargement des ressources suivantes, ce qui donne une impression de lenteur à l’utilisateur.
+
+HTTP/2 est plus performant que HTTP/1, c’est un protocole binaire (il fait transiter moins d’octets) de plus il permet :
+
+– le \*\*multiplexage \*\*: envoyer toutes les ressources en une fois tout en utilisant qu’une connexion TCP ;
+
+– la \*\*priorisation \*\*: le développeur peut indiquer l’ordre de chargement des ressources (ce qui permet d’afficher en priorité les ressources indispensables à l’affichage de la page) ;
+
+– la **compression HPACK** : une méthode de compression avancée qui élimine les informations redondantes dans les paquets d’en-tête HTTP ;
+
+– le **push serveur** : autorisant un serveur à « pousser » le contenu vers un client avant que le client ne le demande (attention à ne pas abuser de cette fonctionnalité).
+
+## Exemple
+
+HTTP/2 permet de cibler une réduction de 50 % du temps de chargement des pages (PLT).

@@ -1,0 +1,46 @@
+---
+refID: '0015'
+title: Choisir les technologies les plus adaptées
+createdAt: 2024-02-14T10:11:03.635Z
+updatedAt: 2025-05-27T16:16:30.956Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '1'
+  - version: 2.0.0
+    idRef: '0011'
+  - version: 3.0.0
+    idRef: '0015'
+  - version: 4.0.0
+    idRef: '0015'
+  - version: 5.0.0
+    idRef: '67'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '1.9'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: de technologies inopportunes
+    maxValue: '1'
+---
+
+## Description
+
+Le choix des technologies étant primordial pour réduire la consommation de ressources, sélectionner l’outil le plus économe en fonction des besoins et contraintes métier.
+
+Dans le cas d’un site dont le contenu change peu, privilégier un site statique, qui pourra être mis en cache et ne sollicitera pas de serveur d’application ou de base de données. Pour un site plus dynamique, le sur-mesure permet plus de souplesse dans l’optimisation technique et d’embarquer le strict nécessaire pour répondre au besoin métier. Si une partie d’un site web repose sur un nombre très limité de pages et délivre un service spécifique (tunnel de commande, demande de devis), l’utilisation d’une SPA (Single Page Application) peut être recommandée. Cela permet de limiter les allers-retours avec le serveur et de rendre l’expérience utilisateur plus fluide.
+
+## Exemple
+
+Pour un site institutionnel contenant uniquement une présentation de l’entreprise et un formulaire de contact, on privilégiera des pages web statiques étant donné la faible fréquence de mise à jour.

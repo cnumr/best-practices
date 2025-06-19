@@ -1,0 +1,55 @@
+---
+refID: '0076'
+title: Éviter le transfert de grandes quantités de données depuis le SGBD
+createdAt: 2024-03-05T10:34:13.560Z
+updatedAt: 2025-06-16T10:09:25.905Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+  - version: GreenIT
+    idRef: '58'
+  - version: 2.0.0
+    idRef: '0075'
+  - version: 3.0.0
+    idRef: '0076'
+  - version: 4.0.0
+    idRef: '0076'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 3.1 et 8.10
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      de traitements avec une grande quantité de données exécutés en dehors du
+      serveur de base de données
+    maxValue: '1'
+---
+
+## Description
+
+Les systèmes de gestion de base de données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données. Dans le cas de traitements avec une logique plus ou moins complexe, vous devriez les réaliser au plus près de la donnée afin de :
+
+* limiter la bande passante en raison du transfert de données non traitées ;
+* profiter des optimisations de la base de données sur la manipulation des données ;
+* alléger le cycle CPU côté serveur backend voire frontend.
+
+## Exemple
+
+Dans le cas de requêtes complexes avec un nombre important de données et de l’utilisation d’un système de gestion de base de données relationnelles (SGBDR), il est conseillé d’utiliser des procédures stockées car :
+
+* une procédure stockée économise au serveur l’interprétation de la requête puisqu’elle est précompilée ;
+* une procédure stockée est moins gourmande en bande passante puisqu’il y a moins d’informations échangées entre le serveur et le client.
+
+Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge les procédures stockées.

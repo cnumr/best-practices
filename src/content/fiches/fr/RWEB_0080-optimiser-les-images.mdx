@@ -1,0 +1,58 @@
+---
+refID: 0080
+title: Optimiser les images
+createdAt: 2024-02-14T12:27:26.808Z
+updatedAt: 2025-05-30T09:55:55.494Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: 0080
+  - version: GreenIT
+    idRef: '21'
+  - version: 2.0.0
+    idRef: '0076'
+  - version: 3.0.0
+    idRef: 0080
+  - version: 4.0.0
+    idRef: 0080
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: '5.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+  - storage
+validations:
+  - rule: d'images non optimisées
+    maxValue: '0'
+---
+
+## Description
+
+Réduire le poids des images consiste tout d’abord à choisir un format adapté. Réservez les images matricielles aux photos et aux éléments de l’interface qui ne peuvent pas être pris en charge par des icônes ou des styles CSS.
+
+Le choix du format dépend des caractéristiques de l’image. Le fait de pouvoir dégrader l’image définitivement (lossy) oriente plutôt vers les formats JPEG, JPEG XL, AVIF ou WEBP, tandis qu’un besoin de transparence et/ou l’impossibilité de dégrader l’image (lossless) orientent vers un format PNG ou WEBP lossless.
+
+En moyenne, une image .webp est 30 % plus légère qu’une image .jpg ou .png mais 20 % plus lourde qu’une image .avif.
+
+Certains modules côté serveur (comme modPageSpeed de Google, disponible pour Apache et Nginx) fournissent même l’image idéale en rapport au navigateur appelant le serveur.
+
+## Exemple
+
+L'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
+`.jpg`, celle par défaut. Le navigateur décidera quelle image télécharger : 
+
+```html
+<picture>
+    <source srcset="image.webp" type="image/webp">
+    <img src="image.jpg" alt="..." loading="lazy">
+</picture>
+```

@@ -1,0 +1,42 @@
+---
+refID: '4022'
+title: Limit HTTP API calls
+createdAt: 2025-06-09T13:06:54.138Z
+updatedAt: 2025-06-16T10:17:02.564Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: 6.2 and 7.1
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+validations:
+  - rule: endpoints that do not benefit from a relevant caching strategy
+    maxValue: '0'
+---
+
+## Description
+
+When an Internet user visits a web page, the site can retrieve content via HTTP APIs (webservices). In this case, each page display will generate as many HTTP requests to the various APIs, even though the content will probably remain the same for some time.
+
+As an API provider (server), you can set quotas to encourage users to define a response caching strategy and avoid systematic calls.
+
+As an API user (client), you need to cache the results so that you can offer them again without systematically calling the HTTP API.
+
+## Exemple
+
+* You can probably limit the number of requests to one per day if you retrieve customer reviews through an API.
+* You can probably limit the number of requests to one per hour if you retrieve a Twitter feed to display on your site.
+* You can set up a 2-second cache to prevent thousands of simultaneous visitors to your site from generating thousands of API calls during the same second if you display "real-time" data on your site homepage.
+* As a provider, if you offer an API, you can set quotas per user and for a limited period of time.

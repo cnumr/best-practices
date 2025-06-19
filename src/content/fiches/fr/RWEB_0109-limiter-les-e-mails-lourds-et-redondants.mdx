@@ -1,0 +1,57 @@
+---
+refID: 0109
+title: Limiter les e-mails lourds et redondants
+createdAt: 2024-02-14T13:25:58.681Z
+updatedAt: 2025-06-05T21:18:31.611Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '102'
+  - version: 2.0.0
+    idRef: '0110'
+  - version: 3.0.0
+    idRef: 0109
+  - version: 4.0.0
+    idRef: 0109
+  - version: 5.0.0
+    idRef: 0109
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+  - storage
+validations:
+  - rule: >-
+      d'e-mails envoyés sans que l’utilisateur n’ait un contrôle complet sur la
+      fréquence et le contenu
+    maxValue: '0'
+---
+
+## Description
+
+Les e-mails sont sauvegardés sur les systèmes de stockage du fournisseur de messagerie, mais aussi localement pour les comptes IMAP et POP3. On peut contribuer à réduire les impacts environnementaux d’un service numérique en limitant au maximum les envois automatiques d’e-mails (newsletters, gestion client, suivi de commande…) et en limitant aussi leur poids (pièces jointes, éléments graphiques, etc.) et le nombre de destinataires.
+
+## Exemple
+
+Newsletters:
+
+* définir la fréquence d’envoi au strict nécessaire ou au choix de l’utilisateur ;
+* respecter la règle du double consentement (double opt-in) ;
+* envoyer des e-mails de désinscription aux clients n’ayant pas ouvert les x newsletters précédentes ;
+* éviter les pièces jointes en utilisant un outil de transfert de fichiers comme  SwissTransfer.
+
+Gestion client:
+
+* Réduire à un seul envoi pour les commandes internet (commande, confirmation de paiement, expédition, satisfaction, relance, satisfaction livraison, facture, ...)
+* Ne pas envoyer de pièce jointe si cela n'est pas nécessaire : lien vers le document sur le compte client par exemple.

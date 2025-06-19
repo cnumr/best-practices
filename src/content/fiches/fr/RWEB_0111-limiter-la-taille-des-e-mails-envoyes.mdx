@@ -1,0 +1,57 @@
+---
+refID: '0111'
+title: Limiter la taille des e-mails envoyés
+createdAt: 2024-02-14T13:30:05.473Z
+updatedAt: 2025-06-05T21:18:06.957Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '104'
+  - version: 2.0.0
+    idRef: '0112'
+  - version: 3.0.0
+    idRef: '0111'
+  - version: 4.0.0
+    idRef: '0111'
+  - version: 5.0.0
+    idRef: '0111'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+  - storage
+validations:
+  - rule: d'e-mails envoyés de plus de 1mo
+    maxValue: '0'
+---
+
+## Description
+
+Limitez au maximum la taille des e-mails envoyés, lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur.
+
+Évitez les pièces jointes et les images intégrées.  En privilégiant de partager un lien vers un espace de stockage de fichier dans le cloud, vous évitez que vos pièces jointes soient dupliquées sur autant de serveurs mail que de destinataires. 
+Préférez un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
+
+Si vous devez absolument habiller votre e-mail, préférez des styles CSS aux images. 
+
+Compressez le code HTML de votre e-mail avec un outil comme [https://htmlcompressor.com/compressor/](https://htmlcompressor.com/compressor/)
+
+## Exemple
+
+L’envoi d’un e-mail de confirmation de prise en compte d’une demande de contact ne justifie pas forcément  l’ajout de code HTML et d’images. Un message HTML basique utilise en moyenne :
+
+* au moins 2 images (le logo et une signature en bas de page), soit 10 Ko environ ;
+* 12 Ko de code HTML pour la mise en page (styles inline, tableaux…) ;
+* 4 Ko de texte (le message et les 2 liens d’action).
+
+Au final, un e-mail en HTML pèse 26 Ko tandis qu’un e-mail en texte brut pèse 4 Ko, soit un gain de 22 Ko par e-mail envoyé. Dans le cas d’un site transactionnel avec, par exemple, des alertes clients et internes, le gain potentiel devient considérable.

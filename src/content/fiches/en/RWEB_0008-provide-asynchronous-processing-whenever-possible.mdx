@@ -1,0 +1,37 @@
+---
+refID: '0007'
+title: Provide asynchronous processing whenever possible
+createdAt: 2025-05-25T13:30:26.191Z
+updatedAt: 2025-05-29T07:20:41.108Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0007'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - ram
+  - network
+  - requests
+validations:
+  - rule: of synchronous processing that takes more than a minute
+    maxValue: '0'
+---
+
+## Description
+
+When interaction with the user involves heavy, time-consuming processing on the server side, it is recommended to provide asynchronous processing whenever possible. The idea is to encourage the user to initiate processing, then reconnect when it's finished, without waiting on his terminal for execution to finish. For example, by receiving an e-mail or notification indicating the end of processing.\
+This approach enables batch processing, which is often more resource-efficient than synchronous processing on the fly. This frees up presentation servers, which can handle other Internet users while processing is running asynchronously on the server side.
+It's also easier to reduce the load on the server responsible for processing, which means that servers can be shared more easily, and fewer servers are needed.
+
+## Example
+
+In the case of an online office document conversion service, encourage users to upload their files all at once, then notify them by e-mail when processing is complete. To optimize the process, all files can be grouped together and compressed in an archive.

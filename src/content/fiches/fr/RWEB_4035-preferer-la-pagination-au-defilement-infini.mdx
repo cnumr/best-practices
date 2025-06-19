@@ -1,0 +1,39 @@
+---
+refID: '0013'
+title: Préférer la pagination au défilement infini
+createdAt: 2024-02-14T14:31:20.845Z
+updatedAt: 2025-05-29T10:47:48.452Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4035'
+  - version: 5.0.0
+    idRef: '0013'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+rgesn: '4.2'
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: network
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: de listes sans pagination classique est
+    maxValue: 10%
+---
+
+## Description
+
+Lorsqu’on affiche une liste de produits ou d’articles sur un site, il est tentant de donner la possibilité au visiteur de tout voir en faisant simplement défiler la page, en chargeant le contenu petit à petit. Les *x* prochains articles/produits seront alors demandés au serveur à chaque scroll, ce qui pourra entraîner des problèmes de performances, de référencement naturel et de respect de l’accessibilité web.
+
+Pour pallier cela, mettez en place une pagination classique avec un système de filtre performant. Le visiteur trouvera plus facilement le contenu qui l’intéresse, de même que les robots d’indexation. En plus de réduire des impacts environnementaux, cette bonne pratique facilite le respect du Référentiel général d’amélioration de l’accessibilité (RGAA) introduit par la loi 2005-102 du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées (cf. [https://www.numerique.gouv.fr/publications/rgaa-accessibilite/obligations/](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/obligations/)").
+
+## Exemple
+
+Proposer par défaut une liste de 10 items tout en laissant la possibilité à l’utilisateur d’en afficher 25, 50 ou 100 par page selon son besoin.

@@ -1,0 +1,46 @@
+---
+refID: '4034'
+title: Rely on managed services
+createdAt: 2025-06-09T14:16:03.299Z
+updatedAt: 2025-06-09T14:57:44.863Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 4-production
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: '"backend" applications not relying on a managed service'
+    maxValue: '1'
+---
+
+## Description
+
+Cloud platforms are specialized in setting up resilient, scalable, efficient, secure, and shared infrastructures. They offer managed services based on these infrastructures such as:
+
+* Multimedia content storage
+* Data persistence via reference databases (e.g., Postgresql)
+* Storage and messaging services (e.g., Kafka)
+* Containers management (e.g., Kubernetes)
+
+It is preferable to use these managed services unless there is a strong expertise in the team.
+
+It will generally be very difficult to achieve better efficiency than the provider's implementation with a custom setup.\
+
+
+## Exemple
+
+Hosting providers now offer "serverless computing," a paradigm in which resources allocated to the service are dynamically managed.
+
+This allows service teams to worry less about infrastructure and allows the host to optimize resource allocation.

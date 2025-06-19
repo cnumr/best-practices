@@ -1,0 +1,45 @@
+---
+refID: 0009
+title: Avoid JavaScript/CSS animations
+createdAt: 2025-05-25T14:56:58.050Z
+updatedAt: 2025-05-29T07:18:40.097Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: 0009
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: of JS/CSS animations per page
+    maxValue: '2'
+---
+
+## Description
+
+Javascript/CSS animations can be very CPU-intensive and consume a lot of memory.\
+They all trigger a resource-intensive (re)paint/(re)flow action. Animations should be avoided as much as possible, and used only when essential.
+
+If you can't do without animation, limit yourself to the CSS3 properties `opacity` and `transform`, and the associated transform functions `translate`, `rotate` and `scale`. These two properties are automatically optimized by the browser, and the animation can be handled by the graphics processing unit (GPU). The [www.csstriggers.com](https://csstriggers.com/) website lists the DOM actions triggered by an animation.
+
+To minimize the resources consumed by the animation, you can signal the browser that an animation is about to take place with the `will-change` instruction. To find out more: [https://web.dev/animations-guide/](https://web.dev/animations-guide/)
+
+You can also give your users the choice, via their browser preferences and the media query preferences-reduced-motion, of allowing the animation to be played or not. The animation is only played if the user has not defined a preference.
+
+## Example
+
+```css
+.box {
+  will-change: transform, opacity;
+}
+```

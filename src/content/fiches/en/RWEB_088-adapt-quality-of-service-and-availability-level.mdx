@@ -1,0 +1,45 @@
+---
+refID: 088
+title: Adapt quality of service and availability level
+createdAt: 2025-06-09T14:06:19.536Z
+updatedAt: 2025-06-09T14:46:52.476Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 4-production
+rgesn: '3.1, 3.2, 8.9'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - electricity
+validations:
+  - rule: increases in the availability level while the current level is sufficient
+    maxValue: '0'
+---
+
+## Description
+
+Quality of service (QoS) and service level agreement (SLA) must be determined with the users of the digital service.
+
+For example, it is unnecessary to host services in a very high availability data center (Tier IV) if users accept an availability rate lower or equal to 99% for a non-critical service. With equivalent energy efficiency, the higher the availability of the data center hosting the website or online service, the higher its overall environmental footprint.
+
+Notably because everything is redundant and active: two power supply chains, two cold production and distribution chains, etc.
+
+It is essential to avoid overqualification.
+
+It is recommended to apply a quality of service based on the sufficient availability level instead.
+
+## Exemple
+
+Despite having hundreds of millions of users, Web giants do not offer very high availability level of Tier IV type.
+
+Data is redundant on at least one other server in another data center. If a server fails, users will be automatically routed to the backup server.
+
+This action may take a few seconds, which is acceptable and almost imperceptible for end-users.

@@ -1,0 +1,37 @@
+---
+refID: '0104'
+title: Encode sounds outside the CMS
+createdAt: 2025-06-06T15:53:52.111Z
+updatedAt: 2025-06-06T16:03:05.145Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '104'
+people: AT
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+  - storage
+validations:
+  - rule: of sound files encoded directly by the CMS
+    maxValue: '0'
+---
+
+## Description
+
+Converting and optimizing audio outside of the digital service saves a lot of bandwidth and will relieve the server's CPU and RAM, as a web server is not optimized for (re)encoding audio files. This limits the number of servers and therefore the associated environmental impacts.
+
+## Example
+
+If you add a WAV audio file to the WordPress media library, it will be encoded as MP3 by the CMS. However, an MP3 file typically allows for a gain of a factor of 10 without degrading the quality of the audio file. If you perform this compression before importing it, you gain 90% of storage space, to which are added the resources saved during processing by delivering strictly the same audio rendering to the user.

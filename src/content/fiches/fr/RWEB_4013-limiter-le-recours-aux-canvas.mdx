@@ -1,0 +1,41 @@
+---
+refID: '4013'
+title: Limiter le recours aux canvas
+createdAt: 2024-02-14T13:59:50.084Z
+updatedAt: 2025-05-30T15:26:52.062Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '4013'
+  - version: 4.0.0
+    idRef: '4013'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: de `canvas` pouvant être remplacés par un élément HTML
+    maxValue: '0'
+---
+
+## Description
+
+L’élément HTML `canvas `est initialement conçu pour dessiner des graphiques, réaliser des jeux ou générer des images à la volée via des API JavaScript. Comme chaque script, l’utilisation de `canvas `consomme beaucoup de ressources CPU/GPU, ce qui se traduit par une sensation de lenteur sur les terminaux les moins véloces, poussant l’utilisateur à les remplacer.
+
+Cet impact est plus important quand le rendu est réalisé de manière répétitive (effet dynamique, animation). Il est recommandé d’utiliser d’autres éléments HTML natifs quand cela est possible et, à défaut, de mettre en place des optimisations pour limiter les besoins en ressources machines.
+
+## Exemple
+
+* Faire les rendus uniquement si nécessaire.
+* Avec les animations, utiliser `window.requestAnimationFrame()` plutôt que `window.setInterval()`.
+* Limiter l'utilisation de bibliothèques lourdes.
+* Tester les performances de rendu.

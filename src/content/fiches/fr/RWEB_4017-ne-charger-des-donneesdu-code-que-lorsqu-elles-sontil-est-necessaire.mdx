@@ -1,0 +1,52 @@
+---
+refID: '4017'
+title: Ne charger des données ou du code que lorsque c’est indispensable
+createdAt: 2024-02-14T14:06:40.334Z
+updatedAt: 2025-05-18T17:25:29.171Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4017'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: de ressources chargées qui ne sont pas immédiatement utilisées
+    maxValue: '0'
+---
+
+## Description
+
+Pour des raisons de performance perçue,
+il peut être tentant de précharger des ressources qui *pourraient* être utilisées
+si une action spécifique est effectuée par l'utilisateur
+(y compris une navigation vers une autre page).
+
+Mais si cette action n'est pas entreprise,
+ces pré-chargements n'auront servi qu'à gaspiller des ressources.
+
+## Exemple
+
+Éviter `<link rel="prerender">`,
+ainsi que tous les `rel="preload"`, `rel="prefetch"`, `rel="preconnect"`, `rel="modulepreload"` et `rel="dns-prefetch"`
+dont la ressource ne sera pas utilisée sur la page courante,
+ou utilisée uniquement sous certaines conditions.
+
+Éviter les chargements et mise en cache (ou en stockage local) de données applicatives,
+comme des listes des valeurs et autres référentiels,
+si on n'est pas absoluement certain qu'elles seront utilisées.
+
+Par extension, découper le code JS, voire les CSS, par portions (*chunks*) relatives à des actions particulières de l'utilisateur,
+et ne charger ces portions que lorsqu'elles sont nécessaires.
+C'est d'autant plus vrai pour les SPA (Single Page Applications),
+où chaque *écran* (ou éventuellement ensemble d'écrans) pourra être ainsi chargé uniquement à la demande.

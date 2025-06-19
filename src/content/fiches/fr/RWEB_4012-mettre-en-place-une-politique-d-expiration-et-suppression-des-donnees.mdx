@@ -1,0 +1,56 @@
+---
+refID: '4012'
+title: Mettre en place une politique d'expiration et suppression des données
+createdAt: 2024-02-14T13:58:13.859Z
+updatedAt: 2025-05-28T20:40:07.475Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: 4.0.0
+    idRef: '4012'
+  - version: 5.0.0
+    idRef: '4012'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '7.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+  - requests
+validations:
+  - rule: de données stockées inutilisées
+    maxValue: '0'
+---
+
+## Description
+
+Définir une durée de rétention de chaque donnée stockée afin de permettre sa suppression ou son archivage via un traitement (batch, durée de vie (« TTL ») en base de données...). De nombreux SGBDR permettent de supprimer  automatiquement et défi nitivement via un TTL (Time To Live) sur une table ou sur une donnée.
+
+De plus, depuis la mise en place du RGPD, il est obligatoire de supprimer les données personnelles d’un utilisateur après une certaine durée ce qui va dans le sens de l’écoconception.
+
+## Exemple
+
+Ici, sur une base Oracle en Java, la donnée expire après 5 jours :
+
+```java
+String aKey = «myFirstKey»;
+String aData = «myFirstData»;
+try {
+    DatabaseEntry theKey = new DatabaseEntry(aKey.getBytes("UTF-8"));
+    DatabaseEntry theData = new DatabaseEntry(aData.getBytes("UTF-8"));
+    WriteOptions wo = new WriteOptions();
+    wo.setTTL(5);
+    myDatabase.put(null,
+                    theKey,
+                    theData,
+                    Put.NO_OVERWRITE,
+                    wo);
+} catch (Exception e) {
+}
+```

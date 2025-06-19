@@ -1,0 +1,44 @@
+---
+refID: 0093
+title: Stocker les données dans le cloud
+createdAt: 2024-02-14T12:51:19.943Z
+updatedAt: 2025-05-28T20:43:36.672Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '71'
+  - version: 2.0.0
+    idRef: 0092
+  - version: 3.0.0
+    idRef: 0093
+  - version: 4.0.0
+    idRef: 0093
+  - version: 5.0.0
+    idRef: 0093
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.2'
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: >-
+      de ressources, données du site web qui ne sont pas stockées sur une
+      solution de cloud computing
+    maxValue: '0'
+---
+
+## Description
+
+Pour réduire l’espace de stockage nécessaire aux ressources d’un site web ou d’un service en ligne, il peut être intéressant d’utiliser des solutions de cloud computing. Ainsi, tout en disposant d’une solution évolutive (elastic en anglais), on ne monopolise pas de ressources inutilement. Comme il ne faut pas multiplier les domaines (voir la bonne pratique n° 82), le plus simple est de regrouper toutes les ressources statiques sur un seul service de stockage en ligne. Veillez à sélectionner un fournisseur cloud le plus responsable possible.
+
+## Exemple
+
+La plupart du temps, il est plus effi cace de recourir au service de stockage S3 d’Amazon pour stocker des données que d’ajouter de nouveaux disques durs aux serveurs existants.

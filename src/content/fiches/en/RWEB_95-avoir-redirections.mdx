@@ -1,0 +1,44 @@
+---
+refID: '95'
+title: Avoid redirections
+createdAt: 2025-05-16T12:06:18.068Z
+updatedAt: 2025-05-16T12:07:23.568Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 6-support
+rgesn: '6.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - storage
+  - network
+  - requests
+validations:
+  - rule: The number of redirects is equal to or less than
+    maxValue: '1'
+---
+
+## Description
+
+Redirects slow response time while using unnecessary resources. Therefore, they should be avoided as much as possible. Redirects can occur at different places: HTML code, JavaScript code, HTTP server, and application server (PHP, etc.).
+
+## Exemple
+
+On the HTTP server level (Apache, in this case), redirects involve activating systematic URL rewriting via the .htaccess file:
+
+```apache
+<IfModule mod_alias.c>
+    Redirect permanent http://ancienne_adresse.fr http://nouvelle.adresse.fr/
+</IfModule>
+```
+
+It is preferable to manually replace static addresses embedded in web pages.

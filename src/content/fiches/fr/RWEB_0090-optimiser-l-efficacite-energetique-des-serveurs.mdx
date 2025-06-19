@@ -1,0 +1,43 @@
+---
+refID: 0090
+title: Optimiser l'efficacité énergétique des serveurs
+createdAt: 2024-02-14T12:45:00.576Z
+updatedAt: 2024-07-05T04:49:08.976Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '68'
+  - version: 2.0.0
+    idRef: 0088
+  - version: 3.0.0
+    idRef: 0090
+  - version: 4.0.0
+    idRef: 0090
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - electricity
+validations:
+  - rule: >-
+      de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou
+      plus OU non écolabellisés ou Energy Star for server
+    maxValue: '0'
+---
+
+## Description
+
+À service rendu identique, il est possible de réduire la consommation électrique des serveurs en choisissant des équipements peu énergivores.
+
+## Exemple
+
+Lors de l’achat, privilégier des serveurs équipés d’une alimentation électrique conforme à l’écolabel 80Plus (niveaux Platinum et Titanium). Préférer également les serveurs estampillés Energy Star.
+
+Il est aussi possible de choisir une architecture matérielle adaptée au type d’application web. Par exemple, pour un site web à fort trafic, la physicalisation est mieux adaptée : elle consiste à utiliser n CPU très basse consommation, plutôt que n machines virtuelles s’exécutant sur un serveur physique dont le processeur (Xeon, etc.) est souvent énergivore.

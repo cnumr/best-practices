@@ -1,0 +1,42 @@
+---
+refID: '85'
+title: Have an end of life strategy for the website
+createdAt: 2025-05-16T12:18:50.390Z
+updatedAt: 2025-05-16T12:22:09.592Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: '-'
+responsible: []
+lifecycle: 7-retirement
+rgesn: 2.7 and 5.8
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+validations:
+  - rule: websites with no end-of-life plan
+    maxValue: '0'
+---
+
+## Description
+
+Most of the time, the end of life of a digital service is not anticipated.
+
+An end-of-life plan can take the form of a document that includes all resources to be decommissioned, deleted, or backed up: servers, storage, middlewares, configurations, source code, documentation, etc.
+
+Don't forget development resources and medias such as messaging channels, continuous integration jobs, and, of course, test environments.
+
+Skills acquired on the project should be shared whenever possible.
+
+## Example
+
+If a site for a past event (e.g., an exhibition) is shut down, it is important to list all associated resources: databases, application servers, configurations (e.g., URL redirects), documentation, multimedia files, etc., and ensure that everything is properly decommissioned and archived.

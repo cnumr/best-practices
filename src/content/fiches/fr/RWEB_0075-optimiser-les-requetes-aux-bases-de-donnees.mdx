@@ -1,0 +1,60 @@
+---
+refID: '0075'
+title: Optimiser les requêtes aux bases de données
+createdAt: 2024-02-14T12:13:12.027Z
+updatedAt: 2025-05-27T16:07:16.724Z
+language: fr
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '59'
+  - version: 2.0.0
+    idRef: '0074'
+  - version: 3.0.0
+    idRef: '0075'
+  - version: 4.0.0
+    idRef: '0075'
+  - version: 5.0.0
+    idRef: '66'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: de requêtes peu performantes identifiées non optimisées
+    maxValue: '0'
+---
+
+## Description
+
+Les requêtes effectuées pour récupérer et enregistrer des données ont un impact important sur la consommation de ressources et doivent donc être optimisées. Les pistes classiques d’optimisation sont nombreuses :
+
+* Ramener moins de données et se limiter au nécessaire.
+* Sélectionner uniquement les champs nécessaires.
+* Ajouter des index sur les champs utilisés comme clés. Cet ajout peut réduire drastiquement la puissance nécessaire à la requête.
+* Analyser les requêtes pour identifi er les points d’amélioration, par exemple via `EXPLAIN` pour un SGBDR.
+* Conserver en cache le résultat des requêtes les plus coûteuses et les plus fréquentes.
+* Éventuellement, dénormaliser le modèle de données pour éviter les jointures, qui peuvent ralentir les requêtes.
+
+## Exemple
+
+Si vous ne souhaitez afficher que les 25 premiers enregistrements d’une table contenant le nom et le prénom de personnes, remplacez lors de la sélection :
+
+```sql
+SELECT prenom, nom FROM personnes
+```
+
+par :
+
+```sql
+SELECT prenom, nom FROM personnes LIMIT 0, 25
+```
