@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Messages de commit Conventional Commits
+
+Lorsque tu génères des messages de commit, respecte strictement les conventions Conventional Commits avec les règles suivantes :
+
+## Format général
+```
+<type>(<scope>): <description>
+```
+
+## Types autorisés
+- `feat`: nouvelle fonctionnalité
+- `fix`: correction de bug
+- `docs`: documentation
+- `style`: formatage, point-virgules manquants, etc.
+- `refactor`: refactorisation du code
+- `perf`: amélioration des performances
+- `test`: ajout ou modification de tests
+- `chore`: tâches de maintenance, configuration, etc.
+- `ci`: intégration continue
+- `build`: build système ou dépendances externes
+- `revert`: annulation d'un commit précédent
+
+## Règles spécifiques
+1. **Langue**: Toujours en français
+2. **Longueur**: Maximum 200 caractères pour le message principal
+3. **Description**: Utilise l'impératif présent (ex: "ajoute", "corrige", "améliore")
+4. **Scope**: Optionnel, à utiliser quand pertinent (ex: `feat(auth)`, `fix(api)`)
+5. **Pas de point final** à la description
+
+## Exemples de messages valides
+- `feat: ajoute authentification OAuth2`
+- `fix(auth): corrige la validation du token JWT`
+- `docs: met à jour la documentation API`
+- `refactor(ui): simplifie le composant de navigation`
+- `test: ajoute tests unitaires pour le service utilisateur`
+- `chore: met à jour les dépendances`
+
+## Exemples de messages invalides
+- `feat: Ajoute une nouvelle fonctionnalité d'authentification OAuth2 avec gestion des tokens et validation des permissions utilisateur` (trop long)
+- `fix: Correction du bug dans l'authentification.` (point final)
+- `feat: nouvelle fonctionnalité` (pas d'impératif présent)
+
+## Corps du message (optionnel)
+Si un corps de message est nécessaire, utilise-le pour expliquer le "pourquoi" plutôt que le "quoi", et respecte la limite de 200 caractères pour la première ligne.
