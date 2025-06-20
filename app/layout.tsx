@@ -17,6 +17,7 @@ export async function generateMetadata({
   return {
     title: `${t('seo.site_name')}${getRefConfig().i18n.refTitles.fr.long} | Collectif Green IT`,
     description: `${t('seo.default.description')}`,
+    authors: [{ name: `Collectif Green IT` }, { name: `Association Green IT` }],
   };
 }
 export default function RootLayout({
