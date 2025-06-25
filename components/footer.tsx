@@ -61,7 +61,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
           className="inline-flex items-center gap-[.15rem] no-underline"
           target="_blank"
           rel="noreferrer"
-          href="https://www.greenit.fr/"
+          href="https://www.greenit.eco/"
           title={t(
             "Aller sur le site de l'association Green IT (site externe)"
           )}>
