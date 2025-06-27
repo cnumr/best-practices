@@ -1,4 +1,14 @@
-# 115 best practices of web Eco-Design
+# RWEB - 115 best practices of web Eco-Design
+
+## The framework 
+
+RWEB, also known as the "115 Best Practices for Web Ecodesign ," is a document that lists best practices to implement to reduce the environmental impacts associated with digital services implemented in the form of websites or web applications.
+
+The sheets contain difficulty and priority levels, as well as formal validation rules, enabling effective use in the field.
+
+Since version 5, a correspondence with the [GPFEDS](https://github.com/cnumr/best-practices/edit/main/README.en.md) is available on the sheets when applicable. This allows for the efficient and pragmatic use of these two complementary documents.
+
+The content of this framework is available at [rweb.greenit.fr](https://rweb.greenit.fr/). It has also been translated to Spanish.
 
 ## The project
 
@@ -8,6 +18,7 @@ This web ecodesign reference content has been published by Frédéric Bordage / 
 2. “écoconception web : les 115 bonnes pratiques, 2ème édition” in 09/2015
 3. “écoconception web : les 115 bonnes pratiques, 3ème édition” in 04/2019
 4. “écoconception web : les 115 bonnes pratiques, 4ème édition” in 05/2022
+5. “écoconception web : les 115 bonnes pratiques, 5ème édition” in 06/2025
 
 We would like to express our sincere thanks to all the contributors who took part in the development and evolution of this repository.
 
