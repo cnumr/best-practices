@@ -1,0 +1,46 @@
+---
+refID: '0102'
+title: 'Almacenar en caché las respuestas de Ajax'
+createdAt: 2024-02-14T13:09:38.322Z
+updatedAt: 2025-05-28T20:30:53.771Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0091'
+  - version: 2.0.0
+    idRef: '0101'
+  - version: 3.0.0
+    idRef: '0102'
+  - version: 4.0.0
+    idRef: '0071'
+  - version: 5.0.0
+    idRef: '0071'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 4-production
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: >-
+      de respuestas AJAX no almacenadas en caché
+    maxValue: 10%
+---
+
+## Descripción
+
+Las respuestas Ajax que no cambien en un futuro próximo no deben ser pedidas de nuevo al servidor. Por lo tanto, almacenarlos en caché para ahorrar ancho de banda.
+
+## Ejemplo
+
+Si una consulta Ajax devuelve una lista de nombres de ciudades, nombres de contactos o cualquier elemento no calculado, debe almacenar estas respuestas en caché en el lado del cliente para no generar una nueva consulta al servidor.
+
+

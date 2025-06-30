@@ -1,0 +1,51 @@
+---
+refID: '0106'
+title: 'Desactivar los registros binarios'
+createdAt: 2024-02-14T13:18:55.807Z
+updatedAt: 2025-05-16T11:31:19.696Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0083'
+  - version: 2.0.0
+    idRef: '0093'
+  - version: 3.0.0
+    idRef: '0106'
+  - version: 4.0.0
+    idRef: '0113'
+  - version: 5.0.0
+    idRef: '0113'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 6-support
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: >-
+      opciones --skip-log-bin y --disable-log-bin no activadas en caso de que los logs binarios no sean útiles
+    maxValue: 0
+---
+
+## Descripción
+
+Los logs binarios del servidor MySQL o MariaDB pueden volverse muy voluminosos, consumiendo ciclos CPU y generando entradas-salidas (I/O) en el disco duro, ya que cada petición de modificación/supresión está inscrita en el archivo de log. Además, si tiene la opción de desactivar estos registros, se ahorrará una gran cantidad de recursos.
+Antes de desactivar, debe asegurarse de que no es necesaria una replicación de la base de datos y que la pérdida de datos desde la última copia de seguridad es aceptable.
+
+## Ejemplo
+
+Para MySQL, añadir la siguiente configuración:
+```
+skip-log-bin
+```
+
+

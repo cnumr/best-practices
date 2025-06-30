@@ -1,0 +1,52 @@
+---
+refID: '0041'
+title: 'No modificar el DOM al recorrerlo'
+createdAt: 2024-02-14T11:34:20.720Z
+updatedAt: 2025-05-18T17:18:57.809Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0043'
+  - version: 2.0.0
+    idRef: '0043'
+  - version: 3.0.0
+    idRef: '0041'
+  - version: 4.0.0
+    idRef: '0043'
+  - version: 5.0.0
+    idRef: '0043'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de inserciones en el DOM realizadas cuando esta misma parte del DOM es recorrida por código JavaScript
+    maxValue: 0
+---
+
+## Descripción
+
+Modificar el DOM (Document Object Model) al recorrerlo puede generar situaciones en las que el bucle se vuelve muy codicioso en recursos, en particular en ciclos de CPU. En efecto, si se añaden elementos recorriéndolo, es posible generar un bucle infinito que consumirá una gran cantidad de recursos. Por lo tanto, se desaconseja encarecidamente este tipo de modificación.
+
+## Ejemplo
+
+Evitar:
+```html
+<script>
+	// Notación de jQuery
+	$('a. extlink'). each(function(el) {
+    	$(el). attr('rel','external nofollow');
+	})
+</script>
+```
+

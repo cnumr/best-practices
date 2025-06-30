@@ -1,0 +1,56 @@
+---
+refID: '0103'
+title: 'Reducir los registros del servidor según sea necesario'
+createdAt: 2024-02-14T13:12:01.214Z
+updatedAt: 2025-05-23T16:41:28.984Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0082'
+  - version: 2.0.0
+    idRef: '0099'
+  - version: 3.0.0
+    idRef: '0103'
+  - version: 4.0.0
+    idRef: '0086'
+  - version: 5.0.0
+    idRef: '0086'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 4-production
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: >-
+      de logs sin tiempo máximo de retención
+    maxValue: 0
+---
+
+## Descripción
+
+Dado que los registros de los servidores (web, aplicativo, base de datos) pueden ser muy grandes, se recomienda configurarlos en su conjunto.
+Ajustando al máximo el nivel log de la aplicación (ejemplo: solo información/warning/error) y rastreando solo la información relevante, se evitan las escrituras en el disco que pueden ser masivas, lo que limita el consumo de ciclos CPU y reduce el espacio de almacenamiento necesario.
+
+Para evitar saturar los discos, también se recomienda establecer un tiempo de retención y una rotación de los registros según la necesidad durante el funcionamiento del servicio.
+
+## Ejemplo
+
+Los registros de acceso de un servidor Apache se pueden configurar de la siguiente manera para excluir recursos estáticos y fuentes RSS:
+
+```apacheconf
+SetEnvIf Request_URI " .(ico|pdf|?v|jpg|jpeg|png|gif| js|css|gz|swf|txt) $" dontlog
+SetEnvIf Request_URI " /rss/" dontlog
+CustomLog/var/log/apache/access.log Combined env=! dontlog
+```
+
+

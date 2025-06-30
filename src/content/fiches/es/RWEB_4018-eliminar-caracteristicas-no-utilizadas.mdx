@@ -1,0 +1,61 @@
+---
+refID: '4018'
+title: 'Eliminar características no utilizadas'
+createdAt: 2024-02-14T14:08:24.153Z
+updatedAt: 2025-06-05T13:58:02.888Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4003'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0003'
+  - version: 5.0.0
+    idRef: '0003'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 1-specification
+rgesn: 1.2 2.7
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: >-
+      de características poco utilizadas presentan en producción
+    maxValue: 10%
+---
+
+## Descripción
+
+Eliminar las funciones no utilizadas es:
+* Medir el uso de las funciones de producción.
+* Controlar el uso de las características, y eliminar las que no se utilizan lo suficiente o que han perdido valor.
+
+Eliminar características reduce el peso de la aplicación, su impacto en la producción y su mantenimiento.
+
+¿Cómo elimino una función?
+* desactivarla: en el principio de la característica Flipping, impedir que se utilice con una bandera.
+* desinstalarla: eliminar al máximo el código utilizado y volver a cargar el código restante.
+
+En función del coste medioambiental y económico de una supresión, se elegirá una u otra solución.
+
+## Ejemplo
+
+Un sitio de comercio electrónico utiliza dos listas diferentes: lista de compras y lista de favoritos. Al rediseñar el sitio, en lugar de seguir siendo iso-funcional, el equipo mide la pertinencia de las características. La medición muestra que la lista de favoritos ha quedado obsoleta. Por lo tanto, se elimina junto con todos los datos en la base.
+
+Una página de administración se puede utilizar una vez al año y ser muy importante (por ejemplo, una purga de caché que solo se utiliza cuando se actualiza el repositorio). En tal caso, deberá conservarse.
+
+

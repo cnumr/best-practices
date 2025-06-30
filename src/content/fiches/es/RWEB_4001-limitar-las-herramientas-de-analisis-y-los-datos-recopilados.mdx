@@ -1,0 +1,45 @@
+---
+refID: '4001'
+title: 'Limitar las herramientas de análisis y los datos recopilados'
+createdAt: 2024-02-14T13:38:15.331Z
+updatedAt: 2025-05-19T20:40:39.008Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4111'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0111'
+  - version: 5.0.0
+    idRef: '0111'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: '1.6'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - storage
+  - network
+validations:
+  - rule: >-
+      de herramientas de análisis
+    maxValue: 1
+---
+
+## Descripción
+
+Las herramientas utilizadas para seguir las acciones de los usuarios suelen utilizar muchos recursos del lado del cliente: muchas consultas, archivos de javascript adicionales cargados, uso de varios dominios adicionales, envío de cookies, ...
+
+Si la información resultante de este seguimiento no es indispensable, no la utilice. De lo contrario, limitarse a una sola herramienta y privilegiar una solución que consume pocos recursos
+
+

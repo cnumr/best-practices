@@ -1,0 +1,53 @@
+---
+refID: '4005'
+title: 'Dar una alternativa textual a los contenidos multimedia'
+createdAt: 2024-02-14T13:45:46.980Z
+updatedAt: 2025-05-18T16:30:11.375Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4030'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0030'
+  - version: 5.0.0
+    idRef: '0030'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: '4.7'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de archivos multimedia sin alternativa textual
+    maxValue: 10%
+---
+
+## Descripción
+
+El texto, incluso con formato HTML/CSS, utiliza mucho menos ancho de banda que formatos multimedia como audio o vídeo. 
+Dar a los usuarios una alternativa textual a estos contenidos les permite, si lo desean, leer en lugar de escuchar o ver, y transferir menos datos.
+Si esta alternativa textual tiene un tamaño significativo, puede que no se cargue de forma predeterminada sino como resultado de una acción de usuario.
+
+Esta práctica también es beneficiosa para la accesibilidad: los sordos podrán leer el contenido y, por tanto, tendrán acceso a él, también para los ciegos, si el texto incluye una descripción de los elementos de los vídeos que solo son visibles.
+
+Esta práctica también es beneficiosa para el SEO, ya que los motores de búsqueda pueden analizar el texto más fácilmente que el audio y el vídeo.
+
+Ver también sobre el mismo tema la práctica «Evitar la reproducción automática de vídeos y sonidos»
+
+## Ejemplo
+
+Un video de 30 minutos típicamente hará 500mo, un podcast de la misma duración hará 30mo, y el equivalente texto menos de 1 mo.
+
+

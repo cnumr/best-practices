@@ -1,0 +1,62 @@
+---
+refID: '0101'
+title: 'Añadir encabezados Expires o Cache-Control'
+createdAt: 2024-02-14T13:07:27.263Z
+updatedAt: 2025-05-28T20:33:43.922Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0078'
+  - version: 2.0.0
+    idRef: '0105'
+  - version: 3.0.0
+    idRef: '0101'
+  - version: 4.0.0
+    idRef: '0074'
+  - version: 5.0.0
+    idRef: '0074'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - ram
+  - requests
+validations:
+  - rule: >-
+      de cabeceras que faltan Expires o Cache-Control
+    maxValue: 0
+---
+
+## Descripción
+
+Los encabezados Expires y Cache-Control definen el tiempo durante el cual un navegador debe mantener un recurso en su caché. Por lo tanto, debe preverse y configurarse correctamente para hojas de estilo CSS, scripts de JavaScript e imágenes.
+
+Idealmente, la vida útil de estos elementos debe ser lo más larga posible, para que el navegador no vuelva a solicitarlos al servidor. Esto ahorra solicitudes HTTP, ancho de banda y ciclos de CPU en el servidor.
+
+## Ejemplo
+
+Aquí hay un ejemplo de configuración de los encabezados Expires y Cache-Control para el servidor web Apache:
+```apacheconf
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+	<FilesMatch "\\.(ico|jpe?g|png|gif|swf|css|gz)$">
+    	Header set Cache-Control"max-age=2592000, public"
+	</FilesMatch>
+	<FilesMatch "\\.(html|htm)$">
+    	Header set Cache-Control"max-age=7200, public"
+	</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+```
+
+

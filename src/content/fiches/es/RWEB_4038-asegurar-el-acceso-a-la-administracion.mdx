@@ -1,0 +1,62 @@
+---
+refID: '4038'
+title: 'Asegurar el acceso a la administración'
+createdAt: 2024-02-14T14:36:53.559Z
+updatedAt: 2024-07-05T05:23:03.133Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4202'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '000-'
+  - version: 5.0.0
+    idRef: '0117'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de urls de administración por defecto e identificadores clásicos y contraseñas débiles
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando se utilizan CMS ampliamente conocidos, la ruta de acceso a la administración del sitio es a menudo idéntica de un sitio a otro.
+Esto es cierto para todos los sitios que utilizan una interfaz de administración con una ruta de acceso convencional.
+Por lo tanto, los ataques de tipo "fuerza bruta" son muy comunes cuando se encuentra una URL fácil.
+Estos ataques son muy impactantes para la red y la infraestructura.
+
+Los ataques tienen más éxito cuando el identificador de usuario también es clásico o las contraseñas no son lo suficientemente fuertes.
+
+### Ejemplo
+WordPress, uno de los CMS más utilizados del mercado ofrece su administración en la url: /wp-admin o /wp-login.php
+Joomla le propone /administrator
+Para Kirby, se trata de /panel
+etc...
+
+Siempre es posible modificar esta dirección para limitar los ataques y garantizar mejor la seguridad de su sitio.
+Reemplace la url de acceso a las páginas de administración con:
+- una cadena aleatoria sin mayúsculas  : /ze62ane96,  /o6_jhej639, /dj5zjaih2-ep8e
+- una o varias palabras relacionadas con su actividad: /construir,  /jugar, /preparar el menú
+- o acumular los dos: /díaμ
+
+No utilizar como identificador "admin", "nombre de dominio del sitio", "nombre o apellido del director de la empresa"
+Una contraseña segura tiene al menos 8 caracteres, incluyendo: letras minúsculas y mayúsculas, caracteres especiales y números.
+También se puede utilizar el generador de contraseñas solido.
+
+

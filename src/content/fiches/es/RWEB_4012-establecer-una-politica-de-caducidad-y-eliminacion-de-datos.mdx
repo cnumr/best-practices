@@ -1,0 +1,71 @@
+---
+refID: '4012'
+title: 'Establecer una política de caducidad y eliminación de datos'
+createdAt: 2024-02-14T13:58:13.859Z
+updatedAt: 2025-05-28T20:40:07.475Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4078'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0078'
+  - version: 5.0.0
+    idRef: '0078'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '7.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - storage
+  - requests
+validations:
+  - rule: >-
+      de datos almacenados no utilizados y sin obligación legal
+    maxValue: 0
+---
+
+## Descripción
+
+Desde la implementación del RGPD por la CNIL, es obligatorio eliminar los datos personales de un usuario después de una duración definida según varias condiciones. Es obligatorio hacerlo sobre los datos personales de nuestros usuarios, pero también podemos establecer una vida útil para cualquier otro dato. Afortunadamente, organizar la vida útil de nuestros datos se puede realizar de forma automática, sin tener que purgar manualmente los datos obsoletos. 
+
+Muchos sistemas de gestión de bases de datos, como `MongoDB` , `AWS DynamoDB`, `Redis` o `Oracle` permiten definir un "TTL" en una tabla o en un dato.
+
+Después de definir una vida útil, los datos caducados se purgan y se borran permanentemente de la base.
+
+## Ejemplo
+
+En este ejemplo en Java, basado en Oracle, la vida útil de los datos expirará después de 5 días
+
+```java
+String aKey = "myFirstKey";
+String aData = "myFirstData";
+
+try {
+    DatabaseEntry theKey = new DatabaseEntry(aKey.getBytes("UTF-8"));
+    DatabaseEntry theData = new DatabaseEntry(aData.getBytes("UTF-8"));
+
+    WriteOptions wo = new WriteOptions();
+    wo.setTTL(5); // TTL de 5 dias
+    myDatabase.put(null,             // transacción 
+                   theKey,           // clave.
+                   theData,          // valor.
+                   Put.NO_OVERWRITE, 
+                   wo);              // Optiones (incluyendo el TTL).
+
+} catch (Exception e) {
+    // ...
+} 
+```
+
+

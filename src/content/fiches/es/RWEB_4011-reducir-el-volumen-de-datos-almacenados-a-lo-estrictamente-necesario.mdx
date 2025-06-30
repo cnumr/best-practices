@@ -1,0 +1,57 @@
+---
+refID: '4011'
+title: 'Reducir el volumen de datos almacenados a lo estrictamente necesario'
+createdAt: 2024-02-14T13:56:14.338Z
+updatedAt: 2025-06-16T10:23:20.164Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4023'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0023'
+  - version: 5.0.0
+    idRef: '0023'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 5.8 y 7.2
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: datacenter
+saved_resources:
+  - storage
+validations:
+  - rule: >-
+      de datos almacenados y no útiles para el servicio digital
+    maxValue: 0
+---
+
+## Descripción
+
+Reducir el volumen de datos almacenados cuando sea necesario:
+* optimizar la gestión de grandes volúmenes de datos.
+* limpiar los datos antiguos, ya sea archivando los datos fuera de línea o eliminándolos.
+* comprobar que las copias de seguridad se pueden restaurar.
+* supervisar el tamaño del espacio de almacenamiento.
+
+Dependiendo del tipo de datos y sus propietarios, las restricciones legales pueden llevar a almacenar en el tiempo datos nunca utilizados.
+
+El uso y la importancia de los datos también influyen en la forma de almacenarlos.
+
+Esta buena práctica forma parte de la gestión del ciclo de vida de la información.
+
+## Ejemplo
+
+* Definir procesos de archivo: en el momento de su lanzamiento, un informe anual se almacena en un SSD (zona caliente). Un mes más tarde, se archiva en un almacén clásico (zona fría). Finalmente, diez años más tarde, se suprime.
+* Evitar la duplicación entre tablas es una forma de optimizar el volumen de datos almacenados.
+* El uso de los datos puede dar lugar a una desnormalización de las tablas y, por tanto, a un aumento del espacio de almacenamiento.
+
+

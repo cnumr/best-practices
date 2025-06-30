@@ -1,0 +1,47 @@
+---
+refID: '0031'
+title: 'Validar las páginas con el W3C'
+createdAt: 2024-02-14T10:59:31.868Z
+updatedAt: 2025-05-26T16:29:11.723Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0008'
+  - version: 2.0.0
+    idRef: '0015'
+  - version: 3.0.0
+    idRef: '0031'
+  - version: 4.0.0
+    idRef: '0060'
+  - version: 5.0.0
+    idRef: '0060'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '2.6'
+environmental_impact: 2
+priority_implementation: 3
+moe: 5
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de errores críticos
+    maxValue: 0
+---
+
+## Descripción
+
+Comprobar que el código HTML de las páginas está correctamente formado. De lo contrario, el navegador corregirá dinámicamente una serie de elementos para mostrar de la mejor manera posible las páginas problemáticas.
+Estas correcciones dinámicas consumen recursos innecesarios cada vez que se cargan las páginas afectadas.
+
+## Ejemplo
+
+Usar el validador del W3C (World Wide Web Consortium) para comprobar que las páginas son válidas y que el código HTML está correctamente formado:
+https://validator.w3.org
+
+

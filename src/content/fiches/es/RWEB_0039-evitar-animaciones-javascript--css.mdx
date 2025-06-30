@@ -1,0 +1,69 @@
+---
+refID: '0039'
+title: 'Evitar animaciones JavaScript/ CSS'
+createdAt: 2024-02-14T11:28:50.469Z
+updatedAt: 2025-05-29T07:17:06.548Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0810'
+  - version: 2.0.0
+    idRef: '0005'
+  - version: 3.0.0
+    idRef: '0007'
+  - version: 4.0.0
+    idRef: '0009'
+  - version: 5.0.0
+    idRef: '0009'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+rgesn: NA
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      de animaciones JS/ CSS por página
+    maxValue: 2
+---
+
+## Descripción
+
+Las animaciones JavaScript/CSS pueden ser muy costosas en términos de ciclos de CPU y consumo de memoria.
+Todas ellas desencadenan una acción de tipo (re)paint/(re)?ow muy costosa en recursos. Por lo tanto, hay que evitar al máximo las animaciones y utilizarlas sólo cuando sean indispensables.
+
+Si no puede prescindir de una animación, limitese a las propiedades CSS `opacity` y `transform`, y a las funciones asociadas `translate`, `Rotate`, `scale` de `transform`. Ambas propiedades son optimizadas automáticamente por el navegador, y la animación puede ser compatible con el procesador de gráficos (GPU). El sitio [www.csstriggers.com](https://csstriggers.com/) enumera las acciones en el DOM desencadenadas por una animación.
+
+Para que el navegador pueda reducir al mínimo los recursos consumidos por la animación, puede avisarle de que una animación va a tener lugar gracias a la instrucción `will-change`.
+
+Para obtener más información:
+https://web.dev/animations-guide/
+
+## Ejemplo
+
+```css
+.box {
+	will-change: transform, opacity;
+}
+```
+## Solución alternativa
+
+También puede dejar que sus usuarios elijan, a través de las preferencias de sus navegadores y la media query `prefers-reduced-motion`, si quieren o no reproducir la animación. La animación solo se reproduce si el usuario no ha definido ninguna preferencia.
+
+```css
+@media (prefers-reduced-motion: no-preference ) {
+  . animación {
+	animación: fadein 4s Ease;
+  }
+}
+```
+
+

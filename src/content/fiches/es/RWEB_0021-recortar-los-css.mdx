@@ -1,0 +1,56 @@
+---
+refID: '0021'
+title: 'Recortar los CSS'
+createdAt: 2024-02-14T10:28:42.760Z
+updatedAt: 2025-05-18T19:36:53.897Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0009'
+  - version: 2.0.0
+    idRef: '0024'
+  - version: 3.0.0
+    idRef: '0021'
+  - version: 4.0.0
+    idRef: '0036'
+  - version: 5.0.0
+    idRef: '0036'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: >-
+      de librerías CSS es mayor o igual
+    maxValue: 2
+---
+
+## Descripción
+
+Utilizar un conjunto de CSS en lugar de un solo, y llamar solo a los CSS útiles según el contexto.Ese método ayuda a limitar el peso de la página en la primera descarga, lo que ahorra ancho de banda y reduce la carga de la CPU.
+
+## Ejemplo
+
+Cortar CSS según la lógica funcional:
+ - diseño;
+ - contenido;
+ - módulo x;
+ - módulo y;
+ - etc...
+
+En el caso de un sitio funcionalmente rico, esto permitirá excluir todas los CSS de los módulos no utilizados.
+El número de CSS debe seguir siendo razonable, más por cuestiones de mantenibilidad que de rendimiento, en la medida en que los CSS generales («diseño» y «contenido» en nuestro ejemplo) serán concatenadas en un solo archivo.
+Los CSS complementarios (aquí, «módulo x» y «módulo y») se descargarán según el contexto (página, funcionalidades...).
+
+
+

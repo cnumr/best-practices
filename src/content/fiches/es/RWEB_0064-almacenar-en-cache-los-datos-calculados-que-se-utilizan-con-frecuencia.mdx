@@ -1,0 +1,49 @@
+---
+refID: '0064'
+title: 'Almacenar en caché los datos calculados que se utilizan con frecuencia'
+createdAt: 2024-02-14T12:02:04.619Z
+updatedAt: 2025-06-16T10:08:24.349Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0047'
+  - version: 2.0.0
+    idRef: '0062'
+  - version: 3.0.0
+    idRef: '0064'
+  - version: 4.0.0
+    idRef: '0016'
+  - version: 5.0.0
+    idRef: '0016'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 6.2 y 7.1
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      de datos poco volátiles, que requieren un cálculo y a los que se accede varias veces, no colocados en un sistema de caché
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando los cálculos de valores o datos son costosos en recursos, almacene los valores en caché si no cambian, para no repetir estas operaciones.
+Los sistemas de caché de tipo key-value store están diseñados para almacenar estos datos. Por lo general, se montan completamente en memoria RAM, lo que genera un gran ahorro de ciclos de CPU si los datos calculados se solicitan muy a menudo.
+
+## Ejemplo
+
+El número de contenidos (por ejemplo, productos) de una categoría se calcula cuando no se actualiza con mucha frecuencia. Almacenar el número de elementos de cada categoría permite ahorrar ciclos de CPU.
+
+Los tokens de acceso OAuth2 tienen una fecha de caducidad. Almacenar en caché el token y su fecha de caducidad evita llamadas innecesarias al servidor de autorización y la necesidad de revalidar el token.
+
+

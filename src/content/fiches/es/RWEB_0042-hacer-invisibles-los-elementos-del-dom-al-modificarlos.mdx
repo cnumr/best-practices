@@ -1,0 +1,57 @@
+---
+refID: '0042'
+title: 'Hacer invisibles los elementos del DOM al modificarlos'
+createdAt: 2024-02-14T11:36:36.985Z
+updatedAt: 2025-05-18T17:20:58.642Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0044'
+  - version: 2.0.0
+    idRef: '0044'
+  - version: 3.0.0
+    idRef: '0042'
+  - version: 4.0.0
+    idRef: '0044'
+  - version: 5.0.0
+    idRef: '0044'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de manipulaciones de un elemento del DOM sin que se vuelva invisible durante su modificación
+    maxValue: 1
+---
+
+## Descripción
+
+Cuando un elemento del DOM (Document Object Model) necesita ser modificado por varias propiedades, cada cambio de estilo o de contenido generará un repaint o un re?ow. Por lo tanto, suele ser más económico:
+ - hacer invisible el elemento (pasar la propiedad display a none) (1 re?ow);
+ - modificar todas las propiedades del elemento y hacerlo visible de nuevo (1 re?ow).
+
+Dos re?ow como máximo.
+
+## Ejemplo
+
+Proceder de la siguiente manera:
+```javascript
+var elem = document.getElementById('foo'); elem.style.display ='none'; // Genera 1 re?ow elem.style.width = '10em';
+elem.style.height ='auto';
+// ... otros cambios ...
+elem.style.display ='block'; // Genera 1 re?ow
+```
+
+Al final, se necesitan 2 re?ow en lugar de 6 o 7 potencialmente.
+
+

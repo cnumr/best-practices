@@ -1,0 +1,53 @@
+---
+refID: '4017'
+title: 'Cargar datos/código solo cuando sea/necesario'
+createdAt: 2024-02-14T14:06:40.334Z
+updatedAt: 2025-05-18T17:25:29.171Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4045'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0045'
+  - version: 5.0.0
+    idRef: '0045'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: >-
+      de los recursos cargados que no se utilizan inmediatamente.
+    maxValue: 0
+---
+
+## Descripción
+
+Por razones de rendimiento, puede ser tentador precargar todos los recursos posible cuando el usuario realiza una acción específica (incluida la navegación a otra página).
+
+Pero si esta acción no se lleva a cabo, estas precarizaciones no habrán servido más que para derrochar recursos.
+
+## Ejemplo
+
+Evitar `<link rel="prerender">`,
+así como todos los `rel="preload"`, `rel="Prefetch"`, `rel="preconnect"`, `rel="modulepreload"` y `rel="dns-Prefetch"` cuyo recurso no se utilizará en la página actual, o solo se utilizará en determinadas condiciones.
+
+Evitar la carga y almacenamiento en caché (o almacenamiento local) de datos de aplicaciones, como listas de valores y otras referencias, si no estamos absolutamente seguros de que se utilizarán.
+
+Por extensión, cortar el código JS, o incluso los CSS, por porciones (_chunks_) relativas a acciones particulares del usuario, y cargue estas porciones solo cuando sean necesarias.
+Esto es especialmente cierto para los SPA (Single Page Applications), donde cada pantalla (o eventualmente conjunto de pantallas) podrá ser así cargado solo a petición.
+
+

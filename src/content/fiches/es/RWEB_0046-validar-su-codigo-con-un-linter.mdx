@@ -1,0 +1,50 @@
+---
+refID: '0046'
+title: 'Validar su código con un Linter'
+createdAt: 2024-02-14T11:46:39.284Z
+updatedAt: 2025-05-18T17:15:20.857Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0035'
+  - version: 2.0.0
+    idRef: '0033'
+  - version: 3.0.0
+    idRef: '0046'
+  - version: 4.0.0
+    idRef: '0042'
+  - version: 5.0.0
+    idRef: '0042'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '2.6'
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de líneas de código fuente no validadas por herramientas como Eslint
+    maxValue: 0
+---
+
+## Descripción
+
+El analizador de calidad del código JSLint comprueba que la sintaxis JavaScript utilizada será comprendida por todos los navegadores.
+El código obtenido respeta así las restricciones sintácticas que permiten a los intérpretes ejecutar el código más fácilmente y por lo tanto más rápidamente. Entonces el procesador se utiliza menos tiempo.
+
+En desarrollos modernos, recomendamos añadir a su proceso de entrega diferentes herramientas que permitan garantizar la calidad de su código.
+
+## Ejemplo
+
+Por ejemplo, podemos utilizar:
+* [Eslint](https://eslint.org/) para el código JavaScript
+* [Stylelint](https://stylelint.io/) para vs hojas de estilo
+
+

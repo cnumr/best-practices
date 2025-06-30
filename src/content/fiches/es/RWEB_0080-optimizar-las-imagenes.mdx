@@ -1,0 +1,75 @@
+---
+refID: '0080'
+title: 'Optimizar las imágenes'
+createdAt: 2024-02-14T12:27:26.808Z
+updatedAt: 2025-05-30T09:55:55.494Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0021'
+  - version: 2.0.0
+    idRef: '0076'
+  - version: 3.0.0
+    idRef: '0080'
+  - version: 4.0.0
+    idRef: '0048'
+  - version: 5.0.0
+    idRef: '0048'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: '5.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+  - storage
+validations:
+  - rule: >-
+      de imágenes no optimizadas
+    maxValue: 0
+---
+
+## Descripción
+Las imágenes a menudo representan la mayoría de los bytes descargados, después de los videos y justo antes de las bibliotecas CSS y JavaScript.
+Por lo tanto, su optimización es crucial para reducir el ancho de banda consumido. El primer paso es elegir el formato ideal a sus necesidades de presentación.
+
+Las imágenes matriciales deben reservarse esencialmente a las fotos y a los elementos de la interfaz que no pueden ser reemplazados por iconos o estilos CSS.
+
+La elección del formato depende de las características de la imagen: blanco y negro o color, paleta de colores, necesidad de transparencia... Entre estas características, el hecho de poder degradar la imagen definitivamente (lossy) orienta más bien a los formatos `JPEG`, `JPEG XL`, `AVIF` o `webp`, mientras que una necesidad de transparencia y/o la imposibilidad de degradar la imagen (Lossless) orientará más bien hacia un formato `PNG` o `webp Lossless` (que soporta la transparencia).
+
+El peso de las imágenes se ve muy afectado por el formato que va a elegir: en promedio.
+Una imagen `.webp` será 30% más ligera que una imagen `.jpeg` o una imagen `.png`.
+Una imagen `.avif` será hasta un 20% más ligera que una imagen `.webp` y un 50% más ligera que una imagen `.jepg`.
+
+No olvide prestar atención a la compatibilidad de estos formatos de imagen en los navegadores. Una imagen `.webp` no será reconocido por un navegador antiguo, y no se mostrará. Para paliar este problema, es posible proporcionar al navegador varios formatos para la misma imagen.
+Algunos módulos de servidor (como [modPageSpeed](https://www.modpagespeed.com/) de google, disponible para Apache y NGINX) permiten incluso proporcionar la imagen ideal en relación con el navegador que llama al servidor.
+
+Muchas herramientas le ayudarán a minimizar el peso de las imágenes:
+ - [SQUOOSH](https://squoosh.app)
+ - [CLOUDINARY](https:///webspeedtest.cloudinary.com/)
+ - [ImageMagick](https://imagemagick.org/)
+ - [PngCrush](https://pmt.sourceforge.io/pngcrush/)
+ - JpegTran
+
+## Ejemplo
+En este ejemplo, el elemento `<picture>` del DOM indica al navegador que hay dos imágenes: una imagen `.webp` y una imagen `. jpg`, la predeterminada. El navegador decidirá qué imagen subir, si soporta el formato `.webp` descargará la imagen `image.webp` si no, descargará la imagen `image.jpg`
+
+```html
+<picture>
+	<source srcset="image.webp" type="image/webp">
+	<img src="image.jpg" alt="..." loading="lazy">
+</picture>
+```
+
+Para ir más lejos:
+ - https://web.dev/choose-theright-image-format/
+ - https://www.fasterize.com/fr/blog/webp-avif-compresión/
+
+

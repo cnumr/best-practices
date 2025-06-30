@@ -1,0 +1,46 @@
+---
+refID: '0099'
+title: 'Usar una caché HTTP'
+createdAt: 2024-02-14T13:04:57.471Z
+updatedAt: 2025-05-28T20:33:18.132Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0072'
+  - version: 2.0.0
+    idRef: '0103'
+  - version: 3.0.0
+    idRef: '0099'
+  - version: 4.0.0
+    idRef: '0073'
+  - version: 5.0.0
+    idRef: '0073'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+rgesn: NA
+lifecycle: 4-production
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      portadas no identificadas HTTP
+    maxValue: 0
+---
+
+## Descripción
+
+Los proxies reversos (Varnish, Squid o NGINX) están optimizados para servir contenido (páginas HTML, imágenes, etc.) de forma rápida, consumiendo el menor número posible de ciclos de CPU. Al evitar el uso inútil del servidor de aplicaciones, permiten utilizar una infraestructura más pequeña.
+
+## Ejemplo
+
+El uso de un proxy reverso especializado como Varnish reduce drásticamente el tiempo necesario para servir a las páginas dinámicas, al tiempo que aumenta la capacidad del CMS (Drupal, aquí) a entregar un gran número al mismo tiempo. También se constata que un caché generalista como APC no es adecuado (fuente: Asymptotix).
+
+

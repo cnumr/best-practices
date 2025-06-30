@@ -1,0 +1,48 @@
+---
+refID: '0034'
+title: 'No cambiar el tamaño de las imágenes en el navegador'
+createdAt: 2024-02-14T11:05:07.836Z
+updatedAt: 2025-06-15T12:06:47.310Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0093'
+  - version: 2.0.0
+    idRef: '0020'
+  - version: 3.0.0
+    idRef: '0034'
+  - version: 4.0.0
+    idRef: '0047'
+  - version: 5.0.0
+    idRef: '0047'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: >-
+      de imágenes redimensionadas en el navegador
+    maxValue: 0
+---
+
+## Descripción
+
+No cambie el tamaño de las imágenes usando los atributos HEIGHT y WIDTH en el código HTML. Este enfoque requiere que las imágenes se transfieran a su tamaño original, desperdiciando el ancho de banda y ciclos de CPU.
+
+## Ejemplo
+
+Una imagen de 350 x 300 píxeles codificada en PNG 24 pesa 41 KB. Redimensionada en HTML, la misma imagen mostrada en miniatura a 70 x 60 píxeles sigue pesando 41 KB, ¡mientras que no debería superar los 3 KB! 38 KB descargados cada vez para nada... Nota: El redimensionamiento realizado por el navegador también puede tener un efecto píxel en la visualización final de la imagen.
+
+La mejor solución es generar las imágenes en el tamaño al que se visualizan. Ya sea que lo haga manualmente usando un editor de imágenes, o el CMS tiene una rutina automática que generará las imágenes en el tamaño donde se llaman en la plantilla.
+
+

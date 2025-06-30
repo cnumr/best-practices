@@ -1,0 +1,46 @@
+---
+refID: '4035'
+title: 'Prefiriendo la paginación al desplazamiento infinito'
+createdAt: 2024-02-14T14:31:20.845Z
+updatedAt: 2025-05-29T10:47:48.452Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4013'
+  - version: 2.0.0
+    idRef: '000-'
+  - version: 3.0.0
+    idRef: '000-'
+  - version: 4.0.0
+    idRef: '0013'
+  - version: 5.0.0
+    idRef: '0013'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+rgesn: '4.2'
+environmental_impact: 3
+priority_implementation: 4
+moe: 4
+tiers: network
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: >-
+      de listas sin paginación clásica
+    maxValue: 10%
+---
+
+## Descripción
+
+Cuando se muestra una lista de productos, de artículos, en nuestro sitio, es tentador dar la posibilidad al visitante de ver todo simplemente desplazando la página cargando el contenido poco a poco.
+Este efecto de estilo generará el contenido para mostrarlo a medida que avanza. Por lo tanto, le pedirá al servidor los siguientes artículos/productos en cada "desplazamiento". Esto puede provocar problemas de rendimiento, de SEO y de accesibilidad web.
+
+Configura una paginación clásica con un potente sistema de filtro. El visitante encontrará más fácilmente el contenido que le interesa y los robots de indexación también.
+Este método facilita el cumplimiento de las Pautas de accesibilidad al contenido web (WCAG) (cf. https://www.w3.org/TR/WCAG22/").
+
+
