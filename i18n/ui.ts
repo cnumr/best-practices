@@ -23,7 +23,7 @@ export const ui = {
     'seo.image.alt': 'Directrices de buenas prácticas',
     'seo.noRobots': true,
     'last-update': 'Última actualización',
-    'Site web fièrement réalisé par': 'Sitio web hecho con orgullo por',
+    'Site web fièrement réalisé par': 'Sitio web hecho por',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Volver al principio de la página',
@@ -189,7 +189,7 @@ export const ui = {
     'seo.image.alt': 'Best practice guidelines',
     'seo.noRobots': true,
     'last-update': 'Last update',
-    'Site web fièrement réalisé par': 'Web site proudly made by',
+    'Site web fièrement réalisé par': 'Web site made by',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Return to top of page',
@@ -355,7 +355,7 @@ export const ui = {
     'seo.image.alt': 'Référentiel de bonnes pratiques',
     'seo.noRobots': true,
     'last-update': 'Dernière mise à jour',
-    'Site web fièrement réalisé par': 'Site web fièrement réalisé par',
+    'Site web fièrement réalisé par': 'Site web réalisé par',
 
     // src/components/BackToTop.astro
     'Retour en haut de page': 'Retour en haut de page',
