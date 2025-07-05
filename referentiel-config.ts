@@ -22,7 +22,7 @@ type RefConfig = (specificRef?: string) => {
 };
 
 export const getRefConfig: RefConfig = (specificRef) => {
-  const currentRef = specificRef || process.env.TINA_PUBLIC_REF_NAME || 'RWEB';
+  const currentRef = specificRef || process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
   const config = {
     i18n: {
       defaultLang: 'fr' as 'fr',
