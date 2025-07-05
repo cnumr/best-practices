@@ -10,11 +10,10 @@ module.exports = withNextPluginPreval({
   },
   // Configuration pour éviter les problèmes de build avec les routes API
   experimental: {
-    // Désactiver la génération statique pour les routes API
     appDir: true,
   },
   // Configuration pour Vercel
-  output: 'standalone',
+  distDir: '.next',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
