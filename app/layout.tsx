@@ -1,5 +1,3 @@
-import './globals.css';
-
 import { Metadata } from 'next';
 import { getRefConfig } from '../referentiel-config';
 import { ui } from '../i18n/ui';

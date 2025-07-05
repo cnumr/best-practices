@@ -1,3 +1,5 @@
+import '../globals.css';
+
 import Footer from '../../components/footer';
 import GlobalSearch from '../../components/search/global-search';
 import Header from '../../components/header';
