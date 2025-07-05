@@ -18,8 +18,10 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
         <ul className="flex flex-col items-center gap-4 lg:flex-row">
           <li>
             <span>
-              {process.env.TINA_PUBLIC_REF_NAME || 'RWEB'}©
-              {getRefConfig().refInformations.creationYear}-
+              {(process.env.NEXT_PUBLIC_REF_NAME === `REF_HOME`
+                ? t('seo.site_name')
+                : process.env.NEXT_PUBLIC_REF_NAME) || 'RWEB'}
+              ©{getRefConfig().refInformations.creationYear}-
               <span id="copyright">{new Date().getFullYear().toString()}</span>
             </span>
           </li>

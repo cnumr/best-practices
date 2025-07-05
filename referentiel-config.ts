@@ -1,7 +1,8 @@
 export const MESURE_ON_3 = 'use-3-grades';
 export const MESURE_ON_5 = 'use-5-grades';
 
-type RefConfig = (specificRef?: string) => {
+type RefConfig = {
+  isRoot: boolean;
   i18n: {
     defaultLang: 'fr';
     locales: string[];
@@ -15,15 +16,16 @@ type RefConfig = (specificRef?: string) => {
     >;
   };
   refInformations: {
-    currentVersion: string;
+    currentVersion: string | null;
     creationYear: number;
   };
   featuresEnabled: { [key: string]: any };
 };
 
-export const getRefConfig: RefConfig = (specificRef) => {
-  const currentRef = specificRef || process.env.TINA_PUBLIC_REF_NAME || 'RWEB';
-  const config = {
+export const getRefConfig = (specificRef?: string): RefConfig => {
+  const currentRef = specificRef || process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
+  const config: RefConfig = {
+    isRoot: false,
     i18n: {
       defaultLang: 'fr' as 'fr',
       locales: ['fr', 'en', 'es'],
@@ -44,6 +46,7 @@ export const getRefConfig: RefConfig = (specificRef) => {
     },
     featuresEnabled: {
       lexique: false,
+      fiches: true,
       linkToPersonas: false,
       priority_implementation: MESURE_ON_3,
       environmental_impact: MESURE_ON_3,
@@ -106,6 +109,37 @@ export const getRefConfig: RefConfig = (specificRef) => {
       config.featuresEnabled.rgesnField = true;
       break;
 
+    case 'REF_HOME':
+      config.isRoot = true;
+      config.i18n.locales = ['fr', 'en', 'es'];
+      config.i18n.languages = {
+        fr: '🇫🇷 Français',
+        en: '🇬🇧 English',
+        es: '🇪🇸 Español',
+      };
+      config.i18n.refTitles = {
+        es: { short: 'Repositorios de Green IT', long: ' para Ecodiseño web' },
+        en: { short: 'Green IT Frameworks', long: ' for Web eco-design' },
+        fr: {
+          short: 'Référentiels Green IT',
+          long: " pour l'Ecoconception web",
+        },
+      };
+      config.refInformations = {
+        currentVersion: null,
+        creationYear: 2012,
+      };
+      config.featuresEnabled.lexique = false;
+      config.featuresEnabled.fiches = false;
+      config.featuresEnabled.linkToPersonas = false;
+      config.featuresEnabled.priority_implementation = MESURE_ON_5;
+      config.featuresEnabled.environmental_impact = MESURE_ON_5;
+      config.featuresEnabled.moe = true;
+      config.featuresEnabled.tiers = true;
+      config.featuresEnabled.scope = false;
+      config.featuresEnabled.rgesnField = true;
+      break;
+
     default:
       console.error(`TINA_PUBLIC_REF_NAME NOT CONFIGURED!`);
       break;
@@ -116,5 +150,5 @@ export const getRefConfig: RefConfig = (specificRef) => {
 
 export const getCurrentRef = () => {
   // @ts-ignore
-  return process.env.TINA_PUBLIC_REF_NAME;
+  return process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
 };

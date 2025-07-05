@@ -111,6 +111,7 @@ export const FicheMetaDisplay: FunctionComponent<
             collectionTypeMeta="shortName"
             fontSize="sm"
             displayTitle
+            link={getRefConfig().featuresEnabled.linkToPersonas}
           />
         </ul>
         <div className="border-t-2 border-neutral-transparent md:border-r-2 lg:border-t-2"></div>
