@@ -33,6 +33,7 @@ TinaCMS, pour offrir la possibilité de gérer le contenu du site en ligne, néc
 - `MONGODB_URI` : URI de la base de données MongoDB.
 - `GITHUB_PERSONAL_ACCESS_TOKEN` : Token GitHub pour accéder au dépôt.
 - `TINA_PUBLIC_REF_NAME` : Nom du type de référentiel géré par TinaCMS (cela active certaines features ou liste de valeurs) `RWEB`, `RWP`, `REF_HOME` (pour le moment).
+- `NEXT_PUBLIC_REPO_URL` : URL du dépôt GitHub.
 - `TINA_PUBLIC_IS_LOCAL` : `false`
 - `NEXTAUTH_SECRET` : Clé secrète pour NextAuth (run `openssl rand -hex 16` pour générer une clé).
 
