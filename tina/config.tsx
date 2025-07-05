@@ -1,14 +1,14 @@
+import { LocalAuthProvider, defineConfig } from 'tinacms';
 import {
-  UsernamePasswordAuthJSProvider,
   TinaUserCollection,
+  UsernamePasswordAuthJSProvider,
 } from 'tinacms-authjs/dist/tinacms';
-import { defineConfig, LocalAuthProvider } from 'tinacms';
 
 import fiches from './collections/fiches';
-import lexique from './collections/lexique';
-import personas from './collections/personas';
 import home from './collections/home';
+import lexique from './collections/lexique';
 import mentionsLegales from './collections/mentionsLegales';
+import personas from './collections/personas';
 
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === 'true';
 
