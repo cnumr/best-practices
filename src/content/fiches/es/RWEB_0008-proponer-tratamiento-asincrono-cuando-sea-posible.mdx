@@ -1,0 +1,52 @@
+---
+refID: '0008'
+title: 'Proponer tratamiento asíncrono cuando sea posible'
+createdAt: 2024-02-14T09:41:02.130Z
+updatedAt: 2025-05-29T07:14:53.709Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0112'
+  - version: 2.0.0
+    idRef: '0008'
+  - version: 3.0.0
+    idRef: '0008'
+  - version: 4.0.0
+    idRef: '0007'
+  - version: 5.0.0
+    idRef: '0007'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - ram
+  - network
+  - requests
+validations:
+  - rule: >-
+      de tratamientos síncronos que tardan más de un minuto
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando la interacción con el usuario induce un procesamiento pesado y largo en el lado del servidor, ofrecer un tratamiento asíncrono cuando sea posible.
+La idea es animar al usuario a iniciar el tratamiento y luego volver a conectarse cuando el tratamiento se haya completado sin esperar a que el dispositivo termine de ejecutarse;
+por ejemplo, a través de la recepción de un correo electrónico que contiene un enlace.
+Este enfoque permite realizar tratamientos por lotes (batch), a menudo más eficientes en recursos que los tratamientos síncronos sobre la marcha.
+Esto libera los servidores de presentación, que pueden soportar otros usuarios de Internet mientras el procesamiento se realiza en modo asíncrono en el lado del servidor.
+También es más fácil suavizar la carga del servidor responsable del tratamiento, lo que permite una mejor mutualización de servidores y, por tanto, menos servidores.
+
+## Ejemplo
+
+En el caso de un servicio en línea de conversión de documentos de oficina, hacer que el usuario deposite sus archivos de una sola vez, y luego notificarle por correo electrónico cuando el procesamiento haya terminado. Para optimizar el proceso, todos los archivos se pueden agrupar y comprimir en un archivo.
+
+

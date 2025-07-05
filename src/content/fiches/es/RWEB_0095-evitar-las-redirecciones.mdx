@@ -1,0 +1,56 @@
+---
+refID: '0095'
+title: 'Evitar las redirecciones'
+createdAt: 2024-02-14T12:56:03.366Z
+updatedAt: 2025-05-16T12:05:28.886Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0045'
+  - version: 2.0.0
+    idRef: '0097'
+  - version: 3.0.0
+    idRef: '0095'
+  - version: 4.0.0
+    idRef: '0112'
+  - version: 5.0.0
+    idRef: '0112'
+people: TBDs
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 6-support
+rgesn: '6.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - network
+  - storage
+  - requests
+validations:
+  - rule: >-
+      de redirecciones
+    maxValue: 1
+---
+
+## Descripción
+
+Las redirecciones disminuyen el tiempo de respuesta, al tiempo que consumen recursos inútiles. Por lo tanto, hay que evitarlos lo mas posible. Estas redirecciones pueden tener lugar en diferentes niveles: código HTML, código JavaScript, servidor HTTP y servidor de aplicaciones (PHP, etc.).
+
+## Ejemplo
+
+A nivel del servidor HTTP (Apache, en este caso), una redirección consiste en habilitar una reescritura sistemática de las URL a través del archivo
+.htaccess:
+```apacheconf
+<ifmodule mod_alias. c>
+	Redirect permanente http:///old_web.es http://new.web.es/
+</ifmodule>
+```
+Es mejor reemplazar manualmente las direcciones estáticas integradas en las páginas web
+
+
+

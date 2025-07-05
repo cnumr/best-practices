@@ -1,0 +1,47 @@
+---
+refID: '0011'
+title: Prefer custom solutions to CMS
+createdAt: 2025-06-09T13:08:26.535Z
+updatedAt: 2025-06-16T10:19:41.823Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0002'
+  - version: 2.0.0
+    idRef: '0012'
+  - version: 3.0.0
+    idRef: '0011'
+  - version: 4.0.0
+    idRef: '0022'
+  - version: 5.0.0
+    idRef: '0022'
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: 3.1 and 6.5
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - ram
+validations:
+  - rule: extensions of a site using a CMS
+    maxValue: '3'
+---
+
+## Description
+
+Use a framework or custom development to benefit from greater freedom in optimizing certain processes.
+
+CMS are more restrictive, and require more resources to achieve their main objective: flexibility. What's more, using too many extensions can consume a lot of resources and slow down the site.
+
+However, a very light, modular CMS such as a static site generator (Jekyll, Hugo, Gatsby, Eleventy, etc.) administered by a decoupled or flat-file CMS (Strapi, Contentful, Flex-type, etc.) can save development time.
+
+## Example
+
+In the case of a showcase site whose information is rarely updated, opt for a static website while allowing a few man-days for updating. If a feature requires user interaction, opt for customized development.

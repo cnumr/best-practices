@@ -1,0 +1,55 @@
+---
+refID: '0049'
+title: 'Almacenar en caché los objetos a los que se accede con frecuencia en JavaScript'
+createdAt: 2024-02-14T11:48:46.183Z
+updatedAt: 2025-05-30T14:02:12.501Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0033'
+  - version: 2.0.0
+    idRef: '0036'
+  - version: 3.0.0
+    idRef: '0049'
+  - version: 4.0.0
+    idRef: '0053'
+  - version: 5.0.0
+    idRef: '0053'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: 4.3 y 6.2
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de datos constantes (o no volátiles) recuperados varias veces sin ser almacenados en caché
+    maxValue: 0
+---
+
+## Descripción
+
+El acceso al DOM (Document Object Model) es costoso en términos de recursos de procesador (ciclos de CPU). Así, cuando use el mismo elemento del DOM varias veces desde JavaScript, almacene su referencia en una variable para no volver a navegar por el DOM para ese mismo elemento.
+
+## Ejemplo
+
+No escriba lo siguiente:
+```javascript
+document.getElementById('menú'). property1 = 'foo'; document.getElementById('menú').property2 = 'bar';
+```
+
+sino más bien:
+```javascript
+var mmenu = document.getElementById('menú');
+menú.property1 = 'foo';
+menú.property2 = 'Bar'
+```
+
+

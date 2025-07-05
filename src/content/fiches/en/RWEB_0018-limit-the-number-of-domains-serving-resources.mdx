@@ -1,0 +1,48 @@
+---
+refID: '0018'
+title: Limit the number of domains serving resources
+createdAt: 2025-05-28T19:12:43.401Z
+updatedAt: 2025-05-28T19:12:43.401Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0170'
+  - version: 2.0.0
+    idRef: '0055'
+  - version: 3.0.0
+    idRef: '0018'
+  - version: 4.0.0
+    idRef: '0081'
+  - version: 5.0.0
+    idRef: '0081'
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+saved_resources:
+  - requests
+validations:
+  - rule: domains serving the resources
+    maxValue: '5'
+---
+
+## Description
+
+When a website or online service hosts the components of a web page on several domains, the browser must establish an HTTP connection with each of these domains. Once the HTML page has been retrieved, the browser calls the resources as it traverses the DOM. This can lengthen the waiting time before the page is operational. Wherever possible, therefore, all resources should be grouped together in a single domain.
+
+The only exception to this rule is to host static resources (style sheets, images, etc.) on a separate domain (see best practice no. 81), to avoid having to transport unnecessary cookies. This reduces response times and bandwidth consumption.
+
+## Example
+
+For a high-traffic corporate website, two domains are preferred:
+
+\- the application server on www\.domain.tld;
+
+\- the cookie-less media server on media.domain.tld.
+
+This limits the number of domains and avoids needlessly transporting a cookie for each HTTP GET on a static resource.

@@ -1,0 +1,46 @@
+---
+refID: '0088'
+title: 'Adaptar la calidad del servicio y el nivel de disponibilidad'
+createdAt: 2024-02-14T12:40:33.994Z
+updatedAt: 2025-05-23T16:50:34.082Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0501'
+  - version: 2.0.0
+    idRef: '0086'
+  - version: 3.0.0
+    idRef: '0088'
+  - version: 4.0.0
+    idRef: '0090'
+  - version: 5.0.0
+    idRef: '0090'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.1, 3.2, 8.9'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - electricity
+validations:
+  - rule: >-
+      aumento del nivel de disponibilidad cuando el nivel actual es suficiente
+    maxValue: 0
+---
+
+## Descripción
+
+La calidad del servicio (QoS para Quality of Service) y el nivel de disponibilidad (SLA para Service Level Agreement) deben determinarse con los usuarios del sitio web o del servicio en línea. Por ejemplo, no es necesario alojar el servicio en un centro de datos de muy alta disponibilidad si los usuarios aceptan una tasa de disponibilidad inferior o igual al 99 % para un servicio no crítico. En efecto, a eficiencia energética equivalente, cuanto más disponible es el centro de datos que aloja el sitio o servicio en línea, mas alta es su huella medioambiental global, en particular porque todo es redundante y activo: dos cadenas de alimentación, dos líneas de producción y distribución de frío, etc.
+Pudiéramos decir, hay que evitar la sobrecalidad. En cambio, es aconsejable aplicar una calidad de servicio en función de los recursos y la tasa de disponibilidad necesarios y suficientes.
+
+## Ejemplo
+
+A pesar de sus cientos de millones de usuarios, los gigantes de la Web no ofrecen un nivel de disponibilidad muy alto. Los datos se duplican en al menos otro servidor en otro centro de datos. Si un servidor falla, el usuario se enruta automáticamente al servidor de copia de seguridad. Esta acción puede tardar unos segundos, lo cual es bastante aceptable y casi imperceptible para el usuario final.
+
+

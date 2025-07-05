@@ -1,0 +1,46 @@
+---
+refID: '0094'
+title: 'Hospedar recursos (CSS/JS) en un dominio sin cookies'
+createdAt: 2024-02-14T12:53:29.289Z
+updatedAt: 2025-05-28T20:44:10.975Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0073'
+  - version: 2.0.0
+    idRef: '0096'
+  - version: 3.0.0
+    idRef: '0094'
+  - version: 4.0.0
+    idRef: '0080'
+  - version: 5.0.0
+    idRef: '0080'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de dominios que sirven recursos estáticos CON cookie
+    maxValue: 1
+---
+
+## Descripción
+
+Las imágenes, hojas de estilo CSS y archivos JavaScript deben estar alojados en un dominio sin cookies. Esto evita que el navegador envíe una cookie para cada recurso... cuando es inútil. Esto se debe a que, aunque se transfiere a cada solicitud HTTP, la cookie
+es inútil para el contenido estático, ya que sirve para mantener un estado entre el navegador del internauta y el servidor de aplicaciones remoto gracias a los identificadores contenidos en el archivo de texto. Por lo tanto, es mejor almacenar este tipo de contenido en un nombre de dominio específico, por ejemplo static.mydomain.com.
+
+## Ejemplo
+
+Los líderes web utilizan un dominio separado para servir a los recursos estáticos que no requieren cookies. Yahoo! utiliza por ejemplo el dominio yimg.com, YouTube el dominio ytimg.com y Amazon el dominio images-amazon.com.
+
+

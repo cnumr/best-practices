@@ -1,0 +1,50 @@
+---
+refID: '0038'
+title: 'Usar la recarga parcial de un área de contenido'
+createdAt: 2024-02-14T11:26:28.701Z
+updatedAt: 2025-05-18T16:53:11.736Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0040'
+  - version: 2.0.0
+    idRef: '0049'
+  - version: 3.0.0
+    idRef: '0038'
+  - version: 4.0.0
+    idRef: '0034'
+  - version: 5.0.0
+    idRef: '0034'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      de zonas de contenido que pueden actualizarse parcialmente, pero no lo son
+    maxValue: 0%
+---
+
+## Descripción
+
+Si su página web tiene una o más áreas de contenido que requieren una alta frecuencia de actualización, entonces le recomendamos que recargue solo estas áreas  y no toda la página.
+Para ello, puede utilizar varias técnicas de JavaScript comúnmente llamadas AJAX pero que también pueden utilizar un Service Worker, un Web Component o un desarrollo personalizado.
+
+Incluso es posible omitir estas partes en la llamada HTTP de la página para hidratarla con estas áreas dinámicas en JavaScript, lo que algunos llaman "islas de componentes" o "arquitectura de islas". El interés es poder conservar una solución de caché para la página "container" y no recargar más que las "islas" de contenido que lo requieran.
+
+## Ejemplo
+
+Los sitios de noticias utilizan muy a menudo este procedimiento, que les permite identificar claramente las zonas que necesitan actualizarse rápidamente (noticias de última hora, datos meteorológicos, cotizaciones de la Bolsa, resultados deportivos, etc.).
+
+

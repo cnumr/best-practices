@@ -1,0 +1,43 @@
+---
+refID: '0102'
+title: Caching Ajax responses
+createdAt: 2025-05-28T16:53:13.088Z
+updatedAt: 2025-05-28T16:53:13.088Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0091'
+  - version: 2.0.0
+    idRef: '0101'
+  - version: 3.0.0
+    idRef: '0102'
+  - version: 4.0.0
+    idRef: '0071'
+  - version: 5.0.0
+    idRef: '0071'
+people: TBD
+responsible:
+  - {}
+lifecycle: 4-production
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: of uncached Ajax responses
+    maxValue: 10%
+---
+
+## Description
+
+Ajax responses that will remain unchanged for the foreseeable future do not need to be requested from the server again. It is therefore worth caching them to save bandwidth.
+
+## Example
+
+If an Ajax request returns a list of city names, contact names or any or any other non-calculated element, these responses should be cached cached on the client (browser) side so as not to generate another request to the server.

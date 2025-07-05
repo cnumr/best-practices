@@ -1,0 +1,51 @@
+---
+refID: '0043'
+title: 'Reducir al máximo el repaint (appearence) y el reflow (layout)'
+createdAt: 2024-02-14T11:38:52.348Z
+updatedAt: 2025-05-30T13:54:36.391Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0042'
+  - version: 2.0.0
+    idRef: '0045'
+  - version: 3.0.0
+    idRef: '0043'
+  - version: 4.0.0
+    idRef: '0051'
+  - version: 5.0.0
+    idRef: '0051'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de modificaciones que no afectan a la maquetación y dan lugar a un repaint (ej.: color, fondo, visibilidad)
+    maxValue: 1
+---
+
+## Descripción
+
+El repaint es el cambio de apariencia de un elemento del DOM (Document Object Model), mientras que el re?ow es el proceso de cambiar o recalcular la posición de los elementos en el DOM. Ambas operaciones son costosas en recursos, sobre todo en ciclos de CPU: por lo tanto, hay que evitar activarlas.
+
+## Ejemplo
+
+Para evitar los repaint, no cambie las propiedades estilísticas de un elemento (color de fondo, estilo de borde, color del texto, tamaño, etc.).
+
+Para evitar el re?ow, hay que limitar los cambios en las propiedades de posición, tamaño, tipo de posicionamiento, contenido, etc. Esta sugerencia es válida para determinados elementos HTML como tablas, cuyo re?ow puede requerir hasta tres veces más tiempo que un elemento equivalente con un block display.
+
+Para ir más lejos:
+https://developers.google.com/speed/articles/reflow
+
+
+

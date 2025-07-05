@@ -1,0 +1,52 @@
+---
+refID: '0043'
+title: Minimize repaints (appearance) and reflows (layout)
+createdAt: 2025-06-09T13:35:53.104Z
+updatedAt: 2025-06-15T12:18:50.987Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0042'
+  - version: 2.0.0
+    idRef: '0045'
+  - version: 3.0.0
+    idRef: '0043'
+  - version: 4.0.0
+    idRef: '0051'
+  - version: 5.0.0
+    idRef: '0051'
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 5
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      modifications not affecting the layout and causing a repaint (ex: color,
+      background, visibility)
+    maxValue: '1'
+---
+
+## Description
+
+Repaint refers to DOM elements change of appearance, while reflow refers to change / recalculation of their position.
+
+Both of these operations are resource-intensive, especially in terms of CPU cycles, it is therefore necessary to avoid triggering them when possible.
+
+These operations generally originate from the use of JavaScript, particularly to manipulate the DOM.
+
+## Exemple
+
+Do not modify elements style properties (background color, border style, text color, size, etc.) to avoid repaints.
+
+Limit changes of properties like position, dimension, type of positioning, content, ( etc.) to avoid reflows.
+This is particularly relevant for some HTML elements like tables, whose reflows might require up to three times more  time than other elements.
+
+For more information :
+[https://developers.google.com/speed/articles/reflow](https://developers.google.com/speed/articles/reflow)

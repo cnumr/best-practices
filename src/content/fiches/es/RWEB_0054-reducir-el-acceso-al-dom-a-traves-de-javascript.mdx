@@ -1,0 +1,54 @@
+---
+refID: '0054'
+title: 'Reducir el acceso al DOM a través de JavaScript'
+createdAt: 2024-02-14T11:51:06.292Z
+updatedAt: 2025-05-30T15:38:37.061Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0032'
+  - version: 2.0.0
+    idRef: '0042'
+  - version: 3.0.0
+    idRef: '0054'
+  - version: 4.0.0
+    idRef: '0056'
+  - version: 5.0.0
+    idRef: '0056'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      de accesos a un elemento HTML sin pasar por una variable local
+    maxValue: 0
+---
+
+## Descripción
+
+El acceso al DOM (Document Object Model) vía JavaScript es un procedimiento pesado que consume muchos ciclos de procesador (CPU). Hay que reducir al mínimo el acceso.
+
+Para ello, puede asignar el nodo a variables que reutilizará durante el ciclo de vida de la aplicación, lo que evita que se vuelva a recorrer el árbol cada vez que se manipule el documento.
+
+También es posible utilizar bibliotecas de tipo «Shadow DOM», que optimizan las modificaciones del árbol mediante un sistema por lotes.
+
+## Ejemplo
+
+Para obtener más información, consulte el proyecto de Shadow DOM del W3C:
+https://www.w3.org/TR/shadow-dom/ 
+y las recomendaciones del W3C para reducir el acceso al DOM a través de JavaScript:
+https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
+
+
+

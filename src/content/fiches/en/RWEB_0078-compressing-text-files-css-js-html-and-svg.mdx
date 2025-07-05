@@ -1,0 +1,56 @@
+---
+refID: '0078'
+title: 'Compressing text files: CSS, JS, HTML and SVG'
+createdAt: 2025-05-28T18:12:25.705Z
+updatedAt: 2025-05-28T18:12:25.705Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0086'
+  - version: 2.0.0
+    idRef: '0080'
+  - version: 3.0.0
+    idRef: '0078'
+  - version: 4.0.0
+    idRef: '0076'
+  - version: 5.0.0
+    idRef: '0076'
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '6.3'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: 'uncompressed CSS, JavaScript, HTML and SVG files'
+    maxValue: '0'
+---
+
+## Description
+
+To limit bandwidth usage and improve loading times, compress text files: CSS, JS, HTML and SVG. The algorithm allows resources to be compressed on the fly before being sent to clients.
+
+More recently, `BROTLI` has been popularized with enhanced performance. It is supported by all popular browsers.
+
+## Example
+
+To use `BROTLI` in NGinx, simply add the following configuration : 
+
+```
+# for compressing responses on - the - fly
+load_module modules / ngx_http_brotli_filter_module.so;
+# for serving pre - compressed files
+load_module modules / ngx_http_brotli_static_module.so;
+http {
+      server {
+      brotli on;
+      #...
+      }
+}
+```

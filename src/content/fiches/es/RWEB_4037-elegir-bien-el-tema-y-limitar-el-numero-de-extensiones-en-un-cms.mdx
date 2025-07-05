@@ -1,0 +1,58 @@
+---
+refID: '4037'
+title: 'Elegir bien el tema y limitar el número de extensiones en un CMS'
+createdAt: 2024-02-14T14:34:26.597Z
+updatedAt: 2025-05-27T16:30:20.983Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4068'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0068'
+  - version: 5.0.0
+    idRef: '0068'
+people: TBDs
+responsible:
+  - responsible: src/content/personas/fr/codeuseur-developpeuser.mdx
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: network
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: >-
+      extensiones
+    maxValue: 12
+---
+
+## Descripción
+
+Al utilizar un CMS, la elección del tema es primordial.
+Al instalar tu tema, añade extensiones y a veces integra un constructor de páginas.
+Las características proporcionadas a menudo están más allá de sus necesidades reales.
+Cada extensión agrega sus datos a la base de datos, archivos css y js, sin contar el número de archivos almacenados en el servidor para que funcione. Dependiendo de la calidad de desarrollo, los activos adicionales pueden ser pesados y/o redundantes.
+
+Esto causa una:
+- aumento del número de solicitudes
+- aumento del peso de las páginas
+- aumento del tiempo de tramitación de las peticiones internas
+- Complejidad de la administración de sus contenidos
+
+## Ejemplo
+
+Un tema todo en uno o que integra un constructor de páginas puede agregar una característica para poner deslizadores en sus artículos o ultra personalizar sus botones de acción, o le permite integrar testimonios o crear un portafolio cuando no tiene previsto integrar ninguno en sus contenidos.
+Atención también a las incompatibilidades de algunas extensiones.
+
+Prefiera un tema simple donde se encuentra lo esencial, y luego agregue una característica reflexiva cuando sea necesario.
+
+

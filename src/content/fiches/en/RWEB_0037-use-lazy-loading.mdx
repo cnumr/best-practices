@@ -1,0 +1,51 @@
+---
+refID: '0037'
+title: Use lazy loading
+createdAt: 2025-06-09T13:34:10.388Z
+updatedAt: 2025-06-15T12:27:48.815Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '1010'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '0037'
+  - version: 4.0.0
+    idRef: '0050'
+  - version: 5.0.0
+    idRef: '0050'
+people: '-'
+responsible: []
+lifecycle: 3-developement
+rgesn: '6.5'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: >-
+      images, iframes, and videos declared without a lazy loading attribute and
+      below the initial viewport is
+    maxValue: '0'
+---
+
+## Description
+
+When a user doesn't view all the web al once, all resources (images, videos, iframes, etc.) located outside the visible area, below the fold, are loaded unnecessarily. Avoid this by using lazy loading, which implies loading an element only when its location becomes visible on the screen.
+
+In HTML5, you can add a loading attribute to your images and iframes so that the browser only loads the resources that appear on the screen.
+
+## Exemple
+
+The image and iframe will be loaded automatically by the browser: if the image should appear on screen, it will be downloaded and displayed, but it will not be if it is located below the fold.
+
+```html
+<img src="image.jpg" alt="..." loading="lazy">
+<iframe src="video-player.html" title="..." loading="lazy"></iframe>
+```

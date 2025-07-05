@@ -1,0 +1,41 @@
+---
+refID: '0094'
+title: Host static resources on a cookie-free domain
+createdAt: 2025-05-28T18:43:38.651Z
+updatedAt: 2025-05-28T18:43:38.651Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0073'
+  - version: 2.0.0
+    idRef: '0096'
+  - version: 3.0.0
+    idRef: '0094'
+  - version: 4.0.0
+    idRef: '0080'
+  - version: 5.0.0
+    idRef: '0080'
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+validations:
+  - rule: application resources/data not stored on a cloud solution
+    maxValue: '0'
+---
+
+## Description
+
+To reduce the amount of storage space required for the resources of a website or online service, it can be interesting to use cloud computing solutions. In this way, you don't monopolize resources unnecessarily, while still benefiting from an elastic solution. As you don't want to multiply domains (see best practice no. 82), the simplest solution is to group all static resources on a single online storage service. Make sure you select the most responsible cloud provider possible.
+
+## Example
+
+Most of the time, it's more efficient to use Amazon's S3 storage service to store data than to add new hard disks to existing servers.

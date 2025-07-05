@@ -1,0 +1,66 @@
+---
+refID: '4003'
+title: 'Evitar la reproducción y carga automática de vídeos y sonidos'
+createdAt: 2024-02-14T13:42:06.893Z
+updatedAt: 2025-05-19T20:23:20.833Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4106'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0106'
+  - version: 5.0.0
+    idRef: '0106'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 5-utilization
+rgesn: '4.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+  - requests
+  - ram
+  - storage
+validations:
+  - rule: >-
+      de elementos `<vídeo>` o `<audio>` sin un atributo `preload="none"` o `Autoplay`
+    maxValue: 0
+---
+
+## Descripción
+
+La activación automática de los vídeos y de los sonidos (auto play) durante la carga de las páginas web implica el uso de recursos en cada parte (terminal, red, centro de datos).
+En muchos casos, la reproducción automática no es necesaria.
+Por lo tanto, atrae la atención del usuario y puede separarlo del servicio que se solicitaba.
+Asi, estas lecturas deben hacerse, en la medida de lo posible, a petición del usuario, sin el atributo `Autoplay` en las etiquetas `<video>` o `<audio>`. 
+
+Además, incluso si no se activa el Autoplay, algunas partes del vídeo o archivo de audio pueden descargarse. 
+Si el usuario no inicia la reproducción del vídeo, estos datos se descargarán inutilmente.
+Se debe forzar al navegador a no precargar nada definiendo el valor del atributo `preload` de las etiquetas `<video>` o `<audio>` a `none`.
+
+## Ejemplo
+
+Video:
+
+```html
+<video src="fichiervideo.webm" preload="none"></video>
+```
+
+Audio:
+
+```html
+<audio controls src="fichereaudio.mp3" preload="none"></audio>
+```
+
+

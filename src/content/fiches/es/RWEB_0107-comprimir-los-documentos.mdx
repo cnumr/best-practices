@@ -1,0 +1,52 @@
+---
+refID: '0107'
+title: 'Comprimir los documentos'
+createdAt: 2024-02-14T13:21:14.875Z
+updatedAt: 2025-05-19T20:31:21.887Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0097'
+  - version: 2.0.0
+    idRef: '0108'
+  - version: 3.0.0
+    idRef: '0107'
+  - version: 4.0.0
+    idRef: '0108'
+  - version: 5.0.0
+    idRef: '0108'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: '5.2, 5.4, 5.6'
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+  - storage
+validations:
+  - rule: >-
+      de documentos sin comprimir
+    maxValue: 0
+---
+
+## Descripción
+
+Comprimir todos los documentos que se pueden descargar desde una página web, a menos que la compresión no aporte una ganancia evidente (por ejemplo, caso de un PDF perfectamente optimizado para la Web).
+
+## Ejemplo
+
+Un documento en formato DOC con un peso de 7,8 MB solo pesa 5,5 MB cuando se comprime, lo que supone una ganancia del 30 % (compresión WinZip predeterminada).
+Tipos de archivos de escritorio que se pueden comprimir fácilmente:
+ - documentos resultantes de un tratamiento de textos (.doc, .docx, .rtf, .txt, etc.);
+ - documentos de hoja de cálculo (.xls, .xslx, etc.);
+ - presentaciones (.ppt, .pptx, etc.);
+ - documentos PDF;
+ - contenidos multimedia (imágenes, audio y vídeo).
+
+

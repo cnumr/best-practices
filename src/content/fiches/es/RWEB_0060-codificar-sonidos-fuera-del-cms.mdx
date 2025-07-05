@@ -1,0 +1,51 @@
+---
+refID: '0060'
+title: 'Codificar sonidos fuera del CMS'
+createdAt: 2024-02-14T11:57:39.232Z
+updatedAt: 2025-06-04T21:28:35.334Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0096'
+  - version: 2.0.0
+    idRef: '0060'
+  - version: 3.0.0
+    idRef: '0060'
+  - version: 4.0.0
+    idRef: '0104'
+  - version: 5.0.0
+    idRef: '0104'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+  - storage
+validations:
+  - rule: >-
+      de archivos de sonido codificados directamente por el CMS
+    maxValue: 0
+---
+
+## Descripción
+
+Adaptar y optimizar los sonidos fuera del sitio web. Esta medida ahorra mucho ancho de banda y aliviará la CPU y la memoria RAM, ya que un servidor web no está optimizado para la (re)codificación de archivos de audio.
+
+## Ejemplo
+
+Si el sonido añadido directamente en el CMS pesa 7 MB, se ahorrará:
+ - 7 MB de ancho de banda durante el envío;
+ - 100 KB al escuchar el resultado;
+ - 6,9 MB de almacenamiento en el disco duro del servidor.
+
+

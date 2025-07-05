@@ -1,0 +1,55 @@
+---
+refID: '0006'
+title: "Use the «\_mobile first» strategy"
+createdAt: 2025-06-09T12:52:01.703Z
+updatedAt: 2025-06-15T12:57:22.727Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0006'
+  - version: 2.0.0
+    idRef: '0007'
+  - version: 3.0.0
+    idRef: '0006'
+  - version: 4.0.0
+    idRef: '0004'
+  - version: 5.0.0
+    idRef: '0004'
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: '2.5'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - storage
+validations:
+  - rule: designs not using the « mobile first » strategy
+    maxValue: '0'
+---
+
+## Description
+
+During the specification and design phases, it is recommended to consider the functional and UX limitations of a mobile device (random network, small screen, etc.). When justified (for example, by significant productivity gains, as with an email application), a version for large screens can be considered.
+
+During implementation, various techniques can be implemented, such as adaptive loading, media queries (particularly in the media attributes of `<link>` for CSS style sheet selection), the `srcset` and `sizes` attributes of `<img>`, and the `<source>` sub-elements of `<picture>`, `<video>`, and `<audio>`. \
+\
+It is also possible to retrieve this information via JavaScript API to potentially load additional code and/or content dynamically. Using server-side user-agent detection is strongly discouraged by web stakeholders.
+
+Using these different techniques helps avoid loading content that would be useless or unusable on a terminal that does not have the required capabilities.
+
+## Example
+
+When defining the application, the team determined that all features could be implemented in a mobile-first manner. However, two features related to the dashboard and status visualization could be much more comfortable if they fully exploited a large screen.
+
+The team decided to use a JavaScript library to load optimized screens if the user had a sufficient screen size.\
+\
+Sources
+
+* [https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints)
+* [https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)

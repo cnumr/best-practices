@@ -1,0 +1,55 @@
+---
+refID: '0026'
+title: 'Utilizar notaciones CSS abreviadas'
+createdAt: 2024-02-14T10:47:59.440Z
+updatedAt: 2024-07-04T21:32:45.216Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0015'
+  - version: 2.0.0
+    idRef: '0029'
+  - version: 3.0.0
+    idRef: '0026'
+  - version: 4.0.0
+    idRef: '-'
+  - version: 5.0.0
+    idRef: '0118'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de calificaciones CSS no abreviadas
+    maxValue: 0%
+---
+
+## Descripción
+
+Utilizar calificaciones CSS abreviadas para reducir el peso de la hoja de estilos.
+
+## Ejemplo
+
+No escriba lo siguiente:
+```css
+margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;
+```
+sino más bien:
+```css
+margin:1em 0 2em 0.5em;
+```
+Para ir más lejos:
+ - https://www.w3.org/TR/CSS
+ - https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/
+
+

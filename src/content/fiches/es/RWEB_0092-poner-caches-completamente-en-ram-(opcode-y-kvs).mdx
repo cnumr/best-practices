@@ -1,0 +1,52 @@
+---
+refID: '0092'
+title: 'Poner caches completamente en RAM (Opcode y Kvs)'
+createdAt: 2024-02-14T12:49:16.363Z
+updatedAt: 2025-05-28T20:32:12.078Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0085'
+  - version: 2.0.0
+    idRef: '0090'
+  - version: 3.0.0
+    idRef: '0092'
+  - version: 4.0.0
+    idRef: '0072'
+  - version: 5.0.0
+    idRef: '0072'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '7.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - storage
+validations:
+  - rule: >-
+      de caches no almacenados en RAM
+    maxValue: 0
+---
+
+## Descripción
+
+Los sistemas de caché deben montarse, en la medida de lo posible, completamente en memoria RAM. Esta medida evita entradas/salidas en discos duros, así como ciclos de CPU para administrarlos.
+
+El objetivo es doble: servir rápidamente una respuesta al cliente, y limitar el número de componentes de hardware (y software) implicados en la respuesta devuelta por el servidor.
+
+Debido a que la memoria RAM es muy rápida en términos de acceso a lectura/escritura, la duración del consumo de recursos es particularmente corta. Además, la vida útil de los componentes se alarga con esta buena práctica, ya que no hay movimiento mecánico como cuando se utiliza el disco duro.
+
+## Ejemplo
+
+Ejemplos de integración de caché RAM en Drupal:
+ - integración de Memcache: https://drupal.org/project/memcache
+ - integración de Varnish: https://drupal.org/project/varnish
+
+

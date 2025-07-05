@@ -1,0 +1,53 @@
+---
+refID: '0002'
+title: Accurately quantify the dimensions of features and components
+createdAt: 2025-06-09T12:43:17.938Z
+updatedAt: 2025-06-15T12:50:49.929Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0110'
+  - version: 2.0.0
+    idRef: '0002'
+  - version: 3.0.0
+    idRef: '0002'
+  - version: 4.0.0
+    idRef: '0002'
+  - version: 5.0.0
+    idRef: '0002'
+people: '-'
+responsible: []
+lifecycle: 1-specification
+rgesn: '1.2'
+environmental_impact: 5
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+  - requests
+validations:
+  - rule: features with larger dimensions than needed
+    maxValue: '0'
+---
+
+## Description
+
+The "dimensions" of each functionality must be defined precisely and as a whole. It could be a compression rate for the images of the graphical interface, the maximum response time for an HTTP request, the number of items displayed in a list, etc.
+
+The more the dimensions and requirements associated with each feature align with the business case, the less resources are wasted. \
+\
+This level of requirement can vary depending on the need and the business case being addressed. But the general logic must be reversed compared to current practices. If a quantification is not specified, the minimum level of quality or quantity is proposed.
+
+## Example
+
+Unless otherwise specified, the number of items in a list can be limited to five items or to the maximum number of items that can be displayed on the application's smallest target screen.
+
+Example of potential gain: By adjusting the number of items displayed on the results page of its Bing search engine, Microsoft Research has shown that it is possible to reduce the underlying physical infrastructure (number of servers) by up to 80%.
+
+Other example : by defaulting to an acceptable video resolution (480p) rather than the maximum, bandwidth usage can be reduced for most users (who will not change the default value), while allowing others to increase the resolution if necessary.

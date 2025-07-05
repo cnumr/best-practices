@@ -1,0 +1,41 @@
+---
+refID: '0099'
+title: Use HTTP cache
+createdAt: 2025-05-28T17:17:52.441Z
+updatedAt: 2025-05-28T17:17:52.441Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0072'
+  - version: 2.0.0
+    idRef: '0103'
+  - version: 3.0.0
+    idRef: '0099'
+  - version: 4.0.0
+    idRef: '0073'
+  - version: 5.0.0
+    idRef: '0073'
+people: TBD
+responsible: []
+lifecycle: 4-production
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: uncached HTTP headers identified
+    maxValue: '0'
+---
+
+## Description
+
+Reverse proxies (Varnish, Squid or Nginx) are optimized to serve content (HTML pages, images, etc.) quickly, while consuming as few CPU cycles as possible. By avoiding unnecessary demands on the application server, they enable the use of a smaller hardware infrastructure, thus limiting the associated environmental impact.
+
+## Example
+
+Using a specialized reverse proxy like Varnish drastically reduces the time needed to serve cached dynamic pages, while relieving the application server / CMS to serve new (non-cached) requests. We can also see that a general-purpose cache like APC is not suitable.

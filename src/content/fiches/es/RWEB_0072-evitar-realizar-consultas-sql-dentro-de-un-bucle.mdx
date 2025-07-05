@@ -1,0 +1,64 @@
+---
+refID: '0072'
+title: 'Evitar realizar consultas SQL dentro de un bucle'
+createdAt: 2024-02-14T12:08:16.230Z
+updatedAt: 2025-05-27T15:58:27.020Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0055'
+  - version: 2.0.0
+    idRef: '0071'
+  - version: 3.0.0
+    idRef: '0072'
+  - version: 4.0.0
+    idRef: '0064'
+  - version: 5.0.0
+    idRef: '0064'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      De consultas SQL dentro de un bucle
+    maxValue: 0
+---
+
+## Descripción
+
+Las consultas SQL dentro de un bucle plantean grandes problemas de rendimiento, especialmente si el(s) servidor(s) SQL no está (no están) en la máquina local. Estos servidores están optimizados para procesar múltiples selecciones, inserciones o cambios en una sola consulta o transacción.
+
+Si se usan incorrectamente, estas consultas consumen innecesariamente ciclos de CPU, memoria RAM y ancho de banda.
+
+## Ejemplo
+
+No escriba lo siguiente:
+```php
+foreach ($userlist as $user) {
+	$query = 'INSERT INTO users (?rst_name,last_name) VALUES("'. $user['?rst_name'] .'", "'. $user['last_ name'] .'");
+	mysql_query($query);
+}
+```
+sino más bien:
+```php
+$userdata = array();
+foreach ($userlist as $user) {
+	$userdata[] = '("'. $user['?rst_name'] .'", "'.
+	$user['last_name'] . '")';
+}
+$query = 'INSERT INTO users (?rst_name,last_name) VALUES'. implode(',', $userdata); mysql_query($query);
+```
+
+

@@ -1,0 +1,55 @@
+---
+refID: '0092'
+title: Put caches entirely in RAM
+createdAt: 2025-05-28T17:00:27.338Z
+updatedAt: 2025-05-28T17:00:27.338Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0085'
+  - version: 2.0.0
+    idRef: '0090'
+  - version: 3.0.0
+    idRef: '0092'
+  - version: 4.0.0
+    idRef: '0072'
+  - version: 5.0.0
+    idRef: '0072'
+people: TBD
+responsible:
+  - {}
+lifecycle: 4-production
+rgesn: '7.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - storage
+validations:
+  - rule: caches not set in RAM
+    maxValue: '0'
+---
+
+## Description
+
+Wherever possible, cache systems should be mounted memory (RAM), which is much faster in terms of read/write access read/write access than hard disk storage (SSD or mechanical).
+
+This avoids :
+
+\- input/output on storage media,
+
+\- CPU cycles.
+
+## Example
+
+Examples of Drupal RAM cache integration:
+
+\- Memcache integration: https\://drupal.org/project/memcache;
+
+\- Varnish integration: https\://drupal.org/project/varnish.
+
+PHP has its own shared memory cache system called APCu: https\://www\.php.net/manual/fr/book.apcu.php.

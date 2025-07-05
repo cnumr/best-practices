@@ -1,0 +1,57 @@
+---
+refID: '0101'
+title: Add Expires or Cache-Control headers
+createdAt: 2025-05-28T17:49:15.773Z
+updatedAt: 2025-05-28T17:49:15.773Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0078'
+  - version: 2.0.0
+    idRef: '0105'
+  - version: 3.0.0
+    idRef: '0101'
+  - version: 4.0.0
+    idRef: '0074'
+  - version: 5.0.0
+    idRef: '0074'
+people: TBD
+responsible: []
+lifecycle: 4-production
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+  - requests
+validations:
+  - rule: missing Expires or Cache-Control headers
+    maxValue: '0'
+---
+
+## Description
+
+The Expires and Cache-Control headers define how long a browser should keep a resource in its cache. CSS stylesheets, JavaScript scripts and images must therefore be cached and properly configured. Ideally, the lifetime of these elements should be as long as possible, so that the browser doesn't request them from the server again.
+
+This saves HTTP requests, bandwidth and CPU cycles on the server side.
+
+## Example
+
+Here's an example of how to configure the Expires and Cache-Control headers for the Nginx web server:
+
+```
+location ~* ^.+\.(xml | ogg | ogv | svg | svgz | eot | otf | woff |
+  mp4 | ttf | css | rss | atom | js | jpg | jpeg | gif | png | ico | zip | tgz |
+  gz | rar | bz2 | doc | xls | exe | ppt | tar | mid | midi | wav | bmp | rtf |
+  webp | avif | webm)$ {
+        access_log off;
+        log_not_found off;
+        expires max;
+}
+```

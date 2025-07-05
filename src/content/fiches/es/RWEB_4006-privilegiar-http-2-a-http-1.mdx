@@ -1,0 +1,54 @@
+---
+refID: '4006'
+title: 'Privilegiar HTTP/2 a HTTP/1'
+createdAt: 2024-02-14T13:47:16.996Z
+updatedAt: 2025-05-28T20:20:31.794Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4082'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0082'
+  - version: 5.0.0
+    idRef: '0082'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '6.7'
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de solicitudes que utilizan HTTP/1
+    maxValue: 0
+---
+
+## Descripción
+
+El protocolo HTTP/2 cambió la representación textual de las consultas y respuestas por una representación binaria con un mecanismo de compresión de cabeceras HTTP (HPACK).
+También permite la multiplexación de los intercambios, permitiendo utilizar solo una conexión TCP (y por lo tanto un único TLShandshake_ con el servidor) y así obtener la mejor ventaja de HPACK.
+
+Para ir aún más lejos, si otro nombre de dominio resuelve a la misma dirección IP y es compatible con el certificado TLS, la conexión TCP también se puede reutilizar, lo que permite utilizar un nombre de dominio separado sin cookies para los recursos estáticos (cf. la [buena práctica "Hospedar los recursos (CSS/JS) en un dominio sin cookies"](/Chapters/BP_094_es.md)) sin coste adicional que la resolución DNS.
+Una extensión de HTTP/2 permite incluso ahorrar esta resolución para los navegadores que la soportan y siempre que el servidor la utilice.
+
+## Ejemplo
+
+A finales de 2016, Cloudflare fue capaz de medir aumentos en el ancho de banda, en comparación con HTTP/1, de más del 50% en las consultas y del 1% al 15% en las respuestas, dependiendo de la naturaleza de los intercambios (pocos archivos grandes frente a muchas consultas pequeñas).
+
+## Fuentes
+
+* [Análisis por Cloudflare de las ganancias de HTTP/2](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/)
+* [The ORIGIN HTTP/2 Frame](https://httpwg.org/specs/rfc8336.html)
+
+

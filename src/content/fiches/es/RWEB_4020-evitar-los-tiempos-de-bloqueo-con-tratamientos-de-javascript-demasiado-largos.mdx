@@ -1,0 +1,62 @@
+---
+refID: '4020'
+title: 'Evitar los tiempos de bloqueo con tratamientos de javascript demasiado largos'
+createdAt: 2024-02-14T14:12:13.125Z
+updatedAt: 2025-05-30T13:58:37.187Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4052'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0052'
+  - version: 5.0.0
+    idRef: '0052'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: 3.2 y 6.1
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      tareas largas superiores a 200 ms
+    maxValue: 0
+---
+
+## Descripción
+
+Un navegador tiene un proceso que convierte el código en una página web. Debe realizar varias tareas antes de poder mostrar la página: 
+
+- análisis del script HTML
+- la construcción de la estructura y del contenido de una página web (DOM)
+- la ejecución de su código CSS y JavaScript.
+
+Ahora bien, la ejecución del código JavaScript puede ocupar los procesadores del terminal en más del 90% lo que bloquea los otros tratamientos ver las interacciones con el usuario. 
+Pero sobre todo esto, presiona fuertemente el terminal lo que conduce a dos cosas:
+
+- un consumo excesivo que afecta directamente al ciclo de carga de la batería
+- el bloqueo del hilo principal, que degrada la experiencia del usuario, y que puede correlacionarse con la potencia del procesador (especialmente en el móvil)
+
+Estos dos aspectos pueden llevar a una renovación del terminal de usuario debido a una obsolescencia percibida.
+
+Para evitar esto, prefiera cortar sus JavaScript en pequeñas tareas que se ejecutan en el momento necesario y no antes.
+
+## Ejemplo
+
+El Total Blocking Time (TBT) mide el tiempo total ocupado por «Long Tasks» (Tareas largas) durante la actividad principal del hilo JavaScript.
+Un Long Task es un tratamiento que dura más de 50 ms y que monopoliza el navegador web.
+Hay que asegurarse de que el TBT está por debajo de los 200 ms.
+La medición puede realizarse con Lighthouse o Web Page Test.
+
+
