@@ -1,17 +1,18 @@
-import { getRefConfig } from '../referentiel-config';
 import { FunctionComponent } from 'react';
-import { useTranslations } from '../i18n/utils';
-import { ui } from '../i18n/ui';
-import Link from 'next/link';
 import { Iconify } from './iconify';
 import { LanguagePicker } from './language-picker';
+import Link from 'next/link';
+import { getRefConfig } from '../referentiel-config';
+import { ui } from '../i18n/ui';
+import { useTranslations } from '../i18n/utils';
 interface HeaderProps {
   lang?: keyof typeof ui;
 }
 const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
   const t = useTranslations(lang);
   const repoURL =
-    process.env.PUBLIC_REPO_URL || 'https://github.com/cnumr/best-practices';
+    process.env.NEXT_PUBLIC_REPO_URL ||
+    'https://github.com/cnumr/best-practices';
   return (
     <>
       <header
@@ -25,8 +26,10 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
                 href={`/${lang}`}
                 className="text-inherit text-white no-underline"
                 title={t("Retour à l'accueil")}>
-                <span className="font-normal">{t('seo.site_name')}</span>
-                <br />
+                <>
+                  <span className="font-normal">{t('seo.site_name')}</span>
+                  <br />
+                </>
                 <span className="text-xl font-bold leading-none">
                   {
                     getRefConfig(process.env.NEXT_PUBLIC_REF_NAME).i18n
@@ -50,14 +53,17 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
                   &times;
                 </button>
               </li>
-              <li className="!m-0">
-                <Link
-                  href={`/${lang}/fiches`}
-                  className={`text-xl font-medium text-inherit text-white no-underline lg:text-base`}
-                  title={t('Consulter les Bonnes pratiques')}>
-                  {t('Bonnes pratiques')}
-                </Link>
-              </li>
+              {getRefConfig(process.env.NEXT_PUBLIC_REF_NAME).featuresEnabled
+                .fiches && (
+                <li className="!m-0">
+                  <Link
+                    href={`/${lang}/fiches`}
+                    className={`text-xl font-medium text-inherit text-white no-underline lg:text-base`}
+                    title={t('Consulter les Bonnes pratiques')}>
+                    {t('Bonnes pratiques')}
+                  </Link>
+                </li>
+              )}
               {getRefConfig(process.env.NEXT_PUBLIC_REF_NAME).featuresEnabled
                 .lexique && (
                 <li className="!m-0">
@@ -69,18 +75,17 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
                   </Link>
                 </li>
               )}
-
-              {/*
-          <li class="!m-0 lg:hidden">
-            <a
-            href={translatePath("/personas/")}
-            class={`text-white text-xl lg:text-base no-underline text-inherit font-medium`}
-            title={t("Consulter les Personas")}
-            >
-            {t("Personas")}
-          </a>
-        </li>
-            */}
+              {getRefConfig(process.env.NEXT_PUBLIC_REF_NAME).featuresEnabled
+                .linkToPersonas && (
+                <li className="!m-0">
+                  <Link
+                    href={`/${lang}/personas`}
+                    className={`text-xl font-medium text-inherit text-white no-underline lg:text-base`}
+                    title={t('Consulter les Personas')}>
+                    {t('Personas')}
+                  </Link>
+                </li>
+              )}
               <li
                 className={`!m-0 border border-primary-focus lg:h-7 lg:border-zinc-200`}></li>
               <li className="!m-0">
