@@ -74,22 +74,26 @@ export async function GET() {
     const ficheData = fiche?.node;
     if (ficheData?.versions && ficheData?.language) {
       ficheData.versions.forEach((versionData) => {
-        if (versionData?.version) {
-          const version = versionData.version;
-          const language = ficheData.language;
+        if (versionData?.version && versionData?.idRef) {
+          // Exclure les IDs qui ne contiennent que des tirets
+          const idRef = versionData.idRef;
+          if (idRef && !/^-+$/.test(idRef)) {
+            const version = versionData.version;
+            const language = ficheData.language;
 
-          // Initialiser la version si elle n'existe pas
-          if (!versionCounts[version]) {
-            versionCounts[version] = {};
+            // Initialiser la version si elle n'existe pas
+            if (!versionCounts[version]) {
+              versionCounts[version] = {};
+            }
+
+            // Initialiser la langue si elle n'existe pas
+            if (!versionCounts[version][language]) {
+              versionCounts[version][language] = 0;
+            }
+
+            // Incrémenter le compteur
+            versionCounts[version][language]++;
           }
-
-          // Initialiser la langue si elle n'existe pas
-          if (!versionCounts[version][language]) {
-            versionCounts[version][language] = 0;
-          }
-
-          // Incrémenter le compteur
-          versionCounts[version][language]++;
         }
       });
     }
