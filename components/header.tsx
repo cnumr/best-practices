@@ -15,9 +15,6 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
     'https://github.com/cnumr/best-practices';
   return (
     <>
-      <pre>
-        {process.env.NEXT_PUBLIC_REPO_URL} | {getRefConfig().isRoot.toString()}
-      </pre>
       <header
         className={
           'sticky top-0 z-20 flex min-h-[80px] border-b-2 border-neutral-light bg-neutral px-4 lg:px-0'
