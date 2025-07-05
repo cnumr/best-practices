@@ -1,4 +1,14 @@
-# Les 115 bonnes pratiques
+# RWEB - Les 115 bonnes pratiques d'écoconception web
+
+## Le référentiel
+
+RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web. 
+
+Les fiches contiennent des niveaux de difficulté et de priorité, ainsi que des règles de validation formelles, permettant une utilisation efficace sur le terrain.
+
+Depuis la version 5, une correspondance avec le [RGESN](https://www.arcep.fr/mes-demarches-et-services/entreprises/fiches-pratiques/referentiel-general-ecoconception-services-numeriques.html) est disponible sur les fiches où cela est applicable. Cela permet d'utiliser ces deux documents complémentaires de façon efficace et pragmatique.
+
+Le contenu de ce référentiel est disponible à l'adresse [rweb.greenit.fr](https://rweb.greenit.fr/). Il a été traduit en anglais et en espagnol.
 
 ## Le projet
 
@@ -8,6 +18,7 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 2. “écoconception web : les 115 bonnes pratiques, 2ème édition” en septembre 2015
 3. “écoconception web : les 115 bonnes pratiques, 3ème édition” en avril 2019.
 4. “écoconception web : les 115 bonnes pratiques, 4ème édition” en mai 2022
+5. “écoconception web : les 115 bonnes pratiques, 5ème édition” en juin 2025.
 
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer.
 
