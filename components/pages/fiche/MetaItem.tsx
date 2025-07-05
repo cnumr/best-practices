@@ -17,6 +17,7 @@ interface FicheMetaItemProps {
   collectionTypeMeta?: string;
   lang?: keyof typeof ui;
   freeField?: boolean;
+  link?: boolean;
 }
 
 export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
@@ -28,16 +29,32 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
   collectionTypeMeta = undefined,
   lang = 'fr',
   freeField = false,
+  link = false,
 }) => {
   const values = fiche[meta];
   const toDisplay = values;
   const t = useTranslations(lang);
-  const getValue = (value, freeField=false) => {
+  const getValue = (value, freeField = false) => {
     // if value is a number
     if (typeof value === 'number') {
       return value;
     }
-    return freeField?value : t(value);
+    return freeField ? value : t(value);
+  };
+
+  const getLink = (item, meta) => {
+    if (!link) {
+      return undefined;
+    }
+    if (item[meta] && item[meta]._sys.relativePath) {
+      const relativePath = item[meta]._sys.relativePath
+        .replace(`.mdx`, ``)
+        .split('/');
+      return (
+        '/' + relativePath[0] + '/' + collectionType + '/' + relativePath[1]
+      );
+    }
+    return undefined;
   };
   return Array.isArray(values) ? (
     <li
@@ -52,19 +69,21 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
       <ul className="mb-0 flex flex-col">
         {toDisplay.map((item, key) => {
           let it = '';
+          const link = getLink(item, meta);
           if (typeof item === 'object') {
             it = item[meta]?.['title'];
           } else {
-            it = getValue(item,freeField);
+            it = getValue(item, freeField);
           }
 
           return (
+            // relativePath
             <li
               key={key}
               className="my-2 max-h-5 p-0 leading-4"
               data-pagefind-filter="tags[data-content]"
               data-content={`${capitalizeFirstLetter(meta.replace('_', ' '))} → ${it}`}>
-              → {it}
+              {link ? <Link href={link}>{it}</Link> : <>→ {it}</>}
             </li>
           );
         })}
@@ -82,7 +101,7 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
         // @ts-ignore
         <strong className="capitalize">{t(meta)} : </strong>
       )}
-      {getValue(toDisplay,freeField) || 'TBD'}
+      {getValue(toDisplay, freeField) || 'TBD'}
     </li>
   );
 };
