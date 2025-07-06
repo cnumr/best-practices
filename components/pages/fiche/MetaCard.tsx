@@ -37,6 +37,7 @@ export const FicheMetaDisplay: FunctionComponent<
               fontSize="sm"
               displayTitle
               freeField
+              customTitle={t('Correspondance RGESN')}
             />
           ) : null}
 
