@@ -1,0 +1,60 @@
+---
+refID: '0111'
+title: 'Limitar el tamaño de los correos electrónicos enviados'
+createdAt: 2024-02-14T13:30:05.473Z
+updatedAt: 2025-06-05T21:18:06.957Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0104'
+  - version: 2.0.0
+    idRef: '0112'
+  - version: 3.0.0
+    idRef: '0111'
+  - version: 4.0.0
+    idRef: '0102'
+  - version: 5.0.0
+    idRef: '0102'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - network
+  - requests
+  - storage
+validations:
+  - rule: >-
+      de mensajes de correo electrónico de más de 1 MB
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando una notificación, alerta o mensaje de confirmación se debe enviar por correo electrónico al usuario, limitar el tamaño del correo electrónico enviado.
+Evitar adjuntos e imágenes incrustadas. Preferir contenido corto. Opcionalmente, utilizar texto plano en lugar de HTML.
+
+## Ejemplo
+
+El envío de un correo electrónico de confirmación de una solicitud de contacto no justifica la adición de código HTML e imágenes.
+Un mensaje HTML básico usa en promedio:
+ - al menos 2 imágenes (el logotipo y una firma a pie de página), es decir, unos 10 KB;
+ - 12 KB de código HTML para el diseño (estilos en línea, tablas...);
+ - 4 KB de texto (el mensaje + 2 enlaces de acción).
+
+Al final del día:
+ - correo electrónico HTML = 26 KB;
+ - texto bruto por correo electrónico = 4 KB.
+
+Es decir, 22 KB por correo electrónico.
+En el caso de un sitio transaccional con, por ejemplo, alertas de clientes e internos, el beneficio potencial se vuelve considerable.
+
+
+

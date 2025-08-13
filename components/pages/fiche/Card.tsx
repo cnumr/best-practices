@@ -60,18 +60,18 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
   };
   return (
     <div
-      className="mb-0 mt-0 text-lg font-bold text-neutral flex flex-col gap-8 justify-between h-full"
+      className="mb-0 mt-0 flex h-full flex-col justify-between gap-8 text-lg font-bold text-neutral"
       data-lifecycle={slugify(fiche.lifecycle)}
       {...getScope()}
       data-saved_resources={slugify(fiche.saved_resources.join(' '))}>
-      <h2 className="m-0 flex gap-2 flex-col lg:flex-row items-start text-lg font-bold text-neutral md:col-span-1 md:row-span-2">
+      <h2 className="m-0 flex flex-col items-start gap-2 text-lg font-bold text-neutral md:col-span-1 md:row-span-2 lg:flex-row">
         <span className="badge mr-2 whitespace-nowrap border-primary bg-primary">
           {REF_NAME}
           {fiche.refID}
         </span>
         <span>{fiche.title}</span>
       </h2>
-      <div className='flex flex-col gap-2 w-full'>
+      <div className="flex w-full flex-col gap-2">
         <div className="flex flex-row items-center justify-start gap-2">
           {typeof fiche[`priority_implementation`] === 'number' ? (
             <span
@@ -133,6 +133,11 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
               {isStringInUi(lang, fiche.scope) && t(fiche.scope)}
             </span>
           )}
+        </div>
+        <div className="flex flex-row items-center justify-start gap-2 text-base text-primary">
+          <span className="">
+            {t('Correspondance RGESN')}: {fiche.rgesn || `-`}
+          </span>
         </div>
       </div>
     </div>

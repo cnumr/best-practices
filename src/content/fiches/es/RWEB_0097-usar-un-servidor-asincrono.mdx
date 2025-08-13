@@ -1,0 +1,51 @@
+---
+refID: '0097'
+title: 'Usar un servidor asíncrono'
+createdAt: 2024-02-14T13:00:23.183Z
+updatedAt: 2025-05-28T20:24:33.668Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0077'
+  - version: 2.0.0
+    idRef: '0094'
+  - version: 3.0.0
+    idRef: '0097'
+  - version: 4.0.0
+    idRef: '0085'
+  - version: 5.0.0
+    idRef: '0085'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      de servidores de aplicaciones sincronizados
+    maxValue: 1
+---
+
+## Descripción
+
+Los servidores (web, aplicaciones, etc.) como NGINX, node.js o Gwan están diseñados para utilizar el mínimo de recursos posible. Gracias a su funcionamiento en modo asíncrono, no están obligados a crear un proceso o "thread" para cada consulta. De esta manera evitan el desperdicio de recursos.
+
+Mientras que la mayoría de los servidores web aumentan el consumo de memoria RAM a medida que aumenta la demanda, los servidores asíncronos permanecen muy estables.
+
+### Ejemplo
+
+NGINX tiene la reputación de ser más eficiente que Apache. Así, puede servir 2,1 veces más consultas por segundo que este servidor.
+
+Para ir más lejos:
+ - https:///nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
+ 
+

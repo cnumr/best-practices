@@ -1,0 +1,48 @@
+---
+refID: '0010'
+title: 'Almacenar datos estáticos localmente'
+createdAt: 2024-02-14T09:56:27.377Z
+updatedAt: 2025-05-27T15:49:27.899Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0205'
+  - version: 2.0.0
+    idRef: '0010'
+  - version: 3.0.0
+    idRef: '0010'
+  - version: 4.0.0
+    idRef: '0063'
+  - version: 5.0.0
+    idRef: '0063'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: '6.2'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: >-
+      de datos estáticos no almacenados localmente
+    maxValue: 25%
+---
+
+## Descripción
+
+Con el soporte ahora generalizado en todos los navegadores de bases de datos clave-valor (IndexDB, Web Storage) y almacenamiento en caché en la Caché de almacenamiento de la API, es posible almacenar datos estructurados estáticos localmente.
+
+El valor del almacenamiento local es doble. Por un lado, se evitan los idas y vueltas inútiles con el servidor, lo que ahorra recursos y tiempo de respuesta.
+Por otra parte, como los datos son locales, es más fácil y más rápido manipularlos dentro de la interfaz.
+
+El beneficio potencial es la reducción de la carga del servidor, por lo tanto del número de equipos necesarios (su huella ambiental y económica),
+desde servidores HTTP hasta servidores de base de datos.
+
+

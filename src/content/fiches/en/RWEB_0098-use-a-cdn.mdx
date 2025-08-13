@@ -1,0 +1,45 @@
+---
+refID: '0098'
+title: Use a CDN
+createdAt: 2025-05-28T16:29:53.560Z
+updatedAt: 2025-05-28T16:29:53.560Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0075'
+  - version: 2.0.0
+    idRef: '0102'
+  - version: 3.0.0
+    idRef: '0098'
+  - version: 4.0.0
+    idRef: '0069'
+  - version: 5.0.0
+    idRef: '0069'
+people: TBD
+responsible:
+  - {}
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: "non-CDN-served resources (files) \t"
+    maxValue: 25%
+---
+
+### Description
+
+Some files, such as JavaScript libraries, CSS stylesheets, images, etc., are network intensive because they are usually numerous and small. This is why Content Delivery Networks (CDN) should be used, physically bringing these files closer to end-users, generating significant bandwidth savings and shorter response times.
+
+Note that there may be cases when using CDN is not really relevant. For example, for very localized (regional) audiences it is more appropriate to prioritize local and quality hosting solutions. On the other hand, websites with very little traffic could make pull-based CDNs counterproductive as files extraction from the original server could be too recurrent.
+
+### Example
+
+Using CDNs provided by Google that host commonly used JavaScript libraries.

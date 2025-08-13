@@ -1,0 +1,53 @@
+---
+refID: '0073'
+title: Avoid opening database connections when not necessary
+createdAt: 2025-06-09T13:11:58.246Z
+updatedAt: 2025-06-16T10:27:15.090Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0056'
+  - version: 2.0.0
+    idRef: '0072'
+  - version: 3.0.0
+    idRef: '0073'
+  - version: 4.0.0
+    idRef: '0024'
+  - version: 5.0.0
+    idRef: '0024'
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: 3.2 and 7.1
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      unnecessary database connections for querying or storing necessary service
+      data
+    maxValue: '0'
+---
+
+## Description
+
+Whatever the database system, opening a connection is a resource-intensive process for both client and server:
+
+* memory allocation and disk access for buffers;
+* network round-trips for the connection protocol;
+* induced CPU cost.
+
+The best practice usually used is to set up a connection pool. This optimizes connection management and performance. However, configuring it is not necessarily a trivial operation (it requires monitoring its behavior to find the right settings). That said, whenever the application can avoid database access, do it!
+
+## Exemple
+
+HikariCP is a robust and performant JDBC connection pool. It is integrated into SpringBoot.
+
+When there is no connection pool, reuse a connection and do not open/close a new connection for each request.

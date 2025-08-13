@@ -15,9 +15,9 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
     'https://github.com/cnumr/best-practices';
   return (
     <>
-      <pre>
+      {/* <pre>
         {process.env.NEXT_PUBLIC_REPO_URL} | {getRefConfig().isRoot.toString()}
-      </pre>
+      </pre> */}
       <header
         className={
           'sticky top-0 z-20 flex min-h-[80px] border-b-2 border-neutral-light bg-neutral px-4 lg:px-0'
@@ -132,6 +132,15 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
               className="text-3xl text-white lg:hidden">
               &#9776;
             </button>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  function menu(){const e=document.querySelector(".menu");
+                  if(!e)return null;e&&e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("hidden"))}const o=document.querySelectorAll("[data-menu-button]");
+                  o.forEach(e=>{e.addEventListener("click",()=>menu())});
+                `,
+              }}
+            />
           </nav>
         </div>
       </header>

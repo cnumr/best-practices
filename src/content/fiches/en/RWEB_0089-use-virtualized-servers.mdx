@@ -1,0 +1,57 @@
+---
+refID: '0089'
+title: Use virtualized servers
+createdAt: 2025-06-09T14:08:09.043Z
+updatedAt: 2025-06-09T14:48:38.803Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0070'
+  - version: 2.0.0
+    idRef: '0087'
+  - version: 3.0.0
+    idRef: '0089'
+  - version: 4.0.0
+    idRef: '0091'
+  - version: 5.0.0
+    idRef: '0091'
+people: '-'
+responsible: []
+lifecycle: 4-production
+rgesn: '3.2'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: applications not using virtualization to mutualize resources
+    maxValue: '0'
+---
+
+## Description
+
+Virtualization allows creating and executing virtual representations of a computer on one or more physical machines.
+The virtualization software allocates resources between different virtual environments based on their needs.
+
+As a result, virtualization allows:
+
+* hardware savings through mutualisation
+* optimal resources use (RAM, CPU, disk)
+
+This method reduces the amount of electronic waste (WEEE) and energy use compared to multiple physical servers.
+
+Containerization is another level of virtualization: virtual machines can host a container orchestration service,
+enabling execution of multiple applications in an isolated way on the same operating system.
+
+## Exemple
+
+Use virtualization tools such as VMware, Xen, KVM, etc.
+
+Use containerization tools such as Docker, Kubernetes, etc.
+
+It is more efficient to mutualise resources by using a hypervisor than using four dedicated servers for four projects, each running at maximum capacity of 20%. This way, a single physical machine can provide the same services as four dedicated servers.

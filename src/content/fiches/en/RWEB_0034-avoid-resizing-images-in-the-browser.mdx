@@ -1,0 +1,67 @@
+---
+refID: '0034'
+title: Avoid resizing images in the browser
+createdAt: 2025-06-09T13:17:52.634Z
+updatedAt: 2025-06-15T12:26:47.050Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0093'
+  - version: 2.0.0
+    idRef: '0020'
+  - version: 3.0.0
+    idRef: '0034'
+  - version: 4.0.0
+    idRef: '0047'
+  - version: 5.0.0
+    idRef: '0047'
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: user-device
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: resized browser images
+    maxValue: '0'
+---
+
+## Description
+
+The size of the image sent to the browser should be as close as possible to that of the display size.
+
+In modern integrations, with responsive images, it's important to define the `srcset` or `source` attributes so that each device type uses a version of the image adapted to its screen size and resolution.
+
+Note: The `height` and `width` attributes generally allow you to define the smallest display ratio, but CSS is currently the main driver for determining display sizes based on screen sizes.
+
+Compare the number of pixels in the uploaded image to the number of pixels actually displayed.
+
+The yellowlab.tools tool can help you with this.
+
+## Exemple
+
+A 350 × 300 pixel image encoded in PNG 24 weighs 41 KB. The same image displayed as a thumbnail at 70 × 60 pixels still weighs 41 KB, although it shouldn't exceed 3 KB!
+
+Example of responsive syntax:
+
+HTML:
+
+```html
+<img id="monimage" src="image_3ko.png" width="70" height="60"
+ srcset="image_3ko.png 640w, image_41ko.png 1920w">
+```
+
+CSS :
+
+```javascript
+#monimage { width: 70px; height: 60px }
+@media(min - width: 640px) {
+      #monimage { width: 350px; height: 300px }
+}
+```

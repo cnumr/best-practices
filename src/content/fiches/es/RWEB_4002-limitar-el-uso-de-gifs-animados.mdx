@@ -1,0 +1,62 @@
+---
+refID: '4002'
+title: 'Limitar el uso de gifs animados'
+createdAt: 2024-02-14T13:40:22.299Z
+updatedAt: 2025-06-05T14:07:26.906Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4098'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0098'
+  - version: 5.0.0
+    idRef: '0098'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: '4.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - storage
+  - network
+validations:
+  - rule: >-
+      imágenes de dibujos animados
+    maxValue: 0
+---
+
+## Descripción
+
+El gif animado, formato de imagen animada que data de 1995, es más pesado y más lento que otros formatos como los formatos de vídeo Webm o mp4.
+El webp animado es mas ligero y actualmente es poco soportado por los navegadores.
+Utilizar videos puede ser un intersante par reducir el tamaño de las animaciones.
+
+## Ejemplo
+
+|   | .gif (animado)   | . webp (animado) |.Webm | . mp4 | 
+| :--------------- |---------------:| -----:| -----:| -----:|
+| Animación 1 | 90 KB  | 74 KB | 36KB | 38KB |
+| Animación 2 | 5,45 MB  | 2,2 MB | 274 KB | 266KB | 
+
+```html
+<!--  Autoplay, loop and muted video  -->
+<video autoplay loop muted playsinline>
+  <source src="my-animation.webm" type="video/webm">
+  <source src="my-animation.mp4" type="video/mp4">
+</video>
+```
+
+
+

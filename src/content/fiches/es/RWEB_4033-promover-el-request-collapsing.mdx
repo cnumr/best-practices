@@ -1,0 +1,53 @@
+---
+refID: '4033'
+title: 'Promover el "Request Collapsing"'
+createdAt: 2024-02-14T14:28:16.625Z
+updatedAt: 2025-06-16T10:27:56.927Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4025'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0025'
+  - version: 5.0.0
+    idRef: '0025'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 3.1 y 8.10
+environmental_impact: 2
+priority_implementation: 2
+moe: 2
+tiers: datacenter
+saved_resources:
+  - network
+  - requests
+validations:
+  - rule: >-
+      de consultas para recuperar datos de un mismo dominio de negocio por un servicio de terceros
+    maxValue: 2
+---
+
+## Descripción
+
+El "Request Collapsing" es un Pattern de aplicación que permite limitar el número de llamadas remotas agrupando varias consultas para hacer una sola. 
+Es adecuado para la recuperación a través de un servicio de terceros de datos del mismo dominio de negocio.
+
+Permite limitar:
+- la carga de red,
+- el impacto de una latencia de red elevada,
+- los costes derivados de las licencias a petición.
+
+## Ejemplo
+
+La recuperación de un pedido en su cuenta de cliente requiere la información del producto pedido, la dirección de facturación y el estado del pago.
+En lugar de solicitar al servicio de gestión de pedidos la recuperación de estos tres grupos de datos a través de tres consultas, es preferible que el servicio de gestión de pedidos permita la recuperación en una sola llamada.
+
+

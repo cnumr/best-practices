@@ -1,0 +1,59 @@
+---
+refID: '0005'
+title: 'Favorecer un diseño sencillo, depurado, adaptado a la web'
+createdAt: 2024-02-14T09:25:44.819Z
+updatedAt: 2025-05-29T08:24:30.922Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0005'
+  - version: 2.0.0
+    idRef: '0006'
+  - version: 3.0.0
+    idRef: '0005'
+  - version: 4.0.0
+    idRef: '0012'
+  - version: 5.0.0
+    idRef: '0012'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/designeuser.mdx
+lifecycle: 2-concept
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: >-
+      de páginas cuyo diseño es más complejo de lo necesario
+    maxValue: 0
+---
+
+## Descripción
+
+Cualquier diseño de interfaz o diseño web debe ser pensado temprano, teniendo en cuenta:
+- las necesidades del usuario (véase la buena práctica "Optimizar el recorrido del usuario")
+- las heurísticas de ergonomía (Bastien y Scapin, Nielsen, etc.)
+- las limitaciones técnicas
+- buenas prácticas de ecodiseño y preferiblemente las buenas prácticas de accesibilidad
+
+**Favorezca un diseño simple y depurado que puede realizarse utilizando únicamente
+HTML y CSS.**
+
+## Ejemplo
+
+## Descripción
+Algunos sitios contienen imágenes enmarcadas, no contrastadas y no recomendadas por WCAG[1]. Crean una sobrecarga mental innecesaria.
+ Aunque se descarguen, no son visibles en el móvil (ecodiseño). A veces se puede plantear la incoherencia entre señalización y colorimetría.
+
+## Recomendación
+Eliminar las imágenes de fondo y añadir un glifo (Preferir los glifos a las imágenes, buena práctica de ecodiseño) con una colorimetría coherente si se va a realizar una agrupación.
+
+

@@ -36,6 +36,7 @@ export const ui = {
     'Consulter les Bonnes pratiques': 'Consulta las Mejores Prácticas',
     'Vue en cartes': 'Vista del mapa',
     'Vue en tableau (pour copier/coller)': 'Vista de tabla (para copiar/pegar)',
+    'Correspondance RGESN': 'Correspondencia RGESN',
 
     // src/pages/[lang]/lexique/index.astro && src/components/lexique/LexiqueListView.astro
     Lexique: 'Léxico',
@@ -202,6 +203,7 @@ export const ui = {
     'Consulter les Bonnes pratiques': 'Consult the Best practices',
     'Vue en cartes': 'Cards view',
     'Vue en tableau (pour copier/coller)': 'Table view (for copy/paste)',
+    'Correspondance RGESN': 'RGESN Correspondence',
 
     // src/pages/[lang]/lexique/index.astro && src/components/lexique/LexiqueListView.astro
     Lexique: 'Glossary',
@@ -369,6 +371,7 @@ export const ui = {
     'Vue en cartes': 'Vue en cartes',
     'Vue en tableau (pour copier/coller)':
       'Vue en tableau (pour copier/coller)',
+    'Correspondance RGESN': 'Correspondance RGESN',
 
     // src/pages/[lang]/lexique/index.astro && src/components/lexique/LexiqueListView.astro
     Lexique: 'Lexique',

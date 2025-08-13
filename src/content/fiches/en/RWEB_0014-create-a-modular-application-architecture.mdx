@@ -1,0 +1,51 @@
+---
+refID: '0014'
+title: Create a modular application architecture
+createdAt: 2025-05-16T11:58:38.886Z
+updatedAt: 2025-05-16T12:20:30.341Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0114'
+  - version: 2.0.0
+    idRef: '0052'
+  - version: 3.0.0
+    idRef: '0014'
+  - version: 4.0.0
+    idRef: '0028'
+  - version: 5.0.0
+    idRef: '0028'
+people: '-'
+responsible: []
+lifecycle: 3-developement
+rgesn: '3.2'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: of non modular architectures
+    maxValue: '0'
+---
+
+## Description
+
+The modular architecture (popularized by open-source software) often brings a greater scalability, reduces maintenance costs and a more efficient code.
+
+If the functional coverage of the website or web service can evolve, it is interesting to implement the basic features in a core application than can be extended with plugins. Those plugins can be developed independently and shared between applications.
+
+This approach can be used at all levels, for a custom solution, or for the choice of an HTTP server or a CMS..
+
+## Example
+
+Popular open-source software, largely used on the web like NGINX, Apache, MySQL or PHP, use a modular architecture.
+
+The microservice architecture allow some level of modularity, but be careful on how the concerns are spread among the
+components and how they interact: added complexity, network calls, and other unintended negative consequences can
+increase resources consumption.

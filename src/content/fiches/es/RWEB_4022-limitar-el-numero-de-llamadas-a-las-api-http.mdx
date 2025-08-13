@@ -1,0 +1,54 @@
+---
+refID: '4022'
+title: 'Limitar el número de llamadas a las API HTTP'
+createdAt: 2024-02-14T14:20:42.319Z
+updatedAt: 2025-06-16T10:15:11.676Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4021'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0021'
+  - version: 5.0.0
+    idRef: '0021'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 2-concept
+rgesn: 6.2 y 7.1
+environmental_impact: 5
+priority_implementation: 4
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+validations:
+  - rule: >-
+      de endpoints que no se benefician de una estrategia de caché pertinente
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando un internauta visita una página web, el sitio puede recuperar contenido a través de API HTTP (servicio web).
+En este caso, cada visualización de página generará tantas solicitudes HTTP a las diferentes API, mientras que el contenido será probablemente el mismo durante un tiempo.
+
+Como proveedor de API (servidor), puede establecer cuotas para que los usuarios definan una directiva de caché de respuestas y evitar llamadas sistemáticas.
+Como usuario de API (cliente), debe almacenar en caché los resultados obtenidos para poder volver a ofrecerlos sin llamar sistemáticamente a la API HTTP.
+
+## Ejemplo
+
+ - Si obtiene opiniones de clientes a través de una API, es probable que pueda limitar el número de consultas a una por día,
+ - Si obtiene un feed de Twitter para mostrarlo en su sitio, es probable que pueda limitar el número de consultas a una por hora,
+ - Si muestra un dato en "tiempo real" en la página de inicio de su sitio, puede configurar una caché de 2 segundos para evitar que miles de visitantes simultáneos a su sitio generen miles de llamadas de API durante el mismo segundo.
+ - Como proveedor, si ofrece una API, puede establecer cuotas por usuario y por un período de tiempo
+
+

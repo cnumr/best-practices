@@ -1,0 +1,45 @@
+---
+refID: '0040'
+title: Only use required parts of Javascript libraries and CSS frameworks
+createdAt: 2025-06-09T12:55:20.433Z
+updatedAt: 2025-06-16T09:55:21.115Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0811'
+  - version: 2.0.0
+    idRef: '0077'
+  - version: 3.0.0
+    idRef: '0040'
+  - version: 4.0.0
+    idRef: '0015'
+  - version: 5.0.0
+    idRef: '0015'
+people: '-'
+responsible: []
+lifecycle: 2-concept
+rgesn: '6.5'
+environmental_impact: 4
+priority_implementation: 5
+moe: 4
+tiers: network
+saved_resources:
+  - cpu
+  - ram
+  - network
+validations:
+  - rule: used libraries with unused parts
+    maxValue: '1'
+---
+
+## Description
+
+JavaScript libraries such as jQuery and off-the-shelf CSS frameworks (Bootstrap, Skeleton, Gumby, Foundation...) can be used to create sites quickly and easily. But not all of them are based on a modular architecture, forcing the web user to download the entire library only to use a small percentage of the functionalities.
+
+It's preferable to do without these libraries, or to retain only those portions that are actually used. Using a bundler (e.g. Webpack) makes tree shaking easy, i.e. eliminating dead and therefore unused code. You can also estimate the weight of a library by visiting [https://bundlephobia.com](https://bundlephobia.com) , which will give you an idea of the total weight of a “package.json” file.
+
+## Exemple
+
+Some frameworks, such as Tailwind CSS, offer lightweight libraries containing only the portions actually used. This reduces the weight of files downloaded by the browser and the resources consumed at runtime. For example, jQuery offers a “slim” version that does not include certain functionalities such as CSS animations and AJAX data exchange support. This saves 17 Kb for version 3.6.

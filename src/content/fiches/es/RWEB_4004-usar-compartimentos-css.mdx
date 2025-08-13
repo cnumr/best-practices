@@ -1,0 +1,59 @@
+---
+refID: '4004'
+title: 'Usar compartimentos CSS'
+createdAt: 2024-02-14T13:43:55.999Z
+updatedAt: 2025-05-18T17:07:44.868Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4038'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0038'
+  - version: 5.0.0
+    idRef: '0038'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 4
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de elementos no aislados
+    maxValue: 20%
+---
+
+## Descripción
+
+El CSS Containment (o compartimentación CSS) indica que un nodo y su contenido son, en la medida de lo posible, independientes del resto del árbol de la página.
+
+Dependiendo del tipo de independencia  (```strict```, ```content```, ```size```, ```layout```, ```style``` et/ou ```paint```) de la propriedad ```contain```, el navegador :
+ - recalcula la representación (las posiciones, el formato, las disposiciones y/o la visualización) para el único nodo independiente que ahorra así, recalcular la totalidad del DU de la página
+- no renderiza el contenido de los nodos independientes fuera de la zona visible
+
+## Ejemplos
+- Una arquitectura DOM compleja cuyo contenido de nodos se modifica en un momento dado
+```css
+artículo {
+   contain: content;
+}
+```
+- Un widget externo
+```css
+.widget-name {
+   contain: layout;
+}
+```
+
+

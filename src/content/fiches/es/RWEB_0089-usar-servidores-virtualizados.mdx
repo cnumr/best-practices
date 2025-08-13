@@ -1,0 +1,58 @@
+---
+refID: '0089'
+title: 'Usar servidores virtualizados'
+createdAt: 2024-02-14T12:42:33.893Z
+updatedAt: 2025-06-09T14:37:40.863Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0070'
+  - version: 2.0.0
+    idRef: '0087'
+  - version: 3.0.0
+    idRef: '0089'
+  - version: 4.0.0
+    idRef: '0091'
+  - version: 5.0.0
+    idRef: '0091'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.2'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+validations:
+  - rule: >-
+      de aplicaciones no alojadas de forma mutualizada
+    maxValue: 0
+---
+
+## Descripción
+
+La virtualización es una tecnología que permite crear y ejecutar representaciones virtuales de un ordenador en una o varias máquinas físicas. El software de virtualización asigna los recursos entre los diferentes entornos virtuales según sus necesidades.
+
+Como resultado, la virtualización permite:
+* un ahorro en el material por mutualización
+* uso óptimo de los recursos (RAM, CPU, disco)
+
+Esto reduce la cantidad de residuos electrónicos (RAEE) y el consumo de energía en comparación con el uso de varios servidores físicos.
+
+La contenedorización es el compañero de la virtualización: una máquina virtual puede acomodar un servicio de contenedorización. Permitirá ejecutar de forma aislada varias aplicaciones en el mismo sistema operativo.
+
+## Ejemplo
+
+Utilizar herramientas de virtualización como VMware, Xen, KVM, etc.
+
+Utilizar herramientas de contenedores como Docker, Kubernetes, etc.
+
+En lugar de utilizar cuatro servidores dedicados para cuatro proyectos, y cargarlos hasta un 20% de su capacidad, mutualizar los recursos mediante la creación de un hipervisor. En efecto, una sola máquina física podrá ofrecer los mismos servicios que los cuatro servidores dedicados.
+
+

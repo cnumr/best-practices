@@ -1,0 +1,64 @@
+---
+refID: '0070'
+title: 'Eliminar todas las advertencias y avisos'
+createdAt: 2024-02-14T12:04:44.103Z
+updatedAt: 2025-05-23T16:48:19.045Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0051'
+  - version: 2.0.0
+    idRef: '0065'
+  - version: 3.0.0
+    idRef: '0070'
+  - version: 4.0.0
+    idRef: '0087'
+  - version: 5.0.0
+    idRef: '0087'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - storage
+validations:
+  - rule: >-
+      de advertencias y avisos en producción
+    maxValue: 0
+---
+
+## Descripción
+
+Las advertencias y avisos ralentizan los servidores de aplicaciones como PHP, ya que estos deben rastrear el origen de los errores y registrar en los diferentes registros del sistema los mensajes que explican los problemas encontrados.
+
+## Ejemplo
+
+Evitar:
+```html
+<html>
+ 	<body>
+     	<form method="post" accept-charset="utf-8">
+         	<label>
+             	First Name
+             	<input type="text" name="?rst_name" value="<?php print $_POST['?rst_name'] ?>" placeholder="">
+        	</label>	 
+         	<label>
+              	Last Name
+              	<input type="text" name="last_name" value="<?php print $_POST['last_name'] ?>" placeholder="">
+         	</label>	 
+     	</form>
+ 	</body>
+</html>
+```
+`$_POST['?rst_name']` y `$_POST['last_name']`  generan avisos porque no están necesariamente definidos.
+
+
+

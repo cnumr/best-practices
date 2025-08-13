@@ -18,6 +18,7 @@ interface FicheMetaItemProps {
   lang?: keyof typeof ui;
   freeField?: boolean;
   link?: boolean;
+  customTitle?: string;
 }
 
 export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
@@ -30,6 +31,7 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
   lang = 'fr',
   freeField = false,
   link = false,
+  customTitle = undefined,
 }) => {
   const values = fiche[meta];
   const toDisplay = values;
@@ -63,8 +65,13 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
         'text-sm': fontSize === 'sm',
       })}>
       {displayTitle === true && (
-        // @ts-ignore
-        <strong>{capitalizeFirstLetter(t(meta))} : </strong>
+        <strong>
+          {customTitle !== undefined
+            ? customTitle
+            : // @ts-ignore
+              capitalizeFirstLetter(t(meta))}{' '}
+          :{' '}
+        </strong>
       )}
       <ul className="mb-0 flex flex-col">
         {toDisplay.map((item, key) => {
@@ -98,8 +105,13 @@ export const FicheMetaItem: FunctionComponent<FicheMetaItemProps> = ({
         'text-sm': fontSize === 'sm',
       })}>
       {displayTitle === true && (
-        // @ts-ignore
-        <strong className="capitalize">{t(meta)} : </strong>
+        <strong className="capitalize">
+          {
+            // @ts-ignore
+            customTitle !== undefined ? customTitle : t(meta)
+          }{' '}
+          :{' '}
+        </strong>
       )}
       {getValue(toDisplay, freeField) || 'TBD'}
     </li>

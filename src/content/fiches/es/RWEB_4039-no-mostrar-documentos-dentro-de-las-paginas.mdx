@@ -1,0 +1,49 @@
+---
+refID: '4039'
+title: 'No mostrar documentos dentro de las páginas'
+createdAt: 2024-02-14T14:38:37.827Z
+updatedAt: 2025-05-18T16:48:41.292Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '4033'
+  - version: 2.0.0
+    idRef: '-'
+  - version: 3.0.0
+    idRef: '-'
+  - version: 4.0.0
+    idRef: '0033'
+  - version: 5.0.0
+    idRef: '0033'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: '5.7'
+environmental_impact: 4
+priority_implementation: 2
+moe: 1
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      documentos mostrados en contenido
+    maxValue: 0
+---
+
+## Descripción
+
+Algunos editores de contenido a veces sienten la necesidad de integrar documentos dentro de las páginas, en visualización directa.
+Esto requiere un desarrollo específico para una funcionalidad no deseada.
+En efecto, el usuario no desea cargar un documento dentro de un contenido si su sistema permite su visualización.
+Además, cada vez que se visita la página, el archivo se descarga para su visualización.
+
+### Ejemplo
+
+Para que se muestre, un archivo de procesamiento de textos tendrá que llamar a un software adecuado. Sin embargo, si este software no se instala en el ordenador del usuario, el archivo no podrá leerse sin un desarrollo específico costoso.
+Por lo tanto, es mejor insertar un enlace de descarga del documento dentro de su página para que solo los usuarios afectados lo descarguen.
+
+

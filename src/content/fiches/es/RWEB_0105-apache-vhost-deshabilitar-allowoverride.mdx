@@ -1,0 +1,49 @@
+---
+refID: '0105'
+title: 'Apache Vhost: deshabilitar AllowOverride'
+createdAt: 2024-02-14T13:16:26.433Z
+updatedAt: 2025-05-23T16:42:48.109Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0081'
+  - version: 2.0.0
+    idRef: '0101'
+  - version: 3.0.0
+    idRef: '0105'
+  - version: 4.0.0
+    idRef: '0088'
+  - version: 5.0.0
+    idRef: '0088'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+validations:
+  - rule: >-
+      de archivos de configuración que contienen el texto "AllowOverride" con algo más que "AllowOverride None"
+    maxValue: 0
+---
+
+## Descripción
+
+Cuando la directiva `AllowOverride` está activada, el servidor HTTP Apache debe subir toda la jerarquía de directorios para, tal vez, encontrar un archivo . htaccess que contiene reglas de sobrecarga.
+Por lo tanto, es aconsejable desactivar esta directiva en la configuración de Apache.
+
+## Ejemplo
+
+En el archivo de configuración de su host Apache, agregue:
+```apacheconf
+AllowOverride none
+```
+
+

@@ -1,0 +1,69 @@
+---
+refID: '0025'
+title: 'Agrupar declaraciones CSS similares'
+createdAt: 2024-02-14T10:44:23.941Z
+updatedAt: 2024-07-04T21:32:21.526Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0014'
+  - version: 2.0.0
+    idRef: '0028'
+  - version: 3.0.0
+    idRef: '0025'
+  - version: 4.0.0
+    idRef: '-'
+  - version: 5.0.0
+    idRef: '0119'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 2
+priority_implementation: 3
+moe: 3
+tiers: network
+saved_resources:
+  - network
+validations:
+  - rule: >-
+      de declaraciones CSS similares no agrupadas
+    maxValue: 1
+---
+
+## Descripción
+
+Cuando varios elementos del DOM (Document Object Model) tienen propiedades CSS comunes, declararlos juntos en la misma hoja de estilos. Este método ayuda a reducir el peso de la CSS.
+
+## Ejemplo
+
+No escriba lo siguiente:
+```css
+h1 {
+color de fondo: gris; color: navy;
+}
+
+h2 {
+color de fondo: gris; color: navy;
+}
+
+h3 {
+color de fondo: gris; color: navy;
+}
+```
+
+sino más bien:
+```css
+h1, h2, h3 {
+color de fondo: gris; color: navy;
+}
+```
+
+Si desea asegurarse de que se repeta esta regla, puede implementar el módulo [stylelint] (https://stylelint.io/) en su proyecto (`devDependencies`) y utilizar la regla `Shorthand-property-no-Redundant-values`
+
+Se puede encontrar la lista completa de estas propiedades abreviadas en el sitio [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
+
+

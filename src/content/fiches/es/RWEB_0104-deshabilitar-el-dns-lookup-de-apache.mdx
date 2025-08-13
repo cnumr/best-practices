@@ -1,0 +1,51 @@
+---
+refID: '0104'
+title: 'Deshabilitar el DNS Lookup de Apache'
+createdAt: 2024-02-14T13:14:17.678Z
+updatedAt: 2025-05-28T20:47:37.709Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0084'
+  - version: 2.0.0
+    idRef: '0100'
+  - version: 3.0.0
+    idRef: '0104'
+  - version: 4.0.0
+    idRef: '0084'
+  - version: 5.0.0
+    idRef: '0084'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/administrateur-systemes.mdx
+lifecycle: 4-production
+rgesn: '3.1'
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+validations:
+  - rule: >-
+      de DNS Lookup activo
+    maxValue: 0
+---
+
+## Descripción
+
+Cada vez que un servidor web recibe una solicitud HTTP, registra esta información en un registro, traduciendo generalmente la dirección IP del usuario al nombre de dominio. Esta conversión (DNS Lookup) es uno de los cuellos de botella del servidor HTTP Apache.
+
+Por lo tanto, desactivar.
+
+## Ejemplo
+
+En el archivo de configuración de su servidor Apache, en la dirección `/etc/apache/httpd.conf` o en la dirección `/etc/apache2/apache2.conf`, escriba:
+```apacheconf
+ HostnameLookups Off
+```
+
+

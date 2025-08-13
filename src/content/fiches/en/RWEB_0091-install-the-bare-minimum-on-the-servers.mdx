@@ -1,0 +1,42 @@
+---
+refID: '0091'
+title: Install the bare minimum on the servers
+createdAt: 2025-06-09T14:10:36.473Z
+updatedAt: 2025-06-09T14:10:36.473Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0074'
+  - version: 2.0.0
+    idRef: '0089'
+  - version: 3.0.0
+    idRef: '0091'
+  - version: 4.0.0
+    idRef: '0093'
+  - version: 5.0.0
+    idRef: '0093'
+people: '-'
+responsible: []
+lifecycle: 4-production
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: datacenter
+saved_resources:
+  - cpu
+  - ram
+  - storage
+validations:
+  - rule: non-essential services running on the operating system
+    maxValue: '0'
+---
+
+## Description
+
+Uninstall all non-essential services that are not required to run your website. This measure will necessarily remove daemons (agents and services running permanently in memory) which use resources, especially CPU cycles and RAM.
+
+## Exemple
+
+Prefer "manual" servers installation (LAMP + CMS, for example) rather than cPanel or Plesk overlay distributions. If administration overlay is necessary, lightweight solutions like Webmin are preferred.

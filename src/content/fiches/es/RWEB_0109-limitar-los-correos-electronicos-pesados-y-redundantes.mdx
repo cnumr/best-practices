@@ -1,0 +1,60 @@
+---
+refID: '0109'
+title: 'Limitar los correos electrónicos pesados y redundantes'
+createdAt: 2024-02-14T13:25:58.681Z
+updatedAt: 2025-06-05T21:18:31.611Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0102'
+  - version: 2.0.0
+    idRef: '0110'
+  - version: 3.0.0
+    idRef: '0109'
+  - version: 4.0.0
+    idRef: '0103'
+  - version: 5.0.0
+    idRef: '0103'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 5-utilization
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: datacenter
+saved_resources:
+  - cpu
+  - network
+  - requests
+  - storage
+validations:
+  - rule: >-
+      de correos electrónicos con archivo adjunto
+    maxValue: 0
+---
+
+## Descripción
+
+Los correos electrónicos se guardan y se duplican en los discos del proveedor de correo electrónico.
+Conviene razonar el envío de correos electrónicos automáticos (por ejemplo: newsletters, gestión de clientes, seguimiento de pedidos) limitando su número, los archivos adjuntos y el número de destinatarios.
+
+## Ejemplo
+
+Newsletters:
+
+- Definir la frecuencia de envío a la estrictamente necesaria
+- Enviar únicamente a las personas esenciales para el boletín y las que lo deseen (lista de inscripción, segmentación del cliente)
+- Enviar correos electrónicos de "desuscripción" a clientes que no hayan abierto las newsletters anteriores
+- Evitar archivos adjuntos y preferir enlaces directos
+- Evitar las imágenes o limitar su tamaño
+
+Gestión de clientes:
+
+- Reducir a un solo envío para pedidos por internet (pedido, confirmación de pago, envío, satisfacción, relanzamiento, satisfacción de entrega, factura, ...)
+- No envíe un archivo adjunto si no es necesario: enlace al documento en la cuenta de cliente, por ejemplo.
+
+

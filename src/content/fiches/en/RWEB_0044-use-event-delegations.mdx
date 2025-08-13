@@ -1,0 +1,68 @@
+---
+refID: '0044'
+title: Use event delegations
+createdAt: 2025-06-09T13:47:11.442Z
+updatedAt: 2025-06-15T12:38:03.042Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0041'
+  - version: 2.0.0
+    idRef: '0046'
+  - version: 3.0.0
+    idRef: '0044'
+  - version: 4.0.0
+    idRef: '0055'
+  - version: 5.0.0
+    idRef: '0055'
+people: '-'
+responsible: []
+lifecycle: 3-developement
+environmental_impact: 4
+priority_implementation: 4
+moe: 3
+tiers: user-device
+saved_resources:
+  - ram
+  - cpu
+validations:
+  - rule: >-
+      listeners of the same event on multiple HTML elements, belonging to the
+      same group, without using event delegation
+    maxValue: '0'
+---
+
+## Description
+
+Events delegation avoids overloading browser memory by instantiating a single listener for several DOM (Document Object Model) elements.
+
+Instead of assigning an event listener to several elements on the page, you can put a single event listener on a parent element of these objects. It is in this event handler that the triggering element will be determined using `event.target`.
+
+More informations : [https://fr.javascript.info/event-delegation](https://fr.javascript.info/event-delegation)
+
+## Exemple
+
+Example script to highlight a table cell:
+
+```javascript
+<script type="text/javascript">
+  let selectedTd;
+  table.onclick = function(event) {
+    let target = event.target;
+    if (target.tagName != 'TD') return;
+    highlight(target);
+  };
+  function highlight(td) {
+    if (selectedTd) {
+      selectedTd.classList.remove('highlight');
+    }
+    selectedTd = td;
+    selectedTd.classList.add('highlight');
+  }
+</script>
+
+```
+
+Here we do not set an event listener on each cell but only on the table.
