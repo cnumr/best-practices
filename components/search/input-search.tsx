@@ -1,10 +1,12 @@
 'use client';
+
+import { FunctionComponent, useCallback, useMemo, useState } from 'react';
+
+import CheckboxGroup from './checkbox-group';
 import Fuse from 'fuse.js';
-import { FunctionComponent, useState, useMemo, useCallback } from 'react';
-import { ui } from '../../i18n/ui';
 import Link from 'next/link';
 import itemsjs from 'itemsjs';
-import CheckboxGroup from './checkbox-group';
+import { ui } from '../../i18n/ui';
 
 interface InputSearchProps {
   list: any[];
@@ -35,7 +37,10 @@ const fuseSearchOptions = {
   keys: ['title', 'contentText'],
 };
 
-export const InputSearch: FunctionComponent<InputSearchProps> = ({ list, lang = 'fr' }) => {
+export const InputSearch: FunctionComponent<InputSearchProps> = ({
+  list,
+  lang = 'fr',
+}) => {
   const [searchPattern, setSearchPattern] = useState('');
   const [filterTypename, setFilterTypename] = useState([]);
   const [filterResponsibles, setFilterResponsibles] = useState([]);
@@ -51,7 +56,7 @@ export const InputSearch: FunctionComponent<InputSearchProps> = ({ list, lang = 
   const result = useMemo(() => {
     return itemsSearch.search({
       per_page: 30,
-      ids: fuseSearch.map(v => v.item.id),
+      ids: fuseSearch.map((v) => v.item.id),
       filters: {
         __typename: filterTypename,
         filterResponsibles,
@@ -69,23 +74,27 @@ export const InputSearch: FunctionComponent<InputSearchProps> = ({ list, lang = 
         className="w-full"
         onChange={handleSearchPatternChange}
         value={searchPattern}
-        placeholder={"Rechercher"}
+        placeholder={'Rechercher'}
       />
 
       {searchPattern && (
-        <div className="shadow absolute z-50 bg-white p-8 lg:max-w-5xl overflow-auto w-full max-h-[70vh]">
-          <div className="text-s font-bold pb-4">
+        <div className="absolute z-50 max-h-[70vh] w-full overflow-auto bg-white p-4 shadow lg:max-w-5xl lg:p-8">
+          <div className="text-s pb-4 font-bold">
             {result.pagination.total} résultats pour {searchPattern}
           </div>
-          <div className="flex">
-            <div className="w-[200px] flex-shrink-0">
-              <h3 className="text-sm font-bold m-0">{result.data.aggregations.filterResponsibles.title}</h3>
+          <div className="flex flex-col gap-4 lg:flex-row">
+            <div className="w-full flex-shrink-0 border-b border-black pb-4 lg:w-[200px] lg:border-b-0 lg:pb-0">
+              <h3 className="m-0 text-sm font-bold">
+                {result.data.aggregations.filterResponsibles.title}
+              </h3>
               <CheckboxGroup
                 options={result.data.aggregations.filterResponsibles.buckets}
                 setSelectedOptions={setFilterResponsibles}
                 selectedOptions={filterResponsibles}
               />
-              <h3 className="text-sm font-bold m-0">{result.data.aggregations.__typename.title}</h3>
+              <h3 className="m-0 text-sm font-bold">
+                {result.data.aggregations.__typename.title}
+              </h3>
               <CheckboxGroup
                 options={result.data.aggregations.__typename.buckets}
                 setSelectedOptions={setFilterTypename}
@@ -95,10 +104,12 @@ export const InputSearch: FunctionComponent<InputSearchProps> = ({ list, lang = 
             <ul>
               {result.data.items.map((item) => (
                 <li key={item.id}>
-                  <Link href={item?.link} onClick={() => setSearchPattern('')}>
+                  <Link
+                    href={item?.link}
+                    onClick={() => setSearchPattern('')}>
                     {item?.title}
                   </Link>
-                  <p className="text-sm line-clamp-5">{item.contentText}</p>
+                  <p className="line-clamp-5 text-sm">{item.contentText}</p>
                 </li>
               ))}
             </ul>
