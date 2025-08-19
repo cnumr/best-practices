@@ -69,7 +69,7 @@ export const InputSearch: FunctionComponent<InputSearchProps> = ({
   }, []);
 
   return (
-    <div className="mx-auto pt-4 lg:max-w-5xl lg:px-0">
+    <div className="mx-auto px-4 pt-4 lg:max-w-5xl lg:px-0">
       <input
         className="w-full"
         onChange={handleSearchPatternChange}
