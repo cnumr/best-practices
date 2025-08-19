@@ -158,6 +158,15 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
               className="text-3xl text-white lg:hidden">
               &#9776;
             </button>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  function menu(){const e=document.querySelector(".menu");
+                  if(!e)return null;e&&e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("hidden"))}const o=document.querySelectorAll("[data-menu-button]");
+                  o.forEach(e=>{e.addEventListener("click",()=>menu())});
+                `,
+              }}
+            />
           </nav>
         </div>
       </header>
