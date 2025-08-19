@@ -66,11 +66,13 @@ export default async function Home({ params }) {
                         <h2 className="mb-4 mt-0 text-neutral">
                           {entry?.node.title}
                         </h2>
-                        <TinaMarkdown
-                          content={entry?.node.body}
-                          // @ts-ignore
-                          components={MdxComponents}
-                        />
+                        <div className="markdown-content">
+                          <TinaMarkdown
+                            content={entry?.node.body}
+                            // @ts-ignore
+                            components={MdxComponents}
+                          />
+                        </div>
                       </li>
                     );
                   else return null;

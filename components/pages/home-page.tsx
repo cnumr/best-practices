@@ -1,9 +1,10 @@
 'use client';
 
-import { HomeQuery } from '../../tina/__generated__/types';
 import { tinaField, useTina } from 'tinacms/dist/react';
-import { TinaMarkdown } from 'tinacms/dist/rich-text';
+
+import { HomeQuery } from '../../tina/__generated__/types';
 import { MdxComponents } from '../mdx/mdx-components';
+import { TinaMarkdown } from 'tinacms/dist/rich-text';
 
 export function HomePage(props: {
   data: HomeQuery;
@@ -16,10 +17,12 @@ export function HomePage(props: {
       <h1 data-tina-field={tinaField(data.home, 'title')}>{data.home.title}</h1>
       <div data-tina-field={tinaField(data.home, 'body')}>
         {data.home.body && (
-          <TinaMarkdown
-            content={data.home.body}
-            components={MdxComponents}
-          />
+          <div className="markdown-content">
+            <TinaMarkdown
+              content={data.home.body}
+              components={MdxComponents}
+            />
+          </div>
         )}
       </div>
     </main>
