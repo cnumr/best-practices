@@ -126,14 +126,12 @@
   }
 
   /**** LIST ****/
-  main ul,
   .content ul,
   .markdown-content ul {
     @apply list-none break-words;
     -webkit-hyphens: auto;
     hyphens: auto;
   }
-  main li,
   .content li,
   .markdown-content li {
     @apply mb-2 list-none before:relative before:top-[0.4rem] before:float-left before:mr-2 before:inline-block before:h-3.5 before:w-3.5 before:rounded-full before:rounded-tr-3xl before:bg-primary before:content-[''];

@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
-import { useTranslations } from '../../../i18n/utils';
-import { ui } from '../../../i18n/ui';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
+import { ui } from '../../../i18n/ui';
+import { useTranslations } from '../../../i18n/utils';
 
 type Validation = {
   rule: string;
@@ -38,7 +38,9 @@ export const FicheTableValidations: FunctionComponent<
                   //     markdown={validation.rule}
                   //     classes="markdown-content"
                   //   />
-                  <TinaMarkdown content={validation.rule} />
+                  <div className="markdown-content">
+                    <TinaMarkdown content={validation.rule} />
+                  </div>
                 )}
               </td>
               <td className="text-center">{validation.maxValue}</td>

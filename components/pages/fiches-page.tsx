@@ -72,11 +72,13 @@ export function FichesPage(props: {
           data-tina-field={tinaField(data.fiches, 'body')}
           className={cn('markdown-content lg:col-span-1')}>
           {data.fiches.body && (
-            <TinaMarkdown
-              content={data.fiches.body}
-              // @ts-ignore
-              components={MdxComponents}
-            />
+            <div className="markdown-content">
+              <TinaMarkdown
+                content={data.fiches.body}
+                // @ts-ignore
+                components={MdxComponents}
+              />
+            </div>
           )}
           <FicheTableValidations
             validations={data.fiches.validations}

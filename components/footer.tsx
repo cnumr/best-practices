@@ -30,7 +30,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
           </li>
           <li>
             <Link
-              href={`${lang}/mentions-legales`}
+              href={`/${lang}/mentions-legales`}
               title={t('Les mentions légales du site.')}>
               {t('Mentions légales')}
             </Link>
