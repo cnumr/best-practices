@@ -1,18 +1,42 @@
-import { FunctionComponent } from 'react';
+'use client';
+
+import { FunctionComponent, useEffect } from 'react';
+
 import { Iconify } from './iconify';
 import { LanguagePicker } from './language-picker';
 import Link from 'next/link';
 import { getRefConfig } from '../referentiel-config';
 import { ui } from '../i18n/ui';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from '../i18n/utils';
+
 interface HeaderProps {
   lang?: keyof typeof ui;
 }
 const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
   const t = useTranslations(lang);
+  const pathname = usePathname();
   const repoURL =
     process.env.NEXT_PUBLIC_REPO_URL ||
     'https://github.com/cnumr/best-practices';
+  function menuToggle() {
+    const e = document.querySelector('.menu');
+    if (!e) return null;
+    e && e.classList.contains('hidden')
+      ? (e.classList.remove('hidden'), e.classList.add('flex'))
+      : (e.classList.remove('flex'), e.classList.add('hidden'));
+  }
+  // quand on navigue, on force le menuToggle (true)
+  useEffect(() => {
+    const closeMenuOnNavigate = () => {
+      console.log('pathname', pathname);
+      const e = document.querySelector('.menu');
+      if (!e) return null;
+      e.classList.remove('flex');
+      e.classList.add('hidden');
+    };
+    closeMenuOnNavigate();
+  }, [pathname]);
   return (
     <>
       {/* <pre>
@@ -52,6 +76,7 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
               <li className="z-90 fixed right-5 top-3 lg:hidden">
                 <button
                   data-menu-button
+                  onClick={menuToggle}
                   className="text-right text-4xl text-white">
                   &times;
                 </button>
@@ -129,18 +154,10 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
             {/* mobile bt */}[
             <button
               data-menu-button
+              onClick={menuToggle}
               className="text-3xl text-white lg:hidden">
               &#9776;
             </button>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  function menu(){const e=document.querySelector(".menu");
-                  if(!e)return null;e&&e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("hidden"))}const o=document.querySelectorAll("[data-menu-button]");
-                  o.forEach(e=>{e.addEventListener("click",()=>menu())});
-                `,
-              }}
-            />
           </nav>
         </div>
       </header>
