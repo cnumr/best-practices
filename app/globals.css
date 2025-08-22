@@ -133,14 +133,14 @@
     hyphens: auto;
   }
   .content li,
-  .markdown-content li {
+  .markdown-content ul li {
     @apply mb-2 list-none before:relative before:top-[0.4rem] before:float-left before:mr-2 before:inline-block before:h-3.5 before:w-3.5 before:rounded-full before:rounded-tr-3xl before:bg-primary before:content-[''];
-    ul {
-      @apply ml-8;
-      li {
-        @apply mb-2 list-none before:relative before:top-[0.4rem] before:float-left before:mr-2 before:inline-block before:h-3.5 before:w-3.5 before:rounded-full before:rounded-tr-3xl before:border-2 before:border-primary before:bg-transparent before:content-[''];
-      }
-    }
+  }
+  .markdown-content ul li ul {
+    @apply ml-8;
+  }
+  .markdown-content ul li ul li {
+    @apply before:border-2 before:border-primary before:bg-transparent;
   }
   main .noliststyle li {
     @apply ml-0 list-none;
