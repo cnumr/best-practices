@@ -134,11 +134,13 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
             </span>
           )}
         </div>
-        <div className="flex flex-row items-center justify-start gap-2 text-base text-primary">
-          <span className="">
-            {t('Correspondance RGESN')}: {fiche.rgesn || `-`}
-          </span>
-        </div>
+        {getRefConfig().featuresEnabled.rgesnField === true && (
+          <div className="flex flex-row items-center justify-start gap-2 text-base text-primary">
+            <span className="">
+              {t('Correspondance RGESN')}: {fiche.rgesn || `-`}
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );
