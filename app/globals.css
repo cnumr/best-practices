@@ -127,20 +127,43 @@
 
   /**** LIST ****/
   .content ul,
-  .markdown-content ul {
+  .markdown-content ul,
+  .content ol,
+  .markdown-content ol {
     @apply list-none break-words;
     -webkit-hyphens: auto;
     hyphens: auto;
   }
-  .content li,
-  .markdown-content ul li {
-    @apply mb-2 list-none before:relative before:top-[0.4rem] before:float-left before:mr-2 before:inline-block before:h-3.5 before:w-3.5 before:rounded-full before:rounded-tr-3xl before:bg-primary before:content-[''];
-  }
-  .markdown-content ul li ul {
+  .content ul,
+  .content ol,
+  .markdown-content ul,
+  .markdown-content ol {
     @apply ml-8;
   }
-  .markdown-content ul li ul li {
+  /* ONLY FOR THE FIRST UL */
+  .content > ul,
+  .markdown-content > ul {
+    @apply ml-0;
+  }
+  .content > ol,
+  .markdown-content > ol {
+    @apply ml-10;
+  }
+  .content li,
+  .markdown-content li {
+    @apply mb-2 list-none before:relative before:top-[0.4rem] before:float-left before:mr-2 before:inline-block before:h-3.5 before:w-3.5 before:rounded-full before:rounded-tr-3xl before:bg-primary before:content-[''];
+  }
+  .content li li,
+  .markdown-content li li {
     @apply before:border-2 before:border-primary before:bg-transparent;
+  }
+  .content ol,
+  .markdown-content ol {
+    @apply list-decimal break-words;
+  }
+  .content ol li,
+  .markdown-content ol li {
+    @apply list-decimal before:-left-10 before:-mr-5;
   }
   main .noliststyle li {
     @apply ml-0 list-none;
