@@ -1,0 +1,61 @@
+---
+refID: '0014'
+title: Preferir la entrada asistida al autocompletado
+createdAt: 2024-02-14T09:20:22.612Z
+updatedAt: 2025-09-05T16:07:47.424Z
+language: es
+published: true
+refType: RWEB
+versions:
+  - version: GreenIT
+    idRef: '0204'
+  - version: 2.0.0
+    idRef: '0004'
+  - version: 3.0.0
+    idRef: '0004'
+  - version: 4.0.0
+    idRef: '0014'
+  - version: 5.0.0
+    idRef: '0014'
+people: TBD
+responsible:
+  - responsible: src/content/personas/fr/poamoa.mdx
+lifecycle: 2-concept
+rgesn: '4.9'
+environmental_impact: 3
+priority_implementation: 3
+moe: 3
+tiers: user-device
+saved_resources:
+  - requests
+validations:
+  - rule: de campos de autocompletar
+    maxValue: 20 %
+---
+
+## Descripción
+
+El autocompletar sugiere al usuario resultados coincidentes mientras escribe. Por cada carácter introducido, se envía una consulta al servidor para obtener los resultados apropiados. Esto puede resultar costoso.
+
+Es preferible utilizar la entrada asistida, que consiste en guiar al usuario a través de un conjunto de información y sugerencias gestionadas localmente, lo que reduce el número de interacciones con el servidor.
+
+Minimizar el impacto del autocompletado con optimizaciones sencillas: un retardo de unas décimas de segundo entre la adición de un carácter y la consulta, lanzar la consulta sólo después de que se haya introducido un determinado número de caracteres, limitar el número de resultados mostrados, etc.
+
+Para minimizar las idas y vueltas, si los datos presentados al usuario son suficientemente limitados, puede incluirlos directamente en su código HTML y utilizar el elemento nativo \<datalist>.
+
+## Ejemplo
+
+El elemento \<datalist> una ida y vuelta con el servidor.
+
+```html
+<label for="ice-cream-choice">Choose a flavor:[1]</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+	<option value="Chocolate">
+	<option value="Coconut">
+	<option value="Mint">
+	<option value="Strawberry">
+	<option value="Vanilla">
+</datalist>
+```
