@@ -54,6 +54,17 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
       tiers: false,
       scope: false,
       rgesnField: false,
+      filters: [
+        'lifecycle',
+        'scope',
+        'saved_resources',
+        'tiers',
+        // 'responsible', // bug
+        // 'priority_implementation', // empty
+        // 'environmental_impact', // empty
+        // 'rgesn', // empty, too many
+        // 'moe', // empty
+      ],
     },
   };
   switch (currentRef) {

@@ -60,10 +60,18 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
       };
     }
   };
+  const getTiers = () => {
+    if (getRefConfig().featuresEnabled.tiers === true) {
+      return {
+        'data-tiers': slugify(fiche.tiers),
+      };
+    }
+  };
   return (
     <div
       className="mb-0 mt-0 flex h-full flex-col justify-between gap-8 text-lg font-bold text-neutral"
       data-lifecycle={slugify(fiche.lifecycle)}
+      {...getTiers()}
       {...getScope()}
       data-saved_resources={slugify(fiche.saved_resources.join(' '))}>
       <h2 className="m-0 flex flex-col items-start gap-2 text-lg font-bold text-neutral md:col-span-1 md:row-span-2 lg:flex-row">
@@ -116,7 +124,7 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
                 fiche[`environmental_impact`]
               )}`}
               className="text-base">
-              {`${t('Impact environnemental')} : ${
+              {`${t('Impact environnemental')}: ${
                 fiche[`environmental_impact`]
               }`}
             </span>
@@ -126,6 +134,7 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
           <span
             title={t('lifecycle')}
             className="badge border-primary text-xs text-neutral">
+            {t('lifecycle')}:{' '}
             {isStringInUi(lang, fiche.lifecycle) && t(fiche.lifecycle)}
           </span>
           {getRefConfig().featuresEnabled.scope === true && (
@@ -135,9 +144,20 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
                   title={t('scope')}
                   className="badge border-primary text-xs text-neutral"
                   key={scope}>
-                  {isStringInUi(lang, scope) && t(scope)}
+                  {t('scope')}: {isStringInUi(lang, scope) && t(scope)}
                 </span>
               ))}
+            </>
+          )}
+          {getRefConfig().featuresEnabled.tiers === true && (
+            <>
+              <span
+                title={t('tiers')}
+                className="badge border-primary text-xs text-neutral"
+                key={fiche.tiers}>
+                {t('tiers')}:{' '}
+                {isStringInUi(lang, fiche.tiers) && t(fiche.tiers)}
+              </span>
             </>
           )}
         </div>

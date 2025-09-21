@@ -74,6 +74,34 @@ const lifecycleOptions = {
       value: 'tbd',
       label: "<< TBD (éviter de l'utiliser) >>",
     },
+    {
+      value: '1-specification',
+      label: '1. Specification',
+    },
+    {
+      value: '2-concept',
+      label: '2. Concept',
+    },
+    {
+      value: '3-developement',
+      label: '3. Development',
+    },
+    {
+      value: '4-production',
+      label: '4. Production',
+    },
+    {
+      value: '5-utilization',
+      label: '5. Utilization',
+    },
+    {
+      value: '6-support',
+      label: '6. Support',
+    },
+    {
+      value: '7-retirement',
+      label: '7. Retirement',
+    },
   ],
 };
 const scopeOptions = [
@@ -169,4 +197,22 @@ const saved_resourcesOptions = [
     label: "<< TBD (éviter de l'utiliser) >>",
   },
 ];
-export { lifecycleOptions, scopeOptions, saved_resourcesOptions };
+const tiersOptions = [
+  {
+    label: 'Utilisateur/Terminal',
+    value: 'user-device',
+  },
+  {
+    label: 'Réseau',
+    value: 'network',
+  },
+  {
+    label: 'Datacenter',
+    value: 'datacenter',
+  },
+  {
+    label: "<< TBD (éviter de l'utiliser) >>",
+    value: 'tbd',
+  },
+];
+export { lifecycleOptions, scopeOptions, saved_resourcesOptions, tiersOptions };

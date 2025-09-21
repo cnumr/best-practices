@@ -9,6 +9,7 @@ import {
   lifecycleOptions,
   scopeOptions,
   saved_resourcesOptions,
+  tiersOptions,
 } from '../../src/content/constants';
 import { tinaTableTemplate, type Collection, type TinaField } from 'tinacms';
 import {
@@ -155,24 +156,7 @@ const getSpecificRefFields: any = () => {
       type: 'string',
       name: 'tiers',
       label: 'Tiers',
-      options: [
-        {
-          label: 'Utilisateur/Terminal',
-          value: 'user-device',
-        },
-        {
-          label: 'Réseau',
-          value: 'network',
-        },
-        {
-          label: 'Datacenter',
-          value: 'datacenter',
-        },
-        {
-          label: "<< TBD (éviter de l'utiliser) >>",
-          value: 'tbd',
-        },
-      ],
+      options: tiersOptions,
     };
     specificsFields.push(tiers);
   }

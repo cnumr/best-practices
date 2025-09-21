@@ -91,6 +91,7 @@ export const FichesTableView: FunctionComponent<FichesTableViewProps> = ({
                       </strong>
                     </td>
                     <td>{getPreviousRefID(entry)}</td>
+                    {/* @ts-ignore */}
                     <td>{node?.rgesn || `-`}</td>
                   </tr>
                 );

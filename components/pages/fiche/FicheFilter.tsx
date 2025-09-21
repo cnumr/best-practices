@@ -1,9 +1,15 @@
-import { lifecycleOptions, saved_resourcesOptions, scopeOptions } from '../../../src/content/constants';
+import {
+  lifecycleOptions,
+  saved_resourcesOptions,
+  scopeOptions,
+  tiersOptions,
+} from '../../../src/content/constants';
 
 import { CardType } from '../../../model/cardType';
 import { FichesConnectionEdges } from '../../../tina/__generated__/types';
 import { FunctionComponent } from 'react';
 import { Iconify } from '../../iconify';
+import { getRefConfig } from '../../../referentiel-config';
 import { slugify } from '../../../src/js/utils';
 import { ui } from '../../../i18n/ui';
 import { useTranslations } from '../../../i18n/utils';
@@ -21,36 +27,35 @@ const getDatas = (entries: any[], t: any) => {
   entries.forEach((entry: FichesConnectionEdges) => {
     const node = entry.node;
     if (!node) return;
-    Object.keys(node).forEach((key) => {
-
-      if (key === 'lifecycle' || key === 'scope' || key === 'saved_resources') {
-        // création de l'item du tableau de données si pas déjà existant
-        if (!datas.find((data) => data.name === key)) {
-          datas.push({
-            name: key,
-            values: [],
-          });
-        }
-        if (
-          !datas
-            .find((data) => data.name === key)
-            .values.includes(entry.node?.[key])
-        ) {
-
-
-          if (Array.isArray(entry.node?.[key])) {
-            datas
+    Object.keys(node)
+      .sort()
+      .forEach((key) => {
+        if (getRefConfig().featuresEnabled.filters.includes(key)) {
+          // création de l'item du tableau de données si pas déjà existant
+          if (!datas.find((data) => data.name === key)) {
+            datas.push({
+              name: key,
+              values: [],
+            });
+          }
+          if (
+            !datas
               .find((data) => data.name === key)
-              // @ts-ignore
-              .values.push(...entry.node?.[key]);
-          } else {
-            datas
-              .find((data) => data.name === key)
-              .values.push(entry.node?.[key]);
+              .values.includes(entry.node?.[key])
+          ) {
+            if (Array.isArray(entry.node?.[key])) {
+              datas
+                .find((data) => data.name === key)
+                // @ts-ignore
+                .values.push(...entry.node?.[key]);
+            } else {
+              datas
+                .find((data) => data.name === key)
+                .values.push(entry.node?.[key]);
+            }
           }
         }
-      }
-    });
+      });
     // nettoyage des valeurs en double
     datas.forEach((data) => {
       data.values = [...new Set(data.values)];
@@ -72,20 +77,31 @@ const getDatas = (entries: any[], t: any) => {
 };
 
 const getStyles = () => {
-  const styleDatas = [
-    {
+  const styleDatas: { name: string; values: any }[] = [];
+  if (getRefConfig().featuresEnabled.lifecycle) {
+    styleDatas.push({
       name: 'lifecycle',
-      values: lifecycleOptions[REF_NAME]?.map(item => item.value),
-    },
-    {
+      values: lifecycleOptions[REF_NAME]?.map((item) => item.value),
+    });
+  }
+  if (getRefConfig().featuresEnabled.scope) {
+    styleDatas.push({
       name: 'scope',
-      values: scopeOptions.map(item => item.value),
-    },
-    {
+      values: scopeOptions.map((item) => item.value),
+    });
+  }
+  if (getRefConfig().featuresEnabled.saved_resources) {
+    styleDatas.push({
       name: 'saved_resources',
-      values: saved_resourcesOptions.map(item => item.value),
-    },
-  ];
+      values: saved_resourcesOptions.map((item) => item.value),
+    });
+  }
+  if (getRefConfig().featuresEnabled.tiers) {
+    styleDatas.push({
+      name: 'tiers',
+      values: tiersOptions.map((item) => item.value),
+    });
+  }
   return styleDatas.map((item) => {
     return item?.values?.map((child) => {
       return `.group:has(#cb_${slugify(item.name)}_${slugify(child)}:checked)
@@ -98,60 +114,64 @@ const getStyles = () => {
 };
 
 export const FichesCardFilter: FunctionComponent<FichesCardFilterProps> = ({
-                                                                             entries,
-                                                                             lang = 'fr',
-                                                                             type = CardType.FICHES,
-                                                                           }) => {
+  entries,
+  lang = 'fr',
+  type = CardType.FICHES,
+}) => {
   const t = useTranslations(lang);
   const datas: any[] = getDatas(entries, t);
   const styles = getStyles();
-  return (<section className="group flex flex-col gap-4">
-    <div className="grid-cols-1 sm:col-span-3">
-      <label
-        htmlFor="filter-state"
-        role="button"
-        className="btn btn-outline inline-flex items-center gap-2 p-3"
-      >
-      <span>
-        <span className="inline group-has-[#filter-state:checked]:hidden"
-        >{t('Afficher')}</span
-        ><span className="hidden group-has-[#filter-state:checked]:inline"
-      >{t('Masquer')}</span
-      >
-        {' '}{t('les filtres')}
-      </span>
-        <input id="filter-state" type="checkbox" className="hidden" />
-        <Iconify
-          icon="tabler:circle-chevron-right"
-          className="inline group-has-[#filter-state:checked]:hidden"
-          width={24}
-          height={24}
-          aria-hidden="true"
-        />
-        <Iconify
-          icon="tabler:circle-chevron-down"
-          className="hidden group-has-[#filter-state:checked]:inline"
-          width={24}
-          height={24}
-          aria-hidden="true"
-        />
-      </label>
-    </div>
-    <div
-      className="hidden grid-cols-1 gap-3 rounded border border-primary p-4 group-has-[#filter-state:checked]:grid sm:grid-cols-3"
-    >
-      <div className="col-span-3 hidden">
-        <h2 className="font-black">{t('Catégories')}</h2>
+  return (
+    <section className="group flex flex-col gap-4">
+      <div className="grid-cols-1 sm:col-span-3">
+        <label
+          htmlFor="filter-state"
+          role="button"
+          className="btn btn-outline inline-flex items-center gap-2 p-3">
+          <span>
+            <span className="inline group-has-[#filter-state:checked]:hidden">
+              {t('Afficher')}
+            </span>
+            <span className="hidden group-has-[#filter-state:checked]:inline">
+              {t('Masquer')}
+            </span>{' '}
+            {t('les filtres')}
+          </span>
+          <input
+            id="filter-state"
+            type="checkbox"
+            className="hidden"
+          />
+          <Iconify
+            icon="tabler:circle-chevron-right"
+            className="inline group-has-[#filter-state:checked]:hidden"
+            width={24}
+            height={24}
+            aria-hidden="true"
+          />
+          <Iconify
+            icon="tabler:circle-chevron-down"
+            className="hidden group-has-[#filter-state:checked]:inline"
+            width={24}
+            height={24}
+            aria-hidden="true"
+          />
+        </label>
       </div>
-      {
-        datas.map((item, key) => {
+      <div className="hidden grid-cols-1 gap-3 rounded border border-primary p-4 group-has-[#filter-state:checked]:grid sm:grid-cols-3">
+        <div className="col-span-3 hidden">
+          <h2 className="font-black">{t('Catégories')}</h2>
+        </div>
+        {datas.map((item, key) => {
           return (
             <div key={key}>
               <p className="mb-2 font-black">{t(item.name)}</p>
               <ul className="flex flex-col gap-1">
                 {item.values.map((child, key) => {
                   return (
-                    <li key={key} className="flex gap-2 items-center">
+                    <li
+                      key={key}
+                      className="flex items-center gap-2">
                       <input
                         id={`cb_${slugify(item.name)}_${slugify(child)}`}
                         type="checkbox"
@@ -159,8 +179,7 @@ export const FichesCardFilter: FunctionComponent<FichesCardFilterProps> = ({
                       />
                       <label
                         htmlFor={`cb_${slugify(item.name)}_${slugify(child)}`}
-                        role="button"
-                      >
+                        role="button">
                         {t(child)}
                       </label>
                     </li>
@@ -169,10 +188,9 @@ export const FichesCardFilter: FunctionComponent<FichesCardFilterProps> = ({
               </ul>
             </div>
           );
-        })
-      }
-    </div>
-    <style>{styles.join('\n')
-      .replaceAll(',', '\n')}</style>
-  </section>);
+        })}
+      </div>
+      <style>{styles.join('\n').replaceAll(',', '\n')}</style>
+    </section>
+  );
 };
