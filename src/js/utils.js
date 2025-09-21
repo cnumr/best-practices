@@ -14,6 +14,7 @@
  * @returns {string} The slugified text.
  */
 const slugify = (text) => {
+  if (text === null || text === undefined) return 'tbd';
   return text
     .toString()
     .normalize('NFD')
