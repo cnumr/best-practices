@@ -55,7 +55,9 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
 
   const getScope = () => {
     if (getRefConfig().featuresEnabled.scope === true) {
-      return { 'data-scope': slugify(fiche.scope || '') };
+      return {
+        'data-scope': fiche.scope.map((scope) => slugify(scope)).join(', '),
+      };
     }
   };
   return (
@@ -127,11 +129,16 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
             {isStringInUi(lang, fiche.lifecycle) && t(fiche.lifecycle)}
           </span>
           {getRefConfig().featuresEnabled.scope === true && (
-            <span
-              title={t('scope')}
-              className="badge border-primary text-xs text-neutral">
-              {isStringInUi(lang, fiche.scope) && t(fiche.scope)}
-            </span>
+            <>
+              {fiche.scope.map((scope) => (
+                <span
+                  title={t('scope')}
+                  className="badge border-primary text-xs text-neutral"
+                  key={scope}>
+                  {isStringInUi(lang, scope) && t(scope)}
+                </span>
+              ))}
+            </>
           )}
         </div>
         {getRefConfig().featuresEnabled.rgesnField === true && (

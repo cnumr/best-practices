@@ -5,7 +5,11 @@ import {
   defaultFields,
   onFichesBeforeSubmit,
 } from '../utils/commonFields';
-import { lifecycleOptions, scopeOptions, saved_resourcesOptions } from '../../src/content/constants';
+import {
+  lifecycleOptions,
+  scopeOptions,
+  saved_resourcesOptions,
+} from '../../src/content/constants';
 import { tinaTableTemplate, type Collection, type TinaField } from 'tinacms';
 import {
   getRefConfig,
@@ -178,6 +182,7 @@ const getSpecificRefFields: any = () => {
       type: 'string',
       name: 'scope',
       label: 'Scope',
+      list: true,
       required: true,
       // répercuter ces changements dans src/components/fiches/FichesFilter.astro et dans src/i18n/ui.ts
       options: scopeOptions,
@@ -247,10 +252,10 @@ const fiches: Collection = {
       name: 'refID',
       label: '#REF',
       required: true,
-      ui:{
+      ui: {
         parse: (val?: string) => val && val.replace(/ /g, '_'),
-        format: (val?: string) => (val ? val.replace(/ /g, '_') : "")
-      }
+        format: (val?: string) => (val ? val.replace(/ /g, '_') : ''),
+      },
     },
     ...defaultFields,
     titleField('Metadatas'),
@@ -294,10 +299,10 @@ const fiches: Collection = {
           name: 'idRef',
           label: 'ID Ref.',
           required: true,
-          ui:{
+          ui: {
             parse: (val?: string) => val && val.replace(/ /g, '_'),
-            format: (val?: string) => (val ? val.replace(/ /g, '_') : "")
-          }
+            format: (val?: string) => (val ? val.replace(/ /g, '_') : ''),
+          },
         },
       ],
     },
@@ -342,7 +347,7 @@ const fiches: Collection = {
       list: true,
       required: true,
       // répercuter ces changements dans src/components/fiches/FichesFilter.astro et dans src/i18n/ui.ts
-      options: saved_resourcesOptions
+      options: saved_resourcesOptions,
     },
     titleField('Corps de la fiche'),
     {
