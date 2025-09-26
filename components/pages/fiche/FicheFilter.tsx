@@ -1,5 +1,13 @@
 import {
+  MESURE_ON_3,
+  MESURE_ON_5,
+  getRefConfig,
+} from '../../../referentiel-config';
+import {
+  environmental_impactOptions,
   lifecycleOptions,
+  moeOptions,
+  priority_implementationOptions,
   saved_resourcesOptions,
   scopeOptions,
   tiersOptions,
@@ -9,7 +17,6 @@ import { CardType } from '../../../model/cardType';
 import { FichesConnectionEdges } from '../../../tina/__generated__/types';
 import { FunctionComponent } from 'react';
 import { Iconify } from '../../iconify';
-import { getRefConfig } from '../../../referentiel-config';
 import { slugify } from '../../../src/js/utils';
 import { ui } from '../../../i18n/ui';
 import { useTranslations } from '../../../i18n/utils';
@@ -102,6 +109,41 @@ const getStyles = () => {
       values: tiersOptions.map((item) => item.value),
     });
   }
+  if (getRefConfig().featuresEnabled.moe) {
+    styleDatas.push({
+      name: 'moe',
+      values: moeOptions,
+    });
+  }
+  if (getRefConfig().featuresEnabled.environmental_impact === MESURE_ON_5) {
+    styleDatas.push({
+      name: 'environmental_impact',
+      values: environmental_impactOptions[MESURE_ON_5],
+    });
+  }
+  if (getRefConfig().featuresEnabled.environmental_impact === MESURE_ON_3) {
+    styleDatas.push({
+      name: 'environmental_impact',
+      values: environmental_impactOptions[MESURE_ON_3].map(
+        (item) => item.value
+      ),
+    });
+  }
+  if (getRefConfig().featuresEnabled.priority_implementation === MESURE_ON_5) {
+    styleDatas.push({
+      name: 'priority_implementation',
+      values: priority_implementationOptions[MESURE_ON_5],
+    });
+  }
+  if (getRefConfig().featuresEnabled.priority_implementation === MESURE_ON_3) {
+    styleDatas.push({
+      name: 'priority_implementation',
+      values: priority_implementationOptions[MESURE_ON_3].map(
+        (item) => item.value
+      ),
+    });
+  }
+
   return styleDatas.map((item) => {
     return item?.values?.map((child) => {
       return `.group:has(#cb_${slugify(item.name)}_${slugify(child)}:checked)
@@ -180,7 +222,7 @@ export const FichesCardFilter: FunctionComponent<FichesCardFilterProps> = ({
                       <label
                         htmlFor={`cb_${slugify(item.name)}_${slugify(child)}`}
                         role="button">
-                        {t(child)}
+                        {t(child) || child}
                       </label>
                     </li>
                   );

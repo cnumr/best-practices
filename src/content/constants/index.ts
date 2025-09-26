@@ -215,4 +215,55 @@ const tiersOptions = [
     value: 'tbd',
   },
 ];
-export { lifecycleOptions, scopeOptions, saved_resourcesOptions, tiersOptions };
+const environmental_impactOptions = {
+  'use-3-grades': [
+    {
+      label: 'Fort 🌱🌱🌱',
+      value: 'high_environmental_impact',
+    },
+    {
+      label: 'Moyen 🌱🌱',
+      value: 'medium_environmental_impact',
+    },
+    {
+      label: 'Faible 🌱',
+      value: 'low_environmental_impact',
+    },
+    {
+      value: 'tbd',
+      label: "<< TBD (éviter de l'utiliser) >>",
+    },
+  ],
+  'use-5-grades': [1, 2, 3, 4, 5],
+};
+const priority_implementationOptions = {
+  'use-3-grades': [
+    {
+      label: 'Haute 👍👍👍',
+      value: 'high_priority',
+    },
+    {
+      label: 'Moyenne 👍👍',
+      value: 'medium_priority',
+    },
+    {
+      label: 'Faible 👍',
+      value: 'low_priority',
+    },
+    {
+      value: 'tbd',
+      label: "<< TBD (éviter de l'utiliser) >>",
+    },
+  ],
+  'use-5-grades': [1, 2, 3, 4, 5],
+};
+const moeOptions = [1, 2, 3, 4, 5];
+export {
+  lifecycleOptions,
+  scopeOptions,
+  saved_resourcesOptions,
+  tiersOptions,
+  environmental_impactOptions,
+  priority_implementationOptions,
+  moeOptions,
+};

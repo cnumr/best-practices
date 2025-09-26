@@ -10,6 +10,8 @@ import {
   scopeOptions,
   saved_resourcesOptions,
   tiersOptions,
+  environmental_impactOptions,
+  priority_implementationOptions,
 } from '../../src/content/constants';
 import { tinaTableTemplate, type Collection, type TinaField } from 'tinacms';
 import {
@@ -43,32 +45,15 @@ const getSpecificRefFields: any = () => {
   }
 
   if (featuresEnabled.environmental_impact === MESURE_ON_3) {
-    const priority_implementation: TinaField = {
+    const environmental_impact: TinaField = {
       type: 'string',
       name: 'environmental_impact',
       label: 'Environmental impact',
       required: true,
       // répercuter ces changements dans src/i18n/ui.ts
-      options: [
-        {
-          label: 'Fort 🌱🌱🌱',
-          value: 'high_environmental_impact',
-        },
-        {
-          label: 'Moyen 🌱🌱',
-          value: 'medium_environmental_impact',
-        },
-        {
-          label: 'Faible 🌱',
-          value: 'low_environmental_impact',
-        },
-        {
-          value: 'tbd',
-          label: "<< TBD (éviter de l'utiliser) >>",
-        },
-      ],
+      options: environmental_impactOptions['use-3-grades'],
     };
-    specificsFields.push(priority_implementation);
+    specificsFields.push(environmental_impact);
   }
 
   if (featuresEnabled.environmental_impact === MESURE_ON_5) {
@@ -96,24 +81,7 @@ const getSpecificRefFields: any = () => {
       label: 'Priority implementation',
       required: true,
       // répercuter ces changements dans src/i18n/ui.ts
-      options: [
-        {
-          label: 'Haute 👍👍👍',
-          value: 'high_priority',
-        },
-        {
-          label: 'Moyenne 👍👍',
-          value: 'medium_priority',
-        },
-        {
-          label: 'Faible 👍',
-          value: 'low_priority',
-        },
-        {
-          value: 'tbd',
-          label: "<< TBD (éviter de l'utiliser) >>",
-        },
-      ],
+      options: priority_implementationOptions[MESURE_ON_3],
     };
     specificsFields.push(priority_implementation);
   }

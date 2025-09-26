@@ -158,14 +158,14 @@ export const ui = {
     '7-retirement': '7. Fin de la vida',
     // Environmental impact
     environmental_impact: 'Impacto medioambiental',
-    high_environmental_impact: 'Fuerte 🌱🌱🌱',
-    medium_environmental_impact: 'Promedio 🌱🌱',
-    low_environmental_impact: 'Débil 🌱',
+    high_environmental_impact: '3. Fuerte 🌱🌱🌱',
+    medium_environmental_impact: '2. Promedio 🌱🌱',
+    low_environmental_impact: '1. Débil 🌱',
     // Priority implementation
     priority_implementation: 'Prioridad de implementación',
-    high_priority: 'Alto 👍👍👍',
-    medium_priority: 'Promedio 👍👍',
-    low_priority: 'Débil 👍',
+    high_priority: '3. Alto 👍👍👍',
+    medium_priority: '2. Promedio 👍👍',
+    low_priority: '1. Débil 👍',
     // Saved resource(s)
     saved_resources: 'Recursos guardados',
     cpu: 'Procesador',
@@ -324,14 +324,14 @@ export const ui = {
     '7-retirement': '7. Retirement',
     // Environmental impact
     environmental_impact: 'Environmental impact',
-    high_environmental_impact: 'Strong 🌱🌱🌱',
-    medium_environmental_impact: 'Average 🌱🌱',
-    low_environmental_impact: 'Weak 🌱',
+    high_environmental_impact: '3. Strong 🌱🌱🌱',
+    medium_environmental_impact: '2. Average 🌱🌱',
+    low_environmental_impact: '1. Weak 🌱',
     // Priority implementation
     priority_implementation: 'Implementation Priority',
-    high_priority: 'High 👍👍👍',
-    medium_priority: 'Average 👍👍',
-    low_priority: 'Weak 👍',
+    high_priority: '3. High 👍👍👍',
+    medium_priority: '2. Average 👍👍',
+    low_priority: '1. Weak 👍',
     // Saved resource(s)
     saved_resources: 'Resource(s) saved',
     cpu: 'Processor',
@@ -494,14 +494,14 @@ export const ui = {
 
     // Environmental impact
     environmental_impact: 'Impact environnemental',
-    high_environmental_impact: 'Fort 🌱🌱🌱',
-    medium_environmental_impact: 'Moyen 🌱🌱',
-    low_environmental_impact: 'Faible 🌱',
+    high_environmental_impact: '3. Fort 🌱🌱🌱',
+    medium_environmental_impact: '2. Moyen 🌱🌱',
+    low_environmental_impact: '1. Faible 🌱',
     // Priority implementation
     priority_implementation: "Priorité d'implémentation",
-    high_priority: 'Haute 👍👍👍',
-    medium_priority: 'Moyenne 👍👍',
-    low_priority: 'Faible 👍',
+    high_priority: '3. Haute 👍👍👍',
+    medium_priority: '2. Moyenne 👍👍',
+    low_priority: '1. Faible 👍',
     // Saved resource(s)
     saved_resources: 'Ressource(s) économisée(s)',
     cpu: 'Processeur',

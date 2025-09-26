@@ -1,4 +1,0 @@
-<If "req('Host') == 'rweb.greenit.fr'">
-  Redirect (.*) rweb.greenit.fr
-  # Require all denied
-</If>
