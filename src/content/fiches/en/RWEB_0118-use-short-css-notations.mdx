@@ -1,0 +1,48 @@
+---
+refID: 0118
+title: Use short CSS notations
+createdAt: 2025-09-22T08:05:29.086Z
+updatedAt: 2025-09-22T08:12:01.509Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: 0118
+people: NA
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 1
+priority_implementation: 2
+moe: 1
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: long css notations
+    maxValue: '0'
+---
+
+## Description
+
+Use CSS shorthand notations to reduce stylesheet size.
+
+## Example
+
+Do not write :
+
+```css
+margin - top: 1em; margin - right: 0; margin - bottom: 2em; margin - left: 0.5em;
+```
+
+But rather :
+
+```css
+margin: 1em 0 2em 0.5em;
+```
+
+Resources :
+
+* [W3C CSS page](https://www.w3.org/TR/CSS)

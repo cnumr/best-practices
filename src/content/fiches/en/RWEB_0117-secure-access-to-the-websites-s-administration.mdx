@@ -1,0 +1,48 @@
+---
+refID: '0117'
+title: Secure access to the websites's administration
+createdAt: 2025-09-22T07:58:52.516Z
+updatedAt: 2025-09-22T08:12:39.415Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: '0117'
+people: NA
+responsible:
+  - responsible: src/content/personas/fr/contributeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 3
+priority_implementation: 3
+moe: 2
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: 'default administration URLs, predictable logins and weak passwords'
+    maxValue: '0'
+---
+
+## Description
+
+When using widely known CMS, the access path to site administration is often identical from one site to another.
+
+As a result, brute force attacks are very common and these attacks have a significant impact on the network and infrastructure.
+
+Attacks are even more successful when a user's login is predictable or when passwords are not strong enough.
+
+## Exemple
+
+WordPress, one of the most widely used CMSs on the market, offers its administration via the URL: /wp-admin or [/wp-login.php.](/wp-login.php.) Joomla uses [/administrator,](/administrator,) for Kirby, it's [/panel,](/panel,) etc.
+
+It is possible to change this address to limit attacks, for instance with:
+
+* a random string without capital letters: /ze62ane96, /o6\\\_jhej639, [/dj5zjaih2-ep8e](/dj5zjaih2-ep8e)
+* one or more words related to your activity: /build, /play, [/prepare-the-menu](/prepare-the-menu)
+* or a combination of both: /play\\\_562fg6
+
+Do not use "admin," "website domain name," or "first or last name of the company director" as your username.
+
+A secure password must contain at least 8 characters, including lowercase and uppercase letters, special characters, and numbers.

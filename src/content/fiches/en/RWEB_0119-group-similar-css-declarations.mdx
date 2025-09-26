@@ -1,0 +1,58 @@
+---
+refID: 0119
+title: Group similar CSS declarations
+createdAt: 2025-09-22T08:09:57.144Z
+updatedAt: 2025-09-22T08:11:04.324Z
+language: en
+published: true
+refType: RWEB
+versions:
+  - version: 5.0.0
+    idRef: <A CHANGER>
+people: NA
+responsible:
+  - responsible: src/content/personas/fr/architecte-logicieldeveloppeur.mdx
+lifecycle: 3-developement
+rgesn: NA
+environmental_impact: 1
+priority_implementation: 2
+moe: 1
+tiers: user-device
+saved_resources:
+  - network
+validations:
+  - rule: of similar ungrouped CSS declarations
+    maxValue: '1'
+---
+
+## Description
+
+When multiple DOM (Document Object Model) elements share common CSS properties, declare them together in the same style sheet. This method reduces the weight of CSS.
+
+## Exemple
+
+Don't write : \\
+
+```css
+h1 {
+  background - color: gray; color: navy;
+}
+
+h2 {
+  background - color: gray; color: navy;
+}
+
+h3 {
+  background - color: gray; color: navy;
+}
+```
+
+But rather :
+
+```css
+h1, h2, h3 {
+  background - color: gray; color: navy;
+}
+```
+
+This rule can be enforced with a linter.
