@@ -1,8 +1,8 @@
 ---
 refID: '0011'
-title: 'Tener un título de página y una metadescripción relevantes con el contenido de la página'
+title: Tener un título de página y una metadescripción relevantes
 createdAt: 2024-02-14T14:03:08.969Z
-updatedAt: 2025-05-29T08:02:46.756Z
+updatedAt: 2025-10-03T07:43:18.227Z
 language: es
 published: true
 refType: RWEB
@@ -33,21 +33,22 @@ saved_resources:
   - requests
 validations:
   - rule: >-
-      de títulos de páginas no incluidos en la etiqueta TITLE y sin el nombre del sitio
-    maxValue: 0
+      de títulos de páginas no incluidos en la etiqueta \<title> y sin el nombre
+      del sitio
+    maxValue: '1'
 ---
 
 ## Descripción
 
-Un título de página `<h1>`, así como su equivalente `<title>`, junto con una etiqueta `<meta name="description">` pertinente, deben estar perfectamente en consonancia con el contenido de la página asociada.
+Un título de página `<h1>`, así como su equivalente `<title>`, junto con una etiqueta `<meta name="description">` pertinente, deben estar perfectamente en consonancia con el contenido de la página asociada. Esta optimización responde a la intención de búsqueda del usuario, evitándole una visita inútil (de ida y vuelta para encontrar la información buscada) y por lo tanto acorta su tiempo de recorrido en los motores de búsqueda.
 
-Esta optimización responde a la intención de búsqueda del usuario, evitándole una visita inútil (de ida y vuelta para encontrar la información buscada) y por lo tanto acorta su tiempo de recorrido en los motores de búsqueda.
+Además, prestar atención a la calidad de los elementos `<title>` y `<meta name="description">` también permite :
 
-Además, los elementos `<title>` y `<meta name="description">` se utilizan a veces de forma automática en las redes sociales o al compartir enlaces. Tratarlos cualitativamente permite:
+* indexar correctamente las páginas de contenidos por los motores de búsqueda y los directorios,
+* garantizar la identificación del lugar y del contenido de la página de aterrizaje,
+* garantizar la comprensión antes de acceder al contenido,
+* cualificar la lectura del contenido o de la información solicitada en la página asociada.
 
-- indexar correctamente las páginas de contenidos por los motores de búsqueda y los directorios,
-- garantizar la identificación del lugar y del contenido de la página de aterrizaje,
-- garantizar la comprensión antes de acceder al contenido,
-- cualificar la lectura del contenido o de la información solicitada en la página asociada.
+## Ejemplo
 
-
+En el caso de un catálogo de ropa deportiva en línea, la página que presenta los chándales tendrá un `<title>` del tipo « NombreDeLaTienda > Ropa > deporte > chándal» y una descripción en la etiqueta `<meta name="description">` del tipo «Compre nuestros chándales en línea al precio más bajo».
