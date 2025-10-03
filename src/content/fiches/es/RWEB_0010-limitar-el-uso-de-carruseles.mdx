@@ -1,8 +1,8 @@
 ---
 refID: '0010'
-title: 'Limitar el uso de carruseles'
+title: Limitar el uso de carruseles
 createdAt: 2024-02-14T14:22:47.984Z
-updatedAt: 2025-05-29T07:35:07.681Z
+updatedAt: 2025-10-03T07:39:03.330Z
 language: es
 published: true
 refType: RWEB
@@ -33,32 +33,23 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: >-
-      de carruseles por página
-    maxValue: 1
+  - rule: de carruseles por página
+    maxValue: '1'
 ---
 
 ## Descripción
 
 El carrusel a menudo utilizado para mostrar múltiples contenidos rápidamente muestran sus limitaciones en términos de conversión con un impacto negativo en la experiencia del usuario. Su presencia implica varios puntos críticos:
-- Un aumento del peso de las páginas por la presencia de CSS y JavaScript dedicado, pero también por el contenido presente en cada pantalla del carrusel.
-- Complejidad en términos de garantía de calidad web y accesibilidad digital.
-- Un mayor uso de los recursos del procesador en el caso de un carrusel automático.
+
+* Un aumento del peso de las páginas por la presencia de CSS y JavaScript dedicado, pero también por el contenido presente en cada pantalla del carrusel.
+* Complejidad en términos de garantía de calidad web y accesibilidad digital.
+* Un mayor uso de los recursos del procesador en el caso de un carrusel automático.
+
+Por lo tanto, la mejor práctica consiste en limitar al máximo el uso de carruseles, favoreciendo los contenidos estáticos actualizados regularmente. En caso contrario :
+
+* implementar un control simple y completo del componente (parada, pantalla siguiente/anterior);
+* preferir la carga progresiva.
 
 ## Ejemplo
 
-Las etiquetas `<img/>` poseen un atributo HTML `loading` que permite de forma nativa una carga progresiva de las imágenes.
-`<img src="mon_image.webp" alt="" loading="Lazy" />`
-
 Las animaciones de algunos atributos CSS implican un Repaint/Reflow de los navegadores que requiere recursos de máquina. Para limitar esto, prefiere las animaciones de los carruseles por la propiedad CSS `transform`.
-
-## Solución alternativa
-
-Limitar al máximo el uso de carruseles privilegiando el contenido estático actualizado regularmente.
-En caso contrario:
-- Establecer un control simple y completo del componente (apagado, pantalla siguiente/anterior)
-- Prefiera una carga progresiva de las imágenes presentes en las diferentes pantallas.
-- Prefiere animaciones que impliquen el uso de recursos de procesador.
-- Limitar el número de pantallas presentes en el carrusel.
-
-
