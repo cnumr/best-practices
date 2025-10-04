@@ -70,6 +70,9 @@ const getDatas = (entries: any[], t: any) => {
     // trie des valeurs par ordre alphabétique
     datas.forEach((data) => {
       data.values.sort((a, b) => {
+        if (typeof a === 'number' && typeof b === 'number') {
+          return a - b;
+        }
         if (t(a) < t(b)) {
           return -1;
         }
