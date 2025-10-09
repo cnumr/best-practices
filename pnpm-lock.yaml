@@ -102,6 +102,9 @@ importers:
       eslint-plugin-mdx:
         specifier: ^3.6.2
         version: 3.6.2(eslint@8.57.1)
+      mongodb:
+        specifier: ^4.12.1
+        version: 4.17.2
       postcss:
         specifier: 8.4.49
         version: 8.4.49
