@@ -71,11 +71,9 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
   };
   switch (currentRef) {
     case 'RWP':
-      config.i18n.locales = ['fr', 'en', 'es'];
+      config.i18n.locales = ['fr'];
       config.i18n.languages = {
         fr: '🇫🇷 Français',
-        en: '🇬🇧 English',
-        es: '🇪🇸 Español',
       };
       config.i18n.refTitles = {
         es: { short: 'WordPress', long: ' para WordPress' },
