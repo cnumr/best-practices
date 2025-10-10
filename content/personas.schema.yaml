@@ -1,0 +1,11 @@
+allOf:
+  - $ref: ./common.schema.yaml
+  - properties:
+      shortName:
+        type: string
+      refType:
+        type: string
+        description: Inutile
+
+  - required:
+      - shortName

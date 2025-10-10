@@ -1,0 +1,65 @@
+allOf:
+  - $ref: ./common.schema.yaml
+  - properties:
+      refID:
+        type: string
+      refType:
+        type: string
+        description: Inutile
+      versions:
+        type: array
+        minItems: 1
+        properties:
+          version:
+            type: string
+          idRef:
+            type: string
+      people:
+        type: string
+        description: Inutile
+      responsible:
+        type: array
+        minItems: 1
+        properties:
+          responsible:
+            type: string
+      lifecycle:
+        type: string
+      environmental_impact:
+        # RWEB
+        type: number
+        # RWP
+        # type: string
+      priority_implementation:
+        # RWEB
+        type: number
+        # RWP
+        # type: string
+      scope:
+        type: array
+        minItems: 1
+      saved_resources:
+        type: array
+        minItems: 1
+      validations:
+        type: array
+        minItems: 1
+        properties:
+          rule:
+            type: string
+            minLength: 1
+          maxValue:
+            type: string
+            minLength: 1
+
+  - required:
+      - refID
+      - versions
+      - responsible
+      - lifecycle
+      - environmental_impact
+      - priority_implementation
+      # RWEB
+      # - scope
+      - saved_resources
+      - validations

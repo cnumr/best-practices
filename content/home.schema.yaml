@@ -1,0 +1,8 @@
+allOf:
+  - $ref: ./common.schema.yaml
+  - properties:
+      useProse:
+        type: boolean
+
+  - required:
+      - useProse
