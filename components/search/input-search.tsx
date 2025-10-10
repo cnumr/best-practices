@@ -34,7 +34,7 @@ const fuseSearchOptions = {
   includeMatches: true,
   includeScore: true,
   useExtendedSearch: true,
-  keys: ['title', 'contentText'],
+  keys: ['title', 'contentText', 'refID'],
 };
 
 export const InputSearch: FunctionComponent<InputSearchProps> = ({
@@ -107,6 +107,7 @@ export const InputSearch: FunctionComponent<InputSearchProps> = ({
                   <Link
                     href={item?.link}
                     onClick={() => setSearchPattern('')}>
+                    {item?.refID !== undefined ? item?.refID + ' ' : ''}
                     {item?.title}
                   </Link>
                   <p className="line-clamp-5 text-sm">{item.contentText}</p>
