@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "doc": "cd docs && retype start",
     "dev": "tinacms dev -c \"next dev\"",
     "dev:prod": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms dev -c \"next dev\"",
     "build": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms build --partial-reindex && next build",

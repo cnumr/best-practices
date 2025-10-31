@@ -1,0 +1,34 @@
+input: .
+favicon: static/greenit_icone_intro-alt.png
+url: https://cnumr.github.io/lighthouse-plugin-ecoindex
+branding:
+  title: GenRefs
+  logo: static/greenit_icone_intro-alt.png
+  label: Green IT
+meta:
+  title: ' - Générateur de référentiels @ GreenIT'
+links:
+  - text: Association GreenIT
+    link: https://greenit.eco/
+    target: blank
+    icon: organization
+
+footer:
+  copyright: '&copy; Copyright {{ year }}. All rights reserved to GreenIT.eco'
+  links:
+    - text: License
+      link: ./licence.md
+      icon: shield
+    - text: Association GreenIT
+      link: https://greenit.eco/
+      target: blank
+      icon: organization
+edit:
+  repo: 'https://github.com/cnumr/best-practices-wordpress' # The URL to source files for this project
+  base: './docs' # Optional base path to a directory within repo
+  branch: 'main' # Point to a custom branch within the repo
+  label: 'Modifier sur GitHub' # A custom label for the generated link
+
+include: # Files or folders to include in the build
+  # See also: exclude
+  - 'script.sh' # Wildcards are valid
