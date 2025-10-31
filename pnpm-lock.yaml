@@ -102,6 +102,9 @@ importers:
       eslint-plugin-mdx:
         specifier: ^3.6.2
         version: 3.6.2(eslint@8.57.1)
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.1.0
       mongodb:
         specifier: ^4.12.1
         version: 4.17.2
@@ -129,6 +132,9 @@ importers:
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
+      unist-util-visit:
+        specifier: ^5.0.0
+        version: 5.0.0
 
 packages:
 

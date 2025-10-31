@@ -6,8 +6,9 @@
     "dev": "tinacms dev -c \"next dev\"",
     "dev:prod": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms dev -c \"next dev\"",
     "build": "TINA_PUBLIC_IS_LOCAL=false TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms build --partial-reindex && next build",
-    "build-local": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms build --local --skip-indexing --skip-cloud-checks && next build",
+    "build-local": "./scripts/build-local.sh",
     "start": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB tinacms build && next start",
+    "serve-local": "TINA_PUBLIC_IS_LOCAL=true TINA_PUBLIC_REF_NAME=RWEB NEXT_PUBLIC_REF_NAME=RWEB next start",
     "lint": "pnpm lint:next && pnpm lint:md",
     "lint:next": "next lint",
     "lint:md": "eslint . -c .md.eslintrc --ext .md,.mdx",
@@ -26,6 +27,7 @@
     "eslint": "^8.41.0",
     "eslint-config-next": "^14.2.7",
     "eslint-plugin-mdx": "^3.6.2",
+    "js-yaml": "^4.1.0",
     "mongodb": "^4.12.1",
     "postcss": "8.4.49",
     "prettier": "3.4.2",
@@ -34,7 +36,8 @@
     "remark-cli": "^12.0.1",
     "remark-frontmatter": "^5.0.0",
     "remark-lint-frontmatter-schema": "^3.15.4",
-    "tailwindcss": "3.4.17"
+    "tailwindcss": "3.4.17",
+    "unist-util-visit": "^5.0.0"
   },
   "dependencies": {
     "@tailwindcss/forms": "0.5.9",

@@ -1,5 +1,6 @@
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkLintFrontmatterSchema from 'remark-lint-frontmatter-schema';
+import remarkValidatePersonaReferences from './plugins/remark-validate-persona-references.mjs';
 
 const remarkConfig = {
   plugins: [
@@ -22,6 +23,7 @@ const remarkConfig = {
         },
       },
     ],
+    remarkValidatePersonaReferences,
   ],
 };
 export default remarkConfig;
