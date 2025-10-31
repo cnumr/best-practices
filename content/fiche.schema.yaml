@@ -48,6 +48,8 @@ allOf:
       saved_resources:
         type: array
         minItems: 1
+      rgesn:
+        type: string
       validations:
         type: array
         minItems: 1
