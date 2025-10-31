@@ -18,7 +18,8 @@ versions:
   - version: 5.0.0
     idRef: '0089'
 people: '-'
-responsible: []
+responsible:
+  - responsible: src/content/personas/en/system-administrator.mdx
 lifecycle: 4-production
 environmental_impact: 3
 priority_implementation: 3
@@ -27,9 +28,7 @@ tiers: datacenter
 saved_resources:
   - cpu
 validations:
-  - rule: >-
-      configuration files containing "AllowOverride" text with anything other
-      than "AllowOverride None"
+  - rule: configuration files containing "AllowOverride" text with anything other than "AllowOverride None"
     maxValue: '0'
 ---
 
