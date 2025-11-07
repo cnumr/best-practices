@@ -51,5 +51,3 @@ Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibl
 ## Licence
 
 Les sources et contenus de ce projet sont [protégés](LICENCE.md)
-
-test
