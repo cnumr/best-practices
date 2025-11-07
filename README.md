@@ -2,7 +2,7 @@
 
 ## Le référentiel
 
-RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web. 
+RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web.
 
 Les fiches contiennent des niveaux de difficulté et de priorité, ainsi que des règles de validation formelles, permettant une utilisation efficace sur le terrain.
 
@@ -51,3 +51,5 @@ Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibl
 ## Licence
 
 Les sources et contenus de ce projet sont [protégés](LICENCE.md)
+
+test
