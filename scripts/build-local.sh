@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-# Variables d'environnement pour le build local
-export TINA_PUBLIC_IS_LOCAL=true
-export TINA_PUBLIC_REF_NAME=RWEB
-export NEXT_PUBLIC_REF_NAME=RWEB
+# Variables d'environnement pour le build local (avec valeurs par défaut)
+export TINA_PUBLIC_IS_LOCAL=${TINA_PUBLIC_IS_LOCAL:-true}
+export TINA_PUBLIC_REF_NAME=${TINA_PUBLIC_REF_NAME:-RWEB}
+export NEXT_PUBLIC_REF_NAME=${NEXT_PUBLIC_REF_NAME:-RWEB}
 
 # Tuer les processus existants sur le port 9000
 echo "🧹 Cleaning up existing processes on port 9000..."
