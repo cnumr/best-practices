@@ -94,6 +94,35 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
       config.featuresEnabled.rgesnField = false;
       break;
 
+    case 'REIPRO':
+      config.i18n.locales = ['fr'];
+      config.i18n.languages = {
+        fr: '🇫🇷 Français',
+        en: '🇬🇧 English',
+        es: '🇪🇸 Español',
+      };
+      config.i18n.refTitles = {
+        es: { short: 'REIPRO', long: ' para REIPRO' },
+        en: { short: 'REIPRO', long: ' for REIPRO' },
+        fr: {
+          short: 'Intégration de progiciels',
+          long: " Référentiel de bonnes pratiques pour l'intégration de progiciels",
+        },
+      };
+      config.refInformations = {
+        currentVersion: '1.0.0',
+        creationYear: 2025,
+      };
+      config.featuresEnabled.lexique = true;
+      config.featuresEnabled.linkToPersonas = false;
+      config.featuresEnabled.priority_implementation = MESURE_ON_5;
+      config.featuresEnabled.environmental_impact = MESURE_ON_5;
+      config.featuresEnabled.moe = true;
+      config.featuresEnabled.tiers = true;
+      config.featuresEnabled.scope = false;
+      config.featuresEnabled.rgesnField = true;
+      break;
+
     case 'RWEB':
       config.i18n.locales = ['fr', 'en', 'es'];
       config.i18n.languages = {
