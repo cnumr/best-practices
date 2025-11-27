@@ -2,7 +2,7 @@
 refID: '0020'
 title: Mostrar páginas de error estáticas
 createdAt: 2024-02-14T12:58:16.510Z
-updatedAt: 2025-11-27T15:00:32.630Z
+updatedAt: 2025-11-27T15:00:56.091Z
 language: es
 published: true
 refType: RWEB
@@ -38,10 +38,10 @@ validations:
 
 ## Descripción
 
-Las páginas de errores (40x, 50x) deben ser lo más ligeras posible, e incluso idealmente inexistentes. De hecho, cuando el navegador solicita un recurso que no existe (imagen, hoja de estilos CSS, archivo JavaScript, etc.) o el servidor devuelve un error, la página de error devuelta puede ser más pesada que el recurso o la página solicitada.
+Las páginas de error (40x, 50x) deben ser lo más ligeras posible e incluso idealmente inexistentes. En efecto, cuando el navegador solicita un recurso que no existe (imagen, hoja de estilos CSS, archivo JavaScript, etc.) o el servidor devuelve un error, la página de error devuelta puede ser más pesada que el recurso o la página solicitada.
 
-Además, algunos CMS ejecutan su rutina de búsqueda de contenido (en la base de datos) para intentar encontrar un recurso solicitado. Por lo tanto, se ejecuta código de servidor, se solicita el servidor de base de datos, y se ejecuta la generación dinámica de la página HTML. Todo este proceso produce un desperdicio de ciclos de CPU, memoria RAM y ancho de banda.
+Además, ciertos CMS ejecutan su rutina de búsqueda de contenido (en la base de datos) para intentar encontrar un recurso solicitado. Por consiguiente, se ejecuta código de servidor, se solicita al servidor de base de datos y se ejecuta la generación dinámica de la página HTML. Todo este proceso resulta en un desperdicio de ciclos de CPU, de memoria viva y de ancho de banda.
 
 ## Ejemplo
 
-Evitar las páginas 404 dinámicas, que se personalizan en función del contenido de la URL. Preferir una página 404 estática.
+Evitar las páginas 404 dinámicas, que están personalizadas en función del contenido de la URL. Preferir una página 404 estática.
