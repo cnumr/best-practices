@@ -2,7 +2,7 @@
 refID: '0020'
 title: Mostrar páginas de error estáticas
 createdAt: 2024-02-14T12:58:16.510Z
-updatedAt: 2025-06-16T10:13:43.162Z
+updatedAt: 2025-11-27T15:00:32.630Z
 language: es
 published: true
 refType: RWEB
@@ -10,9 +10,9 @@ versions:
   - version: GreenIT
     idRef: '0046'
   - version: 2.0.0
-    idRef: '0098'
+    idRef: 0098
   - version: 3.0.0
-    idRef: '0096'
+    idRef: 0096
   - version: 4.0.0
     idRef: '0020'
   - version: 5.0.0
@@ -32,8 +32,8 @@ saved_resources:
   - network
   - storage
 validations:
-  - rule: de páginas dinámicas de error
-    maxValue: 0
+  - rule: de páginas de error dinámicas
+    maxValue: '"0"'
 ---
 
 ## Descripción
@@ -45,5 +45,3 @@ Además, algunos CMS ejecutan su rutina de búsqueda de contenido (en la base de
 ## Ejemplo
 
 Evitar las páginas 404 dinámicas, que se personalizan en función del contenido de la URL. Preferir una página 404 estática.
-
-
