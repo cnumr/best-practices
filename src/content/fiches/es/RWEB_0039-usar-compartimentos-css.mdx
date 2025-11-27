@@ -1,8 +1,8 @@
 ---
-refID: '0039'
+refID: 0039
 title: Usar compartimentos CSS
 createdAt: 2024-02-14T13:43:55.999Z
-updatedAt: 2025-05-18T17:07:44.868Z
+updatedAt: 2025-11-27T20:37:41.947Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: '0038'
+    idRef: 0038
   - version: 5.0.0
-    idRef: '0039'
+    idRef: 0039
 people: TBD
 responsible:
   - responsible: src/content/personas/es/arquitecto-software-desarrollador.mdx
@@ -37,22 +37,30 @@ validations:
 
 El CSS Containment (o compartimentación CSS) indica que un nodo y su contenido son, en la medida de lo posible, independientes del resto del árbol de la página.
 
-Dependiendo del tipo de independencia  (```strict```, ```content```, ```size```, ```layout```, ```style``` et/ou ```paint```) de la propriedad ```contain```, el navegador :
- - recalcula la representación (las posiciones, el formato, las disposiciones y/o la visualización) para el único nodo independiente que ahorra así, recalcular la totalidad del DU de la página
-- no renderiza el contenido de los nodos independientes fuera de la zona visible
+En función del tipo de independencia (strict, content, size, layout, style y/o paint) de la propiedad contain, el navegador:
+
+* recalcula el renderizado (las posiciones, el formato, las disposiciones y/o la visualización) solo para el nodo independiente, ahorrando así recalcular la totalidad del DOM de la página;
+* no realiza el renderizado del contenido de los nodos independientes fuera de la zona visible.
 
 ## Ejemplos
-- Una arquitectura DOM compleja cuyo contenido de nodos se modifica en un momento dado
+
+* Una arquitectura DOM compleja cuyo contenido de nodos se modifica en un momento dado:
+
 ```css
 artículo {
    contain: content;
 }
 ```
-- Un widget externo
+
+* Un widget externo
+
 ```css
 .widget-name {
    contain: layout;
 }
 ```
 
+Para saber más:
 
+* [https://developer.mozilla.org/fr/docs/Web/CSS/CSS\_Containment](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Containment)
+* [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
