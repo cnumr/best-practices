@@ -2,7 +2,7 @@
 refID: '0023'
 title: Reducir el volumen de datos almacenados a lo estrictamente necesario
 createdAt: 2024-02-14T13:56:14.338Z
-updatedAt: 2025-11-27T18:16:57.170Z
+updatedAt: 2025-11-27T18:19:36.799Z
 language: es
 published: true
 refType: RWEB
@@ -35,21 +35,16 @@ validations:
 
 ## Descripción
 
-Reducir el volumen de datos almacenados cuando sea necesario:
+Dependiendo de los tipos de datos y sus propietarios, las restricciones legales pueden llevar a almacenar a lo largo del tiempo datos que nunca se utilizan. Sin embargo, se pueden eliminar al cabo de 18 meses respetando las restricciones del RGPD. El uso de los datos y su grado de importancia también impactan la manera de almacenarlos. Esta buena práctica se inscribe en el marco de la gestión del ciclo de vida de la información.
 
-* optimizar la gestión de grandes volúmenes de datos.
-* limpiar los datos antiguos, ya sea archivando los datos fuera de línea o eliminándolos.
-* comprobar que las copias de seguridad se pueden restaurar.
-* supervisar el tamaño del espacio de almacenamiento.
+Reducir el volumen de datos almacenados a lo estrictamente necesario equivale a:
 
-Dependiendo del tipo de datos y sus propietarios, las restricciones legales pueden llevar a almacenar en el tiempo datos nunca utilizados.
-
-El uso y la importancia de los datos también influyen en la forma de almacenarlos.
-
-Esta buena práctica forma parte de la gestión del ciclo de vida de la información.
+* No almacenar más que lo que es indispensable o está ligado a una obligación legal;
+* Limpiar los datos antiguos archivándolos fuera de línea o eliminándolos;
+* Supervisar y optimizar el tamaño de los espacios de almacenamiento.
 
 ## Ejemplo
 
-* Definir procesos de archivo: en el momento de su lanzamiento, un informe anual se almacena en un SSD (zona caliente). Un mes más tarde, se archiva en un almacén clásico (zona fría). Finalmente, diez años más tarde, se suprime.
-* Evitar la duplicación entre tablas es una forma de optimizar el volumen de datos almacenados.
-* El uso de los datos puede dar lugar a una desnormalización de las tablas y, por tanto, a un aumento del espacio de almacenamiento.
+* Definir procesos de archivado: en el momento de su publicación, un informe anual se almacena en un SSD (zona caliente). Un mes más tarde, se archiva en un almacenamiento clásico (zona fría). Finalmente, diez años más tarde, se elimina.
+* Evitar los duplicados entre las tablas es un medio de optimizar el volumen de datos almacenados.
+* El uso de los datos puede conducir a una desnormalización de las tablas y, por lo tanto, a un aumento del espacio de almacenamiento.
