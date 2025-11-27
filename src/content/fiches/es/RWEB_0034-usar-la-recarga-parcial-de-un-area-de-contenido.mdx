@@ -2,7 +2,7 @@
 refID: '0034'
 title: Usar la recarga parcial de un área de contenido
 createdAt: 2024-02-14T11:26:28.701Z
-updatedAt: 2025-05-18T16:53:11.736Z
+updatedAt: 2025-11-27T19:24:17.283Z
 language: es
 published: true
 refType: RWEB
@@ -10,9 +10,9 @@ versions:
   - version: GreenIT
     idRef: '0040'
   - version: 2.0.0
-    idRef: '0049'
+    idRef: 0049
   - version: 3.0.0
-    idRef: '0038'
+    idRef: 0038
   - version: 4.0.0
     idRef: '0034'
   - version: 5.0.0
@@ -31,19 +31,18 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: de zonas de contenido que pueden actualizarse parcialmente, pero no lo son
+  - rule: >-
+      de zonas de contenidos que pueden ser actualizadas parcialmente pero que
+      no lo son
     maxValue: 0%
 ---
 
 ## Descripción
 
-Si su página web tiene una o más áreas de contenido que requieren una alta frecuencia de actualización, entonces le recomendamos que recargue solo estas áreas  y no toda la página.
-Para ello, puede utilizar varias técnicas de JavaScript comúnmente llamadas AJAX pero que también pueden utilizar un Service Worker, un Web Component o un desarrollo personalizado.
+Si su página web contiene una o varias zonas de contenidos que requieren una alta tasa de refresco, entonces le aconsejamos proceder a una recarga únicamente de estas y no de toda la página. Para ello puede utilizar varias técnicas, generalmente Javascript, pero que pueden también utilizar un Service Worker, un Web Component o un desarrollo a medida.
 
-Incluso es posible omitir estas partes en la llamada HTTP de la página para hidratarla con estas áreas dinámicas en JavaScript, lo que algunos llaman "islas de componentes" o "arquitectura de islas". El interés es poder conservar una solución de caché para la página "container" y no recargar más que las "islas" de contenido que lo requieran.
+Incluso es posible no incluir estas partes en la llamada HTTP de la página para "hidratarla" con estas zonas dinámicas en Javascript, lo que algunos llaman "component islands" o "islands architecture" (arquitectura de islas). El interés radica en poder conservar una solución de caché para la página "contenedor" y recargar solo las "islas" de contenido que lo necesitan.
 
 ## Ejemplo
 
-Los sitios de noticias utilizan muy a menudo este procedimiento, que les permite identificar claramente las zonas que necesitan actualizarse rápidamente (noticias de última hora, datos meteorológicos, cotizaciones de la Bolsa, resultados deportivos, etc.).
-
-
+Los sitios de noticias utilizan muy a menudo este procedimiento, que permite identificar claramente las zonas que necesitan ser actualizadas rápidamente (noticias de última hora, datos meteorológicos, cotizaciones de bolsa, resultados deportivos, etc.).
