@@ -2,7 +2,7 @@
 refID: '0025'
 title: Promover el "Request Collapsing"
 createdAt: 2024-02-14T14:28:16.625Z
-updatedAt: 2025-06-16T10:27:56.927Z
+updatedAt: 2025-11-27T18:23:06.442Z
 language: es
 published: true
 refType: RWEB
@@ -30,23 +30,22 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de consultas para recuperar datos de un mismo dominio de negocio por un servicio de terceros
-    maxValue: 2
+  - rule: >-
+      de peticiones para recuperar datos de un mismo dominio de negocio por un
+      servicio de terceros
+    maxValue: '2 '
 ---
 
 ## Descripción
 
-El "Request Collapsing" es un Pattern de aplicación que permite limitar el número de llamadas remotas agrupando varias consultas para hacer una sola. 
-Es adecuado para la recuperación a través de un servicio de terceros de datos del mismo dominio de negocio.
+El "Request collapsing" (agrupamiento de peticiones) es un patrón de aplicación que permite limitar el número de llamadas remotas agrupando varias peticiones para realizar una sola. Es adecuado en el caso de la recuperación, a través de un servicio de terceros, de datos pertenecientes al mismo dominio de negocio.
 
 Permite limitar:
-- la carga de red,
-- el impacto de una latencia de red elevada,
-- los costes derivados de las licencias a petición.
+
+* La carga de red;
+* El impacto de una latencia de red elevada;
+* Los costes en el marco de licencias por petición.
 
 ## Ejemplo
 
-La recuperación de un pedido en su cuenta de cliente requiere la información del producto pedido, la dirección de facturación y el estado del pago.
-En lugar de solicitar al servicio de gestión de pedidos la recuperación de estos tres grupos de datos a través de tres consultas, es preferible que el servicio de gestión de pedidos permita la recuperación en una sola llamada.
-
-
+La recuperación de un pedido de cliente en su cuenta requiere la información del producto pedido, la dirección de facturación y el estado del pago. En lugar de solicitar al servicio de gestión de pedidos, a través de tres peticiones, la recuperación de estos tres grupos de datos, es preferible que el servicio de gestión de pedidos permita la recuperación en una sola llamada.
