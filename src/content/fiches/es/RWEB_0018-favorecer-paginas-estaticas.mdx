@@ -2,7 +2,7 @@
 refID: 0018
 title: Favorecer páginas estáticas
 createdAt: 2024-02-14T10:04:22.896Z
-updatedAt: 2025-11-27T14:55:56.328Z
+updatedAt: 2025-11-27T14:56:18.420Z
 language: es
 published: true
 refType: RWEB
@@ -34,15 +34,14 @@ validations:
 
 ## Descripción
 
-Si una página necesita ser modificada solo dos veces al año, preferir páginas estáticas, construidas fuera del CMS.
-Esto ahorrará ciclos de CPU, ancho de banda, y reducirá el consumo de energía.
+Si una página se actualiza con muy poca frecuencia, es preferible optar por páginas estáticas, construidas fuera del CMS. Esto permite ahorrar ciclos de CPU y ancho de banda.
 
-El uso de un sistema de gestión de contenidos dinámico requiere cargar las diferentes capas de software para servir el contenido solicitado por el internauta: el servidor HTTP, el servidor de aplicaciones, el sistema de almacenamiento del contenido (base de datos), quizás los sistemas de caché asociados, etc. En cambio, el servidor HTTP o el servidor de caché leen directamente un archivo estático y lo devuelven al internauta, sin solicitar el servidor de aplicaciones o la base de datos.
+El uso de un sistema de gestión de contenido (CMS) dinámico requiere, en efecto, cargar las diferentes capas de software para servir el contenido solicitado por el internauta: el servidor HTTP, el servidor de aplicaciones, el sistema de almacenamiento de contenido (base de datos), eventualmente los sistemas de caché asociados, etc. En cambio, un archivo estático es leído directamente y reenviado al internauta por el servidor HTTP o el servidor de caché, sin solicitar al servidor de aplicaciones ni a la base de datos.
 
 ## Ejemplo
 
-Dependiendo del servicio digital que se va a diseñar, es posible:
+En función del servicio digital a diseñar, es posible considerar:
 
-* para una página de destino o un simple sitio escaparate, crear un sitio estático en HTML, CSS y JS.
-* para un blog con poca actividad o de pequeño tamaño, crear un sitio estático generado a través de un JAMstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administrado, si es necesario, a través de un CMS headless o un CMS headless flat-file (Strapi, Contenful, Flextype, etc.).
-* para un sitio web o aplicación web más compleja hacer las páginas con bajas tasas de cambios (FAQ, About, Aviso legal, etc.) estáticas utilizando frameworks (Next, Nuxt, Svelte, etc.).
+* Para una landing page o un sitio escaparate simple, crear un sitio estático en HTML, CSS y JS;
+* Para un blog con poca actividad o de tamaño pequeño, crear un sitio estático generado vía Jamstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administrado, si es necesario, a través de un headless CMS o un headless flat-file CMS (Strapi, Contentful, Flextype, Cecil.app, etc.);
+* Para un sitio o una aplicación web más compleja, volver estáticas las páginas con baja tasa de modificaciones (FAQ, Quiénes somos, avisos legales, etc.) utilizando frameworks adaptados (Next.js, Nuxt.js, Svelte, etc.).
