@@ -4,7 +4,7 @@ title: >-
   Evitar la transferencia de una gran cantidad de datos para realizar un
   tratamiento
 createdAt: 2024-03-05T10:34:13.560Z
-updatedAt: 2025-11-27T14:49:23.154Z
+updatedAt: 2025-11-27T14:50:19.598Z
 language: es
 published: true
 refType: RWEB
@@ -41,20 +41,17 @@ validations:
 
 ## Descripción
 
-Los sistemas de gestión de bases de datos están diseñados y optimizados para responder de manera efectiva al procesamiento de grandes cantidades de datos.
-En el caso de tratamientos con una lógica compleja, se desaconseja recuperar los datos "brutos" y realizar todas las operaciones de cálculo, transformación o agregación del lado del servidor backend o incluso frontend.
+Los sistemas de gestión de bases de datos están diseñados y optimizados para responder eficazmente al procesamiento de grandes cantidades de datos. En el caso de procesamientos con una lógica más o menos compleja, debería realizarlos lo más cerca posible del dato con el fin de:
 
-Estos tratamientos deben realizarse más cerca de los datos para:
-
-* limitar el ancho de banda debido a la transferencia de datos no procesados
-* aprovechar las optimizaciones de la base de datos sobre la manipulación de datos
-* aligerar el ciclo de CPU del lado del servidor backend o incluso frontend.
+* Limitar el ancho de banda debido a la transferencia de datos no procesados;
+* Aprovechar las optimizaciones de la base de datos en la manipulación de datos;
+* Aligerar los ciclos de CPU del lado del servidor backend o incluso frontend.
 
 ## Ejemplo
 
-En el caso de consultas complejas con un gran número de datos y el uso de un sistema de gestión de bases de datos relacionales (DBMS), se recomienda utilizar procedimientos almacenados (VIEWS) porque:
+En el caso de consultas complejas con una cantidad importante de datos y el uso de un sistema de gestión de bases de datos relacionales (SGBDR), se aconseja utilizar procedimientos almacenados ya que:
 
-* un procedimiento almacenado ahorra al servidor la interpretación de la recuesta ya que está precompilada;
-* un procedimiento almacenado requiere menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
+* Un procedimiento almacenado ahorra al servidor la interpretación de la consulta, dado que está precompilada;
+* Un procedimiento almacenado consume menos ancho de banda, puesto que hay menos información intercambiada entre el servidor y el cliente.
 
-Todos los RDBMS (relational database management system) recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
+Todos los SGBDR recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
