@@ -1,8 +1,8 @@
 ---
-refID: '0028'
+refID: 0028
 title: Crear una arquitectura de aplicaciones modular
 createdAt: 2024-02-14T10:07:51.675Z
-updatedAt: 2025-05-16T09:56:33.082Z
+updatedAt: 2025-11-27T18:29:17.100Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '0014'
   - version: 4.0.0
-    idRef: '0028'
+    idRef: 0028
   - version: 5.0.0
-    idRef: '0028'
+    idRef: 0028
 people: TBD
 responsible:
   - responsible: src/content/personas/es/arquitecto-software-desarrollador.mdx
@@ -31,21 +31,18 @@ saved_resources:
   - ram
   - storage
 validations:
-  - rule: El número de arquitecturas no modulares
-    maxValue: 0
+  - rule: de arquitecturas no modulares
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-La arquitectura modular popularizada por el software de código abierto asuele proporcionar una mayor escalabilidad, menores costes de mantenimiento correctivo y evolutivo, así como un código más eficiente.
-Si la cobertura funcional del sitio web o del servicio en línea puede evolucionar, es mejor implementar las funcionalidades básicas en un núcleo y completarlas, si es necesario, con módulos. Estos módulos pueden combinar funciones del mismo ámbito de actividad. Esto permite desarrollarlos independientemente de otras áreas de negocio, así como compartirlos con otras aplicaciones.
+La arquitectura modular aporta a menudo una mayor capacidad de escalabilidad, costes reducidos de mantenimiento correctivo y evolutivo, así como un código más eficiente. Si la cobertura funcional del sitio web o del servicio en línea puede llegar a evolucionar, es mejor implementar las funcionalidades básicas en un núcleo y completarlas según sea necesario mediante módulos. Estos últimos pueden agrupar funciones pertenecientes a un mismo dominio de negocio. Esto permite desarrollarlos independientemente de otros dominios de negocio, así como compartirlos con otras aplicaciones.
 
-Este enfoque es válido para todos los niveles de granularidad, tanto para el desarrollo a medida como para la elección de un servidor HTTP o un CMS.
+Este enfoque es válido en todos los niveles de granularidad, tanto para un desarrollo a medida como para la elección de un servidor HTTP o de un CMS.
 
 ## Ejemplo
 
-Un software de código abierto más eficiente, como NGINX, Apache, MySQL o PHP, se basa en esta arquitectura modular.
+Los softwares de código abierto más eficientes, como NGINX, Apache, MySQL o PHP, se basan en esta arquitectura modular.
 
-En el lado backend, el corte en microservicios permite aportar un nivel de modularidad para los servicios HTTP. No obstante, habrá que prestar especial atención a la granularidad del corte para evitar un efecto contraproducente (adición de una complejidad de interconexión entre los servicios, aumento global de los recursos informáticos).
-
-
+Del lado del backend, la división en microservicios permite aportar un nivel de modularidad para los servicios HTTP. Sin embargo, habrá que prestar una atención particular a la granularidad de la división para evitar un efecto contraproducente (adición de una complejidad de interfaz entre los servicios, aumento global de los recursos informáticos).
