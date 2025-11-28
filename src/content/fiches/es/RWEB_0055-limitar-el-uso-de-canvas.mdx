@@ -2,7 +2,7 @@
 refID: '0055'
 title: Limitar el uso de canvas
 createdAt: 2024-02-14T13:59:50.084Z
-updatedAt: 2025-05-30T15:26:52.062Z
+updatedAt: 2025-11-28T15:00:02.824Z
 language: es
 published: true
 refType: RWEB
@@ -30,23 +30,19 @@ saved_resources:
   - cpu
   - network
 validations:
-  - rule: de `canvas` que puede sustituirse por un elemento HTML
-    maxValue: 0
+  - rule: de canvas que pueden ser reemplazados por un elemento HTML
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-El elemento HTML `canvas` está diseñado inicialmente para dibujar gráficos, crear juegos o generar imágenes sobre la marcha a través de API JavaScript. Como cada script, el uso de `canvas` tiene un impacto significativo en los recursos de la máquina (CPU y/o GPU), lo que aumenta la mala experiencia del usuario en las máquinas menos potentes y también provoca un consumo excesivo de energía.
+El elemento HTML canvas está diseñado inicialmente para dibujar gráficos, realizar juegos o generar imágenes sobre la marcha (on the fly) vía APIs JavaScript. Como todo script, el uso de canvas consume muchos recursos de CPU/GPU, lo que se traduce en una sensación de lentitud en los terminales menos veloces, empujando al usuario a reemplazarlos.
 
-Este impacto es más importante cuando el renderizado se realiza de manera repetitiva (efecto dinámico, animación).
-
-Se recomienda utilizar otros elementos HTML nativos siempre que sea posible y que no se realicen optimizaciones para limitar las necesidades de recursos de la máquina.
+Este impacto es más importante cuando el renderizado se realiza de manera repetitiva (efecto dinámico, animación). Se recomienda utilizar otros elementos HTML nativos cuando sea posible y, en su defecto, implementar optimizaciones para limitar las necesidades de recursos de máquina.
 
 ## Ejemplo
 
-- Hacer las representaciones solo si es necesario.
-- Con las animaciones, utilizar `window.requestAnimationFrame()` en lugar de `window.setinterval()`.
-- Limitar el uso de bibliotecas pesadas.
-- Probando el rendimiento de renderizado.
-
-
+* Realizar los renderizados únicamente si es necesario.
+* Con las animaciones, utilizar window\.requestAnimationFrame() en lugar de window\.setInterval().
+* Limitar el uso de bibliotecas pesadas.
+* Probar el rendimiento de renderizado.
