@@ -1,14 +1,14 @@
 ---
-refID: '0048'
+refID: 0048
 title: No cambiar el tamaño de las imágenes en el navegador
 createdAt: 2024-02-14T11:05:07.836Z
-updatedAt: 2025-06-15T12:06:47.310Z
+updatedAt: 2025-11-28T14:08:53.178Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: '0093'
+    idRef: 0093
   - version: 2.0.0
     idRef: '0020'
   - version: 3.0.0
@@ -16,7 +16,7 @@ versions:
   - version: 4.0.0
     idRef: '0047'
   - version: 5.0.0
-    idRef: '0048'
+    idRef: 0048
 people: TBD
 responsible:
   - responsible: src/content/personas/es/colaborador.mdx
@@ -30,18 +30,38 @@ saved_resources:
   - cpu
   - network
 validations:
-  - rule: de imágenes redimensionadas en el navegador
-    maxValue: 0
+  - rule: de KB descargados innecesariamente
+    maxValue: 5% del total
 ---
 
 ## Descripción
 
-No cambie el tamaño de las imágenes usando los atributos HEIGHT y WIDTH en el código HTML. Este enfoque requiere que las imágenes se transfieran a su tamaño original, desperdiciando el ancho de banda y ciclos de CPU.
+Idealmente, el tamaño de visualización de una imagen en el navegador debe ser lo más cercano posible al del archivo de imagen descargado.
+
+En el marco de las integraciones modernas, con las imágenes responsivas, es necesario definir bien los atributos srcset o sources para que cada tipo de dispositivo utilice una versión de imagen adaptada al tamaño y a la resolución de su pantalla.
+
+NB: los atributos height y width permiten generalmente definir la relación de aspecto (ratio) de visualización más pequeña, pero es sobre todo el CSS el que hoy en día determina los tamaños de visualización según los tamaños de las pantallas.
+
+Compare el número de píxeles de la imagen cargada con el número de píxeles realmente mostrados. La herramienta yellowlab.tools puede ayudarle.
 
 ## Ejemplo
 
-Una imagen de 350 x 300 píxeles codificada en PNG 24 pesa 41 KB. Redimensionada en HTML, la misma imagen mostrada en miniatura a 70 x 60 píxeles sigue pesando 41 KB, ¡mientras que no debería superar los 3 KB! 38 KB descargados cada vez para nada... Nota: El redimensionamiento realizado por el navegador también puede tener un efecto píxel en la visualización final de la imagen.
+Una imagen de 350 × 300 píxeles codificada en PNG 24 pesa 41 KB. La misma imagen mostrada en miniatura a 70 × 60 píxeles sigue pesando 41 KB, ¡mientras que no debería superar los 3 KB!
 
-La mejor solución es generar las imágenes en el tamaño al que se visualizan. Ya sea que lo haga manualmente usando un editor de imágenes, o el CMS tiene una rutina automática que generará las imágenes en el tamaño donde se llaman en la plantilla.
+Ejemplo de sintaxis responsiva:
 
+HTML:
 
+```html
+<img id="monimage" src="image_3ko.png" width="70" height="60"
+srcset="image_3ko.png 640w, image_41ko.png 1920w">
+```
+
+CSS:
+
+```css
+#monimage { width: 70px; height: 60px }
+@media(min-width: 640px) {
+    #monimage { width: 350px; height: 300px }
+}
+```
