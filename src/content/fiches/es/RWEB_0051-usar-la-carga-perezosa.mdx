@@ -2,7 +2,7 @@
 refID: '0051'
 title: Usar la carga perezosa
 createdAt: 2024-02-14T11:24:11.818Z
-updatedAt: 2025-05-30T13:01:27.244Z
+updatedAt: 2025-11-28T14:48:08.867Z
 language: es
 published: true
 refType: RWEB
@@ -30,27 +30,23 @@ saved_resources:
   - cpu
   - network
 validations:
-  - rule: de imágenes, de iframes y de vídeos llamados sin Lazy loading, por debajo de la línea de flotación
-    maxValue: 0%
+  - rule: >-
+      de imágenes, de iframes y de vídeos situados por debajo de la línea de
+      flotación y llamados sin lazy loading
+    maxValue: '0 '
 ---
 
 ## Descripción
-Cuando un internauta no consulta la totalidad de una página web, por defecto todos los recursos (imágenes, vídeos, iframes...) situadas fuera de la zona visitada, por debajo de la línea de flotación, se cargan innecesariamente. Para evitar esto, es posible utilizar la técnica de carga perezosa (Lazy loading) que consiste en cargar un elemento solamente cuando su ubicación sea visible en la pantalla.
 
-En HTML, es posible añadir un atributo `loading` a sus imágenes e iframes para que el navegador se encargue de descargar solo las imágenes que aparecen en pantalla. Sin embargo, este atributo es muy reciente: no será tenido en cuenta en versiones anteriores de navegadores. No obstante, en aras de una mayor compatibilidad, se podrá utilizar minibibliotecas Javascript, muy ligeras, que se ocuparán de la carga perezosa de sus imágenes, como:
-	- [LOZAD](https:///cdn.jsdelivr.net/npm/lozad) 1,9 KB (gzip)
-	
+Cuando un internauta no consulta la totalidad de una página web, todos los recursos (imágenes, vídeos, iframes...) situados fuera de la zona visible, por debajo de la línea de flotación, se cargan inútilmente. Evite esto vía la técnica de carga diferida (lazy loading) que consiste en no cargar un elemento hasta que su ubicación se vuelve visible en la pantalla.
+
+En HTML5, es posible añadir un atributo loading a sus imágenes y a sus iframes para que el navegador no descargue más que los recursos que aparecen en pantalla.
+
 ## Ejemplo
-En este ejemplo, la imagen y el iframe serán cargados de manera perezosa automáticamente por el navegador. Si la imagen debe aparecer en la pantalla, se descargará y se mostrará, y si está por debajo de la línea de flotación, no se descargará.
+
+La imagen y el iframe serán cargados automáticamente por el navegador: si la imagen debe aparecer en pantalla, será descargada y mostrada, pero no lo será si está situada por debajo de la línea de flotación.
 
 ```html
-<img src="image.jpg" alt="..." loading="Lazy">
-<iframe src="video-player.html" title="..." loading="Lazy"></iframe>
+<img src="image.jpg" alt="..." loading="lazy">
+<iframe src="video-player.html" title="..." loading="lazy"></iframe>
 ```
-
-Para ir más lejos:
- - https://developer.mozilla.org/en-US/Web/Performance/Lazy_loading
- - https://web.dev/browser-level-image-lazy-loading/
- - https://web.dev/lazy-loading-video/
-
-
