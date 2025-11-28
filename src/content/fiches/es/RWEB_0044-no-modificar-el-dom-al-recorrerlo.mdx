@@ -2,7 +2,7 @@
 refID: '0044'
 title: No modificar el DOM al recorrerlo
 createdAt: 2024-02-14T11:34:20.720Z
-updatedAt: 2025-05-18T17:18:57.809Z
+updatedAt: 2025-11-28T13:53:40.196Z
 language: es
 published: true
 refType: RWEB
@@ -29,18 +29,21 @@ tiers: user-device
 saved_resources:
   - cpu
 validations:
-  - rule: de inserciones en el DOM realizadas cuando esta misma parte del DOM es recorrida por código JavaScript
-    maxValue: 0
+  - rule: >-
+      de inserciones en el DOM realizadas cuando esta misma parte del DOM es
+      recorrida por un código JavaScript
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Modificar el DOM (Document Object Model) al recorrerlo puede generar situaciones en las que el bucle se vuelve muy codicioso en recursos, en particular en ciclos de CPU. En efecto, si se añaden elementos recorriéndolo, es posible generar un bucle infinito que consumirá una gran cantidad de recursos. Por lo tanto, se desaconseja encarecidamente este tipo de modificación.
+Modificar el DOM (Document Object Model) cuando se recorre puede engendrar situaciones donde el bucle se vuelve muy exigente en recursos, especialmente en ciclos de CPU. En efecto, si se añaden elementos al recorrerlo, es posible generar un bucle infinito que consumirá una gran cantidad de recursos. Este tipo de modificación está, por lo tanto, fuertemente desaconsejada.
 
 ## Ejemplo
 
 Evitar:
-```html
+
+```javascript
 <script>
 	// Notación de jQuery
 	$('a. extlink'). each(function(el) {
@@ -49,3 +52,18 @@ Evitar:
 </script>
 ```
 
+Preferir:
+
+```javascript
+<script>
+	$(document).ready(function() {
+        var itemsToUpdate = [];
+	$('.a.extlink').each(function() {
+		itemsToUpdate.push(this);
+        });
+	$(itemsToUpdate).attr('rel', 'external nofollow');
+    });
+</script>
+```
+
+Este método permite almacenar los elementos del DOM a modificar en una variable temporal y luego efectuar las modificaciones en una sola operación.
