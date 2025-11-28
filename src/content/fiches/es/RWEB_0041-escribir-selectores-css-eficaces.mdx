@@ -2,7 +2,7 @@
 refID: '0041'
 title: Escribir selectores CSS eficaces
 createdAt: 2024-02-14T10:41:32.065Z
-updatedAt: 2025-05-18T17:11:51.805Z
+updatedAt: 2025-11-28T13:40:52.770Z
 language: es
 published: true
 refType: RWEB
@@ -29,32 +29,38 @@ tiers: network
 saved_resources:
   - cpu
 validations:
-  - rule: de selectores CSS que no utilicen identificación, clase o atributo
-    maxValue: 0
+  - rule: >-
+      de selectores CSS que no utilizan ni ID, ni clase, ni atributo cuando es
+      posible
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Favorecer los selectores basados en ID o clases. De este modo, se filtran más rápidamente, ahorrando ciclos de CPU a la máquina que interpreta las reglas.
+Dar prioridad a los selectores basados en IDs o clases. De esta forma, serán filtrados más rápidamente, ahorrando ciclos de CPU a la máquina que interpreta las reglas.
 
 ## Ejemplo
 
-No escriba lo siguiente:
+No escribir:
+
 ```css
 treeitem[mailfolder="true"] > treerow > treecell {...}
 ```
-sino más bien:
+
+Sino más bien:
+
 ```css
 .treecell-mailfolder {...}
 ```
 
-No escriba lo siguiente:
+No escribir:
+
 ```css
 treehead > treerow > treecell {...}
 ```
-sino más bien:
+
+Sino más bien:
+
 ```css
 .treecell-header {...}
 ```
-
-
