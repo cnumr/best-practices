@@ -2,7 +2,7 @@
 refID: '0060'
 title: Ahorrar ancho de banda con un ServiceWorker
 createdAt: 2024-02-14T13:48:54.622Z
-updatedAt: 2025-05-26T16:17:06.201Z
+updatedAt: 2025-12-01T14:56:41.668Z
 language: es
 published: true
 refType: RWEB
@@ -14,7 +14,7 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: '0059'
+    idRef: 0059
   - version: 5.0.0
     idRef: '0060'
 people: TBD
@@ -30,28 +30,17 @@ saved_resources:
   - network
 validations:
   - rule: de páginas cargadas en su versión completa
-    maxValue: 1
+    maxValue: '1 '
 ---
 
 ## Descripción
 
-La mayoría de las páginas comparten una estructura común que enmarca el "contenido útil".
-A excepción del `<title>` y algunos metadatos de la cabecera, por lo tanto, sería bastante fácil de reconstruir por concatenación de tres recursos: una cabecera y un pie de página comunes a todas las páginas, y el contenido propio de cada una.
+La mayoría de las páginas comparten una estructura común que enmarca el «contenido útil». Por lo tanto, se pueden reconstruir bastante fácilmente mediante la concatenación de tres recursos: un encabezado y un pie de página común a todas las páginas, y el contenido propio de cada una. Esta concatenación puede efectuarse directamente en el navegador vía un Service Worker. Con el encabezado y el pie de página puestos en caché HTTP, ya no se descarga más que el «contenido útil».
 
-Esta concatenación se puede realizar en el navegador directamente por Service Worker, con el encabezado y el pie de página aprovechando el almacenamiento en caché HTTP, cada página se reduce entonces a la descarga del "contenido útil" solo.
-El servidor debe ser capaz de servir tanto a la página completa, para el acceso inicial al sitio y para los navegadores que no soportan los Service Workers, y el  fragmento de la página sin su cabecera y pie de página, para poder realizar la concatenación en el Servicio Worker.
-Algunos `<meta>` y `<link>` propios de SEO o de los recursos compartidos en las redes sociales, y por lo tanto inútiles en el navegador, pueden ser completamente omitidas de este _fragmento para reducir aún más su peso.
+Sin embargo, el servidor debe ser capaz de proporcionar a la vez la página completa para el acceso inicial y para los navegadores más antiguos que no soportan los Service Workers, y el fragmento de la página, para la concatenación por el Service Worker.
 
-Los demás, así como el `<title>`, pueden en general colocarse en el `<body>` sin afectar a la usabilidad de la página.
-Alternativamente, pueden ser recreados por JavaScript, o inyectados directamente en el `<head>` por el Service Worker concatenando no 3 partes, sino 4 o 5 (estos elementos podrían sintetizarse a partir de los encabezados de respuesta HTTP del contenido de la página, para conservar el mismo número de consultas).
-
-Aquí se concede un poco de tiempo de procesador en el terminal, una solicitud inicial adicional para el Servicio Trabajador, luego dos consultas adicionales para la cabecera y el pie de página, a cambio de grandes ahorros en la cantidad de datos intercambiados para cada página.
-Estos costes concedidos se amortizan durante las navegaciones en el sitio (como para una SPA), pero también en futuras visitas al sitio, hasta que el navegador no haya desplazado al Servicio Trabajador.
+Se concede aquí un poco de tiempo de procesador a nivel del terminal, una petición inicial suplementaria para el Service Worker, y luego dos peticiones suplementarias para el encabezado y el pie de página, a cambio de grandes ahorros en cuanto a las cantidades de datos intercambiados posteriormente, así como una ganancia significativa en el tiempo de carga de las páginas.
 
 ## Ejemplo
 
-A principio de 2020, Philip Walton pudo medir en su blog una reducción de los intercambios de red de casi el 48% y una mejora del rendimiento (First Contentful Paint) de más del 52% con esta técnica.
-
-Fuente: https://philipwalton.com/articles/smaller-html-payloads-with-service-workers/
-
-
+A principios de 2020, Philip Walton pudo medir en su blog una reducción de los intercambios de red de cerca del 48% y una mejora del rendimiento (First Contentful Paint) de más del 52% con esta técnica.
