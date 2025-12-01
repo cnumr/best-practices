@@ -2,7 +2,7 @@
 refID: '0057'
 title: Reducir el acceso al DOM a través de JavaScript
 createdAt: 2024-02-14T11:51:06.292Z
-updatedAt: 2025-05-30T15:38:37.061Z
+updatedAt: 2025-12-01T14:40:13.636Z
 language: es
 published: true
 refType: RWEB
@@ -31,23 +31,19 @@ saved_resources:
   - ram
 validations:
   - rule: de accesos a un elemento HTML sin pasar por una variable local
-    maxValue: 0
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-El acceso al DOM (Document Object Model) vía JavaScript es un procedimiento pesado que consume muchos ciclos de procesador (CPU). Hay que reducir al mínimo el acceso.
+El acceso al DOM vía JavaScript es un procedimiento pesado que consume muchos ciclos de procesador (CPU), más aún si la página tiene un DOM importante. Reduzca tanto como sea posible estos accesos.
 
-Para ello, puede asignar el nodo a variables que reutilizará durante el ciclo de vida de la aplicación, lo que evita que se vuelva a recorrer el árbol cada vez que se manipule el documento.
+Para ello, puede asignar el nodo en variables que reutilizará durante el ciclo de vida de la aplicación, lo que evita volver a recorrer el árbol en cada manipulación del documento.
 
-También es posible utilizar bibliotecas de tipo «Shadow DOM», que optimizan las modificaciones del árbol mediante un sistema por lotes.
+Si la página tiene un DOM importante, puede ser sensato utilizar bibliotecas de tipo «Shadow DOM», que optimizan las modificaciones del árbol mediante un sistema de lotes (batch).
 
 ## Ejemplo
 
-Para obtener más información, consulte el proyecto de Shadow DOM del W3C:
-https://www.w3.org/TR/shadow-dom/ 
-y las recomendaciones del W3C para reducir el acceso al DOM a través de JavaScript:
-https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
+Para saber más, puede consultar el proyecto de Shadow DOM del W3C: [https://w3c.github.io/webcomponents/spec/shadow/](https://www.google.com/search?q=https://w3c.github.io/webcomponents/spec/shadow/)
 
-
-
+Y las recomendaciones del W3C para reducir los accesos al DOM vía JavaScript: [https://www.w3.org/wiki/JavaScript\_best\_practices#Keep\_DOM\_access\_to\_a\_minimum](https://www.google.com/search?q=https://www.w3.org/wiki/JavaScript_best_practices%23Keep_DOM_access_to_a_minimum)
