@@ -2,7 +2,7 @@
 refID: '0056'
 title: Usar la delegación de eventos
 createdAt: 2024-02-14T11:41:24.555Z
-updatedAt: 2025-05-30T15:36:15.457Z
+updatedAt: 2025-12-01T14:35:17.948Z
 language: es
 published: true
 refType: RWEB
@@ -30,44 +30,38 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: de escuchas (listeners) de un mismo evento sobre varios elementos HTML, que forman parte de un mismo grupo, sin utilizar la delegación de eventos
-    maxValue: 0
+  - rule: de listeners que no utilizan la delegación de eventos
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-La delegación de eventos permite no sobrecargar la memoria del navegador instanciando un solo "listener" para varios elementos del DOM (Document Object Model).
+La delegación de eventos evita sobrecargar la memoria del navegador instanciando un solo escuchador (listener) para varios elementos del DOM.
+
+El principio es el siguiente: en lugar de asignar un evento a varios elementos de la página, puede colocar un solo evento en un elemento padre de estos objetos. Es en este gestor de eventos donde se determinará el elemento disparador gracias a event.target.
+
+Más información en: [https://fr.javascript.info/event-delegation](https://fr.javascript.info/event-delegation)
 
 ## Ejemplo
 
-El elemento del DOM cuyo ID se declara como el delegado.
-Intercepta los eventos de todos sus hijos.
-```html
-<head>
-	// ...
-	<style type="text/css">
- 	#t { border: 1px solid red } #t1 { background-color: pink; }
-	</style>
-	<script type="text/javascript">
-    	function modifyText(new_text) {
-        	var t2 = document.getElementById("t2");
-        	t2.?rstChild.nodeValue = new_text;
-    	}
-    	function load() {
-        	var el = document.getElementById("t");
-        	el.addEventListener("click", function() {
-          	modifyText("four")
-        	}, false);
-    	}
-	</script>
-</head>
-<body onload="load();">
-	<table id="t">
-    	<tr><td id="t1"><button type="button">one</button></td></tr>
-    	<tr><td id="t2"><button type="button">two</button></td></tr>
-	</table>
-	<!-- ... -->
-</body>
+Ejemplo de script para resaltar una celda de tabla:
+
+```javascript
+<script type="text/javascript">
+	let selectedTd;
+	table.onclick = function(event) {
+		let target = event.target;
+	if (target.tagName != 'TD') return;
+	highlight(target);
+  };
+	function highlight(td) {
+    if (selectedTd) {
+		selectedTd.classList.remove('highlight');
+    }
+	selectedTd = td;
+	selectedTd.classList.add('highlight');
+  }
+</script>
 ```
 
-
+Aquí no se agrega un evento en cada celda, sino únicamente en la tabla.
