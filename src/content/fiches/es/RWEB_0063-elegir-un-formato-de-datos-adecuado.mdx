@@ -2,7 +2,7 @@
 refID: '0063'
 title: Elegir un formato de datos adecuado
 createdAt: 2024-02-14T10:19:06.105Z
-updatedAt: 2025-05-27T15:40:46.927Z
+updatedAt: 2025-12-03T19:43:43.461Z
 language: es
 published: true
 refType: RWEB
@@ -32,25 +32,14 @@ saved_resources:
   - storage
   - network
 validations:
-  - rule: de campos de la base cuyo formato es inadecuado es
+  - rule: de campos de la base cuyo formato es inadaptado
     maxValue: 15%
 ---
 
 ## Descripción
 
-El tipo de datos utilizados para manipular y almacenar datos tiene un impacto significativo en el consumo de memoria y los ciclos de procesador necesarios durante la manipulación en base de datos, en el servidor de aplicaciones e incluso en el navegador (manipulación mediante JavaScript), así como en el espacio de almacenamiento necesario. Elegir un tipo de datos incorrecto provoca:
- - un derroche de memoria (por ejemplo, si se almacenan datos muy pequeños en una columna diseñada para almacenar grandes cantidades de datos);
- - problemas de rendimiento (será más rápido realizar una búsqueda en un número que en una cadena de caracteres).
-   
-Idealmente, la elección del tipo de datos y su dimensionamiento deben basarse en el análisis de una muestra representativa de datos.
+El tipo de datos utilizado para manipular y almacenar un dato tiene un impacto significativo en el consumo de memoria y los ciclos de procesador necesarios durante las manipulaciones en la base de datos, a nivel del servidor de aplicaciones e incluso en el navegador (manipulación vía JavaScript), así como sobre el espacio de almacenamiento necesario. Elegir un mal tipo de datos conlleva un desperdicio de memoria (por ejemplo, si almacena datos muy pequeños en una columna prevista para almacenar grandes cantidades de datos) y problemas de rendimiento. La elección del tipo de datos y de su dimensionamiento deben, por tanto, estar fundados sobre el análisis de una muestra representativa de datos.
 
 ## Ejemplos
 
-En el caso de un centro de formación, el tamaño del campo para almacenar el número de alumnos debe basarse en un estudio estadístico.
-Esto permite determinar si es posible utilizar un TINYINT (1 byte, hasta 127 bytes) en lugar de un SMALLINT (2 bytes, hasta 32 767).
-En cualquier caso, la elección por defecto de un INT (4 bytes, hasta 2 147 483 647) o incluso un BIGINT (8 bytes) es una aberración (que lamentablemente nos encontramos todos los días en nuestras auditorías...).
-Ganancia potencial: hasta 8 veces menos almacenamiento. El consumo en ciclo de procesador se reduce en las mismas proporciones.
-
-En el caso del almacenamiento de un identificador UUID, un almacenamiento de texto no será adecuado. Un UUID se almacena en 16 bytes, mientras que en su forma textual necesitaría un mínimo de 36 bytes. Los índices de base de datos tampoco serían tan eficaces como con el tipo UUID/GUID/uniqueidentifier.
-
-
+En el caso de un establecimiento de formación, el tamaño del campo que permite almacenar el número de alumnos debe basarse en un estudio estadístico. Se puede así determinar si es posible utilizar un TINYINT (1 byte, hasta 127) en lugar de un SMALLINT (2 bytes, hasta 32 767). En todos los casos, la elección por defecto de un INT (4 bytes, hasta 2 147 483 647) o incluso un BIGINT (8 bytes) es una aberración (que encontramos desgraciadamente todos los días durante nuestras auditorías...). Ganancia potencial: hasta 8 veces menos de almacenamiento. El consumo en ciclos de procesador se reduce en las mismas proporciones.
