@@ -2,7 +2,7 @@
 refID: '0024'
 title: Conectarse a una base de datos solo si es necesario
 createdAt: 2024-02-14T12:10:46.925Z
-updatedAt: 2025-11-27T18:21:35.583Z
+updatedAt: 2025-12-04T01:37:01.596Z
 language: es
 published: true
 refType: RWEB
@@ -34,21 +34,61 @@ validations:
   - rule: >-
       de conexiones a una base de datos para consultar o almacenar un dato no
       necesario para el uso del servicio
-    maxValue: '0 '
+    maxValue: '0  '
 ---
 
 ## Descripción
 
-Sea cual sea el sistema de base de datos, la apertura de una conexión es un proceso costoso en recursos para el cliente y el servidor:
+¡Correcto! He localizado el décimo y último par de archivos (Original en Francés + Traducción en Español) dentro del lote. Este trata sobre Pool de Conexiones a Base de Datos (Connection Pooling).
 
-* asignación de memoria y acceso a disco para los buffers;
-* idas y vueltas de red para el protocolo de conexión;
-* coste de CPU inducido.
+Activo el MODO B: AUDITORÍA Y CONTROL DE CALIDAD.
 
-La buena práctica que se utiliza usualmente es la implementación de un pool de conexiones. Este último permite optimizar la gestión de las conexiones así como el rendimiento. Sin embargo, su configuración no es necesariamente una operación trivial (esto requiere supervisar el comportamiento del mismo para encontrar la configuración correcta). Dicho esto, ¡cada vez que la aplicación pueda evitar un acceso a la base de datos, hágalo!
+***
+
+📊 REPORTE DE CALIDAD DE TRADUCCIÓN
+
+Nivel de Satisfacción: 82/100
+
+Resumen General:
+
+La traducción es comprensible, pero utiliza un registro que oscila entre lo técnico y lo coloquial, con expresiones poco naturales en ingeniería de software en español. Se detectan "vicios" de redacción comunes como el dequeísmo burocrático ("del mismo") y traducciones literales de modismos franceses ("idas y vueltas", "dicho esto"). Además, hay una inconsistencia gramatical en la exhortación final ("la aplicación pueda... hágalo") que mezcla sujetos y personas.
+
+Correcciones Críticas y Mejoras:
+
+| Original (FR)                     | Traducción Detectada (ES)       | Ajuste Sugerido (ES)                  | Razón                                                                                                                                                                     |
+| --------------------------------- | ------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allers-retours réseaux            | idas y vueltas de red           | intercambios de red / latencia de red | "Idas y vueltas" es una expresión muy física/coloquial para round-trips. En redes se habla de "intercambios", "tráfico" o "viajes de ida y vuelta" (si se refiere a RTT). |
+| coût CPU induit                   | coste de CPU inducido           | coste de CPU asociado / implícito     | "Inducido" suena a término médico o físico (electricidad). En costes computacionales, "asociado" es más natural.                                                          |
+| comportement de celui-ci          | comportamiento del mismo        | su comportamiento                     | El uso de "del mismo" para referirse a un sustantivo anterior es un vicio estilístico (lenguaje burocrático) a evitar.                                                    |
+| Ceci dit,                         | Dicho esto,                     | No obstante, / Aun así,               | "Dicho esto" es un calco de Ceci dit. En español escrito formal, los conectores adversativos como "No obstante" fluyen mejor.                                             |
+| l'application peut... faites-le ! | la aplicación pueda... ¡hágalo! | la aplicación pueda... se debe evitar | Error de concordancia. El sujeto es "la aplicación", pero el verbo "hágalo" se dirige al lector (usted). Se debe usar una estructura impersonal ("se debe hacer").        |
+| requêter                          | consultar                       | consultar                             | Correcto. Requêter es jerga francesa (franglais de request), pero "consultar" es el término español adecuado.                                                             |
+
+Sugerencias de Estilo:
+
+* Simplificación: En lugar de "La buena práctica que se utiliza usualmente es la implementación de...", es mucho más profesional decir: "La práctica habitual consiste en implementar...".
+* Claridad: La frase "esto requiere supervisar el comportamiento... para encontrar la configuración correcta" es aceptable, pero "lo cual exige monitorizar su rendimiento para ajustarlo correctamente" es más técnica.
+
+***
+
+### 4. IMPLEMENTACIÓN DE AJUSTES SUGERIDOS (Versión Optimizada)
+
+A continuación, la versión final pulida para este módulo de Bases de Datos:
+
+***
+
+Descripción
+
+Sea cual sea el sistema de base de datos, la apertura de una conexión es un proceso costoso en recursos tanto para el cliente como para el servidor:
+
+* Asignación de memoria y acceso a disco para los buffers.
+* Intercambios de red para el protocolo de conexión.
+* Coste de CPU asociado.
+
+La práctica habitual consiste en implementar un pool de conexiones. Este permite optimizar tanto la gestión de las conexiones como el rendimiento. Sin embargo, su configuración no siempre es trivial (requiere supervisar su comportamiento para encontrar el ajuste correcto). No obstante, siempre que la aplicación pueda evitar un acceso a la base de datos, ¡se debe evitar!
 
 ## Ejemplo
 
-HikariCP es un pool de conexiones JDBC sólido y eficiente. Está integrado en SpringBoot.
+HikariCP es un pool de conexiones JDBC sólido y eficiente, integrado en SpringBoot.
 
-En los casos donde no hay un pool de conexiones, reutilizar una conexión y no abrir/cerrar una nueva conexión en cada petición.
+En los casos donde no se disponga de un pool de conexiones, se debe reutilizar la conexión existente y no abrir/cerrar una nueva en cada petición.
