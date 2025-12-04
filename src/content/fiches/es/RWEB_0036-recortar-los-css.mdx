@@ -2,7 +2,7 @@
 refID: '0036'
 title: Recortar los CSS
 createdAt: 2024-02-14T10:28:42.760Z
-updatedAt: 2025-11-27T19:31:48.771Z
+updatedAt: 2025-12-04T02:30:56.881Z
 language: es
 published: true
 refType: RWEB
@@ -30,17 +30,17 @@ saved_resources:
   - cpu
   - network
 validations:
-  - rule: de bibliotecas CSS está comprendido entre
+  - rule: de bibliotecas/archivos CSS está comprendido entre
     maxValue: 2 y 5
 ---
 
 ## Descripción
 
-Emplear un conjunto de CSS en lugar de una sola, y llamar únicamente a las CSS útiles en función del contexto. Este método permite limitar el peso de la página durante la primera descarga, ahorrando así ancho de banda y reduciendo la carga de CPU.
+Utilizar un conjunto de archivos CSS en lugar de uno solo, y cargar únicamente los archivos necesarios en función del contexto. Este método permite limitar el peso de la página durante la primera descarga, ahorrando así ancho de banda y reduciendo la carga de CPU.
 
 ## Ejemplo
 
-Dividir las CSS en función de la lógica funcional:
+Dividir los archivos CSS en función de la lógica funcional:
 
 * layout;
 * content;
@@ -48,4 +48,4 @@ Dividir las CSS en función de la lógica funcional:
 * módulo y;
 * etc...
 
-En el caso de un sitio funcionalmente rico, esto permitirá excluir todas las CSS de los módulos no utilizados. El número de CSS debe mantenerse razonable, más por cuestiones de mantenibilidad que de rendimiento, en la medida en que las CSS generales («layout» y «content» en nuestro ejemplo) serán concatenadas en un solo archivo. Las CSS complementarias (aquí, «módulo x» y «módulo y») serán descargadas en función del contexto (página, funcionalidades...).
+En el caso de un sitio rico en funcionalidades, esto permitirá excluir todas las hojas de estilo de los módulos no utilizados. El número de archivos CSS debe mantenerse razonable, más por cuestiones de mantenibilidad que de rendimiento, en la medida en que los CSS generales («layout» y «content» en nuestro ejemplo) serán concatenados en un solo archivo. Los CSS complementarios (aquí, «módulo x» y «módulo y») serán descargados en función del contexto (página, funcionalidades...).
