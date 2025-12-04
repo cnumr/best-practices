@@ -2,7 +2,7 @@
 refID: '0026'
 title: Establecer un "Circuit Breaker"
 createdAt: 2024-02-14T14:26:40.125Z
-updatedAt: 2025-11-27T18:24:50.935Z
+updatedAt: 2025-12-04T01:41:52.805Z
 language: es
 published: true
 refType: RWEB
@@ -32,17 +32,17 @@ saved_resources:
   - requests
 validations:
   - rule: de "circuit breakers" no implementados en los servicios externos
-    maxValue: '0 '
+    maxValue: '0  '
 ---
 
 ## Descripción
 
-Un circuit breaker (disyuntor) es un patrón de diseño (design pattern) que permite optimizar las llamadas a un servicio (típicamente una API) en el caso de que este se encuentre en error.
+Un circuit breaker (disyuntor) es un patrón de diseño (design pattern) que permite optimizar las llamadas a un servicio (típicamente una API) en el caso de que este presente un error.
 
-En función de un cierto número de criterios de error (timeout, número de errores), el servicio llamante detecta el problema y, en lugar de llamar al servicio de manera sistemática, puede reemplazar la llamada por un comportamiento predefinido, como el uso de un valor por defecto o la llamada a otro servicio. En todos los casos, el circuit breaker permite definir una política para reintentar llamar al servicio que falla: reintentar cada x segundos, por ejemplo.
+En función de un cierto número de criterios de error (timeout, número de errores), el servicio llamante detecta el problema y, en lugar de llamar al servicio de forma indiscriminada, puede reemplazar la llamada por un comportamiento predefinido, como el uso de un valor por defecto o la llamada a otro servicio. En todos los casos, el circuit breaker permite definir una política para reintentar llamar al servicio que falla: reintentar cada x segundos, por ejemplo.
 
-Esta práctica permite ahorrar recursos (llamadas de red) tanto a nivel del llamante (es inútil llamar a un servicio que falla), como del llamado, que puede entonces restablecerse más fácilmente.
+Esta práctica permite ahorrar recursos (llamadas de red) tanto a nivel del llamante (es innecesario llamar a un servicio que falla), como del llamado, que puede entonces restablecerse más fácilmente.
 
 ## Ejemplo
 
-En un sitio de comercio electrónico, la información detallada de una ficha de producto puede ser proporcionada por un servicio dedicado. El servicio principal que recupera una página de producto ha "aprendido" que el servicio de información detallada estaba en error; evita entonces llamarlo inútilmente mientras no responda favorablemente y, por lo tanto, no envía esta información al usuario final. El servicio permanece operativo aunque la experiencia esté degradada.
+En un sitio de comercio electrónico, la información detallada de una ficha de producto puede ser proporcionada por un servicio dedicado. El servicio principal que recupera una página de producto ha "aprendido" que el servicio de información detallada fallaba; evita entonces llamarlo inútilmente mientras no responda favorablemente y, por lo tanto, no envía esta información al usuario final. El servicio permanece operativo aunque la experiencia esté degradada.
