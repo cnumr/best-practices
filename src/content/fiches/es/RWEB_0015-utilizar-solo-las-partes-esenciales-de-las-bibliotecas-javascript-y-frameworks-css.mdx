@@ -4,7 +4,7 @@ title: >-
   Utilizar sólo las partes esenciales de las bibliotecas JavaScript y frameworks
   CSS
 createdAt: 2024-02-14T11:31:18.389Z
-updatedAt: 2025-11-27T18:10:51.653Z
+updatedAt: 2025-12-04T01:20:11.776Z
 language: es
 published: true
 refType: RWEB
@@ -33,16 +33,16 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: de bibliotecas de las cuales se utilizan porciones no indispensables
+  - rule: de bibliotecas en las que se utilizan porciones no indispensables
     maxValue: '1 '
 ---
 
 ## Descripción
 
-Al responder a las necesidades más comunes, las bibliotecas JavaScript tales como jQuery y los frameworks CSS listos para usar (Bootstrap, Skeleton, Gumby, Foundation...) permiten desarrollar sitios rápidamente. Pero no todos se basan en una arquitectura modular, lo que obliga al internauta a descargar toda la biblioteca para utilizar solo un pequeño porcentaje de las funcionalidades.
+Al responder a las necesidades más comunes, las bibliotecas JavaScript como jQuery y los frameworks CSS listos para usar (Bootstrap, Skeleton, Gumby, Foundation...) permiten desarrollar sitios rápidamente. Sin embargo, no todas estas herramientas se basan en una arquitectura modular, lo que obliga al usuario a descargar toda la biblioteca para utilizar solo un pequeño porcentaje de las funcionalidades.
 
-Es preferible prescindir de estas bibliotecas o conservar solo las porciones realmente utilizadas. Utilizar un bundler (por ejemplo, Webpack) permite realizar fácilmente el tree shaking, es decir, eliminar el código muerto y, por lo tanto, no utilizado. También se puede estimar el peso de una biblioteca con el sitio [https://bundlephobia.com/](https://bundlephobia.com/), que le dará una idea del peso total de un archivo «package.json».
+Es preferible prescindir de estas bibliotecas o conservar solo las partes realmente utilizadas. Utilizar un bundler (por ejemplo, Webpack) permite realizar fácilmente el tree shaking, es decir, eliminar el código muerto y, por lo tanto, no utilizado. También se puede estimar el peso de una biblioteca con el sitio bundlephobia.com, que le dará una idea del peso total de un archivo «package.json».
 
 ## Ejemplo
 
-Ciertos frameworks como Tailwind CSS proponen bibliotecas aligeradas que solo contienen las porciones realmente utilizadas. Esto reduce el peso de los archivos descargados por el navegador y los recursos consumidos durante la ejecución. Por ejemplo, jQuery ofrece una versión «slim» que no incluye ciertas funcionalidades como las animaciones CSS y el soporte de intercambios de datos en AJAX. Esto permite ahorrar 17 KB para la versión 3.6.
+Algunos frameworks como Tailwind CSS ofrecen versiones ligeras que solo contienen las partes realmente utilizadas. Esto reduce el peso de los archivos descargados por el navegador y los recursos consumidos durante la ejecución. Por ejemplo, jQuery ofrece una versión «slim» que no incluye ciertas funcionalidades como las animaciones CSS y el soporte para intercambio de datos AJAX. Esto permite ahorrar 17 KB en la versión 3.6.
