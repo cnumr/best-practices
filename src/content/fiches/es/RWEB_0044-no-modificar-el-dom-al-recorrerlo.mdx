@@ -2,7 +2,7 @@
 refID: '0044'
 title: No modificar el DOM al recorrerlo
 createdAt: 2024-02-14T11:34:20.720Z
-updatedAt: 2025-11-28T13:53:40.196Z
+updatedAt: 2025-12-04T21:01:19.824Z
 language: es
 published: true
 refType: RWEB
@@ -30,14 +30,16 @@ saved_resources:
   - cpu
 validations:
   - rule: >-
-      de inserciones en el DOM realizadas cuando esta misma parte del DOM es
-      recorrida por un código JavaScript
+      de inserciones en el DOM realizadas cuando un código JavaScript recorre
+      esa misma parte del DOM
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Modificar el DOM (Document Object Model) cuando se recorre puede engendrar situaciones donde el bucle se vuelve muy exigente en recursos, especialmente en ciclos de CPU. En efecto, si se añaden elementos al recorrerlo, es posible generar un bucle infinito que consumirá una gran cantidad de recursos. Este tipo de modificación está, por lo tanto, fuertemente desaconsejada.
+Modificar el DOM (Document Object Model) mientras se recorre puede provocar situaciones donde el bucle consuma una cantidad excesiva de recursos, especialmente ciclos de CPU.
+
+De hecho, si se añaden elementos durante el recorrido, es posible generar un bucle infinito que consumirá gran cantidad de recursos. Por lo tanto, se desaconseja encarecidamente este tipo de modificación.
 
 ## Ejemplo
 
@@ -66,4 +68,4 @@ Preferir:
 </script>
 ```
 
-Este método permite almacenar los elementos del DOM a modificar en una variable temporal y luego efectuar las modificaciones en una sola operación.
+Este método permite almacenar los elementos del DOM que se van a modificar en una variable temporal y, posteriormente, efectuar todas las modificaciones en una sola operación.
