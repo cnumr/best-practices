@@ -2,7 +2,7 @@
 refID: 0048
 title: No cambiar el tamaño de las imágenes en el navegador
 createdAt: 2024-02-14T11:05:07.836Z
-updatedAt: 2025-11-28T14:08:53.178Z
+updatedAt: 2025-12-04T23:15:31.195Z
 language: es
 published: true
 refType: RWEB
@@ -36,19 +36,19 @@ validations:
 
 ## Descripción
 
-Idealmente, el tamaño de visualización de una imagen en el navegador debe ser lo más cercano posible al del archivo de imagen descargado.
+Idealmente, el tamaño de visualización de una imagen en el navegador debe ser lo más cercano posible al tamaño del archivo descargado.
 
-En el marco de las integraciones modernas, con las imágenes responsivas, es necesario definir bien los atributos srcset o sources para que cada tipo de dispositivo utilice una versión de imagen adaptada al tamaño y a la resolución de su pantalla.
+En las integraciones modernas con imágenes responsive, es fundamental definir correctamente los atributos srcset o sources. Esto garantiza que cada dispositivo utilice una versión de la imagen adaptada específicamente al tamaño y resolución de su pantalla.
 
-NB: los atributos height y width permiten generalmente definir la relación de aspecto (ratio) de visualización más pequeña, pero es sobre todo el CSS el que hoy en día determina los tamaños de visualización según los tamaños de las pantallas.
+Nota: Si bien los atributos height y width suelen definir la relación de aspecto (ratio) base, hoy en día es principalmente el CSS el que determina el tamaño de visualización según la pantalla.
 
-Compare el número de píxeles de la imagen cargada con el número de píxeles realmente mostrados. La herramienta yellowlab.tools puede ayudarle.
+Compare el número de píxeles de la imagen cargada con el número de píxeles realmente mostrados. La herramienta yellowlab.tools puede serle de utilidad.
 
 ## Ejemplo
 
-Una imagen de 350 × 300 píxeles codificada en PNG 24 pesa 41 KB. La misma imagen mostrada en miniatura a 70 × 60 píxeles sigue pesando 41 KB, ¡mientras que no debería superar los 3 KB!
+Una imagen de 350 × 300 píxeles codificada en PNG 24 pesa 41 KB. La misma imagen mostrada como miniatura a 70 × 60 píxeles sigue pesando 41 KB, ¡cuando no debería superar los 3 KB!
 
-Ejemplo de sintaxis responsiva:
+Ejemplo de sintaxis responsive:
 
 HTML:
 
