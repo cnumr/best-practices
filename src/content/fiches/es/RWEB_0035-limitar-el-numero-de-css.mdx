@@ -2,7 +2,7 @@
 refID: '0035'
 title: Limitar el número de CSS
 createdAt: 2024-02-14T10:35:04.172Z
-updatedAt: 2025-11-27T19:26:51.090Z
+updatedAt: 2025-12-04T02:18:47.958Z
 language: es
 published: true
 refType: RWEB
@@ -36,9 +36,11 @@ validations:
 
 ## Descripción
 
-Recomendamos limitar el número de CSS para no multiplicar las peticiones HTTP y para simplificar el renderizado del lado del navegador. Utilice una hoja de estilos común para todos los elementos comunes, sea cual sea la visualización, y un archivo por resolución objetivo o media query. Atención, es necesario integrar estos archivos directamente en el código HTML y no con directivas @import en los propios archivos CSS. Dividiendo de esta manera, el terminal del usuario elegirá lo que le corresponde y despriorizará la carga de los archivos que no necesita. Si es necesario, los archivos CSS para ciertos componentes pueden cargarse en función del contexto.
+Recomendamos limitar el número de archivos CSS para no multiplicar las peticiones HTTP y simplificar el renderizado en el navegador. Utilice una hoja de estilos común para todos los elementos compartidos, sea cual sea la visualización, y un archivo por resolución de destino o media query.
 
-Sin embargo, procure no llevar esta lógica al extremo teniendo un solo archivo CSS: esto haría el caché del navegador menos eficaz, y haría ejecutar al navegador código CSS no necesario para la carga de una página.
+Importante: es necesario integrar estos archivos directamente en el código HTML y no mediante directivas @import en los propios archivos CSS. Dividiendo de esta manera, el terminal del usuario elegirá lo que le corresponde y restará prioridad a la carga de los archivos que no necesita. Si fuera necesario, los archivos CSS para ciertos componentes pueden cargarse en función del contexto.
+
+Sin embargo, procure no llevar esta lógica al extremo teniendo un solo archivo CSS: esto haría el caché del navegador menos eficaz y obligaría al navegador a ejecutar código CSS innecesario para la carga de una página.
 
 ## Ejemplo
 
