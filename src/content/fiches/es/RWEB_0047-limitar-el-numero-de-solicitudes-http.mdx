@@ -2,7 +2,7 @@
 refID: '0047'
 title: Limitar el número de solicitudes HTTP
 createdAt: 2024-02-14T09:46:46.134Z
-updatedAt: 2025-11-28T14:03:47.599Z
+updatedAt: 2025-12-04T23:05:50.056Z
 language: es
 published: true
 refType: RWEB
@@ -36,15 +36,15 @@ validations:
 
 ## Descripción
 
-El tiempo de carga de una página del lado del navegador está directamente correlacionado con el número de archivos que el navegador debe descargar, y con el peso unitario de cada archivo.
+El tiempo de carga de una página en el navegador está directamente correlacionado con el número de archivos que este debe descargar y con el peso unitario de cada archivo.
 
-Para cada archivo, el navegador emite un GET HTTP hacia el servidor. Espera su respuesta y luego descarga el recurso tan pronto como está disponible. Según el tipo de servidor web que utilice, cuanto mayor sea el número de peticiones por página, menos páginas podrá servir por servidor. Disminuir el número de peticiones por página es crucial para reducir el número de servidores HTTP (o incluso servidores de aplicaciones y de bases de datos) necesarios para el funcionamiento del sitio, y por lo tanto los impactos ambientales asociados.
+Para cada archivo, el navegador envía una petición HTTP GET al servidor. Espera su respuesta y descarga el recurso en cuanto esté disponible. Según el tipo de servidor web utilizado, cuanto mayor sea el número de peticiones por página, menos páginas podrá servir por servidor. Disminuir el número de peticiones por página es crucial para reducir la cantidad de servidores HTTP (o incluso servidores de aplicaciones y de bases de datos) necesarios para el funcionamiento del sitio y, por lo tanto, los impactos ambientales asociados.
 
 ## Ejemplo
 
 Existen varias técnicas para reducir el número de peticiones:
 
-* Concatenar archivos JS;
-* Concatenar archivos CSS;
-* Crear sprites o fuentes de iconos para los iconos;
+* Concatenar archivos JS.
+* Concatenar archivos CSS.
+* Crear sprites o fuentes de iconos.
 * Utilizar el lazyload (carga diferida) para las imágenes.
