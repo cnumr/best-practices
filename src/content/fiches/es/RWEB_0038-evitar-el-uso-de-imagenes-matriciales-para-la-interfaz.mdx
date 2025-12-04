@@ -2,7 +2,7 @@
 refID: 0038
 title: Evitar el uso de imágenes matriciales para la interfaz
 createdAt: 2024-02-14T11:08:58.047Z
-updatedAt: 2025-11-27T20:00:26.446Z
+updatedAt: 2025-12-04T02:59:03.347Z
 language: es
 published: true
 refType: RWEB
@@ -30,19 +30,19 @@ saved_resources:
   - network
 validations:
   - rule: de imágenes matriciales para la URL probada
-    maxValue: '5 '
+    maxValue: '5  '
 ---
 
 ## Descripción
 
-Elegir el formato de imagen adecuado es crucial para evitar transportar bytes inútilmente y ahorrar así ancho de banda. Por otra parte, con la multiplicación de terminales, tamaños de pantalla y el aumento de su resolución, se debe privilegiar un enfoque vectorial frente a imágenes matriciales. Gracias a esta buena práctica, la interfaz es independiente de la resolución de la pantalla. Se limita por lo tanto también la deuda técnica.
+Elegir el formato de imagen adecuado es crucial para evitar transportar bytes inútilmente y ahorrar así ancho de banda. Por otra parte, con la multiplicación de terminales, tamaños de pantalla y el aumento de su resolución, se debe priorizar un enfoque vectorial frente a imágenes matriciales. Gracias a esta buena práctica, la interfaz es independiente de la resolución de la pantalla. Se limita por lo tanto también la deuda técnica.
 
-La primera regla consiste en reemplazar las imágenes matriciales (GIF, PNG, JPEG, WebP, etc.) por estilos (CSS), pictogramas, glifos o iconos proporcionados por una webfont o una fuente estándar. El internauta no tiene así ningún recurso suplementario que descargar. Si no es posible utilizar CSS o una fuente estándar (ya instalada en el terminal del internauta), puede también:
+La primera regla consiste en reemplazar las imágenes matriciales (GIF, PNG, JPEG, WebP, etc.) por estilos (CSS), pictogramas, glifos o iconos proporcionados por una webfont o una fuente estándar. El internauta no tiene así ningún recurso adicional que descargar. Si no es posible utilizar CSS o una fuente estándar (ya instalada en el terminal del internauta), puede también:
 
 * emplear una webfont;
 * recurrir a una imagen vectorial en formato estándar SVG.
 
-Para ir más lejos y optimizar los SVG, se podrá utilizar el sitio [https://svgomg.net/](https://svgomg.net/).
+Para profundizar y optimizar los SVG, se puede utilizar el sitio [svgomg.net](https://svgomg.net/).
 
 ## Ejemplo
 
@@ -55,4 +55,4 @@ Esta imagen de 198 × 198 píxeles pesa:
 * 3,8 KB en PNG;
 * 0,7 KB en SVG minificado.
 
-El formato vectorial es, en este caso preciso, de 5 a 10 veces menos pesado que un formato matricial, pudiendo ser redimensionado hasta el infinito.
+El formato vectorial es, en este caso concreto, de 5 a 10 veces menos pesado que un formato matricial, pudiendo ser redimensionado hasta el infinito.
