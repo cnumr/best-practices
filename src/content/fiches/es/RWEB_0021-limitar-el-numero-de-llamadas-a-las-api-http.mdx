@@ -2,7 +2,7 @@
 refID: '0021'
 title: Limitar el número de llamadas a las API HTTP
 createdAt: 2024-02-14T14:20:42.319Z
-updatedAt: 2025-11-27T18:12:38.252Z
+updatedAt: 2025-12-04T01:31:23.384Z
 language: es
 published: true
 refType: RWEB
@@ -31,21 +31,21 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de endpoints que no se benefician de una estrategia de caché pertinente
+  - rule: de endpoints que no cuentan con una estrategia de caché pertinente
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Cuando un internauta visita una página web, el sitio puede recuperar contenido a través de API HTTP (servicio web).
-En este caso, cada visualización de página generará tantas solicitudes HTTP a las diferentes API, mientras que el contenido será probablemente el mismo durante un tiempo.
+Cuando un usuario visita una página web, el sitio puede recuperar contenido a través de API HTTP (servicios web). En este caso, cada visualización de página generará solicitudes HTTP a las diferentes API, a pesar de que el contenido probablemente será el mismo durante un cierto tiempo.
 
-Como proveedor de API (servidor), puede establecer cuotas para que los usuarios definan una directiva de caché de respuestas y evitar llamadas sistemáticas.
-Como usuario de API (cliente), debe almacenar en caché los resultados obtenidos para poder volver a ofrecerlos sin llamar sistemáticamente a la API HTTP.
+Como proveedor de API (servidor), puede establecer cuotas para incitar a los usuarios a definir una estrategia de caché de respuestas y evitar peticiones redundantes.
+
+Como usuario de API (cliente), debe almacenar en caché los resultados obtenidos para poder volver a utilizarlos sin llamar continuamente a la API HTTP.
 
 ## Ejemplo
 
-* Si obtiene opiniones de clientes a través de una API, es probable que pueda limitar el número de consultas a una por día,
-* Si obtiene un feed de Twitter para mostrarlo en su sitio, es probable que pueda limitar el número de consultas a una por hora,
-* Si muestra un dato en "tiempo real" en la página de inicio de su sitio, puede configurar una caché de 2 segundos para evitar que miles de visitantes simultáneos a su sitio generen miles de llamadas de API durante el mismo segundo.
-* Como proveedor, si ofrece una API, puede establecer cuotas por usuario y por un período de tiempo
+* Si recupera opiniones de clientes vía API, es posible limitar el número de consultas a una por día.
+* Si recupera un feed de Twitter para mostrarlo en su sitio, se puede limitar el número de consultas a una por hora.
+* Si muestra un dato en tiempo real en la página de inicio, puede configurar una caché de 2 segundos para evitar que miles de visitantes simultáneos generen miles de llamadas a la API en el mismo segundo.
+* Como proveedor, si ofrece una API, puede establecer cuotas por usuario y por período de tiempo.
