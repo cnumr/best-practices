@@ -2,7 +2,7 @@
 refID: '0037'
 title: Preferir CSS a imágenes
 createdAt: 2024-02-14T10:37:59.033Z
-updatedAt: 2025-11-27T19:55:40.424Z
+updatedAt: 2025-12-04T02:53:42.087Z
 language: es
 published: true
 refType: RWEB
@@ -31,29 +31,27 @@ saved_resources:
   - requests
 validations:
   - rule: de imágenes que podrían haber sido reemplazadas por CSS
-    maxValue: '0 '
+    maxValue: '0  '
 ---
 
 ## Descripción
 
-Utilizar propiedades CSS en lugar de imágenes. De hecho, el peso de una hoja de estilos es mucho menor, especialmente si está comprimida. Además, la llamada a una hoja de estilos genera una única petición HTTP, frente a un gran número si se emplean muchas imágenes (una petición HTTP por cada imagen).
+Utilice propiedades CSS en lugar de imágenes. De hecho, el peso de una hoja de estilos es mucho menor, especialmente si está comprimida. Además, la llamada a una hoja de estilos genera una única petición HTTP, frente a un gran número si se emplean muchas imágenes (una petición HTTP por cada imagen).
 
 ## Ejemplo
 
-Las esquinas redondeadas, los bordes decorados y los efectos de filtro de los elementos deben gestionarse con CSS en lugar de con imágenes.
+Las esquinas redondeadas, los bordes decorados y los filtros visuales de los elementos deben gestionarse con CSS en lugar de usar imágenes.
 
 Preferir la escritura:
 
 ```css
 #cadre {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 ```
 
 ```html
 <div id="cadre">
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 ```
