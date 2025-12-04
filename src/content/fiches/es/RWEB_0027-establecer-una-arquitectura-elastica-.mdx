@@ -2,7 +2,7 @@
 refID: '0027'
 title: 'Establecer una arquitectura elástica '
 createdAt: 2024-02-14T14:14:38.885Z
-updatedAt: 2025-11-27T18:27:59.910Z
+updatedAt: 2025-12-04T01:45:31.710Z
 language: es
 published: true
 refType: RWEB
@@ -31,21 +31,21 @@ saved_resources:
   - ram
 validations:
   - rule: de recursos reservados inútilmente cuando la carga es baja
-    maxValue: '0 '
+    maxValue: '0  '
 ---
 
 ## Descripción
 
 La mayor parte del tiempo, la carga de una aplicación no es constante.
 
-Por ejemplo, puede haber pocos, o incluso ningún usuario conectado por la noche. En este caso, no es necesario utilizar infraestructuras técnicas tan importantes en las horas valle como en las horas de mayor demanda.
+Por ejemplo, puede haber pocos, o incluso ningún usuario conectado por la noche. En este caso, no es necesario utilizar infraestructuras técnicas tan grandes en las horas valle como en las horas de mayor demanda (horas punta).
 
-Además, implementar una arquitectura elástica permite generar ahorros, ya que se utilizan menos recursos de servidor y estos son facturados.
+Además, implementar una arquitectura elástica permite generar ahorros, ya que se utilizan menos recursos de servidor y estos se facturan por uso.
 
-Una arquitectura elástica tiene un coste de implementación importante en términos de carga de trabajo y de mayor complejidad de la solución.
+Una arquitectura elástica tiene un coste de implementación elevado en términos de carga de trabajo y de complejidad añadida a la solución.
 
 Si su aplicación tiene poca carga o esta varía poco, no es indispensable implementarla.
 
 ## Ejemplo
 
-Gracias a la mutualización de los despliegues (ver «Utilizar servidores virtualizados»), en particular en la nube, es posible modificar dinámica y automáticamente el tamaño de la infraestructura en función de la carga. Esta modificación puede obedecer a una programación horaria (por ejemplo, apagar por la noche) o en función de un número de peticiones.
+Gracias al uso compartido de los despliegues (ver «Utilizar servidores virtualizados»), en particular en la nube, es posible modificar dinámica y automáticamente el tamaño de la infraestructura en función de la carga. Esta modificación puede basarse en una programación horaria (por ejemplo, apagar por la noche) o en el número de peticiones recibidas.
