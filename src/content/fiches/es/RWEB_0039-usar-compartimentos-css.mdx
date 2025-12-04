@@ -2,7 +2,7 @@
 refID: 0039
 title: Usar compartimentos CSS
 createdAt: 2024-02-14T13:43:55.999Z
-updatedAt: 2025-11-27T20:37:41.947Z
+updatedAt: 2025-12-04T03:18:28.716Z
 language: es
 published: true
 refType: RWEB
@@ -35,7 +35,7 @@ validations:
 
 ## Descripción
 
-El CSS Containment (o compartimentación CSS) indica que un nodo y su contenido son, en la medida de lo posible, independientes del resto del árbol de la página.
+El CSS Containment (o contención CSS) indica que un nodo y su contenido son, en la medida de lo posible, independientes del resto del árbol de la página.
 
 En función del tipo de independencia (strict, content, size, layout, style y/o paint) de la propiedad contain, el navegador:
 
@@ -47,16 +47,16 @@ En función del tipo de independencia (strict, content, size, layout, style y/o 
 * Una arquitectura DOM compleja cuyo contenido de nodos se modifica en un momento dado:
 
 ```css
-artículo {
-   contain: content;
+article {
+  contain: content;
 }
 ```
 
-* Un widget externo
+* Un widget externo:
 
 ```css
 .widget-name {
-   contain: layout;
+  contain: layout;
 }
 ```
 
