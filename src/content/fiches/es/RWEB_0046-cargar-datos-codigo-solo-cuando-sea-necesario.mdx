@@ -2,7 +2,7 @@
 refID: '0046'
 title: Cargar datos/código solo cuando sea/necesario
 createdAt: 2024-02-14T14:06:40.334Z
-updatedAt: 2025-11-28T14:01:04.494Z
+updatedAt: 2025-12-04T22:40:54.855Z
 language: es
 published: true
 refType: RWEB
@@ -29,20 +29,20 @@ tiers: user-device
 saved_resources:
   - requests
 validations:
-  - rule: de recursos cargados que no son inmediatamente utilizados
+  - rule: de recursos cargados que no son utilizados inmediatamente
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Por razones de rendimiento percibido, puede resultar tentador precargar recursos que podrían ser utilizados si el usuario realiza una acción específica (incluida la navegación hacia otra página).
+Para mejorar el rendimiento percibido, puede resultar tentador precargar recursos que podrían ser utilizados si el usuario realiza una acción específica (incluida la navegación hacia otra página).
 
-Pero si esta acción no se lleva a cabo, estas precargas no habrán servido más que para desperdiciar recursos.
+Sin embargo, si dicha acción no se lleva a cabo, estas precargas solo habrán servido para desperdiciar recursos.
 
 ## Ejemplo
 
-Evitar \<link rel="prerender">, así como todos los rel="preload", rel="prefetch", rel="preconnect", rel="modulepreload" y rel="dns-prefetch" cuyo recurso no será utilizado en la página actual, o utilizado únicamente bajo ciertas condiciones.
+Evitar \<link rel="prerender">, así como todos los rel="preload", rel="prefetch", rel="preconnect", rel="modulepreload" y rel="dns-prefetch" cuyo recurso no se vaya a utilizar en la página actual, o que se utilice únicamente bajo ciertas condiciones.
 
-Evitar las cargas y el almacenamiento en caché (o en almacenamiento local) de datos de aplicación, como listas de valores y otros referenciales, si no es absolutamente seguro que serán utilizados.
+Evitar la carga y el almacenamiento en caché (o en local storage) de datos de aplicación, como listas de valores y otros datos de referencia, si no existe la certeza absoluta de que serán utilizados.
 
-Por extensión, dividir el código JS, e incluso las CSS, por porciones (chunks) relativas a acciones particulares del usuario, y no cargar estas porciones más que cuando sean necesarias. Esto es especialmente cierto para las SPA (Single Page Applications), donde cada pantalla (o eventualmente conjunto de pantallas) podrá ser así cargado únicamente bajo demanda.
+Por extensión, se recomienda dividir el código JS, e incluso el CSS, en fragmentos (chunks) relativos a acciones particulares del usuario, y cargar dichos fragmentos solo cuando sean necesarios. Esto es especialmente válido para las SPA (Single Page Applications), donde cada pantalla (o posiblemente un conjunto de pantallas) podrá cargarse bajo demanda.
