@@ -2,7 +2,7 @@
 refID: '0045'
 title: Hacer invisibles los elementos del DOM al modificarlos
 createdAt: 2024-02-14T11:36:36.985Z
-updatedAt: 2025-11-28T13:57:59.053Z
+updatedAt: 2025-12-04T22:26:16.179Z
 language: es
 published: true
 refType: RWEB
@@ -30,23 +30,23 @@ saved_resources:
   - cpu
 validations:
   - rule: >-
-      de manipulaciones de un elemento del DOM sin que se haga invisible durante
-      su modificación
+      de manipulaciones de un elemento del DOM sin haberlo ocultado durante su
+      modificación
     maxValue: '2 '
 ---
 
 ## Descripción
 
-Cuando un elemento del DOM (Document Object Model) debe ser modificado por varias propiedades, cada cambio de estilo o de contenido generará un repaint o un reflow. Así pues, generalmente es más económico:
+Cuando un elemento del DOM (Document Object Model) debe ser modificado por varias propiedades, cada cambio de estilo o de contenido generará un repaint o un reflow. Por ello, generalmente es más eficiente:
 
-* hacer el elemento invisible (pasar la propiedad display a none) (1 reflow);
-* modificar todas las propiedades del elemento y hacer el elemento nuevamente visible (1 reflow).
+* Hacer el elemento invisible (pasar la propiedad display a none) (1 reflow);
+* Modificar todas las propiedades del elemento y volver a hacerlo visible (1 reflow).
 
-O sea, 2 reflow como máximo.
+Total: 2 reflows como máximo.
 
 ## Ejemplo
 
-Proceder de la siguiente manera:
+Se recomienda proceder de la siguiente manera:
 
 ```javascript
 var elem = document.getElementById('foo');
@@ -59,4 +59,4 @@ elem.style.height = 'auto';
 elem.style.display = 'block'; // Genera 1 reflow
 ```
 
-Al final, son necesarios 2 reflow en lugar de 6 o 7 potencialmente.
+En total, se requieren 2 reflows en lugar de los 6 o 7 posibles.
