@@ -2,7 +2,7 @@
 refID: '0051'
 title: Usar la carga perezosa
 createdAt: 2024-02-14T11:24:11.818Z
-updatedAt: 2025-11-28T14:48:08.867Z
+updatedAt: 2025-12-05T19:22:37.860Z
 language: es
 published: true
 refType: RWEB
@@ -31,16 +31,16 @@ saved_resources:
   - network
 validations:
   - rule: >-
-      de imágenes, de iframes y de vídeos situados por debajo de la línea de
-      flotación y llamados sin lazy loading
+      de imágenes, iframes y vídeos situados por debajo de la línea de flotación
+      y solicitados sin lazy loading
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Cuando un internauta no consulta la totalidad de una página web, todos los recursos (imágenes, vídeos, iframes...) situados fuera de la zona visible, por debajo de la línea de flotación, se cargan inútilmente. Evite esto vía la técnica de carga diferida (lazy loading) que consiste en no cargar un elemento hasta que su ubicación se vuelve visible en la pantalla.
+Cuando un usuario no consulta la totalidad de una página web, todos los recursos (imágenes, vídeos, iframes...) situados fuera de la zona visible —por debajo de la línea de flotación— se cargan inútilmente. Evítelo mediante la técnica de carga diferida (lazy loading), que consiste en no cargar un elemento hasta que su ubicación se vuelve visible en la pantalla.
 
-En HTML5, es posible añadir un atributo loading a sus imágenes y a sus iframes para que el navegador no descargue más que los recursos que aparecen en pantalla.
+En HTML5, es posible añadir un atributo loading a sus imágenes y iframes para que el navegador descargue únicamente los recursos que aparecen en pantalla.
 
 ## Ejemplo
 
