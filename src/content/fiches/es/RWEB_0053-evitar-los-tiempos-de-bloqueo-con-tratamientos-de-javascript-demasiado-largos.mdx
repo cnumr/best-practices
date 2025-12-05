@@ -2,7 +2,7 @@
 refID: '0053'
 title: Evitar los tiempos de bloqueo con tratamientos de javascript demasiado largos
 createdAt: 2024-02-14T14:12:13.125Z
-updatedAt: 2025-11-28T14:52:27.100Z
+updatedAt: 2025-12-05T19:33:00.801Z
 language: es
 published: true
 refType: RWEB
@@ -30,17 +30,17 @@ saved_resources:
   - cpu
 validations:
   - rule: de milisegundos de procesamiento de tareas largas (TBT)
-    maxValue: '200 '
+    maxValue: '200  '
 ---
 
 ## Descripción
 
-Cuando el navegador transforma el código en una página web, debe realizar varias tareas antes de poder mostrar la página: analizar el script HTML, construir la estructura y el contenido de la página web (DOM) y, finalmente, ejecutar su código CSS y JavaScript.
+Cuando el navegador procesa el código de una página web, debe realizar varias tareas antes de poder mostrarla: analizar el código HTML, construir la estructura y el contenido (DOM) y, finalmente, ejecutar el CSS y el JavaScript.
 
-La ejecución del código JavaScript puede ocupar los procesadores del terminal (dispositivo) en más del 90 %, lo que bloquea los otros procesamientos, o incluso las interacciones con el usuario. Al solicitar fuertemente al terminal, esto induce un consumo excesivo que impacta directamente el ciclo de recarga de la batería y degrada la experiencia de usuario (sensación de lentitud). Estos dos aspectos pueden llevar a una renovación del terminal del usuario debido a una obsolescencia percibida.
+La ejecución del código JavaScript puede ocupar los procesadores del dispositivo en más del 90%, lo que bloquea otros procesos e incluso las interacciones con el usuario. Al exigir un uso intensivo al dispositivo, se induce un consumo excesivo que afecta directamente a la duración de la batería y degrada la experiencia de usuario (sensación de lentitud). Estos dos aspectos pueden llevar al usuario a renovar su dispositivo debido a una obsolescencia percibida.
 
-Para evitar esto, divida sus códigos JavaScript en pequeñas tareas ejecutadas en el momento oportuno y no antes.
+Para evitar esto, divida su código JavaScript en pequeñas tareas que se ejecuten en el momento oportuno y no antes.
 
 ## Ejemplo
 
-El Total Blocking Time (TBT) mide el tiempo total ocupado por las tareas largas (long tasks) durante la actividad principal del hilo (thread) de JavaScript. Una tarea larga es un procesamiento que dura más de 50 ms y que monopoliza el navegador web. Hay que asegurarse de que el TBT esté por debajo de los 200 ms. La medición se puede efectuar con LightHouse ([https://web.dev/measure/](https://web.dev/measure/)) o Web Page Test ([https://webpagetest.org/](https://webpagetest.org/)).
+El Total Blocking Time (TBT) mide el tiempo total ocupado por las tareas largas (long tasks) durante la actividad del hilo principal (main thread) de JavaScript. Una tarea larga es un proceso que dura más de 50 ms y monopoliza el navegador. Hay que asegurarse de que el TBT esté por debajo de los 200 ms. La medición se puede efectuar con Lighthouse ([https://web.dev/measure/](https://web.dev/measure/)) o Web Page Test ([https://webpagetest.org/](https://webpagetest.org/)).
