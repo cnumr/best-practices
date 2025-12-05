@@ -2,7 +2,7 @@
 refID: '0056'
 title: Usar la delegación de eventos
 createdAt: 2024-02-14T11:41:24.555Z
-updatedAt: 2025-12-01T14:35:17.948Z
+updatedAt: 2025-12-05T19:49:30.679Z
 language: es
 published: true
 refType: RWEB
@@ -31,16 +31,16 @@ saved_resources:
   - ram
 validations:
   - rule: de listeners que no utilizan la delegación de eventos
-    maxValue: '0 '
+    maxValue: '0  '
 ---
 
 ## Descripción
 
-La delegación de eventos evita sobrecargar la memoria del navegador instanciando un solo escuchador (listener) para varios elementos del DOM.
+La delegación de eventos evita sobrecargar la memoria del navegador instanciando un único escuchador (listener) para múltiples elementos del DOM.
 
-El principio es el siguiente: en lugar de asignar un evento a varios elementos de la página, puede colocar un solo evento en un elemento padre de estos objetos. Es en este gestor de eventos donde se determinará el elemento disparador gracias a event.target.
+El funcionamiento es el siguiente: en lugar de asignar un evento a varios elementos de la página, se vincula un único evento a un elemento padre de estos objetos. Es dentro de este manejador de eventos donde se determinará el elemento desencadenante gracias a event.target.
 
-Más información en: [https://fr.javascript.info/event-delegation](https://fr.javascript.info/event-delegation)
+Más información en: [https://es.javascript.info/event-delegation](https://es.javascript.info/event-delegation)
 
 ## Ejemplo
 
@@ -50,10 +50,11 @@ Ejemplo de script para resaltar una celda de tabla:
 <script type="text/javascript">
 	let selectedTd;
 	table.onclick = function(event) {
-		let target = event.target;
-	if (target.tagName != 'TD') return;
-	highlight(target);
+		let target = event.target; // dónde ocurrió el clic
+	if (target.tagName != 'TD') return; // no es una celda? entonces no nos interesa
+	highlight(target); // resaltarlo
   };
+
 	function highlight(td) {
     if (selectedTd) {
 		selectedTd.classList.remove('highlight');
@@ -64,4 +65,4 @@ Ejemplo de script para resaltar una celda de tabla:
 </script>
 ```
 
-Aquí no se agrega un evento en cada celda, sino únicamente en la tabla.
+Aquí no se asocia un evento a cada celda, sino únicamente a la tabla (el padre).
