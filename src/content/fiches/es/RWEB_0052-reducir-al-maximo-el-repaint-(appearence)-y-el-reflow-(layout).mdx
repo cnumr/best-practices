@@ -2,7 +2,7 @@
 refID: '0052'
 title: Reducir al máximo el repaint (appearence) y el reflow (layout)
 createdAt: 2024-02-14T11:38:52.348Z
-updatedAt: 2025-11-28T14:50:45.297Z
+updatedAt: 2025-12-05T19:28:54.605Z
 language: es
 published: true
 refType: RWEB
@@ -32,19 +32,19 @@ validations:
   - rule: >-
       de modificaciones que no afectan al layout y ocasionan un repaint (ej:
       color, background, visibility)
-    maxValue: '1 '
+    maxValue: '1  '
 ---
 
 ## Descripción
 
-El repaint (repintado) es el cambio de apariencia de un elemento del DOM, mientras que el reflow (reflujo) es el cambio/recálculo de la posición de los elementos en el DOM. Estas dos operaciones son costosas en recursos, especialmente en ciclos de CPU: por lo tanto, hay que evitar desencadenarlas.
+El repaint (repintado) es el cambio de apariencia de un elemento del DOM, mientras que el reflow (redistribución) implica un cambio o recálculo de la posición de los elementos en el DOM. Ambas operaciones consumen muchos recursos, especialmente ciclos de CPU; por lo tanto, se debe evitar desencadenarlas.
 
-Estas operaciones tienen generalmente su origen en el uso de JavaScript, notablemente para manipular el DOM.
+Estas operaciones suelen originarse por el uso de JavaScript, especialmente al manipular el DOM.
 
 ## Ejemplo
 
-Para evitar los repaint, no modifique las propiedades estilísticas de un elemento (color de fondo, estilo de borde, color del texto, tamaño, etc.).
+Para evitar los repaints, no modifique las propiedades estilísticas de un elemento (color de fondo, estilo de borde, color del texto, tamaño, etc.).
 
-Para evitar los reflow, limite los cambios de propiedades de posición, de dimensión, de tipo de posicionamiento, de contenido, etc. Esta sugerencia es especialmente válida para ciertos elementos HTML tales como las tablas, cuyo reflow puede requerir hasta tres veces más tiempo que un elemento equivalente con visualización de bloque (block display).
+Para evitar los reflows, limite los cambios de propiedades de posición, dimensión, tipo de posicionamiento, contenido, etc. Esta sugerencia es válida sobre todo para ciertos elementos HTML como las tablas, cuyo reflow puede requerir hasta tres veces más tiempo que un elemento equivalente con visualización en bloque (block display).
 
 Para saber más: [https://developers.google.com/speed/articles/reflow](https://developers.google.com/speed/articles/reflow)
