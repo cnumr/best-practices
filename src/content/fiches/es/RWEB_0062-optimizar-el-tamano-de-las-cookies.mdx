@@ -2,7 +2,7 @@
 refID: '0062'
 title: Optimizar el tamaño de las cookies
 createdAt: 2024-02-14T12:29:25.822Z
-updatedAt: 2025-12-01T15:18:34.294Z
+updatedAt: 2025-12-06T00:54:50.175Z
 language: es
 published: true
 refType: RWEB
@@ -29,20 +29,22 @@ tiers: network
 saved_resources:
   - network
 validations:
-  - rule: de cookies no útiles o no optimizadas
+  - rule: de cookies innecesarias o no optimizadas
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Una cookie es un pequeño texto almacenado en el dispositivo del internauta. Permite mantener un estado entre su navegador y el servidor web remoto gracias a datos compartidos. Se incluye en cada petición HTTP, lo que significa que un tamaño excesivo puede hacer más pesadas las peticiones, ralentizar la carga de las páginas y consumir más ancho de banda. Por lo tanto, es necesario optimizar al máximo su tamaño limitando los datos intercambiados a la información esencial, utilizando valores compactos y eliminándola tan pronto como su presencia ya no sea obligatoria.
+Una cookie es un pequeño archivo de texto almacenado en el dispositivo del usuario. Permite mantener un estado entre su navegador y el servidor web remoto gracias a los datos compartidos.
+
+La cookie se incluye en cada petición HTTP, lo que significa que un tamaño excesivo puede sobrecargar las peticiones, ralentizar la carga de las páginas y consumir más ancho de banda. Por lo tanto, es necesario optimizar al máximo su tamaño limitando los datos intercambiados a la información esencial, utilizando valores compactos y eliminándola tan pronto como su presencia ya no sea necesaria.
 
 ## Ejemplo
 
-Se puede eliminar una cookie cuando ya no es útil precisando una duración de expiración nula o negativa, de la siguiente manera:
+Se puede eliminar una cookie cuando ya no es útil estableciendo una duración de expiración nula o negativa, de la siguiente manera:
 
 ```html
 Set-Cookie: user_mavariable=; Max-Age=0
 ```
 
-Ver la RFC 6265 del IETF (Internet Engineering Task Force) para saber más sobre las cookies: [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265)
+Consulte la RFC 6265 del IETF (Internet Engineering Task Force) para saber más sobre las cookies: [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265).
