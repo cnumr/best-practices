@@ -1,8 +1,8 @@
 ---
-refID: '0079'
+refID: 0079
 title: Establecer una política de caducidad y eliminación de datos
 createdAt: 2024-02-14T13:58:13.859Z
-updatedAt: 2025-05-28T20:40:07.475Z
+updatedAt: 2025-12-06T03:03:54.928Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: '0078'
+    idRef: 0078
   - version: 5.0.0
-    idRef: '0079'
+    idRef: 0079
 people: TBD
 responsible:
   - responsible: src/content/personas/es/administrador-sistemas.mdx
@@ -30,21 +30,19 @@ saved_resources:
   - storage
   - requests
 validations:
-  - rule: de datos almacenados no utilizados y sin obligación legal
-    maxValue: 0
+  - rule: de datos almacenados inutilizados
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Desde la implementación del RGPD por la CNIL, es obligatorio eliminar los datos personales de un usuario después de una duración definida según varias condiciones. Es obligatorio hacerlo sobre los datos personales de nuestros usuarios, pero también podemos establecer una vida útil para cualquier otro dato. Afortunadamente, organizar la vida útil de nuestros datos se puede realizar de forma automática, sin tener que purgar manualmente los datos obsoletos. 
+Definir una duración de retención para cada dato almacenado con el fin de permitir su eliminación o su archivado mediante un procesamiento (por lotes, tiempo de vida o «TTL» en base de datos...). Muchos SGBD permiten eliminar automática y definitivamente datos mediante un TTL (Time To Live) en una tabla o en un dato.
 
-Muchos sistemas de gestión de bases de datos, como `MongoDB` , `AWS DynamoDB`, `Redis` o `Oracle` permiten definir un "TTL" en una tabla o en un dato.
-
-Después de definir una vida útil, los datos caducados se purgan y se borran permanentemente de la base.
+Además, desde la implementación del RGPD, es obligatorio eliminar los datos personales de un usuario después de una cierta duración, lo cual se alinea con el ecodiseño.
 
 ## Ejemplo
 
-En este ejemplo en Java, basado en Oracle, la vida útil de los datos expirará después de 5 días
+Aquí, en una base de datos Oracle en Java, el dato expira después de 5 días:
 
 ```java
 String aKey = "myFirstKey";
@@ -66,5 +64,3 @@ try {
     // ...
 } 
 ```
-
-
