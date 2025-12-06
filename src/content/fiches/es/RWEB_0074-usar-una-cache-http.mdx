@@ -2,7 +2,7 @@
 refID: '0074'
 title: Usar una caché HTTP
 createdAt: 2024-02-14T13:04:57.471Z
-updatedAt: 2025-05-28T20:33:18.132Z
+updatedAt: 2025-12-06T02:36:18.931Z
 language: es
 published: true
 refType: RWEB
@@ -12,7 +12,7 @@ versions:
   - version: 2.0.0
     idRef: '0103'
   - version: 3.0.0
-    idRef: '0099'
+    idRef: 0099
   - version: 4.0.0
     idRef: '0073'
   - version: 5.0.0
@@ -20,8 +20,8 @@ versions:
 people: TBD
 responsible:
   - responsible: src/content/personas/es/administrador-sistemas.mdx
-rgesn: NA
 lifecycle: 4-production
+rgesn: NA
 environmental_impact: 5
 priority_implementation: 4
 moe: 3
@@ -30,16 +30,14 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: portadas no identificadas HTTP
-    maxValue: 0
+  - rule: de cabeceras HTTP sin caché identificada
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Los proxies reversos (Varnish, Squid o NGINX) están optimizados para servir contenido (páginas HTML, imágenes, etc.) de forma rápida, consumiendo el menor número posible de ciclos de CPU. Al evitar el uso inútil del servidor de aplicaciones, permiten utilizar una infraestructura más pequeña.
+Los proxies inversos (Varnish, Squid o Nginx) están optimizados para servir contenido (páginas HTML, imágenes, etc.) de forma rápida, consumiendo el menor número posible de ciclos de CPU. Al evitar solicitar inútilmente al servidor de aplicaciones, permiten utilizar una infraestructura de hardware más reducida, lo que limita el impacto ambiental asociado.
 
 ## Ejemplo
 
-El uso de un proxy reverso especializado como Varnish reduce drásticamente el tiempo necesario para servir a las páginas dinámicas, al tiempo que aumenta la capacidad del CMS (Drupal, aquí) a entregar un gran número al mismo tiempo. También se constata que un caché generalista como APC no es adecuado (fuente: Asymptotix).
-
-
+El uso de un proxy inverso especializado como Varnish reduce drásticamente el tiempo necesario para servir las páginas dinámicas almacenadas en caché, aliviando al servidor de aplicaciones / CMS para que pueda atender nuevas peticiones (no cacheadas). También se constata que una caché generalista como APC no es adecuada para esta función.
