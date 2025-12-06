@@ -2,17 +2,17 @@
 refID: '0073'
 title: Poner caches completamente en RAM (Opcode y Kvs)
 createdAt: 2024-02-14T12:49:16.363Z
-updatedAt: 2025-05-28T20:32:12.078Z
+updatedAt: 2025-12-06T02:28:00.104Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: '0085'
+    idRef: 0085
   - version: 2.0.0
-    idRef: '0090'
+    idRef: 0090
   - version: 3.0.0
-    idRef: '0092'
+    idRef: 0092
   - version: 4.0.0
     idRef: '0072'
   - version: 5.0.0
@@ -31,21 +31,23 @@ saved_resources:
   - storage
 validations:
   - rule: de caches no almacenados en RAM
-    maxValue: 0
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Los sistemas de caché deben montarse, en la medida de lo posible, completamente en memoria RAM. Esta medida evita entradas/salidas en discos duros, así como ciclos de CPU para administrarlos.
+Los sistemas de caché deben residir, en la medida de lo posible, completamente en la memoria RAM, que es mucho más rápida en acceso de lectura/escritura que un almacenamiento en disco duro (SSD o mecánico).
 
-El objetivo es doble: servir rápidamente una respuesta al cliente, y limitar el número de componentes de hardware (y software) implicados en la respuesta devuelta por el servidor.
+Esta medida permite evitar:
 
-Debido a que la memoria RAM es muy rápida en términos de acceso a lectura/escritura, la duración del consumo de recursos es particularmente corta. Además, la vida útil de los componentes se alarga con esta buena práctica, ya que no hay movimiento mecánico como cuando se utiliza el disco duro.
+* Las entradas / salidas en los soportes de almacenamiento.
+* El consumo innecesario de ciclos de CPU.
 
 ## Ejemplo
 
-Ejemplos de integración de caché RAM en Drupal:
- - integración de Memcache: https://drupal.org/project/memcache
- - integración de Varnish: https://drupal.org/project/varnish
+Ejemplos de integración de una caché RAM en Drupal:
 
+* Integración de Memcache: [https://drupal.org/project/memcache](https://drupal.org/project/memcache)
+* Integración de Varnish: [https://drupal.org/project/varnish](https://drupal.org/project/varnish)
 
+PHP dispone de su propio sistema de caché compartido en memoria llamado APCu: [https://www.php.net/manual/es/book.apcu.php](https://www.php.net/manual/es/book.apcu.php).
