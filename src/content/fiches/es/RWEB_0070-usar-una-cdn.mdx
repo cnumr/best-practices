@@ -2,7 +2,7 @@
 refID: '0070'
 title: Usar una CDN
 createdAt: 2024-02-14T13:02:36.420Z
-updatedAt: 2025-05-28T20:26:42.459Z
+updatedAt: 2025-12-06T01:56:39.964Z
 language: es
 published: true
 refType: RWEB
@@ -12,9 +12,9 @@ versions:
   - version: 2.0.0
     idRef: '0102'
   - version: 3.0.0
-    idRef: '0098'
+    idRef: 0098
   - version: 4.0.0
-    idRef: '0069'
+    idRef: 0069
   - version: 5.0.0
     idRef: '0070'
 people: TBD
@@ -30,18 +30,16 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: de recursos servidos (ficheros) sin utilizar una CDN
+  - rule: de recursos servidos (archivos) sin utilizar una CDN
     maxValue: 25%
 ---
 
 ## Descripción
 
-Algunos archivos, como las bibliotecas JavaScript, las hojas de estilo CSS, las imágenes, etc., son intensivos en recursos de red, ya que suelen ser numerosos y pequeños. Por eso es recomendable utilizar las CDN (Content Delivery Network), que acercan físicamente estos ficheros a los internautas, generando así un ahorro importante de ancho de banda y un mejor tiempo de respuesta.
+Ciertos archivos, como las bibliotecas JavaScript, las hojas de estilo CSS o las imágenes, consumen muchos recursos de red debido a que suelen ser numerosos y de pequeño tamaño. Por ello, es aconsejable utilizar CDN (Content Delivery Network), redes que acercan físicamente estos archivos a los usuarios, generando un ahorro importante de ancho de banda y un mejor tiempo de respuesta (latencia).
 
-Sin embargo, hay que reconocer que puede haber casos en los que el uso de una CDN no sea realmente pertinente. Por ejemplo, en el caso de los servicios con un objetivo muy localizado (por ejemplo, regional), es más oportuno favorecer un alojamiento local de calidad. Por otra parte, un sitio web con muy poco tráfico podría hacer contraproducente el uso de una CDN basada en el modelo "pull" ya que las extracciones de archivos del servidor original podrían ser demasiado frecuentes.
+No obstante, hay casos donde el uso de una CDN no es pertinente. Por ejemplo, para servicios con un público objetivo muy localizado (ej. regional), es más oportuno priorizar un alojamiento local de calidad. Por otra parte, en un sitio web con muy poco tráfico, el uso de una CDN basada en el modelo «pull» podría ser contraproducente, ya que las peticiones al servidor de origen podrían ser demasiado frecuentes (al no mantenerse en la caché de la CDN por falta de demanda).
 
 ## Ejemplo
 
-Utilizar las CDN proporcionadas por Google que alojan las diferentes bibliotecas JavaScript comúnmente utilizadas.
-
-
+Utilice las CDN proporcionadas por Google, que alojan las diferentes bibliotecas JavaScript utilizadas habitualmente (como jQuery, fuentes, etc.).
