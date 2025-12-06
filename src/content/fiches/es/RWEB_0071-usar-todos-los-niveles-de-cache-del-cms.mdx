@@ -2,7 +2,7 @@
 refID: '0071'
 title: Usar todos los niveles de caché del CMS
 createdAt: 2024-02-14T11:53:13.286Z
-updatedAt: 2025-05-28T20:06:05.398Z
+updatedAt: 2025-12-06T02:05:52.059Z
 language: es
 published: true
 refType: RWEB
@@ -30,23 +30,18 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: de caché no activado
-    maxValue: 0
+  - rule: de niveles de caché no activados
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Si el CMS (como Wordpress, Drupal, ez Publish...) propone un sistema de caché multinivel, utilizar estos diferentes niveles porque su granularidad permite reducir los recursos consumidos (ciclos CPU, memoria) y ofrecer un buen rendimiento al usuario.
+Si el servidor de aplicaciones o el CMS propone un sistema de caché multinivel, utilícelo. Su granularidad permite reducir los recursos consumidos (ciclos de CPU, memoria) y ofrecer un alto rendimiento al usuario, consumiendo a la vez menos recursos en el lado del servidor.
 
 ## Ejemplo
 
-Un CMS como WordPress no tiene nativamente un sistema de caché, pero hay varios plugins que suplen esta carencia, siendo los más conocidos:
+WordPress dispone de diferentes extensiones de gestión de caché: LiteSpeed Cache, WP Fastest Cache, W3 Total Cache o WP Super Cache.
 
-- W3 total Cache
-- Wp Super Cache
-- Wp-rocket
+Gracias a estos plugins, las páginas se almacenan en caché en el servidor y ya no se generan dinámicamente para cada usuario. Adicionalmente, este tipo de herramientas proporciona otras optimizaciones orientadas a la WebPerf que favorecen el ecodiseño web.
 
-Por lo tanto, con uno de estos plugins, las páginas se almacenan en caché en el servidor y ya no se generan para cada usuario. Por cierto, este tipo de herramienta también proporciona otras optimizaciones orientadas a WebPerf que van en el sentido del ecodiseño web.
-
-
-
+Es interesante también activar el almacenamiento en caché de las consultas SQL para reducir la carga de la base de datos.
