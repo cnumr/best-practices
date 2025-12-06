@@ -2,7 +2,7 @@
 refID: '0060'
 title: Ahorrar ancho de banda con un ServiceWorker
 createdAt: 2024-02-14T13:48:54.622Z
-updatedAt: 2025-12-01T14:56:41.668Z
+updatedAt: 2025-12-06T00:50:29.435Z
 language: es
 published: true
 refType: RWEB
@@ -29,18 +29,20 @@ tiers: network
 saved_resources:
   - network
 validations:
-  - rule: de páginas cargadas en su versión completa
+  - rule: de páginas cargadas en su versión completa (tras la primera visita)
     maxValue: '1 '
 ---
 
 ## Descripción
 
-La mayoría de las páginas comparten una estructura común que enmarca el «contenido útil». Por lo tanto, se pueden reconstruir bastante fácilmente mediante la concatenación de tres recursos: un encabezado y un pie de página común a todas las páginas, y el contenido propio de cada una. Esta concatenación puede efectuarse directamente en el navegador vía un Service Worker. Con el encabezado y el pie de página puestos en caché HTTP, ya no se descarga más que el «contenido útil».
+La mayoría de las páginas comparten una estructura común (encabezado y pie de página) que enmarca el «contenido útil». Por lo tanto, se pueden reconstruir fácilmente mediante la concatenación de tres recursos: el encabezado común, el pie de página común y el contenido específico de cada URL. Esta concatenación puede efectuarse directamente en el navegador mediante un Service Worker.
 
-Sin embargo, el servidor debe ser capaz de proporcionar a la vez la página completa para el acceso inicial y para los navegadores más antiguos que no soportan los Service Workers, y el fragmento de la página, para la concatenación por el Service Worker.
+Al estar el encabezado y el pie de página almacenados en caché HTTP, el navegador solo descarga el «contenido útil», reduciendo drásticamente el peso de la transferencia.
 
-Se concede aquí un poco de tiempo de procesador a nivel del terminal, una petición inicial suplementaria para el Service Worker, y luego dos peticiones suplementarias para el encabezado y el pie de página, a cambio de grandes ahorros en cuanto a las cantidades de datos intercambiados posteriormente, así como una ganancia significativa en el tiempo de carga de las páginas.
+Sin embargo, el servidor debe ser capaz de proporcionar tanto la página completa (para el acceso inicial o navegadores sin soporte de Service Workers) como el fragmento de contenido (para la concatenación).
+
+Aunque se asume un pequeño consumo de procesador en el dispositivo y una petición inicial extra para el Service Worker, esto se compensa con grandes ahorros de datos en la navegación posterior y una ganancia significativa en la velocidad de carga.
 
 ## Ejemplo
 
-A principios de 2020, Philip Walton pudo medir en su blog una reducción de los intercambios de red de cerca del 48% y una mejora del rendimiento (First Contentful Paint) de más del 52% con esta técnica.
+A principios de 2020, Philip Walton midió en su blog una reducción del 48% en el tráfico de red y una mejora del rendimiento (First Contentful Paint) superior al 52% gracias a esta técnica.
