@@ -2,7 +2,7 @@
 refID: 0059
 title: Reemplazar los botones oficiales para compartir redes sociales
 createdAt: 2024-02-14T10:25:25.835Z
-updatedAt: 2025-12-01T14:53:07.919Z
+updatedAt: 2025-12-06T00:48:44.343Z
 language: es
 published: true
 refType: RWEB
@@ -30,22 +30,24 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de bibliotecas externas
+  - rule: de bibliotecas externas (para redes sociales)
     maxValue: '0 '
 ---
 
 ## Descripción
 
-Las principales redes sociales tales como Facebook, X (anteriormente Twitter), Pinterest, etc., proporcionan plug-ins para instalar en una página web para mostrar un botón «Compartir» o un contador de «Me gusta». Estas bibliotecas JavaScript son a menudo pesadas de descargar y generan muchas peticiones. Prefiera enlaces directos, en HTML, hacia las páginas de compartir. Se pueden generar estos enlaces a mano (ver abajo) o vía una herramienta como Share Link Generator ([https://www.sharelinkgenerator.com](https://www.sharelinkgenerator.com)). ¡Esta buena práctica no se limita a las redes sociales!
+Las principales redes sociales como Facebook, X (antes Twitter), Pinterest, etc., proporcionan plugins para instalar botones de "Compartir" o contadores de "Me gusta" en las páginas web. Estas bibliotecas JavaScript suelen ser pesadas de descargar y generan una gran cantidad de peticiones HTTP.
+
+Prefiera el uso de enlaces directos en HTML hacia las páginas de compartir. Puede generar estos enlaces manualmente (ver ejemplo abajo) o mediante herramientas como Share Link Generator. ¡Esta buena práctica no se limita solo a las redes sociales!.
 
 ## Ejemplo
 
-Se puede añadir un botón que abre una ventana emergente (pop-up) de compartir como lo hacen los botones oficiales, por ejemplo con el siguiente código:
+Se puede añadir un botón que abra una ventana emergente (pop-up) de compartir, tal como lo hacen los botones oficiales, con el siguiente código:
 
 ```html
-<button type = "button" onclick = "window. open('https://www.facebook.com/ Sharer/Sharer.php?u=XXXXX', ', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
-	Comparto esta página en Facebook
+<button type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=500, width=700')">
+  Comparto esta página en Facebook
 </button>
 ```
 
-Para ir más lejos, consulte la página: [https://www.nuweb.fr/736](https://www.google.com/search?q=https://www.nuweb.fr/736)
+Para ir más lejos, consulte la página: [https://www.nuweb.fr/736](https://www.google.com/search?q=https://www.nuweb.fr/736).
