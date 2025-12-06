@@ -2,7 +2,7 @@
 refID: '0063'
 title: Elegir un formato de datos adecuado
 createdAt: 2024-02-14T10:19:06.105Z
-updatedAt: 2025-12-03T19:43:43.461Z
+updatedAt: 2025-12-06T00:58:14.360Z
 language: es
 published: true
 refType: RWEB
@@ -32,14 +32,20 @@ saved_resources:
   - storage
   - network
 validations:
-  - rule: de campos de la base cuyo formato es inadaptado
+  - rule: de campos de la base cuyo formato es inadecuado (sobredimensionado)
     maxValue: 15%
 ---
 
 ## Descripción
 
-El tipo de datos utilizado para manipular y almacenar un dato tiene un impacto significativo en el consumo de memoria y los ciclos de procesador necesarios durante las manipulaciones en la base de datos, a nivel del servidor de aplicaciones e incluso en el navegador (manipulación vía JavaScript), así como sobre el espacio de almacenamiento necesario. Elegir un mal tipo de datos conlleva un desperdicio de memoria (por ejemplo, si almacena datos muy pequeños en una columna prevista para almacenar grandes cantidades de datos) y problemas de rendimiento. La elección del tipo de datos y de su dimensionamiento deben, por tanto, estar fundados sobre el análisis de una muestra representativa de datos.
+El tipo de dato utilizado para manipular y almacenar información tiene un impacto significativo en el consumo de memoria y en los ciclos de procesador necesarios. Esto afecta a todos los niveles: base de datos, servidor de aplicaciones e incluso en el navegador (manipulación mediante JavaScript).
+
+Elegir un tipo de dato incorrecto conlleva un desperdicio de memoria (ej. almacenar datos pequeños en columnas diseñadas para grandes cantidades) y problemas de rendimiento. La elección y el dimensionamiento deben basarse en el análisis de una muestra representativa de datos.
 
 ## Ejemplos
 
-En el caso de un establecimiento de formación, el tamaño del campo que permite almacenar el número de alumnos debe basarse en un estudio estadístico. Se puede así determinar si es posible utilizar un TINYINT (1 byte, hasta 127) en lugar de un SMALLINT (2 bytes, hasta 32 767). En todos los casos, la elección por defecto de un INT (4 bytes, hasta 2 147 483 647) o incluso un BIGINT (8 bytes) es una aberración (que encontramos desgraciadamente todos los días durante nuestras auditorías...). Ganancia potencial: hasta 8 veces menos de almacenamiento. El consumo en ciclos de procesador se reduce en las mismas proporciones.
+En el caso de un centro de formación, el tamaño del campo para almacenar el número de alumnos debe basarse en un estudio estadístico. Así, se puede determinar si es posible utilizar un TINYINT (1 byte, hasta 127) en lugar de un SMALLINT (2 bytes, hasta 32.767).
+
+En cualquier caso, la elección por defecto de un INT (4 bytes) o incluso un BIGINT (8 bytes) para datos pequeños es una aberración técnica (que lamentablemente encontramos a diario en nuestras auditorías).
+
+Ganancia potencial: hasta 8 veces menos almacenamiento. El consumo de ciclos de procesador se reduce en la misma proporción.
