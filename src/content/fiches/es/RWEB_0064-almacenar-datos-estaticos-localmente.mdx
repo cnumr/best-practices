@@ -2,7 +2,7 @@
 refID: '0064'
 title: Almacenar datos estáticos localmente
 createdAt: 2024-02-14T09:56:27.377Z
-updatedAt: 2025-12-03T19:48:14.624Z
+updatedAt: 2025-12-06T01:10:40.967Z
 language: es
 published: true
 refType: RWEB
@@ -36,11 +36,11 @@ validations:
 
 ## Descripción
 
-Con el soporte generalizado en todos los navegadores de las bases de datos clave-valor (IndexDB, Web Storage), y de la puesta en caché vía la API Cache Storage, ahora es posible almacenar localmente datos estáticos estructurados.
+Con el soporte generalizado en todos los navegadores de las bases de datos clave-valor (IndexedDB, Web Storage), y del almacenamiento en caché mediante la API Cache Storage, ahora es posible almacenar localmente datos estáticos estructurados.
 
-El interés del almacenamiento local es doble. Por una parte, se evitan las idas y vueltas inútiles con el servidor, lo que ahorra recursos y tiempo de respuesta. Por otra parte, como los datos son locales, es más fácil y más rápido manipularlos directamente en el dispositivo del usuario.
+La ventaja del almacenamiento local es doble. Por una parte, se evitan los intercambios innecesarios con el servidor, lo que ahorra recursos y tiempo de respuesta. Por otra parte, como los datos son locales, es más fácil y rápido manipularlos directamente en el dispositivo del usuario.
 
-La ganancia potencial es la reducción de la carga del servidor, por lo tanto del número de equipos necesarios (de su huella ambiental y económica), desde los servidores HTTP hasta los servidores de base de datos.
+La ganancia potencial es la reducción de la carga del servidor, y por lo tanto del número de equipos necesarios (y de su huella ambiental y económica), desde los servidores HTTP hasta los servidores de base de datos.
 
 ## Ejemplo
 
@@ -50,7 +50,7 @@ Por ejemplo, para almacenar el nombre del usuario puede utilizar la siguiente in
 localStorage.setItem('name', 'nom_utilisateur');
 ```
 
-Basta luego con utilizar la línea siguiente para recuperarlo posteriormente:
+Posteriormente, basta con utilizar la línea siguiente para recuperarlo:
 
 ```javascript
 var myName = localStorage.getItem('name');
