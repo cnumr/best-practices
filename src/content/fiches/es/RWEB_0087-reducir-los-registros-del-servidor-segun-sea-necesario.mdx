@@ -1,22 +1,22 @@
 ---
-refID: '0087'
+refID: 0087
 title: Reducir los registros del servidor según sea necesario
 createdAt: 2024-02-14T13:12:01.214Z
-updatedAt: 2025-05-23T16:41:28.984Z
+updatedAt: 2025-12-11T20:05:39.167Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: '0082'
+    idRef: 0082
   - version: 2.0.0
-    idRef: '0099'
+    idRef: 0099
   - version: 3.0.0
     idRef: '0103'
   - version: 4.0.0
-    idRef: '0086'
+    idRef: 0086
   - version: 5.0.0
-    idRef: '0087'
+    idRef: 0087
 people: TBD
 responsible:
   - responsible: src/content/personas/es/arquitecto-software-desarrollador.mdx
@@ -31,25 +31,24 @@ saved_resources:
   - ram
   - storage
 validations:
-  - rule: de logs sin tiempo máximo de retención
-    maxValue: 0
+  - rule: de logs sin duración máxima de retención
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Dado que los registros de los servidores (web, aplicativo, base de datos) pueden ser muy grandes, se recomienda configurarlos en su conjunto.
-Ajustando al máximo el nivel log de la aplicación (ejemplo: solo información/warning/error) y rastreando solo la información relevante, se evitan las escrituras en el disco que pueden ser masivas, lo que limita el consumo de ciclos CPU y reduce el espacio de almacenamiento necesario.
+Dado que los logs de los servidores (web, de aplicaciones, base de datos) pueden volverse muy voluminosos, se recomienda configurarlos en su conjunto. Ajustando de manera óptima el nivel de log de la aplicación (ejemplo: únicamente warning/error) y registrando solo la información pertinente, se evitan escrituras en el disco que pueden ser masivas, lo que limita el consumo de ciclos de CPU y reduce el espacio de almacenamiento necesario.
 
-Para evitar saturar los discos, también se recomienda establecer un tiempo de retención y una rotación de los registros según la necesidad durante el funcionamiento del servicio.
+Para evitar saturar los discos, también se recomienda establecer un tiempo de retención y una rotación de los logs en función de las necesidades durante la operación del servicio.
 
 ## Ejemplo
 
-Los registros de acceso de un servidor Apache se pueden configurar de la siguiente manera para excluir recursos estáticos y fuentes RSS:
+Los logs de acceso de un servidor Apache pueden configurarse de la siguiente manera para excluir los recursos estáticos y los flujos RSS:
 
 ```apacheconf
-SetEnvIf Request_URI " .(ico|pdf|?v|jpg|jpeg|png|gif| js|css|gz|swf|txt) $" dontlog
-SetEnvIf Request_URI " /rss/" dontlog
-CustomLog/var/log/apache/access.log Combined env=! dontlog
+SetEnvIf Request_URI "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|gz|swf|txt)$" dontlog
+SetEnvIf Request_URI "^/rss/" dontlog
+CustomLog /var/log/apache/access.log combined env=!dontlog
 ```
 
-
+Para ir más lejos con Logrotate, la herramienta Linux dedicada a la rotación de logs: [https://les-enovateurs.com/logrotate-ajout-test-configuration-rotation-logs](https://les-enovateurs.com/logrotate-ajout-test-configuration-rotation-logs)
