@@ -2,13 +2,13 @@
 refID: '0104'
 title: Codificar sonidos fuera del CMS
 createdAt: 2024-02-14T11:57:39.232Z
-updatedAt: 2025-06-04T21:28:35.334Z
+updatedAt: 2025-12-12T01:07:27.419Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: '0096'
+    idRef: 0096
   - version: 2.0.0
     idRef: '0060'
   - version: 3.0.0
@@ -33,18 +33,13 @@ saved_resources:
   - storage
 validations:
   - rule: de archivos de sonido codificados directamente por el CMS
-    maxValue: 0
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Adaptar y optimizar los sonidos fuera del sitio web. Esta medida ahorra mucho ancho de banda y aliviará la CPU y la memoria RAM, ya que un servidor web no está optimizado para la (re)codificación de archivos de audio.
+Convertir y optimizar los sonidos fuera del servicio digital permite ahorrar mucho ancho de banda y aliviará la CPU y la memoria RAM del servidor, ya que un servidor web no está optimizado para la (re)codificación de archivos de audio. Así limita el número de servidores y, por tanto, los impactos medioambientales asociados.
 
 ## Ejemplo
 
-Si el sonido añadido directamente en el CMS pesa 7 MB, se ahorrará:
- - 7 MB de ancho de banda durante el envío;
- - 100 KB al escuchar el resultado;
- - 6,9 MB de almacenamiento en el disco duro del servidor.
-
-
+Si añade un archivo de audio WAV a la biblioteca multimedia de WordPress, será codificado en MP3 por el CMS. Ahora bien, un archivo MP3 permite típicamente una ganancia de un factor de 10 sin degradar la calidad del archivo de audio. Si realiza esta compresión antes de importarlo, gana un 90 % de espacio de almacenamiento al que se suman los recursos ahorrados durante el procesamiento, ofreciendo estrictamente el mismo resultado de audio para el usuario.
