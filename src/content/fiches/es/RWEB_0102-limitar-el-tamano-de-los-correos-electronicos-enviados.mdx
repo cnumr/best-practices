@@ -2,7 +2,7 @@
 refID: '0102'
 title: Limitar el tamaño de los correos electrónicos enviados
 createdAt: 2024-02-14T13:30:05.473Z
-updatedAt: 2025-06-05T21:18:06.957Z
+updatedAt: 2025-12-12T00:59:22.244Z
 language: es
 published: true
 refType: RWEB
@@ -31,29 +31,26 @@ saved_resources:
   - requests
   - storage
 validations:
-  - rule: de mensajes de correo electrónico de más de 1 MB
-    maxValue: 0
+  - rule: de mensajes de correo electrónico enviados de más de 1 MB
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Cuando una notificación, alerta o mensaje de confirmación se debe enviar por correo electrónico al usuario, limitar el tamaño del correo electrónico enviado.
-Evitar adjuntos e imágenes incrustadas. Preferir contenido corto. Opcionalmente, utilizar texto plano en lugar de HTML.
+Limite al máximo el tamaño de los e-mails enviados cuando se deba enviar una notificación, una alerta o un mensaje de confirmación por correo electrónico al usuario.
+
+Evite los archivos adjuntos y las imágenes incrustadas. Al optar por compartir un enlace hacia un espacio de almacenamiento de archivos en la nube, evita que sus archivos adjuntos se dupliquen en tantos servidores de correo como destinatarios haya. Prefiera un contenido corto. Eventualmente, utilice texto plano en lugar de HTML.
+
+Si debe absolutamente dar formato a su e-mail, prefiera los estilos CSS a las imágenes.
+
+Comprima el código HTML de su e-mail con una herramienta como: [https://htmlcompressor.com/compressor/](https://htmlcompressor.com/compressor/)
 
 ## Ejemplo
 
-El envío de un correo electrónico de confirmación de una solicitud de contacto no justifica la adición de código HTML e imágenes.
-Un mensaje HTML básico usa en promedio:
- - al menos 2 imágenes (el logotipo y una firma a pie de página), es decir, unos 10 KB;
- - 12 KB de código HTML para el diseño (estilos en línea, tablas...);
- - 4 KB de texto (el mensaje + 2 enlaces de acción).
+El envío de un e-mail de confirmación de recepción de una solicitud de contacto no justifica necesariamente la adición de código HTML e imágenes. Un mensaje HTML básico utiliza de media:
 
-Al final del día:
- - correo electrónico HTML = 26 KB;
- - texto bruto por correo electrónico = 4 KB.
+* al menos 2 imágenes (el logotipo y una firma a pie de página), es decir, unos 10 KB;
+* 12 KB de código HTML para la maquetación (estilos en línea, tablas...);
+* 4 KB de texto (el mensaje + 2 enlaces de acción).
 
-Es decir, 22 KB por correo electrónico.
-En el caso de un sitio transaccional con, por ejemplo, alertas de clientes e internos, el beneficio potencial se vuelve considerable.
-
-
-
+En total, un e-mail en HTML pesa 26 KB mientras que un e-mail en texto plano pesa 4 KB, lo que supone una ganancia de 22 KB por e-mail enviado. En el caso de un sitio transaccional con, por ejemplo, alertas de clientes e internas, el beneficio potencial se vuelve considerable.
