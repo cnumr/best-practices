@@ -2,13 +2,13 @@
 refID: '0105'
 title: Adaptar los sonidos a los contextos de escucha
 createdAt: 2024-02-14T13:32:09.871Z
-updatedAt: 2025-06-06T15:45:57.301Z
+updatedAt: 2025-12-12T01:09:47.777Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: '0095'
+    idRef: 0095
   - version: 2.0.0
     idRef: '0113'
   - version: 3.0.0
@@ -29,24 +29,29 @@ tiers: network
 saved_resources:
   - network
 validations:
-  - rule: de códec de audio propietario (no libre) y de pistas de audio cuya relación peso en megabyte/duración en minuto es superior a 1
-    maxValue: 0
+  - rule: >-
+      de códecs de audio propietarios (no libres) y de pistas de audio cuya
+      relación peso en megabyte/duración en minuto es superior a 1
+    maxValue: '0 '
 ---
 
 ## Descripción
 
-Los archivos audio pueden ser grandes y consumir ancho de banda. Por lo tanto, es esencial optimizar su peso. Privilegiar 3 formatos que cubren las 3 grandes plataformas (Windows, Mac OS X y Linux):
- - MP3 (MPEG-1 Audio Layer 3);
- - AAC (Advanced Audio Coding);
- - Vorbis.
-Estos formatos utilizan algoritmos de compresión muy avanzados que permiten un aumento significativo de peso.
+Los archivos de audio pueden ser voluminosos y consumir mucho ancho de banda. Por lo tanto, es indispensable optimizar su peso. Priorizar los 3 códecs que cubren las 3 grandes plataformas (Windows, Mac OS X y Linux):
+
+* MP3 (MPEG-1 Audio Layer 3);
+* AAC (Advanced Audio Coding);
+* Opus.
+
+Estos códecs aplican algoritmos de compresión muy avanzados que permiten reducciones de peso significativas.
+
+El formato de archivo multimedia abierto WebM, soportado por la mayoría de los navegadores, permite integrar el audio en una página web con la etiqueta HTML5 \<audio>. WebM puede contener diferentes códecs de audio, especialmente Opus y Vorbis.
 
 ## Ejemplo
 
-Codificadores como LAME permiten convertir a MP3 archivos de audio sin comprimir, pero también reproducir en la tasa de muestreo, para ganar aún más peso, a expensas de la calidad de audio. Para probar en cada archivo de sonido.
+Codificadores como LAME permiten convertir a formato MP3 archivos de audio no comprimidos, pero también ajustar la tasa de muestreo para ahorrar aún más peso, en detrimento de la calidad de audio. A probar con cada archivo sonoro.
 
 En el caso de un archivo de referencia WAV son.wav de 63 128 bytes, su conversión a MP3 da:
- - un fichero sonido-128.mp3 de 10 823 bytes (128 kb/s), 6 veces más ligero;
- - un archivo de sonido-64.mp3 de 6 508 bytes (64 kb/s), 10 veces más ligero.
 
-
+* un archivo son-128.mp3 de 10 823 bytes (128 kb/s), 6 veces más ligero;
+* un archivo son-64.mp3 de 6 508 bytes (64 kb/s), 10 veces más ligero.
