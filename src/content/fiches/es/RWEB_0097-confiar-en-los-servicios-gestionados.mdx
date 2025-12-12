@@ -1,8 +1,8 @@
 ---
-refID: '0097'
+refID: 0097
 title: Confiar en los servicios gestionados
 createdAt: 2024-02-14T14:29:46.180Z
-updatedAt: 2025-06-05T14:05:33.340Z
+updatedAt: 2025-12-12T00:21:50.670Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: '0096'
+    idRef: 0096
   - version: 5.0.0
-    idRef: '0097'
+    idRef: 0097
 people: TBD
 responsible:
   - responsible: src/content/personas/es/administrador-sistemas.mdx
@@ -31,21 +31,21 @@ saved_resources:
   - ram
   - storage
 validations:
-  - rule: de aplicaciones "backend" que no dependen de un servicio gestionado
-    maxValue: 1
+  - rule: de aplicaciones "backend" que no se apoyan en un servicio gestionado
+    maxValue: '1 '
 ---
 
 ## Descripción
 
-Las plataformas en el Cloud están especializadas en la creación de infraestructuras resilientes, escalables, eficientes, seguras y compartidas.
-Ofrecen servicios gestionados basados en estas infraestructuras como:
+Las plataformas cloud están especializadas en la implementación de infraestructuras resilientes, escalables, eficientes, seguras y mutualizadas. Ofrecen servicios gestionados basados en estas infraestructuras como:
 
-- almacenamiento de contenidos multimedia
-- persistencia de datos a través de bases de datos de referencia (por ejemplo, Postgresql)
-- la gestión de servicios de almacenamiento y flujo de mensajes (por ejemplo, Kafka)
-- gestión de contenedores (por ejemplo, Kubernetes)
+* el almacenamiento de contenidos multimedia;
+* la persistencia de datos a través de bases de datos de referencia (ej: Postgresql);
+* la gestión de servicios de almacenamiento y flujo de mensajes (ej: Kafka);
+* la gestión de contenedores (ej: Kubernetes).
 
-A menos que tenga una gran experiencia en sus equipos, es mejor utilizar estos servicios gestionados.
-A un servicio equivalente, por lo general será muy difícil obtener una mayor eficiencia que éstos.
+A menos que se tenga una gran experiencia en sus equipos, es preferible utilizar estos servicios gestionados. A igualdad de servicio, generalmente será muy difícil obtener una mejor eficiencia que estos.
 
+## Ejemplo
 
+Los proveedores de alojamiento ofrecen ahora «serverless computing», un paradigma en el que los recursos asignados al servicio se gestionan dinámicamente. Esto permite a los equipos a cargo del servicio preocuparse menos por la infraestructura y al proveedor optimizar la asignación de recursos.
