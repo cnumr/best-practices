@@ -2,7 +2,7 @@
 refID: '0115'
 title: Establecer un plan de fin de vida del sitio
 createdAt: 2024-02-14T12:33:48.249Z
-updatedAt: 2025-05-16T11:36:38.862Z
+updatedAt: 2025-12-15T09:42:32.729Z
 language: es
 published: true
 refType: RWEB
@@ -10,9 +10,9 @@ versions:
   - version: GreenIT
     idRef: '1030'
   - version: 2.0.0
-    idRef: '0085'
+    idRef: 0085
   - version: 3.0.0
-    idRef: '0085'
+    idRef: 0085
   - version: 4.0.0
     idRef: '0115'
   - version: 5.0.0
@@ -34,27 +34,19 @@ saved_resources:
   - storage
 validations:
   - rule: de sitio sin plan de fin de vida
-    maxValue: 0
+    maxValue: '0'
 ---
 
 ## Descripción
 
-La mayoría de los entornos (POC - proof of concept, tests, receta, ...) acaban cayendo en desuso y ya no son necesarios. Aproximadamente el 25 % de los servidores físicos y el 20 % de los servidores virtuales (VM) son zombis. Es decir, los servidores consumen electricidad esperando que los usemos. Son impactos ambientales y económicos evitables.
+La mayoría de las veces, el fin de vida de un servicio digital no está previsto.
 
-Realizar un análisis de fin de vida evita esta situación.
+Un plan de fin de vida puede adoptar la forma de un documento exhaustivo en el que se enumeren todos los recursos que hay que dar de baja, eliminar o guardar: servidores, almacenamiento, middleware, configuraciones, código fuente, documentación, etc.
 
-Un plan simple de fin de vida consiste en nombrar a la persona que decide la terminación del servicio. Su papel será entonces de monitorizar su actividad y luego de detenerla. Otro enfoque establece el escenario de fin de vida (fecha de caducidad...) y encarga el presupuesto adecuado desde la concepción. En lugar de interrumpir un servicio, una tercera pista consiste en prolongar su vida útil.
+No hay que olvidar los elementos de la vida de desarrollo, como los canales de mensajería, los trabajos de integración continua y, por supuesto, los entornos de prueba.
 
-La interrupción de un servicio implica
-- Liberar recursos: desactivar el servicio, sus dependencias, las herramientas utilizadas por el equipo de desarrollo (por ejemplo, Chanel Teams).
-- Eliminar, archivar... los datos (incluyendo GED "Gestión Electrónica de Documentos" y sistema de seguimiento de errores).
-- Reasignar las instalaciones, equipos y otros recursos del proyecto (incluido el código fuente).
-- Valorizar las competencias adquiridas durante la vida del proyecto.
+Si es posible, hay que promover las competencias adquiridas en el proyecto.
 
 ## Ejemplo
 
-Durante una migración de datos o aplicaciones a un entorno en la nube, existen varios escenarios de fin de vida:
-* copiar/pegar el existente al "cloud" con descomprimir el existente.
-* reutilizacion (refactoring) con una modificación de la arquitectura y del código y por lo tanto un cuestionamiento de lo existente: por ejemplo, un cuestionamiento sobre las funcionalidades no utilizadas y que se retoma por si acaso...
-
-
+Si se cierra una página web escaparate de un evento pasado (por ejemplo, una exposición), hay que hacer una lista de todos los recursos asociados: bases de datos, servidores de aplicaciones, configuraciones (redireccionamientos de URL, por ejemplo), documentación, archivos multimedia, etc. y asegurarse de que todo se da de baja y se archiva. Disponer de un portador de acción y una fecha para cada elemento ayuda a garantizarlo.
