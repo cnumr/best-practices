@@ -8,6 +8,7 @@ Este contenido de referencia sobre ecodiseño web ha sido publicado por Frédér
 2. “écoconception web: les 115 bonnes pratiques, 2ème édition” en 09/2015
 3. “écoconception web: les 115 bonnes pratiques, 3ème édition” en 04/2019
 4. “écoconception web: les 115 bonnes pratiques, 4ème édition” en 05/2022
+5. “écoconception web: les 115 bonnes pratiques, 5ème édition” en 06/2025
 
 Nos gustaría expresar nuestro más sincero agradecimiento a todos los contribuyentes que participaron en el desarrollo y evolución de este repositorio.
 
@@ -40,3 +41,4 @@ Para simplificar sus búsquedas, no olvide utilizar los filtros disponibles en l
 ## Licencia
 
 Las fuentes y contenidos de este proyecto están [protegidos](LICENCIA.md)
+
