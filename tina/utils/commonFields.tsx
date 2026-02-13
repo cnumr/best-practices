@@ -379,11 +379,39 @@ const templateCTAWithIcon: TinaField = {
   ],
 };
 
+/**
+ * Warning field affiché uniquement sur les branches main/master
+ * @type {TinaField}
+ */
+const warnOnMainMasterBranch: any = (
+  comment = 'Vous êtes sur la <b>branche principale</b>. Les modifications ne sont pas permises.<br />Veuillez créer une branche de travail et soumettre une Pull Request.',
+  name = '_warnOnMainMasterBranch'
+) => {
+  const branch =
+    process.env.GITHUB_BRANCH ||
+    process.env.VERCEL_GIT_COMMIT_REF ||
+    process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
+    '';
+  const isProtectedBranch = ['main', 'master'].includes(branch);
+
+  return {
+    type: 'string',
+    name: name,
+    ui: {
+      component: () => {
+        if (!isProtectedBranch) return null;
+        return <RestartWarning comment={comment} />;
+      },
+    },
+  };
+};
+
 export {
   titleField,
   slugVisibleField,
   slugHiddenField,
   warnField,
+  warnOnMainMasterBranch,
   defaultFields,
   templateCTAWithIcon,
   onFichesBeforeSubmit,

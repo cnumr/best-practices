@@ -1,5 +1,6 @@
 import '../globals.css';
 
+import { ErrorBoundary } from '../../components/ErrorBoundary';
 import Footer from '../../components/footer';
 import GlobalSearch from '../../components/search/global-search';
 import Header from '../../components/header';
@@ -18,10 +19,36 @@ export async function generateMetadata({
   };
 }): Promise<Metadata> {
   const t = useTranslations(params.lang);
+  const title = `${t('seo.site_name')}${getRefConfig().i18n.refTitles[params.lang].long} | Collectif Green IT`;
+  const description = t('seo.default.description');
+  const imageUrl = t('seo.fb.image.url');
+  const imageAlt = t('seo.image.alt');
+  const siteUrl = t('seo.url');
 
   return {
-    title: `${t('seo.site_name')}${getRefConfig().i18n.refTitles[params.lang].long} | Collectif Green IT`,
-    description: `${t('seo.default.description')}`,
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: siteUrl,
+      siteName: t('seo.site_name'),
+      images: [
+        {
+          url: imageUrl,
+          alt: imageAlt,
+        },
+      ],
+      locale: params.lang,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [t('seo.tw.image.url')],
+    },
   };
 }
 
@@ -40,7 +67,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Header lang={params.lang} />
           <GlobalSearch lang={params.lang} />
-          {children}
+          <ErrorBoundary>{children}</ErrorBoundary>
           <Footer lang={params.lang} />
         </body>
       </html>

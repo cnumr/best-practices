@@ -64,8 +64,8 @@ export const FichesTableView: FunctionComponent<FichesTableViewProps> = ({
                       </Link>
                     </td>
                     {getRefConfig().featuresEnabled.scope && (
+                      // @ts-ignore
                       <th>
-                        {/* @ts-ignore */}
                         {node?.scope
                           .map((scope) =>
                             capitalizeFirstLetter(t(scope as any))

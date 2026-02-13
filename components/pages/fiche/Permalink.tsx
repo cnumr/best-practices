@@ -24,7 +24,7 @@ export const FichePermalink: FunctionComponent<FichePermalinkProps> = ({
     }, 3000);
   };
   return (
-    <div className="z-50 mt-4 lg:mt-0 lg:text-right">
+    <div className="mt-4 lg:mt-0 lg:text-right">
       <a
         target="_blank"
         onClick={onCopy}

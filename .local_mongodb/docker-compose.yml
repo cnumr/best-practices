@@ -1,0 +1,74 @@
+# https://github.com/mongo-express/mongo-express/issues/579#issuecomment-3784132331
+services:
+  mongodb-service:
+    image: mongodb/mongodb-atlas-local:latest
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 27018:27017
+    volumes:
+      - mongodb-data:/data/db
+      - mongodb-config:/data/configdb
+    healthcheck:
+      test:
+        [
+          'CMD-SHELL',
+          'mongosh -u ${MONGO_INITDB_ROOT_USERNAME} -p ${MONGO_INITDB_ROOT_PASSWORD} --eval ''db.adminCommand("ping")''',
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGODB_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1024M
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    networks:
+      canal-deploy-network:
+        aliases:
+          - mongo
+
+  mongodb-express:
+    image: mongo-express:latest
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 8082:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      ME_CONFIG_MONGODB_SERVER: mongodb-service
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongodb-service:27017/
+      ME_CONFIG_BASICAUTH: false
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 128M
+        reservations:
+          cpus: '0.10'
+          memory: 64M
+    depends_on:
+      mongodb-service:
+        condition: service_healthy
+    networks:
+      - canal-deploy-network
+
+networks:
+  canal-deploy-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
+    driver: local
+  mongodb-config:
+    driver: local
