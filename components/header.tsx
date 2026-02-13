@@ -29,7 +29,6 @@ const Header: FunctionComponent<HeaderProps> = ({ lang = 'fr' }) => {
   // quand on navigue, on force le menuToggle (true)
   useEffect(() => {
     const closeMenuOnNavigate = () => {
-      console.log('pathname', pathname);
       const e = document.querySelector('.menu');
       if (!e) return null;
       e.classList.remove('flex');

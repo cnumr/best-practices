@@ -24,7 +24,13 @@ Pour toute autre langue, il faudra traduire l'interface.
 ## Fonctionnalités proposées :
 
 !!!warning Point d'attention
-Il existe 2 bases de configuration, `RWEB` et `RWP` car ils n'ont pas la même façon de gérer les métadonnées (Cycle de vie, MOE, Impacts Environnementaux, etc.) et n'ont pas les mêmes fonctionnalités.
+Il existe plusieurs configurations de référence selon le référentiel :
+- **RWEB** et **RWP** : Configurations historiques avec des différences dans les métadonnées
+- **REIPRO** : Référentiel d'intégration de progiciels
+- **RIA** : Référentiel d'utilisation de l'IA générative
+- **REF_HOME** : Page d'accueil portail (agrège tous les référentiels)
+
+Chaque référentiel a ses propres features et métadonnées activées via `NEXT_PUBLIC_REF_NAME`.
 !!!
 
 ### Languages
@@ -180,5 +186,7 @@ Indique les ressources (technique, abioptique, etc.) qui seront moins impactés 
 - `trigramme`: Nom court du référentiel (ex: `RWEB`, `RWP`, etc.)
 - `currentVersion`: la version en cours. Utilisée dans le header et pour pré-remplir le champ version/RefID d'une fiche (a changer avant toute session de mise à jour) ;
 - `creationYear` : année de la création du référentiel. Utilisé dans le footer `creationYear - currentYear` ;
-- `refTitles[lang].short` : utilisés dans le header (ex: `Ecoconception web` ou `WordPress`) ;
-- `refTitles[lang].long` : utilisés dans title (par defaut) des pages (ex: `Référentiel de bonnes pratiques pour l'Ecoconception web` ou `Référentiel de bonnes pratiques pour WordPress`, `Référentiel de bonnes pratiques` est commun à tous les sites).
+- `refTitles[lang].short` : utilisés dans le header (ex: `Ecoconception web` ou `WordPress`). _Visualisation dans l'interface, ci-dessous_ ;
+- `refTitles[lang].long` : utilisés dans title (par defaut) des pages (ex: `Référentiel de bonnes pratiques pour l'Ecoconception web` ou `Référentiel de bonnes pratiques pour WordPress`, `Référentiel de bonnes pratiques` est commun à tous les sites). _Visualisation dans l'interface, ci-dessous_.
+
+![Utilisation de refTitles dans l'interface (header et title des pages)](./static/refTitles-positions.png)

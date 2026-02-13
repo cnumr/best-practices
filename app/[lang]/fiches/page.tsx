@@ -5,13 +5,44 @@ import CardView from '../../../components/card-view';
 import { FichesCardFilter } from '../../../components/pages/fiche/FicheFilter';
 import { FichesTableView } from '../../../components/pages/fiche/TableView';
 import { Fragment } from 'react';
+import { Metadata } from 'next';
 import { useTranslations } from '../../../i18n/utils';
-import { ui } from '../../../i18n/ui';
+import { code_languages, ui } from '../../../i18n/ui';
 import { client } from '../../../tina/__generated__/databaseClient';
 
 export async function generateStaticParams() {
-  const lang = Object.keys(ui);
-  return lang.map((lang) => ({ lang }));
+  return code_languages.map((lang) => ({ lang }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: keyof typeof ui };
+}): Promise<Metadata> {
+  const { lang } = params;
+  const t = useTranslations(lang);
+  const title = `${t('Bonnes pratiques')} | ${t('seo.site_name')}`;
+  const description = t('Consulter les Bonnes pratiques');
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${t('seo.url')}/${lang}/fiches`,
+      siteName: t('seo.site_name'),
+      images: [{ url: t('seo.fb.image.url'), alt: title }],
+      locale: lang,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [t('seo.tw.image.url')],
+    },
+  };
 }
 
 export default async function Home({ params }) {

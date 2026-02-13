@@ -4,7 +4,7 @@ import {
   onDefaultPagesBeforeSubmit,
   templateCTAWithIcon,
   titleField,
-  warnField,
+  warnOnMainMasterBranch,
 } from '../utils/commonFields';
 import { tinaTableTemplate, type Collection } from 'tinacms';
 
@@ -21,9 +21,6 @@ const mentionsLegales: Collection = {
   match: { include: '{en,fr,es}' },
   ui: {
     router: ({ document }) => {
-      console.log('🚀 ~ document:', document);
-      // navigate to the post that was clicked
-      // return document._sys.path;
       return `/${document._sys.breadcrumbs[0]}/mentions-legales`;
     },
     beforeSubmit: onDefaultPagesBeforeSubmit,
@@ -32,9 +29,7 @@ const mentionsLegales: Collection = {
     return { published: false };
   },
   fields: [
-    warnField(
-      'Pour voir les modifications, il faut sauvegarder pour déclencher un refresh.'
-    ),
+    warnOnMainMasterBranch(),
     // slugVisibleField,
     ...defaultFields,
     titleField('Corps de la fiche'),
