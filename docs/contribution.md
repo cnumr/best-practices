@@ -26,4 +26,28 @@ Comme les contenus des référentiels sont différents, les captures d'écran pe
 Comme les métadatas des référentiels sont différents, les captures d'écran peuvent ne pas être représentatif de la réalitées.
 !!!
 
-`TODO`
+### Workflow de contribution
+
+!!!danger Important
+L'édition directe sur les branches `main` et `master` est **interdite**. Toute tentative de sauvegarde affichera une erreur.
+!!!
+
+**Processus de contribution :**
+
+1. **Créer ou sélectionner une branche de travail**
+   - Utilisez une branche dédiée (ex: `cms`, `content-update`, `feat/ma-contribution`)
+   - Demandez au responsable de configurer votre branche si nécessaire
+
+2. **Effectuer vos modifications**
+   - Naviguez dans le CMS et éditez les contenus
+   - Sauvegardez régulièrement
+
+3. **Soumettre une Pull Request**
+   - Une fois vos modifications terminées, créez une Pull Request vers `main`
+   - Attendez la revue et l'approbation
+
+4. **Merge**
+   - Après validation, vos modifications seront intégrées à `main`
+   - Le site sera automatiquement mis à jour
+
+`TODO: captures d'écran`

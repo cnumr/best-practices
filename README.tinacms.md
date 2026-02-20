@@ -180,7 +180,7 @@ export default (req, res) => {
 > - https://www.mongodb.com/docs/atlas/reference/partner-integrations/vercel/
 > - https://vercel.com/integrations/mongodbatlas
 
-> A local MongoDB is available in the .local_mogodb folder.
+> A local MongoDB is available in the .local_mongodb folder.
 > You can use the docker-compose.yml file to start the MongoDB container.
 > You can use the docker:up command to start the MongoDB container.
 > You can use the docker:down command to stop the MongoDB container.

@@ -46,6 +46,7 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
     },
     featuresEnabled: {
       lexique: false,
+      lexique_tooltips: false,
       fiches: true,
       linkToPersonas: false,
       priority_implementation: MESURE_ON_3,
@@ -92,6 +93,7 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
       config.featuresEnabled.tiers = false;
       config.featuresEnabled.scope = true;
       config.featuresEnabled.rgesnField = false;
+      config.featuresEnabled.lexique_tooltips = true;
       break;
 
     case 'REIPRO':
@@ -107,6 +109,30 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
         fr: {
           short: 'Intégration de progiciels',
           long: " Référentiel de bonnes pratiques pour l'intégration de progiciels",
+        },
+      };
+      config.refInformations = {
+        currentVersion: '1.0.0',
+        creationYear: 2025,
+      };
+      config.featuresEnabled.lexique = true;
+      config.featuresEnabled.linkToPersonas = false;
+      config.featuresEnabled.priority_implementation = MESURE_ON_5;
+      config.featuresEnabled.environmental_impact = MESURE_ON_5;
+      config.featuresEnabled.moe = true;
+      config.featuresEnabled.tiers = true;
+      config.featuresEnabled.scope = false;
+      config.featuresEnabled.rgesnField = true;
+      break;
+
+    case 'RIA':
+      config.i18n.locales = ['fr'];
+      config.i18n.refTitles = {
+        es: { short: 'RIA', long: ' para RIA' },
+        en: { short: 'RIA', long: ' for RIA' },
+        fr: {
+          short: "Utilisation de l'IA générative",
+          long: " Référentiel de bonnes pratiques pour l'utilisation de l'IA générative",
         },
       };
       config.refInformations = {
@@ -188,7 +214,6 @@ export const getRefConfig = (specificRef?: string): RefConfig => {
   return config;
 };
 
-export const getCurrentRef = () => {
-  // @ts-ignore
-  return process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
+export const getCurrentRef = (): string => {
+  return process.env.NEXT_PUBLIC_REF_NAME ?? 'RWEB';
 };

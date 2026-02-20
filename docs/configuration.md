@@ -24,7 +24,13 @@ Pour toute autre langue, il faudra traduire l'interface.
 ## Fonctionnalités proposées :
 
 !!!warning Point d'attention
-Il existe 2 bases de configuration, `RWEB` et `RWP` car ils n'ont pas la même façon de gérer les métadonnées (Cycle de vie, MOE, Impacts Environnementaux, etc.) et n'ont pas les mêmes fonctionnalités.
+Il existe plusieurs configurations de référence selon le référentiel :
+- **RWEB** et **RWP** : Configurations historiques avec des différences dans les métadonnées
+- **REIPRO** : Référentiel d'intégration de progiciels
+- **RIA** : Référentiel d'utilisation de l'IA générative
+- **REF_HOME** : Page d'accueil portail (agrège tous les référentiels)
+
+Chaque référentiel a ses propres features et métadonnées activées via `NEXT_PUBLIC_REF_NAME`.
 !!!
 
 ### Languages

@@ -1,8 +1,10 @@
 import {
-  titleField,
   defaultFields,
   onLexiqueBeforeSubmit,
+  titleField,
+  warnOnMainMasterBranch,
 } from '../utils/commonFields';
+
 import type { Collection } from 'tinacms';
 import React from 'react';
 
@@ -23,6 +25,7 @@ const lexique: Collection = {
     return { published: false };
   },
   fields: [
+    warnOnMainMasterBranch(),
     ...defaultFields,
     titleField('Corps de la fiche'),
     {

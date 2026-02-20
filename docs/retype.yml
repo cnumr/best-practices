@@ -1,6 +1,6 @@
 input: .
 favicon: static/greenit_icone_intro-alt.png
-url: https://cnumr.github.io/lighthouse-plugin-ecoindex
+url: https://cnumr.github.io/gen-referentiel-core
 branding:
   title: GenRefs
   logo: static/greenit_icone_intro-alt.png
@@ -24,7 +24,7 @@ footer:
       target: blank
       icon: organization
 edit:
-  repo: 'https://github.com/cnumr/best-practices-wordpress' # The URL to source files for this project
+  repo: 'https://github.com/cnumr/gen-referentiel-core' # The URL to source files for this project
   base: './docs' # Optional base path to a directory within repo
   branch: 'main' # Point to a custom branch within the repo
   label: 'Modifier sur GitHub' # A custom label for the generated link

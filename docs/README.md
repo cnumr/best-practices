@@ -27,6 +27,15 @@ Lors de la création du [Référentiel d'écoconception pour WordPress](https://
 
 ### Conclusion
 
-Après plusieurs évaluations de solutions, plusieurs versions nous avons abouti à une "stack" qui répond à nos besoins et contraintes :
+Après plusieurs évaluations de solutions et plusieurs versions, nous avons abouti à une "stack" qui répond à nos besoins et contraintes :
 
-[!button My Button]
+- **Framework** : Next.js 14 avec App Router
+- **CMS** : TinaCMS (headless, basé sur Git)
+- **Contenu** : Fichiers MDX stockés sur GitHub
+- **Hébergement** : Vercel (déploiement automatique)
+- **Base de données** : MongoDB Atlas (pour l'indexation TinaCMS)
+
+[!ref text="Voir la documentation technique"](./developpement.md)
+[!ref text="Guide d'installation"](./installation.md)
+
+[!ref text="Guide de synchronisation"](./synchronisation.md)
