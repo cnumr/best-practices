@@ -1,5 +1,11 @@
 # gen-referentiel-core
 
+## 0.6.1
+
+### Patch Changes
+
+- 3fe274b: Protège README.md lors de la synchronisation upstream pour éviter qu'il soit écrasé par la version du core.
+
 ## 0.6.0
 
 ### Minor Changes

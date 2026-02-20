@@ -5,55 +5,108 @@
     <img align="center" alt="Association Green IT" src="./public/assets/logo-asso.png" width="200" />
 </p>
 
-# RWEB - Les 115 bonnes pratiques d'écoconception web
+# gen-referentiel-core
 
-## Le référentiel
+**Repo source pour les référentiels de bonnes pratiques Green IT**
 
-RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web.
+Ce repository contient le code partagé entre plusieurs sites de référentiels. Il sert de source (`upstream`) pour synchroniser les évolutions de code vers les repos de production.
 
-Les fiches contiennent des niveaux de difficulté et de priorité, ainsi que des règles de validation formelles, permettant une utilisation efficace sur le terrain.
+## Architecture Multi-Sites
 
-Depuis la version 5, une correspondance avec le [RGESN](https://www.arcep.fr/mes-demarches-et-services/entreprises/fiches-pratiques/referentiel-general-ecoconception-services-numeriques.html) est disponible sur les fiches où cela est applicable. Cela permet d'utiliser ces deux documents complémentaires de façon efficace et pragmatique.
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    gen-referentiel-core                         │
+│                    (ce repo - source)                           │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
+│  │ app/        │  │ components/ │  │ tina/       │   CODE       │
+│  └─────────────┘  └─────────────┘  └─────────────┘              │
+│  ┌─────────────────────────────────────────────────┐            │
+│  │ src/content/  (contenu FAKE pour tests)         │   CONTENU  │
+│  └─────────────────────────────────────────────────┘            │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            │ upstream        │ upstream        │ upstream
+            ▼                 ▼                 ▼
+     ┌──────────┐      ┌──────────┐      ┌──────────┐
+     │   RWP    │      │   RWEB   │      │  REIPRO  │
+     │WordPress │      │   Web    │      │Progiciels│
+     │          │      │          │      │          │
+     │ CONTENU: │      │ CONTENU: │      │ CONTENU: │
+     │ réel     │      │ réel     │      │ réel     │
+     └──────────┘      └──────────┘      └──────────┘
+```
 
-Le contenu de ce référentiel est disponible à l'adresse [rweb.greenit.fr](https://rweb.greenit.fr/). Il a été traduit en anglais et en espagnol.
+### Principe
 
-## Le projet
+- **Code partagé** : Toutes les évolutions de code sont faites dans ce repo
+- **Contenu spécifique** : Chaque site a son propre contenu dans `src/content/`
+- **Synchronisation** : Les sites récupèrent les mises à jour via `git merge upstream/main`
 
-Le contenu du référentiel d'écoconception a été publié par Frédéric Bordage / GreenIT.fr chez Eyrolles sous le titre:
+## Contenu de test
 
-1. “écoconception web : les 100 bonnes pratiques” en octobre 2012
-2. “écoconception web : les 115 bonnes pratiques, 2ème édition” en septembre 2015
-3. “écoconception web : les 115 bonnes pratiques, 3ème édition” en avril 2019.
-4. “écoconception web : les 115 bonnes pratiques, 4ème édition” en mai 2022
-5. “écoconception web : les 115 bonnes pratiques, 5ème édition” en juin 2025.
+Ce repo contient du contenu fake minimal pour tester le build :
 
-Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer.
+| Type     | Fichiers               |
+| -------- | ---------------------- |
+| Fiches   | 3 fiches exemples      |
+| Personas | 2 personas de test     |
+| Lexique  | 3 termes               |
+| Home     | Page d'accueil de test |
 
-## Les besoins
+## Développement
 
-Étant donné les évolutions continues du web, ce référentiel a besoin de régulièrement être mis à jour.
-Toute proposition ou idée d'amélioration, de modification ou de suppression est bienvenue.
+```bash
+# Installation
+pnpm install
 
-## Comment contribuer ?
+# Développement local
+pnpm dev
 
-N'hésitez pas à lire [le guide des contributeurs](CONTRIBUTING.md).
+# Build local (sans MongoDB)
+pnpm build-local
 
-## Raccourci vers les discussions :
+# Vérifications
+pnpm check-types
+pnpm lint
+```
 
-Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibles sur la page de discussions.
+## Pour les mainteneurs
 
-- :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
-- :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
-- :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
-- :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
+### Faire une évolution de code
 
-## La liste des Bonnes Pratiques
+1. Créer une branche depuis `main`
+2. Faire les modifications
+3. Tester avec `pnpm build-local`
+4. Créer une PR et merger dans `main`
 
-> [!IMPORTANT]
->
-> - [Dossier contenant les fiches de bonnes pratiques](src/content/fiches/fr/) ;
-> - [Dossier contenant le lexique](src/content/lexique/fr/) ;
-> - [Dossier contenant les personas](src/content/personas/fr/).
+### Synchroniser un site de production
+
+Voir la [documentation de synchronisation](./docs/synchronisation.md) pour le workflow complet.
+
+```bash
+# Dans le repo du site (ex: rwp)
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+
+Le `.gitattributes` protège automatiquement le contenu local (`src/content/`) lors du merge.
+
+## Sites utilisant ce repo
+
+| Site   | Repository                       | Description                |
+| ------ | -------------------------------- | -------------------------- |
+| RWP    | best-practices-wordpress         | Bonnes pratiques WordPress |
+| RWEB   | best-practices                   | Bonnes pratiques Web       |
+| REIPRO | best-practices-packaged-software | Intégration de progiciels  |
+| RIA    | (à venir)                        | Utilisation de l'IA        |
+
+## Documentation
+
+- [docs/](./docs/) - Documentation complète (Retype)
+- [CLAUDE.md](./CLAUDE.md) - Instructions pour Claude Code
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - Guide de contribution
 
 ## Licence
 

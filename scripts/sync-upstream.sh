@@ -7,8 +7,8 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Dossiers protégés (contenu spécifique au site)
-PROTECTED_DIRS="src/content/ public/img_fiches/"
+# Chemins protégés (contenu spécifique au site)
+PROTECTED_PATHS="src/content/ public/img_fiches/ README.md"
 
 echo -e "${GREEN}=== Synchronisation avec upstream ===${NC}"
 
@@ -55,9 +55,9 @@ git merge upstream/main --no-commit --allow-unrelated-histories -X theirs || tru
 
 # Protéger le contenu local
 echo -e "${YELLOW}Protection du contenu local...${NC}"
-git reset HEAD -- $PROTECTED_DIRS 2>/dev/null || true
-git checkout HEAD -- $PROTECTED_DIRS 2>/dev/null || true
-git clean -fd -- $PROTECTED_DIRS 2>/dev/null || true
+git reset HEAD -- $PROTECTED_PATHS 2>/dev/null || true
+git checkout HEAD -- $PROTECTED_PATHS 2>/dev/null || true
+git clean -fd -- $PROTECTED_PATHS 2>/dev/null || true
 
 # Commit du merge
 echo -e "${YELLOW}Commit du merge...${NC}"
