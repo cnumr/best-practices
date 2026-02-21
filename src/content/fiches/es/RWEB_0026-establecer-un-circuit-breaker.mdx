@@ -2,7 +2,7 @@
 refID: '0026'
 title: Establecer un "Circuit Breaker"
 createdAt: 2024-02-14T14:26:40.125Z
-updatedAt: 2025-12-04T01:41:52.805Z
+updatedAt: 2025-05-16T09:46:51.897Z
 language: es
 published: true
 refType: RWEB
@@ -31,18 +31,22 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de "circuit breakers" no implementados en los servicios externos
-    maxValue: '0  '
+  - rule: de "circuit Breaker" no instalado en servicios no críticos
+    maxValue: 0
 ---
 
 ## Descripción
 
-Un circuit breaker (disyuntor) es un patrón de diseño (design pattern) que permite optimizar las llamadas a un servicio (típicamente una API) en el caso de que este presente un error.
-
-En función de un cierto número de criterios de error (timeout, número de errores), el servicio llamante detecta el problema y, en lugar de llamar al servicio de forma indiscriminada, puede reemplazar la llamada por un comportamiento predefinido, como el uso de un valor por defecto o la llamada a otro servicio. En todos los casos, el circuit breaker permite definir una política para reintentar llamar al servicio que falla: reintentar cada x segundos, por ejemplo.
-
-Esta práctica permite ahorrar recursos (llamadas de red) tanto a nivel del llamante (es innecesario llamar a un servicio que falla), como del llamado, que puede entonces restablecerse más fácilmente.
+Un "circuito Breaker" rompe el procesamiento de una consulta a través de varios servicios en caso de que uno de los servicios no responda.
+Las consultas de los terminales de usuario pueden requerir servicios útiles y para los que es aceptable un modo degradado.
+Se les califica de no críticos.
+En función de una serie de criterios de error (timeout, número de errores), el servicio llama a un servicio no crítico puede desactivar esta llamada y devolver inmediatamente una respuesta alternativa.
+Este Pattern permite no solicitar innecesariamente un servicio y la red.
 
 ## Ejemplo
 
-En un sitio de comercio electrónico, la información detallada de una ficha de producto puede ser proporcionada por un servicio dedicado. El servicio principal que recupera una página de producto ha "aprendido" que el servicio de información detallada fallaba; evita entonces llamarlo inútilmente mientras no responda favorablemente y, por lo tanto, no envía esta información al usuario final. El servicio permanece operativo aunque la experiencia esté degradada.
+En un sitio de comercio electrónico la información detallada de una ficha de producto puede ser proporcionada por un servicio dedicado. 
+El servicio principal que recupera una página del producto "aprendió" que el servicio de la información detallada estaba en error, entonces evita llamarlo inútilmente hasta que responda favorablemente y, por tanto, remita esta información al usuario final.
+El servicio sigue funcionando, aunque el experimento se ha deteriorado.
+
+

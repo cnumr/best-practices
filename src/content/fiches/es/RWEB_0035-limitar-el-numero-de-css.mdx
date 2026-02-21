@@ -2,7 +2,7 @@
 refID: '0035'
 title: Limitar el número de CSS
 createdAt: 2024-02-14T10:35:04.172Z
-updatedAt: 2025-12-04T02:18:47.958Z
+updatedAt: 2025-05-18T16:59:55.279Z
 language: es
 published: true
 refType: RWEB
@@ -30,29 +30,26 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de archivos CSS está comprendido entre
-    maxValue: 3 y 10
+  - rule: de archivos CSS
+    maxValue: 10
 ---
 
 ## Descripción
 
-Recomendamos limitar el número de archivos CSS para no multiplicar las peticiones HTTP y simplificar el renderizado en el navegador. Utilice una hoja de estilos común para todos los elementos compartidos, sea cual sea la visualización, y un archivo por resolución de destino o media query.
+Limitar el nombre de CSS para no multiplicar las solicitudes HTTP y simplificar la representación del lado del navegador. Utilizar una hoja de estilo común para todos los elementos comunes, independientemente de la pantalla, y un archivo por resolución de destino o media queries.
 
-Importante: es necesario integrar estos archivos directamente en el código HTML y no mediante directivas @import en los propios archivos CSS. Dividiendo de esta manera, el terminal del usuario elegirá lo que le corresponde y restará prioridad a la carga de los archivos que no necesita. Si fuera necesario, los archivos CSS para ciertos componentes pueden cargarse en función del contexto.
+Ten cuidado, hay que integrar estos archivos directamente en el código HTML y NO con directivas @import en los propios archivos CSS. Al cortar de esta manera, el terminal del usuario elegirá lo que se ajusta a él y dejará al lado la carga de los archivos que no necesita.
 
-Sin embargo, procure no llevar esta lógica al extremo teniendo un solo archivo CSS: esto haría el caché del navegador menos eficaz y obligaría al navegador a ejecutar código CSS innecesario para la carga de una página.
+Si es necesario, se pueden cargar archivos CSS para algunos componentes en función del contexto.
 
 ## Ejemplo
 
 ```
-<link rel='stylesheet' id='css-css' href='communs.css' type='text/css'
-media='all' />
-<link rel='stylesheet' id='css-xs-css' href='petits-ecrans.css' type='text/css'
-media='(max-width: 959px)' />
-<link rel='stylesheet' id='css-sm-css' href='tablettes.css' type='text/css'
-media='(min-width: 768px)' />
-<link rel='stylesheet' id='css-mdlg-css' href='grands-ecrans.css' media='(min-
-width: 960px)' />
-<link rel='stylesheet' id='css-print-css' href='print.css' type='text/css'
-media='print' />
+<link rel='stylesheet' id='css-css)  href='comunes.css' type='text/css' media='all' />
+<link rel='stylesheet' id='css-xs-css)  href=pequenas-pantallas.css' type='text/css' media='(máx-width: 959px)' />
+<link rel='stylesheet' id='css-sm-css)  href='tabletas.css' type='text/css' media='(min-width: 768px)' />
+<link rel='stylesheet' id='css-mdlg-css href='grandes-pantallas.css' media='(min-width: 960px)' />
+<link rel='stylesheet' id='css-print-css)  href='print.css' type='text/css' media='print' />
 ```
+
+

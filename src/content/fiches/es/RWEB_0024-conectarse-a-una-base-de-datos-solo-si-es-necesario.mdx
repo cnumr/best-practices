@@ -2,7 +2,7 @@
 refID: '0024'
 title: Conectarse a una base de datos solo si es necesario
 createdAt: 2024-02-14T12:10:46.925Z
-updatedAt: 2025-12-04T01:37:59.557Z
+updatedAt: 2025-06-16T10:25:19.126Z
 language: es
 published: true
 refType: RWEB
@@ -31,24 +31,28 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: >-
-      de conexiones a una base de datos para consultar o almacenar un dato no
-      necesario para el uso del servicio
-    maxValue: '0  '
+  - rule: de conexiones a una base de datos para solicitar, almacenar un dato no necesario para la utilización del servicio
+    maxValue: 0
 ---
 
 ## Descripción
+Independientemente del sistema de base de datos, abrir una conexión es un proceso costoso para el cliente y el servidor:
+*    Asignación de memoria y I/O disco para búferes,
+*    Idas y vueltas por la red para el protocolo de conexión,
+*    Coste de CPU inducido.
 
-Sea cual sea el sistema de base de datos, la apertura de una conexión es un proceso costoso en recursos tanto para el cliente como para el servidor:
+Ejemplo:  para Oracle se necesitan varias idas y vueltas (validación de credenciales, información sobre el driver, negociación del tamaño óptimo de los paquetes...).
+La apertura y el cierre de una conexión requieren la asignación y la eliminación de estos recursos, así como numerosos intercambios de red, cada vez.
 
-* Asignación de memoria y acceso a disco para los buffers.
-* Intercambios de red para el protocolo de conexión.
-* Coste de CPU asociado.
+La buena práctica que se suele utilizar es la creación de un grupo de conexiones.
+Esto optimiza la gestión de conexiones y el rendimiento. Sin embargo, su configuración no es necesariamente una operación trivial (requiere supervisar su comportamiento para encontrar la configuración correcta).
 
-La práctica habitual consiste en implementar un pool de conexiones. Este permite optimizar tanto la gestión de las conexiones como el rendimiento. Sin embargo, su configuración no siempre es trivial (requiere supervisar su comportamiento para encontrar el ajuste correcto). No obstante, siempre que la aplicación pueda evitar un acceso a la base de datos, ¡se debe evitar!
+Dicho esto, siempre que la aplicación pueda evitar el acceso a la base de datos, ¡hágalo!
 
 ## Ejemplo
 
-HikariCP es un pool de conexiones JDBC sólido y eficiente, integrado en SpringBoot.
+HikariCP es un grupo de conexiones JDBC sólido y potente. Está integrado en SpringBoot.
 
-En los casos donde no se disponga de un pool de conexiones, se debe reutilizar la conexión existente y no abrir/cerrar una nueva en cada petición.
+En caso de que no haya un grupo de conexiones, vuelva a utilizar una conexión y no abra/cierre una nueva conexión con cada consulta.
+
+

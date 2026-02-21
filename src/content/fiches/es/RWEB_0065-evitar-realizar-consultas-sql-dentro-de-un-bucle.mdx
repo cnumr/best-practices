@@ -2,7 +2,7 @@
 refID: '0065'
 title: Evitar realizar consultas SQL dentro de un bucle
 createdAt: 2024-02-14T12:08:16.230Z
-updatedAt: 2025-12-06T01:14:02.451Z
+updatedAt: 2025-05-27T15:58:27.020Z
 language: es
 published: true
 refType: RWEB
@@ -32,33 +32,32 @@ saved_resources:
   - network
 validations:
   - rule: De consultas SQL dentro de un bucle
-    maxValue: '0 '
+    maxValue: 0
 ---
 
 ## Descripción
 
-Las consultas SQL dentro de un bucle plantean graves problemas de rendimiento, especialmente si los servidores SQL no se encuentran en el equipo local. Estos servidores están optimizados para procesar múltiples selecciones, inserciones o modificaciones en una única consulta o transacción.
+Las consultas SQL dentro de un bucle plantean grandes problemas de rendimiento, especialmente si el(s) servidor(s) SQL no está (no están) en la máquina local. Estos servidores están optimizados para procesar múltiples selecciones, inserciones o cambios en una sola consulta o transacción.
 
 Si se usan incorrectamente, estas consultas consumen innecesariamente ciclos de CPU, memoria RAM y ancho de banda.
 
 ## Ejemplo
 
 No escriba lo siguiente:
-
 ```php
-foreach ($userList as $user) {
-    $query = 'INSERT INTO users (?rst_name,last_name) VALUES("'. $user['?rst_name'] .'", "'. $user['last_name'] .'")';
-    mysql_query($query);
+foreach ($userlist as $user) {
+	$query = 'INSERT INTO users (?rst_name,last_name) VALUES("'. $user['?rst_name'] .'", "'. $user['last_ name'] .'");
+	mysql_query($query);
 }
 ```
-
-En su lugar, agrupe la operación:
-
+sino más bien:
 ```php
-$userData = array();
-foreach ($userList as $user) {
-    $userData[] = '("'. $user['?rst_name'] .'", "'. $user['last_name'] .'")';
+$userdata = array();
+foreach ($userlist as $user) {
+	$userdata[] = '("'. $user['?rst_name'] .'", "'.
+	$user['last_name'] . '")';
 }
-$query = 'INSERT INTO users (?rst_name,last_name) VALUES'. implode(',', $userData);
-mysql_query($query);
+$query = 'INSERT INTO users (?rst_name,last_name) VALUES'. implode(',', $userdata); mysql_query($query);
 ```
+
+

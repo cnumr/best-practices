@@ -2,7 +2,7 @@
 refID: '0043'
 title: Validar su código con un Linter
 createdAt: 2024-02-14T11:46:39.284Z
-updatedAt: 2025-12-04T03:54:26.190Z
+updatedAt: 2025-05-18T17:15:20.857Z
 language: es
 published: true
 refType: RWEB
@@ -29,19 +29,21 @@ tiers: user-device
 saved_resources:
   - cpu
 validations:
-  - rule: de líneas de código fuente no validado por herramientas como ESLint
-    maxValue: '0 '
+  - rule: de líneas de código fuente no validadas por herramientas como Eslint
+    maxValue: 0
 ---
 
 ## Descripción
 
-El analizador de calidad de código JSLint verifica que la sintaxis JavaScript utilizada sea compatible con todos los navegadores. De este modo, el código resultante cumple con restricciones sintácticas que permiten a los intérpretes ejecutarlo con mayor facilidad y rapidez. En consecuencia, se reduce el tiempo de procesamiento.
+El analizador de calidad del código JSLint comprueba que la sintaxis JavaScript utilizada será comprendida por todos los navegadores.
+El código obtenido respeta así las restricciones sintácticas que permiten a los intérpretes ejecutar el código más fácilmente y por lo tanto más rápidamente. Entonces el procesador se utiliza menos tiempo.
 
-En los desarrollos modernos, recomendamos incorporar diferentes herramientas de aseguramiento de calidad de código en su proceso de entrega.
+En desarrollos modernos, recomendamos añadir a su proceso de entrega diferentes herramientas que permitan garantizar la calidad de su código.
 
 ## Ejemplo
 
-Por ejemplo, se pueden utilizar:
+Por ejemplo, podemos utilizar:
+* [Eslint](https://eslint.org/) para el código JavaScript
+* [Stylelint](https://stylelint.io/) para vs hojas de estilo
 
-* ESLint para el código JavaScript;
-* Stylelint para sus hojas de estilo.
+

@@ -1,8 +1,8 @@
 ---
-refID: 0099
+refID: '0099'
 title: Limitar el uso de gifs animados
 createdAt: 2024-02-14T13:40:22.299Z
-updatedAt: 2025-12-12T00:30:02.218Z
+updatedAt: 2025-06-05T14:07:26.906Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: 0098
+    idRef: '0098'
   - version: 5.0.0
-    idRef: 0099
+    idRef: '0099'
 people: TBD
 responsible:
   - responsible: src/content/personas/es/colaborador.mdx
@@ -32,20 +32,22 @@ saved_resources:
   - storage
   - network
 validations:
-  - rule: de archivos gif animados
-    maxValue: '0 '
+  - rule: imágenes de dibujos animados
+    maxValue: 0
 ---
 
 ## Descripción
 
-El gif animado, formato de imagen animada que data de 1995, es más pesado y más lento que otros formatos tales como los formatos de vídeo WebM o mp4. El WebP animado ofrece una reducción de peso menor y actualmente es poco soportado por los navegadores.
+El gif animado, formato de imagen animada que data de 1995, es más pesado y más lento que otros formatos como los formatos de vídeo Webm o mp4.
+El webp animado es mas ligero y actualmente es poco soportado por los navegadores.
+Utilizar videos puede ser un intersante par reducir el tamaño de las animaciones.
 
 ## Ejemplo
 
-|             | .gif (animado) | . webp (animado) |  .Webm | . mp4 |
-| :---------- | -------------: | ---------------: | -----: | ----: |
-| Animación 1 |          90 KB |            74 KB |   36KB |  38KB |
-| Animación 2 |        5,45 MB |           2,2 MB | 274 KB | 266KB |
+|   | .gif (animado)   | . webp (animado) |.Webm | . mp4 | 
+| :--------------- |---------------:| -----:| -----:| -----:|
+| Animación 1 | 90 KB  | 74 KB | 36KB | 38KB |
+| Animación 2 | 5,45 MB  | 2,2 MB | 274 KB | 266KB | 
 
 ```html
 <!--  Autoplay, loop and muted video  -->
@@ -55,4 +57,5 @@ El gif animado, formato de imagen animada que data de 1995, es más pesado y má
 </video>
 ```
 
-Para saber más: [https://web.dev/replace-gifs-with-videos/](https://web.dev/replace-gifs-with-videos/)
+
+

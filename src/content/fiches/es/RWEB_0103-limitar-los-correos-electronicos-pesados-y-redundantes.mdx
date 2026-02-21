@@ -2,7 +2,7 @@
 refID: '0103'
 title: Limitar los correos electrónicos pesados y redundantes
 createdAt: 2024-02-14T13:25:58.681Z
-updatedAt: 2025-12-12T01:02:06.464Z
+updatedAt: 2025-06-05T21:18:31.611Z
 language: es
 published: true
 refType: RWEB
@@ -12,7 +12,7 @@ versions:
   - version: 2.0.0
     idRef: '0110'
   - version: 3.0.0
-    idRef: 0109
+    idRef: '0109'
   - version: 4.0.0
     idRef: '0103'
   - version: 5.0.0
@@ -32,26 +32,28 @@ saved_resources:
   - requests
   - storage
 validations:
-  - rule: >-
-      de e-mails enviados sin que el usuario tenga un control total sobre la
-      frecuencia y el contenido
-    maxValue: '0 '
+  - rule: de correos electrónicos con archivo adjunto
+    maxValue: 0
 ---
 
 ## Descripción
 
-Los e-mails se guardan en los sistemas de almacenamiento del proveedor de mensajería, pero también localmente para las cuentas IMAP y POP3. Se puede contribuir a reducir los impactos ambientales de un servicio digital limitando al máximo los envíos automáticos de e-mails (newsletters, gestión de clientes, seguimiento de pedidos...) y limitando también su peso (archivos adjuntos, elementos gráficos, etc.) y el número de destinatarios.
+Los correos electrónicos se guardan y se duplican en los discos del proveedor de correo electrónico.
+Conviene razonar el envío de correos electrónicos automáticos (por ejemplo: newsletters, gestión de clientes, seguimiento de pedidos) limitando su número, los archivos adjuntos y el número de destinatarios.
 
 ## Ejemplo
 
 Newsletters:
 
-* definir la frecuencia de envío a la estrictamente necesaria o a elección del usuario;
-* respetar la regla del doble consentimiento (doble opt-in);
-* enviar e-mails de desuscripción a los clientes que no hayan abierto las x newsletters anteriores;
-* evitar los archivos adjuntos utilizando una herramienta de transferencia de archivos como SwissTransfer.
+- Definir la frecuencia de envío a la estrictamente necesaria
+- Enviar únicamente a las personas esenciales para el boletín y las que lo deseen (lista de inscripción, segmentación del cliente)
+- Enviar correos electrónicos de "desuscripción" a clientes que no hayan abierto las newsletters anteriores
+- Evitar archivos adjuntos y preferir enlaces directos
+- Evitar las imágenes o limitar su tamaño
 
 Gestión de clientes:
 
-* Reducir a un solo envío para los pedidos por internet (pedido, confirmación de pago, envío, satisfacción, recordatorio, satisfacción de entrega, factura...);
-* No enviar un archivo adjunto si no es necesario: enlace al documento en la cuenta de cliente, por ejemplo.
+- Reducir a un solo envío para pedidos por internet (pedido, confirmación de pago, envío, satisfacción, relanzamiento, satisfacción de entrega, factura, ...)
+- No envíe un archivo adjunto si no es necesario: enlace al documento en la cuenta de cliente, por ejemplo.
+
+

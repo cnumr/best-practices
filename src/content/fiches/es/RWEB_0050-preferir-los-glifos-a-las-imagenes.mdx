@@ -2,7 +2,7 @@
 refID: '0050'
 title: Preferir los glifos a las imágenes
 createdAt: 2024-02-14T10:56:26.183Z
-updatedAt: 2025-12-04T23:24:55.775Z
+updatedAt: 2025-05-30T12:58:31.365Z
 language: es
 published: true
 refType: RWEB
@@ -10,11 +10,11 @@ versions:
   - version: GreenIT
     idRef: '0020'
   - version: 2.0.0
-    idRef: 0018
+    idRef: '0018'
   - version: 3.0.0
     idRef: '0030'
   - version: 4.0.0
-    idRef: 0049
+    idRef: '0049'
   - version: 5.0.0
     idRef: '0050'
 people: TBD
@@ -31,18 +31,19 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: >-
-      de imágenes que podrían haberse sustituido por un glifo (símbolo
-      tipográfico)
-    maxValue: '0 '
+  - rule: de imágenes que podrían haberse sustituido por un glifo (símbolo de fuente de carácter)
+    maxValue: 0
 ---
 
 ## Descripción
 
-Los glifos son caracteres tipográficos específicos incluidos en las fuentes del sistema operativo. Se pueden utilizar para sustituir imágenes monocromas, como símbolos, pictogramas o incluso ilustraciones.
+ Los glifos son caracteres tipográficos específicos, incluidos en fuentes como las de un sistema operativo, utilizables en sustitución de imágenes monocromáticas como símbolos o pictogramas (chevron, triángulo, punto, cuadrado, signos astrológicos, etc.) hasta las ilustraciones que permiten:
+- reducir el ancho de banda ahorrando peso
+- reducir el número de solicitudes
+- reducir la complejidad del DOM, especialmente con numerosos pictogramas SVG
 
-Su uso permite:
+## Ejemplo
 
-* Reducir el ancho de banda optimizando el peso (tamaño de archivo).
-* Reducir el número de peticiones HTTP.
-* Reducir la complejidad del DOM.
+Se logró una ganancia del 91% del peso incluyendo pictogramas e ilustraciones vectoriales en un icono hecho a través de [Font Forge](https://fontforge.org/en-US/).
+
+

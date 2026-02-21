@@ -2,7 +2,7 @@
 refID: '0020'
 title: Mostrar páginas de error estáticas
 createdAt: 2024-02-14T12:58:16.510Z
-updatedAt: 2025-12-04T01:29:24.557Z
+updatedAt: 2025-06-16T10:13:43.162Z
 language: es
 published: true
 refType: RWEB
@@ -10,9 +10,9 @@ versions:
   - version: GreenIT
     idRef: '0046'
   - version: 2.0.0
-    idRef: 0098
+    idRef: '0098'
   - version: 3.0.0
-    idRef: 0096
+    idRef: '0096'
   - version: 4.0.0
     idRef: '0020'
   - version: 5.0.0
@@ -32,18 +32,18 @@ saved_resources:
   - network
   - storage
 validations:
-  - rule: de páginas de error dinámicas
-    maxValue: '0  '
+  - rule: de páginas dinámicas de error
+    maxValue: 0
 ---
 
 ## Descripción
 
-Las páginas de error (40x, 50x) deben ser lo más ligeras posible e incluso, idealmente, inexistentes.
+Las páginas de errores (40x, 50x) deben ser lo más ligeras posible, e incluso idealmente inexistentes. De hecho, cuando el navegador solicita un recurso que no existe (imagen, hoja de estilos CSS, archivo JavaScript, etc.) o el servidor devuelve un error, la página de error devuelta puede ser más pesada que el recurso o la página solicitada.
 
-Cuando el navegador solicita un recurso que no existe (imagen, hoja de estilos CSS, archivo JavaScript, etc.) o el servidor genera un error, la página resultante puede llegar a ser más pesada que el propio recurso solicitado.
-
-Además, algunos CMS ejecutan su rutina de búsqueda de contenido en la base de datos para intentar encontrar el recurso. Por consiguiente, se ejecuta código de servidor, se realizan consultas a la base de datos y se genera dinámicamente la página HTML. Todo este proceso resulta en un desperdicio de ciclos de CPU, de memoria RAM y de ancho de banda.
+Además, algunos CMS ejecutan su rutina de búsqueda de contenido (en la base de datos) para intentar encontrar un recurso solicitado. Por lo tanto, se ejecuta código de servidor, se solicita el servidor de base de datos, y se ejecuta la generación dinámica de la página HTML. Todo este proceso produce un desperdicio de ciclos de CPU, memoria RAM y ancho de banda.
 
 ## Ejemplo
 
-Evitar las páginas 404 dinámicas, personalizadas en función del contenido de la URL. Optar por una página 404 estática.
+Evitar las páginas 404 dinámicas, que se personalizan en función del contenido de la URL. Preferir una página 404 estática.
+
+

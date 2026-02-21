@@ -1,16 +1,14 @@
 ---
 refID: '0017'
-title: >-
-  Evitar la transferencia de una gran cantidad de datos para realizar un
-  tratamiento
+title: Evitar la transferencia de una gran cantidad de datos para realizar un tratamiento
 createdAt: 2024-03-05T10:34:13.560Z
-updatedAt: 2025-12-04T01:22:38.415Z
+updatedAt: 2025-06-16T10:09:25.905Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: 0058
+    idRef: '0058'
   - version: 2.0.0
     idRef: '0075'
   - version: 3.0.0
@@ -33,25 +31,28 @@ saved_resources:
   - ram
   - network
 validations:
-  - rule: >-
-      de procesos con una gran cantidad de datos ejecutados fuera del servidor
-      de base de datos
-    maxValue: '1 '
+  - rule: de tratamientos con una gran cantidad de datos ejecutados fuera del servidor de base de datos
+    maxValue: 1
 ---
 
 ## Descripción
 
-Los sistemas de gestión de bases de datos están diseñados y optimizados para responder eficazmente al procesamiento de grandes cantidades de datos. En el caso de operaciones con una lógica más o menos compleja, se deben realizar lo más cerca posible de los datos con el fin de:
+Los sistemas de gestión de bases de datos están diseñados y optimizados para responder de manera efectiva al procesamiento de grandes cantidades de datos.
+En el caso de tratamientos con una lógica compleja, se desaconseja recuperar los datos "brutos" y realizar todas las operaciones de cálculo, transformación o agregación del lado del servidor backend o incluso frontend.
 
-* Limitar el ancho de banda debido a la transferencia de datos no procesados.
-* Aprovechar las optimizaciones de la base de datos en la manipulación de datos.
-* Aligerar los ciclos de CPU del lado del servidor backend o incluso frontend.
+Estos tratamientos deben realizarse más cerca de los datos para:
+
+- limitar el ancho de banda debido a la transferencia de datos no procesados
+- aprovechar las optimizaciones de la base de datos sobre la manipulación de datos
+- aligerar el ciclo de CPU del lado del servidor backend o incluso frontend.
 
 ## Ejemplo
 
-En el caso de consultas complejas con una gran cantidad de datos y el uso de un sistema de gestión de bases de datos relacionales (SGBDR), se aconseja utilizar procedimientos almacenados, ya que:
+En el caso de consultas complejas con un gran número de datos y el uso de un sistema de gestión de bases de datos relacionales (DBMS), se recomienda utilizar procedimientos almacenados (VIEWS) porque:
 
-* Un procedimiento almacenado ahorra al servidor la interpretación de la consulta, dado que está precompilada.
-* Un procedimiento almacenado consume menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
+ - un procedimiento almacenado ahorra al servidor la interpretación de la recuesta ya que está precompilada;
+ - un procedimiento almacenado requiere menos ancho de banda, ya que se intercambia menos información entre el servidor y el cliente.
 
-Todos los SGBDR recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
+Todos los RDBMS (relational database management system) recientes (SQL Server, MySQL, PostgreSQL, etc.) admiten los procedimientos almacenados.
+
+

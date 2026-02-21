@@ -1,22 +1,22 @@
 ---
-refID: 0059
+refID: '0059'
 title: Reemplazar los botones oficiales para compartir redes sociales
 createdAt: 2024-02-14T10:25:25.835Z
-updatedAt: 2025-12-06T00:48:44.343Z
+updatedAt: 2025-05-26T07:21:31.794Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: 0910
+    idRef: '0910'
   - version: 2.0.0
     idRef: '-'
   - version: 3.0.0
-    idRef: 0019
+    idRef: '0019'
   - version: 4.0.0
-    idRef: 0058
+    idRef: '0058'
   - version: 5.0.0
-    idRef: 0059
+    idRef: '0059'
 people: TBD
 responsible:
   - responsible: src/content/personas/es/disenador.mdx
@@ -30,24 +30,31 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de bibliotecas externas (para redes sociales)
-    maxValue: '0 '
+  - rule: de librerías externas
+    maxValue: 0
 ---
 
 ## Descripción
 
-Las principales redes sociales como Facebook, X (antes Twitter), Pinterest, etc., proporcionan plugins para instalar botones de "Compartir" o contadores de "Me gusta" en las páginas web. Estas bibliotecas JavaScript suelen ser pesadas de descargar y generan una gran cantidad de peticiones HTTP.
-
-Prefiera el uso de enlaces directos en HTML hacia las páginas de compartir. Puede generar estos enlaces manualmente (ver ejemplo abajo) o mediante herramientas como Share Link Generator. ¡Esta buena práctica no se limita solo a las redes sociales!.
+Las principales redes sociales como Facebook, Twitter, Pinterest, etc. instalan plugins para mostrar un botón Compartir y un contador de Me gusta. Estos plugins JavaScript consumen muchos recursos: para funcionar, requieren una gran cantidad de consultas y la descarga de archivos pesados.
+Es mejor utilizar enlaces directos, en HTML, para compartir páginas.
+Estos enlaces pueden generarse manualmente (ver más abajo) o mediante una herramienta como https:/www.sharelinkgenerator.com/.
 
 ## Ejemplo
 
-Se puede añadir un botón que abra una ventana emergente (pop-up) de compartir, tal como lo hacen los botones oficiales, con el siguiente código:
+Todas las redes sociales tienen una URL que permite a sus miembros compartir una página web:
+ - Facebook Share: https://www.facebook.com/sharer/sharer.php?u=XXXXX
+ - Facebook Like: https://www.facebook.com/plugins/like.php?href=XXXXX
+ - Twitter: https://twitter.com/intent/tweet?url=XXXXX
+Por lo tanto, se puede añadir fácilmente un botón que abre una ventana emergente de compartir como lo hacen los botones oficiales, por ejemplo con el siguiente código:
 
 ```html
-<button type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=XXXXX', '', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=500, width=700')">
-  Comparto esta página en Facebook
+<button type = "button" onclick = "window. open('https://www.facebook.com/ Sharer/Sharer.php?u=XXXXX', ', 'menubar = no, toolbar = no, resizable = yes, scrollbars = yes, height = 500, width = 700')">
+	Comparto esta página en Facebook
 </button>
 ```
+Para ir más lejos:
+https://www.nuweb.es/736
 
-Para ir más lejos, consulte la página: [https://www.nuweb.fr/736](https://www.google.com/search?q=https://www.nuweb.fr/736).
+
+

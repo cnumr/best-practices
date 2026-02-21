@@ -1,8 +1,8 @@
 ---
-refID: 0086
+refID: '0086'
 title: Usar un servidor asíncrono
 createdAt: 2024-02-14T13:00:23.183Z
-updatedAt: 2025-12-11T20:02:46.036Z
+updatedAt: 2025-05-28T20:24:33.668Z
 language: es
 published: true
 refType: RWEB
@@ -10,13 +10,13 @@ versions:
   - version: GreenIT
     idRef: '0077'
   - version: 2.0.0
-    idRef: 0094
+    idRef: '0094'
   - version: 3.0.0
-    idRef: 0097
+    idRef: '0097'
   - version: 4.0.0
-    idRef: 0085
+    idRef: '0085'
   - version: 5.0.0
-    idRef: 0086
+    idRef: '0086'
 people: TBD
 responsible:
   - responsible: src/content/personas/es/administrador-sistemas.mdx
@@ -30,16 +30,21 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: de servidores de aplicación síncronos
-    maxValue: '1 '
+  - rule: de servidores de aplicaciones sincronizados
+    maxValue: 1
 ---
 
 ## Descripción
 
-Los servidores (web, de aplicaciones, etc.) tales como Nginx, node.js o Gwan están diseñados para ser muy eficientes y, sobre todo, para utilizar el mínimo de recursos (CPU y RAM). Gracias a su funcionamiento en modo asíncrono, no están obligados a crear un proceso o un hilo (thread) para cada petición. De este modo, evitan desperdiciar sus recursos.
+Los servidores (web, aplicaciones, etc.) como NGINX, node.js o Gwan están diseñados para utilizar el mínimo de recursos posible. Gracias a su funcionamiento en modo asíncrono, no están obligados a crear un proceso o "thread" para cada consulta. De esta manera evitan el desperdicio de recursos.
 
-Mientras que la mayoría de los servidores web aumentan su consumo de memoria RAM a medida que crecen las solicitudes, los servidores asíncronos permanecen muy estables.
+Mientras que la mayoría de los servidores web aumentan el consumo de memoria RAM a medida que aumenta la demanda, los servidores asíncronos permanecen muy estables.
 
 ### Ejemplo
 
-Nginx es más eficiente que Apache; permite servir 2 veces más peticiones por segundo. Gwan (aunque todavía muy poco utilizado) es más eficiente que Nginx; permite servir 4 veces más peticiones por segundo en 4 veces menos tiempo, consumiendo a la vez 2 veces menos RAM.
+NGINX tiene la reputación de ser más eficiente que Apache. Así, puede servir 2,1 veces más consultas por segundo que este servidor.
+
+Para ir más lejos:
+ - https:///nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan
+ 
+

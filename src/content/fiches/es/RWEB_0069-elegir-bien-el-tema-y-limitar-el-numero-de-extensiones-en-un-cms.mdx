@@ -1,8 +1,8 @@
 ---
-refID: 0069
+refID: '0069'
 title: Elegir bien el tema y limitar el número de extensiones en un CMS
 createdAt: 2024-02-14T14:34:26.597Z
-updatedAt: 2025-12-06T01:29:44.173Z
+updatedAt: 2025-05-27T16:30:20.983Z
 language: es
 published: true
 refType: RWEB
@@ -14,9 +14,9 @@ versions:
   - version: 3.0.0
     idRef: '-'
   - version: 4.0.0
-    idRef: 0068
+    idRef: '0068'
   - version: 5.0.0
-    idRef: 0069
+    idRef: '0069'
 people: TBDs
 responsible:
   - responsible: src/content/personas/es/administrador-sistemas.mdx
@@ -30,23 +30,28 @@ saved_resources:
   - network
   - storage
 validations:
-  - rule: de extensiones instaladas
-    maxValue: '12 '
+  - rule: extensiones
+    maxValue: 12
 ---
 
 ## Descripción
 
-Al utilizar un CMS, la elección del tema es primordial. Al instalar un tema, a menudo se añaden extensiones, en ocasiones incluso un constructor de páginas (page builder). Las funcionalidades proporcionadas suelen superar con creces sus necesidades reales. Cada extensión agrega sus propios datos a la base de datos y sus archivos CSS y JS, sin contar el número de archivos almacenados en el servidor para que todo funcione. Dependiendo de la calidad del desarrollo, estos recursos adicionales pueden ser pesados y/o redundantes.
+Al utilizar un CMS, la elección del tema es primordial.
+Al instalar tu tema, añade extensiones y a veces integra un constructor de páginas.
+Las características proporcionadas a menudo están más allá de sus necesidades reales.
+Cada extensión agrega sus datos a la base de datos, archivos css y js, sin contar el número de archivos almacenados en el servidor para que funcione. Dependiendo de la calidad de desarrollo, los activos adicionales pueden ser pesados y/o redundantes.
 
-Esto provoca un aumento de:
-
-* El número de peticiones.
-* El peso de las páginas.
-* El tiempo de procesamiento de las peticiones internas.
-* La complejidad de la administración de sus contenidos.
+Esto causa una:
+- aumento del número de solicitudes
+- aumento del peso de las páginas
+- aumento del tiempo de tramitación de las peticiones internas
+- Complejidad de la administración de sus contenidos
 
 ## Ejemplo
 
-Un tema "todo en uno" o que integra un constructor de páginas puede agregar una característica para poner carruseles (sliders) en sus artículos o ultra-personalizar sus botones de acción, o permitirle integrar testimonios o crear un portafolio cuando usted no tiene previsto utilizar ninguno en sus contenidos. Atención también a las incompatibilidades entre algunas extensiones.
+Un tema todo en uno o que integra un constructor de páginas puede agregar una característica para poner deslizadores en sus artículos o ultra personalizar sus botones de acción, o le permite integrar testimonios o crear un portafolio cuando no tiene previsto integrar ninguno en sus contenidos.
+Atención también a las incompatibilidades de algunas extensiones.
 
-Prefiera un tema simple que contenga lo esencial y, posteriormente, agregue una funcionalidad específica solo cuando sea necesario.
+Prefiera un tema simple donde se encuentra lo esencial, y luego agregue una característica reflexiva cuando sea necesario.
+
+

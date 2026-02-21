@@ -1,8 +1,8 @@
 ---
-refID: 0018
+refID: '0018'
 title: Favorecer páginas estáticas
 createdAt: 2024-02-14T10:04:22.896Z
-updatedAt: 2025-12-04T01:24:39.445Z
+updatedAt: 2025-09-08T16:23:49.903Z
 language: es
 published: true
 refType: RWEB
@@ -13,8 +13,10 @@ versions:
     idRef: '0051'
   - version: 3.0.0
     idRef: '0013'
+  - version: 4.0.0
+    idRef: 18
   - version: 5.0.0
-    idRef: 0018
+    idRef: 18
 people: TBD
 responsible:
   - responsible: src/content/personas/es/arquitecto-software-desarrollador.mdx
@@ -28,20 +30,21 @@ saved_resources:
   - cpu
   - ram
 validations:
-  - rule: de páginas dinámicas
+  - rule: de páginas dinámicas es
     maxValue: 25%
 ---
 
 ## Descripción
 
-Si una página se actualiza con muy poca frecuencia, es preferible optar por páginas estáticas, construidas fuera del CMS. Esto permite ahorrar ciclos de CPU y ancho de banda.
+Si una página necesita ser modificada solo dos veces al año, preferir páginas estáticas, construidas fuera del CMS.
+Esto ahorrará ciclos de CPU, ancho de banda, y reducirá el consumo de energía.
 
-El uso de un sistema de gestión de contenido (CMS) dinámico requiere cargar las diferentes capas de software para servir el contenido solicitado por el usuario: el servidor HTTP, el servidor de aplicaciones, el sistema de almacenamiento (base de datos), y eventualmente los sistemas de caché asociados. En cambio, un archivo estático es leído directamente y reenviado al usuario por el servidor HTTP o el servidor de caché, sin solicitar al servidor de aplicaciones ni a la base de datos.
+El uso de un sistema de gestión de contenidos dinámico requiere cargar las diferentes capas de software para servir el contenido solicitado por el internauta: el servidor HTTP, el servidor de aplicaciones, el sistema de almacenamiento del contenido (base de datos), quizás los sistemas de caché asociados, etc. En cambio, el servidor HTTP o el servidor de caché leen directamente un archivo estático y lo devuelven al internauta, sin solicitar el servidor de aplicaciones o la base de datos.
 
 ## Ejemplo
 
-En función del servicio digital que se vaya a desarrollar, es posible considerar:
+Dependiendo del servicio digital que se va a diseñar, es posible:
 
-* Para una landing page o un sitio web informativo simple: crear un sitio estático en HTML, CSS y JS.
-* Para un blog con poca actividad o tamaño pequeño: crear un sitio estático generado vía Jamstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administrado, si es necesario, a través de un headless CMS o un headless flat-file CMS (Strapi, Contentful, Flextype, Cecil.app, etc.).
-* Para un sitio o aplicación web más compleja: convertir en estáticas las páginas con baja tasa de modificaciones (FAQ, Quiénes somos, Aviso legal, etc.) utilizando frameworks adaptados (Next.js, Nuxt.js, Svelte, etc.).
+- para una página de destino o un simple sitio escaparate, crear un sitio estático en HTML, CSS y JS.
+- para un blog con poca actividad o de pequeño tamaño, crear un sitio estático generado a través de un JAMstack (Jekyll, Hugo, Gatsby, Eleventy, etc.) administrado, si es necesario, a través de un CMS headless o un CMS headless flat-file (Strapi, Contenful, Flextype, etc.).
+- para un sitio web o aplicación web más compleja hacer las páginas con bajas tasas de cambios (FAQ, About, Aviso legal, etc.) estáticas utilizando frameworks (Next, Nuxt, Svelte, etc.).

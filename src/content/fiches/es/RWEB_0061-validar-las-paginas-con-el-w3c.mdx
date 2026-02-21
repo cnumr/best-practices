@@ -2,13 +2,13 @@
 refID: '0061'
 title: Validar las páginas con el W3C
 createdAt: 2024-02-14T10:59:31.868Z
-updatedAt: 2025-12-06T00:52:49.891Z
+updatedAt: 2025-05-26T16:29:11.723Z
 language: es
 published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: 0008
+    idRef: '0008'
   - version: 2.0.0
     idRef: '0015'
   - version: 3.0.0
@@ -29,19 +29,18 @@ tiers: user-device
 saved_resources:
   - cpu
 validations:
-  - rule: de errores críticos de HTML
-    maxValue: '0 '
+  - rule: de errores críticos
+    maxValue: 0
 ---
 
 ## Descripción
 
-Un código HTML bien formado permite una mejor accesibilidad, un mejor posicionamiento (SEO) y, sobre todo, una mejora del rendimiento.
-
-En caso contrario, el navegador debe corregir dinámicamente los elementos erróneos para poder mostrar la página lo mejor posible. Estas correcciones dinámicas consumen recursos inútilmente en cada carga de las páginas afectadas.
+Comprobar que el código HTML de las páginas está correctamente formado. De lo contrario, el navegador corregirá dinámicamente una serie de elementos para mostrar de la mejor manera posible las páginas problemáticas.
+Estas correcciones dinámicas consumen recursos innecesarios cada vez que se cargan las páginas afectadas.
 
 ## Ejemplo
 
-Utilice el validador del W3C (World Wide Web Consortium) para verificar que las páginas son válidas y que el código HTML está correctamente formado:
+Usar el validador del W3C (World Wide Web Consortium) para comprobar que las páginas son válidas y que el código HTML está correctamente formado:
+https://validator.w3.org
 
-* [https://validator.w3.org](https://validator.w3.org)
-* [https://validator.w3.org/nu/](https://validator.w3.org/nu/)(para filtrar los errores)
+

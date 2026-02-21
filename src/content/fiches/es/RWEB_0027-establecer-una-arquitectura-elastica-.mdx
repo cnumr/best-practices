@@ -2,7 +2,7 @@
 refID: '0027'
 title: 'Establecer una arquitectura elástica '
 createdAt: 2024-02-14T14:14:38.885Z
-updatedAt: 2025-12-04T01:45:31.710Z
+updatedAt: 2025-05-16T09:54:06.009Z
 language: es
 published: true
 refType: RWEB
@@ -31,21 +31,22 @@ saved_resources:
   - ram
 validations:
   - rule: de recursos reservados inútilmente cuando la carga es baja
-    maxValue: '0  '
+    maxValue: 0
 ---
 
 ## Descripción
 
-La mayor parte del tiempo, la carga de una aplicación no es constante.
+En la mayoría de los casos, la carga de una aplicación no es constante a lo largo del tiempo. Por ejemplo, puede pocos o ninguno de los usuarios conectados por la noche. En este caso, no es necesario utilizar infraestructuras técnicas tan importantes en las horas de menor demanda como en las de mayor demanda.
 
-Por ejemplo, puede haber pocos, o incluso ningún usuario conectado por la noche. En este caso, no es necesario utilizar infraestructuras técnicas tan grandes en las horas valle como en las horas de mayor demanda (horas punta).
+A través de la puesta en común de implementaciones (ver la buena práctica #89 «Usar servidores virtualizados»), especialmente en el Cloud, es posible modificar dinámica y automáticamente el tamaño de la infraestructura en función de la carga. Esta modificación puede obedecer a una programación horaria (por ejemplo de apagar por la noche las aplicaciones utilizadas solo en horas de oficina) o en reacción al número
+consultas: si la carga aumenta se añaden nuevas máquinas virtuales, nuevas instancias de la aplicación (contenedores, procesos o funciones Serverless, ...) que se desactivan cuando se reduce.
 
-Además, implementar una arquitectura elástica permite generar ahorros, ya que se utilizan menos recursos de servidor y estos se facturan por uso.
+Herramientas como Docker permiten crear imágenes de sus aplicaciones que se pueden implementar fácilmente o las herramientas de orquestación, como Kubernetes, las cancelan. Los proveedores de cloud suelen ofrecer servicios que permitan aprovechar estas herramientas.
 
-Una arquitectura elástica tiene un coste de implementación elevado en términos de carga de trabajo y de complejidad añadida a la solución.
+Los entornos de prueba y experimentación en particular se pueden apagar de noche y en días no laborables muy fácilmente.
 
-Si su aplicación tiene poca carga o esta varía poco, no es indispensable implementarla.
+La implementación de una arquitectura elástica también ahorra dinero, ya que hay menos recursos de servidor se utilizan y se facturan. 
 
-## Ejemplo
+Una arquitectura elástica tiene un costo de instalación importante en términos de carga de trabajo y mayor complejidad de la solución. Si su aplicación tiene poca carga o ésta varía poco, no es necesario instalarla.
 
-Gracias al uso compartido de los despliegues (ver «Utilizar servidores virtualizados»), en particular en la nube, es posible modificar dinámica y automáticamente el tamaño de la infraestructura en función de la carga. Esta modificación puede basarse en una programación horaria (por ejemplo, apagar por la noche) o en el número de peticiones recibidas.
+

@@ -2,7 +2,7 @@
 refID: '0101'
 title: Utilizar solo archivos de opt-in doble
 createdAt: 2024-02-14T13:28:04.540Z
-updatedAt: 2025-12-12T00:55:08.177Z
+updatedAt: 2025-06-05T21:17:36.298Z
 language: es
 published: true
 refType: RWEB
@@ -31,22 +31,21 @@ saved_resources:
   - network
   - requests
 validations:
-  - rule: de contactos de e-mail que no han sido validados por un doble opt-in
-    maxValue: '0 '
+  - rule: de contactos en opt-out
+    maxValue: 0
 ---
 
 ## Descripción
 
-El doble opt-in es una práctica de marketing que consiste en solicitar el consentimiento del cliente potencial para añadir su e-mail a las listas de difusión en 2 etapas. Primero, mediante un acuerdo electrónico rellenando su e-mail y marcando una casilla de aprobación; y luego, validando dicho consentimiento mediante el envío de un correo electrónico de confirmación a la dirección indicada. El estado de la dirección se convierte en doble opt-in en la base de datos cuando el destinatario hace clic en el enlace contenido en el mensaje de confirmación.
-
-Este procedimiento permite validar la dirección de e-mail y verificar que la persona que la ha facilitado es su propietaria. Esta doble verificación confirma así el compromiso del cliente potencial de recibir comunicaciones, boletines informativos, suscribirse a un servicio, etc.
+El doble opt-in es una práctica de marketing consistente en solicitar el consentimiento del prospecto, generalmente por acuerdo electrónico marcando una casilla, y luego hacer validar dicho consentimiento mediante el envío de un correo electrónico de confirmación a la dirección indicada. El estado de la dirección se convierte en doble opt-in cuando el destinatario hace clic en un enlace contenido en el mensaje recibido. Este procedimiento permite validar la dirección y verificar que la persona que la ha facilitado es la propietaria. Esta doble verificación confirma así el compromiso del prospecto de recibir un boletín, suscribirse a una suscripción, etc.
 
 Por lo tanto, se recomienda utilizar la práctica de doble opt-in para reducir significativamente:
-
-* el número de correos electrónicos enviados sin impacto real (y, por tanto, el ancho de banda consumido);
-* la carga del servidor SMTP al enviar el correo electrónico;
-* la carga del servidor al procesar las cancelaciones de suscripción.
+ - el número de correos electrónicos sin impacto real (y, por tanto, el ancho de banda consumido);
+ - la carga del servidor SMTP al enviar el correo electrónico;
+ - la carga del servidor al procesar las cancelaciones de suscripción.
 
 ## Ejemplo
 
-En el caso de un operador telefónico o de un banco, dejar a los clientes la elección entre un catálogo de productos o servicios para los que aceptan ser solicitados. Integre el doble opt-in para validar doblemente este consentimiento y ofrezca una función de desuscripción (opt-out) rápida conforme al reglamento RGPD.
+En el caso de una empresa telefónica o de un banco, dejar a los clientes la elección entre un catálogo de productos o servicios para los que aceptan ser solicitados.
+
+

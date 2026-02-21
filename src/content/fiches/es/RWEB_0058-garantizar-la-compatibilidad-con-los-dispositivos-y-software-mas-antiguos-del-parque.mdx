@@ -1,10 +1,8 @@
 ---
-refID: 0058
-title: >-
-  Garantizar la compatibilidad con los dispositivos y software más antiguos del
-  parque
+refID: '0058'
+title: Garantizar la compatibilidad con los dispositivos y software más antiguos del parque
 createdAt: 2024-02-14T13:54:30.268Z
-updatedAt: 2025-12-06T00:46:10.407Z
+updatedAt: 2025-05-30T15:44:43.418Z
 language: es
 published: true
 refType: RWEB
@@ -18,7 +16,7 @@ versions:
   - version: 4.0.0
     idRef: '0057'
   - version: 5.0.0
-    idRef: 0058
+    idRef: '0058'
 people: TBD
 responsible:
   - responsible: src/content/personas/es/poamoa.mdx
@@ -31,18 +29,27 @@ tiers: user-device
 saved_resources:
   - e-waste
 validations:
-  - rule: >-
-      de páginas no probadas en las configuraciones más restrictivas del
-      contexto del proyecto
-    maxValue: '0 '
+  - rule: de páginas no probadas sobre las configuraciones más exigentes del contexto proyecto
+    maxValue: 0
 ---
 
 ## Descripción
 
-Para no provocar la obsolescencia prematura del dispositivo del usuario, las páginas deben ser funcionales (sin diseños rotos, botones inactivos o errores bloqueantes) incluso en las configuraciones más limitadas: navegadores antiguos, problemas de compatibilidad, sistemas operativos viejos y dispositivos de baja potencia.
+Es necesario asegurarse de la compatibilidad del sitio con el hardware y el software más antiguos que los usuarios puedan tener.
+Las páginas deben ser utilizables en las configuraciones más exigentes: sin diseños rotos, botones inactivos, errores mostrados u otros problemas que impiden la lectura o la navegación.
 
-Analice las estadísticas de tráfico para determinar qué configuraciones técnicas debe soportar. Atención al sesgo de supervivencia: los usuarios que no pueden utilizar el sitio en absoluto no aparecerán en estas estadísticas. Lo ideal es analizar el equipamiento de los usuarios en entornos reales.
+Las configuraciones más exigentes incluyen: 
+- Las versiones más antiguas de los navegadores o que presentan mayores problemas de compatibilidad
+- Las versiones más antiguas del sistema operativo
+- Los dispositivos menos potentes que tienen los usuarios: smartphones, ordenadores u otros.
+
+La elección de las configuraciones dependerá del estado de la web en el momento de la implementación de la solución, así como del contexto proyecto: los diferentes públicos traerán diferentes limitaciones. 
+
+Esta elección puede determinarse en parte gracias a las estadísticas de frecuentación si están disponibles. Atención sin embargo a través del sobreviviente: los usuarios que no pueden utilizar el sitio en absoluto no aparecerán en estas estadísticas. Lo mejor es hacer un estudio de  los usuarios y sus equipos.
 
 ## Ejemplo
 
-Por diferentes razones (equipos demasiado antiguos para actualizarse, falta de permisos de administrador o desconocimiento de alternativas), muchos usuarios siguen bloqueados en Internet Explorer. Un sitio desarrollado para navegadores modernos, que utilice masivamente tecnologías como Flexbox o CSS Grid, no se visualizará correctamente en este navegador.
+Por diferentes razones (máquinas demasiado antiguas para actualizarse, falta de acceso de administrador al sistema o desconocimiento de la existencia de alternativas), los usuarios son bloqueados en Internet Explorer.
+Un sitio desarrollado para navegadores modernos, por ejemplo, utilizando masivamente _flexbox_ o _css grid_ no se mostrará correctamente en este navegador.
+
+

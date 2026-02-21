@@ -1,10 +1,8 @@
 ---
 refID: '0054'
-title: >-
-  Almacenar en caché los objetos a los que se accede con frecuencia en
-  JavaScript
+title: Almacenar en caché los objetos a los que se accede con frecuencia en JavaScript
 createdAt: 2024-02-14T11:48:46.183Z
-updatedAt: 2025-12-05T19:40:20.620Z
+updatedAt: 2025-05-30T14:02:12.501Z
 language: es
 published: true
 refType: RWEB
@@ -14,7 +12,7 @@ versions:
   - version: 2.0.0
     idRef: '0036'
   - version: 3.0.0
-    idRef: 0049
+    idRef: '0049'
   - version: 4.0.0
     idRef: '0053'
   - version: 5.0.0
@@ -31,29 +29,26 @@ tiers: network
 saved_resources:
   - cpu
 validations:
-  - rule: >-
-      de datos constantes (o no volátiles) recuperados en varias ocasiones sin
-      almacenarse en caché
-    maxValue: '0 '
+  - rule: de datos constantes (o no volátiles) recuperados varias veces sin ser almacenados en caché
+    maxValue: 0
 ---
 
 ## Descripción
 
-El acceso al DOM (Document Object Model) consume muchos recursos del procesador (ciclos de CPU). Por tanto, cuando necesite utilizar varias veces el mismo elemento del DOM desde JavaScript, almacene su referencia en una variable. De este modo, evitará recorrer el DOM repetidamente para buscar el mismo elemento.
+El acceso al DOM (Document Object Model) es costoso en términos de recursos de procesador (ciclos de CPU). Así, cuando use el mismo elemento del DOM varias veces desde JavaScript, almacene su referencia en una variable para no volver a navegar por el DOM para ese mismo elemento.
 
 ## Ejemplo
 
-Evite esto:
-
+No escriba lo siguiente:
 ```javascript
-document.getElementById('menu').property1 = 'foo';
-document.getElementById('menu').property2 = 'bar';
+document.getElementById('menú'). property1 = 'foo'; document.getElementById('menú').property2 = 'bar';
 ```
 
-En su lugar, utilice variables:
-
+sino más bien:
 ```javascript
-var menu = document.getElementById('menu');
-menu.property1 = 'foo';
-menu.property2 = 'bar';
+var mmenu = document.getElementById('menú');
+menú.property1 = 'foo';
+menú.property2 = 'Bar'
 ```
+
+
