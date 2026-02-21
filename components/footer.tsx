@@ -43,6 +43,13 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
             </Link>
           </li>
           <li>
+            <Link
+              href="/swagger-ui.html"
+              title="API Documentation">
+              API
+            </Link>
+          </li>
+          <li>
             <LanguagePicker style="light" />
           </li>
         </ul>
@@ -70,7 +77,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
           <Image
             width="175"
             height="55"
-            src={'/logo-asso.png'}
+            src={'/assets/logo-asso.png'}
             alt={t(
               "Logo association Green IT - lien sortant vers le site l'association Green IT"
             )}

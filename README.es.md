@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://collectif.greenit.fr/">
+    <img align="center" alt="CNUMR" src="./public/assets/logo-cnumr.png" width="160" />
+  </a>
+    <img align="center" alt="Association Green IT" src="./public/assets/logo-asso.png" width="200" />
+</p>
+
 # 115 mejores prácticas de Ecodiseño web
 
 ## El proyecto

@@ -1,8 +1,15 @@
+<p align="center">
+  <a href="https://collectif.greenit.fr/">
+    <img align="center" alt="CNUMR" src="./public/assets/logo-cnumr.png" width="160" />
+  </a>
+    <img align="center" alt="Association Green IT" src="./public/assets/logo-asso.png" width="200" />
+</p>
+
 # RWEB - Les 115 bonnes pratiques d'écoconception web
 
 ## Le référentiel
 
-RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web. 
+RWEB, aussi connu sous le nom de « 115 bonnes pratiques d'écoconception web » est un document qui recense des bonnes pratiques à mettre en œuvre pour réduire les impacts environnementaux associés aux services numériques implémentés sous la forme de sites ou d'applications web.
 
 Les fiches contiennent des niveaux de difficulté et de priorité, ainsi que des règles de validation formelles, permettant une utilisation efficace sur le terrain.
 

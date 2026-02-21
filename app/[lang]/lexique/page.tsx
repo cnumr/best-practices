@@ -1,29 +1,84 @@
-import {
-  Lexique,
-  LexiqueConnectionQuery,
-} from '../../../tina/__generated__/types';
-
+import { Lexique } from '../../../tina/__generated__/types';
 import Link from 'next/link';
 import { MdxComponents } from '../../../components/mdx/mdx-components';
+import { Metadata } from 'next';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
-import lexiqueData from './lexique.preval';
-import { ui } from '../../../i18n/ui';
+import { client } from '../../../tina/__generated__/databaseClient';
+import { getRefConfig } from '../../../referentiel-config';
+import { notFound } from 'next/navigation';
+import { code_languages, ui } from '../../../i18n/ui';
 import { useTranslations } from '../../../i18n/utils';
 
 export async function generateStaticParams() {
-  const lang = Object.keys(ui);
-  return lang.map((lang) => ({ lang }));
+  // Ne pas générer de pages si la feature est désactivée
+  if (!getRefConfig().featuresEnabled.lexique) {
+    return [];
+  }
+  return code_languages.map((lang) => ({ lang }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: keyof typeof ui };
+}): Promise<Metadata> {
+  const { lang } = params;
+  const t = useTranslations(lang);
+  const title = `${t('Lexique')} | ${t('seo.site_name')}`;
+  const description = t('Consulter le Lexique');
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${t('seo.url')}/${lang}/lexique`,
+      siteName: t('seo.site_name'),
+      images: [{ url: t('seo.fb.image.url'), alt: title }],
+      locale: lang,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [t('seo.tw.image.url')],
+    },
+  };
 }
 
 export default async function Home({ params }) {
   const { lang } = params;
-  const { data }: { data: LexiqueConnectionQuery } = lexiqueData;
+
+  // Retourner 404 si la feature est désactivée
+  if (!getRefConfig().featuresEnabled.lexique) {
+    notFound();
+  }
+
   const t = useTranslations(lang);
-  const entries = data.lexiqueConnection.edges?.filter(
-    (e) => e?.node?.language === lang && e?.node?.published
-  );
-  if (!entries) {
-    return null;
+
+  let entries;
+  try {
+    const { data } = await client.queries.lexiqueConnection({
+      first: 1000,
+      filter: { language: { eq: lang } },
+    });
+    entries = data.lexiqueConnection.edges?.filter(
+      (e) => e?.node?.published
+    );
+  } catch {
+    // Si la collection n'existe pas ou est vide, afficher un message
+    entries = [];
+  }
+
+  if (!entries || entries.length === 0) {
+    return (
+      <main className="mx-auto my-8 min-h-[400px] px-4 lg:max-w-5xl lg:px-0">
+        <h1>{t('Lexique')}</h1>
+        <p>{t('Aucun contenu disponible.')}</p>
+      </main>
+    );
   }
   const byGroup: { node: Lexique }[][] = entries.reduce((r, a) => {
     if (a?.node) {

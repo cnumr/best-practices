@@ -1,0 +1,96 @@
+{
+  "version": "3.11.0",
+  "created": "2026-02-07T16:11:56Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "api/index.html"
+    },
+    {
+      "path": "configuration/index.html"
+    },
+    {
+      "path": "contribution/index.html"
+    },
+    {
+      "path": "developpement/index.html"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "informations/index.html"
+    },
+    {
+      "path": "installation/index.html"
+    },
+    {
+      "path": "licence/index.html"
+    },
+    {
+      "path": "resources/css/retype.css"
+    },
+    {
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/lunr.js"
+    },
+    {
+      "path": "resources/js/mermaid.js"
+    },
+    {
+      "path": "resources/js/prism.js"
+    },
+    {
+      "path": "resources/js/retype.js"
+    },
+    {
+      "path": "resources/js/search.json"
+    },
+    {
+      "path": "resources/lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "script.sh"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/greenit_icone_intro-alt.png"
+    },
+    {
+      "path": "static/reftitles-positions.png"
+    },
+    {
+      "path": "synchronisation/index.html"
+    }
+  ]
+}

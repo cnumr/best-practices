@@ -1,5 +1,5 @@
 ---
-refID: 0008
+refID: '8'
 title: Respetar el principio de navegación rápida en el historial
 createdAt: 2024-02-14T09:36:53.391Z
 updatedAt: 2025-10-03T07:30:17.750Z
@@ -8,18 +8,18 @@ published: true
 refType: RWEB
 versions:
   - version: GreenIT
-    idRef: 0028
+    idRef: 28
   - version: 2.0.0
     idRef: '0005'
   - version: 3.0.0
     idRef: '0007'
   - version: 4.0.0
-    idRef: 0008
+    idRef: 8
   - version: 5.0.0
-    idRef: 0008
+    idRef: 8
 people: TBD
 responsible:
-  - responsible: src/content/personas/fr/designeuser.mdx
+  - responsible: src/content/personas/es/disenador.mdx
 lifecycle: 2-concept
 rgesn: NA
 environmental_impact: 3
@@ -36,22 +36,22 @@ validations:
 
 ## Descripción
 
-Los navegadores tienen una función de navegación rápida en el historial (botones Página anterior y Página siguiente), a menudo llamada *back-forward cache* o *bfcache*.
+Los navegadores tienen una función de navegación rápida en el historial (botones Página anterior y Página siguiente), a menudo llamada _back-forward cache_ o _bfcache_.
 
-Al contrario de la caché HTTP, que permite mantener en memoria las respuestas a las consultas realizadas previamente y entonces evitar generarlas varias veces inútilmente y acelerar la carga de páginas, la caché *bfcache* permite conservar en memoria una página entera.
-Sin embargo, dado que el uso de esta funcionalidad moviliza recursos de máquina adicionales del lado del usuario, hay que procurar aligerar al máximo las funcionalidades de las páginas almacenadas con el *bfcache*.
-Por otra parte, el uso de *bfcache* implica ciertas precauciones, especialmente cuando el tiempo de espera esta superado (*setTimeout*).
+Al contrario de la caché HTTP, que permite mantener en memoria las respuestas a las consultas realizadas previamente y entonces evitar generarlas varias veces inútilmente y acelerar la carga de páginas, la caché _bfcache_ permite conservar en memoria una página entera.
+Sin embargo, dado que el uso de esta funcionalidad moviliza recursos de máquina adicionales del lado del usuario, hay que procurar aligerar al máximo las funcionalidades de las páginas almacenadas con el _bfcache_.
+Por otra parte, el uso de _bfcache_ implica ciertas precauciones, especialmente cuando el tiempo de espera esta superado (_setTimeout_).
 
 ## Ejemplo
 
 Evitar:
 
-* las acciones cuando se sale de la página (eventos `unload` o `beforeunload`, preferir `pagehide` si es realmente necesario)
-* los enlaces que abran nuevas fichas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
-* dejar abiertas las conexiones (IndexedDB, `fetch()` o xmlhttprequest, Web Sockets, etc.) cuando el usuario sale de la página
+- las acciones cuando se sale de la página (eventos `unload` o `beforeunload`, preferir `pagehide` si es realmente necesario)
+- los enlaces que abran nuevas fichas/ventanas sin `rel="noopener"` o `rel="noreferrer"`
+- dejar abiertas las conexiones (IndexedDB, `fetch()` o xmlhttprequest, Web Sockets, etc.) cuando el usuario sale de la página
 
 Utilizar los eventos `pageshow` y/o `pagehide` para restablecer los elementos que lo requieran, por ejemplo, reactivar los botones de formulario que se desactivan durante el envío o eliminar información sensible (como contraseñas), o para cerrar/volver a abrir conexiones persistentes.
 
 ## Fuente
 
-* [https://web.dev/bfcache/](https://web.dev/bfcache/) (contenido con licencia CC BY 4.0 - *Back/forward cache* por Philip Walton)
+- [https://web.dev/bfcache/](https://web.dev/bfcache/) (contenido con licencia CC BY 4.0 - _Back/forward cache_ por Philip Walton)

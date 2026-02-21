@@ -4,6 +4,7 @@ import {
   warnField,
   defaultFields,
   onFichesBeforeSubmit,
+  warnOnMainMasterBranch,
 } from '../utils/commonFields';
 import {
   lifecycleOptions,
@@ -192,9 +193,7 @@ const fiches: Collection = {
     };
   },
   fields: [
-    // warnField(
-    //   "Pour voir les modifications, il faut sauvegarder pour déclencher un refresh.<br />Le nom de fichier de la fiche dépends des valeurs initiales #REF, Title et Language. Il ne changera plus automatiquement, il faut modifier manuellement le nom dans l'explorateur de fichier."
-    // ),
+    warnOnMainMasterBranch(),
     warnField(
       'Les élements marqués <b>A renseigner dans un second temps.</b> sont à compléter après la création de la fiche.',
       '_warn2'

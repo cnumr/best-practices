@@ -18,7 +18,8 @@ versions:
   - version: 5.0.0
     idRef: '0113'
 people: '-'
-responsible: []
+responsible:
+  - responsible: src/content/personas/en/system-administrator.mdx
 lifecycle: 6-support
 environmental_impact: 2
 priority_implementation: 2
@@ -29,9 +30,7 @@ saved_resources:
   - ram
   - storage
 validations:
-  - rule: >-
-      of options --skip-log-bin and --disable-log-bin not activated in cases
-      where binary logs are not useful
+  - rule: of options --skip-log-bin and --disable-log-bin not activated in cases where binary logs are not useful
     maxValue: '0'
 ---
 

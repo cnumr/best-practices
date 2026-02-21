@@ -1,6 +1,13 @@
+<p align="center">
+  <a href="https://collectif.greenit.fr/">
+    <img align="center" alt="CNUMR" src="./public/assets/logo-cnumr.png" width="160" />
+  </a>
+    <img align="center" alt="Association Green IT" src="./public/assets/logo-asso.png" width="200" />
+</p>
+
 # RWEB - 115 best practices of web Eco-Design
 
-## The framework 
+## The framework
 
 RWEB, also known as the "115 Best Practices for Web Ecodesign ," is a document that lists best practices to implement to reduce the environmental impacts associated with digital services implemented in the form of websites or web applications.
 
