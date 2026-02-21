@@ -1,0 +1,14 @@
+# Protéger le contenu spécifique au site lors des merges upstream
+src/content/** merge=ours
+public/img_fiches/** merge=ours
+
+# Protéger les fichiers TinaCMS générés (dépendent de TINA_PUBLIC_REF_NAME)
+tina/tina-lock.json merge=ours
+tina/__generated__/** merge=ours
+
+# Merge intelligent pour package.json (garde name/description local, prend dependencies upstream)
+package.json merge=package-json-merge
+
+# Protéger la documentation spécifique au site
+README.md merge=ours
+README.*.md merge=ours

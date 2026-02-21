@@ -1,0 +1,70 @@
+# Schema de validation pour les fiches RWP (WordPress)
+# environmental_impact et priority_implementation sont des strings (use-3-grades)
+# scope est requis
+allOf:
+  - $ref: ./common.schema.yaml
+  - properties:
+      refID:
+        type: string
+      refType:
+        type: string
+        description: Inutile
+      versions:
+        type: array
+        minItems: 1
+        properties:
+          version:
+            type: string
+          idRef:
+            type: string
+      people:
+        type: string
+        description: Inutile
+      responsible:
+        type: array
+        minItems: 1
+        items:
+          type: object
+          required:
+            - responsible
+          properties:
+            responsible:
+              type: string
+              minLength: 1
+              pattern: '^src/content/personas/'
+              description: 'Référence vers un persona (format: src/content/personas/{lang}/{nom-persona}.mdx)'
+      lifecycle:
+        type: string
+      environmental_impact:
+        type: string
+      priority_implementation:
+        type: string
+      scope:
+        type: array
+        minItems: 1
+      saved_resources:
+        type: array
+        minItems: 1
+      rgesn:
+        type: string
+      validations:
+        type: array
+        minItems: 1
+        properties:
+          rule:
+            type: string
+            minLength: 1
+          maxValue:
+            type: string
+            minLength: 1
+
+  - required:
+      - refID
+      - versions
+      - responsible
+      - lifecycle
+      - environmental_impact
+      - priority_implementation
+      - scope
+      - saved_resources
+      - validations

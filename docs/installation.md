@@ -24,16 +24,35 @@ order: 8
 
 ### Configuration de Vercel
 
-- `MONGODB_URI` : URI de la base de données MongoDB.
+Variables d'environnement requises :
+
+- `MONGODB_URI` : URI de la base de données MongoDB Atlas.
 - `GITHUB_PERSONAL_ACCESS_TOKEN` : Token GitHub pour accéder au dépôt.
-- `TINA_PUBLIC_REF_NAME` : Nom du type de référentiel géré par TinaCMS (cela active certaines features ou liste de valeurs) `RWEB`, `RWP`, `REF_HOME` (pour le moment).
+- `TINA_PUBLIC_REF_NAME` : Nom du référentiel (ex: `RWP`, `RWEB`, `REIPRO`, `RIA`). Active les features et valeurs spécifiques au référentiel dans TinaCMS.
+- `NEXT_PUBLIC_REF_NAME` : **Doit être identique à `TINA_PUBLIC_REF_NAME`**. Utilisé par Next.js au runtime.
 - `NEXT_PUBLIC_REPO_URL` : URL du dépôt GitHub.
-- `TINA_PUBLIC_IS_LOCAL` : `false`
-- `NEXTAUTH_SECRET` : Clé secrète pour NextAuth (run `openssl rand -hex 16` pour générer une clé).
+- `TINA_PUBLIC_IS_LOCAL` : `false` (pour la production sur Vercel).
+- `NEXTAUTH_SECRET` : Clé secrète pour NextAuth. Générer avec `openssl rand -hex 16`.
+- `SITE_URL` : URL complète du site en production (ex: `https://rwp.greenit.fr`). **Obligatoire** pour les images de partage social (OpenGraph/Twitter).
+- `PUBLIC_BASE` : (Optionnel) Chemin de base si le site est hébergé sur un sous-répertoire (ex: `/referentiel`).
+
+!!!warning Variables TINA_PUBLIC_REF_NAME et NEXT_PUBLIC_REF_NAME
+Ces deux variables **doivent avoir la même valeur** pour éviter les incohérences entre TinaCMS et Next.js.
+!!!
 
 ### Configuration de MongoDB.com (atlas)
 
-> Rien de spécifique, mails il faut bien activer Vercel comme intégration pour que les échanges entre Vercel et MongoDB.com (atlas) fonctionnent. https://vercel.com/<organisation|cnumr-greenit>/~/integrations/marketplace.
+!!!info Version de MongoDB
+Le projet utilise `mongodb` v7.0.0 en devDependencies, mais déclare `mongodb` ^4.12.1 en peerDependencies pour compatibilité avec TinaCMS. MongoDB Atlas est compatible avec les deux versions.
+!!!
+
+**Étapes de configuration :**
+
+1. Créer un cluster MongoDB Atlas (gratuit pour commencer)
+2. Configurer l'accès réseau (autoriser Vercel : `0.0.0.0/0`)
+3. Créer un utilisateur avec droits lecture/écriture
+4. Copier l'URI de connexion dans `MONGODB_URI` sur Vercel
+5. **Activer l'intégration Vercel** : https://vercel.com/cnumr-greenit/~/integrations/marketplace
 
 ### Configuration de GitHub
 

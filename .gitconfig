@@ -1,0 +1,6 @@
+[merge "ours"]
+    driver = true
+
+[merge "package-json-merge"]
+    name = Merge intelligent package.json
+    driver = scripts/merge-package-json.sh %O %A %B

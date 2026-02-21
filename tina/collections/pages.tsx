@@ -4,7 +4,7 @@ import {
   onPagesBeforeSubmit,
   templateCTAWithIcon,
   titleField,
-  warnField,
+  warnOnMainMasterBranch,
 } from '../utils/commonFields';
 import { tinaTableTemplate, type Collection } from 'tinacms';
 
@@ -26,9 +26,7 @@ const pages: Collection = {
     return { published: false };
   },
   fields: [
-    warnField(
-      'Pour voir les modifications, il faut sauvegarder pour déclencher un refresh.'
-    ),
+    warnOnMainMasterBranch(),
     // slugVisibleField,
     ...defaultFields,
     titleField('Corps de la fiche'),

@@ -11,8 +11,17 @@
 /.next/
 /out/
 
+# pagefind (generated at build time)
+/public/pagefind/
+
+# api data (generated at build time)
+/public/api-data/
+
 # production
 /build
+
+# retype (generated documentation build)
+docs/.retype/
 
 # misc
 .DS_Store
@@ -20,7 +29,11 @@
 .env.local
 .idea
 
+# claude code
+.claude/settings.local.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+tsconfig.tsbuildinfo

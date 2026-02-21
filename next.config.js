@@ -1,11 +1,5 @@
-const createNextPluginPreval = require('next-plugin-preval/config');
-const withNextPluginPreval = createNextPluginPreval();
-module.exports = withNextPluginPreval({
+module.exports = {
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
   webpack(config) {
@@ -14,19 +8,12 @@ module.exports = withNextPluginPreval({
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
     });
-
     return config;
   },
   async rewrites() {
     return [
-      {
-        source: '/',
-        destination: '/home',
-      },
-      {
-        source: '/admin',
-        destination: '/admin/index.html',
-      },
+      { source: '/', destination: '/home' },
+      { source: '/admin', destination: '/admin/index.html' },
     ];
   },
-});
+};

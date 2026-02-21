@@ -2,9 +2,9 @@ import { imageBlock } from '../utils/templates';
 import { slugify } from '../../src/js/utils.js';
 import {
   titleField,
-  warnField,
   defaultFields,
   onPersonasBeforeSubmit,
+  warnOnMainMasterBranch,
 } from '../utils/commonFields';
 import { tinaTableTemplate, type Collection } from 'tinacms';
 
@@ -32,9 +32,7 @@ const personas: Collection = {
     return { refType: TINA_PUBLIC_REF_NAME_PROCESS, published: false };
   },
   fields: [
-    warnField(
-      'Pour voir les modifications, il faut sauvegarder pour déclencher un refresh.'
-    ),
+    warnOnMainMasterBranch(),
     // slugHiddenField,
     {
       type: 'string',
