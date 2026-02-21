@@ -1,5 +1,11 @@
 # gen-referentiel-core
 
+## 0.6.2
+
+### Patch Changes
+
+- 3c9f2c1: fix: corrige le placement du commentaire @ts-ignore dans TableView
+
 ## 0.6.1
 
 ### Patch Changes

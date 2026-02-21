@@ -1,8 +1,5 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:mdx/recommended"],
-  "settings": {
-    "mdx/code-blocks": true,
-  },
+  "extends": "next/core-web-vitals",
   "rules": {
     "react-hooks/rules-of-hooks": "warn",
   },
