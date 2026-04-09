@@ -1,0 +1,12 @@
+﻿#  - Générateur de référentiels @ GreenIT
+
+> Les référentiels Green IT sont hébergés depuis 2021 sur GitHub pour laisser l'accès libre à nos travaux. GitHub, basé sur Git ajoute la possibilité de
+
+- [API REST](https://cnumr.github.io/gen-referentiel-core/api.md): L'API REST permet d'accéder aux fiches du référentiel de manière programmatique.
+- [GenRefs, le générateur de site référentiels par Green IT.](https://cnumr.github.io/gen-referentiel-core/readme.md): GenRefs, le générateur de site référentiels par Green IT.
+- [Comment contribuer](https://cnumr.github.io/gen-referentiel-core/contribution.md): Il faut 1 compte sur le CMS, et son URL. À demander au responsable.
+- [Configuration d'un Réferentiel](https://cnumr.github.io/gen-referentiel-core/configuration.md): Tous les référentiels utilisent la même base technique pour simplifier et uniformiser la contribution/consultation/développement.
+- [Développer et faire évoluer](https://cnumr.github.io/gen-referentiel-core/developpement.md): TinaCMS 2.10.1
+- [Comment fonctionne le projet ?](https://cnumr.github.io/gen-referentiel-core/installation.md): Next.js
+- [Synchronisation Upstream](https://cnumr.github.io/gen-referentiel-core/synchronisation.md): Ce projet utilise une architecture multi-sites basée sur un repo source partagé (gen-referentiel-core) qui alimente plusieurs sites spécialisés.
+- [Informations](https://cnumr.github.io/gen-referentiel-core/informations.md): Design et UX :

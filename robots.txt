@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cnumr.github.io/gen-referentiel-core/sitemap.xml.gz
+Sitemap: https://cnumr.github.io/gen-referentiel-core/sitemap.xml
