@@ -333,6 +333,10 @@ const fiches: Collection = {
           type: 'string',
           name: 'maxValue',
           label: '...est inférieur ou égal à',
+          ui: {
+            parse: (val?: string) => (val != null ? String(val) : val),
+            format: (val?: string) => (val != null ? String(val) : ''),
+          },
         },
       ],
     },
