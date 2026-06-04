@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/gen-referentiel-core">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.832519590830">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833893498498">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>D&#233;velopper et faire &#233;voluer - G&#233;n&#233;rateur de r&#233;f&#233;rentiels @ GreenIT</title>
@@ -39,12 +39,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/greenit_icone_intro-alt.png" />
-    <link href="../resources/css/retype.css?v=4.5.3.832519590830" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.833893498498" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.832519590830" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.832519590830" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.5.3.832519590830" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.833893498498" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.833893498498" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.833893498498" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -695,6 +695,11 @@ rm -rf node_modules &amp;&amp; rm pnpm-lock.yaml &amp;&amp; pnpm install</code><
 </doc-codeblock></div>
 <p>Cela applique les changesets, met à jour la version dans <code translate="no" v-pre>package.json</code>, génère le <code translate="no" v-pre>CHANGELOG.md</code> et commit.</p>
 <p><strong>Types de versions :</strong></p>
+<retype-table copy-text="| Type    | Quand l'utiliser                            |
+| ------- | ------------------------------------------- |
+| `patch` | Bug fixes, corrections mineures             |
+| `minor` | Nouvelles fonctionnalités rétro-compatibles |
+| `major` | Breaking changes, modifications majeures    |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -719,6 +724,7 @@ rm -rf node_modules &amp;&amp; rm pnpm-lock.yaml &amp;&amp; pnpm install</code><
 </tbody>
 </table>
 </div>
+</retype-table>
 <p><strong>Vérifier la synchronisation :</strong></p>
 <p>Comparer la version dans <code translate="no" v-pre>package.json</code> entre <code translate="no" v-pre>gen-referentiel-core</code> et les projets dérivés permet de savoir s&#x27;ils sont synchronisés.</p>
 <h3 id="protection-de-la-branche-main">Protection de la branche main</h3>

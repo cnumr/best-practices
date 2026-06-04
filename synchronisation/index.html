@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/gen-referentiel-core">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.832519590830">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833893498498">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Synchronisation Upstream - G&#233;n&#233;rateur de r&#233;f&#233;rentiels @ GreenIT</title>
@@ -39,12 +39,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/greenit_icone_intro-alt.png" />
-    <link href="../resources/css/retype.css?v=4.5.3.832519590830" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.833893498498" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.832519590830" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.832519590830" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.5.3.832519590830" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.833893498498" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.833893498498" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.833893498498" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -469,6 +469,20 @@ git merge --abort</code></pre>
 </doc-codeblock></div>
 <hr>
 <h2 id="fichiers--partagés-vs-protégés">Fichiers : partagés vs protégés</h2>
+<retype-table copy-text="| Fichier/Dossier | Partagé (upstream) | Protégé (local) | Raison |
+|-----------------|:------------------:|:---------------:|--------|
+| `app/` | ✅ | | Code |
+| `components/` | ✅ | | Code |
+| `tina/config.tsx` | ✅ | | Config TinaCMS |
+| `tina/collections/` | ✅ | | Schéma (dynamique via env) |
+| `tina/tina-lock.json` | | ✅ | Généré selon `TINA_PUBLIC_REF_NAME` |
+| `tina/__generated__/` | | ✅ | Généré selon `TINA_PUBLIC_REF_NAME` |
+| `utils/` | ✅ | | Code |
+| `package.json` | ⚡ | ⚡ | Merge intelligent |
+| `README.md` | | ✅ | Doc spécifique au site |
+| `src/content/` | | ✅ | Contenu spécifique |
+| `.env` | | (gitignore) | Pas dans git |
+| `.env.example` | ✅ | | Template partagé |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -555,6 +569,7 @@ git merge --abort</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <p><strong>Légende :</strong></p>
 <ul>
 <li><span class="docs-emoji">&#x2705;</span> Synchronisé depuis upstream</li>
@@ -675,6 +690,13 @@ pnpm build-local  # Vérifier que le build fonctionne</code></pre>
 </div>
 <hr>
 <h2 id="différence-avec-un-vrai-fork-github">Différence avec un &quot;vrai&quot; fork GitHub</h2>
+<retype-table copy-text="| Aspect | Fork GitHub | Upstream Sync (cette approche) |
+|--------|-------------|-------------------------------|
+| Lien dans l'interface GitHub | &quot;forked from cnumr/core&quot; | Aucun lien visible |
+| Fonctionnement git | Identique | Identique |
+| Commandes de sync | `git fetch upstream &amp;&amp; git merge` | `git fetch upstream &amp;&amp; git merge` |
+| Pull Requests vers upstream | Via GitHub UI | Via GitHub UI (mais moins intuitif) |
+| Repos existants | Doivent être recréés | Peuvent être utilisés tels quels ✅ |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -713,6 +735,7 @@ pnpm build-local  # Vérifier que le build fonctionne</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
 <ul>
