@@ -48,8 +48,20 @@ function generateFicheUrl(lang, slug) {
   return `/${lang}/fiches/${slug}`;
 }
 
+// Vérifie si la feature API est activée pour ce référentiel
+function isApiEnabled() {
+  const currentRef = process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
+  const refWithApiDisabled = ['REF_HOME'];
+  return !refWithApiDisabled.includes(currentRef);
+}
+
 // Fonction principale
 function main() {
+  if (!isApiEnabled()) {
+    console.log(`ℹ️  API désactivée pour ${process.env.NEXT_PUBLIC_REF_NAME || 'RWEB'}, génération ignorée.`);
+    return;
+  }
+
   console.log('🚀 Génération des données API...\n');
 
   const fichesDir = path.join(projectRoot, 'src/content/fiches');

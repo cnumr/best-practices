@@ -1,0 +1,4 @@
+overrides:
+  nanoid: '^3.3.8'
+  react-dnd: '14.0.5'
+  react-dnd-html5-backend: '14.1.0'

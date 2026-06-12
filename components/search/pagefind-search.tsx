@@ -17,6 +17,16 @@ interface PagefindSearchProps {
   lang?: keyof typeof ui;
 }
 
+function highlightText(text: string, query: string): string {
+  const safe = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  if (!query.trim()) return safe;
+  const escaped = query.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return safe.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>');
+}
+
 export function PagefindSearch({ lang = 'fr' }: PagefindSearchProps) {
   const [pagefind, setPagefind] = useState<any>(null);
   const [pagefindReady, setPagefindReady] = useState(false);
@@ -28,6 +38,7 @@ export function PagefindSearch({ lang = 'fr' }: PagefindSearchProps) {
   useEffect(() => {
     const loadPagefind = async () => {
       try {
+        // prettier-ignore
         // @ts-ignore - Pagefind is generated at build time
         const pf = await import(/* webpackIgnore: true */ '/pagefind/pagefind.js');
         await pf.options({ baseUrl: '/' });
@@ -80,7 +91,9 @@ export function PagefindSearch({ lang = 'fr' }: PagefindSearchProps) {
         className="w-full"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder={pagefindReady || pagefindError ? 'Rechercher...' : 'Chargement...'}
+        placeholder={
+          pagefindReady || pagefindError ? 'Rechercher...' : 'Chargement...'
+        }
       />
 
       {pagefindError && query && (
@@ -96,18 +109,31 @@ export function PagefindSearch({ lang = 'fr' }: PagefindSearchProps) {
       {pagefindReady && query && results.length > 0 && (
         <div className="absolute z-[15] max-h-[70vh] w-full overflow-auto bg-white p-4 shadow lg:max-w-5xl lg:p-8">
           <div className="text-s pb-4 font-bold">
-            {results.length} résultat{results.length > 1 ? 's' : ''} pour &quot;{query}&quot;
+            {results.length} résultat{results.length > 1 ? 's' : ''} pour &quot;
+            {query}&quot;
           </div>
 
           <ul>
             {results.map((result, idx) => (
-              <li key={idx} className="mb-4">
+              <li
+                key={idx}
+                className="mb-4">
                 <Link
                   href={result.url.replace('.html', '')}
                   onClick={() => setQuery('')}
                   className="font-medium hover:underline">
-                  {result.meta?.refid && `[${result.meta.refid}] `}
-                  {result.meta?.title || 'Sans titre'}
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        (result.meta?.refid
+                          ? `[${highlightText(result.meta.refid, query)}] `
+                          : '') +
+                        highlightText(
+                          result.meta?.title || 'Sans titre',
+                          query
+                        ),
+                    }}
+                  />
                 </Link>
                 {result.excerpt && (
                   <p
@@ -123,7 +149,9 @@ export function PagefindSearch({ lang = 'fr' }: PagefindSearchProps) {
 
       {pagefindReady && query && !loading && results.length === 0 && (
         <div className="absolute z-[15] w-full bg-white p-4 shadow lg:max-w-5xl">
-          <p className="text-sm text-gray-500">Aucun résultat pour &quot;{query}&quot;</p>
+          <p className="text-sm text-gray-500">
+            Aucun résultat pour &quot;{query}&quot;
+          </p>
         </div>
       )}
     </div>

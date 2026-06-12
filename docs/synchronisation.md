@@ -67,10 +67,15 @@ cd best-practices-wordpress  # ou rweb, reipro, etc.
 # Ajouter le remote upstream
 git remote add upstream git@github.com:cnumr/gen-referentiel-core.git
 
+# Désactiver le push (fetch uniquement) pour éviter les pushs accidentels vers upstream
+git remote set-url --push upstream no_push
+
 # Vérifier les remotes
 git remote -v
-# origin    git@github.com:cnumr/best-practices-wordpress.git (fetch/push)
-# upstream  git@github.com:cnumr/gen-referentiel-core.git (fetch/push)
+# origin    git@github.com:cnumr/best-practices-wordpress.git (fetch)
+# origin    git@github.com:cnumr/best-practices-wordpress.git (push)
+# upstream  git@github.com:cnumr/gen-referentiel-core.git (fetch)
+# upstream  no_push (push)
 ```
 
 ### 2. Configurer les drivers de merge

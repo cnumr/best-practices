@@ -1,6 +1,7 @@
 import { MentionsLegalesPage } from '../../../components/pages/mentions-legales-page';
 import { Metadata } from 'next';
 import { client } from '../../../tina/__generated__/databaseClient';
+import { notFound } from 'next/navigation';
 import { ui } from '../../../i18n/ui';
 import { useTranslations } from '../../../i18n/utils';
 
@@ -37,9 +38,13 @@ export async function generateMetadata({
 
 export default async function Page({ params }) {
   const { lang } = params;
-  const res = await client.queries.mentionsLegales({
-    relativePath: `${lang}.mdx`,
-  });
+
+  const res = await client.queries
+    .mentionsLegales({ relativePath: `${lang}.mdx` })
+    .catch(() => null);
+  if (!res?.data?.mentionsLegales) {
+    notFound();
+  }
 
   return (
     <MentionsLegalesPage
