@@ -97,6 +97,11 @@ export const ui = {
     'lexique.loading': 'Cargando...',
     'lexique.not-found': 'Término "{term}" no encontrado en el glosario',
 
+    // app/[lang]/not-found.tsx
+    'not-found.title': 'Página no encontrada',
+    'not-found.description':
+      'El contenido de esta página no está disponible en este idioma.',
+
     // src/components/CardView.astro
     Fort: 'Fuerte',
     Moyen: 'Promedio',
@@ -279,6 +284,11 @@ export const ui = {
     'lexique.aria-label-tooltip': 'Definition of {term}',
     'lexique.loading': 'Loading...',
     'lexique.not-found': 'Term "{term}" not found in the glossary',
+
+    // app/[lang]/not-found.tsx
+    'not-found.title': 'Page not found',
+    'not-found.description':
+      'The content of this page is not available in this language.',
 
     // src/components/CardView.astro
     Fort: 'Strong',
@@ -464,6 +474,11 @@ export const ui = {
     'lexique.aria-label-tooltip': 'Définition de {term}',
     'lexique.loading': 'Chargement...',
     'lexique.not-found': 'Terme "{term}" non trouvé dans le lexique',
+
+    // app/[lang]/not-found.tsx
+    'not-found.title': 'Page non trouvée',
+    'not-found.description':
+      "Le contenu de cette page n'est pas disponible dans cette langue.",
 
     // src/components/CardView.astro
     Fort: 'Fort',

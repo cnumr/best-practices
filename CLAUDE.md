@@ -2,6 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Methodologie
+
+- **Nouvelle feature** → Brainstorming d'abord (questions une par une, 2-3 approches, spec validee) · jamais coder sans avoir concu et valide
+- **Chaque tache** → APEX : **A**nalyze (lire le code, comprendre le contexte) · **P**lan (presenter et attendre validation) · **E**xecute (implementer apres accord) · e**X**amine (tester, verifier les regressions)
+
+### Commandes de verification (eXamine)
+
+```bash
+pnpm check-types  # TypeScript type checking
+pnpm lint         # ESLint + MDX linting
+pnpm build-local  # Build local sans MongoDB
+```
+
 ## Méthodologie APEX
 
 Appliquer systématiquement la méthode **APEX** pour chaque tâche :

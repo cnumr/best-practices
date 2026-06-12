@@ -4,6 +4,7 @@ import { LanguagePicker } from './language-picker';
 import Licence from './licence';
 import Link from 'next/link';
 import { getRefConfig } from '../referentiel-config';
+import pckg from '../package.json';
 import { ui } from '../i18n/ui';
 import { useTranslations } from '../i18n/utils';
 interface FooterProps {
@@ -42,13 +43,15 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
               Admin
             </Link>
           </li>
-          <li>
-            <Link
-              href="/swagger-ui.html"
-              title="API Documentation">
-              API
-            </Link>
-          </li>
+          {getRefConfig().featuresEnabled.api && (
+            <li>
+              <Link
+                href="/swagger-ui.html"
+                title="API Documentation">
+                API
+              </Link>
+            </li>
+          )}
           <li>
             <LanguagePicker style="light" />
           </li>
@@ -61,7 +64,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lang = 'fr' }) => {
               hour: '2-digit',
               minute: '2-digit',
             }
-          )}`}
+          )} | core-version: ${pckg.version}`}
         </div>
       </div>
       <div className="flex flex-col items-center gap-0 lg:items-end">

@@ -25,7 +25,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 
+// Vérifie si la feature API est activée pour ce référentiel
+function isApiEnabled() {
+  const currentRef = process.env.NEXT_PUBLIC_REF_NAME || 'RWEB';
+  const refWithApiDisabled = ['REF_HOME'];
+  return !refWithApiDisabled.includes(currentRef);
+}
+
 function main() {
+  if (!isApiEnabled()) {
+    console.log(`ℹ️  API désactivée pour ${process.env.NEXT_PUBLIC_REF_NAME || 'RWEB'}, génération ignorée.`);
+    return;
+  }
+
   console.log('🚀 Génération de la spec OpenAPI...\n');
 
   const outputDir = path.join(projectRoot, 'public/api-data');

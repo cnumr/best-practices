@@ -31,6 +31,7 @@ docs/.retype/
 
 # claude code
 .claude/settings.local.json
+.playwright-mcp
 
 # debug
 npm-debug.log*
