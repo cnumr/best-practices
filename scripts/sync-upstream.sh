@@ -59,6 +59,12 @@ git reset HEAD -- $PROTECTED_PATHS 2>/dev/null || true
 git checkout HEAD -- $PROTECTED_PATHS 2>/dev/null || true
 git clean -fd -- $PROTECTED_PATHS 2>/dev/null || true
 
+# Restaurer uniquement le champ name du package.json local (version est celle d'upstream)
+echo -e "${YELLOW}Restauration du champ name dans package.json...${NC}"
+LOCAL_NAME=$(git show HEAD:package.json | node -e "let d=''; process.stdin.resume().on('data', c => d+=c).on('end', () => console.log(JSON.parse(d).name));")
+node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('package.json','utf8')); p.name='$LOCAL_NAME'; fs.writeFileSync('package.json', JSON.stringify(p, null, 2)+'\n');"
+git add package.json
+
 # Commit du merge
 echo -e "${YELLOW}Commit du merge...${NC}"
 git commit -m "chore: sync upstream (contenu local préservé)" || {
