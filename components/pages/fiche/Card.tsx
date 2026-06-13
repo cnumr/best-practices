@@ -10,12 +10,14 @@ import {
 import { isStringInUi, useTranslations } from '../../../i18n/utils';
 
 import { FunctionComponent } from 'react';
+import Link from 'next/link';
 import { slugify } from '../../../src/js/utils';
 import { ui } from '../../../i18n/ui';
 
 interface FicheCardProps {
   item: FichesConnectionEdges;
   lang?: keyof typeof ui;
+  href: string;
 }
 
 const PUBLIC_BASE = process.env.PUBLIC_BASE ? process.env.PUBLIC_BASE : '';
@@ -26,6 +28,7 @@ const REF_NAME = process.env.NEXT_PUBLIC_REF_NAME
 export const FicheCard: FunctionComponent<FicheCardProps> = ({
   item,
   lang = 'fr',
+  href,
 }) => {
   const fiche: any = item.node;
 
@@ -168,11 +171,16 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
           {REF_NAME}
           {fiche.refID}
         </span>
-        <span className="flex-auto">{fiche.title}</span>
+        <Link
+          href={href}
+          className="relative z-10 flex-auto no-underline"
+          title={`Voir la fiche : ${fiche.title}`}>
+          {fiche.title}
+        </Link>
         <button
           role="img"
           title={getMetas()}
-          className="size-6 flex-none text-primary">
+          className="relative z-10 size-6 flex-none text-primary">
           <svg
             stroke="currentColor"
             fill="none"
@@ -182,7 +190,7 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
             height="200px"
             width="200px"
             xmlns="http://www.w3.org/2000/svg"
-            className="size-6">
+            className="pointer-events-none size-6">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

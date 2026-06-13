@@ -30,21 +30,35 @@ const CardView: FunctionComponent<CardViewProps> = ({
     layoutClass = 'h-full flex-col divide-y-2 divide-primary';
   }
 
+  const href = `${type === CardType.FICHES ? 'fiches/' : ''}${entry.node._sys.filename}`;
+
   return (
-    <li className="tohide box interactive border-neutral-transparent py-2 transition-all md:py-6">
+    <li className="tohide box interactive relative border-neutral-transparent py-2 transition-all md:py-6">
+      {/* Overlay pour étendre la surface de clic à toute la carte — aria-hidden et tabIndex=-1 pour l'a11y */}
       <Link
-        href={`${type === CardType.FICHES && 'fiches/'}${entry.node._sys.filename}`}
-        className={`flex no-underline h-full ${layoutClass}`}
-        title={`Voir la fiche : ${entry.node.title}`}>
+        href={href}
+        className="absolute inset-0 z-0"
+        aria-hidden="true"
+        tabIndex={-1}
+      />
+      <div className={`flex h-full ${layoutClass}`}>
         {type === CardType.FICHES ? (
           <FicheCard
             item={entry}
             lang={lang}
+            href={href}
           />
         ) : (
-          <h3 className="mt-0">{entry.node.title}</h3>
+          <h3 className="mt-0">
+            <Link
+              href={href}
+              className="relative z-10 no-underline"
+              title={`Voir la fiche : ${entry.node.title}`}>
+              {entry.node.title}
+            </Link>
+          </h3>
         )}
-      </Link>
+      </div>
     </li>
   );
 };
