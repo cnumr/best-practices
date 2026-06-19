@@ -1,5 +1,28 @@
 # gen-referentiel-core
 
+## 0.8.2
+
+### Patch Changes
+
+- 4e7e24b: Corrige l'erreur de build avec isomorphic-dompurify en ajoutant jsdom aux externals webpack côté serveur. jsdom lisait `default-stylesheet.css` via `__dirname` qui pointait vers `.next/server/` quand bundlé par webpack au lieu du répertoire du package.
+
+## 0.8.1
+
+### Patch Changes
+
+- 1eac934: fix: améliore l'accessibilité des cards et corrige le tooltip du bouton info
+
+  - Déplace le lien de la card entière vers le titre uniquement (card-view.tsx) pour respecter les bonnes pratiques a11y (un lien ne doit pas englober toute une card interactive)
+  - Ajoute un overlay invisible (`aria-hidden`, `tabIndex=-1`) pour maintenir la surface de clic sur toute la card
+  - Déplace le lien sur le titre dans FicheCard (Card.tsx) avec `z-10` pour rester au-dessus de l'overlay
+  - Corrige l'affichage du tooltip natif du bouton (i) en ajoutant `pointer-events-none` sur le SVG enfant, permettant au navigateur de cibler le `<button>` et d'afficher son attribut `title`
+
+- e19a972: fix: corrige l'affichage des cards, le rendu HTML dans MDX et le chargement du .env dans build-local
+
+  - **Card (#53)** : supprime la fonction `cleanImpact` (regexp cassée sur des clés de traduction) et conditionne l'affichage de `priority_implementation` / `environmental_impact` aux feature flags du référentiel actif ; corrige le séparateur `: ` pour MESURE_ON_5
+  - **MDX HTML (#54)** : ajoute les handlers `html` et `html_inline` dans `getMdxComponents` pour rendre le HTML brut inséré dans les fiches ; sanitisation via `isomorphic-dompurify` avec liste blanche de balises courantes
+  - **build-local (#55)** : charge les variables du fichier `.env` (pattern `set -a / source / set +a`) avant le build, afin que `NEXT_PUBLIC_REF_NAME` et les autres variables soient correctement transmises
+
 ## 0.8.0
 
 ### Minor Changes

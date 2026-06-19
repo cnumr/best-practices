@@ -39,23 +39,6 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
 
   const t = useTranslations(lang);
 
-  function cleanImpact(meta) {
-    // TODO: replace with a proper translation
-    let regexp: RegExp;
-    switch (lang) {
-      case 'es':
-        regexp = /t("Fort")|t("Moyen")|t("Faible")/gi;
-        break;
-      case 'en':
-        regexp = /t("High")|t("Medium")|t("Low")/gi;
-        break;
-      default:
-        regexp = /t("Fuerte")|t("Medio")|t("Débil")/gi;
-        break;
-    }
-    return fiche[`${meta}`]?.replace(regexp, ' ') || 'TBD';
-  }
-
   const getDataFilters = () => {
     let filters = {};
     if (getRefConfig().featuresEnabled.lifecycle) {
@@ -129,9 +112,7 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
     }
     if (getRefConfig().featuresEnabled.environmental_impact === MESURE_ON_3) {
       metas.push(
-        t('Impact environnemental') +
-          ': ' +
-          t(cleanImpact('environmental_impact'))
+        t('Impact environnemental') + ': ' + t(fiche.environmental_impact)
       );
     }
     if (getRefConfig().featuresEnabled.lifecycle) {
@@ -200,37 +181,43 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
       </h2>
       <div className="flex w-full flex-col gap-2">
         <div className="flex flex-row items-center justify-start gap-2">
-          {typeof fiche[`priority_implementation`] === 'number' ? (
+          {getRefConfig().featuresEnabled.priority_implementation ===
+            MESURE_ON_5 && (
             <span
               title={t("Priorité d'implémentation")}
               aria-label={`${t("Priorité d'implémentation")} : ${
-                fiche[`priority_implementation`]
+                fiche.priority_implementation
               }`}
               role="img"
               className="text-base">
               {t("Priorité d'implémentation") +
-                ' ' +
-                fiche[`priority_implementation`]}
-            </span>
-          ) : (
-            <span
-              title={t("Priorité d'implémentation")}
-              aria-label={`${t("Priorité d'implémentation")} : ${
-                fiche[`priority_implementation`]
-              }`}
-              role="img">
-              {t(cleanImpact('priority_implementation'))}
+                ': ' +
+                fiche.priority_implementation}
             </span>
           )}
-          <span>|</span>
+          {getRefConfig().featuresEnabled.priority_implementation ===
+            MESURE_ON_3 && (
+            <span
+              title={t("Priorité d'implémentation")}
+              aria-label={`${t("Priorité d'implémentation")} : ${t(
+                fiche.priority_implementation
+              )}`}
+              role="img">
+              {t(fiche.priority_implementation)}
+            </span>
+          )}
+          {getRefConfig().featuresEnabled.priority_implementation &&
+            getRefConfig().featuresEnabled.environmental_impact && (
+              <span aria-hidden="true">|</span>
+            )}
           {getRefConfig().featuresEnabled.environmental_impact ===
             MESURE_ON_3 && (
             <span
               title={t('Impact environnemental')}
-              aria-label={`${t('Impact environnemental')} : ${
-                fiche[`environmental_impact`]
-              }`}>
-              {t(cleanImpact('environmental_impact'))}
+              aria-label={`${t('Impact environnemental')} : ${t(
+                fiche.environmental_impact
+              )}`}>
+              {t(fiche.environmental_impact)}
             </span>
           )}
           {getRefConfig().featuresEnabled.environmental_impact ===
@@ -238,12 +225,10 @@ export const FicheCard: FunctionComponent<FicheCardProps> = ({
             <span
               title={t('Impact environnemental')}
               aria-label={`${t('Impact environnemental')} : ${t(
-                fiche[`environmental_impact`]
+                fiche.environmental_impact
               )}`}
               className="text-base">
-              {`${t('Impact environnemental')}: ${
-                fiche[`environmental_impact`]
-              }`}
+              {`${t('Impact environnemental')}: ${fiche.environmental_impact}`}
             </span>
           )}
         </div>

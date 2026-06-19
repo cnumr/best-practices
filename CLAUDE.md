@@ -19,21 +19,24 @@ pnpm build-local  # Build local sans MongoDB
 
 Appliquer systématiquement la méthode **APEX** pour chaque tâche :
 
-| Phase | Action |
-|-------|--------|
+| Phase       | Action                                                                    |
+| ----------- | ------------------------------------------------------------------------- |
 | **A**nalyze | Lire/explorer le code concerné, comprendre le contexte et les contraintes |
-| **P**lan | Présenter le plan d'action et attendre validation avant d'implémenter |
-| **E**xecute | Implémenter la solution uniquement après accord |
-| e**X**amine | Tester/valider le résultat, vérifier qu'il n'y a pas de régression |
+| **P**lan    | Présenter le plan d'action et attendre validation avant d'implémenter     |
+| **E**xecute | Implémenter la solution uniquement après accord                           |
+| e**X**amine | Tester/valider le résultat, vérifier qu'il n'y a pas de régression        |
 
 **Règles :**
+
 - Ne jamais coder sans avoir d'abord analysé et planifié
 - Toujours attendre la validation du plan avant d'exécuter
 - Toujours vérifier le résultat après implémentation
 - **Ne JAMAIS faire de commit sans demande explicite de l'utilisateur**
 - **Quand l'utilisateur demande un commit, toujours demander s'il veut aussi créer un changeset et une PR**
+- **Quand l'utilisateur demande une PR, vérifier si des fichiers `.changeset/*.md` existent (hors `README.md`) — si oui, lancer `pnpm release` avant de créer la PR**
 
 **Commandes de validation (eXamine) :**
+
 ```bash
 pnpm check-types  # Vérifier les types TypeScript
 pnpm lint         # Vérifier le linting
@@ -45,6 +48,7 @@ pnpm build-local  # Vérifier que le build fonctionne
 This is a **generic multi-referential platform** for eco-design best practices, maintained by the Collectif Green IT (CNUMR). It's a Next.js web application that uses TinaCMS as a headless CMS to manage eco-design best practices content in MDX format.
 
 The codebase serves as a shared core (`gen-referentiel-core`) that can be configured for different referentials (RWP, RWEB, REIPRO, RIA, etc.) via environment variables:
+
 - `NEXT_PUBLIC_REF_NAME` - Used by Next.js at runtime
 - `TINA_PUBLIC_REF_NAME` - Used by TinaCMS at build time
 
@@ -110,8 +114,8 @@ pnpm doc            # Start documentation server
 - **fiches/**: Best practice sheets organized by language (fr/, en/, es/)
   - Files follow naming: `RWP_<category>.<number>-<slug>.mdx`
   - Categories: 1 (Installation), 2 (Fonctionnalités), 3 (Design), 4 (Code), 5 (Médias), 6 (Mesure), 7 (Serveur), 8 (Maintenance)
-- **lexique/**: Glossary entries by language *(optionnel)*
-- **personas/**: User personas by language *(optionnel)*
+- **lexique/**: Glossary entries by language _(optionnel)_
+- **personas/**: User personas by language _(optionnel)_
 - **home/**: Homepage content by language
 - **mentionsLegales/**: Legal notices by language
 
@@ -120,6 +124,7 @@ pnpm doc            # Start documentation server
 ### App Structure (`app/`)
 
 Uses Next.js App Router with dynamic `[lang]` segment for i18n:
+
 - `app/[lang]/page.tsx` - Homepage
 - `app/[lang]/fiches/` - Best practices listing and detail pages
 - `app/[lang]/lexique/` - Glossary
@@ -134,6 +139,7 @@ Uses Next.js App Router with dynamic `[lang]` segment for i18n:
 ### Multi-Referential Configuration
 
 The codebase supports multiple referentials via `referentiel-config.ts`:
+
 - **RWEB** (Web eco-design) - Default referential if not configured
 - **RWP** (WordPress eco-design)
 - **REIPRO** (Software integration - Intégration de progiciels)
@@ -152,16 +158,17 @@ The active referential is set via `NEXT_PUBLIC_REF_NAME` and `TINA_PUBLIC_REF_NA
 
 Les schémas YAML valident le frontmatter des fichiers MDX via `pnpm lint:md`. Le schéma utilisé dépend de `NEXT_PUBLIC_REF_NAME` :
 
-| Schéma | Référentiels | Particularités |
-|--------|--------------|----------------|
-| `fiche.schema.yaml` | RWEB, REIPRO, RIA (défaut) | `environmental_impact`/`priority_implementation` = number, `scope` optionnel |
-| `fiche.schema.rwp.yaml` | RWP | `environmental_impact`/`priority_implementation` = string, `scope` requis |
+| Schéma                  | Référentiels               | Particularités                                                               |
+| ----------------------- | -------------------------- | ---------------------------------------------------------------------------- |
+| `fiche.schema.yaml`     | RWEB, REIPRO, RIA (défaut) | `environmental_impact`/`priority_implementation` = number, `scope` optionnel |
+| `fiche.schema.rwp.yaml` | RWP                        | `environmental_impact`/`priority_implementation` = string, `scope` requis    |
 
 La sélection est faite dynamiquement dans `.remarkrc.mjs` selon la variable d'environnement.
 
 ## Content Editing
 
 Content can be edited:
+
 1. **Locally**: Direct MDX file editing in `src/content/`
 2. **Via TinaCMS Admin**: Access at `/admin` when running dev server
 
@@ -172,9 +179,11 @@ Le projet utilise [Changesets](https://github.com/changesets/changesets) pour g�
 ### Workflow
 
 1. **Après un changement significatif**, créer un changeset :
+
    ```bash
    pnpm changeset
    ```
+
    Cela crée un fichier dans `.changeset/` décrivant le changement (patch/minor/major).
 
 2. **Pour publier une nouvelle version** :
@@ -185,11 +194,11 @@ Le projet utilise [Changesets](https://github.com/changesets/changesets) pour g�
 
 ### Types de versions
 
-| Type | Quand l'utiliser |
-|------|------------------|
-| `patch` | Bug fixes, corrections mineures |
+| Type    | Quand l'utiliser                            |
+| ------- | ------------------------------------------- |
+| `patch` | Bug fixes, corrections mineures             |
 | `minor` | Nouvelles fonctionnalités rétro-compatibles |
-| `major` | Breaking changes, modifications majeures |
+| `major` | Breaking changes, modifications majeures    |
 
 ### Vérifier la synchronisation
 
@@ -202,12 +211,14 @@ Format: `<type>(<scope>): <description>`
 Types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `chore`, `ci`, `build`, `revert`
 
 Rules:
+
 - Write in French
 - Use imperative present tense (ajoute, corrige, améliore)
 - Max 200 characters
 - No final period
 
 Examples:
+
 - `feat: ajoute authentification OAuth2`
 - `fix(auth): corrige la validation du token JWT`
 - `docs: met à jour la documentation API`
@@ -241,5 +252,6 @@ Examples:
 **Après modification** : Régénérer le lockfile avec `trash node_modules pnpm-lock.yaml && pnpm install`
 
 **Références** :
+
 - https://github.com/tinacms/tina-self-hosted-demo/issues/131
 - https://github.com/udecode/plate/issues/1609
