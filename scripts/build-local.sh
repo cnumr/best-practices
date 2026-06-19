@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+# Charge et exporte les variables du fichier .env si présent (surcharge les variables existantes)
+if [ -f .env ]; then
+  set -a
+  # shellcheck source=/dev/null
+  source .env
+  set +a
+fi
+
 # Ensures NEXT_PUBLIC_REF_NAME is set (defaults to REF_HOME) so the generate-api scripts (generate-api-data.mjs and generate-openapi-spec.mjs) see the correct ref and don't fall back to RWEB, which has no `src/content/fiches/` to scan and would fail
 export NEXT_PUBLIC_REF_NAME=${NEXT_PUBLIC_REF_NAME:-REF_HOME}
 

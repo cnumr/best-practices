@@ -1,6 +1,6 @@
 {
   "name": "best-practices",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": true,
   "scripts": {
     "doc": "cd docs && retype start",
@@ -52,6 +52,7 @@
     "@tinacms/cli": "1.12.6",
     "@tinacms/datalayer": "1.4.3",
     "clsx": "2.1.1",
+    "isomorphic-dompurify": "^3.17.0",
     "js-yaml": "^4.1.0",
     "mongodb-level": "0.0.4",
     "next": "14.2.35",
