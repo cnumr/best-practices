@@ -10,3 +10,11 @@
 - [Comment fonctionne le projet ?](https://cnumr.github.io/gen-referentiel-core/installation.md): Next.js
 - [Synchronisation Upstream](https://cnumr.github.io/gen-referentiel-core/synchronisation.md): Ce projet utilise une architecture multi-sites basée sur un repo source partagé (gen-referentiel-core) qui alimente plusieurs sites spécialisés.
 - [Informations](https://cnumr.github.io/gen-referentiel-core/informations.md): Design et UX :
+
+## Superpowers
+
+### Plans
+
+- [[#53] Fix Card — tooltip et champs undefined Implementation Plan](https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-53-card-tool-type.md): For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task.
+- [[#54] Fix HTML dans MDX non rendu Implementation Plan](https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-54-html-mdx.md): For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task.
+- [[#55] Fix build-local ne charge pas .env Implementation Plan](https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-55-build-local-env.md): For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task.

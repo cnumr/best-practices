@@ -2,34 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/synchronisation/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/developpement/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/configuration/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cnumr.github.io/gen-referentiel-core/contribution/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cnumr.github.io/gen-referentiel-core/api/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/installation/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cnumr.github.io/gen-referentiel-core/contribution/</loc>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cnumr.github.io/gen-referentiel-core/api/</loc>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
   <url>
     <loc>https://cnumr.github.io/gen-referentiel-core/informations/</loc>
-    <lastmod>2026-06-14T00:58:45Z</lastmod>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-53-card-tool-type/</loc>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-54-html-mdx/</loc>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cnumr.github.io/gen-referentiel-core/superpowers/plans/2026-06-14-fix-55-build-local-env/</loc>
+    <lastmod>2026-06-19T10:40:34Z</lastmod>
   </url>
 </urlset>
