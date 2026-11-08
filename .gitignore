@@ -20,9 +20,6 @@
 # production
 /build
 
-# retype (generated documentation build)
-docs/.retype/
-
 # misc
 .DS_Store
 .env
