@@ -3,7 +3,6 @@
   "version": "0.8.2",
   "private": true,
   "scripts": {
-    "doc": "cd docs && retype start",
     "dev": "tinacms dev -c \"next dev\"",
     "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
     "build": "node scripts/generate-api-data.mjs && node scripts/generate-openapi-spec.mjs && TINA_PUBLIC_IS_LOCAL=false tinacms build --partial-reindex && next build && npx pagefind --site .next/server/app --output-path public/pagefind",
