@@ -1,0 +1,10 @@
+[settings]
+experimental = true
+lockfile = true
+
+[tools]
+node = "24"
+pnpm = "12"
+
+[deps.pnpm]
+auto = true

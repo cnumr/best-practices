@@ -49,6 +49,12 @@ Créez un nouveau jeton d'accès personnel GitHub (PAT) avec **content access** 
 
 ### Configuration local
 
+Le projet utilise **[mise](https://mise.jdx.dev/)** pour gérer les versions de Node.js et pnpm de manière unifiée et multi-plateforme.
+
+**Installation :**
+1. Installer mise : [Documentation officielle](https://mise.jdx.dev/getting-started.html)
+2. Exécuter `mise install` à la racine du projet pour installer Node et pnpm
+
 Créer un fichier `.env` dans le dossier racine du projet et y mettre les variables d'environnement.
 
 ```

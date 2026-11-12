@@ -1,4 +1,15 @@
+allowBuilds:
+  '@scarf/scarf': true
+  '@tree-sitter-grammars/tree-sitter-yaml': true
+  better-sqlite3: true
+  core-js-pure: true
+  esbuild: true
+  scarf/scarf: true
+  tree-: true
+  tree-sitter: true
+  tree-sitter-json: true
+  unrs-resolver: true
 overrides:
-  nanoid: '^3.3.8'
-  react-dnd: '14.0.5'
-  react-dnd-html5-backend: '14.1.0'
+  nanoid: ^3.3.8
+  react-dnd: 14.0.5
+  react-dnd-html5-backend: 14.1.0
