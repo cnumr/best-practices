@@ -3,8 +3,8 @@ experimental = true
 lockfile = true
 
 [tools]
-node = "22"
-pnpm = "10.7.1"
+node = "24"
+pnpm = "12"
 
 [deps.pnpm]
 auto = true
